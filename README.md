@@ -58,7 +58,7 @@ The printed book is the reference. Every word in the app is either confirmed by 
 
 ### Sources
 
-- **The v1 database** (`app/src/main/assets/databases/riyad_salheen.db`) has 20 books, 366 chapters and 1,893 hadith. The hadith text is fully vocalized, and the commentary is one text field per hadith. Its tags come from the colors of the web page the text was taken from:
+- **The v1 database** (`v1/app/src/main/assets/databases/riyad_salheen.db`) has 20 books, 366 chapters and 1,893 hadith. The hadith text is fully vocalized, and the commentary is one text field per hadith. Its tags come from the colors of the web page the text was taken from:
 
   | Tag | In the hadith text | In the commentary |
   |---|---|---|
@@ -67,7 +67,8 @@ The printed book is the reference. Every word in the app is either confirmed by 
   | `<p2>` | a word Nawawi explains after the hadith, e.g. «ذروة الجبل» in hadith 30 | a few stray uses |
   | `<bullet>` | | a list item |
 
-- **The scans of *Nuzhat al-Muttaqin*** (Mu'assasat al-Risala): about 1,270 pages of hadith and commentary, followed by narrator biographies and indexes. [aljam3.com](https://aljam3.com/6507/17722/1) shows each page along with machine-OCR text of it. That OCR text is a second, independent reading, with its own mistakes, especially in digits.
+- **The scans of *Nuzhat al-Muttaqin*** (Mu'assasat al-Risala, Beirut, 14th edition, 1407 AH / 1987): one PDF of 1,433 scanned pages holding both volumes. About 1,270 of them are hadith and commentary, followed by the narrator biographies and indexes.
+- **Machine-OCR text of the same PDF**, one page per `PAGE_SEPARATOR`, so text page *n* is PDF page *n*. It is a second, independent reading, with its own mistakes, especially in digits. [aljam3.com](https://aljam3.com/6507/17722/1) shows each page with this text.
 - **sunnah.com's Riyad al-Salihin**, through [hadith-json](https://github.com/AhmedBaset/hadith-json), is a check on the letters only. It has almost no tashkeel, and that dataset's numbering doesn't follow the book's.
 - **Hadith collections with tashkeel** ([hadith-api](https://github.com/fawazahmed0/hadith-api), [Open-Hadith-Data](https://github.com/mhashim6/Open-Hadith-Data)) check the hadith text's tashkeel wherever the wording matches.
 
@@ -98,7 +99,7 @@ Each hadith has these fields:
 | `id` | The hadith number printed in the book. It never changes once released, so content fixes never break users' bookmarks |
 | `old_id` | v1's number for this hadith, if different. Used to carry users' bookmarks over |
 | `book`, `chapter` | The book (كتاب) and chapter (باب) it belongs to |
-| `page` | The printed page number where it starts |
+| `page` | The PDF page where it starts. The PDF holds both volumes, so its page numbers are unambiguous; the printed ones restart in volume 2 |
 | `title` | The short title shown above it. Taken from v1; it isn't in the book |
 | `matn` | The hadith text as a list of pieces, each with a role: `narration`, `prophet` (the Prophet's words), `speech` (other people's words) or `gloss` (a word Nawawi explains) |
 | `meanings` | A list of `{term, meaning}` as printed. Each term is linked to its words in the hadith for the tap feature |
@@ -127,7 +128,7 @@ The narrator biographies are in `content/narrators.json`. Each has an `id`, the 
 
 v2 replaces v1 on the same Google Play listing, so existing users get it as an update:
 
-- **Same package and key:** package `com.nad.riyadalsalheen` and a `versionCode` above v1's. It is signed with v1's key, `riyad_keystore.jks`, whose passwords are in `local.properties` (not in git). EAS is given this keystore.
+- **Same package and key:** package `com.nad.riyadalsalheen` and a `versionCode` above v1's. It is signed with v1's key, `v1/riyad_keystore.jks`, whose passwords are in `v1/local.properties` (not in git). EAS is given this keystore.
 - **Saved data is carried over.** v1 keeps it in Jetpack DataStore (`files/datastore/settings.preferences_pb`):
   - `bookmarks`: hadith numbers, comma-separated, newest first
   - `reading_progress`: the last hadith read
@@ -143,6 +144,7 @@ On iPhone, this needs an Apple Developer account ($99 a year), and the app goes 
 
 - [x] Create branch `v2` and write this plan
 - [x] Tag the commit that is live on Google Play (it is tagged `v1.0.0`)
+- [x] Move v1 into `v1/`, and get the book's PDF and OCR text
 - [ ] Content step 1: audit 30 hadith
 - [ ] Content step 2: convert the v1 database, and write the build script for the app's database
 - [ ] Content steps 3–4: number the hadith as printed and check the hadith text
@@ -158,33 +160,39 @@ On iPhone, this needs an Apple Developer account ($99 a year), and the app goes 
 Now:
 
 ```
-app/                                             the v1 Android app (Kotlin, Jetpack Compose)
-app/src/main/assets/databases/riyad_salheen.db   v1's database
-dp_update/                                       v1's Python script for the database
+v1/                    the v1 Android app (Kotlin, Jetpack Compose), kept for reference until v2 ships
+v1/app/src/main/assets/databases/riyad_salheen.db   v1's database, an input to the pipeline
+v1/dp_update/          v1's Python script for the database
+v1/docs/screenshots/   v1's screenshots
+.cache/book/nuzhat.pdf    the book's scans (not in git)
+.cache/aljam3/nuzhat.txt  the OCR text of the scans (not in git)
 ```
 
 Planned:
 
 ```
-src/        the v2 app (Expo, TypeScript), replacing the Kotlin project
+src/        the v2 app (Expo, TypeScript)
 content/    the checked content, one JSON file per book (source of truth)
 tools/      Python scripts for the content pipeline
 docs/       transcription rules and notes
 .cache/     scans, page images, OCR text and downloads (not in git)
 ```
 
-v1's database stays in the repo as an input to the pipeline.
+Once v2 is released, `v1/` is deleted; it stays on `master` and the `v1.0.0` tag.
+
+### Getting the book
+
+Both files come from the [waqfeya-library dataset](https://huggingface.co/datasets/ieasybooks-org/waqfeya-library) on Hugging Face (MIT license), the same files aljam3 serves. The book is in the folder `2ـ 213.6 (230) المسانيد الأخرى والجوامع/01433ـ نزهة المتقين شرح رياض الصالحين --- مصطفى سعيد الخن، مصطفى البغا، محي الدين مستو، علي الشربجي، محمد أمين لطفي.PDF/`. Download `الكتاب.pdf` from that folder under `pdf/` to `.cache/book/nuzhat.pdf`, and `الكتاب.txt` from the same folder under `txt/` to `.cache/aljam3/nuzhat.txt`. You can also use the download buttons on the [aljam3 page](https://aljam3.com/6507/17722/1).
 
 ## Building v1
 
-You need Android Studio Ladybug or newer, JDK 11 and Android SDK 36.
+You need Android Studio Ladybug or newer, JDK 11 and Android SDK 36. Open `v1/` as the project, and put `local.properties` (SDK path and signing settings) in `v1/`.
 
 ```sh
+cd v1
 ./gradlew assembleDebug        # debug APK
 ./gradlew testDebugUnitTest    # unit tests
 ```
-
-Release builds read their signing settings from `local.properties`.
 
 ## Contributing
 
