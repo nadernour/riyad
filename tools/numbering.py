@@ -166,6 +166,11 @@ def run() -> list[dict]:
     return rows
 
 
+def cached() -> list[dict]:
+    """The alignment saved by run(), made first if it isn't there (e.g. in a fresh clone)."""
+    return json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else run()
+
+
 CHANGE = 1.5  # the cost of one change of the gap, against 1 for each marker that disagrees
 
 
@@ -226,7 +231,7 @@ def report(rows: list[dict]) -> None:
 def show(first: int, last: int) -> None:
     """For v1 hadith first..last: where each matn lies, the number above it, and the OCR text
     between one matn and the next (shortened), to find a merge, split or missing hadith."""
-    rows = {r["old_id"]: r for r in json.loads(OUT.read_text(encoding="utf-8"))}
+    rows = {r["old_id"]: r for r in cached()}
     ws, where = book_words()
     for i in range(first, last + 1):
         r = rows[i]
@@ -269,7 +274,7 @@ def mapping() -> dict[int, list[int]]:
 
 def check() -> None:
     """Compare the mapping with the numbers the OCR kept above each hadith."""
-    rows = json.loads(OUT.read_text(encoding="utf-8"))
+    rows = cached()
     numbers = mapping()
     last = max(n for ns in numbers.values() for n in ns)
     marked = [r for r in rows if r["marker"] is not None]

@@ -359,7 +359,7 @@
       },
       {
        "role": "speech",
-       "text": "قالَ لي النَّبِيُّ ﷺ : "
+       "text": "قالَ رَسُولُ اللهِ ﷺ : "
       },
       {
        "role": "prophet",
@@ -377,7 +377,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "هٰكَذا وَهٰكَذا",
+       "correction": "هٰكَذا وَهٰكَذا وَهٰكَذا",
+       "reason": "The print drops the third «وهكذا»; its own word meanings explain it as «ثلاثاً»."
+      }
+     ],
      "notes": []
     }
    ]

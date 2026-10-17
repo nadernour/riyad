@@ -15,7 +15,7 @@ import json
 import re
 
 from arabic import words
-from numbering import OUT as NUMBERING, page_lines
+from numbering import cached, page_lines
 from sources import CACHE, v1_hadiths
 
 OUT = CACHE / "chapters.json"
@@ -38,7 +38,7 @@ def moved() -> dict[int, int]:
 
 def v1_chapters() -> list[dict]:
     """v1's chapters in book order, each with its hadith and the page of its first one."""
-    rows = {r["old_id"]: r for r in json.loads(NUMBERING.read_text(encoding="utf-8"))}
+    rows = {r["old_id"]: r for r in cached()}
     MOVED = moved()
     chapters: dict[int, dict] = {}
     for i, h in v1_hadiths().items():

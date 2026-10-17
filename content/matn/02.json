@@ -1,0 +1,18 @@
+{
+ "691": {
+  "fix": [
+   [
+    "قالَ لي النَّبِيُّ",
+    "قالَ رَسُولُ اللهِ",
+    "variant"
+   ]
+  ],
+  "misprint": [
+   [
+    "هٰكَذا وَهٰكَذا",
+    "هٰكَذا وَهٰكَذا وَهٰكَذا",
+    "The print drops the third «وهكذا»; its own word meanings explain it as «ثلاثاً»."
+   ]
+  ]
+ }
+}

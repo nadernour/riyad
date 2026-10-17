@@ -5,7 +5,7 @@ A free, offline app for reading Imam al-Nawawi's *Riyad al-Salihin* (رياض ا
 ## Status
 
 - **v1** (branch `master`, tag `v1.0.0`) is the Android app on [Google Play](https://play.google.com/store/apps/details?id=com.nad.riyadalsalheen), written in Kotlin with Jetpack Compose. Its text came from the database of an abandoned app, [com.zad.riyadhsalheen](https://play.google.com/store/apps/details?id=com.zad.riyadhsalheen). The audit showed that its commentary is an edited version of the book's (see [docs/audit.md](docs/audit.md)).
-- **v2** (this branch, `v2`) is in planning. It has two goals:
+- **v2** (this branch, `v2`) is under way: the text is being checked against the printed book (content step 4). It has two goals:
   1. Replace the text with one checked against the printed book.
   2. Rebuild the app in React Native with Expo, so that the same app runs on Android and iPhone.
 
@@ -33,7 +33,7 @@ v2 keeps everything v1 does:
 2. Tap the page for full-screen reading
 3. Above each hadith: the book (كتاب) and chapter (باب) titles, the hadith number and a short title
 4. Bookmarks, newest first, with the latest ones in the side menu; remove one or clear all, with a confirmation
-5. Search by word, ignoring tashkeel, or by hadith number
+5. Search the hadith text by word, ignoring tashkeel, or by hadith number
 6. Browse by book and chapter
 7. Font size (14–30), dark mode, and reopening at the last hadith read
 8. Share a hadith as text
@@ -42,7 +42,6 @@ v2 keeps everything v1 does:
 
 Fixes:
 
-- **Search also covers the word meanings and benefits**, and highlights what it found. v1's search hint promises the commentary, but v1 only searches the hadith text.
 - **Theme setting: System, Light or Dark.** v1's toggle means "the opposite of the phone's setting", so with it on, the app turns light when the phone turns dark at night.
 - **The Prophet's words stand out from the rest of the hadith.** v1 marks them, but its hadith font (Amiri) has no semi-bold, so they look the same as the Companion's words.
 - **Sharing includes the hadith number.**
@@ -76,7 +75,8 @@ The app shows only the book's text. v1's additions to the commentary (extra word
 - **The scans of *Nuzhat al-Muttaqin*** (Mu'assasat al-Risala, Beirut, 14th edition, 1407 AH / 1987): one PDF of 1,433 scanned pages holding both volumes. About 1,270 of them are hadith and commentary, followed by the narrator biographies and indexes.
 - **Machine-OCR text of the same PDF**, one page per `PAGE_SEPARATOR`, so text page *n* is PDF page *n*. It is a second, independent reading. For the commentary it is close to the print, but it misreads the ﷺ glyph and digits, and its tashkeel on the matn is unreliable. [aljam3.com](https://aljam3.com/6507/17722/1) shows each page with this text.
 - **sunnah.com's Riyad al-Salihin**, through [hadith-json](https://github.com/AhmedBaset/hadith-json), is a check on the letters only. It has almost no tashkeel, and that dataset's numbering doesn't follow the book's.
-- **Hadith collections with tashkeel** ([hadith-api](https://github.com/fawazahmed0/hadith-api), [Open-Hadith-Data](https://github.com/mhashim6/Open-Hadith-Data)) check the hadith text's tashkeel wherever the wording matches.
+- **Hadith collections with tashkeel** ([hadith-api](https://github.com/fawazahmed0/hadith-api): the six books and the Muwatta) check the hadith text's tashkeel wherever the wording matches.
+- **Tesseract** reads the pages again, keeping each word's position. It reads the vocalized matn poorly, but it finds where each matn is printed, so it can be cropped from the scan.
 
 ### Steps
 
@@ -92,15 +92,16 @@ The app shows only the book's text. v1's additions to the commentary (extra word
 
    v1's commentary isn't brought over. The salutation becomes the glyph ﷺ, as the book prints it. The tool checks that every word of v1's matn survives the conversion.
 3. **Number the hadith as printed** (done; see [docs/numbering.md](docs/numbering.md)). Every hadith now has the book's number (1–1,898) and page, and every chapter the book's number. The places where v1 and the book don't line up one to one are in `content/numbering.json`: cross-references the book numbers, two merged v1 entries, a repeated text, and chapter 261, which v1 lacks. The mapping agrees with every number the OCR kept above a hadith, every numbered chapter heading, and the 30 audited hadith. v1's ids are kept in `old_id`. v1's short titles had slipped one entry out of step in places, so they were paired with their hadith again, and 8 titles were written for hadith without one.
-4. **Check the hadith text.** It isn't transcribed, because v1 already has it with tashkeel:
-   - **Letters:** compare v1's text with sunnah.com and with aljam3's reading of the page. Words that all three agree on are accepted. For the rest, a zoomed crop of the scan decides.
-   - **Where v1 follows another edition** (e.g. «إلى الإسلام» for the book's «للإسلام»), the book's wording is kept unless it's a misprint. The book's single kasra on a name where the grammar needs tanween («بن قيسِ») is a printing habit, so v1's tanween stays.
-   - **Tashkeel:** compare with the collections wherever the wording matches. Differences go to the scan.
-   - **Explained words:** every word under لغة الحديث should be found in the hadith. One that isn't gets checked: either the printed text differs from ours there, or the word has to be matched by hand (e.g. «الهجرة» explains «هجرته»).
-5. **Transcribe the word meanings and benefits** from the scans, page by page, in short Claude Code sessions, with a pipeline adapted from the owner's azkar project.
+4. **Check the hadith text** (in progress; see [docs/matn.md](docs/matn.md)). It isn't transcribed, because v1 already has it with tashkeel. Instead, every hadith is read against its matn on the scan, and v1's text is corrected to the book's:
+   - **Doubts first.** `tools/matn.py` compares each matn with the OCR text of its pages, sunnah.com and the collections, and lists the words in doubt: other letters in the OCR text, marks no collection agrees with, and words vocalized as nowhere in the collections. After the pilot there were 5,751, in 1,562 of the 1,868 hadith left.
+   - **Then the whole matn.** In short Claude Code rounds (`tools/long_run.sh`), each hadith is read against a crop of its matn on the scan, starting with its doubts. The pilot on the audit's 30 hadith showed this is needed: the doubts missed 4 of the audit's differences, all case endings or wordings that no source contradicts.
+   - **The book's wording is kept** where v1 follows another edition (e.g. «إلى الإسلام» for the book's «للإسلام»), unless it's a misprint. The book's single kasra where the grammar needs tanween («بن قيسِ») is a printing habit, so v1's tanween stays. Spelling that doesn't change the reading (مائة / مئة) stays as v1 has it.
+   - **Every decision is kept** in `content/matn/`, one file per book, so the step can be applied again after rebuilding `content/hadith/`.
+5. **Transcribe the word meanings and benefits** from the scans, page by page, in short Claude Code sessions, with a pipeline adapted from the owner's azkar project. That project isn't in this repo. It transcribed a 470-page scanned book in rounds of 5 pages at low effort, with chapter reviews at xhigh. A round cost about $0.9 at API prices (4–10% of the 5-hour limit, under 1% of the weekly one), and a chapter review about $1.7.
    - The OCR text of each page is the draft. It is proofread against the scan, with doubtful words zoomed, and split into word meanings and benefits, including commentary shared by several hadith (`shared_with`). v1's commentary isn't used, even as a cross-check, because the audit showed it is a different text.
    - A pilot on the audit's pages comes first, scored against the book's text in `content/audit/`. The rest of the book follows once the pilot's error rate is acceptable.
    - The rules will be in `docs/transcription.md`, written before the pilot.
+   - **Explained words:** every word under لغة الحديث should be found in the hadith. One that isn't gets checked: either the printed text differs from ours there, or the word has to be matched by hand (e.g. «الهجرة» explains «هجرته»).
 6. **Transcribe the narrator biographies** from the end of the book the same way. v1 doesn't have them, so aljam3's reading is the only cross-check. Each biography is then linked to the narrator's name in every hadith that names them. Names the tool can't match (a kunya, or a name written differently) are linked by hand.
 7. **Owner review.** Questions the checks can't settle are listed per book (كتاب) for the owner to decide.
 
@@ -122,12 +123,12 @@ Each hadith has these fields:
 | `narrators` | The narrators named in the hadith who have a biography: each one's `id` in `content/narrators.json`, linked to their name in the hadith text |
 | `benefits` | A list of items as printed |
 | `shared_with` | When one commentary is printed for several hadith (e.g. «أفاد الحديثان»), the hadith it covers. It is shown with each of them |
-| `corrections` | Misprints found in the book: the printed words, the correction and the reason. The printed text is kept |
+| `corrections` | Misprints found in the book: the printed words, the correction and the reason. The text shows the correction, and the printed words are kept here |
 | `notes` | English notes from the checking |
 
 The narrator biographies are in `content/narrators.json`. Each has an `id`, the `name` as printed (with the kunya, if the book gives one), the `biography` as printed, its `page`, and any `corrections` and `notes`.
 
-**Search:** every text also has a simplified copy (tashkeel removed, أ/إ/آ → ا, ة → ه, ى → ي). The app must simplify the search query exactly as the build script does, and shared test cases keep the two in step.
+**Search** covers the hadith text only, as in v1: not the word meanings, benefits or titles (the owner's decision, 2026-10-17). The hadith text also has a simplified copy (tashkeel removed, أ/إ/آ → ا, ة → ه, ى → ي). The app must simplify the search query exactly as the build script does, and shared test cases keep the two in step.
 
 **User data** (bookmarks, last hadith read, settings) is stored apart from the content, so content updates never touch it.
 
@@ -166,7 +167,7 @@ The order is: make the content clean, then build the app, then ship.
 - [x] Content step 1: audit 30 hadith ([docs/audit.md](docs/audit.md))
 - [x] Content step 2: convert the v1 database (`content/hadith/`)
 - [x] Content step 3: number the hadith as printed ([docs/numbering.md](docs/numbering.md))
-- [ ] Content step 4: check the hadith text
+- [ ] Content step 4: check the hadith text ([docs/matn.md](docs/matn.md); the pilot's 30 hadith are done)
 - [ ] Write `docs/transcription.md`, run the pilot on the audit's pages, then transcribe the commentary (content step 5)
 - [ ] Transcribe the narrator biographies and link them to the hadith (content step 6)
 - [ ] Owner review of the questions the checks couldn't settle (content step 7)
@@ -187,14 +188,20 @@ v1/                    the v1 Android app (Kotlin, Jetpack Compose), kept for re
 v1/app/src/main/assets/databases/riyad_salheen.db   v1's database, an input to the pipeline
 v1/dp_update/          v1's Python script for the database
 v1/docs/screenshots/   v1's screenshots
+CLAUDE.md              what a Claude Code session working here needs to know
 tools/                 the content pipeline's Python scripts (setup below)
 content/hadith/        the content, one JSON file per book (source of truth)
 content/numbering.json where v1's hadith and chapters differ from the book's (step 3)
+content/matn/          step 4: the decisions from checking each hadith's text against the scan
 content/audit/         the v1 audit: the book's text for 30 v1 hadith and how v1 differs (the test set)
 docs/audit.md          the audit's findings
 docs/numbering.md      step 3: numbering, pages, chapters and titles
+docs/matn.md           step 4: how the hadith text is checked, and the rules for the review rounds
+.cache/                downloads and files the tools make again (not in git); nothing that can't be remade
 .cache/book/nuzhat.pdf    the book's scans (not in git)
 .cache/aljam3/nuzhat.txt  the OCR text of the scans (not in git)
+.cache/sunnah/, .cache/hadith-api/   sunnah.com's Riyad al-Salihin and the collections, downloaded by the tools (not in git)
+.cache/ocr/               Tesseract and its reading of the pages (not in git)
 ```
 
 Planned:
@@ -211,12 +218,25 @@ Once v2 is released, `v1/` is deleted; it stays on `master` and the `v1.0.0` tag
 
 ### Getting the book
 
-Both files come from the [waqfeya-library dataset](https://huggingface.co/datasets/ieasybooks-org/waqfeya-library) on Hugging Face (MIT license), the same files aljam3 serves. The book is in the folder `2ـ 213.6 (230) المسانيد الأخرى والجوامع/01433ـ نزهة المتقين شرح رياض الصالحين --- مصطفى سعيد الخن، مصطفى البغا، محي الدين مستو، علي الشربجي، محمد أمين لطفي.PDF/`. Download `الكتاب.pdf` from that folder under `pdf/` to `.cache/book/nuzhat.pdf`, and `الكتاب.txt` from the same folder under `txt/` to `.cache/aljam3/nuzhat.txt`. You can also use the download buttons on the [aljam3 page](https://aljam3.com/6507/17722/1). The tools download both on first use.
+Both files come from the [waqfeya-library dataset](https://huggingface.co/datasets/ieasybooks-org/waqfeya-library) on Hugging Face (MIT license), the same files aljam3 serves. The book is in the folder `2ـ 213.6 (230) المسانيد الأخرى والجوامع/01433ـ نزهة المتقين شرح رياض الصالحين --- مصطفى سعيد الخن، مصطفى البغا، محي الدين مستو، علي الشربجي، محمد أمين لطفي.PDF/`. Download `الكتاب.pdf` from that folder under `pdf/` to `.cache/book/nuzhat.pdf`, and `الكتاب.txt` from the same folder under `txt/` to `.cache/aljam3/nuzhat.txt`. You can also use the download buttons on the [aljam3 page](https://aljam3.com/6507/17722/1). The tools download both on first use, and the cross-check sources too. `tools/ocr.py` fetches Tesseract into `.cache/ocr/` with `tools/fetch_ocr.sh` (Debian packages, nothing installed system-wide).
+
+### Setting up (Linux or macOS)
+
+You need Python 3.10 or newer and Tesseract. The matn check's long run also needs Claude Code, logged in to your Claude subscription.
+
+- **macOS:** `brew install python tesseract`. The system `python3` (3.9) is too old, so make the venv with Homebrew's: `$(brew --prefix)/bin/python3 -m venv .venv`, in place of the first command below.
+- **Debian or Ubuntu:** the system Python will do. Tesseract can be installed with apt; if it isn't, `tools/ocr.py` unpacks it into `.cache/ocr/` on first use, without installing anything system-wide.
+
+```sh
+python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
+.venv/bin/python tools/matn.py compare   # first run: downloads the book and the sources, and reads every page with Tesseract
+```
+
+The first `compare` takes a while, because Tesseract reads the 1,278 hadith pages (10 minutes on the owner's 18 cores, longer on a laptop). After that it takes about a minute. Everything it downloads or makes goes to `.cache/`, and every tool makes again what it needs if `.cache/` is empty.
 
 ### Content tools
 
 ```sh
-python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 .venv/bin/python tools/locate.py 500                # the PDF pages where v1 hadith 500 is printed
 .venv/bin/python tools/render_pages.py 440 442      # page images, in .cache/pages/
 .venv/bin/python tools/zoom.py 441 0.30 0.35        # a closer look at part of a page
@@ -224,8 +244,36 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 .venv/bin/python tools/audit.py summary             # the audit's totals
 .venv/bin/python tools/numbering.py --check          # the hadith numbering against the numbers the OCR kept
 .venv/bin/python tools/chapters.py                   # v1's chapters against the book's chapter headings
-.venv/bin/python tools/convert_v1.py                 # build content/hadith/ (steps 2 and 3)
+.venv/bin/python tools/convert_v1.py --force         # rebuild content/hadith/ from v1 (steps 2 and 3)...
+.venv/bin/python tools/matn.py apply --all           # ...then apply step 4's decisions again
+.venv/bin/python tools/ocr.py                        # Tesseract's reading of the hadith pages, with positions
+.venv/bin/python tools/matn.py compare               # step 4: list the words in doubt in every matn not yet checked
+.venv/bin/python tools/matn.py next                  # the next 12 hadith to check, with crops of the scan
+.venv/bin/python tools/matn.py apply                 # apply content/matn/inbox.json
 ```
+
+### The matn check's long run
+
+Step 4's review is done in rounds (see [docs/matn.md](docs/matn.md)). `tools/long_run.sh` starts a fresh Claude Code session for each round of 12 hadith, on your Claude subscription, and waits out the usage limits between rounds:
+
+```sh
+nohup tools/long_run.sh >> .cache/long-run.log 2>&1 &     # start it; it keeps going after the terminal closes
+tail -F .cache/long-run.log                                # follow it: each round's cost, limits used and summary
+pkill -f '[t]ools/long_run.sh'; pkill -f '[c]laude -p Do one round'   # stop it
+```
+
+On macOS, start it with `nohup caffeinate -i tools/long_run.sh >> .cache/long-run.log 2>&1 &`, so the Mac doesn't go to sleep while it runs. Closing the lid still puts it to sleep.
+
+Look at the first rounds' changes (`git diff content/`) before leaving it unattended. The rounds don't commit, so commit `content/` now and then. A round that finds a rule or a tool wrong says so in its summary in the log. The log isn't in git, so act on it in `docs/` or `tools/`.
+
+### Working together
+
+Only one person runs the long run at a time, because each round takes the next hadith not yet checked. When you stop it:
+
+1. If `content/matn/inbox.json` is there (a round was stopped before applying its decisions), run `.venv/bin/python tools/matn.py apply`. The inbox isn't in git.
+2. Commit and push `content/`.
+
+The other person pulls before starting it again.
 
 ## Building v1
 
@@ -239,14 +287,14 @@ cd v1
 
 ## Contributing
 
-Before starting on something, open an issue to say what you'd like to work on. Keep scans, page images and other downloads in `.cache/`, never in git.
+Before starting on something, open an issue to say what you'd like to work on. Keep scans, page images and other downloads in `.cache/`, never in git. Decisions go in git: under `content/`, or in `docs/` with their reasons. `CLAUDE.md` gives Claude Code what it needs to work here.
 
 ## Credits and license
 
 - *Riyad al-Salihin*, Imam Yahya ibn Sharaf al-Nawawi (d. 676 AH)
 - Word meanings and benefits: *Nuzhat al-Muttaqin Sharh Riyad al-Salihin* by Dr. Mustafa Said al-Khin, Dr. Mustafa al-Bugha, Muhyiddin Mistu, Ali al-Sharbaji and Muhammad Amin Lutfi (Mu'assasat al-Risala)
 - Page scans and OCR text: [aljam3.com](https://aljam3.com)
-- Cross-checks: [sunnah.com](https://sunnah.com) (through hadith-json), [hadith-api](https://github.com/fawazahmed0/hadith-api) (public domain, Unlicense) and [Open-Hadith-Data](https://github.com/mhashim6/Open-Hadith-Data) (ODbL)
+- Cross-checks: [sunnah.com](https://sunnah.com) (through hadith-json) and [hadith-api](https://github.com/fawazahmed0/hadith-api) (public domain, Unlicense)
 
 The MIT License (see [LICENSE](LICENSE)) covers the code only. The text of *Nuzhat al-Muttaqin* belongs to its authors and publisher.
 

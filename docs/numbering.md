@@ -78,6 +78,6 @@ The short titles aren't in the book; v1 has them, and the app shows them above e
 
 ## For step 4
 
-- **Poorly matched entries.** 29 v1 entries matched the OCR text poorly (under half their words found): 97, 244, 245, 357, 454, 478, 506, 530, 726, 744, 745, 773, 803, 807, 808, 829, 860, 1149, 1178, 1181, 1272, 1273, 1326, 1327, 1336, 1341, 1347, 1364 and 1579 (`python tools/numbering.py` lists them). Their numbers are confirmed by the markers around them, but their matn may differ from the print more than usual.
+- **Poorly matched entries.** 29 v1 entries matched the OCR text poorly (under half their words found): 97, 244, 245, 357, 454, 478, 506, 530, 726, 744, 745, 773, 803, 807, 808, 829, 860, 1149, 1178, 1181, 1272, 1273, 1326, 1327, 1336, 1341, 1347, 1364 and 1579 (`.venv/bin/python tools/numbering.py` lists them). Their numbers are confirmed by the markers around them, but their matn may differ from the print more than usual.
 - **The four added hadith** need their tashkeel checked at high zoom.
 - **Chapter titles** are v1's for now. They are checked against the headings in step 4.

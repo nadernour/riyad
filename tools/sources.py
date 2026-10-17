@@ -6,6 +6,7 @@ The PDF holds both volumes (1,433 pages). The OCR text separates pages with
 PAGE_SEPARATOR, so its page n is PDF page n.
 """
 
+import json
 import pathlib
 import re
 import sqlite3
@@ -92,6 +93,37 @@ def v1_sections(sharh: str) -> dict:
             items.append(plain(line).strip())
         else:
             items[-1] += " " + plain(line).strip()
+    return out
+
+
+SUNNAH_PATH = CACHE / "sunnah" / "riyad_assalihin.json"
+SUNNAH_URL = "https://raw.githubusercontent.com/AhmedBaset/hadith-json/main/db/by_book/other_books/riyad_assalihin.json"
+COLLECTIONS_DIR = CACHE / "hadith-api"
+COLLECTIONS_URL = "https://cdn.jsdelivr.net/gh/fawazahmed0/hadith-api@1/editions/ara-{}.json"
+COLLECTIONS = ("bukhari", "muslim", "abudawud", "tirmidhi", "nasai", "ibnmajah", "malik")
+
+
+def _download(path: pathlib.Path, url: str, what: str) -> pathlib.Path:
+    if not path.exists():
+        path.parent.mkdir(parents=True, exist_ok=True)
+        print(f"Downloading {what} to {path.relative_to(ROOT)}")
+        urllib.request.urlretrieve(url, path)
+    return path
+
+
+def sunnah_riyad() -> list[str]:
+    """sunnah.com's Riyad al-Salihin (through hadith-json): the Arabic text of each of its 1,896
+    hadith. Its order and numbering don't follow the book's, and it has almost no tashkeel."""
+    data = json.loads(_download(SUNNAH_PATH, SUNNAH_URL, "sunnah.com's Riyad al-Salihin").read_text(encoding="utf-8"))
+    return [h["arabic"] for h in data["hadiths"]]
+
+
+def collections() -> dict[str, list[str]]:
+    """The vocalized text of each hadith in the six books and the Muwatta (hadith-api), by collection."""
+    out = {}
+    for name in COLLECTIONS:
+        path = _download(COLLECTIONS_DIR / f"ara-{name}.json", COLLECTIONS_URL.format(name), f"hadith-api's {name}")
+        out[name] = [h["text"] for h in json.loads(path.read_text(encoding="utf-8"))["hadiths"]]
     return out
 
 

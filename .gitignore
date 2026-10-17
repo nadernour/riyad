@@ -6,3 +6,6 @@ GEMINI.md
 .cache/
 .venv/
 __pycache__/
+
+# a review round's decisions until tools/matn.py apply takes them (docs/matn.md)
+content/matn/inbox.json

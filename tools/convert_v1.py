@@ -215,8 +215,8 @@ def build() -> list[dict]:
     numbers = mapping()
     move = moved()
     unnumbered = {u["v1"] for u in ex["unnumbered"]}
-    rows = {r["old_id"]: r for r in json.loads((ROOT / ".cache" / "numbering.json").read_text(encoding="utf-8"))}
-    from numbering import book_words
+    from numbering import book_words, cached
+    rows = {r["old_id"]: r for r in cached()}
     where = book_words()[1]
 
     def page_of(found):
