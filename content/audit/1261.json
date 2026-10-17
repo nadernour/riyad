@@ -1,0 +1,46 @@
+{
+  "v1_id": 1261,
+  "pages": [
+    890,
+    890
+  ],
+  "printed": [
+    {
+      "number": 1265,
+      "matn": "وَعَنِ ابْنِ عَبَّاسٍ رَضِيَ اللهُ عَنْهُمَا قَالَ: كَانَ رَسُولُ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ لاَ يُفْطِرُ أَيَّامَ الْبِيضِ فِي حَضَرٍ وَلا سَفَرٍ. رَوَاهُ النَّسَائِيُّ بإِسْنَادٍ حَسَنٍ.",
+      "meanings": [],
+      "benefits": [
+        "أن صيام الأيام البيض من كل شهر سنة مؤكدة لملازمة النبي ﷺ عليها في الحضر والسفر ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "1261",
+      "printed": "1265",
+      "who": "v1",
+      "note": "v1 is four behind the book here."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "حرص النبي ﷺ على هذه الأيام يؤكد فضلها واهميتها",
+      "printed": "",
+      "who": "v1",
+      "note": "A benefit the book doesn't have."
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "تنبيه: الحديث مختلف في صحته والأقرب ضعفه، وقد صح استحباب صوم هذه الأيام؛ كما تقدم.",
+      "printed": "",
+      "who": "v1",
+      "note": "v1 adds its own grading (likely weak); the book only quotes Nawawi's «بإسناد حسن»."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٧ in its chapter and ١٢٦٥ overall; the matn matches the print."
+  ]
+}

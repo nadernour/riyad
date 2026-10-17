@@ -1,0 +1,69 @@
+{
+  "v1_id": 1426,
+  "pages": [
+    979,
+    980
+  ],
+  "printed": [
+    {
+      "number": 1430,
+      "matn": "وَعَنْهُ : أنَّ رَسُولَ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ كانَ يقُولُ فِي سُجُودِهِ : «اللَّهُمَّ ؛ اغْفِرْ لِي ذَنْبِي كُلَّهُ ؛ دِقَّهُ وَجِلَّهُ، وَأَوَّلَهُ وَآخِرَهُ، وَعَلاَنِيَتَهُ وَسِرَّهُ» رَوَاهُ مُسْلِمٌ.",
+      "meanings": [
+        {
+          "term": "دقه",
+          "meaning": "صغيره ."
+        },
+        {
+          "term": "جله",
+          "meaning": "كبره ."
+        },
+        {
+          "term": "علانيته",
+          "meaning": "المعلن عنه ."
+        }
+      ],
+      "benefits": [
+        "استحباب ذكر الله تعالى في السجود بهذه الأذكار التي جمعت بين صفات التنزيه والتقديس لله تعالى ما هو أهل له .",
+        "مهما بالغ الإنسان في تقديس الله تعالى والثناء عليه ، فإنه لا يبلغ مدى عظمة الله تعالى ، وما أثنى هو به على نفسه سبحانه وتعالى في كثير من آيات كتابه العزيز ."
+      ],
+      "shared_with": "1431: printed after it as «أفاد الحديث والذي قبله»"
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "1426",
+      "printed": "1430",
+      "who": "v1",
+      "note": "v1 is four behind the book here."
+    },
+    {
+      "part": "meanings",
+      "kind": "letters",
+      "v1": "جله : كبيرَهُ",
+      "printed": "جله : كبره",
+      "who": "v1",
+      "note": ""
+    },
+    {
+      "part": "structure",
+      "kind": "structure",
+      "v1": "benefits under 1426 (book 1430)",
+      "printed": "after 1431, «أفاد الحديث والذي قبله», for 1431 and 1430",
+      "who": "v1",
+      "note": "The book prints one set of benefits for two hadith."
+    },
+    {
+      "part": "benefits",
+      "kind": "replaced",
+      "v1": "كان استغفارُ النَّبيِّ ﷺ شُكرًا للهِ وطَلبًا لرحمتِه وفَضْله..",
+      "printed": "مهما بالغ الإنسان في تقديس الله تعالى والثناء عليه ، فإنه لا يبلغ مدى عظمة الله تعالى …",
+      "who": "v1",
+      "note": "v1's own benefit in place of the book's second one."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٢٢ in its chapter and ١٤٣٠ overall; the matn matches the print."
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "v1_id": 357,
+  "pages": [
+    336,
+    337
+  ],
+  "printed": [
+    {
+      "number": 360,
+      "matn": "وعن أَنس رضي الله عنه قال: قال رسول الله صَلّى اللهُ عَلَيْهِ وسَلَّم: «ما أَكْرَم شَابٌّ شَيْخاً لِسِنِّهِ إِلاَّ قَيَّضَ الله لَهُ مَنْ يُكْرِمُهُ عِنْد سِنِّه» رواه الترمذي وقال حديث غريب.",
+      "meanings": [
+        {
+          "term": "شيخاً",
+          "meaning": "أي داخلاً في سن الشيخوخة بعد الخمسين ."
+        },
+        {
+          "term": "إلا قيّض",
+          "meaning": "أي هيّأ وقدّر ."
+        }
+      ],
+      "benefits": [
+        "استحباب مساعدة الضعفاء من الشيوخ .",
+        "الجزاء من جنس العمل ، والله لا يضيع أجر من أحسن عملاً .",
+        "الأخلاق الكريمة من الدين ولا يتم الدين إلا بها ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "structure",
+      "kind": "duplicated",
+      "v1": "وعن أبي سعيدٍ سَمُرةَ بنِ جُنْدبٍ رضي الله عنه قال: لَقَدْ كنْتُ عَلَى عهْدِ رسول الله صَلّى اللهُ عَلَيْهِ وسَلَّم غُلاماً، فَكُنْتُ أَحفَظُ عنْهُ، فَمَا يَمْنَعُني مِنَ القَوْلِ إِلاَّ أَنَّ هَهُنَا رِجالاً هُمْ أَسنُّ مِنِّي متفق عليه.",
+      "printed": "",
+      "who": "v1",
+      "note": "v1 357 repeats, before Anas's hadith, the whole matn of the hadith before it (v1 356, the book's 359)."
+    },
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "357",
+      "printed": "360",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "meanings",
+      "kind": "missing",
+      "v1": "شيخاً : في سنّ الشيخوخة",
+      "printed": "شيخاً : أي داخلاً في سن الشيخوخة بعد الخمسين",
+      "who": "v1",
+      "note": "v1 drops «أي داخلاً» and «بعد الخمسين»."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "الأخلاق الحميدة الكريمة",
+      "printed": "الأخلاق الكريمة",
+      "who": "v1",
+      "note": "v1 adds «الحميدة»."
+    }
+  ],
+  "notes": [
+    "The book numbers it ١٢ in its chapter and ٣٦٠ overall.",
+    "Corrected in step 3: the audit first read v1 357 as the book's 359 and 360 merged, but v1 356 is the book's 359 (with benefits of v1's own in place of the book's).",
+    "The OCR misread «أَسَنُّ», «يُكْرِمُهُ» and «لِسِنِّهِ»; the scan matches v1 there."
+  ]
+}

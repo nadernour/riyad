@@ -1,0 +1,56 @@
+{
+  "v1_id": 1046,
+  "pages": [
+    775,
+    776
+  ],
+  "printed": [
+    {
+      "number": 1049,
+      "matn": "وَعَنْ جُنْدَبِ بْنِ سُفْيَانَ رَضِيَ اللهُ عَنْهُ قالَ: قالَ رسولُ اللهِ صَلّى اللهُ عَلَيْهِ وسَلَّم: «منْ صَلَّى الصُّبْحَ.. فهُوَ في ذِمَّةِ اللهِ، فَانْظُرْ يَا بْنَ آدمَ؛ لاَ يَطْلُبنَّكَ اللهُ مِنْ ذِمَّتِهِ بِشَيْءٍ» رَوَاهُ مُسْلِمٌ",
+      "meanings": [
+        {
+          "term": "ذمة الله",
+          "meaning": "أي في حفظه وأمانه."
+        },
+        {
+          "term": "لا يطلبنك",
+          "meaning": "لا يؤاخذنك الله بسبب غفلتك عن صلاة الصبح، أو لا يحاسبنك الله بسبب تعرضك بأذى لمن هو في ذمة الله."
+        }
+      ],
+      "benefits": [
+        "فضل من داوم على صلاة الصبح مع الجماعة ، والتحذير من التعرض له بسوء ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "1046",
+      "printed": "1049",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "جُنْدُبِ",
+      "printed": "جُنْدَبِ",
+      "who": "variant",
+      "note": "Both pronunciations of the name are in use; the print's is kept."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "نهي عن التعرض بالأذى لكل مسلم صلى صلاة الصبح … / أنه يجب احترام المسلمين الذي صدَّقوا إسلامهم بصلاة الفجر …",
+      "printed": "",
+      "who": "v1",
+      "note": "Two benefits the book doesn't have."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٣ in its chapter and ١٠٤٩ overall.",
+    "Word meanings match the print; v1 adds «بيان» before the book's benefit (not counted)."
+  ]
+}

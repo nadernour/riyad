@@ -1,0 +1,73 @@
+{
+  "v1_id": 159,
+  "pages": [
+    183,
+    183
+  ],
+  "printed": [
+    {
+      "number": 160,
+      "matn": "الرَّابعُ: عن أَبِي مسلمٍ، وقيلَ: أَبِي إِيَاسٍ سلَمةَ بْنِ عَمْرو بن الأَكْوَعِ رضي اللَّه عنه، أَنَّ رَجُلاً أَكَلَ عِنْدَ رسولِ اللَّه صَلّى اللهُ عَلَيْهِ وسَلَّم بِشِمَالِهِ فقالَ: « كُلْ بِيمِينكَ» قَالَ: لا أَسْتَطِيعُ. قالَ: « لا استطعْتَ» ما منعَهُ إِلاَّ الْكِبْرُ فَمَا رَفعَها إِلَى فِيهِ، رواه مسلم.",
+      "meanings": [],
+      "benefits": [
+        "استحباب الأكل باليمين ، وكراهية الأكل بالشمال حيث لا عذر يمنع من الأكل باليمين ، كمرض أو قطع .",
+        "ومثل الأكل كل أمر شريف ، فيستحب مباشرته باليمين ، وعكسه كل أمر خسيس .",
+        "إن مخالفة ما هو مستحب لا يوجب الإثم ، وإنما دعا عليه الرسول لأن امتناعه كان تكبراً وعناداً ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "159",
+      "printed": "160",
+      "who": "v1",
+      "note": "v1 is one behind the book here: v1 158 is the book's 159."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "استطعَت»",
+      "printed": "اسْتَطَعْتَ",
+      "who": "v1",
+      "note": "v1 puts the fatha on the ع, which takes a sukun."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "إِيَاسٍ",
+      "printed": "إِياسِ",
+      "who": "book",
+      "note": "Printed with one kasra where the tanween is due; v1 has it right (the print does the same with «قيس» in hadith 8)."
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "وجوب الأكل باليمين، وتحريم الأكل بالشمال إلا بعذر، كمرض أو قطع.",
+      "printed": "استحباب الأكل باليمين ، وكراهية الأكل بالشمال حيث لا عذر يمنع من الأكل باليمين ، كمرض أو قطع",
+      "who": "v1",
+      "note": "The ruling is changed from recommended / disliked to obligatory / forbidden."
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "الأكل وكل أمر شريف، يستحب مباشرته باليمين.",
+      "printed": "ومثل الأكل كل أمر شريف ، فيستحب مباشرته باليمين ، وعكسه كل أمر خسيس",
+      "who": "v1",
+      "note": "v1 drops «وعكسه كل أمر خسيس»."
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "التكبُّر عن امتثال الشرع يوجب العقوبات العظيمة على صاحبه",
+      "printed": "إن مخالفة ما هو مستحب لا يوجب الإثم ، وإنما دعا عليه الرسول لأن امتناعه كان تكبراً وعناداً",
+      "who": "v1",
+      "note": "Replaced: the book's point that leaving a recommended act is not a sin is gone."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٤ in its chapter and ١٦٠ overall.",
+    "The OCR misread «الْأَكْوَعِ» with a fatha; the scan has a kasra, as v1."
+  ]
+}

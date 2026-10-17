@@ -1,0 +1,70 @@
+{
+  "v1_id": 1189,
+  "pages": [
+    847,
+    848
+  ],
+  "printed": [
+    {
+      "number": 1193,
+      "matn": "وَعَنْهَا رَضِيَ اللهُ عَنْهَا: أَنَّ رَسُولَ اللهِ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ قَالَ: «تَحرَّوْا لَيْلةَ الْقَدْرِ فِي الْوَتْـرِ مِن الْعَشْرِ الْأَوَاخِرِ مِنْ رَمَضَانَ» رَوَاهُ الْبُخَارِيُّ.",
+      "meanings": [
+        {
+          "term": "في الوتر",
+          "meaning": "أي في الليالي المفردة ؛ كإحدى وعشرين ، وثلاث وعشرين وهكذا ."
+        }
+      ],
+      "benefits": [
+        "أن ليلة القدر تكون في العشر الأواخر من رمضان والراجح أنها في الليالي المفردة منه واختار بعض العلماء القول بانتقالها بين الليالي فيه جمعاً بين الأحاديث ، ومعنى انتقالها أنها تكون في رمضان في ليلة معينة وفي رمضان آخر في ليلة أخرى معينة منه بعشر ، وذكر ابن حجر في فتح الباري أنها تلزم ليلة بعينها وإن كانت مبهمة .",
+        "الحث على الاعتكاف وإحياء ليالي العشر الأواخر من كل رمضان رجاء مصادفتها ، وهذه هي الحكمة من إبهامها فيه ."
+      ],
+      "shared_with": "the hadith before it in its chapter (the book heads these benefits «أفادت الأحاديث المتقدمة»)"
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "1189",
+      "printed": "1193",
+      "who": "v1",
+      "note": "v1 is four behind the book here."
+    },
+    {
+      "part": "meanings",
+      "kind": "letters",
+      "v1": "وثلاثة وعشرين",
+      "printed": "وثلاث وعشرين",
+      "who": "v1",
+      "note": "Grammar: ليالٍ takes «ثلاث»."
+    },
+    {
+      "part": "structure",
+      "kind": "structure",
+      "v1": "benefits under this hadith only",
+      "printed": "«أفادت الأحاديث المتقدمة» after it, for the chapter's hadith before it",
+      "who": "v1",
+      "note": "The book prints one set of benefits for several hadith; v1 keeps them on the last one only."
+    },
+    {
+      "part": "benefits",
+      "kind": "missing",
+      "v1": "",
+      "printed": "واختار بعض العلماء القول بانتقالها بين الليالي فيه جمعاً بين الأحاديث ، ومعنى انتقالها … وذكر ابن حجر في فتح الباري أنها تلزم ليلة بعينها وإن كانت مبهمة",
+      "who": "v1",
+      "note": "v1 drops the book's discussion of whether the night moves."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "الأواخرة … وتخصيصها بمزيد اجتهاد رجاء مصادفتها ليلة القدر",
+      "printed": "الأواخر … رجاء مصادفتها",
+      "who": "v1",
+      "note": "v1 adds «وتخصيصها بمزيد اجتهاد» and «ليلة القدر», and misspells «الأواخر»."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٤ in its chapter and ١١٩٣ overall; the matn matches the print.",
+    "«معينة منه بعشر» is transcribed as the scan shows it; the word «بعشر» should be checked again."
+  ]
+}

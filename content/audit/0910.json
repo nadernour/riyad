@@ -1,0 +1,89 @@
+{
+  "v1_id": 910,
+  "pages": [
+    693,
+    693
+  ],
+  "printed": [
+    {
+      "number": 913,
+      "matn": "عنْ عِمْرانَ بنِ حُصَيْنٍ رَضِيَ اللهُ عَنْهُمَا: أَنَّ امرأَةً مِنْ جُهَيْنَةَ أَتَتِ النَّبِيَّ صَلّى اللهُ عَلَيْهِ وسَلَّمَ وهِيَ حُبْلَى مِنَ الزِّنَا، فقالتْ: يا رسولَ اللهِ؛ أَصبتُ حدّاً فَأَقمْهُ علَيَّ، فَدعا رَسُولُ اللهِ صَلّى اللهُ عَلَيْهِ وسَلَّمَ وليَّهَا فقالَ: «أَحْسِنْ إِلَيْهَا، فَإِذا وضَعتْ .. فَأْتِني بِهَا» فَفعلَ، فَأَمرَ بِها النَّبِيُّ صَلّى اللهُ عَلَيْهِ وسَلَّمَ فشُدَّتْ علَيها ثِيابُها، ثُمَّ أَمرَ بِها فَرُجِمتْ، ثُمَّ صَلَّى عليْهَا . رَوَاهُ مُسْلِمٌ.",
+      "meanings": [
+        {
+          "term": "من جهينة",
+          "meaning": "أي من قبيلة جهينة."
+        },
+        {
+          "term": "أصبت حداً",
+          "meaning": "أي ذنباً يوجب الحد وهو الزنى."
+        },
+        {
+          "term": "وليها",
+          "meaning": "قريبها الَّذِي يلي أمرها."
+        },
+        {
+          "term": "رجمت",
+          "meaning": "ضربت بالحجارة حَتَّى ماتت."
+        }
+      ],
+      "benefits": [
+        "ما ذكره الإمام النووي في ترجمة الباب .",
+        "ويفيد أيضاً أن المرأة الحامل لا يقام عليها الحد حتى تضع ، وأن الحد يكفر الذنب وتجب الصلاة على من مات بحد ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "910",
+      "printed": "913",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "letters",
+      "v1": "الحُصَينِ",
+      "printed": "حُصَيْنٍ",
+      "who": "variant",
+      "note": "The name is written both with and without «ال»."
+    },
+    {
+      "part": "matn",
+      "kind": "letters",
+      "v1": "أَ نَّ",
+      "printed": "أَنَّ",
+      "who": "v1",
+      "note": "A space splits the word."
+    },
+    {
+      "part": "matn",
+      "kind": "letters",
+      "v1": "نَبِيُّ اللهِ",
+      "printed": "رَسُولُ اللهِ",
+      "who": "variant",
+      "note": "Possibly a narration variant; step 4 checks it against the collections."
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "الإحسان بمن قرُب موته بحدٍ أو قصاص.",
+      "printed": "ما ذكره الإمام النووي في ترجمة الباب",
+      "who": "v1",
+      "note": "v1 spells out the chapter title the book refers to."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "أمر النبي ﷺ بالإحسان لهذه المرأة له سببان : أحدهما … الثاني … فنهى عن هذا كله .",
+      "printed": "",
+      "who": "v1",
+      "note": "Three items the book doesn't have; v1 also misspells «عليه» as «عليبه» there."
+    }
+  ],
+  "notes": [
+    "The book numbers it ١ in its chapter and ٩١٣ overall.",
+    "Word meanings match the print; «الزِّنَا» / «الزِّنَى» is a spelling difference (not counted)."
+  ]
+}

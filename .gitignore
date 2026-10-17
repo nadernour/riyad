@@ -4,3 +4,5 @@ GEMINI.md
 
 # downloads, scans, page images and OCR (see README)
 .cache/
+.venv/
+__pycache__/

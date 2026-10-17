@@ -1,0 +1,73 @@
+{
+  "about": "Where v1's hadith and chapters don't map one to one onto the book's (content step 3; see tools/numbering.py and tools/chapters.py). Everything not listed here maps one v1 hadith to the next book number, and one v1 chapter to the next book chapter.",
+  "missing": [
+    {
+      "number": 153, "before_v1": 153, "chapter": 15, "page": 178, "kind": "cross-reference",
+      "note": "Numbered by the book, skipped by v1. Its matn is transcribed from the scan in step 3; step 4 checks its tashkeel at high zoom.",
+      "matn": [
+        {"role": "narration", "text": "حَدِيثُ عائِشَةَ "},
+        {"role": "speech", "text": "« وَكانَ أَحَبُّ الدِّينِ إِلَيْهِ ما داوَمَ صاحِبُهُ عَلَيْهِ »"},
+        {"role": "narration", "text": " . وَقَدْ سَبَقَ فِي الْبابِ قَبْلَهُ ."}
+      ]
+    },
+    {
+      "number": 172, "before_v1": 171, "chapter": 18, "page": 194, "kind": "cross-reference",
+      "note": "Numbered by the book, skipped by v1. It closes chapter 18, after hadith 171.",
+      "matn": [
+        {"role": "narration", "text": "وَعَنِ الْعِرْباضِ بْنِ سارِيَةَ رَضِيَ اللهُ عَنْهُ حَدِيثُهُ السَّابِقُ فِي بابِ الْمُحافَظَةِ عَلَى السُّنَّةِ ."}
+      ]
+    },
+    {
+      "number": 1126, "before_v1": 1123, "chapter": 203, "page": 814, "kind": "cross-reference",
+      "note": "Numbered by the book, skipped by v1. It opens chapter 203.",
+      "matn": [
+        {"role": "narration", "text": "فِيهِ حَدِيثُ ابْنِ عُمَرَ السَّابِقُ أَنَّهُ صَلَّى مَعَ النَّبِيِّ ﷺ رَكْعَتَيْنِ بَعْدَ الْجُمُعَةِ . مُتَّفَقٌ عَلَيْهِ ."}
+      ]
+    },
+    {
+      "number": 1548, "before_v1": 1544, "chapter": 261, "page": 1064, "kind": "hadith",
+      "note": "In chapter 261, which v1 lacks entirely. v1 has the same hadith as 249, in باب الإصلاح بين الناس; the book prints it again here with its own commentary.",
+      "matn": [
+        {"role": "narration", "text": "أُمّ كُلْثُومٍ رَضِيَ اللهُ عَنْها أَنَّها سَمِعَتْ رَسُولَ اللهِ ﷺ يَقُولُ : "},
+        {"role": "prophet", "text": "« لَيْسَ الْكَذَّابُ الَّذِي يُصْلِحُ بَيْنَ النَّاسِ فَيَنْمِي خَيْراً أَوْ يَقُولُ خَيْراً »"},
+        {"role": "narration", "text": " مُتَّفَقٌ عَلَيْهِ .\nزادَ مُسْلِمٌ فِي رِوايَةٍ : "},
+        {"role": "speech", "text": "« قالَتْ أُمُّ كُلْثُومٍ : وَلَمْ أَسْمَعْهُ يُرَخِّصُ فِي شَيْءٍ مِمَّا يَقُولُ النَّاسُ إِلَّا فِي ثَلاثٍ : تَعْنِي الْحَرْبَ ، وَالْإِصْلاحَ بَيْنَ النَّاسِ ، وَحَدِيثَ الرَّجُلِ امْرَأَتَهُ وَحَدِيثَ الْمَرْأَةِ زَوْجَها ."}
+      ]
+    }
+  ],
+  "merged": [
+    {"v1": 295, "numbers": 2, "note": "Two printed hadith in one v1 entry, divided by a line of tatweel."},
+    {"v1": 710, "numbers": 2, "note": "The cross-reference «حديث زيد بن أرقم…» (712) and the next hadith (713) in one v1 entry, divided by a line of underscores."}
+  ],
+  "unnumbered": [
+    {"v1": 454, "page": 407, "note": "وفي الباب أحاديث كثيرة، منها حديث العرباض بن سارية… وقد سبق في باب النهي عن البدع — a cross-reference the book doesn't number; left out of the content."}
+  ],
+  "duplicated": [
+    {"v1": 357, "repeats": 356, "note": "v1 357 repeats the matn of v1 356 (the book's 359) ahead of its own hadith (the book's 360); the repeat is dropped."}
+  ],
+  "moved": [
+    {"v1": 1529, "to_chapter_of": 1528, "note": "v1 files it under باب تحريم سماع الغيبة; the book has it as the second hadith of باب ما يباح من الغيبة."}
+  ],
+  "chapters_missing": [
+    {"number": 9, "page": 121, "title": "باب التفكر في عظيم مخلوقات الله تعالى", "note": "Verses only; no numbered hadith."},
+    {"number": 70, "page": 512, "title": "باب فضل الاختلاط بالناس", "note": "No numbered hadith."},
+    {"number": 126, "page": 643, "title": "باب استحباب الابتداء باليمين في اللباس", "note": "No numbered hadith."},
+    {"number": 202, "page": 813, "title": "باب سنة العشاء بعدها وقبلها", "note": "A cross-reference only; no numbered hadith."},
+    {"number": 261, "page": 1063, "title": "باب بيان ما يجوز من الكذب", "after_chapter": 260, "note": "Holds hadith 1548; added to the content."},
+    {"number": 265, "page": 1071, "title": "باب جواز لعن أصحاب المعاصي غير المعينين", "note": "No numbered hadith."}
+  ],
+  "book_misprints": [
+    {"number": 726, "page": 598, "note": "The book prints ٧٢٧ for this hadith and again for the next one (as its chapter's 6th and 7th); 726 is the number in the sequence."}
+  ],
+  "titles": {
+    "about": "Short titles aren't in the book; v1 has them. These hadith have no v1 title (added, split, or lost to v1's slipped titles), so step 3 wrote one, for the owner to review.",
+    "153": "أحب الدين إليه ما داوم صاحبه عليه",
+    "172": "وعظنا الرسول موعظة وجلت منها القلوب",
+    "298": "اليد العليا خير من اليد السفلى",
+    "712": "أذكركم الله في أهل بيتي",
+    "1126": "صلى مع النبي ركعتين بعد الجمعة",
+    "1548": "ليس الكذاب الذي يصلح بين الناس",
+    "1575": "إياكم والظن فإن الظن أكذب الحديث",
+    "1603": "لعن من اتخذ شيئاً فيه الروح غرضاً"
+  }
+}

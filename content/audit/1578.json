@@ -1,0 +1,38 @@
+{
+  "v1_id": 1578,
+  "pages": [
+    1087,
+    1087
+  ],
+  "printed": [
+    {
+      "number": 1583,
+      "matn": "وَعَنْ ابْنِ عُمَرَ رَضِيَ اللهُ عَنْهُمَا : أَنَّ النَّبِيَّ صَلَّى اللهُ عَلَيْهِ وَسَلَّمَ نَهَى عَنِ النَّجَشِ. مُتَّفَقٌ عَلَيْهِ.",
+      "meanings": [],
+      "benefits": [
+        "التحذير من هذا التعامل لما فيه من التغرير."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "1578",
+      "printed": "1583",
+      "who": "v1",
+      "note": "v1 is five behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "letters",
+      "v1": "رَسُولَ اللهِ",
+      "printed": "النَّبِيَّ",
+      "who": "variant",
+      "note": "Possibly a narration variant; step 4 checks it against the collections."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٣ in its chapter and ١٥٨٣ overall; the benefit matches the print; neither has word meanings."
+  ]
+}

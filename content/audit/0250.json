@@ -1,0 +1,85 @@
+{
+  "v1_id": 250,
+  "pages": [
+    262,
+    262
+  ],
+  "printed": [
+    {
+      "number": 252,
+      "matn": "وعن عائشة رضي الله عنها قالت: سمِع رسول الله صَلّى اللهُ عَلَيْهِ وسَلَّم صَوْتَ خُصُومٍ بالْبَابِ عَالِيَةً أَصْواتُهُمَا، إِذَا أَحَدُهُمَا يَسْتَوْضِعُ الآخَرَ وَيَسْتَرْفِقُهُ فِي شيءٍ، وَهُوَ يَقُولُ: واللهِ لا أَفعَلُ، فَخَرَجَ عَلَيْهِمَا رسولُ الله صَلّى اللهُ عَلَيْهِ وسَلَّم فقال: «أَيْنَ الْمُتَأَلِّي عَلَى الله لا يَفْعَلُ المَعْرُوفَ؟» فقال: أَنَا يَا رسولَ اللهِ، وَلَهُ أَيُّ ذلِكَ أَحَبَّ. متفقٌ عليه.\nمعنى «يَسْتَوْضِعُهُ» : يَسْأَلهُ أَنْ يَضَعَ عَنْهُ بَعْضَ دَينِهِ. «وَيَسْتَرفقُهُ» : يَسْأَلُهُ الرِّفْقَ «والْمُتأَلي» : الحَالِفُ.",
+      "meanings": [
+        {
+          "term": "له أي ذلك أحب",
+          "meaning": "أي ليختر الرفق به ، أو وضع شيء من الدين عنه ."
+        }
+      ],
+      "benefits": [
+        "الحض على الرفق بالغريم والإحسان إليه بالوضع عنه .",
+        "الزجر على الحلف على ترك الخير ، والسعي للإصلاح بين المتخاصمين ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "250",
+      "printed": "252",
+      "who": "v1",
+      "note": "v1 is two behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "عَالِيةٍ",
+      "printed": "عالِيَةً",
+      "who": "variant",
+      "note": "v1's genitive (a description of خصوم) is grammatical too; the print's is kept."
+    },
+    {
+      "part": "matn",
+      "kind": "added",
+      "v1": "وَإِذَا",
+      "printed": "إِذَا",
+      "who": "variant",
+      "note": "Possibly a narration variant; step 4 checks it against the collections."
+    },
+    {
+      "part": "matn",
+      "kind": "letters",
+      "v1": "فَلهُ",
+      "printed": "وَلَهُ",
+      "who": "variant",
+      "note": "Possibly a narration variant; step 4 checks it against the collections."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "يَسْأَلَهُ",
+      "printed": "يَسْأَلُهُ",
+      "who": "v1",
+      "note": "Indicative verb: damma, as printed."
+    },
+    {
+      "part": "meanings",
+      "kind": "reworded",
+      "v1": "أي له أن يختار الأفضل له من الرفق به، أو إسقاط شيء من الدَّين عنه",
+      "printed": "أي ليختر الرفق به ، أو وضع شيء من الدين عنه",
+      "who": "v1",
+      "note": ""
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "الزجر عن الحلف",
+      "printed": "الزجر على الحلف",
+      "who": "v1",
+      "note": "v1 changes the preposition."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٣ in its chapter and ٢٥٢ overall.",
+    "The OCR misread «عَلَيْهِما», «رَسُولَ», «أَحَبَّ» and «الْحالِفُ»; the scan matches v1 there."
+  ]
+}

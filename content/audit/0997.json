@@ -1,0 +1,56 @@
+{
+  "v1_id": 997,
+  "pages": [
+    743,
+    743
+  ],
+  "printed": [
+    {
+      "number": 1000,
+      "matn": "وَعَنِ ابنِ عبَّاسٍ رَضِيَ اللهُ عَنْهُمَا قال: قال رسولُ اللهِ ِصَلّى اللهُ عَلَيْهِ وسَلَّم: «إنَّ الَّذِي لَيْسَ في جَوْفِهِ شَيْءٌ مِنَ القُرآنِ كالبيتِ الخَرِبِ» رَوَاهُ التِّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ.",
+      "meanings": [
+        {
+          "term": "ليس في جوفه",
+          "meaning": "أي لا يحفظ من القرآن شيئاً."
+        },
+        {
+          "term": "كالبيت الخرب",
+          "meaning": "أي الخالي من الخير والسكان."
+        }
+      ],
+      "benefits": [
+        "التأكيد على حفظ القرآن والدأب فيه ، لأن حامل القرآن مملوء بالخير ومغمور بالإحسان ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "997",
+      "printed": "1000",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "وكثرة تلاوته",
+      "printed": "والدأب فيه",
+      "who": "v1",
+      "note": ""
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "تنبيه: الحديث به ضعف ومعناه صحيح.",
+      "printed": "",
+      "who": "v1",
+      "note": "v1 adds its own grading (weak); the book only quotes al-Tirmidhi's «حديث حسن صحيح»."
+    }
+  ],
+  "notes": [
+    "The book numbers it ١٠ in its chapter and ١٠٠٠ overall.",
+    "Matn and word meanings match the print."
+  ]
+}

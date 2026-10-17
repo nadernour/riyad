@@ -1,0 +1,75 @@
+{
+  "v1_id": 856,
+  "pages": [
+    667,
+    667
+  ],
+  "printed": [
+    {
+      "number": 859,
+      "matn": "عنْ أبي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ في حديثِ المُسِيءِ صَلاتَهُ: أنَّهُ جاءَ فَصَلَّى ثُمَّ جاءَ إلى النَّبِيِّ صَلّى اللهُ عَلَيْهِ وسَلَّمَ، فَسَلَّمَ عَلَيْهِ، فَرَدَّ عَلَيْهِ السَّلامَ، فقالَ: «ارْجِعْ فَصَلِّ؛ فَإنَّكَ لمْ تُصَلِّ» فَرَجَعَ فَصَلَّى، ثُمَّ جاءَ فَسَلَّمَ عَلَى النَّبِيِّ صَلّى اللهُ عَلَيْهِ وسَلَّمَ، حَتّى فَعَلَ ذلكَ مَرَّاتٍ. مُتَّفَقٌ عَلَيْهِ .",
+      "meanings": [
+        {
+          "term": "المسيء صلاته",
+          "meaning": "هو رافع بن خلاد الزرقي الأنصاري ."
+        }
+      ],
+      "benefits": [
+        "أن صلاة تحية المسجد مقدمة على السلام لأنها حق الله تعالى وحقه مقدم على حق الناس ، وإن إعادة السلام مستحب ولو كان الفاصل بسيطاً بين السلامين ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "856",
+      "printed": "859",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "صَلاتُهُ:",
+      "printed": "صَلاتَهُ",
+      "who": "v1",
+      "note": "The object of «المسيء» takes a fatha, as printed."
+    },
+    {
+      "part": "matn",
+      "kind": "added",
+      "v1": "ثَلاثَ مَرَّاتٍ",
+      "printed": "مَرَّاتٍ",
+      "who": "variant",
+      "note": "Possibly a narration variant; step 4 checks it against the collections."
+    },
+    {
+      "part": "meanings",
+      "kind": "missing",
+      "v1": "",
+      "printed": "المسيء صلاته : هو رافع بن خلاد الزرقي الأنصاري",
+      "who": "v1",
+      "note": ""
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "تقديم تحية المسجد على السلام على الحاضرين … والمسألة محل خلاف بين العلماء في أيهما يُقدَّم ، والظاهر أنه لا تعارض بينهما، فبإمكان الداخل أن يسلم على من لقيه حين الدخول ، ثم يشرع في أداء تحية المسجد .",
+      "printed": "أن صلاة تحية المسجد مقدمة على السلام لأنها حق الله تعالى وحقه مقدم على حق الناس",
+      "who": "v1",
+      "note": "The book says the prayer comes first; v1 calls it disputed and suggests greeting people first."
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "ولو كان الفاصل بين السلامين يسيرًا",
+      "printed": "ولو كان الفاصل بسيطاً بين السلامين",
+      "who": "v1",
+      "note": "v1 also splits the book's single benefit in two."
+    }
+  ],
+  "notes": [
+    "The book numbers it ١ in its chapter and ٨٥٩ overall."
+  ]
+}

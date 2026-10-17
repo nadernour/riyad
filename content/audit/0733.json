@@ -1,0 +1,57 @@
+{
+  "v1_id": 733,
+  "pages": [
+    603,
+    603
+  ],
+  "printed": [
+    {
+      "number": 736,
+      "matn": "عنْ أبي هُريرة رضيَ اللهُ عنهُ قالَ: ما عَابَ رسُولُ اللهِ صَلّى اللهُ عَلَيْهِ وسَلَّمَ طَعَاماً قَطُّ، إِنِ اشْتَهَاهُ .. أَكَلَهُ، وإِنْ كَرِهَهُ .. تَرَكَهُ. مُتَّفَقٌ عَلَيْهِ.",
+      "meanings": [],
+      "benefits": [
+        "أن لا يعيب المسلم الطعام تأسياً برسول الله ﷺ لأن إعابة الطعام من الكبر والرعونة والترف .",
+        "في مدح الطعام دليل الرغبة ، وفي ذمه دليل احتقار النعمة .",
+        "كرم خلق الرسول ﷺ فإنه لم يعب طعاماً قط ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "733",
+      "printed": "736",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "missing",
+      "v1": "عنْ",
+      "printed": "وَعَنْ",
+      "who": "variant",
+      "note": "v1 starts the chapter's first hadith with «عن», as some editions do."
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "أن لا يعيب المسلم الطعام، فإن عيب الطعام دليل على الكِبر والترف وعدم شكر النعمة.",
+      "printed": "أن لا يعيب المسلم الطعام تأسياً برسول الله ﷺ لأن إعابة الطعام من الكبر والرعونة والترف / في مدح الطعام دليل الرغبة ، وفي ذمه دليل احتقار النعمة",
+      "who": "v1",
+      "note": "v1 merges and rewords the book's first two benefits."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "تمام الأدب في حق من لم يعجبه طعام معين أن يترك أكله دون أن يتكلم في ذمه وعيبه بشيء.",
+      "printed": "",
+      "who": "v1",
+      "note": "A benefit the book doesn't have."
+    }
+  ],
+  "notes": [
+    "The book numbers it ١ in its chapter and ٧٣٦ overall.",
+    "Matn matches the print."
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "v1_id": 285,
+  "pages": [
+    289,
+    289
+  ],
+  "printed": [
+    {
+      "number": 287,
+      "matn": "وعن أبي هريرة رضي اللهُ عنه عن النبي صَلّى اللهُ عَلَيْهِ وسَلَّم قال: «لَوْ كُنْتُ آمِراً أحَداً أَنْ يسْجُدَ لأَحدٍ لأَمَرْتُ المرْأَة أَنْ تَسْجُدَ لِزَوْجِهَا» . رواه الترمذي وقال: حديث حسن صحيح.",
+      "meanings": [],
+      "benefits": [
+        "تأكيد وجوب رعاية حق الزوج على الزوجة ووجوب طاعته.",
+        "السجود لا يجوز إلا لله تعالى."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "285",
+      "printed": "287",
+      "who": "v1",
+      "note": "v1 is two behind the book here."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٥ in its chapter and ٢٨٧ overall.",
+    "Matn and benefits match the print; neither has word meanings."
+  ]
+}

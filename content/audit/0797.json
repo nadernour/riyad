@@ -1,0 +1,48 @@
+{
+  "v1_id": 797,
+  "pages": [
+    637,
+    637
+  ],
+  "printed": [
+    {
+      "number": 800,
+      "matn": "وَعَن ابنِ عُمَرَ رَضِيَ اللهُ عَنْهُما قالَ: مَرَرْتُ عَلى رسُولِ اللهِ صَلّى اللهُ عَلَيْهِ وسَلَّمَ وَفي إِزَاري اسْترْخَاءٌ، فَقَالَ: «يا عَبْدَ اللهِ؛ ارْفَعْ إِزارَكَ» فَرفَعْتُهُ ثُمَّ قَالَ: «زِدْ» ، فَزِدْتُ، فَمَا زِلْتُ أَتَحرَّاها بَعْدُ. فَقَالَ بَعْضُ القَوْمِ: إِلى أَيْنَ؟ فَقَالَ: إِلى أَنْصافِ السَّاقَيْنِ». رَوَاهُ مُسْلِمٌ .",
+      "meanings": [],
+      "benefits": [
+        "فضل عبد الله بن عمر رضي الله عنهما ، ومزيد اعتنائه بالسنة وملازمته التأسي برسول الله ﷺ .",
+        "الأفضل في الإزار أن يكون إلى نصف الساق ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "797",
+      "printed": "800",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "القُوْمِ:",
+      "printed": "الْقَوْمِ",
+      "who": "v1",
+      "note": "A damma on the qaf, which takes a fatha."
+    },
+    {
+      "part": "benefits",
+      "kind": "missing",
+      "v1": "",
+      "printed": "الأفضل في الإزار أن يكون إلى نصف الساق",
+      "who": "v1",
+      "note": "The book's second benefit is missing."
+    }
+  ],
+  "notes": [
+    "The book numbers it ١١ in its chapter and ٨٠٠ overall.",
+    "v1 adds «بيان» at the start of the first benefit (not counted)."
+  ]
+}

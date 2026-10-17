@@ -1,0 +1,76 @@
+{
+  "v1_id": 596,
+  "pages": [
+    509,
+    510
+  ],
+  "printed": [
+    {
+      "number": 598,
+      "matn": "وَعَنْ أبي سعيدٍ الخُدرِيِّ رَضِيَ اللهُ عَنْهُ قال : قال رَجُلٌ : أَيُّ النَّاسِ أفضَلُ يارسولَ اللهِ ؟ قال : « مُؤْمِنٌ مُجَاهِدٌ بِنَفسِهِ وَمَالِهِ في سبيلِ اللهِ » قال : ثُمَّ مَنْ ؟ قال : «ثُمَّ رَجُلٌ مُعتَزِلٌ في شِعْبٍ مِنَ الشِّعَابِ يَعبُدُ رَبَّهُ - وفي روايةٍ : يتَّقِي الله - ويَدَعُ النَّاسَ مِن شَرِّهِ » مُتَّفَقٌ عَلَيْهِ .",
+      "meanings": [
+        {
+          "term": "شعب",
+          "meaning": "الطريق في الجبل وما انفرج بين الجبلين ."
+        }
+      ],
+      "benefits": [
+        "استحباب السؤال عما يحتاج إليه الإنسان من أمور الدين ، وبيان فضل الجهاد في سبيل الله بالنفس والمال .",
+        "فضل اعتزال الناس حينما لا يأمن الفتنة من الاختلاط بهم إذا كان الدافع له التفرغ لعبادة الله تعالى وكف أذاه عن الناس ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "596",
+      "printed": "598",
+      "who": "v1",
+      "note": "v1 is two behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "letters",
+      "v1": "يُجَاهِدُ",
+      "printed": "مُجاهِدٌ",
+      "who": "variant",
+      "note": "Possibly a narration variant (step 4); v1's own title has the print's «مؤمن مجاهد»."
+    },
+    {
+      "part": "meanings",
+      "kind": "added",
+      "v1": "شِعْب : الطريق في الجبل وما انفرج بين الجبلين وما يكون منه سيل الماء.",
+      "printed": "شعب : الطريق في الجبل وما انفرج بين الجبلين",
+      "who": "v1",
+      "note": "v1 adds «وما يكون منه سيل الماء»."
+    },
+    {
+      "part": "meanings",
+      "kind": "added",
+      "v1": "مُعتَزِلٌ : منقطع عن النّاس.",
+      "printed": "",
+      "who": "v1",
+      "note": "A word meaning the book doesn't have."
+    },
+    {
+      "part": "benefits",
+      "kind": "reworded",
+      "v1": "أهمية السؤال عما يحتاج إليه الإنسان من أمور الدين.",
+      "printed": "استحباب السؤال عما يحتاج إليه الإنسان من أمور الدين",
+      "who": "v1",
+      "note": "«استحباب» (a ruling) becomes «أهمية»."
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "اعتزال النّاس لا يمدح مطلقا، … ويفهم منه أنّ من استطاع فعل هذين الأمرين وهو بين النّاس فليس له أن يعتزلهم واعتزاله مذموم.",
+      "printed": "فضل اعتزال الناس حينما لا يأمن الفتنة من الاختلاط بهم إذا كان الدافع له التفرغ لعبادة الله تعالى وكف أذاه عن الناس",
+      "who": "v1",
+      "note": "The book praises seclusion when one fears trial among people; v1 argues instead that seclusion is blameworthy for one who can live among them."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٢ in its chapter and ٥٩٨ overall; it starts at the foot of PDF page 509."
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "v1_id": 1311,
+  "pages": [
+    917,
+    917
+  ],
+  "printed": [
+    {
+      "number": 1315,
+      "matn": "وَعَنْ جَابِرٍ رَضِيَ اللهُ عَنْهُ قَالَ: قَالَ رَجُلٌ : أَيْنَ أنَا يَا رَسُولَ اللهِ إنْ قُتِلتُ؟ قَالَ: « فِي الْجَنَّةِ » فَأَلْقَى تَمَرَاتٍ كُنَّ فِي يَدِهِ ، ثُمَّ قَاتَلَ حَتَّى قُتِلَ . رَوَاهُ مُسْلِمٌ .",
+      "meanings": [],
+      "benefits": [
+        "استحباب السؤال عن مصير العمل ، واستحباب التبشير بالخير على العمل وقد أخبر الرسول ﷺ الرجل أنه في الجنة لما علم منه الإخلاص في الجهاد ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "1311",
+      "printed": "1315",
+      "who": "v1",
+      "note": "v1 is four behind the book here."
+    },
+    {
+      "part": "meanings",
+      "kind": "added",
+      "v1": "فألقى تَمَرَاتٍ كُنَّ في يَدِه: تمرات كان يأكلها فأَلْقَاها وطَلَب الجَنَّةَ …",
+      "printed": "",
+      "who": "v1",
+      "note": "The book has no word meanings for this hadith."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "من مات في سبيل الله فهو في الجنة . / الحث على المسارعة في أعمال الخير والبر والمسابقة إلى رضوان الله .",
+      "printed": "",
+      "who": "v1",
+      "note": "Two benefits the book doesn't have."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٣٠ in its chapter and ١٣١٥ overall; the matn matches the print (the OCR misread its tashkeel)."
+  ]
+}

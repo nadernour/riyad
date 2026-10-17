@@ -1,0 +1,72 @@
+{
+  "v1_id": 434,
+  "pages": [
+    391,
+    392
+  ],
+  "printed": [
+    {
+      "number": 437,
+      "matn": "وعنه قال: قال رسول الله صَلّى اللهُ عَلَيْهِ وسَلَّم: « إِنَّ الله لَيَرضى عن الْعَبْدِ أَنْ يَأْكُلَ الأَكلَةَ فَيَحْمَدُهُ عليها ، أَوْ يَشْربَ الشَّرْبَةَ فَيَحْمَدُهُ عَليها » رواه مسلم.\n« الأَكْلَةُ » بفتح الهمزة، وهي المرَّةُ الواحدةُ مِنَ الأَكلِ، كَالْغَدْوةِ والْعَشْوَةِ ، والله أعلم .",
+      "meanings": [
+        {
+          "term": "يرضى",
+          "meaning": "يقبل ويثيب ."
+        },
+        {
+          "term": "فيحمده",
+          "meaning": "الحمد : الثناء على المحمود بجميل صفاته وإنعامه ، وهو أبلغ من الشكر ."
+        }
+      ],
+      "benefits": [
+        "استحباب الحمد لله عند كل طعام وشراب ، لأن في ذلك استحضاراً لفضل الله عند التنعم بما أنعم به ، وهذا يرضي الله تعالى ."
+      ]
+    }
+  ],
+  "differences": [
+    {
+      "part": "number",
+      "kind": "number",
+      "v1": "434",
+      "printed": "437",
+      "who": "v1",
+      "note": "v1 is three behind the book here."
+    },
+    {
+      "part": "matn",
+      "kind": "tashkeel",
+      "v1": "فَيحْمَدَهُ / فَيَحْمدَهُ",
+      "printed": "فَيَحْمَدُهُ",
+      "who": "variant",
+      "note": "v1's subjunctive (joined to يأكلَ) is also read; the print's is kept."
+    },
+    {
+      "part": "meanings",
+      "kind": "missing",
+      "v1": "",
+      "printed": "يرضى : يقبل ويثيب",
+      "who": "v1",
+      "note": "v1 drops the book's explanation of يرضى."
+    },
+    {
+      "part": "benefits",
+      "kind": "meaning changed",
+      "v1": "إثبات صفة الرضى لله تعالى إثباتا يليق بجلاله وعظمته سبحانه.",
+      "printed": "",
+      "who": "v1",
+      "note": "Not in the book: it takes the place of the book's explanation of يرضى («يقبل ويثيب») with a different position. «إثباتا» is stored in Arabic presentation forms."
+    },
+    {
+      "part": "benefits",
+      "kind": "added",
+      "v1": "ويكون حمدنا لله تعالى بقولنا (الحمد لله) أو بأيّ من الصيغ الواردة في الحمد بعد الطعام والشراب … ممّا ثبت في السُّنّة.",
+      "printed": "",
+      "who": "v1",
+      "note": "v1 extends the book's benefit."
+    }
+  ],
+  "notes": [
+    "The book numbers it ٢٥ in its chapter and ٤٣٧ overall.",
+    "The OCR misread «كَالْغَدْوَةِ» as «كَالْعَدْوَةِ»; the scan matches v1."
+  ]
+}
