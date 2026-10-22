@@ -1,6 +1,6 @@
 #!/bin/sh
 # Keep the matn check going (content step 4, docs/matn.md): a fresh Claude Code session for each
-# round of 12 hadith, waiting out usage-limit resets in between. Taken from the owner's azkar project.
+# round of up to 12 hadith, waiting out usage-limit resets in between. Taken from the owner's azkar project.
 #
 # Start it from the project folder in the background, so it keeps going after the terminal closes:
 #     nohup tools/long_run.sh >> .cache/long-run.log 2>&1 &
@@ -49,9 +49,10 @@ read_limits() {
         > "$PROBE" 2>> "$LOG"
 }
 
-# The comparison takes minutes the first time (Tesseract reads every page), longer than a round's
-# commands may run, so it is made here.
-[ -f .cache/matn.json ] || .venv/bin/python tools/matn.py compare >> "$LOG" 2>&1 || exit 1
+# The comparison takes minutes (the first time, Tesseract reads every page too), longer than a
+# round's commands may run, so it is made here: when there is none, or when tools/matn.py has
+# changed since it was made, e.g. after a pull.
+[ .cache/matn.json -nt tools/matn.py ] || .venv/bin/python tools/matn.py compare >> "$LOG" 2>&1 || exit 1
 
 idle=0
 while true; do
@@ -70,7 +71,9 @@ while true; do
     # more, and calls in a round come at most a few minutes apart.
     # No auto-memory: a round works only from the repo's files, and can't save notes into the
     # memory the owner's own sessions load.
-    CLAUDE_CODE_PROMPT_CACHE_TTL=5m CLAUDE_CODE_DISABLE_AUTO_MEMORY=1 claude -p "$PROMPT" \
+    # A 10-minute command timeout: `next` renders the round's crops, which a slow machine may take
+    # longer than the 2-minute default for.
+    BASH_DEFAULT_TIMEOUT_MS=600000 CLAUDE_CODE_PROMPT_CACHE_TTL=5m CLAUDE_CODE_DISABLE_AUTO_MEMORY=1 claude -p "$PROMPT" \
         --model "$MODEL" --effort "$EFFORT" --permission-mode dontAsk --allowedTools "$TOOLS" --tools "$BUILTIN" --strict-mcp-config \
         --disable-slash-commands --output-format stream-json --verbose > "$OUT" 2>> "$LOG"
     # Log the round's session id, length, cost estimate, limits used, progress and closing message.

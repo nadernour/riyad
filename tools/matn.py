@@ -2,7 +2,8 @@
 
 Usage: python tools/matn.py compare          compare every matn not yet checked; writes .cache/matn.json
        python tools/matn.py stats            totals of the last comparison
-       python tools/matn.py next [ID ...]    the next 12 hadith to check (--count N), with crops of the scan
+       python tools/matn.py next [ID ...]    the next hadith to check, up to 12 and 800 words (--count, --words),
+                                             with crops of the scan
        python tools/matn.py apply [--all]    apply content/matn/inbox.json (--all: every decision again)
        python tools/matn.py show ID          one hadith's words in doubt, accepted ones too
        python tools/matn.py crop ID ...      render the matn of these hadith from the scan
@@ -32,6 +33,10 @@ Doubtful words (settled on the scan, see docs/matn.md):
 - ocr-tashkeel: the OCR text marks a letter otherwise than v1, and no collection marks that letter
   as v1 does. The OCR text's tashkeel is often wrong, but it catches v1's wrong case endings.
 A tashkeel doubt is accepted (`ocr`) when the OCR text has v1's marks on every letter in question.
+- after: the OCR text has words printed like the matn, vocalized, after v1's last word and before
+  the commentary: the book may print more than v1 has (matn_after).
+- stray: a mark on no letter in v1's text, to be removed.
+`next` also lists v1's words with no mark at all, which are given the book's marks.
 """
 
 import argparse
@@ -86,8 +91,8 @@ def hadiths() -> list[dict]:
     for f in sorted(CONTENT.glob("*.json")):
         for c in json.loads(f.read_text(encoding="utf-8"))["chapters"]:
             for h in c["hadith"]:
-                out.append({"id": h["id"], "old_id": h["old_id"], "book": f.stem, "page": h["page"],
-                            "text": "".join(p["text"] for p in h["matn"])})
+                out.append({"id": h["id"], "old_id": h["old_id"], "book": f.stem, "chapter": c["number"],
+                            "page": h["page"], "text": "".join(p["text"] for p in h["matn"])})
     return sorted(out, key=lambda h: h["id"])
 
 
@@ -115,6 +120,26 @@ def tokens(text: str) -> list[dict]:
         if n:
             out.append({"w": m.group(), "n": n, "at": m.start()})
     return out
+
+
+def bare(text: str) -> list[str]:
+    """The runs of words in a matn with no mark at all, as they stand in it (the book's marks are
+    written on them, docs/matn.md). A run of one-letter words alone, such as «و», is left out."""
+    runs, start, longest = [], None, 0
+    for m in re.finditer(r"\S+", text + " ﷺ"):  # the ﷺ closes the last run
+        w = m.group()
+        letters = len(LETTER.findall(w))
+        if "ﷺ" not in w and not letters:
+            continue  # punctuation on its own
+        if "ﷺ" not in w and not MARK.search(w):
+            if start is None:
+                start, longest = m.start(), 0
+            end, longest = m.end(), max(longest, letters)
+            continue
+        if start is not None and longest >= 2:
+            runs.append(text[start:end])
+        start = None
+    return runs
 
 
 def marks(word: str) -> list[str]:
@@ -436,15 +461,20 @@ CROP_DPI = 230     # enough to read the matn's tashkeel; a full-width crop is th
 
 
 def page_lines_ink(ink) -> list[tuple[float, float]]:
-    """The printed lines of a page as (top, bottom) shares of the page, from its rows of ink."""
+    """The printed lines of a page as (top, bottom) shares of the page, from its rows of ink. Ink
+    that runs down the page, such as the binding's shadow at the side of a scan (p. 1247), is taken
+    out first: a row counts only its ink above the least of the rows within a line of it. A band of
+    ink at the top or bottom edge of the scan (p. 30) is not a line."""
     size = len(ink.rows)
-    width = max(ink.rows) or 1
+    reach = int(LINE * size)
+    rows = [count - min(ink.rows[max(0, r - reach): r + reach + 1]) for r, count in enumerate(ink.rows)]
+    least = (max(rows) or 1) * 0.01
     out, start = [], None
-    for r, count in enumerate(ink.rows + [0]):
-        if count > width * 0.01 and start is None:
+    for r, count in enumerate(rows + [0]):
+        if count > least and start is None:
             start = r
-        elif count <= width * 0.01 and start is not None:
-            if r - start > 2:
+        elif count <= least and start is not None:
+            if r - start > 2 and start > 0.01 * size and r < 0.99 * size:
                 out.append((start / size, r / size))
             start = None
     return out
@@ -453,15 +483,18 @@ def page_lines_ink(ink) -> list[tuple[float, float]]:
 def text_bottom(page, ink, below: float) -> float:
     """Where a page's text ends below a height: above the short rule that opens its footnotes, if
     there is one below that height (a chapter's footnotes can come in the middle of the page,
-    after its verses), else above its last line (the page number)."""
+    after its verses), else above its last line (the page number). The edges of the scan, which
+    can be dark (p. 30), aren't searched."""
     pix = page.get_pixmap(dpi=100, colorspace=pymupdf.csGRAY)
-    w, data = pix.width, pix.samples
+    w, h, data = pix.width, pix.height, pix.samples
     dark = bytes(1 if v < 160 else 0 for v in range(256))
-    for y in range(int(below * pix.height) + 1, pix.height):
-        row = data[y * pix.stride: y * pix.stride + w].translate(dark)
-        run = max(map(len, row.split(b"\x00")))
-        if run >= 0.14 * w and row.count(1) <= 1.2 * run:  # alone on its row, unlike a long kashida
-            return y / pix.height - 0.005
+    rows = [data[y * pix.stride: y * pix.stride + w].translate(dark) for y in range(h)]
+    counts = [row.count(1) for row in rows]
+    for y in range(max(int(below * h) + 1, int(0.02 * h)), int(0.98 * h)):
+        run = max(map(len, rows[y].split(b"\x00")))
+        down = min(counts[max(0, y - 10): y + 11])  # ink running down the page, such as the binding's shadow
+        if run >= 0.14 * w and counts[y] - down <= 1.2 * run:  # alone on its row, unlike a long kashida
+            return y / h - 0.005
     lines = page_lines_ink(ink)
     return lines[-1][0] - 0.005 if lines else 1.0
 
@@ -494,27 +527,46 @@ def matn_region(doc, first: int, last: int, top: dict, bottom: dict) -> list[tup
             y1 = text_bottom(page, ink, y0)
         if y1 - y0 > 0.01:
             out.append((n, y0, y1))
+        elif first < n < last and lines:  # the matn fills this page: it is never left out
+            out.append((n, max(0.0, lines[0][0] - 0.005), min(1.0, lines[-1][1] + 0.005)))
     return out
+
+
+def crop_region(doc, h: dict) -> list[tuple[int, float, float]]:
+    """Where hadith h's matn is printed: (page, top, bottom) on each of its pages."""
+    found = locate(h, tokens(h["text"]))
+    span = found["span"]
+    if span:  # down to the end of what the book prints after v1's last word (matn_after)
+        span = [span[0], span[1] + matn_after(h, span[1])]
+    _, top, bottom = tesseract_window(span, h["page"])
+    where = book_words()[1]
+    first, last = (where[span[0]][0], where[span[1] - 1][0]) if span else (h["page"], h["page"])
+    # The words matched around the matn can be the same words printed elsewhere: a match on a page
+    # after the matn's first page isn't above it (h. 837), and matches that cross, or leave no room
+    # for the matn between them, aren't around it (h. 424). The page's edge is used instead.
+    if top and top["page"] > first:
+        top = {}
+    if bottom and bottom["page"] < last:
+        bottom = {}
+    if top and bottom and top["page"] == bottom["page"] and bottom["y"] - top["y"] < LINE:
+        top, bottom = {}, {}
+    if top:  # opening words the OCR text lacks are above where it starts
+        top = {**top, "y": max(0.0, top["y"] - LINE * (found["head"] // 6))}
+    if bottom:
+        bottom = {**bottom, "y": min(1.0, bottom["y"] + LINE * (found["tail"] // 6))}
+    return matn_region(doc, first, last, top, bottom) or [(h["page"], 0.0, 1.0)]
 
 
 def crops(i: int) -> list[str]:
     """Render the matn of hadith i from the scan, one image per page; returns their paths."""
     h = next(h for h in hadiths() if h["id"] == i)
-    found = matn_span(h, tokens(h["text"]))
-    span = found["span"]
-    _, top, bottom = tesseract_window(span, h["page"])
-    where = book_words()[1]
-    first, last = (where[span[0]][0], where[span[1] - 1][0]) if span else (h["page"], h["page"])
-    if top:  # opening words the OCR text lacks are above where it starts
-        top = {**top, "y": top["y"] - LINE * (found["head"] // 6)}
-    if bottom:
-        bottom = {**bottom, "y": bottom["y"] + LINE * (found["tail"] // 6)}
     doc = pymupdf.open(pdf_path())
     out_dir = CACHE / "matn-crops"
     out_dir.mkdir(exist_ok=True)
+    for old in out_dir.glob(f"h{i:04d}-*.png"):  # an earlier rendering may have had other pages
+        old.unlink()
     paths = []
-    region = matn_region(doc, first, last, top, bottom) or [(h["page"], 0.0, 1.0)]
-    for k, (n, y0, y1) in enumerate(region):
+    for k, (n, y0, y1) in enumerate(crop_region(doc, h)):
         page = doc[n - 1]
         r = page.rect
         clip = pymupdf.Rect(r.x0, r.y0 + r.height * y0, r.x1, r.y0 + r.height * y1)
@@ -533,11 +585,12 @@ def tesseract_confirms(item: dict, tess: dict) -> bool:
     return all(tess["match"][j] is not None for j in range(k, k + n))
 
 
-def matn_span(h: dict, v1: list[dict]) -> dict:
+def matn_span(h: dict, v1: list[dict], after: int = 0) -> dict:
     """Where the matn is in the OCR text (numbering.align), starting on the page step 3 gives for
-    the hadith: words matched on an earlier page are the same phrase in the hadith before. Adds
-    `head` and `tail`, the number of v1's words before the first word matched and after the last."""
-    found = align({"matn": h["text"]}, h["page"])
+    the hadith, and after OCR word `after`, where the matn before it ends: words matched before
+    either are the same phrase in the hadith before. Adds `head` and `tail`, the number of v1's
+    words before the first word matched and after the last."""
+    found = align({"matn": h["text"]}, h["page"], after)
     if not found["span"]:
         return {**found, "head": 0, "tail": 0}
     where = book_words()[1]
@@ -552,9 +605,65 @@ def matn_span(h: dict, v1: list[dict]) -> dict:
             "tail": len(v1) - 1 - pairs[-1][0] if pairs else 0}
 
 
+@cache
+def neighbours() -> dict[int, tuple[dict | None, dict | None]]:
+    """For each hadith, the ones before and after it in the book's order (None at either end)."""
+    hs = hadiths()
+    return {h["id"]: (p, n) for p, h, n in zip([None] + hs[:-1], hs, hs[1:] + [None])}
+
+
+def locate(h: dict, v1: list[dict]) -> dict:
+    """matn_span for h, also looked for after the matn before it, as in step 3: a hadith often
+    repeats the words of the one before it, and is then found there (h. 1012, in 1010's words).
+    But the matn before can run on into this one's words (h. 863), so the place where more of
+    v1's words are found is taken."""
+    found = matn_span(h, v1)
+    prev = neighbours()[h["id"]][0]
+    span = matn_span(prev, tokens(prev["text"]))["span"] if prev else None
+    if not span:
+        return found
+    later = matn_span(h, v1, span[1])
+    return later if later["found"] >= found["found"] else found
+
+
+COMMENTARY = {"لغه", "افاد", "افادت", "يستفاد"}  # headings of the commentary: لغة الحديث, أفاد الحديث
+SOURCE_NOTE = ({"الحديث", "الحديثان", "الاحاديث"}, {"رواه", "رواهما", "اخرجه", "اخرجهما", "تقدم", "سبق"})
+
+
+def matn_after(h: dict, hi: int) -> int:
+    """How many OCR words after the last word of h's matn the OCR text matched (hi) are printed like
+    the matn, vocalized, before the commentary: text the book prints after v1's last word, such as
+    Nawawi's explanation of a word or another narration (h. 145, 465, 1147). The commentary opens
+    with its source note («الحديث رواه …») or a heading, and isn't vocalized; the OCR text drops
+    some of the matn's marks, so a few bare words in a row don't end it. It stops at the next hadith
+    too and, where a chapter ends, at the next chapter's heading, whose verses are vocalized."""
+    nxt = neighbours()[h["id"]][1]
+    end = matn_span(nxt, tokens(nxt["text"]), hi)["span"] if nxt else None
+    end = end[0] if end and end[0] > hi else hi + 200
+    new_chapter = nxt is None or (nxt["book"], nxt["chapter"]) != (h["book"], h["chapter"])
+    toks = ocr_tokens()
+    n = gap = 0
+    for k in range(hi, min(end, len(toks))):
+        w, norm = toks[k]
+        if norm in COMMENTARY or (new_chapter and norm == "باب"):
+            break
+        if norm in SOURCE_NOTE[0] and k + 1 < len(toks) and toks[k + 1][1] in SOURCE_NOTE[1]:
+            break
+        m = marks(w)
+        if len(m) < 2:
+            continue  # a letter on its own, such as «و», tells neither way
+        if sum(bool(x) for x in m) * 2 >= len(m):
+            n, gap = k + 1 - hi, 0
+        else:
+            gap += 1
+            if gap > 8:
+                break
+    return n
+
+
 def check(h: dict) -> dict:
     v1 = tokens(h["text"])
-    found = matn_span(h, v1)
+    found = locate(h, v1)
     sunnah = sunnah_check(v1)
     coll = collection_check(v1)
     if found["span"]:
@@ -562,6 +671,12 @@ def check(h: dict) -> dict:
         letters, same = letter_items(v1, ocr_tokens()[lo:hi], sunnah["same"])
         where = book_words()[1]
         span = [where[lo], where[hi - 1]]
+        after = matn_after(h, hi)
+        if after - found["tail"] >= 3:  # v1's own last words, if the OCR text misread them, aside
+            text = " ".join(w for w, _ in ocr_tokens()[hi:hi + min(after, 15)])
+            letters.append({"k": len(v1), "n": 0, "kind": "after", "doubt": True,
+                            "note": f"the OCR text has {after} vocalized words after v1's last word, before the"
+                                    f" commentary: «{text}{' …' if after > 15 else ''}». Read the matn to its end"})
     else:
         letters = [{"k": 0, "n": len(v1), "kind": "missing", "sunnah": False, "v1": h["text"], "ocr": "", "doubt": True}]
         same, span = [None] * len(v1), None
@@ -570,16 +685,21 @@ def check(h: dict) -> dict:
                         "note": f"the OCR text has only {found['found']:.0%} of this matn's words in order: check it all"})
     tess = tesseract_check(v1, tesseract_window(found["span"], h["page"])[0])
     for item in letters:
-        if item["doubt"] and item["kind"] not in ("split", "align") and tesseract_confirms(item, tess):
+        if item["doubt"] and item["kind"] not in ("split", "align", "after") and tesseract_confirms(item, tess):
             item["doubt"], item["tesseract"] = False, True
     for item in letters:  # what the collections have for a doubtful word
         if item.get("v1") and item["n"] == 1:
             c = [(s, w) for s, w in coll["forms"][item["k"]] if conflicts(v1[item["k"]]["w"], w)]
             if c:
                 item["collections"] = c[:3]
+    for m in re.finditer(r"\S+", h["text"]):  # a mark on no letter, such as the kasra in «اللهِ ِ ﷺ»
+        if MARK.search(m.group()) and not LETTER.search(m.group()):
+            letters.append({"k": sum(t["at"] < m.start() for t in v1), "n": 0, "kind": "stray", "v1": m.group(),
+                            "doubt": True, "note": f"a mark on no letter, «{m.group()}»: remove it (rule 4)"})
     items = sorted(letters + tashkeel_items(v1, same, coll["forms"]), key=lambda d: d["k"])
     return {
         "id": h["id"], "book": h["book"], "page": h["page"], "words": sum(not t.get("sal") for t in v1),
+        "bare": sum(len(r.split()) for r in bare(h["text"])),
         "ocr_found": found["found"], "ocr_span": span,
         "sunnah": sunnah["sunnah"], "sunnah_share": sunnah["share"],
         "collections": coll["used"], "covered": sum(bool(f) for f in coll["forms"]),
@@ -603,8 +723,10 @@ def compare() -> list[dict]:
 
 
 def compared() -> dict[int, dict]:
-    """The last comparison by hadith, made first if there is none (e.g. in a fresh clone)."""
-    rows = json.loads(OUT.read_text(encoding="utf-8")) if OUT.exists() else compare()
+    """The last comparison by hadith, made again if there is none (e.g. in a fresh clone) or this
+    tool has changed since it was made (e.g. after a pull)."""
+    fresh = OUT.exists() and OUT.stat().st_mtime > (ROOT / "tools" / "matn.py").stat().st_mtime
+    rows = json.loads(OUT.read_text(encoding="utf-8")) if fresh else compare()
     return {r["id"]: r for r in rows}
 
 
@@ -616,17 +738,20 @@ def stats(rows: list[dict]) -> None:
     print(f"no sunnah.com match (under 30% of pairs): {[r['id'] for r in rows if r['sunnah_share'] < 0.3]}")
     print()
     print("kind         doubts  accepted (by Tesseract)")
-    for kind in ("align", "missing", "extra", "split", "dots", "prefix", "other", "tashkeel", "unattested", "ocr-tashkeel"):
+    for kind in ("align", "after", "missing", "extra", "split", "dots", "prefix", "other", "stray", "tashkeel",
+                 "unattested", "ocr-tashkeel"):
         k = [d for d in items if d["kind"] == kind]
         print(f"{kind:12} {sum(d['doubt'] for d in k):6} {sum(not d['doubt'] for d in k):9}"
               f" ({sum(bool(d.get('tesseract')) for d in k)})")
     doubtful = [r for r in rows if any(d["doubt"] for d in r["items"])]
     print(f"\nhadith with doubts: {len(doubtful)}, on {len({r['page'] for r in doubtful})} pages;"
           f" doubts in all: {sum(d['doubt'] for d in items)}")
+    print(f"words with no mark in v1, to be given the book's: {sum(r.get('bare', 0) for r in rows)},"
+          f" in {sum(bool(r.get('bare')) for r in rows)} hadith")
 
 
 def describe(d: dict) -> str:
-    if d["kind"] == "align":
+    if d["kind"] in ("align", "after", "stray"):
         return d["note"]
     parts = [f"v1 «{d['v1']}»" if d.get("v1") else "v1 —", f"OCR «{d['ocr']}»" if d.get("ocr") else "OCR —"]
     if "sunnah" in d:
@@ -648,13 +773,20 @@ def show(i: int) -> None:
         print(f"  {'DOUBT' if d['doubt'] else 'ok   '} {d['kind']:10} {describe(d)}")
 
 
-def review(ids: list[int], count: int) -> None:
-    """Print the next hadith to check (or the ones asked for): the matn, its doubts and the crops
-    of the scan to read it on (see docs/matn.md)."""
+def review(ids: list[int], count: int, words: int) -> None:
+    """Print the next hadith to check (or the ones asked for): the matn, its doubts, its words with
+    no mark and the crops of the scan to read it on (see docs/matn.md). A round takes up to `count`
+    hadith, fewer when they're long: no more than `words` words in all, unless the first is longer."""
     rows = compared()
     texts = {h["id"]: h for h in hadiths()}
     if not ids:
-        ids = todo()[:count]
+        total = 0
+        for i in todo():
+            n = rows[i]["words"] if i in rows else len(texts[i]["text"].split())
+            if len(ids) == count or (ids and total + n > words):
+                break
+            ids.append(i)
+            total += n
         print(f"{len(checked())} of {len(texts)} hadith checked." + ("" if ids else " All are checked: nothing to do."))
         print()
     for i in ids:
@@ -673,11 +805,14 @@ def review(ids: list[int], count: int) -> None:
             print(f"{n}. {d['kind']}: {describe(d)}   [… {before} ⟦{d.get('v1') or '+'}⟧ {after} …]")
         if not doubts:
             print("No doubts listed.")
+        runs = bare(h["text"])
+        if runs:
+            print("No marks in v1 (write the book's): " + " · ".join(f"«{r}»" for r in runs))
         print()
 
 
 INBOX = CHECKED / "inbox.json"
-WHY = {"v1", "variant"}
+WHY = {"v1", "variant", "marks"}
 
 
 def clusters(text: str) -> list[tuple[int, str]]:
@@ -814,7 +949,8 @@ def main() -> None:
     c.add_argument("ids", type=int, nargs="+")
     n = sub.add_parser("next")
     n.add_argument("ids", type=int, nargs="*")
-    n.add_argument("--count", type=int, default=12)
+    n.add_argument("--count", type=int, default=12, help="the most hadith in a round")
+    n.add_argument("--words", type=int, default=800, help="the most words of matn in a round, unless the first is longer")
     a = sub.add_parser("apply")
     a.add_argument("--all", action="store_true", help="apply every decision in content/matn/ again")
     args = parser.parse_args()
@@ -826,7 +962,7 @@ def main() -> None:
     elif args.cmd == "stats":
         stats(list(compared().values()))
     elif args.cmd == "next":
-        review(args.ids, args.count)
+        review(args.ids, args.count, args.words)
     elif args.cmd == "apply":
         apply(args.all)
     else:

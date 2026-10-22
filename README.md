@@ -59,7 +59,7 @@ The app shows only the book's text. v1's additions to the commentary (extra word
 
 ### Sources
 
-- **The v1 database** (`v1/app/src/main/assets/databases/riyad_salheen.db`) has 20 books, 366 chapters and 1,893 hadith. The hadith text is fully vocalized, and the commentary is one text field per hadith. Its tags come from the colors of the HTML the text was stored as:
+- **The v1 database** (`v1/app/src/main/assets/databases/riyad_salheen.db`) has 20 books, 366 chapters and 1,893 hadith. The hadith text is vocalized, though about one word in eight has no mark at all, and the commentary is one text field per hadith. Its tags come from the colors of the HTML the text was stored as:
 
   | Tag | In the hadith text | In the commentary |
   |---|---|---|
@@ -93,9 +93,10 @@ The app shows only the book's text. v1's additions to the commentary (extra word
    v1's commentary isn't brought over. The salutation becomes the glyph ﷺ, as the book prints it. The tool checks that every word of v1's matn survives the conversion.
 3. **Number the hadith as printed** (done; see [docs/numbering.md](docs/numbering.md)). Every hadith now has the book's number (1–1,898) and page, and every chapter the book's number. The places where v1 and the book don't line up one to one are in `content/numbering.json`: cross-references the book numbers, two merged v1 entries, a repeated text, and chapter 261, which v1 lacks. The mapping agrees with every number the OCR kept above a hadith, every numbered chapter heading, and the 30 audited hadith. v1's ids are kept in `old_id`. v1's short titles had slipped one entry out of step in places, so they were paired with their hadith again, and 8 titles were written for hadith without one.
 4. **Check the hadith text** (in progress; see [docs/matn.md](docs/matn.md)). It isn't transcribed, because v1 already has it with tashkeel. Instead, every hadith is read against its matn on the scan, and v1's text is corrected to the book's:
-   - **Doubts first.** `tools/matn.py` compares each matn with the OCR text of its pages, sunnah.com and the collections, and lists the words in doubt: other letters in the OCR text, marks no collection agrees with, and words vocalized as nowhere in the collections. After the pilot there were 5,751, in 1,562 of the 1,868 hadith left.
-   - **Then the whole matn.** In short Claude Code rounds (`tools/long_run.sh`), each hadith is read against a crop of its matn on the scan, starting with its doubts. The pilot on the audit's 30 hadith showed this is needed: the doubts missed 4 of the audit's differences, all case endings or wordings that no source contradicts.
+   - **Doubts first.** `tools/matn.py` compares each matn with the OCR text of its pages, sunnah.com and the collections, and lists the words in doubt: other letters in the OCR text, marks no collection agrees with, words vocalized as nowhere in the collections, and text the book prints after v1's last word, such as Nawawi's explanation of a word, which v1 sometimes lacks. Before the rounds there were 5,775, in 1,559 of the 1,868 hadith left.
+   - **Then the whole matn.** In short Claude Code rounds (`tools/long_run.sh`), each hadith is read against a crop of its matn on the scan, starting with its doubts, and every word changed is read on a zoom. The pilot on the audit's 30 hadith showed this is needed: the doubts missed 4 of the audit's differences, all case endings or wordings that no source contradicts.
    - **The book's wording is kept** where v1 follows another edition (e.g. «إلى الإسلام» for the book's «للإسلام»), unless it's a misprint. The book's single kasra where the grammar needs tanween («بن قيسِ») is a printing habit, so v1's tanween stays. Spelling that doesn't change the reading (مائة / مئة) stays as v1 has it.
+   - **Words v1 leaves without tashkeel get the book's** (the owner's decision, 2026-10-22): 12,637 words, in 1,371 hadith. A word v1 marks in part keeps its marks unless one conflicts with the book's.
    - **Every decision is kept** in `content/matn/`, one file per book, so the step can be applied again after rebuilding `content/hadith/`.
 5. **Transcribe the word meanings and benefits** from the scans, page by page, in short Claude Code sessions, with a pipeline adapted from the owner's azkar project. That project isn't in this repo. It transcribed a 470-page scanned book in rounds of 5 pages at low effort, with chapter reviews at xhigh. A round cost about $0.9 at API prices (4–10% of the 5-hour limit, under 1% of the weekly one), and a chapter review about $1.7.
    - The OCR text of each page is the draft. It is proofread against the scan, with doubtful words zoomed, and split into word meanings and benefits, including commentary shared by several hadith (`shared_with`). v1's commentary isn't used, even as a cross-check, because the audit showed it is a different text.
@@ -232,7 +233,7 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 .venv/bin/python tools/matn.py compare   # first run: downloads the book and the sources, and reads every page with Tesseract
 ```
 
-The first `compare` takes a while, because Tesseract reads the 1,278 hadith pages (10 minutes on the owner's 18 cores, longer on a laptop). After that it takes about a minute. Everything it downloads or makes goes to `.cache/`, and every tool makes again what it needs if `.cache/` is empty.
+The first `compare` takes a while, because Tesseract reads the 1,278 hadith pages (10 minutes on the owner's 18 cores, longer on a laptop). After that it takes about two minutes, and the tools make it again whenever `tools/matn.py` has changed, e.g. after a pull. Everything it downloads or makes goes to `.cache/`, and every tool makes again what it needs if `.cache/` is empty.
 
 ### Content tools
 
@@ -248,13 +249,13 @@ The first `compare` takes a while, because Tesseract reads the 1,278 hadith page
 .venv/bin/python tools/matn.py apply --all           # ...then apply step 4's decisions again
 .venv/bin/python tools/ocr.py                        # Tesseract's reading of the hadith pages, with positions
 .venv/bin/python tools/matn.py compare               # step 4: list the words in doubt in every matn not yet checked
-.venv/bin/python tools/matn.py next                  # the next 12 hadith to check, with crops of the scan
+.venv/bin/python tools/matn.py next                  # the next round's hadith (up to 12), with crops of the scan
 .venv/bin/python tools/matn.py apply                 # apply content/matn/inbox.json
 ```
 
 ### The matn check's long run
 
-Step 4's review is done in rounds (see [docs/matn.md](docs/matn.md)). `tools/long_run.sh` starts a fresh Claude Code session for each round of 12 hadith, on your Claude subscription, and waits out the usage limits between rounds:
+Step 4's review is done in rounds (see [docs/matn.md](docs/matn.md)). `tools/long_run.sh` starts a fresh Claude Code session for each round (up to 12 hadith and 800 words of matn), on your Claude subscription, and waits out the usage limits between rounds:
 
 ```sh
 nohup tools/long_run.sh >> .cache/long-run.log 2>&1 &     # start it; it keeps going after the terminal closes
