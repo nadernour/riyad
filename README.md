@@ -96,8 +96,10 @@ The app shows only the book's text. v1's additions to the commentary (extra word
    - **Doubts first.** `tools/matn.py` compares each matn with the OCR text of its pages, sunnah.com and the collections, and lists the words in doubt: other letters in the OCR text, marks no collection agrees with, words vocalized as nowhere in the collections, and text the book prints after v1's last word, such as Nawawi's explanation of a word, which v1 sometimes lacks. Before the rounds there were 5,775, in 1,559 of the 1,868 hadith left.
    - **Then the whole matn.** In short Claude Code rounds (`tools/long_run.sh`), each hadith is read against a crop of its matn on the scan, starting with its doubts, and every word changed is read on a zoom. The pilot on the audit's 30 hadith showed this is needed: the doubts missed 4 of the audit's differences, all case endings or wordings that no source contradicts.
    - **The book's wording is kept** where v1 follows another edition (e.g. «إلى الإسلام» for the book's «للإسلام»), unless it's a misprint. The book's single kasra where the grammar needs tanween («بن قيسِ») is a printing habit, so v1's tanween stays. Spelling that doesn't change the reading (مائة / مئة) stays as v1 has it.
-   - **Words v1 leaves without tashkeel get the book's** (the owner's decision, 2026-10-22): 12,637 words, in 1,371 hadith. A word v1 marks in part keeps its marks unless one conflicts with the book's.
+   - **Words v1 leaves without tashkeel get the book's** (the owner's decision, 2026-10-22): 12,637 words, in 1,371 hadith. A word v1 marks in part keeps its marks unless one conflicts with the book's, but gets the book's shaddas, which change the reading («أَن» / «أَنَّ»; the owner's decision, 2026-10-23).
+   - **The ordinals are left out.** In some chapters the book numbers the hadith in words («فالأول:», «الثاني:»). v1 keeps 29 of them, but the app shows every hadith's number, so `tools/convert_v1.py` removes them (the owner's decision, 2026-10-23).
    - **Every decision is kept** in `content/matn/`, one file per book, so the step can be applied again after rebuilding `content/hadith/`.
+   - **Then the speaker roles.** The app sets the Prophet's words apart, but v1's roles aren't checked yet, and some are wrong: a piece tagged as the Prophet's words can take in the narrator's «فقال رسول الله ﷺ:» (h. 8) or a Companion's report (h. 1617), and his words can be left untagged (h. 37). A pass of its own settles them after the rounds (see [docs/matn.md](docs/matn.md)).
 5. **Transcribe the word meanings and benefits** from the scans, page by page, in short Claude Code sessions, with a pipeline adapted from the owner's azkar project. That project isn't in this repo. It transcribed a 470-page scanned book in rounds of 5 pages at low effort, with chapter reviews at xhigh. A round cost about $0.9 at API prices (4–10% of the 5-hour limit, under 1% of the weekly one), and a chapter review about $1.7.
    - The OCR text of each page is the draft. It is proofread against the scan, with doubtful words zoomed, and split into word meanings and benefits, including commentary shared by several hadith (`shared_with`). v1's commentary isn't used, even as a cross-check, because the audit showed it is a different text.
    - A pilot on the audit's pages comes first, scored against the book's text in `content/audit/`. The rest of the book follows once the pilot's error rate is acceptable.
@@ -233,7 +235,7 @@ python3 -m venv .venv && .venv/bin/pip install -r tools/requirements.txt
 .venv/bin/python tools/matn.py compare   # first run: downloads the book and the sources, and reads every page with Tesseract
 ```
 
-The first `compare` takes a while, because Tesseract reads the 1,278 hadith pages (10 minutes on the owner's 18 cores, longer on a laptop). After that it takes about two minutes, and the tools make it again whenever `tools/matn.py` has changed, e.g. after a pull. Everything it downloads or makes goes to `.cache/`, and every tool makes again what it needs if `.cache/` is empty.
+The first `compare` takes a while, because Tesseract reads the 1,278 hadith pages (10 minutes on the owner's 18 cores, longer on a laptop). After that it takes about two minutes, and the tools make it again whenever `tools/matn.py` or `tools/numbering.py` has changed, e.g. after a pull. Everything it downloads or makes goes to `.cache/`, and every tool makes again what it needs if `.cache/` is empty.
 
 ### Content tools
 
@@ -259,9 +261,11 @@ Step 4's review is done in rounds (see [docs/matn.md](docs/matn.md)). `tools/lon
 
 ```sh
 nohup tools/long_run.sh >> .cache/long-run.log 2>&1 &     # start it; it keeps going after the terminal closes
-tail -F .cache/long-run.log                                # follow it: each round's cost, limits used and summary
+tail -F .cache/long-run.log                                # follow it: each round's cost, limits used, fixes, zooms and summary
 pkill -f '[t]ools/long_run.sh'; pkill -f '[c]laude -p Do one round'   # stop it
 ```
+
+The rounds run at medium effort. The first rounds, at low, often skipped the zooms the rules ask for: h. 21's round zoomed 4 spots for 103 words it gave marks to. So the 123 hadith they checked were checked again at medium (the owner's decision, 2026-10-23). Each round's line in the log gives its fixes and the zooms it read, so the two can be compared. To go back to low, start the run with `EFFORT=low nohup tools/long_run.sh ...`.
 
 On macOS, start it with `nohup caffeinate -i tools/long_run.sh >> .cache/long-run.log 2>&1 &`, so the Mac doesn't go to sleep while it runs. Closing the lid still puts it to sleep.
 

@@ -17,7 +17,7 @@ or the weekly one), the next round waits until it resets.
 checked prints how many hadith are left to check, and how many there are in all.
 
 report prints the log lines for a finished round: its length and cost, how much of each
-limit it used, how many hadith it checked, and its closing message.
+limit it used, how many hadith it checked, its fixes and zooms, and its closing message.
 """
 
 import argparse
@@ -25,8 +25,9 @@ import datetime
 import json
 import pathlib
 import time
+from collections import Counter
 
-from matn import checked as checked_ids, hadiths, todo
+from matn import CHECKED, checked as checked_ids, hadiths, todo
 
 NAMES = {"five_hour": "5-hour", "seven_day": "weekly"}
 
@@ -84,6 +85,33 @@ def checked(args: argparse.Namespace) -> None:
     print(len(todo()), len(hadiths()))
 
 
+def work(events: list[dict]) -> str:
+    """What a round did, to compare rounds at another effort: the fixes by reason and the misprints
+    of the hadith it wrote to the inbox (as kept in content/matn/), and the zooms it read. Every word
+    a round changes or gives marks to should be read on a zoom (docs/matn.md)."""
+    ids, zooms = set(), set()
+    for event in events:
+        if event.get("type") != "assistant":
+            continue
+        for c in (event.get("message") or {}).get("content") or []:
+            if c.get("type") != "tool_use":
+                continue
+            path = str((c.get("input") or {}).get("file_path", ""))
+            if c.get("name") == "Read" and "pages/zoom-" in path:
+                zooms.add(path)
+            elif c.get("name") == "Write" and path.endswith("content/matn/inbox.json"):
+                try:
+                    ids |= set(json.loads(c["input"].get("content", "")))
+                except (ValueError, TypeError):
+                    pass
+    kept = {i: d for f in CHECKED.glob("[0-9][0-9].json") for i, d in json.loads(f.read_text(encoding="utf-8")).items()}
+    decided = [kept[i] for i in ids if i in kept]
+    why = Counter(f[2] for d in decided for f in d.get("fix", []))
+    misprints = sum(len(d.get("misprint", [])) for d in decided)
+    return (f"fixes: {why['v1']} v1, {why['variant']} variant, {why['marks']} marks · misprints: {misprints}"
+            f" · zooms read: {len(zooms)}")
+
+
 def report(args: argparse.Namespace) -> None:
     events = read_stream(args.round)
     result = next((e for e in reversed(events) if e.get("type") == "result"), None)
@@ -112,6 +140,7 @@ def report(args: argparse.Namespace) -> None:
 
     left = int(pathlib.Path(args.checked_before).read_text(encoding="utf-8").split()[0])
     print(f"left to check: {left} → {len(todo())}; checked in all: {len(checked_ids())} of {len(hadiths())}")
+    print(work(events))
 
     if result is not None:
         print(result.get("result", ""))

@@ -10,7 +10,10 @@ over: the audit (docs/audit.md) showed it is an edited version of the book's, so
 meanings and benefits are transcribed from the scans in step 5. Text changes:
 - the salutation, which v1 writes out in several spellings, becomes the glyph ﷺ, as the book prints it;
 - Arabic presentation forms (a few v1 words are stored in them) become ordinary letters;
-- runs of spaces become one space; a number v1's source left at the start of a hadith («23-») goes.
+- runs of spaces become one space; a number v1's source left at the start of a hadith («23-») goes;
+- so does the ordinal the book prints before each hadith in some chapters («الأول:», «فالأول:»,
+  «الثاني عشر:»), which v1 keeps in 29 hadith: the app shows every hadith's number, and «فالأول»
+  goes on from the chapter's introduction, which the app doesn't show (the owner's decision, 2026-10-23).
 
 Step 3 gives every hadith the book's number and page, and every chapter the book's number,
 following content/numbering.json (tools/numbering.py and tools/chapters.py found and check it):
@@ -41,6 +44,8 @@ SALUTATION = re.compile(r"صَ?ل[َّ]*ى\s+ال?ل[َّ]*هُ?\s+عَ?لَ?ي�
 PRESENTATION = re.compile(r"[ﭐ-ﷹﷻ-﷿ﹰ-﻿]+")
 SEPARATOR = re.compile(r"\n?[ \t]*(?:_{4,}|ـ{4,})[ \t]*\n?")
 NUMBER_PREFIX = re.compile(r"^(\s*(?:</?p[0-2]>)?\s*)[0-9٠-٩]{1,4}\s*-\s*")
+ORDINAL = re.compile(r"ف?ال(?:[أا]ول|ثاني|ثالث|رابع|خامس|سادس|سابع|ثامن|تاسع|عاشر|حادي)(?:\s+عشر)?\s*:\s*")
+MARK = re.compile(r"[ً-ْٰ]")
 
 
 def clean(text: str) -> str:
@@ -74,6 +79,22 @@ def matn_pieces(matn: str) -> list[dict]:
         pieces[0]["text"] = pieces[0]["text"].lstrip()
         pieces[-1]["text"] = pieces[-1]["text"].rstrip()
     return [p for p in pieces if p["text"]]
+
+
+def drop_ordinal(text: str) -> str:
+    """A printed hadith's text without the book's ordinal at its start, matched without the marks."""
+    head = re.match(r"\s*(?:</?p[0-2]>)?\s*", text).end()
+    letters = [k for k in range(head, len(text)) if not MARK.fullmatch(text[k])]
+    found = ORDINAL.match("".join(text[k] for k in letters))
+    if not found:
+        return text
+    return text[:head] + text[letters[found.end()] if found.end() < len(letters) else len(text):]
+
+
+def without_ordinal(raw: str) -> str:
+    """v1's matn without the ordinal at the start of each printed hadith it holds."""
+    split = re.split(f"({SEPARATOR.pattern})", raw)
+    return "".join(drop_ordinal(p) if k % 2 == 0 else p for k, p in enumerate(split))
 
 
 def text_words(raw: str) -> list[str]:
@@ -228,9 +249,10 @@ def build() -> list[dict]:
     for i, h in hadiths.items():
         if i in unnumbered:
             continue
-        kept = parts(i, h["matn"], ex, hadiths)
+        raw = without_ordinal(h["matn"])
+        kept = parts(i, raw, ex, hadiths)
         pieces = [matn_pieces(k) for k in kept]
-        check_words(h["matn"], kept, pieces, i, dropped=i in {d["v1"] for d in ex["duplicated"]})
+        check_words(raw, kept, pieces, i, dropped=i in {d["v1"] for d in ex["duplicated"]})
         own = titles[i] and max(range(len(kept)), key=lambda k: title_fit(titles[i], kept[k]))
         for k, (part, ps, number) in enumerate(zip(kept, pieces, numbers[i])):
             row = rows[i]

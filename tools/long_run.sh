@@ -26,9 +26,11 @@ TOOLS="Read,Glob,Grep,Write(content/matn/**),Edit(content/matn/**),Bash(.venv/bi
 BUILTIN="Read,Glob,Grep,Edit,Write,Bash"
 # Pinned, so that changing the model or effort in another session (saved in ~/.claude/settings.json)
 # doesn't change the run. In the azkar project, Opus at low effort read scans with fewer slips than
-# at xhigh, at about a third of the cost.
+# at xhigh, at about a third of the cost. But here the first rounds at low effort skipped zooms that
+# docs/matn.md asks for (h. 21's round zoomed 4 spots for 103 words it gave marks to), so the run
+# uses medium; start it with EFFORT=low to go back. The log gives each round's fixes and zooms.
 MODEL=claude-opus-5-5
-EFFORT=${EFFORT:-low}
+EFFORT=${EFFORT:-medium}
 # Start a round only while the 5-hour window is below this percent, because a round cut off by
 # the limit loses the hadith it was working on.
 START=${START:-85}
@@ -50,9 +52,10 @@ read_limits() {
 }
 
 # The comparison takes minutes (the first time, Tesseract reads every page too), longer than a
-# round's commands may run, so it is made here: when there is none, or when tools/matn.py has
-# changed since it was made, e.g. after a pull.
-[ .cache/matn.json -nt tools/matn.py ] || .venv/bin/python tools/matn.py compare >> "$LOG" 2>&1 || exit 1
+# round's commands may run, so it is made here: when there is none, or when tools/matn.py or
+# tools/numbering.py has changed since it was made, e.g. after a pull.
+{ [ .cache/matn.json -nt tools/matn.py ] && [ .cache/matn.json -nt tools/numbering.py ]; } \
+    || .venv/bin/python tools/matn.py compare >> "$LOG" 2>&1 || exit 1
 
 idle=0
 while true; do

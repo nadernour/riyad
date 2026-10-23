@@ -10,7 +10,7 @@ Content step 4 (see the README). The matn in `content/hadith/` is v1's text (ste
    - the vocalized collections (hadith-api's six books and the Muwatta), wherever the wording matches.
 
    The comparison lists the words in doubt, and the kinds are below. A word whose letters the OCR text confirms, and whose marks no source contradicts, is not listed. The words v1 leaves without any mark are listed too, to be given the book's marks (rule 2).
-2. **Review rounds.** Every hadith is then read against a crop of its matn on the scan, starting with its doubts. The pilot on the audit's 30 hadith showed why every hadith is read in full: the doubts held all but 4 of the audit's differences in the matn, and the 4 they missed were case endings no source contradicts («عالِيَةً», «فَيَحْمَدُهُ») and a wording variant.
+2. **Review rounds.** Every hadith is then read against a crop of its matn on the scan, starting with its doubts. The pilot on the audit's 30 hadith showed why every hadith is read in full: the doubts held all but 4 of the audit's differences in the matn, and the 4 they missed were case endings no source contradicts («عالِيَةً», «فَيَحْمَدُهُ») and a wording variant. The first 12 rounds ran at low effort and zoomed few of the words they changed or gave marks to (h. 21's round: 4 zooms for 103 words), so the 123 hadith they checked (h. 1–125, the pilot's aside) were dropped and checked again at medium effort (the owner's decision, 2026-10-23).
 3. **Decisions.** Each round writes its decisions to `content/matn/inbox.json`. `tools/matn.py apply` checks them, applies them to `content/hadith/`, and keeps them in `content/matn/NN.json`. A hadith with a decision there counts as checked, and `apply` drops a new decision for it. To change one, edit it in `content/matn/NN.json`, then run `tools/convert_v1.py --force` and `tools/matn.py apply --all`.
 
 ### Kinds of doubt
@@ -27,15 +27,23 @@ Content step 4 (see the README). The matn in `content/hadith/` is v1's text (ste
 | `tashkeel` | Every collection that has the word marks a letter differently from v1. |
 | `ocr-tashkeel` | The OCR text marks a letter differently from v1, and no collection marks it as v1 does. The OCR text's marks are often wrong, but they catch v1's wrong case endings («يَسْأَلَهُ» for «يَسْأَلُهُ»). |
 | `unattested` | No collection marks the word as v1 does, its last letter aside. Most of these are v1's typos: a mark on the wrong letter («قَالَوا», «سَِمعَ»). |
+| `shadda` | v1 marks the word in part, but leaves bare a letter the OCR text or a collection doubles («أَن» for «أَنَّ», «متفقٌ» for «مُتَّفَقٌ»): give it the book's shadda (rule 2). |
 | `align` | The OCR text has under 60% of the matn's words in order: read all of it with care. |
 
 Not listed, though the full read still covers them: a `dots` difference where sunnah.com has v1's word; the OCR text's habitual misreadings, checked on the scan («عنهما» read «عنها», «النبي» read «الني» or «التي»); a word Tesseract reads as v1 has it; and a tashkeel conflict where the OCR text has v1's marks on the letters in question.
 
 `tools/matn.py stats` gives the totals. Before the rounds there were 5,775 doubts, in 1,559 of the 1,868 hadith left, and 12,637 words with no mark, in 1,371 of them.
 
-**After the rounds**, two passes of their own:
+**After the rounds**, three passes of their own:
 - **Chapter titles:** v1's titles against the headings on the scan. v1 has typos in them («وتفديمهم», «الوضو ء»), and it shortens some of the early ones.
 - **The pilot's 30 hadith** were checked before the rule on words with no mark (rule 2), so their bare words still need the book's marks. Their decisions are changed in `content/matn/NN.json` (see "Decisions" above).
+- **Shaddas in h. 126–176 and the pilot's 30.** These were checked before the rule on shaddas (rule 2, 2026-10-23), so the letters v1 leaves bare and the book doubles still need their shadda (h. 151's is done). `tools/matn.py show ID` lists them as `shadda` doubts: 31 words in 25 of h. 126–176 and 5 in the pilot's, mostly «متفقٌ» and «أَن». Each is read on a zoom, and the decisions are changed in `content/matn/NN.json`.
+- **Speaker roles.** The app sets the Prophet's words (`prophet`) apart, but the rounds don't check v1's roles (rule 4), and some are wrong:
+  - A `prophet` piece takes in the narrator's words: h. 8's «فَقَالَ رسول الله ﷺ : « مَنْ قاتَلَ …»», where the print sets «فقال رسول الله ﷺ:» outside the «». Of the 2,446 `prophet` pieces, 17 open with a verb of saying such as «قال» and 8 more have ﷺ in their first words. Some of these are right: in h. 32 the Prophet himself says «يَقولُ اللَّهُ تَعَالَى».
+  - A Companion's report is tagged `prophet`: h. 1617's «لَعَنَ رسُولُ اللَّهِ ﷺ آكِلَ الرِّبا».
+  - The Prophet's words have no role of their own: all of h. 37 is one `narration` piece. 88 `narration` and `speech` pieces, in 81 hadith, have «» next to the Prophet's name. Some are his words, others a Companion's account, such as h. 6's «جَاءَنِي رسولُ اللهِ ﷺ يَعُودُنِي».
+
+  The print's «» help but don't settle it, because they also quote a Companion's report (h. 1617) and the words Nawawi explains (h. 37's «الوَصَبُ»). So a tool will list the pieces whose roles don't fit the «» and the verbs of saying around them, and each is settled by reading who is speaking. The decisions go in `content/`, like the matn's, so that they're applied again after a rebuild.
 
 ## The rules
 
@@ -44,15 +52,18 @@ The book is the reference. v1's text stays wherever the book agrees with it.
 1. **Letters.** Where the book's words differ from v1's, put the book's.
    - `"v1"`: v1's mistake, such as a wrong letter, words run together or split («يارسول», «أَ نَّ»), or a word added or dropped.
    - `"variant"`: v1 follows another edition, so v1's reading is also known. sunnah.com often has it too.
-   - A misprint in the book (a dropped word its own commentary shows, an impossible form) isn't copied. Keep v1's correct text and record the misprint (below).
-2. **Tashkeel.** Where the book and v1 both mark a letter and the marks differ, put the book's (`"v1"` if v1's mark is wrong, `"variant"` if both are good Arabic).
+   - A misprint in the book (a dropped word its own commentary shows, an impossible form) isn't copied. Keep v1's correct text and record the misprint (below). Before taking a word for a misprint, read it on a zoom and compare it with a nearby word whose spelling is certain: the OCR text drops letters too. In h. 21 it reads «يَحْزُنِي», but the zoom shows a dot over each nun of «يَحْزُنُنِي»: two, as in «يُؤَنِّبُونَنِي» (p. 44), not one, as in «يُبَشِّرُنِي» (p. 47).
+2. **Tashkeel.** Where the book and v1 both mark a letter and the marks differ, put the book's (`"v1"` if v1's mark is wrong, `"variant"` if both are good Arabic). A mark that makes an impossible form is a misprint (rule 1), not a `variant`: in h. 30 the print has «فَإِنَ آمَنْتَ», a fatha on the nun of the conditional «إنْ».
    - **A word v1 leaves bare,** with no mark at all, is written as the book prints it, with all its marks (`"marks"`; the owner's decision, 2026-10-22). `next` lists these words. Where the book leaves the word bare too, nothing changes. A word v1 marks in part keeps its marks: the book's marks on the letters v1 leaves bare aren't added.
-   - The print often puts a single kasra where the grammar needs tanween (e.g. «بْنِ قَيْسِ», «بِإِسْنادِ حَسَنٍ»). That's a printing habit, so keep v1's tanween, and write the tanween in a bare word you give marks to.
+   - **Except a shadda.** A letter the book doubles and v1 leaves bare, in a word v1 marks in part, gets the book's shadda with its vowel, because without it the word reads otherwise («أَن» / «أَنَّ», «متفقٌ» / «متَّفقٌ»; `"v1"`; the owner's decision, 2026-10-23). In h. 151, v1's «الأُسيدِيِّ» reads al-Usaydi, but the print has «الأُسَيِّدِيِّ», as Nawawi's note there spells it out, so it becomes «الأُسيِّدِيِّ». `next` lists these as `shadda` doubts. A sun letter after the article («النَّاس») and the lam of «اللَّه» read the same either way, so they stay as v1 has them.
+   - The print often puts a single kasra where the grammar needs tanween (e.g. «بْنِ قَيْسِ», «بِإِسْنادِ حَسَنٍ»). That's a printing habit, so keep v1's tanween, and write the tanween in a bare word you give marks to. Where v1 has the single kasra too, write the tanween (`"v1"`, h. 23's «مِنْ ذَهَبٍ»).
    - In this print a kasra with a shadda is set under the shadda, above the letter, so on a zoom it can look like a damma («المُزَنِيِّ», h. 14). A damma sits on top of the shadda («قَطُّ», h. 20). Before taking a case ending for a misprint, compare its mark with a word on the same page whose case is certain.
    - Where the book leaves a letter bare, keep v1's mark, unless it is plainly wrong (a mark on the wrong letter, «يْومٍ» for «يَوْمٍ»). Then write the word correctly, as the collections have it (`"v1"`).
 3. **A word you change or give marks to** is written as the book prints it, with all its marks, read on a zoom.
-4. **Not checked:** spelling that doesn't change the reading, where v1's spelling stays (مائة / مئة, داود / داوود, السماوات / السموات, الزنا / الزنى, يا بن / يا ابن, final ى / ي, هكذا / هٰكذا); punctuation; and the speaker roles. The marks on such a word are still checked (rule 2): where the book prints «سَبْعِ مِئَةِ» and v1 «سَبْعِمَائِةِ», write «سَبْعِمِائَةِ». But remove a stray mark that breaks the text, such as a lone «, or a verse reference in brackets («[آل عمران: 77]»), which the book gives in a footnote.
+4. **Not checked:** spelling that doesn't change the reading, where v1's spelling stays (مائة / مئة, داود / داوود, السماوات / السموات, الزنا / الزنى, يا بن / يا ابن, final ى / ي, هكذا / هٰكذا, أن لا / ألّا); punctuation; and the speaker roles, which a pass of their own checks after the rounds (above). The marks on such a word are still checked (rule 2): where the book prints «سَبْعِ مِئَةِ» and v1 «سَبْعِمَائِةِ», write «سَبْعِمِائَةِ». But remove a stray mark that breaks the text, such as a lone «, or a verse reference in brackets («[آل عمران: 77]»), which the book gives in a footnote.
 5. **The whole matn** is checked: the narrator, the hadith, Nawawi's source line («متفق عليه», «رواه الترمذي وقال: حديث حسن»), and his explanation of words after it («المِرْطُ: كساء …»). The book sometimes prints more of it than v1 has, such as Nawawi's whole explanation (h. 145) or another narration (`after` doubts): add what v1 lacks, as printed (`"v1"`).
+   - **A source line the print leaves out** stays as v1 has it. Where the book's commentary shows it, the print dropped it: record a misprint (h. 31, whose commentary gives the hadith from both al-Bukhari and Muslim for v1's «متفق عليه»). Otherwise say so in a note (h. 143, whose commentary cites only al-Bukhari).
+   - **Not the ordinals.** In some chapters the book numbers the hadith in words («فالأول:», «الثاني:», «الثاني عشر:»), after «وأما الأحاديث» before the first. They aren't part of the matn: the app shows every hadith's number, and «فالأول» goes on from the chapter's introduction, which the app doesn't show. `tools/convert_v1.py` removes the 29 v1 has, and they aren't added where v1 lacks them (the owner's decision, 2026-10-23).
 6. **Hadith not in v1** (153, 172, 1126 and 1548) were transcribed from the scan in step 3. Check every mark of theirs at zoom.
 7. **If a word can't be read** even zoomed, keep v1's and say so in a note.
 
@@ -77,7 +88,7 @@ The book is the reference. v1's text stays wherever the book agrees with it.
 
 ## One round
 
-`tools/long_run.sh` starts a fresh Claude Code session for each round, with the prompt "Do one round of the matn check: follow docs/matn.md exactly." (README, "The matn check's long run"). A round checks up to 12 hadith, fewer when they're long (800 words of matn in all), and stops. Rounds are kept short because every step re-reads everything the session has read so far.
+`tools/long_run.sh` starts a fresh Claude Code session for each round, with the prompt "Do one round of the matn check: follow docs/matn.md exactly." (README, "The matn check's long run"). A round checks up to 12 hadith, fewer when they're long (800 words of matn in all), and stops. A hadith longer than that is a round of its own (h. 21, 30): that's expected, so don't report it. Rounds are kept short because every step re-reads everything the session has read so far.
 
 1. **Read** this file and nothing else that the round doesn't need. The tools' usage is here, so don't read their source.
 2. If `content/matn/inbox.json` exists, an earlier round didn't finish. Run `.venv/bin/python tools/matn.py apply`, fix what it reports in the inbox, and run it again until it applies. Then go on.

@@ -36,6 +36,8 @@ A tashkeel doubt is accepted (`ocr`) when the OCR text has v1's marks on every l
 - after: the OCR text has words printed like the matn, vocalized, after v1's last word and before
   the commentary: the book may print more than v1 has (matn_after).
 - stray: a mark on no letter in v1's text, to be removed.
+- shadda: v1 marks the word in part but leaves bare a letter that the OCR text or a collection
+  doubles (undoubled): the book's shadda is added.
 `next` also lists v1's words with no mark at all, which are given the book's marks.
 """
 
@@ -43,6 +45,7 @@ import argparse
 import difflib
 import json
 import re
+import statistics
 import unicodedata
 from collections import Counter, defaultdict
 from functools import cache
@@ -328,6 +331,30 @@ def letter_items(v1: list[dict], ocr: list[tuple[str, str]], sunnah: list[bool])
     return items, same
 
 
+SUN = set("تثدذرزسشصضطظلن")
+
+
+def undoubled(v1: str, other: str) -> list[int]:
+    """The letters of a v1 word marked in part that v1 leaves bare and another text doubles: a
+    shadda changes the reading («أَن» / «أَنَّ»), so the book's is added (rule 2). Left out: a sun
+    letter after the article and the lam of «الله», which read the same either way, and a letter
+    next to one with v1's shadda («إلاَّ», where v1 puts the lam's shadda on the alif)."""
+    mv, mo = marks(v1), marks(other)
+    if len(mv) != len(mo) or not any(mv):
+        return []
+    letters = LETTER.findall(unicodedata.normalize("NFC", v1))
+
+    def assimilated(j):  # «النَّاس», «للنَّاس», «اللَّه», «للَّه»
+        before = "".join(letters[:j])
+        return letters[j] in SUN and bool(re.fullmatch(r"[وفبكل]?ال|[وف]?لل", before)
+                                          or letters[j] == "ل" and re.fullmatch(r"[وف]?ل", before))
+
+    def next_to(j, m):
+        return any(SHADDA in m[i] for i in (j - 1, j + 1) if 0 <= i < len(m))
+    return [j for j in range(len(mv)) if not mv[j] and SHADDA in mo[j]
+            and not assimilated(j) and not next_to(j, mv) and not next_to(j, mo)]
+
+
 def tashkeel_items(v1: list[dict], same: list, forms: list[list]) -> list[dict]:
     """The words whose tashkeel is in doubt, among those whose letters the OCR text confirms."""
     vocab = vocabulary()
@@ -336,6 +363,10 @@ def tashkeel_items(v1: list[dict], same: list, forms: list[list]) -> list[dict]:
         o = same[k]
         if t.get("sal") or o is None or not any(marks(t["w"])):
             continue
+        doubling = [(src, w) for src, w in forms[k] if undoubled(t["w"], w)]
+        if doubling or undoubled(t["w"], o):
+            items.append({"k": k, "n": 1, "kind": "shadda", "v1": t["w"], "ocr": o, "collections": doubling[:3],
+                          "doubt": True})
         against = [(src, w) for src, w in forms[k] if conflicts(t["w"], w)]
         if against and len(against) == len(forms[k]):
             letters = sorted({j for _, w in against for j in conflicts(t["w"], w)})
@@ -394,7 +425,17 @@ def tesseract_window(span: list[int] | None, page: int) -> tuple[list[dict], dic
     around it. The OCR text and Tesseract both read the commentary well, so their readings of the
     pages are aligned: the window runs from the last run of three words they share before the matn
     (in the OCR text, `span` of numbering.book_words()) to the first run after it. The anchors are
-    {page, y} of the bottom of that last run and the top of that first run ({} if there is none)."""
+    {page, y, far}: y is the bottom of that last run and the top of that first run, and far the
+    other edge of its printed line ({} if there is none). Each is the median over the run's words on
+    that line, because Tesseract can box a word with ink from the line next to it: on p. 105 the
+    commentary's «الحديث» reaches up into the matn's last line (h. 73), and on p. 167 most of the
+    words of the commentary's first line do (h. 143), so y can lie inside the matn. far doesn't."""
+    def anchor(run: list[dict], above: bool) -> dict:
+        near = run[-1] if above else run[0]  # the word next to the matn
+        line = [w["box"] for w in run if w["page"] == near["page"] and w["line"] == near["line"]]
+        top, bottom = statistics.median(b[1] for b in line), statistics.median(b[3] for b in line)
+        return {"page": near["page"], "y": bottom if above else top, "far": top if above else bottom}
+
     if not span:
         return [w for n in (page, page + 1) for w in tesseract_page(n)], {}, {}
     where = book_words()[1]
@@ -409,8 +450,8 @@ def tesseract_window(span: list[int] | None, page: int) -> tuple[list[dict], dic
     after = [b for b in blocks if a0 + b.a >= span[1]]
     lo = before[-1].b + before[-1].size if before else 0
     hi = after[0].b if after else len(tess)
-    top = {"page": tess[lo - 1]["page"], "y": tess[lo - 1]["box"][3]} if before else {}
-    bottom = {"page": tess[hi]["page"], "y": tess[hi]["box"][1]} if after else {}
+    top = anchor(tess[before[-1].b:lo], True) if before else {}
+    bottom = anchor(tess[hi:after[0].b + after[0].size], False) if after else {}
     return (tess[lo:hi] if lo < hi else tess), top, bottom
 
 
@@ -458,16 +499,23 @@ def down_the_page(match: list) -> set[int]:
 
 
 CROP_DPI = 230     # enough to read the matn's tashkeel; a full-width crop is then about 1,430 px wide
+SEEN = 3           # words of the matn Tesseract must find on a page for its place there to count
+
+
+def text_rows(ink) -> list[int]:
+    """The ink of each pixel row of a page, less the ink that runs down the page, such as the
+    binding's shadow at the side of a scan (p. 1247): a row counts only its ink above the least of
+    the rows within a line of it."""
+    size = len(ink.rows)
+    reach = int(LINE * size)
+    return [count - min(ink.rows[max(0, r - reach): r + reach + 1]) for r, count in enumerate(ink.rows)]
 
 
 def page_lines_ink(ink) -> list[tuple[float, float]]:
-    """The printed lines of a page as (top, bottom) shares of the page, from its rows of ink. Ink
-    that runs down the page, such as the binding's shadow at the side of a scan (p. 1247), is taken
-    out first: a row counts only its ink above the least of the rows within a line of it. A band of
-    ink at the top or bottom edge of the scan (p. 30) is not a line."""
-    size = len(ink.rows)
-    reach = int(LINE * size)
-    rows = [count - min(ink.rows[max(0, r - reach): r + reach + 1]) for r, count in enumerate(ink.rows)]
+    """The printed lines of a page as (top, bottom) shares of the page, from its rows of ink
+    (text_rows). A band of ink at the top or bottom edge of the scan (p. 30) is not a line."""
+    rows = text_rows(ink)
+    size = len(rows)
     least = (max(rows) or 1) * 0.01
     out, start = [], None
     for r, count in enumerate(rows + [0]):
@@ -499,32 +547,61 @@ def text_bottom(page, ink, below: float) -> float:
     return lines[-1][0] - 0.005 if lines else 1.0
 
 
-def cut(ink, lo: float, hi: float) -> float:
-    """The row with the least ink between two heights on the page (shares of the page)."""
-    size = len(ink.rows)
+def cut(rows: list[int], lo: float, hi: float) -> float:
+    """Where to cut the page between two heights (shares of the page): in the middle of the widest
+    band of rows with the least ink (text_rows). A thin blank band can run inside a line too, such
+    as between its marks and its letters (p. 167), so the widest, the gap between two lines, wins."""
+    size = len(rows)
     a, b = max(0, int(lo * size)), min(size - 1, int(hi * size))
-    return min(range(a, b + 1), key=lambda r: (ink.rows[r], r)) / size if a <= b else lo
+    if a > b:
+        return lo
+    least = min(rows[a:b + 1]) + (max(rows) or 1) * 0.01
+    bands, start = [], None
+    for r in range(a, b + 2):
+        if r <= b and rows[r] <= least:
+            start = r if start is None else start
+        elif start is not None:
+            bands.append((start, r))
+            start = None
+    start, end = max(bands, key=lambda band: band[1] - band[0])
+    return (start + end - 1) / 2 / size
 
 
-def matn_region(doc, first: int, last: int, top: dict, bottom: dict) -> list[tuple[int, float, float]]:
+def most(seen: dict[int, list[float]], n: int, test) -> bool:
+    """Most of the matn's words Tesseract found on page n pass the test, and there are enough of
+    them (SEEN) to go by: Tesseract reads the matn font poorly, and a word or two can be the same
+    words printed elsewhere (h. 772)."""
+    ys = seen.get(n, [])
+    return len(ys) >= SEEN and 2 * sum(map(test, ys)) > len(ys)
+
+
+def matn_region(doc, first: int, last: int, top: dict, bottom: dict,
+                 seen: dict[int, list[float]]) -> list[tuple[int, float, float]]:
     """Where the matn is printed: (page, top, bottom) on each page from first to last. It starts
     below the commentary before it (`top`, from tesseract_window) and ends above the commentary
     after it (`bottom`), cut at the gaps between lines; where it runs over a page, it goes to the
-    end of the page's text and starts again at the top of the next page's."""
+    end of the page's text and starts again at the top of the next page's. A chapter's verses can
+    have their footnotes in the middle of the page, with its first hadith below them (h. 169, 175):
+    where most of the words of the matn Tesseract found on the page (`seen`, their heights) are
+    below the footnotes' rule, the matn starts at the rule and ends at the end of the page's text."""
     from zoom import Ink
     out = []
     for n in range(first, last + 1):
         page = doc[n - 1]
         ink = Ink(page)
-        lines = page_lines_ink(ink)
-        if top and top["page"] == n:
-            y0 = cut(ink, top["y"] - 0.005, top["y"] + LINE / 2)
+        rows, lines = text_rows(ink), page_lines_ink(ink)
+        if top and top["page"] == n:  # the gap below the commentary's line, which y may reach past
+            y0 = cut(rows, min((top["far"] + top["y"]) / 2, top["far"] + 0.015), top["y"] + LINE / 4)
         else:
             y0 = max(0.0, (lines[0][0] if lines else 0.0) - 0.005)
+        if n in seen:
+            rule = text_bottom(page, ink, y0)
+            if most(seen, n, lambda y: y > rule + LINE):
+                y0 = rule
         if bottom and bottom["page"] == n:
-            y1 = cut(ink, bottom["y"] - LINE / 2, bottom["y"] + 0.005)
+            y1 = cut(rows, bottom["y"] - LINE / 4, max((bottom["far"] + bottom["y"]) / 2, bottom["far"] - 0.015))
         else:
-            y1 = text_bottom(page, ink, y0)
+            y1 = text_bottom(page, ink, max([y0] + seen.get(n, [])))
         if y1 - y0 > 0.01:
             out.append((n, y0, y1))
         elif first < n < last and lines:  # the matn fills this page: it is never left out
@@ -534,27 +611,40 @@ def matn_region(doc, first: int, last: int, top: dict, bottom: dict) -> list[tup
 
 def crop_region(doc, h: dict) -> list[tuple[int, float, float]]:
     """Where hadith h's matn is printed: (page, top, bottom) on each of its pages."""
-    found = locate(h, tokens(h["text"]))
+    v1 = tokens(h["text"])
+    found = locate(h, v1)
     span = found["span"]
     if span:  # down to the end of what the book prints after v1's last word (matn_after)
         span = [span[0], span[1] + matn_after(h, span[1])]
-    _, top, bottom = tesseract_window(span, h["page"])
+    window, top, bottom = tesseract_window(span, h["page"])
+    seen = defaultdict(list)
+    for w in tesseract_check(v1, window)["match"]:
+        if w is not None:
+            seen[w["page"]].append((w["box"][1] + w["box"][3]) / 2)
     where = book_words()[1]
     first, last = (where[span[0]][0], where[span[1] - 1][0]) if span else (h["page"], h["page"])
     # The words matched around the matn can be the same words printed elsewhere: a match on a page
-    # after the matn's first page isn't above it (h. 837), and matches that cross, or leave no room
-    # for the matn between them, aren't around it (h. 424). The page's edge is used instead.
+    # after the matn's first page isn't above it (h. 837), matches that cross, or leave no room for
+    # the matn between them, aren't around it (h. 424), and a match below most of the matn's words
+    # Tesseract found on its page isn't above it (or above them, after it): h. 1820's source note
+    # repeats 1819's, and was taken for the one above. The page's edge is used instead.
     if top and top["page"] > first:
         top = {}
     if bottom and bottom["page"] < last:
         bottom = {}
     if top and bottom and top["page"] == bottom["page"] and bottom["y"] - top["y"] < LINE:
         top, bottom = {}, {}
+    if top and most(seen, top["page"], lambda y: y < top["y"]):
+        top = {}
+    if bottom and most(seen, bottom["page"], lambda y: y > bottom["y"]):
+        bottom = {}
     if top:  # opening words the OCR text lacks are above where it starts
-        top = {**top, "y": max(0.0, top["y"] - LINE * (found["head"] // 6))}
+        up = min(top["far"], LINE * (found["head"] // 6))
+        top = {**top, "y": top["y"] - up, "far": top["far"] - up}
     if bottom:
-        bottom = {**bottom, "y": min(1.0, bottom["y"] + LINE * (found["tail"] // 6))}
-    return matn_region(doc, first, last, top, bottom) or [(h["page"], 0.0, 1.0)]
+        down = min(1 - bottom["far"], LINE * (found["tail"] // 6))
+        bottom = {**bottom, "y": bottom["y"] + down, "far": bottom["far"] + down}
+    return matn_region(doc, first, last, top, bottom, seen) or [(h["page"], 0.0, 1.0)]
 
 
 def crops(i: int) -> list[str]:
@@ -724,8 +814,10 @@ def compare() -> list[dict]:
 
 def compared() -> dict[int, dict]:
     """The last comparison by hadith, made again if there is none (e.g. in a fresh clone) or this
-    tool has changed since it was made (e.g. after a pull)."""
-    fresh = OUT.exists() and OUT.stat().st_mtime > (ROOT / "tools" / "matn.py").stat().st_mtime
+    tool or numbering.py, which places each matn in the OCR text, has changed since it was made
+    (e.g. after a pull)."""
+    made = OUT.stat().st_mtime if OUT.exists() else 0
+    fresh = all(made > (ROOT / "tools" / name).stat().st_mtime for name in ("matn.py", "numbering.py"))
     rows = json.loads(OUT.read_text(encoding="utf-8")) if fresh else compare()
     return {r["id"]: r for r in rows}
 
@@ -739,7 +831,7 @@ def stats(rows: list[dict]) -> None:
     print()
     print("kind         doubts  accepted (by Tesseract)")
     for kind in ("align", "after", "missing", "extra", "split", "dots", "prefix", "other", "stray", "tashkeel",
-                 "unattested", "ocr-tashkeel"):
+                 "unattested", "ocr-tashkeel", "shadda"):
         k = [d for d in items if d["kind"] == kind]
         print(f"{kind:12} {sum(d['doubt'] for d in k):6} {sum(not d['doubt'] for d in k):9}"
               f" ({sum(bool(d.get('tesseract')) for d in k)})")

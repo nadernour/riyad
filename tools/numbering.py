@@ -71,6 +71,7 @@ def page_start() -> dict[int, int]:
 
 SEPARATORS = {"رواه", "اخرجه", "لغه", "افاد", "افادت", "تقدم"}  # words of a source note or commentary
 BREAK = 12  # OCR words inside a hadith's span, not matched, that may hide another hadith
+CONTINUES = 3  # words of the matn the OCR text may lose where it goes on after such a gap
 
 
 def align(h: dict, page: int, after: int = 0, last_page: int | None = None) -> dict:
@@ -110,7 +111,10 @@ def align(h: dict, page: int, after: int = 0, last_page: int | None = None) -> d
 
 def trim(blocks: list) -> list:
     """Drop matches cut off from the rest by BREAK or more OCR words and holding a small share
-    of the matched words: stray matches of common phrases in the hadith before or after."""
+    of the matched words: stray matches of common phrases in the hadith before or after. But a
+    group of BREAK matched words or more that takes the matn up where the group next to it stops
+    (CONTINUES) is kept, however small its share: a long matn runs on over a page's footnotes,
+    which are a gap in the OCR text only (h. 21, 1810)."""
     def clusters(bs):
         out = [[bs[0]]] if bs else []
         for a, b in zip(bs, bs[1:]):
@@ -118,14 +122,24 @@ def trim(blocks: list) -> list:
                 out.append([])
             out[-1].append(b)
         return out
+
+    def size(g):
+        return sum(b.size for b in g)
+
+    def goes_on(g, h):  # h starts at most CONTINUES words of the matn after g ends
+        return h[0].b - (g[-1].b + g[-1].size) <= CONTINUES
     groups = clusters(blocks)
     if not groups:
         return []
     total = sum(b.size for b in blocks)
-    keep = [g for g in groups if sum(b.size for b in g) >= 0.2 * total]
+    keep = [g for g in groups if size(g) >= 0.2 * total]
     if not keep:
-        keep = [max(groups, key=lambda g: sum(b.size for b in g))]
+        keep = [max(groups, key=size)]
     first, last = groups.index(keep[0]), groups.index(keep[-1])
+    while first > 0 and size(groups[first - 1]) >= BREAK and goes_on(groups[first - 1], groups[first]):
+        first -= 1
+    while last + 1 < len(groups) and size(groups[last + 1]) >= BREAK and goes_on(groups[last], groups[last + 1]):
+        last += 1
     return [b for g in groups[first:last + 1] for b in g]
 
 
