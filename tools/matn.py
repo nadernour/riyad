@@ -839,10 +839,32 @@ def find(text: str, part: str) -> list[tuple[int, int]]:
     return hits
 
 
+def cut_points(old: str, edges: list[int], new: str) -> list[int]:
+    """Where to cut `new` so that it splits as `old` splits at `edges` (offsets in `old`): the two
+    are aligned letter by letter, ignoring the marks. Words added at an edge go to the piece before it,
+    and a word the fix joins over an edge («أَ نَّ» → «أَنَّ», h. 913) to the piece after it."""
+    o, n = clusters(old), clusters(new)
+    opcodes = difflib.SequenceMatcher(None, [c[0] for _, c in o], [c[0] for _, c in n], autojunk=False).get_opcodes()
+    cuts = []
+    for edge in edges:
+        j = next((i for i, (k, _) in enumerate(o) if k >= edge), len(o))  # the first letter after the edge
+        d = len(n)
+        for tag, i1, i2, j1, j2 in opcodes:
+            if i1 <= j < i2:
+                d = j1 + (j - i1) if tag == "equal" else j1 + round((j - i1) * (j2 - j1) / (i2 - i1))
+                break
+        cut = n[d][0] if d < len(n) else len(new)
+        while 0 < cut < len(new) and all(LETTER.fullmatch(c) or MARK.fullmatch(c) for c in new[cut - 1:cut + 1]):
+            cut -= 1
+        cuts.append(cut)
+    return cuts
+
+
 def fix_matn(matn: list[dict], old: str, new: str, again: bool = False) -> bool:
-    """Replace `old` with `new` in the matn. `old` must occur exactly once; where it runs over two
-    pieces or more (speaker roles), `new` goes to the first of them. When a decision is applied
-    `again`, a fix whose `old` isn't there but whose `new` is was applied before: returns False."""
+    """Replace `old` with `new` in the matn. `old` must occur exactly once. Where it runs over two
+    pieces or more (speaker roles), each piece gets its own part of `new`, so that every word keeps
+    its role. When a decision is applied `again`, a fix whose `old` isn't there but whose `new` is
+    was applied before: returns False."""
     joined = "".join(p["text"] for p in matn)
     hits = find(joined, old)
     if len(hits) > 1:
@@ -852,23 +874,20 @@ def fix_matn(matn: list[dict], old: str, new: str, again: bool = False) -> bool:
             return False
         raise ValueError(f"«{old}» is not in the matn")
     a, b = hits[0]
-    pos = 0
-    for k, p in enumerate(matn):  # the pieces the replaced text starts and ends in
-        end = pos + len(p["text"])
-        if pos <= a < end or (a == end and k == len(matn) - 1):
-            first, a_in = k, a - pos
-        if pos < b <= end:
-            last, b_in = k, b - pos
-            break
-        pos = end
-    if first == last:
-        matn[first]["text"] = matn[first]["text"][:a_in] + new + matn[first]["text"][b_in:]
-    else:
-        matn[first]["text"] = matn[first]["text"][:a_in] + new
-        matn[last]["text"] = matn[last]["text"][b_in:]
-        for k in range(first + 1, last):
-            matn[k]["text"] = ""
-    matn[:] = [p for p in matn if p["text"]]
+    starts, pos = [], 0
+    for p in matn:
+        starts.append(pos)
+        pos += len(p["text"])
+    span = [k for k, s in enumerate(starts) if s < b and s + len(matn[k]["text"]) > a]
+    cuts = cut_points(joined[a:b], [starts[k] - a for k in span[1:]], new)
+    for k, lo, hi in zip(span, [0] + cuts, cuts + [len(new)]):
+        text, s = matn[k]["text"], starts[k]
+        matn[k]["text"] = text[:max(a - s, 0)] + new[lo:hi] + text[min(b - s, len(text)):]
+    for k in reversed(span):  # a piece left with no words: its spaces go to the piece before it
+        if not matn[k]["text"].strip():
+            if k > 0:
+                matn[k - 1]["text"] += matn[k]["text"]
+            del matn[k]
     return True
 
 
