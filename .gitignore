@@ -2,6 +2,9 @@
 .idea/
 GEMINI.md
 
+# the passwords of the signing key v1/riyad_keystore.jks: never in git
+local.properties
+
 # the content pipeline's downloads, scans, page images, OCR and Python environment (book_data/README.md)
 .cache/
 .venv/

@@ -9,6 +9,8 @@
 ## Decisions the owner has made
 
 - **v2's text is the book's.** It is *Riyad al-Salihin* with *Nuzhat al-Muttaqin*'s word meanings and benefits. None of v1's commentary is used: the audit showed it is an edited version of the book's, with some meanings changed. v2 isn't released with v1's commentary, not even for a while.
+- **The hadith text is v1's, corrected to the book's.** Every letter, and every mark that conflicts with the book's, is the book's, and the words v1 leaves bare get the book's marks; v1's other marks, its spelling and its punctuation stay. Copying all of the book's marks, spelling and punctuation was weighed and dropped (2026-10-25): it would roughly double the usage per hadith, and what it adds is fuller vocalization, not correctness (`book_data/README.md`, step 4).
+- **No backward compatibility with v1** (2026-10-25). v2 keeps v1's Google Play listing, package and key, so it reaches v1's users as an update, but v1 users' saved data (bookmarks, last hadith read, settings) isn't carried over. v2's spec builds on v1's: v1's code, in `v1/`, is the reference for how its features work.
 - **The order is content, then the app, then the release.** Getting the content right comes first, and a late release is fine, so release timing isn't a trade-off to raise. The collaborator builds the app meanwhile, from the database as the content stands (2026-10-25).
 - **The app is React Native with Expo**, so it runs on Android and iPhone, and EAS builds the iPhone app without a Mac.
 - **v1 stays on `master`**, tagged `v1.0.0` (live on Google Play). v2 is developed on the branch `v2`.

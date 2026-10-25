@@ -6,8 +6,8 @@
 
 | | |
 |---|---|
-| Books and chapters | The 20 books (كتاب) and their 367 chapters (باب), with v1's titles. A pass after content step 4 corrects their typos. |
-| Hadith | All 1,898, with the book's numbers, v1's short titles and the page where each starts. |
+| Books and chapters | The 20 books (كتاب) and their 367 chapters (باب), with v1's titles for now: a pass after content step 4 checks them against the book's headings. |
+| Hadith | All 1,898, with the book's numbers, their short titles and the page where each starts. |
 | Hadith text | 164 hadith have been checked against the printed book. The rest have v1's text, which content step 4 is checking now. |
 | Speaker roles | v1's, not checked yet, so some pieces have the wrong role until a pass after step 4. |
 | Word meanings, benefits, narrators | Empty tables, filled when content steps 5 and 6 transcribe them. |
@@ -16,7 +16,7 @@ Each new build replaces the file, and the `info` table says which build it is. B
 
 ## Tables
 
-`PRAGMA user_version` is the schema version, now 1. It rises whenever the tables change.
+`PRAGMA user_version` is the schema version, now 2. It rises whenever the tables change. Version 2 (2026-10-25) dropped `hadith.old_id` and the `v1_ids` table, because v1 users' saved data isn't carried over.
 
 **`info`**: `key` and `value` (text):
 
@@ -48,9 +48,8 @@ Each new build replaces the file, and the `info` table says which build it is. B
 |---|---|
 | `id` | The hadith number printed in the book, 1–1898, with no gaps. It never changes, so bookmarks can store it. |
 | `book_id`, `chapter_id` | Its book and chapter |
-| `title` | The short title shown above it. It comes from v1; the book doesn't have one. |
+| `title` | The short title shown above it: a phrase of the hadith, taken from its text with the text's marks, e.g. «إنَّما الأَعمالُ بالنِّيَّات». For 447 hadith it's still v1's title, which isn't a phrase of the text, until a pass after content step 4 picks one. |
 | `page` | The page of the printed book where it starts |
-| `old_id` | v1's id for it, or `NULL` for the 4 hadith v1 lacks |
 | `search_text` | The text, simplified for search (see "Search") |
 
 **`matn_pieces`**: the hadith text, as pieces in reading order, each with its speaker.
@@ -68,8 +67,6 @@ Each new build replaces the file, and the `info` table says which build it is. B
 **`narrators`**: the narrator biographies: `id`, `name`, `biography` and `page`. Empty for now.
 
 How a term is linked to its words in the text (tap a word) and a narrator to their name (tap a narrator) comes with content steps 5 and 6. They will most likely be ranges of the text, so a renderer that can style any range of a hadith's text, not just whole pieces, will take them without a rewrite.
-
-**`v1_ids`**: every v1 hadith id, 1–1893, with the hadith to open for it (`v1_id`, `hadith_id`), to carry v1 users' bookmarks and last hadith read over (see "Upgrading v1 users" in the root README). Where one v1 entry holds two printed hadith, it opens the first, and v1's one entry the book doesn't number opens the hadith before it.
 
 **`hadith_search`**: a full-text index (SQLite FTS5) of `hadith.search_text`. Its `rowid` is the hadith's `id`.
 
@@ -93,10 +90,10 @@ The next and previous hadith are `id + 1` and `id - 1`.
 
 ## Search
 
-v1 searches the hadith text for any part of a word, ignoring the tashkeel, or finds a hadith by its number. v2 does the same, and also ignores the forms of alif, ta marbuta and alif maqsura:
+Search finds any part of a word in the hadith text, ignoring the tashkeel and the forms of alif, ta marbuta and alif maqsura, or opens a hadith by its number:
 
 1. A query of digits only opens the hadith with that number.
-2. Otherwise, simplify the query (below). If it has 3 letters or more, search with it in double quotes, which finds it anywhere in a text, even inside a word, as v1 does:
+2. Otherwise, simplify the query (below). If it has 3 letters or more, search with it in double quotes, which finds it anywhere in a text, even inside a word:
 
    ```sql
    SELECT rowid FROM hadith_search WHERE hadith_search MATCH '"' || ? || '"' ORDER BY rowid LIMIT 100;

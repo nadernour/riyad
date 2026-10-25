@@ -64,7 +64,7 @@ The content is checked in [book_data/](book_data/README.md), on the owner's Debi
 - **Arabic only, right to left,** with Amiri for the hadith text and Cairo for the interface, as in v1.
 - **Room for tashkeel:** iOS clips the marks when the line height is too tight.
 
-**Why not Kotlin Multiplatform?** It would keep about half of v1's code and need no data migration. But building and testing the iPhone app needs a Mac, and the owner works on Linux. Also, on iOS it draws its own text instead of using the phone's, which matters in an app that is all text.
+**Why not Kotlin Multiplatform?** It would keep about half of v1's code. But building and testing the iPhone app needs a Mac, and the owner works on Linux. Also, on iOS it draws its own text instead of using the phone's, which matters in an app that is all text.
 
 ### The database
 
@@ -72,18 +72,12 @@ The app reads all its text from `database/riyad.db`, which [database/README.md](
 
 **User data** (bookmarks, last hadith read, settings) is stored apart from the database, so content updates never touch it.
 
-### Upgrading v1 users
+### Releasing
 
-v2 replaces v1 on the same Google Play listing, so existing users get it as an update:
+v2 replaces v1 on the same Google Play listing, so v1's users get it as an update, and the listing keeps its installs and ratings:
 
 - **Same package and key:** package `com.nad.riyadalsalheen` and a `versionCode` above v1's. It is signed with v1's key, `v1/riyad_keystore.jks`, whose passwords are in `v1/local.properties` (not in git). EAS is given this keystore.
-- **Saved data is carried over.** v1 keeps it in Jetpack DataStore (`files/datastore/settings.preferences_pb`):
-  - `bookmarks`: hadith numbers, comma-separated, newest first
-  - `reading_progress`: the last hadith read
-  - `font_size`
-  - `SYSTEM_THEME`
-
-  React Native can't read that file. A small native module reads it once on first launch, converts the numbers to v2's with the database's `v1_ids` table, and saves everything in v2's storage.
+- **v1's saved data isn't carried over** (the owner's decision, 2026-10-25: no backward compatibility). v1's bookmarks, last hadith read and settings stay behind, so users who update start afresh: the release notes say so.
 - **Careful release:** internal testers first, then a staged rollout. v1 stays on `master` (tag `v1.0.0`) to roll back to.
 
 On iPhone, this needs an Apple Developer account ($99 a year), and the app goes through TestFlight before the App Store.
@@ -108,7 +102,6 @@ The app:
 - [x] Move the content pipeline into `book_data/`, so the repository's root is the app's (2026-10-25)
 - [x] Write the build script that turns the content into the app's database, `book_data/tools/build_db.py`: a first build for the app to start on (2026-10-25). The commentary and narrators come with content steps 5 and 6.
 - [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator
-- [ ] Write the native module that carries v1 users' data over
 - [ ] Release v2 on Android and iPhone, once the content is done. It isn't released with v1's commentary, which is an edited version of the book's (the owner's decision, 2026-10-16).
 
 ## Repository layout
