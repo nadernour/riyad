@@ -1566,11 +1566,6 @@
     "v1"
    ],
    [
-    "وثَارَ رِجَالٌ",
-    "وَسَارَ رِجَالٌ",
-    "variant"
-   ],
-   [
     "أَذنْبتَ",
     "أَذْنَبْتَ",
     "v1"
@@ -1986,6 +1981,11 @@
     "حَتَّى بَلَغَ تَبُوكَ وَهُوَ جالِسٌ فِي الْقَوْمِ بِتَبُوكَ",
     "حتَّى بَلَغ تَبُوكَ ، فقالَ وَهُوَ جَالِسٌ في القوْمِ بتَبُوك",
     "The print drops «فقال» before «وهو جالس», leaving the Prophet's question «ما فعل كعب بن مالك؟» with no verb of saying; al-Bukhari and Muslim have «فقال»."
+   ],
+   [
+    "وسارَ رِجالٌ",
+    "وثَارَ رِجَالٌ",
+    "The print has «وسار» (p. 44), but its own word meanings explain the word as «وثار: وثب ونهض» (p. 51), as al-Bukhari and Muslim have it."
    ]
   ],
   "note": "p. 47: the print has a single «فَوْجاً» (taken as the book's reading). The verb after it («يهنئونني» in v1) is printed with a hamza seat and one or two nuns that even the zoom can't settle, so v1's spelling is kept."
@@ -2392,8 +2392,8 @@
    ],
    [
     "ثُمَّ جئ بالغُلامِ",
-    "ثُمَّ جِئَ بالغُلامِ",
-    "marks"
+    "ثُمَّ جِيءَ بالغُلامِ",
+    "v1"
    ],
    [
     "أصْحابِهِ فقال : اذهبُوا",
@@ -2494,6 +2494,21 @@
     "أي : انقلبَتْ",
     "أَيْ : انقلبَتْ",
     "marks"
+   ],
+   [
+    "فجئَ بِالغُلاَمِ",
+    "فَجِيءَ بِالغُلاَمِ",
+    "v1"
+   ],
+   [
+    "فجِئ بالرَّاهِبِ",
+    "فَجِيءَ بالرَّاهِبِ",
+    "v1"
+   ],
+   [
+    "ثُمَّ جِئ بجَلِيسِ",
+    "ثُمَّ جِيءَ بجَلِيسِ",
+    "v1"
    ]
   ],
   "misprint": [

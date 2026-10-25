@@ -2,15 +2,15 @@
 # Keep the matn check going (content step 4, docs/matn.md): a fresh Claude Code session for each
 # round of up to 12 hadith, waiting out usage-limit resets in between. Taken from the owner's azkar project.
 #
-# Start it from the project folder in the background, so it keeps going after the terminal closes:
+# It runs on the owner's Debian machine only. Start it from book_data/ in the background, so it keeps
+# going after the terminal closes:
 #     nohup tools/long_run.sh >> .cache/long-run.log 2>&1 &
-# On macOS, start it as `nohup caffeinate -i tools/long_run.sh ...`, so the Mac doesn't sleep while it runs.
-# Run it on one machine at a time (README, "Working together"). Stop it (the loop and the round in progress):
+# Stop it (the loop and the round in progress):
 #     pkill -f '[t]ools/long_run.sh'; pkill -f '[c]laude -p Do one round'
 # The brackets keep pkill from matching the shell that runs the command, such as a Claude Code session's.
 # Progress: .venv/bin/python tools/long_run.py checked (left, of all) · log: .cache/long-run.log
 # (tail -F .cache/long-run.log). The rounds don't commit: commit content/ yourself now and then.
-# A round's whole session can be opened afterwards with: claude --resume <its session id in the log>
+# A round's whole session can be opened afterwards, from book_data/, with: claude --resume <its session id in the log>
 #
 # Each session may only read files, write content/matn/inbox.json, and run the project's
 # Python tools; anything else is refused without asking.

@@ -1,7 +1,7 @@
 #!/bin/sh
 # Unpack Tesseract into .cache/ocr on Debian or Ubuntu without installing anything system-wide:
 # Debian's packages are downloaded (no root needed) and unpacked locally. tools/ocr.py runs this
-# when it finds no Tesseract; it downloads the Arabic model itself. On macOS: brew install tesseract.
+# when it finds no Tesseract; it downloads the Arabic model itself.
 # Taken from the owner's azkar project.
 set -e
 cd "$(dirname "$0")/.."

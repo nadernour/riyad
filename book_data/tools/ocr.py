@@ -7,10 +7,10 @@ of each page and their positions, so a word can be found on the scan (tools/matn
 matn of each hadith from them). The large matn font reads best at 200 dpi. Each page's word table
 goes to .cache/ocr/out/pNNNN.tsv; pages already done are skipped.
 
-Tesseract: on macOS, `brew install tesseract`; on Debian or Ubuntu, either install it with apt or
-let tools/fetch_ocr.sh unpack it into .cache/ocr (run on first use, nothing installed
-system-wide). The high-accuracy Arabic model (tessdata_best) is downloaded into .cache/ocr/tessdata
-on first use, so every machine reads the pages with the same model.
+Tesseract: install it with apt (tesseract-ocr), or let tools/fetch_ocr.sh unpack Debian's
+packages into .cache/ocr (run on first use, nothing installed system-wide). The high-accuracy
+Arabic model (tessdata_best) is downloaded into .cache/ocr/tessdata on first use, so every run
+reads the pages with the same model.
 """
 
 import argparse
@@ -49,7 +49,7 @@ def tesseract() -> str:
     if sys.platform.startswith("linux") and shutil.which("apt"):
         subprocess.run([str(ROOT / "tools" / "fetch_ocr.sh")], check=True)
         return str(LOCAL)
-    raise SystemExit("Tesseract is needed: on macOS, `brew install tesseract`")
+    raise SystemExit("Tesseract is needed: `sudo apt install tesseract-ocr`")
 
 
 def read_page(n: int) -> int:

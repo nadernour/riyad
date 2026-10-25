@@ -617,8 +617,9 @@ def crop_region(doc, h: dict) -> list[tuple[int, float, float]]:
     if span:  # down to the end of what the book prints after v1's last word (matn_after)
         span = [span[0], span[1] + matn_after(h, span[1])]
     window, top, bottom = tesseract_window(span, h["page"])
+    match = tesseract_check(v1, window)["match"]
     seen = defaultdict(list)
-    for w in tesseract_check(v1, window)["match"]:
+    for w in match:
         if w is not None:
             seen[w["page"]].append((w["box"][1] + w["box"][3]) / 2)
     where = book_words()[1]
@@ -644,7 +645,35 @@ def crop_region(doc, h: dict) -> list[tuple[int, float, float]]:
     if bottom:
         down = min(1 - bottom["far"], LINE * (found["tail"] // 6))
         bottom = {**bottom, "y": bottom["y"] + down, "far": bottom["far"] + down}
-    return matn_region(doc, first, last, top, bottom, seen) or [(h["page"], 0.0, 1.0)]
+    return widen(doc, matn_region(doc, first, last, top, bottom, seen) or [(h["page"], 0.0, 1.0)], match)
+
+
+WIDEN = 0.25       # how far (share of the page) a crop may be widened to take in the matn's first or last words
+
+
+def widen(doc, region: list[tuple[int, float, float]], match: list) -> list[tuple[int, float, float]]:
+    """The region, widened where the matn runs past it: above the first word of the matn Tesseract
+    found, or below the last, with a line for every eight of v1's words before or after that word,
+    to the gap between two lines. The text the anchors around the matn are taken from can be printed
+    on the matn's own lines, or repeated nearby: h. 77's ordinal «الرابع» opens its first line,
+    h. 1048's source note repeats 1047's, and h. 1468's last line was taken for the commentary."""
+    from zoom import Ink
+    out = list(region)
+    hits = [k for k, w in enumerate(match) if w is not None]
+    if not hits:
+        return out
+    first, last = match[hits[0]], match[hits[-1]]
+    n, y0, y1 = out[0]
+    if first["page"] == n:
+        y = (first["box"][1] + first["box"][3]) / 2 - LINE * (hits[0] // 8)
+        if y0 - WIDEN < y < y0:
+            out[0] = (n, cut(text_rows(Ink(doc[n - 1])), y - 1.25 * LINE, y - 0.4 * LINE), y1)
+    n, y0, y1 = out[-1]
+    if last["page"] == n:
+        y = (last["box"][1] + last["box"][3]) / 2 + LINE * ((len(match) - 1 - hits[-1]) // 8)
+        if y1 < y < y1 + WIDEN:
+            out[-1] = (n, y0, cut(text_rows(Ink(doc[n - 1])), y + 0.4 * LINE, y + 1.25 * LINE))
+    return out
 
 
 def crops(i: int) -> list[str]:

@@ -24,10 +24,14 @@ import argparse
 import datetime
 import json
 import pathlib
+import re
 import time
 from collections import Counter
 
+import pymupdf
+
 from matn import CHECKED, checked as checked_ids, hadiths, todo
+from sources import pdf_path
 
 NAMES = {"five_hour": "5-hour", "seven_day": "weekly"}
 
@@ -85,10 +89,31 @@ def checked(args: argparse.Namespace) -> None:
     print(len(todo()), len(hadiths()))
 
 
+ZOOM = re.compile(r"zoom-p(\d{4})-([\d.]+)-([\d.]+)(?:-([\d.]+)-([\d.]+))?\.png")
+
+
+def too_wide(names: set[str]) -> int:
+    """How many of these zooms show the page at under 400 dpi, as the Read tool shows them (2000 px
+    on the longer side): too wide to read marks on, as zoom.py warns."""
+    doc = pymupdf.open(pdf_path())
+    wide = 0
+    for name in names:
+        m = ZOOM.fullmatch(name)
+        if not m:
+            continue
+        page = doc[int(m.group(1)) - 1].rect
+        left, right = (float(m.group(4)), float(m.group(5))) if m.group(4) else (0.0, 1.0)
+        longer = max(page.width * (right - left), page.height * (float(m.group(3)) - float(m.group(2))))
+        wide += 2000 * 72 / longer < 400
+    return wide
+
+
 def work(events: list[dict]) -> str:
     """What a round did, to compare rounds at another effort: the fixes by reason and the misprints
     of the hadith it wrote to the inbox (as kept in content/matn/), and the zooms it read. Every word
-    a round changes or gives marks to should be read on a zoom (docs/matn.md)."""
+    a round changes or gives marks to should be read on a zoom (docs/matn.md); a zoom of ten lines
+    across the page shows little more than the crop (the round of h. 169–176 read 14 such zooms of
+    its 16)."""
     ids, zooms = set(), set()
     for event in events:
         if event.get("type") != "assistant":
@@ -98,7 +123,7 @@ def work(events: list[dict]) -> str:
                 continue
             path = str((c.get("input") or {}).get("file_path", ""))
             if c.get("name") == "Read" and "pages/zoom-" in path:
-                zooms.add(path)
+                zooms.add(pathlib.Path(path).name)
             elif c.get("name") == "Write" and path.endswith("content/matn/inbox.json"):
                 try:
                     ids |= set(json.loads(c["input"].get("content", "")))
@@ -108,8 +133,9 @@ def work(events: list[dict]) -> str:
     decided = [kept[i] for i in ids if i in kept]
     why = Counter(f[2] for d in decided for f in d.get("fix", []))
     misprints = sum(len(d.get("misprint", [])) for d in decided)
+    wide = too_wide(zooms)
     return (f"fixes: {why['v1']} v1, {why['variant']} variant, {why['marks']} marks · misprints: {misprints}"
-            f" · zooms read: {len(zooms)}")
+            f" · zooms read: {len(zooms)}" + (f" ({wide} too wide to read marks)" if wide else ""))
 
 
 def report(args: argparse.Namespace) -> None:
@@ -132,7 +158,7 @@ def report(args: argparse.Namespace) -> None:
         use, reset = after[name]
         old, old_reset = before.get(name, (None, None))
         if old is not None and old_reset == reset:
-            used.append(f"{label} {old:.0%} → {use:.0%} (+{(use - old) * 100:.0f})")
+            used.append(f"{label} {old:.0%} → {use:.0%} ({(use - old) * 100:+.0f})")
         else:
             used.append(f"{label} {use:.0%}")
     if used:

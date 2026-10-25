@@ -13,11 +13,12 @@ import sqlite3
 import urllib.parse
 import urllib.request
 
-ROOT = pathlib.Path(__file__).resolve().parent.parent
+ROOT = pathlib.Path(__file__).resolve().parent.parent   # book_data/
+REPO = ROOT.parent
 CACHE = ROOT / ".cache"
 PDF_PATH = CACHE / "book" / "nuzhat.pdf"
 OCR_PATH = CACHE / "aljam3" / "nuzhat.txt"
-V1_DB = ROOT / "v1" / "app" / "src" / "main" / "assets" / "databases" / "riyad_salheen.db"
+V1_DB = REPO / "v1" / "app" / "src" / "main" / "assets" / "databases" / "riyad_salheen.db"
 
 DATASET = "https://huggingface.co/datasets/ieasybooks-org/waqfeya-library/resolve/main"
 FOLDER = ("2ـ 213.6 (230) المسانيد الأخرى والجوامع/01433ـ نزهة المتقين شرح رياض الصالحين --- "

@@ -29,3 +29,16 @@ def words(text: str) -> list[str]:
     """Normalized words of a text, for matching."""
     normalized = (normalize_word(w) for w in expand_salutation(text).split())
     return [w for w in normalized if w]
+
+
+SIMPLE_LETTERS = str.maketrans({"أ": "ا", "إ": "ا", "آ": "ا", "ٱ": "ا", "ى": "ي", "ة": "ه"})
+NOT_A_LETTER = re.compile(r"[^ء-ي]+")
+
+
+def simplify(text: str) -> str:
+    """A text as the app searches it: the salutation ﷺ written out, the tashkeel and tatweel removed,
+    أ إ آ ٱ written ا, ى written ي and ة written ه, and anything else but letters (punctuation,
+    digits, line breaks) one space. The app simplifies the search query the same way:
+    database/simplify.json has the test cases both must pass (database/README.md)."""
+    text = TASHKEEL.sub("", expand_salutation(text)).translate(SIMPLE_LETTERS)
+    return NOT_A_LETTER.sub(" ", text).strip()
