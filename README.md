@@ -5,7 +5,7 @@ A free, offline app for reading Imam al-Nawawi's *Riyad al-Salihin* (رياض ا
 ## Status
 
 - **v1** (branch `master`, tag `v1.0.0`) is the Android app on [Google Play](https://play.google.com/store/apps/details?id=com.nad.riyadalsalheen), written in Kotlin with Jetpack Compose. Its text came from the database of an abandoned app, [com.zad.riyadhsalheen](https://play.google.com/store/apps/details?id=com.zad.riyadhsalheen). The audit showed that its commentary is an edited version of the book's (see [book_data/docs/audit.md](book_data/docs/audit.md)).
-- **v2** (this branch, `v2`) is under way: the text is being checked against the printed book (content step 4: 172 of the 1,898 hadith are checked), and the app can be started on a first build of its database (`database/`). It has two goals:
+- **v2** (this branch, `v2`) is under way: the text is being checked against the printed book (content step 4: 164 of the 1,898 hadith are checked), and the app can be started on a first build of its database (`database/`). It has two goals:
   1. Replace the text with one checked against the printed book.
   2. Rebuild the app in React Native with Expo, so that the same app runs on Android and iPhone.
 
@@ -98,7 +98,7 @@ The order is: make the content clean, then build the app, then ship. The app is 
 - [x] Content step 1: audit 30 hadith ([book_data/docs/audit.md](book_data/docs/audit.md))
 - [x] Content step 2: convert the v1 database (`book_data/content/hadith/`)
 - [x] Content step 3: number the hadith as printed ([book_data/docs/numbering.md](book_data/docs/numbering.md))
-- [ ] Content step 4: check the hadith text ([book_data/docs/matn.md](book_data/docs/matn.md); 172 of the 1,898 hadith are checked)
+- [ ] Content step 4: check the hadith text ([book_data/docs/matn.md](book_data/docs/matn.md); 164 of the 1,898 hadith are checked)
 - [ ] Write `book_data/docs/transcription.md`, run the pilot on the audit's pages, then transcribe the commentary (content step 5)
 - [ ] Transcribe the narrator biographies and link them to the hadith (content step 6)
 - [ ] Owner review of the questions the checks couldn't settle (content step 7)

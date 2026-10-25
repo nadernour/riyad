@@ -8,7 +8,8 @@ Step 2 takes over what v1 has right: the matn (as pieces with speaker roles, fro
 the short titles, the book and chapter structure and v1's ids. v1's commentary is not taken
 over: the audit (docs/audit.md) showed it is an edited version of the book's, so the word
 meanings and benefits are transcribed from the scans in step 5. Text changes:
-- the salutation, which v1 writes out in several spellings, becomes the glyph ﷺ, as the book prints it;
+- the salutation, which v1 writes out in several spellings, becomes the glyph ﷺ, as the book prints it,
+  «صلى الله عليه وآله وسلم» too (v1 74, 121 and 1017; the owner's decision, 2026-10-25);
 - Arabic presentation forms (a few v1 words are stored in them) become ordinary letters;
 - runs of spaces become one space; a number v1's source left at the start of a hadith («23-») goes;
 - so does the ordinal the book prints before each hadith in some chapters («الأول:», «فالأول:»,
@@ -40,7 +41,10 @@ from sources import ROOT, v1_hadiths
 OUT_DIR = ROOT / "content" / "hadith"
 TOTAL = 1898
 ROLES = {"p0": "prophet", "p1": "speech", "p2": "gloss"}
-SALUTATION = re.compile(r"صَ?ل[َّ]*ى\s+ال?ل[َّ]*هُ?\s+عَ?لَ?يْ?هِ?\s+و[َ]?سَ?ل[َّ]*َ?مَ?")
+# The salutation as v1 writes it out: «صَلَّىٰ» with a dagger alif too (v1 1325–1348), with «وآله» or
+# without, and with a role tag inside it in v1 1017 («صَلّى</p1> <p2>اللهُ عَلَيْهِ وسَلَّم»).
+GAP = r"(?:\s|</?p[0-2]>)+"
+SALUTATION = re.compile(rf"صَ?ل[َّ]*ىٰ?{GAP}ال?ل[َّ]*هُ?{GAP}عَ?لَ?يْ?هِ?(?:{GAP}وَ?آلِ?هِ?)?{GAP}و[َ]?سَ?ل[َّ]*َ?مَ?")
 PRESENTATION = re.compile(r"[ﭐ-ﷹﷻ-﷿ﹰ-﻿]+")
 SEPARATOR = re.compile(r"\n?[ \t]*(?:_{4,}|ـ{4,})[ \t]*\n?")
 NUMBER_PREFIX = re.compile(r"^(\s*(?:</?p[0-2]>)?\s*)[0-9٠-٩]{1,4}\s*-\s*")
@@ -48,9 +52,15 @@ ORDINAL = re.compile(r"ف?ال(?:[أا]ول|ثاني|ثالث|رابع|خامس|
 MARK = re.compile(r"[ً-ْٰ]")
 
 
+def salutation(text: str) -> str:
+    """v1's salutation as the glyph ﷺ. A role tag inside it moves after the glyph, so the glyph
+    stays with the name before it."""
+    return SALUTATION.sub(lambda m: "ﷺ" + "".join(re.findall(r"</?p[0-2]>", m.group())), text)
+
+
 def clean(text: str) -> str:
     text = PRESENTATION.sub(lambda m: unicodedata.normalize("NFKC", m.group()), text)
-    text = SALUTATION.sub("ﷺ", text)
+    text = salutation(text)
     text = re.sub(r"\s*-\s*ﷺ\s*-\s*", " ﷺ ", text)  # «الرسول -صلى الله عليه وسلم-»
     return re.sub(r"[ \t ]+", " ", text)
 
@@ -59,7 +69,7 @@ def matn_pieces(matn: str) -> list[dict]:
     """v1's matn as [{role, text}]: <p0> the Prophet's words, <p1> other people's words,
     <p2> a word Nawawi explains, and untagged text the narration."""
     pieces, role = [], "narration"
-    for token in re.split(r"(</?p[0-2]>)", matn):
+    for token in re.split(r"(</?p[0-2]>)", salutation(matn)):
         tag = re.fullmatch(r"<(/?)(p[0-2])>", token)
         if tag:
             role = "narration" if tag.group(1) else ROLES[tag.group(2)]

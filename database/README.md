@@ -8,7 +8,7 @@
 |---|---|
 | Books and chapters | The 20 books (كتاب) and their 367 chapters (باب), with v1's titles. A pass after content step 4 corrects their typos. |
 | Hadith | All 1,898, with the book's numbers, v1's short titles and the page where each starts. |
-| Hadith text | 172 hadith have been checked against the printed book. The rest have v1's text, which content step 4 is checking now. |
+| Hadith text | 164 hadith have been checked against the printed book. The rest have v1's text, which content step 4 is checking now. |
 | Speaker roles | v1's, not checked yet, so some pieces have the wrong role until a pass after step 4. |
 | Word meanings, benefits, narrators | Empty tables, filled when content steps 5 and 6 transcribe them. |
 
