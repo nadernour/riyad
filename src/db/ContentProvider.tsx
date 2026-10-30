@@ -1,7 +1,7 @@
 import { Asset } from 'expo-asset';
 import * as SplashScreen from 'expo-splash-screen';
-import { deleteDatabaseAsync, SQLiteProvider, type SQLiteDatabase } from 'expo-sqlite';
-import type { ReactNode } from 'react';
+import { deleteDatabaseAsync, SQLiteProvider, useSQLiteContext, type SQLiteDatabase } from 'expo-sqlite';
+import { createContext, use, useMemo, type ReactNode } from 'react';
 
 import { checkSchema } from './content';
 import { getSetting, setSetting } from './user';
@@ -15,6 +15,24 @@ const hash = Asset.fromModule(DATABASE).hash;
 const NAME = hash ? `riyad-${hash.slice(0, 12)}.db` : 'riyad.db';
 
 const PREVIOUS_KEY = 'contentDatabase';
+
+// The open database's `info` table (database/README.md), read once it is open.
+const Info = createContext<Record<string, string>>({});
+
+function InfoProvider({ children }: { children: ReactNode }) {
+  const db = useSQLiteContext();
+  const info = useMemo(() => {
+    const rows = db.getAllSync<{ key: string; value: string }>('SELECT key, value FROM info');
+    return Object.fromEntries(rows.map((row) => [row.key, row.value]));
+  }, [db]);
+  return <Info value={info}>{children}</Info>;
+}
+
+// Whether the database is a test build's, with v1's commentary in place of the book's (scripts/build-preview-db.js):
+// the app says so wherever it shows that commentary.
+export function usePreviewCommentary(): boolean {
+  return use(Info).preview === 'v1-commentary';
+}
 
 async function init(db: SQLiteDatabase) {
   await checkSchema(db);
@@ -35,7 +53,7 @@ export function ContentProvider({ children }: { children: ReactNode }) {
         SplashScreen.hideAsync();
         throw error;
       }}>
-      {children}
+      <InfoProvider>{children}</InfoProvider>
     </SQLiteProvider>
   );
 }

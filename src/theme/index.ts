@@ -1,17 +1,18 @@
 import { useColorScheme } from 'react-native';
 
-// Font family names, as loaded by useFonts in src/app/_layout.tsx. Amiri for the book's text, Cairo for the interface (as in v1).
+// Font family names, as loaded by useFonts in src/app/_layout.tsx. Scheherazade New for the book's text, Cairo for the
+// interface (as in v1). v1's Amiri was dropped: it crowds the marks of short letters, such as لَيْلَةَ and وَآخِرَ.
 export const fonts = {
-  text: 'Amiri',
-  textBold: 'Amiri-Bold',
+  text: 'ScheherazadeNew',
+  textBold: 'ScheherazadeNew-Bold',
   ui: 'Cairo',
   uiSemiBold: 'Cairo-SemiBold',
   uiBold: 'Cairo-Bold',
 } as const;
 
 export const fontFiles = {
-  [fonts.text]: require('../../assets/fonts/Amiri-Regular.ttf'),
-  [fonts.textBold]: require('../../assets/fonts/Amiri-Bold.ttf'),
+  [fonts.text]: require('../../assets/fonts/ScheherazadeNew-Regular.ttf'),
+  [fonts.textBold]: require('../../assets/fonts/ScheherazadeNew-Bold.ttf'),
   [fonts.ui]: require('../../assets/fonts/Cairo-Regular.ttf'),
   [fonts.uiSemiBold]: require('../../assets/fonts/Cairo-SemiBold.ttf'),
   [fonts.uiBold]: require('../../assets/fonts/Cairo-Bold.ttf'),

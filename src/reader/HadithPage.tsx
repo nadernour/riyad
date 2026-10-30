@@ -1,6 +1,7 @@
 import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
+import { usePreviewCommentary } from '@/db/ContentProvider';
 import { useHadith } from '@/db/hooks';
 import { fonts, TEXT_LINE_HEIGHT, useColors } from '@/theme';
 
@@ -19,6 +20,7 @@ type Props = {
 export function HadithPage({ id, fontSize, insetTop, insetBottom }: Props) {
   const colors = useColors();
   const state = useHadith(id);
+  const previewDb = usePreviewCommentary();
 
   if (state.status === 'loading') {
     return <ActivityIndicator style={[styles.fill, { paddingTop: insetTop }]} color={colors.prophet} />;
@@ -32,6 +34,9 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom }: Props) {
   }
 
   const hadith = state.value;
+  const preview = previewDb && (
+    <Text style={[styles.meta, { color: colors.muted }]}>من شرح النسخة الأولى، غير مراجَع</Text>
+  );
   const bodySize = fontSize * 0.8;
   const body = { fontFamily: fonts.text, fontSize: bodySize, lineHeight: bodySize * TEXT_LINE_HEIGHT };
 
@@ -52,6 +57,7 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom }: Props) {
       {hadith.meanings.length > 0 && (
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.prophet }]}>لغة الحديث</Text>
+          {preview}
           {hadith.meanings.map((meaning, i) => (
             <Text key={i} style={[body, { color: colors.text }]}>
               <Text style={{ fontFamily: fonts.textBold }}>{meaning.term}</Text>: {meaning.meaning}
@@ -63,6 +69,7 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom }: Props) {
       {hadith.benefits.length > 0 && (
         <View style={styles.section}>
           <Text style={[styles.sectionTitle, { color: colors.prophet }]}>أفاد الحديث</Text>
+          {preview}
           {hadith.benefits.map((benefit, i) => (
             <Text key={i} style={[body, { color: colors.text }]}>
               • {benefit}
@@ -71,7 +78,11 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom }: Props) {
         </View>
       )}
 
-      <Text style={[styles.meta, styles.page, { color: colors.muted }]}>نزهة المتقين، صفحة {hadith.page}</Text>
+      {/* The page of the printed book, so a reader can check the text against it; not shown under v1's commentary,
+          which isn't that page's. It is v2's own addition: v1 doesn't show it. */}
+      {!(previewDb && (hadith.meanings.length > 0 || hadith.benefits.length > 0)) && (
+        <Text style={[styles.meta, styles.page, { color: colors.muted }]}>نزهة المتقين، صفحة {hadith.page}</Text>
+      )}
     </ScrollView>
   );
 }

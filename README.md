@@ -43,7 +43,7 @@ v2 keeps everything v1 does:
 Fixes:
 
 - **Theme setting: System, Light or Dark.** v1's toggle means "the opposite of the phone's setting", so with it on, the app turns light when the phone turns dark at night.
-- **The Prophet's words stand out from the rest of the hadith.** v1 marks them, but its hadith font (Amiri) has no semi-bold, so they look the same as the Companion's words.
+- **The Prophet's words stand out from the rest of the hadith.** v1 marks them, but its hadith font (Amiri) has no semi-bold, so they look the same as the Companion's words. v2 shows them in colour and in bold.
 - **Sharing includes the hadith number.**
 
 New:
@@ -61,7 +61,7 @@ The content is checked in [book_data/](book_data/README.md), on the owner's Debi
 
 - **React Native with Expo, in TypeScript:** one codebase for Android and iPhone. Expo's cloud build service (EAS) builds and submits the iPhone app without a Mac.
 - **expo-sqlite** for the bundled database and its full-text search.
-- **Arabic only, right to left,** with Amiri for the hadith text and Cairo for the interface, as in v1.
+- **Arabic only, right to left,** with Scheherazade New for the hadith text and Cairo for the interface, as in v1. v1's Amiri was dropped (2026-10-30): it crowds the marks of short letters (لَيْلَةَ, وَآخِرَ), and Scheherazade New, made by SIL for fully vocalized text, keeps each mark clear.
 - **Room for tashkeel:** iOS clips the marks when the line height is too tight.
 
 **Why not Kotlin Multiplatform?** It would keep about half of v1's code. But building and testing the iPhone app needs a Mac, and the owner works on Linux. Also, on iOS it draws its own text instead of using the phone's, which matters in an app that is all text.
@@ -77,11 +77,14 @@ npx expo start          # later runs, once the development app is installed
 npm test                # unit tests
 npm run lint
 npm run typecheck
+maestro test .maestro/   # device tests (Maestro, https://maestro.dev): swipes, taps and links on a running test build
 ```
 
 The app forces right-to-left layout, which Expo Go doesn't apply reliably, so use a development build (`expo run:ios`, `expo run:android`, or `eas build --profile development`) rather than Expo Go. `ios/` and `android/` are generated from `app.json` by `npx expo prebuild` and are not in git: configure native settings in `app.json`, never in those folders.
 
 Every build but the release is a test build, «رياض الصالحين (تجربة)» with the id `com.nad.riyadalsalheen.dev`, so it installs next to the app from the store instead of conflicting with it (`app.config.js`). Only `APP_VARIANT=production` gives the release id, name and link scheme: the `production` build profile in `eas.json` sets it, and `npm run submit` sets it for EAS Submit, whose profiles can't. Submit with `npm run submit`, not `eas submit` directly.
+
+**Word meanings and benefits before content step 5.** `npm run preview-db` builds `.preview/riyad.db`: `database/riyad.db` with v1's commentary split into word meanings and benefits (`scripts/build-preview-db.js`), matched to v2's numbers by each hadith's `old_id`. Test builds bundle it when it's there (`metro.config.js`), and label that commentary «من شرح النسخة الأولى، غير مراجَع». It is never committed, and a release (`APP_VARIANT=production`) never bundles it: v2 isn't released with v1's commentary. Where v2 splits one v1 hadith in two, the commentary goes to the half with the words it explains. Once `database/riyad.db` changes, test builds bundle it instead, with a warning, until the preview is rebuilt; delete `.preview/` to test with the real database.
 
 `npm run typecheck` checks twice: everything, and the app's code alone (`tsconfig.app.json`), without Node's types, so code that would only work in Node (`Buffer`, `fs`) fails before it reaches a phone.
 
@@ -141,7 +144,7 @@ The app:
 ```
 src/app/     the Expo app's screens (Expo Router: every file is a route, _layout.tsx files are navigators)
 src/         the rest of the app: theme now, then the database queries, reader, search and settings
-assets/      the app's icons, splash image and fonts (Amiri and Cairo, from v1)
+assets/      the app's icons, splash image and fonts (Scheherazade New, and Cairo from v1)
 book_data/   the content: the checked text of the book, the tools that check it and the docs of each step (book_data/README.md)
 database/    the SQLite database the app reads, built from book_data/content/ (database/README.md)
 v1/          the v1 Android app (Kotlin, Jetpack Compose), kept for reference until v2 ships; v1's database is an input to the content

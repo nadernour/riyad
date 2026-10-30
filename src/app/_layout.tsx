@@ -2,7 +2,7 @@ import { useFonts } from 'expo-font';
 import { Stack } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
-import { useEffect } from 'react';
+import { useEffect, type ReactNode } from 'react';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { ContentProvider } from '@/db/ContentProvider';
@@ -19,17 +19,24 @@ function HideSplash() {
   return null;
 }
 
-export default function RootLayout() {
+// The screens render once the fonts are loaded and riyad.db is open.
+function Ready({ children }: { children: ReactNode }) {
   const [loaded, error] = useFonts(fontFiles);
-
   if (!loaded && !error) return null;
+  return (
+    <ContentProvider>
+      <HideSplash />
+      {children}
+    </ContentProvider>
+  );
+}
 
+export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <ContentProvider>
-        <HideSplash />
-        <Stack screenOptions={{ headerShown: false }} />
-      </ContentProvider>
+      {/* The navigator itself is mounted from the start, and only what it renders waits for Ready: a link that comes
+          while the app is starting (/?id=12) has a navigator to go to, rather than being dropped. */}
+      <Stack screenOptions={{ headerShown: false }} layout={({ children }) => <Ready>{children}</Ready>} />
       <StatusBar style="auto" />
     </GestureHandlerRootView>
   );

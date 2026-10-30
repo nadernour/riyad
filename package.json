@@ -42,7 +42,8 @@
     "test": "jest",
     "lint": "expo lint",
     "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.app.json",
-    "submit": "APP_VARIANT=production npx eas-cli@latest submit --profile production"
+    "submit": "APP_VARIANT=production npx eas-cli@latest submit --profile production",
+    "preview-db": "node scripts/build-preview-db.js"
   },
   "private": true,
   "jest": {

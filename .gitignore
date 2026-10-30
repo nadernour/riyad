@@ -33,3 +33,6 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.pem
+
+# the preview database of test builds, with v1's commentary (scripts/build-preview-db.js): never committed
+.preview/
