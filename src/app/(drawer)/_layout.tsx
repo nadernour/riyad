@@ -20,7 +20,8 @@ export default function DrawerLayout() {
         drawerActiveTintColor: colors.prophet,
         drawerInactiveTintColor: colors.text,
       }}>
-      <Drawer.Screen name="index" options={{ title: 'رياض الصالحين', drawerLabel: 'القراءة' }} />
+      {/* The reader draws its own header, which hides for full screen. */}
+      <Drawer.Screen name="index" options={{ title: 'رياض الصالحين', drawerLabel: 'القراءة', headerShown: false }} />
     </Drawer>
   );
 }

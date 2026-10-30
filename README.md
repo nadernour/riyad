@@ -129,7 +129,7 @@ The app:
 - [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator, in phases on the branch `v2-app`:
   - [x] P0: project setup (Expo SDK 58, Expo Router with a drawer, forced right-to-left, Amiri and Cairo, Jest, ESLint, `eas.json`), checked on the iPhone simulator (2026-10-30)
   - [x] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`, checked on the iPhone simulator and an Android phone (2026-10-30)
-  - [ ] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith
+  - [x] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith, opening a hadith by link (`/?id=12`), checked on a Galaxy A17 (0.3% janky frames over 30 fast swipes) and the iPhone simulator (2026-10-30)
   - [ ] P3: browse by book and chapter, search, bookmarks
   - [ ] P4: settings (font size; System, Light or Dark), About, sharing
   - [ ] P5: polish and tests: accessibility, large fonts, dark mode, device tests, icon and splash screen
