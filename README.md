@@ -81,6 +81,16 @@ npm run typecheck
 
 The app forces right-to-left layout, which Expo Go doesn't apply reliably, so use a development build (`expo run:ios`, `expo run:android`, or `eas build --profile development`) rather than Expo Go. `ios/` and `android/` are generated from `app.json` by `npx expo prebuild` and are not in git: configure native settings in `app.json`, never in those folders.
 
+Every build but the release is a test build, «رياض الصالحين (تجربة)» with the id `com.nad.riyadalsalheen.dev`, so it installs next to the app from the store instead of conflicting with it (`app.config.js`). Only `APP_VARIANT=production` gives the release id, name and link scheme: the `production` build profile in `eas.json` sets it, and `npm run submit` sets it for EAS Submit, whose profiles can't. Submit with `npm run submit`, not `eas submit` directly.
+
+`npm run typecheck` checks twice: everything, and the app's code alone (`tsconfig.app.json`), without Node's types, so code that would only work in Node (`Buffer`, `fs`) fails before it reaches a phone.
+
+**The app's data:**
+- `src/db/content.ts` reads `riyad.db`. Its tests run the same SQL against the real file with Node's own SQLite, so `npm test` checks them whenever the database is rebuilt.
+- On the phone, the copy of `riyad.db` is named after the bundled file's hash (`src/db/ContentProvider.tsx`). An app version with a new `riyad.db` copies it afresh and deletes the old copy, with no version number to raise by hand.
+- At startup the app checks the database's `user_version`. A database with a schema the code isn't written for stops the app with an error, rather than showing wrong data.
+- The user's bookmarks and settings are in their own `user.db` (`src/db/user.ts`), which content updates never touch. Its tables change only through a new entry at the end of `MIGRATIONS`.
+
 ### The database
 
 The app reads all its text from `database/riyad.db`, which [database/README.md](database/README.md) describes: its tables, the common queries, how search must simplify the query, and how to bundle it with Expo. It holds every hadith with its text as the content now stands, so the app can be built while the content is finished. Each new build replaces the file. The word meanings, benefits and narrators have their tables already, empty until content steps 5 and 6.
@@ -118,7 +128,7 @@ The app:
 - [x] Write the build script that turns the content into the app's database, `book_data/tools/build_db.py`: a first build for the app to start on (2026-10-25). The commentary and narrators come with content steps 5 and 6.
 - [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator, in phases on the branch `v2-app`:
   - [x] P0: project setup (Expo SDK 58, Expo Router with a drawer, forced right-to-left, Amiri and Cairo, Jest, ESLint, `eas.json`), checked on the iPhone simulator (2026-10-30)
-  - [ ] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`
+  - [x] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`, checked on the iPhone simulator and an Android phone (2026-10-30)
   - [ ] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith
   - [ ] P3: browse by book and chapter, search, bookmarks
   - [ ] P4: settings (font size; System, Light or Dark), About, sharing

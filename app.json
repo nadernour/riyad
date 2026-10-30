@@ -7,7 +7,10 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "automatic",
-    "platforms": ["android", "ios"],
+    "platforms": [
+      "android",
+      "ios"
+    ],
     "ios": {
       "bundleIdentifier": "com.nad.riyadalsalheen",
       "supportsTablet": true
@@ -28,7 +31,13 @@
       "expo-status-bar",
       "expo-sqlite",
       "expo-font",
-      ["expo-localization", { "supportsRTL": true, "forcesRTL": true }],
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true
+        }
+      ],
       [
         "expo-splash-screen",
         {
@@ -36,9 +45,12 @@
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff",
-          "dark": { "backgroundColor": "#000000" }
+          "dark": {
+            "backgroundColor": "#000000"
+          }
         }
-      ]
+      ],
+      "expo-asset"
     ],
     "experiments": {
       "typedRoutes": true

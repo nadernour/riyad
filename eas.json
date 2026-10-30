@@ -10,11 +10,24 @@
     },
     "preview": {
       "distribution": "internal",
-      "android": { "buildType": "apk" }
+      "android": {
+        "buildType": "apk"
+      }
     },
-    "production": {}
+    "production": {
+      "env": {
+        "APP_VARIANT": "production"
+      }
+    }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "applicationId": "com.nad.riyadalsalheen"
+      },
+      "ios": {
+        "bundleIdentifier": "com.nad.riyadalsalheen"
+      }
+    }
   }
 }

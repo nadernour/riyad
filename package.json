@@ -4,6 +4,7 @@
   "main": "expo-router/entry",
   "dependencies": {
     "expo": "~58.0.21",
+    "expo-asset": "~58.0.19",
     "expo-constants": "~58.0.14",
     "expo-dev-client": "~58.0.17",
     "expo-font": "~58.0.11",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "@types/jest": "30.0.0",
+    "@types/node": "^24.19.2",
     "@types/react": "~19.3.0",
     "eslint": "^9.0.0",
     "eslint-config-expo": "~58.0.4",
@@ -38,7 +40,8 @@
     "ios": "expo run:ios",
     "test": "jest",
     "lint": "expo lint",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit && tsc --noEmit -p tsconfig.app.json",
+    "submit": "APP_VARIANT=production npx eas-cli@latest submit --profile production"
   },
   "private": true,
   "jest": {
@@ -48,5 +51,8 @@
       "<rootDir>/book_data/",
       "<rootDir>/v1/"
     ]
+  },
+  "engines": {
+    "node": ">=22.13"
   }
 }
