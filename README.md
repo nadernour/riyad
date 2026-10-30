@@ -66,6 +66,21 @@ The content is checked in [book_data/](book_data/README.md), on the owner's Debi
 
 **Why not Kotlin Multiplatform?** It would keep about half of v1's code. But building and testing the iPhone app needs a Mac, and the owner works on Linux. Also, on iOS it draws its own text instead of using the phone's, which matters in an app that is all text.
 
+### Running it
+
+It is developed on the branch `v2-app`, which merges into `v2`. You need Node.js 22.13 or newer (React Native 0.88's minimum); Xcode and CocoaPods for the iPhone simulator, or Android Studio for an Android emulator.
+
+```sh
+npm install
+npx expo run:ios        # or run:android: builds a development app and starts it on a simulator or emulator
+npx expo start          # later runs, once the development app is installed
+npm test                # unit tests
+npm run lint
+npm run typecheck
+```
+
+The app forces right-to-left layout, which Expo Go doesn't apply reliably, so use a development build (`expo run:ios`, `expo run:android`, or `eas build --profile development`) rather than Expo Go. `ios/` and `android/` are generated from `app.json` by `npx expo prebuild` and are not in git: configure native settings in `app.json`, never in those folders.
+
 ### The database
 
 The app reads all its text from `database/riyad.db`, which [database/README.md](database/README.md) describes: its tables, the common queries, how search must simplify the query, and how to bundle it with Expo. It holds every hadith with its text as the content now stands, so the app can be built while the content is finished. Each new build replaces the file. The word meanings, benefits and narrators have their tables already, empty until content steps 5 and 6.
@@ -101,19 +116,29 @@ The app:
 
 - [x] Move the content pipeline into `book_data/`, so the repository's root is the app's (2026-10-25)
 - [x] Write the build script that turns the content into the app's database, `book_data/tools/build_db.py`: a first build for the app to start on (2026-10-25). The commentary and narrators come with content steps 5 and 6.
-- [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator
+- [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator, in phases on the branch `v2-app`:
+  - [x] P0: project setup (Expo SDK 58, Expo Router with a drawer, forced right-to-left, Amiri and Cairo, Jest, ESLint, `eas.json`), checked on the iPhone simulator (2026-10-30)
+  - [ ] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`
+  - [ ] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith
+  - [ ] P3: browse by book and chapter, search, bookmarks
+  - [ ] P4: settings (font size; System, Light or Dark), About, sharing
+  - [ ] P5: polish and tests: accessibility, large fonts, dark mode, device tests, icon and splash screen
+  - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key
 - [ ] Release v2 on Android and iPhone, once the content is done. It isn't released with v1's commentary, which is an edited version of the book's (the owner's decision, 2026-10-16).
 
 ## Repository layout
 
 ```
+src/app/     the Expo app's screens (Expo Router: every file is a route, _layout.tsx files are navigators)
+src/         the rest of the app: theme now, then the database queries, reader, search and settings
+assets/      the app's icons, splash image and fonts (Amiri and Cairo, from v1)
 book_data/   the content: the checked text of the book, the tools that check it and the docs of each step (book_data/README.md)
 database/    the SQLite database the app reads, built from book_data/content/ (database/README.md)
 v1/          the v1 Android app (Kotlin, Jetpack Compose), kept for reference until v2 ships; v1's database is an input to the content
 CLAUDE.md    what a Claude Code session working here needs to know (book_data/CLAUDE.md for the content)
 ```
 
-The Expo app (TypeScript) goes at the root, next to these. Once v2 is released, `v1/` is deleted; it stays on `master` and the `v1.0.0` tag.
+The Expo app (TypeScript) is at the root, next to these: `app.json`, `eas.json`, `package.json` and `metro.config.js`, which keeps Metro out of `book_data/` and `v1/`. Once v2 is released, `v1/` is deleted; it stays on `master` and the `v1.0.0` tag.
 
 ## Building v1
 

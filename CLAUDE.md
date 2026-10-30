@@ -4,6 +4,7 @@
 - **Two people work on v2:** the owner checks the content, in `book_data/`, on Debian; a collaborator builds the app, on macOS. Their Claude Code sessions share only the repo, so keep what a session needs in these files, the READMEs or `book_data/docs/`, never in Claude Code's memory.
 - **`book_data/`** holds the content: the source of truth, the tools that check it and the docs of each step. Its own `CLAUDE.md` and `README.md` say how to work there. It runs only on the owner's Debian machine, so its tools and commands need not work on macOS (the owner's decision, 2026-10-25). The app's must work on both.
 - **`database/riyad.db`** is what the app reads. `book_data/tools/build_db.py` builds it from `book_data/content/`, so it is never edited by hand. `database/README.md` describes its tables.
+- **The Expo app** is at the repo root (`src/app/` for screens, `src/` for the rest), developed on `v2-app`. It uses Expo SDK 58, newer than most training data: before using an Expo, EAS or React Native API, read the docs for that version (https://docs.expo.dev/versions/v58.0.0/, index at https://docs.expo.dev/llms.txt). Add packages with `npx expo install`, never `npm install <pkg>`, so versions match the SDK. Run `npm run lint`, `npm run typecheck` and `npm test` before calling app work done. The README's "Running it" says how to start it.
 - **Commit only when asked.**
 
 ## Decisions the owner has made
