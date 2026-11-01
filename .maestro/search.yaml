@@ -1,0 +1,32 @@
+# Search by hadith number, and by a word without its marks; a result opens the reader at it.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1'
+    timeout: 15000
+- tapOn: 'البحث'
+- inputText: '12'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 12:.*'
+    timeout: 5000
+- tapOn: 'الحديث رقم 12:.*'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 12'
+    timeout: 5000
+# Maestro types only Latin letters and digits on Android, so the word search runs on iPhone.
+- runFlow:
+    when:
+      platform: iOS
+    commands:
+      - tapOn: 'البحث'
+      - tapOn: 'مسح'
+      - inputText: 'الصلاة'
+      - extendedWaitUntil:
+          visible: 'أول 100 حديث'
+          timeout: 5000
+      - tapOn: 'الحديث رقم 10:.*'
+      - extendedWaitUntil:
+          visible: 'الحديث رقم 10'
+          timeout: 5000

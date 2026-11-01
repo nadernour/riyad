@@ -3,7 +3,17 @@
  */
 import path from 'path';
 
-import { checkSchema, getHadith, getHadithCount, getInfo, listBooks, listChapters, search, SEARCH_LIMIT } from './content';
+import {
+  checkSchema,
+  getHadith,
+  getHadithCount,
+  getInfo,
+  listBooks,
+  listChapters,
+  listHadith,
+  search,
+  SEARCH_LIMIT,
+} from './content';
 import { openContentDb } from './testing';
 
 const db = openContentDb(path.join(__dirname, '../../database/riyad.db'));
@@ -40,15 +50,24 @@ test('a hadith that does not exist', async () => {
 test('books and chapters, each with its first hadith', async () => {
   const books = await listBooks(db);
   expect(books).toHaveLength(20);
-  expect(books[0]).toEqual({ id: 1, title: 'الكتاب الأول', firstHadith: 1 });
+  expect(books[0]).toMatchObject({ id: 1, title: 'الكتاب الأول', firstHadith: 1 });
 
   const chapters = await listChapters(db, 1);
+  expect(books[0].chapterCount).toBe(chapters.length);
   expect(chapters[0]).toMatchObject({ id: 1, firstHadith: 1 });
   for (let i = 1; i < chapters.length; i++) expect(chapters[i].firstHadith).toBeGreaterThan(chapters[i - 1].firstHadith);
 });
 
+test('a list of hadith, in the order asked, without numbers that have none', async () => {
+  const list = await listHadith(db, [12, 3, 99999, 7]);
+  expect(list.map((hadith) => hadith.id)).toEqual([12, 3, 7]);
+  expect(list[0]).toMatchObject({ id: 12, book: 'الكتاب الأول' });
+  expect(list[0].title.length).toBeGreaterThan(0);
+  expect(await listHadith(db, [])).toEqual([]);
+});
+
 describe('search', () => {
-  const ids = async (query: string) => (await search(db, query)).map((result) => result.id);
+  const ids = async (query: string) => (await search(db, query)).hadith.map((result) => result.id);
 
   test('finds words, ignoring tashkeel', async () => {
     expect(await ids('إنما الأعمال بالنيات')).toContain(1);
@@ -77,7 +96,8 @@ describe('search', () => {
     expect(await ids('  ')).toEqual([]);
   });
 
-  test('returns the first matches up to the limit, in the book order', async () => {
+  test('returns the first matches up to the limit, in the book order, and says there are more', async () => {
+    expect((await search(db, 'الله')).more).toBe(true);
     const found = await ids('الله');
     expect(found).toHaveLength(SEARCH_LIMIT);
     expect(found).toEqual([...found].sort((a, b) => a - b));
@@ -86,6 +106,11 @@ describe('search', () => {
       ['"الله"'],
     );
     expect(found).toEqual(all.slice(0, SEARCH_LIMIT).map((row) => row.rowid));
+  });
+
+  test('says there are no more when every match is shown', async () => {
+    const results = await search(db, '١٢');
+    expect(results).toMatchObject({ hadith: [{ id: 12 }], more: false });
   });
 
   test('quotes in a query cannot break the search', async () => {

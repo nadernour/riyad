@@ -6,7 +6,6 @@ import {
   addBookmark,
   clearBookmarks,
   getSetting,
-  isBookmarked,
   listBookmarks,
   migrateUserDb,
   removeBookmark,
@@ -66,8 +65,7 @@ test('removing one and clearing all', () => {
   addBookmark(db, 1, 1);
   addBookmark(db, 2, 2);
   removeBookmark(db, 1);
-  expect(isBookmarked(db, 1)).toBe(false);
-  expect(isBookmarked(db, 2)).toBe(true);
+  expect(listBookmarks(db)).toEqual([{ hadithId: 2, createdAt: 2 }]);
   clearBookmarks(db);
   expect(listBookmarks(db)).toEqual([]);
 });

@@ -40,6 +40,7 @@ export interface Book {
   id: number;
   title: string;
   firstHadith: number;
+  chapterCount: number;
 }
 
 export interface Chapter {
@@ -48,7 +49,8 @@ export interface Chapter {
   firstHadith: number;
 }
 
-export interface SearchResult {
+// A hadith as a list shows it: search results and bookmarks.
+export interface HadithSummary {
   id: number;
   title: string;
   book: string;
@@ -95,8 +97,8 @@ export async function getHadith(db: ContentDb, id: number): Promise<Hadith | nul
 
 export function listBooks(db: ContentDb): Promise<Book[]> {
   return db.getAllAsync<Book>(
-    `SELECT b.id, b.title, min(h.id) AS firstHadith FROM books b JOIN hadith h ON h.book_id = b.id
-     GROUP BY b.id ORDER BY b.id`,
+    `SELECT b.id, b.title, min(h.id) AS firstHadith, count(DISTINCT h.chapter_id) AS chapterCount
+     FROM books b JOIN hadith h ON h.book_id = b.id GROUP BY b.id ORDER BY b.id`,
     [],
   );
 }
@@ -109,26 +111,47 @@ export function listChapters(db: ContentDb, bookId: number): Promise<Chapter[]> 
   );
 }
 
+const SUMMARY = `SELECT h.id, h.title, b.title AS book, c.title AS chapter
+  FROM hadith h JOIN books b ON b.id = h.book_id JOIN chapters c ON c.id = h.chapter_id`;
+
+// The hadith with these numbers, in the order given; a number with no hadith is left out.
+export async function listHadith(db: ContentDb, ids: number[]): Promise<HadithSummary[]> {
+  if (ids.length === 0) return [];
+  const rows = await db.getAllAsync<HadithSummary>(`${SUMMARY} WHERE h.id IN (${ids.map(() => '?').join(', ')})`, ids);
+  const byId = new Map(rows.map((row) => [row.id, row]));
+  return ids.flatMap((id) => byId.get(id) ?? []);
+}
+
+// The number a query of digits only asks for: Western digits, Arabic-Indic (٠–٩) or Extended Arabic-Indic (۰–۹), which
+// Persian and Urdu keyboards type.
+export function hadithNumber(query: string): number | null {
+  const trimmed = query.trim();
+  if (!/^[0-9٠-٩۰-۹]+$/.test(trimmed)) return null;
+  return Number(trimmed.replace(/[٠-٩۰-۹]/g, (digit) => String(digit.charCodeAt(0) % 16)));
+}
+
+export interface SearchResults {
+  hadith: HadithSummary[];
+  // More hadith match than SEARCH_LIMIT: these are the first.
+  more: boolean;
+}
+
 // A query of digits only opens the hadith with that number; otherwise it is simplified as the text was, and found
 // anywhere in a hadith's text, even inside a word (database/README.md, "Search").
-export async function search(db: ContentDb, query: string): Promise<SearchResult[]> {
-  const select = `SELECT h.id, h.title, b.title AS book, c.title AS chapter
-    FROM hadith h JOIN books b ON b.id = h.book_id JOIN chapters c ON c.id = h.chapter_id`;
+export async function search(db: ContentDb, query: string): Promise<SearchResults> {
+  const id = hadithNumber(query);
+  if (id !== null)
+    return { hadith: await db.getAllAsync<HadithSummary>(`${SUMMARY} WHERE h.id = ?`, [id]), more: false };
 
-  const trimmed = query.trim();
-  // Western digits, Arabic-Indic (٠–٩) or Extended Arabic-Indic (۰–۹), which Persian and Urdu keyboards type.
-  if (/^[0-9٠-٩۰-۹]+$/.test(trimmed)) {
-    const id = Number(trimmed.replace(/[٠-٩۰-۹]/g, (digit) => String(digit.charCodeAt(0) % 16)));
-    return db.getAllAsync<SearchResult>(`${select} WHERE h.id = ?`, [id]);
-  }
-
-  const simplified = simplify(trimmed);
-  if (simplified.length < MIN_QUERY_LENGTH) return [];
+  const simplified = simplify(query);
+  if (simplified.length < MIN_QUERY_LENGTH) return { hadith: [], more: false };
   // simplify() leaves only letters and spaces, so the query can't break out of the double quotes. The limit is inside
-  // the full-text query, as database/README.md has it, so a common word stops at the first matches.
-  return db.getAllAsync<SearchResult>(
-    `${select} WHERE h.id IN (SELECT rowid FROM hadith_search WHERE hadith_search MATCH ? ORDER BY rowid LIMIT ?)
+  // the full-text query, as database/README.md has it, so a common word stops at the first matches; one more than
+  // shown tells whether there are more.
+  const hadith = await db.getAllAsync<HadithSummary>(
+    `${SUMMARY} WHERE h.id IN (SELECT rowid FROM hadith_search WHERE hadith_search MATCH ? ORDER BY rowid LIMIT ?)
      ORDER BY h.id`,
-    [`"${simplified}"`, SEARCH_LIMIT],
+    [`"${simplified}"`, SEARCH_LIMIT + 1],
   );
+  return { hadith: hadith.slice(0, SEARCH_LIMIT), more: hadith.length > SEARCH_LIMIT };
 }

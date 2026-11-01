@@ -55,10 +55,6 @@ export function listBookmarks(db: UserDb): Bookmark[] {
   );
 }
 
-export function isBookmarked(db: UserDb, hadithId: number): boolean {
-  return db.getFirstSync('SELECT 1 FROM bookmarks WHERE hadith_id = ?', [hadithId]) !== null;
-}
-
 export function addBookmark(db: UserDb, hadithId: number, now = Date.now()): void {
   db.runSync('INSERT OR IGNORE INTO bookmarks (hadith_id, created_at) VALUES (?, ?)', [hadithId, now]);
 }

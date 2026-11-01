@@ -7,33 +7,11 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getHadithCount } from '@/db/content';
 import { useHadith, useQuery } from '@/db/hooks';
-import { getSetting, setSetting } from '@/db/user';
-import { userDb } from '@/db/userDb';
 import { HadithPage } from '@/reader/HadithPage';
+import { lastHadithRead, rememberHadith } from '@/reader/lastHadith';
 import { Pager } from '@/reader/Pager';
 import { HEADER_HEIGHT, ReaderHeader } from '@/reader/ReaderHeader';
 import { DEFAULT_FONT_SIZE, fonts, useColors } from '@/theme';
-
-const LAST_HADITH = 'lastHadith';
-
-// Remembering the last hadith read is a convenience: if user.db can't be read or written, the reader opens at the
-// first hadith and reads on without it, rather than failing.
-function lastHadithRead(): number {
-  try {
-    const last = Number(getSetting(userDb(), LAST_HADITH));
-    return Number.isInteger(last) && last > 0 ? last : 1;
-  } catch {
-    return 1;
-  }
-}
-
-function rememberHadith(id: number) {
-  try {
-    setSetting(userDb(), LAST_HADITH, String(id));
-  } catch {
-    // As above: the reader works without it.
-  }
-}
 
 // A hadith asked for by another screen (/?id=12).
 function askedHadith(param: string | undefined): number | null {
@@ -108,7 +86,7 @@ export default function ReaderScreen() {
   return (
     <View style={[styles.fill, { backgroundColor: colors.background }]}>
       <Pager count={last} index={index} onIndexChange={setRequested} renderPage={renderPage} onTap={toggleFullScreen} />
-      <ReaderHeader title={title} insetTop={margins.top} hidden={fullScreen} />
+      <ReaderHeader title={title} hadithId={index} insetTop={margins.top} hidden={fullScreen} />
       <StatusBar hidden={fullScreen} animated />
       <NavigationBar hidden={fullScreen} />
     </View>

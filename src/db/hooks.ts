@@ -7,13 +7,20 @@ export function useContentDb(): ContentDb {
   return useSQLiteContext();
 }
 
-export type Loaded<T> = { status: 'loading' } | { status: 'done'; value: T } | { status: 'error'; error: Error };
+// A `stale` value is the last key's, shown while the new key's loads (useQuery's keepPrevious).
+export type Loaded<T> =
+  { status: 'loading' } | { status: 'done'; value: T; stale?: boolean } | { status: 'error'; error: Error };
 
 // Runs a query on riyad.db, again whenever `key` changes: the key names what the query reads, such as `hadith:12`.
 // The result is kept with the key it's for, so a new key shows as loading until its own result comes, and a result
 // that comes after the key changed, or after the screen closed, is dropped. A `cached` value is shown as it is, with
-// no query and no second render.
-export function useQuery<T>(key: string, query: (db: ContentDb) => Promise<T>, cached?: T): Loaded<T> {
+// no query and no second render. With `keepPrevious`, a new key shows the last key's value, marked stale, until its own
+// comes, so a list that changes as it is used doesn't flash a spinner.
+export function useQuery<T>(
+  key: string,
+  query: (db: ContentDb) => Promise<T>,
+  { cached, keepPrevious = false }: { cached?: T; keepPrevious?: boolean } = {},
+): Loaded<T> {
   const db = useContentDb();
   const latest = useRef(query);
   const [result, setResult] = useState<{ key: string; state: Loaded<T> } | null>(null);
@@ -36,7 +43,9 @@ export function useQuery<T>(key: string, query: (db: ContentDb) => Promise<T>, c
   }, [db, key, isCached]);
 
   if (isCached) return { status: 'done', value: cached };
-  return result?.key === key ? result.state : { status: 'loading' };
+  if (result?.key === key) return result.state;
+  if (keepPrevious && result?.state.status === 'done') return { ...result.state, stale: true };
+  return { status: 'loading' };
 }
 
 // The hadith read most recently, so that paging back, or a second screen showing the same hadith, needs no query.
@@ -72,5 +81,5 @@ function loadHadith(db: ContentDb, id: number): Promise<Hadith | null> {
 }
 
 export function useHadith(id: number): Loaded<Hadith | null> {
-  return useQuery(`hadith:${id}`, (db) => loadHadith(db, id), cachedHadith(id));
+  return useQuery(`hadith:${id}`, (db) => loadHadith(db, id), { cached: cachedHadith(id) });
 }
