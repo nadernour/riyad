@@ -24,7 +24,7 @@ appId: com.nad.riyadalsalheen.dev
 - assertVisible: 'إزالة من المفضلة'
 # The bookmarks screen opens it too, and removes it after asking.
 - tapOn: 'القائمة'
-- tapOn: '.*المفضلة'
+- tapOn: 'المفضلة'
 - tapOn: 'إزالة الحديث رقم 1 من المفضلة'
 - tapOn: 'إزالة'
 - assertVisible: 'لا توجد أحاديث في المفضلة'

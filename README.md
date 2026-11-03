@@ -135,7 +135,7 @@ The app:
   - [x] P0: project setup (Expo SDK 58, Expo Router with a drawer, forced right-to-left, Amiri and Cairo, Jest, ESLint, `eas.json`), checked on the iPhone simulator (2026-10-30)
   - [x] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`, checked on the iPhone simulator and an Android phone (2026-10-30)
   - [x] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith, opening a hadith by link (`/?id=12`), checked on a Galaxy A17 (0.3% janky frames over 30 fast swipes) and the iPhone simulator (2026-10-30)
-  - [ ] P3: browse by book and chapter, search, bookmarks (with the newest in the side menu): built, code-reviewed, and its 6 Maestro flows pass on the iPhone simulator (2026-10-30). Next: run `maestro --device <adb id> test .maestro` on an Android phone (unlocked), fix what fails, then tick this. Not yet looked at in dark mode (P5).
+  - [x] P3: browse by book and chapter, search, bookmarks (with the newest in the side menu), its 6 Maestro flows passing on the iPhone simulator and a Galaxy A17 (2026-11-03). Not yet looked at in dark mode (P5).
   - [ ] P4: settings (font size; System, Light or Dark), About, sharing
   - [ ] P5: polish and tests: accessibility, large fonts, dark mode, device tests, icon and splash screen
   - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key
