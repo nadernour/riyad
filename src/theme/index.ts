@@ -1,5 +1,7 @@
 import { useColorScheme } from 'react-native';
 
+import { useTheme } from '@/db/settings';
+
 // Font family names, as loaded by useFonts in src/app/_layout.tsx. Scheherazade New for the book's text, Cairo for the
 // interface (as in v1). v1's Amiri was dropped: it crowds the marks of short letters, such as لَيْلَةَ and وَآخِرَ.
 export const fonts = {
@@ -20,9 +22,6 @@ export const fontFiles = {
 
 // The text is fully vocalized: iOS clips the marks above and below a line when the line height is tight.
 export const TEXT_LINE_HEIGHT = 2;
-
-// v1's default; the setting for it comes in P4. v1 lets it range from 14 to 30.
-export const DEFAULT_FONT_SIZE = 24;
 
 const light = {
   background: '#FBFCFC',
@@ -47,7 +46,14 @@ const dark: Colors = {
   speech: '#A9B9D6',
 };
 
-// Follows the phone's setting for now; the System / Light / Dark setting comes in P4.
+// The theme setting: the phone's, or light or dark whatever the phone's is. The screens read the setting itself, and
+// the phone's own views (alerts, the keyboard) follow it through Appearance (src/app/_layout.tsx).
 export function useColors(): Colors {
-  return useColorScheme() === 'dark' ? dark : light;
+  const theme = useTheme();
+  const system = useColorScheme();
+  return (theme === 'system' ? system : theme) === 'dark' ? dark : light;
+}
+
+export function useIsDark(): boolean {
+  return useColors() === dark;
 }

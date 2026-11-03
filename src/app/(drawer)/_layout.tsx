@@ -43,6 +43,8 @@ export default function DrawerLayout() {
       <Drawer.Screen name="books" options={{ title: 'الكتب والأبواب', drawerIcon: drawerIcon('books') }} />
       <Drawer.Screen name="search" options={{ title: 'البحث', drawerIcon: drawerIcon('search') }} />
       <Drawer.Screen name="bookmarks" options={{ title: 'المفضلة', drawerIcon: drawerIcon('bookmarks') }} />
+      <Drawer.Screen name="settings" options={{ title: 'الإعدادات', drawerIcon: drawerIcon('settings') }} />
+      <Drawer.Screen name="about" options={{ title: 'حول التطبيق', drawerIcon: drawerIcon('about') }} />
     </Drawer>
   );
 }

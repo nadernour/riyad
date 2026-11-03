@@ -93,7 +93,8 @@ Every build but the release is a test build, «رياض الصالحين (تجر
 - On the phone, the copy of `riyad.db` is named after the bundled file's hash (`src/db/ContentProvider.tsx`). An app version with a new `riyad.db` copies it afresh and deletes the old copy, with no version number to raise by hand.
 - At startup the app checks the database's `user_version`. A database with a schema the code isn't written for stops the app with an error, rather than showing wrong data.
 - The user's bookmarks and settings are in their own `user.db` (`src/db/user.ts`), which content updates never touch. Its tables change only through a new entry at the end of `MIGRATIONS`.
-- Screens see the bookmarks through `src/db/bookmarks.ts`, so the reader's button, the bookmarks screen and the side menu change together.
+- Screens see the bookmarks through `src/db/bookmarks.ts`, so the reader's button, the bookmarks screen and the side menu change together. The settings (font size, theme) work the same way, through `src/db/settings.ts`.
+- The theme setting is applied twice: `useColors()` (`src/theme`) reads it for the app's own views, and `Appearance.setColorScheme` (`src/app/_layout.tsx`) for the phone's (alerts, the keyboard, the share sheet).
 - Icons come from `expo-symbols`, named by meaning in `src/components/Icon.tsx`: SF Symbols on iPhone, Material Symbols on Android.
 
 ### The database
@@ -136,7 +137,7 @@ The app:
   - [x] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`, checked on the iPhone simulator and an Android phone (2026-10-30)
   - [x] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith, opening a hadith by link (`/?id=12`), checked on a Galaxy A17 (0.3% janky frames over 30 fast swipes) and the iPhone simulator (2026-10-30)
   - [x] P3: browse by book and chapter, search, bookmarks (with the newest in the side menu), its 6 Maestro flows passing on the iPhone simulator and a Galaxy A17 (2026-11-03). Not yet looked at in dark mode (P5).
-  - [ ] P4: settings (font size; System, Light or Dark), About, sharing
+  - [x] P4: settings (font size 14–30; System, Light or Dark), About, sharing with the hadith number, code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-03). The books list became a measured ScrollView, which checks it reached the chapter: Android cut short the FlatList's scroll to a chapter far down a long book.
   - [ ] P5: polish and tests: accessibility, large fonts, dark mode, device tests, icon and splash screen
   - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key
 - [ ] Release v2 on Android and iPhone, once the content is done. It isn't released with v1's commentary, which is an edited version of the book's (the owner's decision, 2026-10-16).

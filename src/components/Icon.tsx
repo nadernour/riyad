@@ -18,6 +18,14 @@ const ICONS = {
   expand: { ios: 'chevron.down', android: 'expand_more' },
   collapse: { ios: 'chevron.up', android: 'expand_less' },
   current: { ios: 'checkmark.circle.fill', android: 'check_circle' },
+  share: { ios: 'square.and.arrow.up', android: 'share' },
+  settings: { ios: 'gearshape', android: 'settings' },
+  about: { ios: 'info.circle', android: 'info' },
+  email: { ios: 'envelope', android: 'mail' },
+  code: { ios: 'chevron.left.forwardslash.chevron.right', android: 'code' },
+  smaller: { ios: 'minus', android: 'remove' },
+  larger: { ios: 'plus', android: 'add' },
+  chosen: { ios: 'checkmark', android: 'check' },
 } satisfies Record<string, SymbolName>;
 
 export type IconName = keyof typeof ICONS;

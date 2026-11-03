@@ -7,11 +7,12 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { getHadithCount } from '@/db/content';
 import { useHadith, useQuery } from '@/db/hooks';
+import { useFontSize } from '@/db/settings';
 import { HadithPage } from '@/reader/HadithPage';
 import { lastHadithRead, rememberHadith } from '@/reader/lastHadith';
 import { Pager } from '@/reader/Pager';
 import { HEADER_HEIGHT, ReaderHeader } from '@/reader/ReaderHeader';
-import { DEFAULT_FONT_SIZE, fonts, useColors } from '@/theme';
+import { fonts, useColors } from '@/theme';
 
 // A hadith asked for by another screen (/?id=12).
 function askedHadith(param: string | undefined): number | null {
@@ -23,6 +24,7 @@ export default function ReaderScreen() {
   const colors = useColors();
   const params = useLocalSearchParams<{ id?: string }>();
   const count = useQuery('hadithCount', getHadithCount);
+  const fontSize = useFontSize();
 
   const [requested, setRequested] = useState(() => askedHadith(params.id) ?? lastHadithRead());
   const [fullScreen, setFullScreen] = useState(false);
@@ -57,19 +59,20 @@ export default function ReaderScreen() {
   }, [index, last]);
 
   const current = useHadith(index);
-  const title = current.status === 'done' && current.value ? current.value.book : 'رياض الصالحين';
+  const hadith = current.status === 'done' ? current.value : null;
+  const title = hadith ? hadith.book : 'رياض الصالحين';
 
   const toggleFullScreen = useCallback(() => setFullScreen((full) => !full), []);
   const renderPage = useCallback(
     (id: number) => (
       <HadithPage
         id={id}
-        fontSize={DEFAULT_FONT_SIZE}
+        fontSize={fontSize}
         insetTop={margins.top + HEADER_HEIGHT}
         insetBottom={margins.bottom}
       />
     ),
-    [margins.top, margins.bottom],
+    [fontSize, margins.top, margins.bottom],
   );
 
   if (count.status === 'error') {
@@ -86,7 +89,7 @@ export default function ReaderScreen() {
   return (
     <View style={[styles.fill, { backgroundColor: colors.background }]}>
       <Pager count={last} index={index} onIndexChange={setRequested} renderPage={renderPage} onTap={toggleFullScreen} />
-      <ReaderHeader title={title} hadithId={index} insetTop={margins.top} hidden={fullScreen} />
+      <ReaderHeader title={title} hadithId={index} hadith={hadith} insetTop={margins.top} hidden={fullScreen} />
       <StatusBar hidden={fullScreen} animated />
       <NavigationBar hidden={fullScreen} />
     </View>

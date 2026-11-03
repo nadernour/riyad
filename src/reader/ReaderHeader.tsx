@@ -1,12 +1,15 @@
 import { router } from 'expo-router';
 import { DrawerToggleButton } from 'expo-router/drawer';
 import { useEffect, type ReactNode } from 'react';
-import { Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Share, StyleSheet, Text, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
 import { Icon } from '@/components/Icon';
 import { setBookmarked, useIsBookmarked } from '@/db/bookmarks';
+import type { Hadith } from '@/db/content';
 import { fonts, useColors } from '@/theme';
+
+import { shareText } from './shareText';
 
 export const HEADER_HEIGHT = 56;
 
@@ -14,14 +17,17 @@ type Props = {
   title: string;
   // The hadith on screen, which the bookmark button marks.
   hadithId: number;
+  // The same hadith, once it is read, for the share button.
+  hadith: Hadith | null;
   // The phone's status bar, above the header.
   insetTop: number;
   hidden: boolean;
 };
 
-// The reader's bar: the menu, the current book's title, and the search and bookmark buttons, as in v1. It lies over the
+// The reader's bar: the menu, the current book's title, and the search, share and bookmark buttons. v1 shares on a
+// long press, which nothing shows; v2 has a button for it. It lies over the
 // pages rather than above them, so hiding it for full screen slides it away without moving the text under it.
-export function ReaderHeader({ title, hadithId, insetTop, hidden }: Props) {
+export function ReaderHeader({ title, hadithId, hadith, insetTop, hidden }: Props) {
   const colors = useColors();
   const bookmarked = useIsBookmarked(hadithId);
   const height = insetTop + HEADER_HEIGHT;
@@ -48,6 +54,10 @@ export function ReaderHeader({ title, hadithId, insetTop, hidden }: Props) {
         <HeaderButton label="البحث" onPress={() => router.navigate('/search')}>
           <Icon name="search" color={colors.text} />
         </HeaderButton>
+        {/* Always there, so the bar doesn't shift while a hadith loads: until then it does nothing. */}
+        <HeaderButton label="مشاركة الحديث" disabled={!hadith} onPress={() => hadith && share(hadith)}>
+          <Icon name="share" color={colors.text} />
+        </HeaderButton>
         <HeaderButton
           label={bookmarked ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة'}
           onPress={() => setBookmarked(hadithId, !bookmarked)}>
@@ -58,9 +68,31 @@ export function ReaderHeader({ title, hadithId, insetTop, hidden }: Props) {
   );
 }
 
-function HeaderButton({ label, onPress, children }: { label: string; onPress: () => void; children: ReactNode }) {
+// The share sheet says itself whether the hadith was shared: nothing is left for the reader to report.
+function share(hadith: Hadith) {
+  Share.share({ title: hadith.title, message: shareText(hadith) }).catch(() => {});
+}
+
+function HeaderButton({
+  label,
+  disabled = false,
+  onPress,
+  children,
+}: {
+  label: string;
+  disabled?: boolean;
+  onPress: () => void;
+  children: ReactNode;
+}) {
   return (
-    <Pressable onPress={onPress} hitSlop={4} style={styles.button} accessibilityRole="button" accessibilityLabel={label}>
+    <Pressable
+      onPress={onPress}
+      disabled={disabled}
+      hitSlop={4}
+      style={styles.button}
+      accessibilityRole="button"
+      accessibilityLabel={label}
+      accessibilityState={{ disabled }}>
       {children}
     </Pressable>
   );

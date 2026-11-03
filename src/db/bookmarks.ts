@@ -16,13 +16,14 @@ function subscribe(listener: () => void) {
   };
 }
 
-// If user.db can't be read, there are no bookmarks to show, and the rest of the app works on without them.
+// If user.db can't be read, there are no bookmarks to show, and the rest of the app works on without them. It is
+// tried again the next time.
 function getSnapshot(): Bookmark[] {
   if (!snapshot) {
     try {
       snapshot = listBookmarks(userDb());
     } catch {
-      snapshot = NONE;
+      return NONE;
     }
   }
   return snapshot;

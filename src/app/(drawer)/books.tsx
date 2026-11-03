@@ -1,6 +1,14 @@
 import { useIsFocused } from 'expo-router';
-import { useEffect, useRef, useState } from 'react';
-import { ActivityIndicator, FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Fragment, useEffect, useRef, useState, type ComponentRef } from 'react';
+import {
+  ActivityIndicator,
+  Pressable,
+  ScrollView,
+  StyleSheet,
+  Text,
+  View,
+  type LayoutChangeEvent,
+} from 'react-native';
 
 import { Icon } from '@/components/Icon';
 import { listBooks, listChapters, type Book, type Chapter } from '@/db/content';
@@ -10,8 +18,8 @@ import { openHadith } from '@/reader/openHadith';
 import { CHAPTER, count } from '@/text/count';
 import { fonts, useColors } from '@/theme';
 
-// One list of the books, with the open book's chapters under it, so it can scroll to a chapter.
-type Row = { kind: 'book'; book: Book } | { kind: 'chapter'; chapter: Chapter };
+// How many frames the list tries for to reach the chapter being read (see settle).
+const MAX_TRIES = 30;
 
 // Browse by book and chapter, as v1 does: a book opens to its chapters, and a chapter opens the reader at its first
 // hadith. The book and chapter being read are open, marked and scrolled to.
@@ -37,29 +45,44 @@ export default function BooksScreen() {
   }
 
   const chapters = useQuery(`chapters:${open}`, (db) => (open ? listChapters(db, open) : Promise.resolve([])));
-  const rows: Row[] =
-    books.status === 'done'
-      ? books.value.flatMap((book): Row[] => [
-          { kind: 'book', book },
-          ...(book.id === open && chapters.status === 'done'
-            ? chapters.value.map((chapter): Row => ({ kind: 'chapter', chapter }))
-            : []),
-        ])
-      : [];
 
-  // Scrolled to the chapter being read once its row is there, once each time the reader has moved.
-  const list = useRef<FlatList<Row>>(null);
+  // Scrolled to the chapter being read, once each time the reader has moved, as soon as the list and that chapter's
+  // row are laid out. The list is short (20 books, and at most 115 chapters open), so it is all laid out and each
+  // row's place is known: a FlatList lays out only the rows near the top, and could only guess at how far down a
+  // chapter is. A chapter's place doesn't change, since only one book is open at a time.
+  const list = useRef<ComponentRef<typeof ScrollView>>(null);
+  const height = useRef(0);
+  const offset = useRef(0);
+  const chapterY = useRef(new Map<number, number>());
+  const target = useRef<{ chapterId: number; openedFor: number } | null>(null);
   const scrolledFor = useRef<number | null>(null);
-  const rowCount = useRef(0);
+  // Android cuts a scroll short to the content as it is on screen, which can still be the content before the book
+  // opened (the rows report their layout before they are drawn). So the list checks, frame by frame, that it got
+  // there, and scrolls again if not; a bounded number of times, and not once the reader scrolls it.
+  const pending = useRef<{ y: number; tries: number } | null>(null);
+  const settle = () => {
+    const goal = pending.current;
+    if (!goal || Math.abs(offset.current - goal.y) < 1 || goal.tries >= MAX_TRIES) {
+      pending.current = null;
+      return;
+    }
+    goal.tries += 1;
+    list.current?.scrollTo({ y: goal.y, animated: false });
+    requestAnimationFrame(settle);
+  };
+  const scrollToCurrent = () => {
+    const goal = target.current;
+    const y = goal ? chapterY.current.get(goal.chapterId) : undefined;
+    if (!goal || y === undefined || !height.current || scrolledFor.current === goal.openedFor) return;
+    scrolledFor.current = goal.openedFor;
+    pending.current = { y: Math.max(0, y - height.current * 0.3), tries: 0 };
+    settle();
+  };
+  const chapterId = here?.chapterId;
   useEffect(() => {
-    rowCount.current = rows.length;
+    target.current = chapterId !== undefined && openedFor !== null ? { chapterId, openedFor } : null;
+    scrollToCurrent();
   });
-  const target = rows.findIndex((row) => row.kind === 'chapter' && row.chapter.id === here?.chapterId);
-  useEffect(() => {
-    if (target < 0 || scrolledFor.current === openedFor) return;
-    scrolledFor.current = openedFor;
-    list.current?.scrollToIndex({ index: target, viewPosition: 0.3, animated: false });
-  }, [target, openedFor]);
 
   if (books.status !== 'done') {
     return (
@@ -74,36 +97,42 @@ export default function BooksScreen() {
   }
 
   return (
-    <FlatList
+    <ScrollView
       ref={list}
       style={{ backgroundColor: colors.background }}
-      data={rows}
-      keyExtractor={(row) => (row.kind === 'book' ? `book:${row.book.id}` : `chapter:${row.chapter.id}`)}
-      renderItem={({ item }) =>
-        item.kind === 'book' ? (
-          <BookRow
-            book={item.book}
-            open={open === item.book.id}
-            onPress={() => setOpen(open === item.book.id ? null : item.book.id)}
-          />
-        ) : (
-          <ChapterRow chapter={item.chapter} current={item.chapter.id === here?.chapterId} />
-        )
-      }
-      ListFooterComponent={
-        open !== null && chapters.status === 'loading' ? (
-          <ActivityIndicator style={styles.loading} color={colors.prophet} />
-        ) : undefined
-      }
-      // The rows above it may not be laid out yet: scroll near it, then try once more once they are, if the row is
-      // still there (the book may have been closed meanwhile).
-      onScrollToIndexFailed={({ index, averageItemLength }) => {
-        list.current?.scrollToOffset({ offset: index * averageItemLength, animated: false });
-        setTimeout(() => {
-          if (index < rowCount.current) list.current?.scrollToIndex({ index, viewPosition: 0.3, animated: false });
-        }, 50);
+      onLayout={(event) => {
+        height.current = event.nativeEvent.layout.height;
+        scrollToCurrent();
       }}
-    />
+      onScroll={(event) => {
+        offset.current = event.nativeEvent.contentOffset.y;
+      }}
+      scrollEventThrottle={16}
+      onScrollBeginDrag={() => {
+        pending.current = null;
+      }}>
+      {books.value.map((book) => (
+        <Fragment key={book.id}>
+          <BookRow book={book} open={open === book.id} onPress={() => setOpen(open === book.id ? null : book.id)} />
+          {book.id === open &&
+            (chapters.status === 'done' ? (
+              chapters.value.map((chapter) => (
+                <ChapterRow
+                  key={chapter.id}
+                  chapter={chapter}
+                  current={chapter.id === here?.chapterId}
+                  onLayout={(event) => {
+                    chapterY.current.set(chapter.id, event.nativeEvent.layout.y);
+                    scrollToCurrent();
+                  }}
+                />
+              ))
+            ) : chapters.status === 'loading' ? (
+              <ActivityIndicator style={styles.loading} color={colors.prophet} />
+            ) : null)}
+        </Fragment>
+      ))}
+    </ScrollView>
   );
 }
 
@@ -130,10 +159,19 @@ function BookRow({ book, open, onPress }: { book: Book; open: boolean; onPress: 
   );
 }
 
-function ChapterRow({ chapter, current }: { chapter: Chapter; current: boolean }) {
+function ChapterRow({
+  chapter,
+  current,
+  onLayout,
+}: {
+  chapter: Chapter;
+  current: boolean;
+  onLayout?: (event: LayoutChangeEvent) => void;
+}) {
   const colors = useColors();
   return (
     <Pressable
+      onLayout={onLayout}
       style={({ pressed }) => [styles.chapterRow, pressed && { backgroundColor: colors.surface }]}
       onPress={() => openHadith(chapter.firstHadith)}
       accessibilityRole="button"
