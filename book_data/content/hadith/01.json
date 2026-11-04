@@ -809,7 +809,7 @@
       },
       {
        "role": "narration",
-       "text": "  .\n"
+       "text": " .\n"
       },
       {
        "role": "speech",
@@ -1936,10 +1936,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print has no ﷺ after «أن رسول الله» (p. 82); v1's ﷺ is kept."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "أَنَّ رَسُولَ اللهِ قالَ:",
+       "correction": "أنَّ رسولَ اللَّه ﷺ قالَ:",
+       "reason": "The print drops the ﷺ after «رسول الله» (p. 82)."
+      }
+     ],
+     "notes": []
     },
     {
      "id": 52,
@@ -6461,7 +6466,7 @@
       },
       {
        "role": "prophet",
-       "text": "يا أَيُّهَا النَّاسُ إِنَّكُمْ محشورونَ إِلَى اللَّه تَعَالَى حُفَاةً عُرَاةً غُرْلاً {كَمَا بَدَأْنَا أَوَّلَ خَلْقٍ نُعِيدُهُ وَعْداً علَيْنَا إِنَّا كُنَّا فَاعِلِينَ}  "
+       "text": "يا أَيُّهَا النَّاسُ إِنَّكُمْ محشورونَ إِلَى اللَّه تَعَالَى حُفَاةً عُرَاةً غُرْلاً {كَمَا بَدَأْنَا أَوَّلَ خَلْقٍ نُعِيدُهُ وَعْداً علَيْنَا إِنَّا كُنَّا فَاعِلِينَ} "
       },
       {
        "role": "prophet",
@@ -6473,7 +6478,7 @@
       },
       {
        "role": "prophet",
-       "text": "{العَزِيز الحَكيمُ}  "
+       "text": "{العَزِيز الحَكيمُ} "
       },
       {
        "role": "prophet",
@@ -7869,7 +7874,7 @@
       },
       {
        "role": "narration",
-       "text": "  ثُمَّ قَالَ: "
+       "text": " ثُمَّ قَالَ: "
       },
       {
        "role": "prophet",
@@ -7938,7 +7943,7 @@
       },
       {
        "role": "prophet",
-       "text": "{يَا أَيُّهَا الَّذِينَ آمَنُوا علَيْكُمْ أَنْفُسَكُمْ لا يَضُرُّكُمْ منْ ضَلَّ إِذَا اهْتَدَيْتُمْ}  "
+       "text": "{يَا أَيُّهَا الَّذِينَ آمَنُوا علَيْكُمْ أَنْفُسَكُمْ لا يَضُرُّكُمْ منْ ضَلَّ إِذَا اهْتَدَيْتُمْ} "
       },
       {
        "role": "speech",
@@ -8521,7 +8526,7 @@
       },
       {
        "role": "narration",
-       "text": " متَّفقٌ عَلَيْهِ."
+       "text": "متَّفقٌ عَلَيْهِ."
       }
      ],
      "meanings": [],
@@ -9141,10 +9146,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print has «فقال رسول الله: «أو أملك…» without ﷺ after the second «رسول الله» (p. 247); v1's ﷺ is kept."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "فَقالَ رَسُولُ اللهِ: «أَوَ أَمْلِكُ",
+       "correction": "فَقالَ رسولُ اللَّه ﷺ: «أَوَأَمْلِكُ",
+       "reason": "The print drops the ﷺ after the second «رسول الله» (p. 247)."
+      }
+     ],
+     "notes": []
     },
     {
      "id": 229,
@@ -9616,12 +9626,12 @@
     {
      "id": 244,
      "old_id": 242,
-     "page": 255,
+     "page": 256,
      "title": "إذا زنت الأمة فتبين زناها",
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنْهُ عَنِ النَّبِيِّ ﷺ قالَ:  "
+       "text": "وَعَنْهُ عَنِ النَّبِيِّ ﷺ قالَ: "
       },
       {
        "role": "prophet",
@@ -10713,7 +10723,7 @@
       },
       {
        "role": "speech",
-       "text": "جَاءَتنى مِسْكِينَةٌ تَحْمِل ابْنَتَيْنِ لَهَا، فَأَطعمتهَا ثَلاثَ تَمَرَاتٍ، فَأَعطتْ كُلَّ وَاحدَةٍ مِنْهُمَا تَمْرَةً وَرفعتْ إِلى فِيها تَمْرةً لِتَأْكُلَهَا، فَاسْتَطْعَمَتْهَا ابْنَتَاهَا، فَشَقَّت التَّمْرَةَ الَّتِى كَانَتْ تُريدُ أَنْ تأْكُلهَا بيْنهُمَا، فأَعْجبنى شَأْنُهَا، فَذَكرْتُ الَّذي صنعَتْ لِرَسُولِ اللهِ فَقالَ: "
+       "text": "جَاءَتنى مِسْكِينَةٌ تَحْمِل ابْنَتَيْنِ لَهَا، فَأَطعمتهَا ثَلاثَ تَمَرَاتٍ، فَأَعطتْ كُلَّ وَاحدَةٍ مِنْهُمَا تَمْرَةً وَرفعتْ إِلى فِيها تَمْرةً لِتَأْكُلَهَا، فَاسْتَطْعَمَتْهَا ابْنَتَاهَا، فَشَقَّت التَّمْرَةَ الَّتِى كَانَتْ تُريدُ أَنْ تأْكُلهَا بيْنهُمَا، فأَعْجبنى شَأْنُهَا، فَذَكرْتُ الَّذي صنعَتْ لِرَسُولِ اللهِ ﷺ فَقالَ: "
       },
       {
        "role": "prophet",
@@ -10727,10 +10737,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print has «فذكرت الذي صنعت لرسول الله، فقال» with no ﷺ after «لرسول الله» (p. 278); Muslim 6694 has it. Removed as the book's wording, per rule 1; restore it if you prefer to keep the salutation."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "لِرَسُولِ اللهِ، فَقالَ",
+       "correction": "لِرَسُولِ اللهِ ﷺ فَقالَ",
+       "reason": "The print drops the ﷺ after «لرسول الله» (p. 278); Muslim has it."
+      }
+     ],
+     "notes": []
     },
     {
      "id": 272,
@@ -11034,7 +11049,7 @@
       },
       {
        "role": "narration",
-       "text": " »  لا تقُلْ قَبَّحَكِ اللهُ."
+       "text": " » لا تقُلْ قَبَّحَكِ اللهُ."
       }
      ],
      "meanings": [],
@@ -12249,7 +12264,7 @@
       },
       {
        "role": "narration",
-       "text": "  متَّفقٌ عَلَيْهِ.\nوفِي رِوَايَةٍ لِلْبُخَارِيِّ: فَقالَ اللهُ تَعالَى: "
+       "text": " متَّفقٌ عَلَيْهِ.\nوفِي رِوَايَةٍ لِلْبُخَارِيِّ: فَقالَ اللهُ تَعالَى: "
       },
       {
        "role": "prophet",
@@ -14128,7 +14143,7 @@
       },
       {
        "role": "speech",
-       "text": " وإِنَّ هٰذَا مِنَ الجَاهِلِينَ. واللهِ ما جاوزَهَا عُمرُ حِينَ تَلاهَا عَلَيْهِ، وَكَانَ وَقَّافاً عِنْدَ كِتَابِ اللهِ تَعالَى."
+       "text": "وإِنَّ هٰذَا مِنَ الجَاهِلِينَ. واللهِ ما جاوزَهَا عُمرُ حِينَ تَلاهَا عَلَيْهِ، وَكَانَ وَقَّافاً عِنْدَ كِتَابِ اللهِ تَعالَى."
       },
       {
        "role": "narration",
@@ -16846,7 +16861,7 @@
       },
       {
        "role": "narration",
-       "text": "  فَرَفَعَ يَدَيْه وقالَ "
+       "text": " فَرَفَعَ يَدَيْه وقالَ "
       },
       {
        "role": "prophet",
@@ -18958,7 +18973,7 @@
      "corrections": [],
      "notes": [
       "v1's title «يقول ابن آدم:مالي مالي» belongs to another hadith (v1's titles slip here).",
-      "The print has «سُلَيْمانَ بْنَ سالِمٍ» where v1 has «سلم»; taken as a variant. The narrator in al-Tirmidhi is usually given as Sulayman ibn Salm al-Balkhi, so the print's «سالم» may be a misprint: worth checking."
+      "The print and sunnah.com have «سليمان بن سالم» in al-Tirmidhi's words; al-Tirmidhi and v1 have «سليمان بن سلم البلخي». The book's name is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
      ]
     },
     {
@@ -19309,7 +19324,7 @@
      "shared_with": null,
      "corrections": [],
      "notes": [
-      "The print names the narrator «أبي سعيد المقبري» (Kaysan, who also narrates from Abu Hurayra); al-Bukhari's chain, v1 and sunnah.com have his son «سعيد المقبري». Taken as the book's reading; the owner may prefer to record it as a misprint."
+      "The print and sunnah.com name the narrator «أبي سعيد المقبري» (Kaysan, who also narrates from Abu Hurayra); al-Bukhari's chain and v1 have his son «سعيد المقبري». The book's name is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
      ]
     },
     {
@@ -19523,7 +19538,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنْ خالدِ بنِ عُمَيْرٍ العَدَويِّ قالَ: "
+       "text": "وَعَنْ خالدِ بنِ عُمَرَ العَدَويِّ قالَ: "
       },
       {
        "role": "speech",
@@ -19603,7 +19618,7 @@
      "shared_with": null,
      "corrections": [],
      "notes": [
-      "The print names the narrator «خالدِ بْنِ عُمَرَ العَدَوِيِّ»; he is Khalid ibn Umayr in Muslim, so v1's «عُمَيْرٍ» is kept. The commentary doesn't name him, so it isn't recorded as a misprint."
+      "The print and sunnah.com name the narrator «خالد بن عمر»; Muslim, the source Nawawi names, and v1 have «خالد بن عمير». The book's name is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
      ]
     },
     {
@@ -19614,7 +19629,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنْ أَبِي بُرْدَةَ بنِ أَبِي مُوسَى الأَشْعَريِّ رضيَ اللهُ عَنْهُ قالَ: "
+       "text": "وعَنْ أَبِي مُوسَى الأَشْعَريِّ رضيَ اللهُ عَنْهُ قالَ: "
       },
       {
        "role": "speech",
@@ -19630,7 +19645,7 @@
      "shared_with": null,
      "corrections": [],
      "notes": [
-      "The print has «وَعَنْ أَبِي مُوسَى الأَشْعَرِيِّ», without «أبي بردة بن»; the narrator in al-Bukhari and Muslim is Abu Burda, Abu Musa's son, so v1's text is kept. The commentary doesn't name him, so it isn't recorded as a misprint."
+      "The print and sunnah.com have «وعن أبي موسى الأشعري», without v1's «أبي بردة بن»; in al-Bukhari and al-Tirmidhi the narrator is Abu Burda, Abu Musa's son («عن أبي بردة قال: أخرجت إلينا عائشة»). The book's reading is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
      ]
     },
     {
@@ -21499,10 +21514,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print has «قال رسول الله:» with no ﷺ after it; v1's ﷺ is kept."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "قالَ رَسُولُ اللهِ:",
+       "correction": "قالَ رسولُ اللهِ ﷺ:",
+       "reason": "The print drops the ﷺ after «رسول الله» (p. 470)."
+      }
+     ],
+     "notes": []
     },
     {
      "id": 541,
@@ -21581,7 +21601,7 @@
        "part": "matn",
        "printed": "الْمِقْدادِ",
        "correction": "المِقدَامِ",
-       "reason": "The narrator is al-Miqdam ibn Ma'dikarib (al-Bukhari 2072, the source the book names); al-Miqdad is Ibn al-Aswad. The print's «المقداد» is a slip."
+       "reason": "The narrator is al-Miqdam ibn Ma'dikarib (sunnah.com, and al-Bukhari 2072, the source the book names); al-Miqdad is Ibn al-Aswad. The print's «المقداد» is a slip."
       }
      ],
      "notes": [

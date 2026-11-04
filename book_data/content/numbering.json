@@ -59,6 +59,13 @@
   "book_misprints": [
     {"number": 726, "page": 598, "note": "The book prints ٧٢٧ for this hadith and again for the next one (as its chapter's 6th and 7th); 726 is the number in the sequence."}
   ],
+  "pages": [
+    {"number": 244, "page": 256, "note": "v1's text for it is another hadith («كل سلامى من الناس عليه صدقة»), so the alignment couldn't place it; its number and matn are printed on p. 256 (found in step 4)."},
+    {"number": 830, "page": 651, "note": "It opens p. 651 (the OCR text kept its number there)."},
+    {"number": 1253, "page": 886, "note": "It opens p. 886 (the OCR text kept its number there)."},
+    {"number": 1254, "page": 886, "note": "It follows 1253 on p. 886 («لئن بقيت إلى قابل», line 5 of the OCR text's page)."},
+    {"number": 1330, "page": 924, "note": "Its words repeat 1329's, and it is printed below it at the foot of p. 924 (read on the scan); p. 925 opens with 1331."}
+  ],
   "titles": {
     "about": "Short titles aren't in the book; v1 has them. These hadith have no v1 title (added, split, or lost to v1's slipped titles), so step 3 wrote one, for the owner to review.",
     "153": "أحب الدين إليه ما داوم صاحبه عليه",

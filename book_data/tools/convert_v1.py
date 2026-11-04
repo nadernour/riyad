@@ -20,7 +20,8 @@ Step 3 gives every hadith the book's number and page, and every chapter the book
 following content/numbering.json (tools/numbering.py and tools/chapters.py found and check it):
 v1 hadith holding two printed ones are split at v1's separator line, a repeated matn is dropped,
 a cross-reference the book doesn't number is left out, hadith v1 lacks are added from the file,
-and a chapter v1 lacks is added where it holds a hadith.
+and a chapter v1 lacks is added where it holds a hadith. A hadith's page is where the alignment
+finds its matn, unless the file corrects it (`pages`, read on the scan).
 
 The build checks that every word of v1's matn survives, that the book's numbers 1–1898 are each
 used once, that pages rise with the numbers, and that the chapter numbers agree with the
@@ -288,6 +289,9 @@ def build() -> list[dict]:
         })
     records.sort(key=lambda r: r["id"])
     pages_in_order(records)
+    fixed = {p["number"]: p["page"] for p in ex["pages"]}  # pages the alignment got wrong, read on the scan
+    for r in records:
+        r["page"] = fixed.get(r["id"], r["page"])
     return records
 
 

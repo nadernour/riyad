@@ -614,6 +614,12 @@ def crop_region(doc, h: dict) -> list[tuple[int, float, float]]:
     v1 = tokens(h["text"])
     found = locate(h, v1)
     span = found["span"]
+    where = book_words()[1]
+    if span and where[span[0]][0] > h["page"] and found["found"] < 0.6:
+        # The OCR text has few of the matn's words, and on a later page than the one step 3 found
+        # its number on: they are the same words printed elsewhere (h. 280's on p. 287, h. 532's on
+        # p. 466). Its own page is shown whole, to find it by its number.
+        return [(h["page"], 0.0, 1.0)]
     if span:  # down to the end of what the book prints after v1's last word (matn_after)
         span = [span[0], span[1] + matn_after(h, span[1])]
     window, top, bottom = tesseract_window(span, h["page"])
@@ -622,7 +628,6 @@ def crop_region(doc, h: dict) -> list[tuple[int, float, float]]:
     for w in match:
         if w is not None:
             seen[w["page"]].append((w["box"][1] + w["box"][3]) / 2)
-    where = book_words()[1]
     first, last = (where[span[0]][0], where[span[1] - 1][0]) if span else (h["page"], h["page"])
     # The words matched around the matn can be the same words printed elsewhere: a match on a page
     # after the matn's first page isn't above it (h. 837), matches that cross, or leave no room for
@@ -1012,6 +1017,16 @@ def fix_matn(matn: list[dict], old: str, new: str, again: bool = False) -> bool:
     return True
 
 
+def tidy(matn: list[dict]) -> None:
+    """Close up the spaces a fix leaves where it deletes words: «قالَ:  «إِذَا» (h. 244), or «}  فَرَفَعَ»
+    where a verse reference was (h. 426). Within a piece, and across two."""
+    for p in matn:
+        p["text"] = re.sub(r"[ \t]{2,}", " ", p["text"])
+    for a, b in zip(matn, matn[1:]):
+        if a["text"].endswith(" ") and b["text"].startswith(" "):
+            b["text"] = b["text"][1:]
+
+
 def settle(h: dict, d: dict, again: bool = False) -> None:
     """Apply one hadith's decision (see docs/matn.md) to its record in content/hadith/."""
     unknown = set(d) - {"fix", "misprint", "note"}
@@ -1022,6 +1037,7 @@ def settle(h: dict, d: dict, again: bool = False) -> None:
         if len(f) != 3 or f[2] not in WHY:
             raise ValueError(f"a fix is [from, to, why] with why one of {sorted(WHY)}: {f}")
         fix_matn(matn, f[0], f[1], again)
+    tidy(matn)
     corrections = list(h["corrections"])
     for m in d.get("misprint", []):
         if len(m) != 3:

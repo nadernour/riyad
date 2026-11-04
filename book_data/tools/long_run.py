@@ -1,7 +1,7 @@
 """Helpers for tools/long_run.sh: read the Claude usage limits, and sum up a round for the log.
 Taken from the owner's azkar project.
 
-Usage: python tools/long_run.py wait PROBE START
+Usage: python tools/long_run.py wait PROBE START [WEEKLY]
        python tools/long_run.py checked
        python tools/long_run.py report ROUND PROBE CHECKED_BEFORE
 
@@ -11,8 +11,10 @@ Its rate_limit_event lines give the account's use of the 5-hour and the weekly l
 
 wait prints "SECONDS REASON": how long to wait before the next round may start (0: start now).
 A round doesn't start while the 5-hour window is at START percent or more, because a round
-cut off by the limit loses the hadith it was working on. When a limit is reached (the 5-hour
-or the weekly one), the next round waits until it resets.
+cut off by the limit loses the hadith it was working on, nor while the weekly limit is at
+WEEKLY percent or more (97 by default): a round uses 1-2% of the week, and one started at 99%
+was cut off (2026-10-30). When a limit is reached (the 5-hour or the weekly one), the next
+round waits until it resets.
 
 checked prints how many hadith are left to check, and how many there are in all.
 
@@ -77,6 +79,9 @@ def wait(args: argparse.Namespace) -> None:
     use, reset = windows.get("five_hour", (None, None))
     if use is not None and reset and reset > now and use * 100 >= args.start:
         waits.append((reset, f"the 5-hour limit is at {use:.0%} (a round starts below {args.start:g}%)"))
+    use, reset = windows.get("seven_day", (None, None))
+    if use is not None and reset and reset > now and use * 100 >= args.weekly:
+        waits.append((reset, f"the weekly limit is at {use:.0%} (a round starts below {args.weekly:g}%)"))
     if not waits:
         print("0 go")
         return
@@ -178,6 +183,7 @@ def main() -> None:
     w = commands.add_parser("wait")
     w.add_argument("probe")
     w.add_argument("start", type=float)
+    w.add_argument("weekly", type=float, nargs="?", default=97)
     commands.add_parser("checked")
     r = commands.add_parser("report")
     r.add_argument("round")

@@ -3267,7 +3267,13 @@
     "v1"
    ]
   ],
-  "note": "The print has no ﷺ after «أن رسول الله» (p. 82); v1's ﷺ is kept."
+  "misprint": [
+   [
+    "أَنَّ رَسُولَ اللهِ قالَ:",
+    "أنَّ رسولَ اللَّه ﷺ قالَ:",
+    "The print drops the ﷺ after «رسول الله» (p. 82)."
+   ]
+  ]
  },
  "52": {
   "fix": [
@@ -11660,7 +11666,13 @@
     "v1"
    ]
   ],
-  "note": "The print has «فقال رسول الله: «أو أملك…» without ﷺ after the second «رسول الله» (p. 247); v1's ﷺ is kept."
+  "misprint": [
+   [
+    "فَقالَ رَسُولُ اللهِ: «أَوَ أَمْلِكُ",
+    "فَقالَ رسولُ اللَّه ﷺ: «أَوَأَمْلِكُ",
+    "The print drops the ﷺ after the second «رسول الله» (p. 247)."
+   ]
+  ]
  },
  "229": {
   "fix": [
@@ -13497,8 +13509,8 @@
    ],
    [
     "لرسول الله ﷺ",
-    "لِرَسُولِ اللهِ",
-    "variant"
+    "لِرَسُولِ اللهِ ﷺ",
+    "marks"
    ],
    [
     "فقال: «إن الله",
@@ -13516,7 +13528,13 @@
     "marks"
    ]
   ],
-  "note": "The print has «فذكرت الذي صنعت لرسول الله، فقال» with no ﷺ after «لرسول الله» (p. 278); Muslim 6694 has it. Removed as the book's wording, per rule 1; restore it if you prefer to keep the salutation."
+  "misprint": [
+   [
+    "لِرَسُولِ اللهِ، فَقالَ",
+    "لِرَسُولِ اللهِ ﷺ فَقالَ",
+    "The print drops the ﷺ after «لرسول الله» (p. 278); Muslim has it."
+   ]
+  ]
  },
  "272": {
   "fix": [
@@ -23412,7 +23430,7 @@
     "marks"
    ]
   ],
-  "note": "The print has «سُلَيْمانَ بْنَ سالِمٍ» where v1 has «سلم»; taken as a variant. The narrator in al-Tirmidhi is usually given as Sulayman ibn Salm al-Balkhi, so the print's «سالم» may be a misprint: worth checking."
+  "note": "The print and sunnah.com have «سليمان بن سالم» in al-Tirmidhi's words; al-Tirmidhi and v1 have «سليمان بن سلم البلخي». The book's name is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
  },
  "483": {
   "fix": [
@@ -23890,7 +23908,7 @@
     "v1"
    ]
   ],
-  "note": "The print names the narrator «أبي سعيد المقبري» (Kaysan, who also narrates from Abu Hurayra); al-Bukhari's chain, v1 and sunnah.com have his son «سعيد المقبري». Taken as the book's reading; the owner may prefer to record it as a misprint."
+  "note": "The print and sunnah.com name the narrator «أبي سعيد المقبري» (Kaysan, who also narrates from Abu Hurayra); al-Bukhari's chain and v1 have his son «سعيد المقبري». The book's name is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
  },
  "494": {
   "fix": [
@@ -24168,6 +24186,11 @@
     "marks"
    ],
    [
+    "بنِ عُمَيْرٍ",
+    "بنِ عُمَرَ",
+    "variant"
+   ],
+   [
     "العَدَويِّ قال:",
     "العَدَويِّ قالَ:",
     "marks"
@@ -24288,19 +24311,14 @@
     "marks"
    ]
   ],
-  "note": "The print names the narrator «خالدِ بْنِ عُمَرَ العَدَوِيِّ»; he is Khalid ibn Umayr in Muslim, so v1's «عُمَيْرٍ» is kept. The commentary doesn't name him, so it isn't recorded as a misprint."
+  "note": "The print and sunnah.com name the narrator «خالد بن عمر»; Muslim, the source Nawawi names, and v1 have «خالد بن عمير». The book's name is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
  },
  "499": {
   "fix": [
    [
-    "وعن أبي بُرْدَةَ",
-    "وَعَنْ أَبِي بُرْدَةَ",
-    "marks"
-   ],
-   [
-    "أَبِي موسى",
-    "أَبِي مُوسَى",
-    "marks"
+    "وعن أبي بُرْدَةَ بنِ أَبِي موسى",
+    "وعَنْ أَبِي مُوسَى",
+    "variant"
    ],
    [
     "عنه قال:",
@@ -24328,7 +24346,7 @@
     "marks"
    ]
   ],
-  "note": "The print has «وَعَنْ أَبِي مُوسَى الأَشْعَرِيِّ», without «أبي بردة بن»; the narrator in al-Bukhari and Muslim is Abu Burda, Abu Musa's son, so v1's text is kept. The commentary doesn't name him, so it isn't recorded as a misprint."
+  "note": "The print and sunnah.com have «وعن أبي موسى الأشعري», without v1's «أبي بردة بن»; in al-Bukhari and al-Tirmidhi the narrator is Abu Burda, Abu Musa's son («عن أبي بردة قال: أخرجت إلينا عائشة»). The book's reading is taken, since two editions of the book agree (the owner's rule, 2026-11-04)."
  },
  "500": {
   "fix": [
@@ -26614,7 +26632,13 @@
     "v1"
    ]
   ],
-  "note": "The print has «قال رسول الله:» with no ﷺ after it; v1's ﷺ is kept."
+  "misprint": [
+   [
+    "قالَ رَسُولُ اللهِ:",
+    "قالَ رسولُ اللهِ ﷺ:",
+    "The print drops the ﷺ after «رسول الله» (p. 470)."
+   ]
+  ]
  },
  "541": {
   "fix": [
@@ -26691,7 +26715,7 @@
    [
     "الْمِقْدادِ",
     "المِقدَامِ",
-    "The narrator is al-Miqdam ibn Ma'dikarib (al-Bukhari 2072, the source the book names); al-Miqdad is Ibn al-Aswad. The print's «المقداد» is a slip."
+    "The narrator is al-Miqdam ibn Ma'dikarib (sunnah.com, and al-Bukhari 2072, the source the book names); al-Miqdad is Ibn al-Aswad. The print's «المقداد» is a slip."
    ]
   ],
   "note": "The print has «يَدَيْهِ» for the first «يده» (al-Bukhari and sunnah.com have «يده»); taken as the book's variant."

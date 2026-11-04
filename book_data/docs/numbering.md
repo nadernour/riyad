@@ -37,6 +37,7 @@ Other differences that don't change the count:
 - **v1 1529 is filed under the wrong chapter.** It belongs to باب ما يباح من الغيبة.
 - **Numbers left in v1's text.** v1 23, 555, 646, 1014, 1033, 1823 and 710 start with a number from v1's source («23-»). It is removed; v1 1823's «1826-» was wrong anyway (it is the book's 1828).
 - **The book prints ٧٢٧ twice**, for the 6th and 7th hadith of its chapter. The first is 726 in the sequence.
+- **Five pages were corrected in step 4** (`pages` in `content/numbering.json`), each by one page: h. 244, whose v1 text is another hadith, so the alignment couldn't place it (p. 256); h. 830, 1253 and 1254, at the top of the next page (651, 886, 886); and h. 1330, whose words repeat 1329's (p. 924). The numbers printed above them and the scans settle each.
 
 The four hadith v1 lacks were transcribed from the scan in this step, and step 4 checks their tashkeel at high zoom.
 

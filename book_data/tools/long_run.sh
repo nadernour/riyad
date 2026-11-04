@@ -32,8 +32,10 @@ BUILTIN="Read,Glob,Grep,Edit,Write,Bash"
 MODEL=claude-opus-5-5
 EFFORT=${EFFORT:-medium}
 # Start a round only while the 5-hour window is below this percent, because a round cut off by
-# the limit loses the hadith it was working on.
+# the limit loses the hadith it was working on, and while the weekly limit is below WEEKLY percent
+# (a round uses 1-2% of the week; set it lower to keep some of the week for your own sessions).
 START=${START:-85}
+WEEKLY=${WEEKLY:-97}
 WAIT=1800          # seconds to wait after a round that made no progress
 MAX_IDLE_ROUNDS=24 # stop after this many rounds in a row without progress (~12 hours)
 
@@ -62,7 +64,7 @@ while true; do
     set -- $(.venv/bin/python tools/long_run.py checked)
     [ "$1" -eq 0 ] && break
     read_limits
-    wait=$(.venv/bin/python tools/long_run.py wait "$PROBE" "$START")
+    wait=$(.venv/bin/python tools/long_run.py wait "$PROBE" "$START" "$WEEKLY")
     if [ "${wait%% *}" -gt 0 ] 2>/dev/null; then
         echo "=== $(date '+%F %T') $1 of $2 left · ${wait#* }" >> "$LOG"
         sleep "${wait%% *}"
