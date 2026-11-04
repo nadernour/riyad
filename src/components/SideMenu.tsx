@@ -1,7 +1,8 @@
 import { DrawerContentScrollView, DrawerItemList, type DrawerContentComponentProps } from 'expo-router/drawer';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
 import { HadithRow } from '@/components/HadithRow';
+import { Text } from '@/components/Text';
 import { useBookmarks } from '@/db/bookmarks';
 import { getHadithCount, listHadith } from '@/db/content';
 import { useQuery } from '@/db/hooks';

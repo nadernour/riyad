@@ -15,12 +15,23 @@ appId: com.nad.riyadalsalheen.dev
 - extendedWaitUntil:
     visible: 'الحديث رقم 12'
     timeout: 5000
+# Opened again, from the reader through the side menu, the field is ready to type in too, once the menu has closed
+# (the menu hides the keyboard as it moves). It still holds 12, so typing 7 makes it 127.
+- tapOn: 'القائمة'
+# The menu's item, not the reader's search button behind it, which Android still lists.
+- tapOn:
+    text: 'البحث'
+    below: 'الكتب والأبواب'
+- waitForAnimationToEnd
+- inputText: '7'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 127:.*'
+    timeout: 5000
 # Maestro types only Latin letters and digits on Android, so the word search runs on iPhone.
 - runFlow:
     when:
       platform: iOS
     commands:
-      - tapOn: 'البحث'
       - tapOn: 'مسح'
       - inputText: 'الصلاة'
       - extendedWaitUntil:

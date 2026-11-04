@@ -1,8 +1,9 @@
 import { Drawer } from 'expo-router/drawer';
-import { ActivityIndicator, Alert, FlatList, Pressable, StyleSheet, Text, View } from 'react-native';
+import { ActivityIndicator, Alert, FlatList, Pressable, StyleSheet, View } from 'react-native';
 
 import { HadithRow } from '@/components/HadithRow';
 import { Icon } from '@/components/Icon';
+import { Text } from '@/components/Text';
 import { removeAllBookmarks, setBookmarked, useBookmarks } from '@/db/bookmarks';
 import { listHadith } from '@/db/content';
 import { useQuery } from '@/db/hooks';

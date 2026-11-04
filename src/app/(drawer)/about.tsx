@@ -1,7 +1,8 @@
 import Constants from 'expo-constants';
-import { Linking, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Linking, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { Icon, type IconName } from '@/components/Icon';
+import { Text } from '@/components/Text';
 import { usePreviewCommentary } from '@/db/ContentProvider';
 import { fonts, useColors } from '@/theme';
 

@@ -1,13 +1,14 @@
 import { router } from 'expo-router';
 import { DrawerToggleButton } from 'expo-router/drawer';
 import { useEffect, type ReactNode } from 'react';
-import { Pressable, Share, StyleSheet, Text, View } from 'react-native';
+import { Pressable, Share, StyleSheet, View } from 'react-native';
 import Animated, { useAnimatedStyle, useSharedValue, withTiming } from 'react-native-reanimated';
 
 import { Icon } from '@/components/Icon';
+import { Text } from '@/components/Text';
 import { setBookmarked, useIsBookmarked } from '@/db/bookmarks';
 import type { Hadith } from '@/db/content';
-import { fonts, useColors } from '@/theme';
+import { fonts, MAX_SCALE, useColors } from '@/theme';
 
 import { shareText } from './shareText';
 
@@ -48,7 +49,7 @@ export function ReaderHeader({ title, hadithId, hadith, insetTop, hidden }: Prop
       ]}>
       <View style={styles.row}>
         <DrawerToggleButton tintColor={colors.text} accessibilityLabel="القائمة" />
-        <Text style={[styles.title, { color: colors.text }]} numberOfLines={1}>
+        <Text style={[styles.title, { color: colors.text }]} numberOfLines={1} maxFontSizeMultiplier={MAX_SCALE.bar}>
           {title}
         </Text>
         <HeaderButton label="البحث" onPress={() => router.navigate('/search')}>

@@ -1,10 +1,11 @@
 import { router, useLocalSearchParams } from 'expo-router';
 import { NavigationBar } from 'expo-navigation-bar';
 import { StatusBar } from 'expo-status-bar';
-import { useCallback, useEffect, useState } from 'react';
-import { ActivityIndicator, StyleSheet, Text, View } from 'react-native';
+import { useCallback, useEffect, useRef, useState } from 'react';
+import { AccessibilityInfo, ActivityIndicator, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
+import { Text } from '@/components/Text';
 import { getHadithCount } from '@/db/content';
 import { useHadith, useQuery } from '@/db/hooks';
 import { useFontSize } from '@/db/settings';
@@ -63,6 +64,24 @@ export default function ReaderScreen() {
   const title = hadith ? hadith.book : 'رياض الصالحين';
 
   const toggleFullScreen = useCallback(() => setFullScreen((full) => !full), []);
+  // A screen reader's turn: it moves without the swipe's animation, and says where it is now. It reads the index
+  // through a ref, so that it doesn't change, and re-render every page, at each turn.
+  const shown = useRef(index);
+  useEffect(() => {
+    shown.current = index;
+  }, [index]);
+  const turn = useCallback(
+    (step: 1 | -1) => {
+      if (!last) return;
+      const next = Math.min(Math.max(shown.current + step, 1), last);
+      if (next === shown.current) return;
+      // Set at once, so a second turn before the render goes on from this one.
+      shown.current = next;
+      setRequested(next);
+      AccessibilityInfo.announceForAccessibility(`الحديث رقم ${next}`);
+    },
+    [last],
+  );
   const renderPage = useCallback(
     (id: number) => (
       <HadithPage
@@ -70,9 +89,10 @@ export default function ReaderScreen() {
         fontSize={fontSize}
         insetTop={margins.top + HEADER_HEIGHT}
         insetBottom={margins.bottom}
+        onTurn={turn}
       />
     ),
-    [fontSize, margins.top, margins.bottom],
+    [fontSize, margins.top, margins.bottom, turn],
   );
 
   if (count.status === 'error') {

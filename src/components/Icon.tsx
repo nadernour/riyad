@@ -1,6 +1,6 @@
 import { SymbolView } from 'expo-symbols';
 import type { ComponentProps } from 'react';
-import type { ColorValue } from 'react-native';
+import { Platform, useWindowDimensions, type ColorValue } from 'react-native';
 
 type SymbolName = ComponentProps<typeof SymbolView>['name'];
 
@@ -31,13 +31,17 @@ const ICONS = {
 export type IconName = keyof typeof ICONS;
 
 // An icon says nothing to a screen reader: the button around it has the label (iOS would otherwise read the symbol's
-// name, such as «books.vertical»).
+// name, such as «books.vertical»). On Android it is a letter of the Material Symbols font, which the phone's text size
+// would enlarge past its box and cut off, so it is asked for that much smaller, in a box of the size wanted.
 export function Icon({ name, color, size = 24 }: { name: IconName; color: ColorValue; size?: number }) {
+  const { fontScale } = useWindowDimensions();
+  const android = Platform.OS === 'android';
   return (
     <SymbolView
       name={ICONS[name]}
       tintColor={color}
-      size={size}
+      size={android ? size / fontScale : size}
+      style={{ width: size, height: size }}
       accessible={false}
       accessibilityElementsHidden
       importantForAccessibility="no-hide-descendants"

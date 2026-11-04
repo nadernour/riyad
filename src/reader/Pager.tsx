@@ -149,7 +149,7 @@ export function Pager({ count, index, onIndexChange, renderPage, onTap }: Props)
     <GestureDetector gesture={gesture}>
       <View style={styles.pager}>
         {pages.map((page) => (
-          <Page key={page} page={page} position={position} pageWidth={pageWidth}>
+          <Page key={page} page={page} current={page === index} position={position} pageWidth={pageWidth}>
             {renderPage(page)}
           </Page>
         ))}
@@ -158,20 +158,30 @@ export function Pager({ count, index, onIndexChange, renderPage, onTap }: Props)
   );
 }
 
+// Only the current page is there for a screen reader: the ones rendered beside it are off screen.
 function Page({
   page,
+  current,
   position,
   pageWidth,
   children,
 }: {
   page: number;
+  current: boolean;
   position: SharedValue<number>;
   pageWidth: SharedValue<number>;
   children: ReactNode;
 }) {
   // translateX is physical, never mirrored by the right-to-left layout: page n + 1 is one screen to the left of n.
   const style = useAnimatedStyle(() => ({ transform: [{ translateX: position.get() - page * pageWidth.get() }] }));
-  return <Animated.View style={[StyleSheet.absoluteFill, style]}>{children}</Animated.View>;
+  return (
+    <Animated.View
+      style={[StyleSheet.absoluteFill, style]}
+      accessibilityElementsHidden={!current}
+      importantForAccessibility={current ? 'auto' : 'no-hide-descendants'}>
+      {children}
+    </Animated.View>
+  );
 }
 
 const styles = StyleSheet.create({

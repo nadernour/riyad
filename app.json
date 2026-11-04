@@ -19,9 +19,8 @@
       "package": "com.nad.riyadalsalheen",
       "versionCode": 2,
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#111318",
         "foregroundImage": "./assets/android-icon-foreground.png",
-        "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
       },
       "predictiveBackGestureEnabled": false
@@ -42,11 +41,15 @@
         "expo-splash-screen",
         {
           "image": "./assets/splash-icon.png",
-          "imageWidth": 200,
+          "imageWidth": 420,
           "resizeMode": "contain",
-          "backgroundColor": "#ffffff",
+          "backgroundColor": "#FBFCFC",
           "dark": {
-            "backgroundColor": "#000000"
+            "image": "./assets/splash-icon-dark.png",
+            "backgroundColor": "#0F1615"
+          },
+          "android": {
+            "imageWidth": 300
           }
         }
       ],

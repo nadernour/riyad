@@ -31,6 +31,9 @@ export function parseTheme(value: string | null): Theme {
 
 const listeners = new Set<() => void>();
 let snapshot: Settings | null = null;
+// When user.db last failed to be read: it is tried again only after RETRY_MS, since every view reads the theme.
+let failedAt = -Infinity;
+const RETRY_MS = 5000;
 
 function subscribe(listener: () => void) {
   listeners.add(listener);
@@ -39,13 +42,15 @@ function subscribe(listener: () => void) {
   };
 }
 
-// If user.db can't be read, the app reads with the defaults, and tries user.db again the next time.
+// If user.db can't be read, the app reads with the defaults, and tries user.db again a little later.
 function getSnapshot(): Settings {
   if (!snapshot) {
+    if (Date.now() - failedAt < RETRY_MS) return DEFAULTS;
     try {
       const db = userDb();
       snapshot = { fontSize: parseFontSize(getSetting(db, 'fontSize')), theme: parseTheme(getSetting(db, 'theme')) };
     } catch {
+      failedAt = Date.now();
       return DEFAULTS;
     }
   }

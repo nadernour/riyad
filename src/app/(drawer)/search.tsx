@@ -1,15 +1,19 @@
-import { useFocusEffect } from 'expo-router';
+import { useIsFocused } from 'expo-router';
+import { useDrawerProgress } from 'expo-router/drawer';
 import { useCallback, useEffect, useRef, useState, type ComponentRef } from 'react';
-import { FlatList, Pressable, StyleSheet, Text, TextInput, View } from 'react-native';
+import { FlatList, Pressable, StyleSheet, TextInput, View } from 'react-native';
+import { useAnimatedReaction } from 'react-native-reanimated';
+import { scheduleOnRN } from 'react-native-worklets';
 
 import { HadithRow } from '@/components/HadithRow';
 import { Icon } from '@/components/Icon';
+import { Text } from '@/components/Text';
 import { hadithNumber, MIN_QUERY_LENGTH, search, SEARCH_LIMIT } from '@/db/content';
 import { useQuery } from '@/db/hooks';
 import { openHadith } from '@/reader/openHadith';
 import { simplify } from '@/search/simplify';
 import { count, HADITH } from '@/text/count';
-import { fonts, useColors } from '@/theme';
+import { fonts, MAX_SCALE, useColors } from '@/theme';
 
 // How long typing pauses before the search runs.
 const DELAY = 250;
@@ -25,12 +29,25 @@ export default function SearchScreen() {
     return () => clearTimeout(timer);
   }, [typed]);
 
-  // Each time the screen is opened, the field is ready to type in, as on the first time.
+  // Each time the screen is opened, the field is ready to type in. The side menu hides the keyboard as it starts to
+  // open or close, so when the screen is opened from it, the field takes the focus only once the menu is closed.
   const input = useRef<ComponentRef<typeof TextInput>>(null);
-  useFocusEffect(
-    useCallback(() => {
-      input.current?.focus();
-    }, []),
+  const focused = useIsFocused();
+  const isFocused = useRef(focused);
+  const progress = useDrawerProgress();
+  const focusField = useCallback(() => {
+    if (isFocused.current) input.current?.focus();
+  }, []);
+  useEffect(() => {
+    isFocused.current = focused;
+    if (focused && progress.get() === 0) input.current?.focus();
+  }, [focused, progress]);
+  useAnimatedReaction(
+    () => progress.get() === 0,
+    (closed, wasClosed) => {
+      if (closed && wasClosed === false) scheduleOnRN(focusField);
+    },
+    [progress, focusField],
   );
 
   const tooShort = hadithNumber(query) === null && simplify(query).length < MIN_QUERY_LENGTH;
@@ -53,6 +70,7 @@ export default function SearchScreen() {
       <View style={[styles.field, { backgroundColor: colors.surface, borderColor: colors.border }]}>
         <Icon name="search" color={colors.muted} size={22} />
         <TextInput
+          maxFontSizeMultiplier={MAX_SCALE.ui}
           ref={input}
           style={[styles.input, { color: colors.text }]}
           value={typed}

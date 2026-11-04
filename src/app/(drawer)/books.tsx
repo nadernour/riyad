@@ -5,12 +5,12 @@ import {
   Pressable,
   ScrollView,
   StyleSheet,
-  Text,
   View,
   type LayoutChangeEvent,
 } from 'react-native';
 
 import { Icon } from '@/components/Icon';
+import { Text } from '@/components/Text';
 import { listBooks, listChapters, type Book, type Chapter } from '@/db/content';
 import { useHadith, useQuery } from '@/db/hooks';
 import { lastHadithRead } from '@/reader/lastHadith';
@@ -52,6 +52,7 @@ export default function BooksScreen() {
   // chapter is. A chapter's place doesn't change, since only one book is open at a time.
   const list = useRef<ComponentRef<typeof ScrollView>>(null);
   const height = useRef(0);
+  const contentHeight = useRef(0);
   const offset = useRef(0);
   const chapterY = useRef(new Map<number, number>());
   const target = useRef<{ chapterId: number; openedFor: number } | null>(null);
@@ -75,7 +76,9 @@ export default function BooksScreen() {
     const y = goal ? chapterY.current.get(goal.chapterId) : undefined;
     if (!goal || y === undefined || !height.current || scrolledFor.current === goal.openedFor) return;
     scrolledFor.current = goal.openedFor;
-    pending.current = { y: Math.max(0, y - height.current * 0.3), tries: 0 };
+    // A chapter near the end can't come up to 30% of the screen: the list scrolls only as far as its end.
+    const end = Math.max(0, contentHeight.current - height.current);
+    pending.current = { y: Math.min(Math.max(0, y - height.current * 0.3), end || Infinity), tries: 0 };
     settle();
   };
   const chapterId = here?.chapterId;
@@ -108,6 +111,9 @@ export default function BooksScreen() {
         offset.current = event.nativeEvent.contentOffset.y;
       }}
       scrollEventThrottle={16}
+      onContentSizeChange={(_, size) => {
+        contentHeight.current = size;
+      }}
       onScrollBeginDrag={() => {
         pending.current = null;
       }}>

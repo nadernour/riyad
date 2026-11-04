@@ -8,6 +8,9 @@ import { userDb } from './userDb';
 const listeners = new Set<() => void>();
 const NONE: Bookmark[] = [];
 let snapshot: Bookmark[] | null = null;
+// When user.db last failed to be read: it is tried again only after RETRY_MS, rather than at every render.
+let failedAt = -Infinity;
+const RETRY_MS = 5000;
 
 function subscribe(listener: () => void) {
   listeners.add(listener);
@@ -17,12 +20,14 @@ function subscribe(listener: () => void) {
 }
 
 // If user.db can't be read, there are no bookmarks to show, and the rest of the app works on without them. It is
-// tried again the next time.
+// tried again a little later.
 function getSnapshot(): Bookmark[] {
   if (!snapshot) {
+    if (Date.now() - failedAt < RETRY_MS) return NONE;
     try {
       snapshot = listBookmarks(userDb());
     } catch {
+      failedAt = Date.now();
       return NONE;
     }
   }

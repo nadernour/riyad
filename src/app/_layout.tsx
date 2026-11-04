@@ -8,7 +8,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
 import { ContentProvider } from '@/db/ContentProvider';
 import { useTheme } from '@/db/settings';
-import { fontFiles, useIsDark } from '@/theme';
+import { fontFiles } from '@/theme';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -21,15 +21,15 @@ function HideSplash() {
   return null;
 }
 
-// The theme setting, for the phone's own views too: alerts, the keyboard and the status bar. It reads user.db, so it
-// waits with the screens, under the splash screen, rather than holding up the app's first render.
+// The theme setting, for the phone's own views too: alerts, the keyboard and the status bar, whose 'auto' style
+// follows Appearance. It reads user.db, so it waits with the screens, under the splash screen, rather than holding up
+// the app's first render.
 function ThemeAppearance() {
   const theme = useTheme();
-  const dark = useIsDark();
   useEffect(() => {
     Appearance.setColorScheme(theme === 'system' ? 'auto' : theme);
   }, [theme]);
-  return <StatusBar style={dark ? 'light' : 'dark'} />;
+  return <StatusBar style="auto" />;
 }
 
 // The screens render once the fonts are loaded and riyad.db is open.

@@ -1,6 +1,7 @@
-import { Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { Icon, type IconName } from '@/components/Icon';
+import { Text } from '@/components/Text';
 import { useHadith } from '@/db/hooks';
 import { FONT_SIZE, setFontSize, setTheme, useSettings, type Theme } from '@/db/settings';
 import { HadithText } from '@/reader/HadithText';

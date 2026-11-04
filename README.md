@@ -95,7 +95,9 @@ Every build but the release is a test build, «رياض الصالحين (تجر
 - The user's bookmarks and settings are in their own `user.db` (`src/db/user.ts`), which content updates never touch. Its tables change only through a new entry at the end of `MIGRATIONS`.
 - Screens see the bookmarks through `src/db/bookmarks.ts`, so the reader's button, the bookmarks screen and the side menu change together. The settings (font size, theme) work the same way, through `src/db/settings.ts`.
 - The theme setting is applied twice: `useColors()` (`src/theme`) reads it for the app's own views, and `Appearance.setColorScheme` (`src/app/_layout.tsx`) for the phone's (alerts, the keyboard, the share sheet).
-- Icons come from `expo-symbols`, named by meaning in `src/components/Icon.tsx`: SF Symbols on iPhone, Material Symbols on Android.
+- Icons come from `expo-symbols`, named by meaning in `src/components/Icon.tsx`: SF Symbols on iPhone, Material Symbols on Android. On Android they are font glyphs, which `Icon` keeps from growing with the phone's text size.
+- Screens use `Text` from `src/components/Text.tsx`, not React Native's: the phone's text size enlarges it at most 1.5 times, the reader's text 2 times and the bars' titles 1.3 times (`MAX_SCALE` in `src/theme`). Without a limit, iPhone's largest accessibility size (about 3 times) left a letter or two of a title on a line.
+- The app's icon is v1's (its gold calligraphy of the name, on `#111318`), rebuilt from `v1/app/src/main/res/drawable/ic_launcher_foreground.xml`; the splash screen shows the same calligraphy in the theme's green, small enough for Android's circle (`assets/splash-icon*.png`).
 
 ### The database
 
@@ -138,7 +140,7 @@ The app:
   - [x] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith, opening a hadith by link (`/?id=12`), checked on a Galaxy A17 (0.3% janky frames over 30 fast swipes) and the iPhone simulator (2026-10-30)
   - [x] P3: browse by book and chapter, search, bookmarks (with the newest in the side menu), its 6 Maestro flows passing on the iPhone simulator and a Galaxy A17 (2026-11-03). Not yet looked at in dark mode (P5).
   - [x] P4: settings (font size 14–30; System, Light or Dark), About, sharing with the hadith number, code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-03). The books list became a measured ScrollView, which checks it reached the chapter: Android cut short the FlatList's scroll to a chapter far down a long book.
-  - [ ] P5: polish and tests: accessibility, large fonts, dark mode, device tests, icon and splash screen
+  - [x] P5: polish and tests: v1's icon and a splash screen (on Android 12+ the splash icon is cut to a circle, so its art is 46% of the image, and Android draws it at 300 dp, iPhone at 420); screen readers read only the hadith on screen, and turn pages with «الحديث التالي» and «الحديث السابق» actions; every screen checked at the largest text size and in dark mode on both platforms; the search field takes the focus when opened from the side menu. Code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-04). Not yet tried: the page-turn actions with VoiceOver and TalkBack, which Maestro can't trigger.
   - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key
 - [ ] Release v2 on Android and iPhone, once the content is done. It isn't released with v1's commentary, which is an edited version of the book's (the owner's decision, 2026-10-16).
 

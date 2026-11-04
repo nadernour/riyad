@@ -20,6 +20,11 @@ export const fontFiles = {
   [fonts.uiBold]: require('../../assets/fonts/Cairo-Bold.ttf'),
 };
 
+// How far the phone's text size may enlarge the app's text (src/components/Text.tsx). iPhone's largest accessibility
+// size is about 3 times, which leaves a word or two on a line, or a letter or two of a title. The bars have a fixed
+// height. The reader has its own size setting, up to 30, on top of the phone's.
+export const MAX_SCALE = { ui: 1.5, bar: 1.3, reader: 2 } as const;
+
 // The text is fully vocalized: iOS clips the marks above and below a line when the line height is tight.
 export const TEXT_LINE_HEIGHT = 2;
 
@@ -52,8 +57,4 @@ export function useColors(): Colors {
   const theme = useTheme();
   const system = useColorScheme();
   return (theme === 'system' ? system : theme) === 'dark' ? dark : light;
-}
-
-export function useIsDark(): boolean {
-  return useColors() === dark;
 }
