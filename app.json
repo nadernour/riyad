@@ -1,0 +1,63 @@
+{
+  "expo": {
+    "name": "رياض الصالحين",
+    "slug": "riyad-alsalheen",
+    "scheme": "riyadalsalheen",
+    "version": "2.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.nad.riyadalsalheen",
+      "supportsTablet": true
+    },
+    "android": {
+      "package": "com.nad.riyadalsalheen",
+      "versionCode": 2,
+      "adaptiveIcon": {
+        "backgroundColor": "#111318",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "plugins": [
+      "expo-router",
+      "expo-status-bar",
+      "expo-sqlite",
+      "expo-font",
+      [
+        "expo-localization",
+        {
+          "supportsRTL": true,
+          "forcesRTL": true
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 420,
+          "resizeMode": "contain",
+          "backgroundColor": "#FBFCFC",
+          "dark": {
+            "image": "./assets/splash-icon-dark.png",
+            "backgroundColor": "#0F1615"
+          },
+          "android": {
+            "imageWidth": 300
+          }
+        }
+      ],
+      "expo-asset",
+      "./plugins/withLinksDuringStartup"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}

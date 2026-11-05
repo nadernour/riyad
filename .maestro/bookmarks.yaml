@@ -1,0 +1,30 @@
+# Bookmarks: the reader's button, the side menu's newest bookmarks, the bookmarks screen, and removing one.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1'
+    timeout: 15000
+- tapOn: 'إضافة إلى المفضلة'
+- assertVisible: 'إزالة من المفضلة'
+# The side menu lists it; opening it from there, after paging away, comes back to it.
+- swipe:
+    start: 20%, 50%
+    end: 80%, 50%
+- extendedWaitUntil:
+    visible: 'الحديث رقم 2'
+    timeout: 5000
+- assertVisible: 'إضافة إلى المفضلة'
+- tapOn: 'القائمة'
+- tapOn: 'الحديث رقم 1:.*'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1'
+    timeout: 5000
+- assertVisible: 'إزالة من المفضلة'
+# The bookmarks screen opens it too, and removes it after asking.
+- tapOn: 'القائمة'
+- tapOn: 'المفضلة'
+- tapOn: 'إزالة الحديث رقم 1 من المفضلة'
+- tapOn: 'إزالة'
+- assertVisible: 'لا توجد أحاديث في المفضلة'

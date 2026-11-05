@@ -1,0 +1,8 @@
+{
+  "//": "The app's code alone, without the tests or Node's types: Node's globals (Buffer, process, fs) don't exist on a phone, so code that uses them fails here. npm run typecheck checks both this and tsconfig.json.",
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "types": []
+  },
+  "exclude": ["node_modules", "book_data", "v1", "**/*.test.ts", "**/*.test.tsx", "src/db/testing.ts", "*.config.js", "*.config.test.js"]
+}

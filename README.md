@@ -43,7 +43,7 @@ v2 keeps everything v1 does:
 Fixes:
 
 - **Theme setting: System, Light or Dark.** v1's toggle means "the opposite of the phone's setting", so with it on, the app turns light when the phone turns dark at night.
-- **The Prophet's words stand out from the rest of the hadith.** v1 marks them, but its hadith font (Amiri) has no semi-bold, so they look the same as the Companion's words.
+- **The Prophet's words stand out from the rest of the hadith.** v1 marks them, but its hadith font (Amiri) has no semi-bold, so they look the same as the Companion's words. v2 shows them in colour and in bold.
 - **Sharing includes the hadith number.**
 
 New:
@@ -61,10 +61,43 @@ The content is checked in [book_data/](book_data/README.md), on the owner's Debi
 
 - **React Native with Expo, in TypeScript:** one codebase for Android and iPhone. Expo's cloud build service (EAS) builds and submits the iPhone app without a Mac.
 - **expo-sqlite** for the bundled database and its full-text search.
-- **Arabic only, right to left,** with Amiri for the hadith text and Cairo for the interface, as in v1.
+- **Arabic only, right to left,** with Scheherazade New for the hadith text and Cairo for the interface, as in v1. v1's Amiri was dropped (2026-10-30): it crowds the marks of short letters (لَيْلَةَ, وَآخِرَ), and Scheherazade New, made by SIL for fully vocalized text, keeps each mark clear.
 - **Room for tashkeel:** iOS clips the marks when the line height is too tight.
 
 **Why not Kotlin Multiplatform?** It would keep about half of v1's code. But building and testing the iPhone app needs a Mac, and the owner works on Linux. Also, on iOS it draws its own text instead of using the phone's, which matters in an app that is all text.
+
+### Running it
+
+It is developed on the branch `v2-app`, which merges into `v2`. You need Node.js 22.13 or newer (React Native 0.88's minimum); Xcode and CocoaPods for the iPhone simulator, or Android Studio for an Android emulator.
+
+```sh
+npm install
+npx expo run:ios        # or run:android: builds a development app and starts it on a simulator or emulator
+npx expo start          # later runs, once the development app is installed
+npm test                # unit tests
+npm run lint
+npm run typecheck
+maestro test .maestro/   # device tests (Maestro, https://maestro.dev): swipes, taps and links on a running test build
+```
+
+The app forces right-to-left layout, which Expo Go doesn't apply reliably, so use a development build (`expo run:ios`, `expo run:android`, or `eas build --profile development`) rather than Expo Go. `ios/` and `android/` are generated from `app.json` by `npx expo prebuild` and are not in git: configure native settings in `app.json`, never in those folders.
+
+Every build but the release is a test build, «رياض الصالحين (تجربة)» with the id `com.nad.riyadalsalheen.dev`, so it installs next to the app from the store instead of conflicting with it (`app.config.js`). Only `APP_VARIANT=production` gives the release id, name and link scheme: the `production` build profile in `eas.json` sets it, and `npm run submit` sets it for EAS Submit, whose profiles can't. Submit with `npm run submit`, not `eas submit` directly.
+
+**Word meanings and benefits before content step 5.** `npm run preview-db` builds `.preview/riyad.db`: `database/riyad.db` with v1's commentary split into word meanings and benefits (`scripts/build-preview-db.js`), matched to v2's numbers by each hadith's `old_id`. Test builds bundle it when it's there (`metro.config.js`), and label that commentary «من شرح النسخة الأولى، غير مراجَع». It is never committed, and a release (`APP_VARIANT=production`) never bundles it: v2 isn't released with v1's commentary. Where v2 splits one v1 hadith in two, the commentary goes to the half with the words it explains. Once `database/riyad.db` changes, test builds bundle it instead, with a warning, until the preview is rebuilt; delete `.preview/` to test with the real database.
+
+`npm run typecheck` checks twice: everything, and the app's code alone (`tsconfig.app.json`), without Node's types, so code that would only work in Node (`Buffer`, `fs`) fails before it reaches a phone.
+
+**The app's data:**
+- `src/db/content.ts` reads `riyad.db`. Its tests run the same SQL against the real file with Node's own SQLite, so `npm test` checks them whenever the database is rebuilt.
+- On the phone, the copy of `riyad.db` is named after the bundled file's hash (`src/db/ContentProvider.tsx`). An app version with a new `riyad.db` copies it afresh and deletes the old copy, with no version number to raise by hand.
+- At startup the app checks the database's `user_version`. A database with a schema the code isn't written for stops the app with an error, rather than showing wrong data.
+- The user's bookmarks and settings are in their own `user.db` (`src/db/user.ts`), which content updates never touch. Its tables change only through a new entry at the end of `MIGRATIONS`.
+- Screens see the bookmarks through `src/db/bookmarks.ts`, so the reader's button, the bookmarks screen and the side menu change together. The settings (font size, theme) work the same way, through `src/db/settings.ts`.
+- The theme setting is applied twice: `useColors()` (`src/theme`) reads it for the app's own views, and `Appearance.setColorScheme` (`src/app/_layout.tsx`) for the phone's (alerts, the keyboard, the share sheet).
+- Icons come from `expo-symbols`, named by meaning in `src/components/Icon.tsx`: SF Symbols on iPhone, Material Symbols on Android. On Android they are font glyphs, which `Icon` keeps from growing with the phone's text size.
+- Screens use `Text` from `src/components/Text.tsx`, not React Native's: the phone's text size enlarges it at most 1.5 times, the reader's text 2 times and the bars' titles 1.3 times (`MAX_SCALE` in `src/theme`). Without a limit, iPhone's largest accessibility size (about 3 times) left a letter or two of a title on a line.
+- The app's icon is v1's (its gold calligraphy of the name, on `#111318`), rebuilt from `v1/app/src/main/res/drawable/ic_launcher_foreground.xml`; the splash screen shows the same calligraphy in the theme's green, small enough for Android's circle (`assets/splash-icon*.png`).
 
 ### The database
 
@@ -101,19 +134,29 @@ The app:
 
 - [x] Move the content pipeline into `book_data/`, so the repository's root is the app's (2026-10-25)
 - [x] Write the build script that turns the content into the app's database, `book_data/tools/build_db.py`: a first build for the app to start on (2026-10-25). The commentary and narrators come with content steps 5 and 6.
-- [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator
+- [ ] Build the Expo app with v1's features, the fixes, tap-a-word and tap-a-narrator, in phases on the branch `v2-app`:
+  - [x] P0: project setup (Expo SDK 58, Expo Router with a drawer, forced right-to-left, Amiri and Cairo, Jest, ESLint, `eas.json`), checked on the iPhone simulator (2026-10-30)
+  - [x] P1: data layer: open `database/riyad.db`, typed queries, the user's own database, and `simplify()` passing `database/simplify.json`, checked on the iPhone simulator and an Android phone (2026-10-30)
+  - [x] P2: the reader: swipe between hadith, the text styled by speaker, word meanings and benefits, full screen, reopening at the last hadith, opening a hadith by link (`/?id=12`), checked on a Galaxy A17 (0.3% janky frames over 30 fast swipes) and the iPhone simulator (2026-10-30)
+  - [x] P3: browse by book and chapter, search, bookmarks (with the newest in the side menu), its 6 Maestro flows passing on the iPhone simulator and a Galaxy A17 (2026-11-03). Not yet looked at in dark mode (P5).
+  - [x] P4: settings (font size 14–30; System, Light or Dark), About, sharing with the hadith number, code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-03). The books list became a measured ScrollView, which checks it reached the chapter: Android cut short the FlatList's scroll to a chapter far down a long book.
+  - [x] P5: polish and tests: v1's icon and a splash screen (on Android 12+ the splash icon is cut to a circle, so its art is 46% of the image, and Android draws it at 300 dp, iPhone at 420); screen readers read only the hadith on screen, and turn pages with «الحديث التالي» and «الحديث السابق» actions; every screen checked at the largest text size and in dark mode on both platforms; the search field takes the focus when opened from the side menu. Code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-04). Not yet tried: the page-turn actions with VoiceOver and TalkBack, which Maestro can't trigger.
+  - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key
 - [ ] Release v2 on Android and iPhone, once the content is done. It isn't released with v1's commentary, which is an edited version of the book's (the owner's decision, 2026-10-16).
 
 ## Repository layout
 
 ```
+src/app/     the Expo app's screens (Expo Router: every file is a route, _layout.tsx files are navigators)
+src/         the rest of the app: db/ (queries, bookmarks, settings), reader/, search/, components/ (shared views and icons), theme/
+assets/      the app's icons, splash image and fonts (Scheherazade New, and Cairo from v1)
 book_data/   the content: the checked text of the book, the tools that check it and the docs of each step (book_data/README.md)
 database/    the SQLite database the app reads, built from book_data/content/ (database/README.md)
 v1/          the v1 Android app (Kotlin, Jetpack Compose), kept for reference until v2 ships; v1's database is an input to the content
 CLAUDE.md    what a Claude Code session working here needs to know (book_data/CLAUDE.md for the content)
 ```
 
-The Expo app (TypeScript) goes at the root, next to these. Once v2 is released, `v1/` is deleted; it stays on `master` and the `v1.0.0` tag.
+The Expo app (TypeScript) is at the root, next to these: `app.json`, `eas.json`, `package.json` and `metro.config.js`, which keeps Metro out of `book_data/` and `v1/`. Once v2 is released, `v1/` is deleted; it stays on `master` and the `v1.0.0` tag.
 
 ## Building v1
 
