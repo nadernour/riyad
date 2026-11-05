@@ -142,7 +142,7 @@ The first `compare` takes a while, because Tesseract reads the 1,278 hadith page
 
 ## The matn check's long run
 
-Step 4's review is done in rounds (see [docs/matn.md](docs/matn.md)). `tools/long_run.sh` starts a fresh Claude Code session for each round (up to 12 hadith and 800 words of matn), on the owner's Claude subscription, and waits out the usage limits between rounds: a round starts only while the 5-hour window is under 85% and the weekly limit under 97% (start the run with `START=…` or `WEEKLY=…` to change them, e.g. `WEEKLY=80` to keep a fifth of the week for your own sessions):
+Step 4's review is done in rounds (see [docs/matn.md](docs/matn.md)). `tools/long_run.sh` starts a fresh Claude Code session for each round (up to 12 hadith and 800 words of matn), on the owner's Claude subscription, and waits out the usage limits between rounds: a round starts only while the 5-hour window is under 85% (start the run with `START=…` to change it), and when the weekly limit is reached the run waits until it resets:
 
 ```sh
 nohup tools/long_run.sh >> .cache/long-run.log 2>&1 &     # start it; it keeps going after the terminal closes
