@@ -1,7 +1,7 @@
 /**
  * @jest-environment node
  */
-import { FONT_SIZE, parseFontSize, parseTheme, setFontSize, setTheme } from './settings';
+import { FONT_SIZE, parseFontSize, parseSearchOrder, parseTheme, setFontSize, setSearchOrder, setTheme } from './settings';
 import { openUserDb } from './testing';
 import { getSetting, migrateUserDb } from './user';
 
@@ -24,9 +24,17 @@ test('a theme the app does not know reads as the system one', () => {
   expect(parseTheme('sepia')).toBe('system');
 });
 
+test('search shows the closest matches first unless the book order was chosen', () => {
+  expect(parseSearchOrder(null)).toBe('relevance');
+  expect(parseSearchOrder('book')).toBe('book');
+  expect(parseSearchOrder('random')).toBe('relevance');
+});
+
 test('settings are saved in user.db', () => {
   setFontSize(29);
   setTheme('dark');
+  setSearchOrder('book');
+  expect(getSetting(mockDb, 'searchOrder')).toBe('book');
   expect(getSetting(mockDb, 'fontSize')).toBe('30');
   expect(getSetting(mockDb, 'theme')).toBe('dark');
 });

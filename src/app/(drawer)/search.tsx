@@ -8,8 +8,9 @@ import { scheduleOnRN } from 'react-native-worklets';
 import { HadithRow } from '@/components/HadithRow';
 import { Icon } from '@/components/Icon';
 import { Text } from '@/components/Text';
-import { hadithNumber, MIN_QUERY_LENGTH, search, SEARCH_LIMIT } from '@/db/content';
+import { hadithNumber, MIN_QUERY_LENGTH, search, SEARCH_LIMIT, type SearchOrder } from '@/db/content';
 import { useQuery } from '@/db/hooks';
+import { setSearchOrder, useSearchOrder } from '@/db/settings';
 import { openHadith } from '@/reader/openHadith';
 import { simplify } from '@/search/simplify';
 import { count, HADITH } from '@/text/count';
@@ -52,8 +53,15 @@ export default function SearchScreen() {
 
   const tooShort = hadithNumber(query) === null && simplify(query).length < MIN_QUERY_LENGTH;
   // While a new search runs, the last results stay on screen rather than flashing away at each pause in typing.
-  const results = useQuery(`search:${query}`, (db) => search(db, query), { keepPrevious: true });
+  const order = useSearchOrder();
+  const results = useQuery(`search:${order}:${query}`, (db) => search(db, query, order), { keepPrevious: true });
+  // The order matters only for a word: a number finds one hadith.
+  const byWord = !tooShort && hadithNumber(query) === null;
   const hadith = !tooShort && results.status === 'done' ? results.value.hadith : [];
+  // The rows are highlighted, and open the reader, with the query they were found for, which can be behind the one
+  // being typed while the next search runs.
+  const foundFor = results.status === 'done' ? results.value.query : '';
+  const highlightFor = hadithNumber(foundFor) === null ? foundFor : undefined;
 
   let note: string | null = null;
   if (!query.trim()) note = 'ابحث بكلمة من نص الحديث، بلا حاجة إلى التشكيل، أو برقم الحديث';
@@ -87,11 +95,22 @@ export default function SearchScreen() {
           </Pressable>
         )}
       </View>
-      {note && <Text style={[styles.note, { color: colors.muted }]}>{note}</Text>}
+      {(note || byWord) && (
+        <View style={styles.bar}>
+          {note && <Text style={[styles.note, { color: colors.muted }]}>{note}</Text>}
+          {byWord && <OrderChoice order={order} />}
+        </View>
+      )}
       <FlatList
         data={hadith}
         keyExtractor={(hadith) => String(hadith.id)}
-        renderItem={({ item }) => <HadithRow hadith={item} onPress={() => openHadith(item.id)} />}
+        renderItem={({ item }) => (
+          <HadithRow
+            hadith={item}
+            found={item}
+            onPress={() => openHadith(item.id, highlightFor)}
+          />
+        )}
         keyboardShouldPersistTaps="handled"
         keyboardDismissMode="on-drag"
       />
@@ -99,8 +118,52 @@ export default function SearchScreen() {
   );
 }
 
+const ORDERS: { order: SearchOrder; label: string }[] = [
+  { order: 'relevance', label: 'الأقرب' },
+  { order: 'book', label: 'ترتيب الكتاب' },
+];
+
+// The order of the results: the closest matches first, or the book's order. Kept for the next search.
+function OrderChoice({ order }: { order: SearchOrder }) {
+  const colors = useColors();
+  return (
+    <View
+      style={[styles.choice, { borderColor: colors.border }]}
+      accessibilityRole="radiogroup"
+      accessibilityLabel="ترتيب النتائج">
+      {ORDERS.map((option) => {
+        const chosen = option.order === order;
+        return (
+          <Pressable
+            key={option.order}
+            onPress={() => setSearchOrder(option.order)}
+            style={[styles.option, chosen && { backgroundColor: colors.surface }]}
+            hitSlop={4}
+            accessibilityRole="radio"
+            accessibilityLabel={`ترتيب النتائج: ${option.label}`}
+            accessibilityState={{ checked: chosen, selected: chosen }}>
+            <Text style={[styles.optionText, { color: chosen ? colors.prophet : colors.muted }]}>{option.label}</Text>
+          </Pressable>
+        );
+      })}
+    </View>
+  );
+}
+
 const styles = StyleSheet.create({
   fill: { flex: 1 },
+  bar: {
+    flexDirection: 'row',
+    flexWrap: 'wrap',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    gap: 8,
+    marginHorizontal: 16,
+    marginBottom: 8,
+  },
+  choice: { flexDirection: 'row', borderWidth: StyleSheet.hairlineWidth, borderRadius: 8, overflow: 'hidden' },
+  option: { paddingVertical: 4, paddingHorizontal: 10 },
+  optionText: { fontFamily: fonts.uiSemiBold, fontSize: 13 },
   field: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -112,5 +175,5 @@ const styles = StyleSheet.create({
     borderWidth: StyleSheet.hairlineWidth,
   },
   input: { flex: 1, paddingVertical: 10, fontFamily: fonts.ui, fontSize: 17, textAlign: 'left' },
-  note: { marginHorizontal: 16, marginBottom: 8, fontFamily: fonts.ui, fontSize: 14, textAlign: 'left' },
+  note: { flexShrink: 1, fontFamily: fonts.ui, fontSize: 14, textAlign: 'left' },
 });

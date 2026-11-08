@@ -1,7 +1,9 @@
+import { useMemo } from 'react';
 import type { TextProps, TextStyle } from 'react-native';
 
 import { Text } from '@/components/Text';
-import type { Piece, Role } from '@/db/content';
+import { hadithText, type Piece, type Role } from '@/db/content';
+import { findMatches, splitAt } from '@/search/highlight';
 import { fonts, MAX_SCALE, TEXT_LINE_HEIGHT, useColors, type Colors } from '@/theme';
 
 // How each speaker's words look. The Prophet's words, ﷺ, stand out in colour and in weight, so they show without
@@ -26,9 +28,23 @@ function roleStyle(role: Role, colors: Colors): TextStyle | null {
 export function HadithText({
   pieces,
   fontSize,
+  highlight,
   ...props
-}: { pieces: Piece[]; fontSize: number } & Pick<TextProps, 'accessibilityActions' | 'onAccessibilityAction'>) {
+}: {
+  pieces: Piece[];
+  fontSize: number;
+  // A search query: where it is in the text is drawn on a highlight.
+  highlight?: string;
+} & Pick<TextProps, 'accessibilityActions' | 'onAccessibilityAction'>) {
   const colors = useColors();
+  // Worked out once for the text and query, not again at each render, such as a change of font size.
+  const spans = useMemo(
+    () =>
+      highlight
+        ? splitAt(pieces, findMatches(hadithText(pieces), highlight))
+        : pieces.map((piece) => ({ ...piece, matched: false })),
+    [pieces, highlight],
+  );
   return (
     <Text
       {...props}
@@ -41,10 +57,13 @@ export function HadithText({
         textAlign: 'justify',
         writingDirection: 'rtl',
       }}>
-      {pieces.map((piece, i) => (
+      {spans.map((span, i) => (
         // Each span has the limit too: a span's own limit, the app's Text's 1.5 by default, overrides its paragraph's.
-        <Text key={i} style={roleStyle(piece.role, colors)} maxFontSizeMultiplier={MAX_SCALE.reader}>
-          {piece.text}
+        <Text
+          key={i}
+          style={[roleStyle(span.role, colors), span.matched && { backgroundColor: colors.highlight }]}
+          maxFontSizeMultiplier={MAX_SCALE.reader}>
+          {span.text}
         </Text>
       ))}
     </Text>

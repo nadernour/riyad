@@ -16,11 +16,13 @@ type Props = {
   insetBottom: number;
   // Turns to the next (1) or previous (-1) hadith, for a screen reader, which takes the swipes for itself.
   onTurn?: (step: 1 | -1) => void;
+  // A search query, opened from search: where it is in the text is highlighted.
+  highlight?: string;
 };
 
 // One hadith, as v1 shows it: its chapter and number, its short title, its text, then the word meanings and benefits
 // from Nuzhat al-Muttaqin, which show only once they are transcribed (content step 5).
-export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn }: Props) {
+export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn, highlight }: Props) {
   const colors = useColors();
   const state = useHadith(id);
   const previewDb = usePreviewCommentary();
@@ -80,7 +82,7 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn }: Prop
 
       <View style={[styles.rule, { backgroundColor: colors.border }]} />
 
-      <HadithText pieces={hadith.pieces} fontSize={fontSize} {...turn} />
+      <HadithText pieces={hadith.pieces} fontSize={fontSize} highlight={highlight} {...turn} />
 
       {hadith.meanings.length > 0 && (
         <View style={styles.section}>

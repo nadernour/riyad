@@ -10,37 +10,23 @@ import { getHadithCount } from '@/db/content';
 import { useHadith, useQuery } from '@/db/hooks';
 import { useFontSize } from '@/db/settings';
 import { HadithPage } from '@/reader/HadithPage';
-import { lastHadithRead, rememberHadith } from '@/reader/lastHadith';
+import { rememberHadith } from '@/reader/lastHadith';
 import { Pager } from '@/reader/Pager';
+import { useReaderPosition } from '@/reader/readerPosition';
 import { HEADER_HEIGHT, ReaderHeader } from '@/reader/ReaderHeader';
 import { fonts, useColors } from '@/theme';
 
-// A hadith asked for by another screen (/?id=12).
-function askedHadith(param: string | undefined): number | null {
-  const id = Number(param);
-  return Number.isInteger(id) && id > 0 ? id : null;
-}
-
 export default function ReaderScreen() {
   const colors = useColors();
-  const params = useLocalSearchParams<{ id?: string }>();
+  const params = useLocalSearchParams<{ id?: string; q?: string }>();
   const count = useQuery('hadithCount', getHadithCount);
   const fontSize = useFontSize();
 
-  const [requested, setRequested] = useState(() => askedHadith(params.id) ?? lastHadithRead());
+  const { requested, highlight, turnTo } = useReaderPosition(params);
   const [fullScreen, setFullScreen] = useState(false);
 
-  // Opening a hadith from another screen while the reader is already open: a new id moves to it, during render, as
-  // React has state follow a prop. The id is then cleared from the route, so asking for the same hadith again, after
-  // paging away from it, is a new id too.
-  const [askedFor, setAskedFor] = useState(params.id);
-  if (params.id !== askedFor) {
-    setAskedFor(params.id);
-    const asked = askedHadith(params.id);
-    if (asked) setRequested(asked);
-  }
   useEffect(() => {
-    if (params.id) router.setParams({ id: undefined });
+    if (params.id) router.setParams({ id: undefined, q: undefined });
   }, [params.id]);
 
   // The phone's bars change the safe-area insets when they hide for full screen. The pages and header keep the
@@ -77,10 +63,10 @@ export default function ReaderScreen() {
       if (next === shown.current) return;
       // Set at once, so a second turn before the render goes on from this one.
       shown.current = next;
-      setRequested(next);
+      turnTo(next);
       AccessibilityInfo.announceForAccessibility(`الحديث رقم ${next}`);
     },
-    [last],
+    [last, turnTo],
   );
   const renderPage = useCallback(
     (id: number) => (
@@ -90,9 +76,10 @@ export default function ReaderScreen() {
         insetTop={margins.top + HEADER_HEIGHT}
         insetBottom={margins.bottom}
         onTurn={turn}
+        highlight={highlight?.id === id ? highlight.query : undefined}
       />
     ),
-    [fontSize, margins.top, margins.bottom, turn],
+    [fontSize, margins.top, margins.bottom, turn, highlight],
   );
 
   if (count.status === 'error') {
@@ -108,7 +95,7 @@ export default function ReaderScreen() {
 
   return (
     <View style={[styles.fill, { backgroundColor: colors.background }]}>
-      <Pager count={last} index={index} onIndexChange={setRequested} renderPage={renderPage} onTap={toggleFullScreen} />
+      <Pager count={last} index={index} onIndexChange={turnTo} renderPage={renderPage} onTap={toggleFullScreen} />
       <ReaderHeader title={title} hadithId={index} hadith={hadith} insetTop={margins.top} hidden={fullScreen} />
       <StatusBar hidden={fullScreen} animated />
       <NavigationBar hidden={fullScreen} />

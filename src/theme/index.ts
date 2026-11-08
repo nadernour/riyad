@@ -37,6 +37,8 @@ const light = {
   prophet: '#0B6E5F',
   // Other people's words, such as a Companion's question: set apart from the narration, more quietly than the Prophet's.
   speech: '#3D4F6B',
+  // Behind the words a search found.
+  highlight: '#F9E3A0',
 };
 
 export type Colors = typeof light;
@@ -49,6 +51,7 @@ const dark: Colors = {
   border: '#2A3735',
   prophet: '#5CC9B4',
   speech: '#A9B9D6',
+  highlight: '#5E4C14',
 };
 
 // The theme setting: the phone's, or light or dark whatever the phone's is. The screens read the setting itself, and

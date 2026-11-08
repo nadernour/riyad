@@ -14,6 +14,8 @@ import {
   search,
   SEARCH_LIMIT,
 } from './content';
+import { simplify } from '@/search/simplify';
+
 import { openContentDb } from './testing';
 
 const db = openContentDb(path.join(__dirname, '../../database/riyad.db'));
@@ -67,7 +69,7 @@ test('a list of hadith, in the order asked, without numbers that have none', asy
 });
 
 describe('search', () => {
-  const ids = async (query: string) => (await search(db, query)).hadith.map((result) => result.id);
+  const ids = async (query: string) => (await search(db, query, 'book')).hadith.map((result) => result.id);
 
   test('finds words, ignoring tashkeel', async () => {
     expect(await ids('إنما الأعمال بالنيات')).toContain(1);
@@ -97,7 +99,7 @@ describe('search', () => {
   });
 
   test('returns the first matches up to the limit, in the book order, and says there are more', async () => {
-    expect((await search(db, 'الله')).more).toBe(true);
+    expect((await search(db, 'الله', 'book')).more).toBe(true);
     const found = await ids('الله');
     expect(found).toHaveLength(SEARCH_LIMIT);
     expect(found).toEqual([...found].sort((a, b) => a - b));
@@ -109,11 +111,38 @@ describe('search', () => {
   });
 
   test('says there are no more when every match is shown', async () => {
-    const results = await search(db, '١٢');
+    const results = await search(db, '١٢', 'book');
     expect(results).toMatchObject({ hadith: [{ id: 12 }], more: false });
   });
 
+  test('in order of relevance: the closest matches first, by FTS5 rank, up to the limit', async () => {
+    const results = await search(db, 'الصلاة', 'relevance');
+    const ranked = await db.getAllAsync<{ rowid: number }>(
+      'SELECT rowid FROM hadith_search WHERE hadith_search MATCH ? ORDER BY rank, rowid LIMIT ?',
+      ['"الصلاه"', SEARCH_LIMIT],
+    );
+    expect(results.hadith.map((hadith) => hadith.id)).toEqual(ranked.map((row) => row.rowid));
+    expect(results.more).toBe(true);
+    // Not the book's order.
+    expect(results.hadith.map((hadith) => hadith.id)).not.toEqual(await ids('الصلاة'));
+  });
+
+  test('each result has where the query is, in its title and an excerpt of its text', async () => {
+    const results = await search(db, 'إنما الأعمال بالنيات', 'book');
+    expect(results.query).toBe('إنما الأعمال بالنيات');
+    const { excerpt, title, titleMatches } = results.hadith[0];
+    expect(excerpt.ranges.length).toBeGreaterThan(0);
+    for (const range of excerpt.ranges) {
+      expect(simplify(excerpt.text.slice(range.start, range.end))).toBe('انما الاعمال بالنيات');
+    }
+    expect(simplify(title.slice(titleMatches[0].start, titleMatches[0].end))).toBe('انما الاعمال بالنيات');
+    // A number: the text's start, with nothing to highlight.
+    const byNumber = (await search(db, '12', 'book')).hadith[0];
+    expect(byNumber.excerpt.text.length).toBeGreaterThan(0);
+    expect(byNumber.excerpt.ranges).toEqual([]);
+  });
+
   test('quotes in a query cannot break the search', async () => {
-    await expect(search(db, 'الله" OR "')).resolves.toBeDefined();
+    await expect(search(db, 'الله" OR "', 'book')).resolves.toBeDefined();
   });
 });

@@ -1,21 +1,24 @@
 import { useSyncExternalStore } from 'react';
 
+import type { SearchOrder } from './content';
 import { getSetting, setSetting } from './user';
 import { userDb } from './userDb';
 
 // The reader's settings, kept in user.db's settings table, as every screen sees them: the reader, the settings
-// screen and the theme change together.
+// screen and the theme change together. The order of search results is kept with them, as the search screen last had it.
 export type Theme = 'system' | 'light' | 'dark';
 
 export interface Settings {
   fontSize: number;
   theme: Theme;
+  searchOrder: SearchOrder;
 }
 
 // v1's default and range, in v1's steps of 2.
 export const FONT_SIZE = { min: 14, max: 30, step: 2, default: 24 } as const;
 
-const DEFAULTS: Settings = { fontSize: FONT_SIZE.default, theme: 'system' };
+// Search shows the closest matches first unless asked for the book's order (v1 had only the book's).
+const DEFAULTS: Settings = { fontSize: FONT_SIZE.default, theme: 'system', searchOrder: 'relevance' };
 
 // A saved value the app no longer knows, or none, reads as the default.
 export function parseFontSize(value: string | null): number {
@@ -27,6 +30,10 @@ export function parseFontSize(value: string | null): number {
 
 export function parseTheme(value: string | null): Theme {
   return value === 'light' || value === 'dark' || value === 'system' ? value : DEFAULTS.theme;
+}
+
+export function parseSearchOrder(value: string | null): SearchOrder {
+  return value === 'book' || value === 'relevance' ? value : DEFAULTS.searchOrder;
 }
 
 const listeners = new Set<() => void>();
@@ -48,7 +55,11 @@ function getSnapshot(): Settings {
     if (Date.now() - failedAt < RETRY_MS) return DEFAULTS;
     try {
       const db = userDb();
-      snapshot = { fontSize: parseFontSize(getSetting(db, 'fontSize')), theme: parseTheme(getSetting(db, 'theme')) };
+      snapshot = {
+        fontSize: parseFontSize(getSetting(db, 'fontSize')),
+        theme: parseTheme(getSetting(db, 'theme')),
+        searchOrder: parseSearchOrder(getSetting(db, 'searchOrder')),
+      };
     } catch {
       failedAt = Date.now();
       return DEFAULTS;
@@ -81,6 +92,10 @@ export function useFontSize(): number {
   return useSyncExternalStore(subscribe, () => getSnapshot().fontSize);
 }
 
+export function useSearchOrder(): SearchOrder {
+  return useSyncExternalStore(subscribe, () => getSnapshot().searchOrder);
+}
+
 export function setFontSize(size: number) {
   const fontSize = parseFontSize(String(size));
   change('fontSize', String(fontSize), { ...getSnapshot(), fontSize });
@@ -88,4 +103,8 @@ export function setFontSize(size: number) {
 
 export function setTheme(theme: Theme) {
   change('theme', theme, { ...getSnapshot(), theme });
+}
+
+export function setSearchOrder(searchOrder: SearchOrder) {
+  change('searchOrder', searchOrder, { ...getSnapshot(), searchOrder });
 }

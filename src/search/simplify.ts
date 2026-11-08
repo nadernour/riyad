@@ -10,3 +10,6 @@ export function simplify(text: string): string {
     .replace(/[^ء-ي]+/g, ' ') // anything else but letters: one space
     .trim();
 }
+
+// The shortest simplified query search runs: the index is of trigrams, so a shorter one matches nothing.
+export const MIN_QUERY_LENGTH = 3;

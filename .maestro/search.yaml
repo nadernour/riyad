@@ -27,17 +27,30 @@ appId: com.nad.riyadalsalheen.dev
 - extendedWaitUntil:
     visible: 'الحديث رقم 127:.*'
     timeout: 5000
-# Maestro types only Latin letters and digits on Android, so the word search runs on iPhone.
-- runFlow:
-    when:
-      platform: iOS
-    commands:
-      - tapOn: 'مسح'
-      - inputText: 'الصلاة'
-      - extendedWaitUntil:
-          visible: 'أول 100 حديث'
-          timeout: 5000
-      - tapOn: 'الحديث رقم 10:.*'
-      - extendedWaitUntil:
-          visible: 'الحديث رقم 10'
-          timeout: 5000
+# A word, without its marks. Maestro types only Latin letters and digits on Android, so the word is pasted.
+- tapOn: 'مسح'
+- setClipboard: 'الصلاة'
+- pasteText
+- extendedWaitUntil:
+    visible: 'أول 100 حديث'
+    timeout: 8000
+# The closest matches first, then the book's order, which the choice keeps.
+- assertVisible:
+    text: 'ترتيب النتائج: الأقرب'
+    selected: true
+- tapOn: 'ترتيب النتائج: ترتيب الكتاب'
+- assertVisible:
+    text: 'ترتيب النتائج: ترتيب الكتاب'
+    selected: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 10:.*'
+    timeout: 5000
+- tapOn: 'الحديث رقم 10:.*'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 10'
+    timeout: 5000
+# Kept for the next search.
+- tapOn: 'البحث'
+- assertVisible:
+    text: 'ترتيب النتائج: ترتيب الكتاب'
+    selected: true

@@ -50,6 +50,7 @@ New:
 
 - **Tap an explained word** in the hadith to see its meaning.
 - **Tap a narrator's name** in the hadith to read their biography.
+- **Search shows the closest matches first**, or the book's order, which is all v1 has (the collaborator's decision, 2026-11-04): the choice is next to the results, and kept. The words found are highlighted in the results, in an excerpt of each hadith's text, and in the reader when a result is opened.
 
 ## Content
 

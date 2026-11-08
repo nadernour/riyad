@@ -1,4 +1,5 @@
-import { simplify } from '@/search/simplify';
+import { findMatches, snippet, type Range } from '@/search/highlight';
+import { MIN_QUERY_LENGTH, simplify } from '@/search/simplify';
 
 // Reads database/riyad.db; database/README.md describes its tables. The functions take this interface rather than
 // expo-sqlite's SQLiteDatabase, which has it, so that the tests can run the same SQL with Node's own SQLite.
@@ -49,6 +50,12 @@ export interface Chapter {
   firstHadith: number;
 }
 
+// A hadith's text: its pieces joined in reading order (database/README.md). Search's highlights are positions in it, so
+// everything that shows or matches the text joins it here.
+export function hadithText(pieces: { text: string }[]): string {
+  return pieces.map((piece) => piece.text).join('');
+}
+
 // A hadith as a list shows it: search results and bookmarks.
 export interface HadithSummary {
   id: number;
@@ -57,8 +64,7 @@ export interface HadithSummary {
   chapter: string;
 }
 
-// The shortest simplified query search runs: the index is of trigrams, so a shorter one matches nothing.
-export const MIN_QUERY_LENGTH = 3;
+export { MIN_QUERY_LENGTH } from '@/search/simplify';
 export const SEARCH_LIMIT = 100;
 
 export async function checkSchema(db: ContentDb): Promise<void> {
@@ -130,28 +136,75 @@ export function hadithNumber(query: string): number | null {
   return Number(trimmed.replace(/[٠-٩۰-۹]/g, (digit) => String(digit.charCodeAt(0) % 16)));
 }
 
+// A search result: the hadith, and where the query is in its title and in an excerpt of its text, worked out once
+// per search rather than at each render of the list.
+export interface SearchHit extends HadithSummary {
+  titleMatches: Range[];
+  excerpt: { text: string; ranges: Range[] };
+}
+
+// The order of the results: the closest matches first (FTS5's bm25 rank: more of the query, in a shorter text, comes
+// first), or the book's order.
+export type SearchOrder = 'relevance' | 'book';
+
+// Each order, as SQL, for the full-text match and for the results from it: `hit` is the matched hadith's number.
+const ORDER: Record<SearchOrder, string> = { relevance: 'rank, hit', book: 'hit' };
+
 export interface SearchResults {
-  hadith: HadithSummary[];
+  // The query these are the results of, which can be behind the one being typed.
+  query: string;
+  hadith: SearchHit[];
   // More hadith match than SEARCH_LIMIT: these are the first.
   more: boolean;
 }
 
 // A query of digits only opens the hadith with that number; otherwise it is simplified as the text was, and found
 // anywhere in a hadith's text, even inside a word (database/README.md, "Search").
-export async function search(db: ContentDb, query: string): Promise<SearchResults> {
+export async function search(db: ContentDb, query: string, order: SearchOrder): Promise<SearchResults> {
   const id = hadithNumber(query);
-  if (id !== null)
-    return { hadith: await db.getAllAsync<HadithSummary>(`${SUMMARY} WHERE h.id = ?`, [id]), more: false };
+  if (id !== null) {
+    const hadith = await db.getAllAsync<HadithSummary>(`${SUMMARY} WHERE h.id = ?`, [id]);
+    return { query, hadith: await withMatches(db, hadith, null), more: false };
+  }
 
   const simplified = simplify(query);
-  if (simplified.length < MIN_QUERY_LENGTH) return { hadith: [], more: false };
+  if (simplified.length < MIN_QUERY_LENGTH) return { query, hadith: [], more: false };
   // simplify() leaves only letters and spaces, so the query can't break out of the double quotes. The limit is inside
-  // the full-text query, as database/README.md has it, so a common word stops at the first matches; one more than
-  // shown tells whether there are more.
+  // the full-text query, as database/README.md has it: in the book's order a common word stops at the first matches,
+  // while the closest first has to rank every match before it keeps the first (all 1,898 hadith at most, which
+  // SQLite ranks in milliseconds). One more than shown tells whether there are more.
   const hadith = await db.getAllAsync<HadithSummary>(
-    `${SUMMARY} WHERE h.id IN (SELECT rowid FROM hadith_search WHERE hadith_search MATCH ? ORDER BY rowid LIMIT ?)
-     ORDER BY h.id`,
+    `WITH found AS (
+       SELECT rowid AS hit, rank FROM hadith_search WHERE hadith_search MATCH ? ORDER BY ${ORDER[order]} LIMIT ?
+     )
+     ${SUMMARY} JOIN found ON found.hit = h.id
+     ORDER BY ${ORDER[order]}`,
     [`"${simplified}"`, SEARCH_LIMIT + 1],
   );
-  return { hadith: hadith.slice(0, SEARCH_LIMIT), more: hadith.length > SEARCH_LIMIT };
+  return {
+    query,
+    hadith: await withMatches(db, hadith.slice(0, SEARCH_LIMIT), query),
+    more: hadith.length > SEARCH_LIMIT,
+  };
+}
+
+// Where the query is in each hadith's title and text, as the reader shows them; a number has no matches, and shows
+// the text's start.
+async function withMatches(db: ContentDb, hadith: HadithSummary[], query: string | null): Promise<SearchHit[]> {
+  if (hadith.length === 0) return [];
+  const pieces = await db.getAllAsync<{ id: number; text: string }>(
+    `SELECT hadith_id AS id, text FROM matn_pieces WHERE hadith_id IN (${hadith.map(() => '?').join(', ')})
+     ORDER BY hadith_id, seq`,
+    hadith.map((h) => h.id),
+  );
+  const byHadith = new Map<number, { text: string }[]>();
+  for (const piece of pieces) byHadith.set(piece.id, [...(byHadith.get(piece.id) ?? []), piece]);
+  return hadith.map((h) => {
+    const text = hadithText(byHadith.get(h.id) ?? []);
+    return {
+      ...h,
+      titleMatches: query ? findMatches(h.title, query) : [],
+      excerpt: snippet(text, query ? findMatches(text, query) : []),
+    };
+  });
 }
