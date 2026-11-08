@@ -59,6 +59,11 @@ export function setBookmarked(hadithId: number, bookmarked: boolean) {
   change(() => (bookmarked ? addBookmark(userDb(), hadithId) : removeBookmark(userDb(), hadithId)));
 }
 
+// A removed bookmark, put back as it was, in its place among the others.
+export function restoreBookmark(bookmark: Bookmark) {
+  change(() => addBookmark(userDb(), bookmark.hadithId, bookmark.createdAt));
+}
+
 export function removeAllBookmarks() {
   change(() => clearBookmarks(userDb()));
 }

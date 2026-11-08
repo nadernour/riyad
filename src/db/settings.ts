@@ -1,16 +1,19 @@
 import { useSyncExternalStore } from 'react';
 
+import type { Palette } from '@/theme';
+
 import type { SearchOrder } from './content';
 import { getSetting, setSetting } from './user';
 import { userDb } from './userDb';
 
 // The reader's settings, kept in user.db's settings table, as every screen sees them: the reader, the settings
-// screen and the theme change together. The order of search results is kept with them, as the search screen last had it.
+// screen and the theme and palette change together. The order of search results is kept with them, as the search screen last had it.
 export type Theme = 'system' | 'light' | 'dark';
 
 export interface Settings {
   fontSize: number;
   theme: Theme;
+  palette: Palette;
   searchOrder: SearchOrder;
 }
 
@@ -18,7 +21,7 @@ export interface Settings {
 export const FONT_SIZE = { min: 14, max: 30, step: 2, default: 24 } as const;
 
 // Search shows the closest matches first unless asked for the book's order (v1 had only the book's).
-const DEFAULTS: Settings = { fontSize: FONT_SIZE.default, theme: 'system', searchOrder: 'relevance' };
+const DEFAULTS: Settings = { fontSize: FONT_SIZE.default, theme: 'system', palette: 'green', searchOrder: 'relevance' };
 
 // A saved value the app no longer knows, or none, reads as the default.
 export function parseFontSize(value: string | null): number {
@@ -30,6 +33,13 @@ export function parseFontSize(value: string | null): number {
 
 export function parseTheme(value: string | null): Theme {
   return value === 'light' || value === 'dark' || value === 'system' ? value : DEFAULTS.theme;
+}
+
+// Every palette, as the type has them, so a new one can't be missed here.
+const PALETTE_NAMES: Record<Palette, true> = { green: true, gold: true, manuscript: true };
+
+export function parsePalette(value: string | null): Palette {
+  return value && Object.prototype.hasOwnProperty.call(PALETTE_NAMES, value) ? (value as Palette) : DEFAULTS.palette;
 }
 
 export function parseSearchOrder(value: string | null): SearchOrder {
@@ -58,6 +68,7 @@ function getSnapshot(): Settings {
       snapshot = {
         fontSize: parseFontSize(getSetting(db, 'fontSize')),
         theme: parseTheme(getSetting(db, 'theme')),
+        palette: parsePalette(getSetting(db, 'palette')),
         searchOrder: parseSearchOrder(getSetting(db, 'searchOrder')),
       };
     } catch {
@@ -88,6 +99,10 @@ export function useTheme(): Theme {
   return useSyncExternalStore(subscribe, () => getSnapshot().theme);
 }
 
+export function usePalette(): Palette {
+  return useSyncExternalStore(subscribe, () => getSnapshot().palette);
+}
+
 export function useFontSize(): number {
   return useSyncExternalStore(subscribe, () => getSnapshot().fontSize);
 }
@@ -103,6 +118,10 @@ export function setFontSize(size: number) {
 
 export function setTheme(theme: Theme) {
   change('theme', theme, { ...getSnapshot(), theme });
+}
+
+export function setPalette(palette: Palette) {
+  change('palette', palette, { ...getSnapshot(), palette });
 }
 
 export function setSearchOrder(searchOrder: SearchOrder) {

@@ -9,6 +9,7 @@ import {
   type LayoutChangeEvent,
 } from 'react-native';
 
+import { ErrorView } from '@/components/ErrorView';
 import { Icon } from '@/components/Icon';
 import { Text } from '@/components/Text';
 import { listBooks, listChapters, type Book, type Chapter } from '@/db/content';
@@ -91,9 +92,9 @@ export default function BooksScreen() {
     return (
       <View style={[styles.fill, { backgroundColor: colors.background }]}>
         {books.status === 'loading' ? (
-          <ActivityIndicator style={styles.fill} color={colors.prophet} />
+          <ActivityIndicator style={styles.fill} color={colors.accent} />
         ) : (
-          <Text style={[styles.chapter, { color: colors.text }]}>{books.error.message}</Text>
+          <ErrorView error={books.error} onRetry={books.retry} />
         )}
       </View>
     );
@@ -134,8 +135,10 @@ export default function BooksScreen() {
                 />
               ))
             ) : chapters.status === 'loading' ? (
-              <ActivityIndicator style={styles.loading} color={colors.prophet} />
-            ) : null)}
+              <ActivityIndicator style={styles.loading} color={colors.accent} />
+            ) : (
+              <ErrorView error={chapters.error} onRetry={chapters.retry} style={styles.loading} />
+            ))}
         </Fragment>
       ))}
     </ScrollView>
@@ -155,7 +158,7 @@ function BookRow({ book, open, onPress }: { book: Book; open: boolean; onPress: 
       accessibilityRole="button"
       accessibilityLabel={`${book.title}، ${count(book.chapterCount, CHAPTER)}`}
       accessibilityState={{ expanded: open }}>
-      <Icon name="books" color={colors.prophet} />
+      <Icon name="books" color={colors.accent} />
       <View style={styles.fill}>
         <Text style={[styles.bookTitle, { color: colors.text }]}>{book.title}</Text>
         <Text style={[styles.count, { color: colors.muted }]}>{count(book.chapterCount, CHAPTER)}</Text>
@@ -182,8 +185,8 @@ function ChapterRow({
       onPress={() => openHadith(chapter.firstHadith)}
       accessibilityRole="button"
       accessibilityState={{ selected: current }}>
-      <Text style={[styles.chapter, { color: current ? colors.prophet : colors.text }]}>{chapter.title}</Text>
-      {current && <Icon name="current" color={colors.prophet} size={20} />}
+      <Text style={[styles.chapter, { color: current ? colors.accent : colors.text }]}>{chapter.title}</Text>
+      {current && <Icon name="current" color={colors.accent} size={20} />}
     </Pressable>
   );
 }

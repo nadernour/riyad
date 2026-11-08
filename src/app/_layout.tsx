@@ -6,9 +6,10 @@ import { useEffect, type ReactNode } from 'react';
 import { Appearance } from 'react-native';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 
+import { ErrorBoundary } from '@/components/ErrorView';
 import { ContentProvider } from '@/db/ContentProvider';
 import { useTheme } from '@/db/settings';
-import { fontFiles } from '@/theme';
+import { fontFiles, useColors } from '@/theme';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -32,16 +33,21 @@ function ThemeAppearance() {
   return <StatusBar style="auto" />;
 }
 
-// The screens render once the fonts are loaded and riyad.db is open.
+// The screens render once the fonts are loaded and riyad.db is open. If riyad.db can't be opened, or a screen fails to
+// render, that is shown, with a button to try again. HideSplash may never have rendered then, so the error hides the
+// splash screen itself.
 function Ready({ children }: { children: ReactNode }) {
+  const colors = useColors();
   const [loaded, error] = useFonts(fontFiles);
   if (!loaded && !error) return null;
   return (
-    <ContentProvider>
-      <HideSplash />
-      <ThemeAppearance />
-      {children}
-    </ContentProvider>
+    <ErrorBoundary style={{ backgroundColor: colors.background }} onError={() => SplashScreen.hideAsync()}>
+      <ContentProvider>
+        <HideSplash />
+        <ThemeAppearance />
+        {children}
+      </ContentProvider>
+    </ErrorBoundary>
   );
 }
 

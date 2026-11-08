@@ -29,7 +29,7 @@ export function HadithRow({ hadith, onPress, action, compact = false, found }: P
         accessibilityRole="button"
         // A search result says where it matched too, as the excerpt shows it.
         accessibilityLabel={`الحديث رقم ${hadith.id}: ${hadith.title}${excerpt ? `، ${excerpt.text}` : ''}`}>
-        <Text style={[styles.number, { color: colors.prophet }]}>{hadith.id}</Text>
+        <Text style={[styles.number, { color: colors.accent }]}>{hadith.id}</Text>
         <View style={styles.texts}>
           <Marked
             text={hadith.title}

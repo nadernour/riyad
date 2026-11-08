@@ -1,11 +1,12 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { activateKeepAwakeAsync, deactivateKeepAwake } from 'expo-keep-awake';
+import { router, useIsFocused, useLocalSearchParams } from 'expo-router';
 import { NavigationBar } from 'expo-navigation-bar';
 import { StatusBar } from 'expo-status-bar';
 import { useCallback, useEffect, useRef, useState } from 'react';
 import { AccessibilityInfo, ActivityIndicator, StyleSheet, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 
-import { Text } from '@/components/Text';
+import { ErrorView } from '@/components/ErrorView';
 import { getHadithCount } from '@/db/content';
 import { useHadith, useQuery } from '@/db/hooks';
 import { useFontSize } from '@/db/settings';
@@ -14,7 +15,10 @@ import { rememberHadith } from '@/reader/lastHadith';
 import { Pager } from '@/reader/Pager';
 import { useReaderPosition } from '@/reader/readerPosition';
 import { HEADER_HEIGHT, ReaderHeader } from '@/reader/ReaderHeader';
-import { fonts, useColors } from '@/theme';
+import { tapClaimed } from '@/reader/tapGuard';
+import { useColors } from '@/theme';
+
+const KEEP_AWAKE = 'reader';
 
 export default function ReaderScreen() {
   const colors = useColors();
@@ -28,6 +32,18 @@ export default function ReaderScreen() {
   useEffect(() => {
     if (params.id) router.setParams({ id: undefined, q: undefined });
   }, [params.id]);
+
+  // The screen stays on while the reader is open, as a long hadith takes longer to read than the phone waits. The
+  // drawer keeps the reader mounted under its other screens, so this follows whether it's the one shown.
+  const focused = useIsFocused();
+  useEffect(() => {
+    if (!focused) return;
+    // Turned off only once it is on, so leaving at once doesn't leave it on.
+    const on = activateKeepAwakeAsync(KEEP_AWAKE).catch(() => {});
+    return () => {
+      on.then(() => deactivateKeepAwake(KEEP_AWAKE)).catch(() => {});
+    };
+  }, [focused]);
 
   // The phone's bars change the safe-area insets when they hide for full screen. The pages and header keep the
   // largest insets seen, so full screen slides the header away without moving the text.
@@ -49,7 +65,9 @@ export default function ReaderScreen() {
   const hadith = current.status === 'done' ? current.value : null;
   const title = hadith ? hadith.book : 'رياض الصالحين';
 
-  const toggleFullScreen = useCallback(() => setFullScreen((full) => !full), []);
+  const toggleFullScreen = useCallback(() => {
+    if (!tapClaimed()) setFullScreen((full) => !full);
+  }, []);
   // A screen reader's turn: it moves without the swipe's animation, and says where it is now. It reads the index
   // through a ref, so that it doesn't change, and re-render every page, at each turn.
   const shown = useRef(index);
@@ -72,6 +90,7 @@ export default function ReaderScreen() {
     (id: number) => (
       <HadithPage
         id={id}
+        total={last ?? id}
         fontSize={fontSize}
         insetTop={margins.top + HEADER_HEIGHT}
         insetBottom={margins.bottom}
@@ -79,18 +98,20 @@ export default function ReaderScreen() {
         highlight={highlight?.id === id ? highlight.query : undefined}
       />
     ),
-    [fontSize, margins.top, margins.bottom, turn, highlight],
+    [last, fontSize, margins.top, margins.bottom, turn, highlight],
   );
 
   if (count.status === 'error') {
     return (
-      <Text style={[styles.error, { color: colors.text, backgroundColor: colors.background, paddingTop: margins.top }]}>
-        {count.error.message}
-      </Text>
+      <ErrorView
+        error={count.error}
+        onRetry={count.retry}
+        style={{ backgroundColor: colors.background, paddingTop: margins.top }}
+      />
     );
   }
   if (!last) {
-    return <ActivityIndicator style={[styles.fill, { backgroundColor: colors.background }]} color={colors.prophet} />;
+    return <ActivityIndicator style={[styles.fill, { backgroundColor: colors.background }]} color={colors.accent} />;
   }
 
   return (
@@ -105,5 +126,4 @@ export default function ReaderScreen() {
 
 const styles = StyleSheet.create({
   fill: { flex: 1 },
-  error: { flex: 1, padding: 20, fontFamily: fonts.ui, fontSize: 16, textAlign: 'left' },
 });

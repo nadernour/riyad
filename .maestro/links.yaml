@@ -9,5 +9,5 @@ appId: com.nad.riyadalsalheen.dev
     text: 'Open'
     optional: true
 - extendedWaitUntil:
-    visible: 'الحديث رقم 3'
+    visible: 'الحديث رقم 3 من 1898'
     timeout: 10000

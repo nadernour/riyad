@@ -1,10 +1,10 @@
-# Settings: the font size and the theme, kept after the app is closed; then About, and sharing a hadith.
+# Settings: the font size, the theme and the palette, kept after the app is closed; then About, and sharing a hadith.
 appId: com.nad.riyadalsalheen.dev
 ---
 - launchApp:
     clearState: true
 - extendedWaitUntil:
-    visible: 'الحديث رقم 1'
+    visible: 'الحديث رقم 1 من 1898'
     timeout: 15000
 - tapOn: 'القائمة'
 - tapOn: 'الإعدادات'
@@ -15,11 +15,17 @@ appId: com.nad.riyadalsalheen.dev
 - assertVisible:
     text: 'داكن'
     selected: true
+- scrollUntilVisible:
+    element: 'مخطوطة.*'
+- tapOn: 'مخطوطة.*'
+- assertVisible:
+    text: 'مخطوطة.*'
+    selected: true
 # Closed and opened again, the app keeps them.
 - stopApp
 - launchApp
 - extendedWaitUntil:
-    visible: 'الحديث رقم 1'
+    visible: 'الحديث رقم 1 من 1898'
     timeout: 15000
 - tapOn: 'القائمة'
 - tapOn: 'الإعدادات'
@@ -27,6 +33,15 @@ appId: com.nad.riyadalsalheen.dev
 - assertVisible:
     text: 'داكن'
     selected: true
+- scrollUntilVisible:
+    element: 'مخطوطة.*'
+- assertVisible:
+    text: 'مخطوطة.*'
+    selected: true
+- tapOn: 'أخضر.*'
+- scrollUntilVisible:
+    element: 'تلقائي.*'
+    direction: UP
 - tapOn: 'تلقائي.*'
 - assertVisible:
     text: 'تلقائي.*'

@@ -5,14 +5,14 @@ appId: com.nad.riyadalsalheen.dev
 - launchApp:
     clearState: true
 - extendedWaitUntil:
-    visible: 'الحديث رقم 1'
+    visible: 'الحديث رقم 1 من 1898'
     timeout: 15000
 - openLink: 'riyadalsalheen-dev:///?id=3'
 - tapOn:
     text: 'Open'
     optional: true
 - extendedWaitUntil:
-    visible: 'الحديث رقم 3'
+    visible: 'الحديث رقم 3 من 1898'
     timeout: 10000
 - swipe:
     start: 50%, 85%

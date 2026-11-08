@@ -65,6 +65,7 @@ export interface HadithSummary {
 }
 
 export { MIN_QUERY_LENGTH } from '@/search/simplify';
+// How many results search shows at first, and how many more each «عرض المزيد» adds.
 export const SEARCH_LIMIT = 100;
 
 export async function checkSchema(db: ContentDb): Promise<void> {
@@ -154,13 +155,18 @@ export interface SearchResults {
   // The query these are the results of, which can be behind the one being typed.
   query: string;
   hadith: SearchHit[];
-  // More hadith match than SEARCH_LIMIT: these are the first.
+  // More hadith match than the limit asked for: these are the first.
   more: boolean;
 }
 
 // A query of digits only opens the hadith with that number; otherwise it is simplified as the text was, and found
-// anywhere in a hadith's text, even inside a word (database/README.md, "Search").
-export async function search(db: ContentDb, query: string, order: SearchOrder): Promise<SearchResults> {
+// anywhere in a hadith's text, even inside a word (database/README.md, "Search"). It returns the first `limit` matches.
+export async function search(
+  db: ContentDb,
+  query: string,
+  order: SearchOrder,
+  limit = SEARCH_LIMIT,
+): Promise<SearchResults> {
   const id = hadithNumber(query);
   if (id !== null) {
     const hadith = await db.getAllAsync<HadithSummary>(`${SUMMARY} WHERE h.id = ?`, [id]);
@@ -179,12 +185,12 @@ export async function search(db: ContentDb, query: string, order: SearchOrder): 
      )
      ${SUMMARY} JOIN found ON found.hit = h.id
      ORDER BY ${ORDER[order]}`,
-    [`"${simplified}"`, SEARCH_LIMIT + 1],
+    [`"${simplified}"`, limit + 1],
   );
   return {
     query,
-    hadith: await withMatches(db, hadith.slice(0, SEARCH_LIMIT), query),
-    more: hadith.length > SEARCH_LIMIT,
+    hadith: await withMatches(db, hadith.slice(0, limit), query),
+    more: hadith.length > limit,
   };
 }
 

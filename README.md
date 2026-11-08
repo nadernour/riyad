@@ -30,13 +30,13 @@ The book and chapter titles are shown above each hadith, as in v1. Nothing else 
 v2 keeps everything v1 does:
 
 1. One hadith per page; swipe to the next or previous hadith
-2. Tap the page for full-screen reading
+2. Tap the page for full-screen reading. When tap-a-word and tap-a-narrator come (content steps 5 and 6), full screen moves to a button in the header, so a tap on the text is the word's or narrator's (the collaborator's decision, 2026-11-08)
 3. Above each hadith: the book (كتاب) and chapter (باب) titles, the hadith number and a short title
-4. Bookmarks, newest first, with the latest ones in the side menu; remove one or clear all, with a confirmation
+4. Bookmarks, newest first, with the latest ones in the side menu; remove one, or clear all with a confirmation. v1 asks before removing one too; v2 removes it at once and offers «تراجع» (undo) for a few seconds
 5. Search the hadith text by word, ignoring tashkeel, or by hadith number
 6. Browse by book and chapter
 7. Font size (14–30), dark mode, and reopening at the last hadith read
-8. Share a hadith as text
+8. Share a hadith as text. Sharing is the way to copy it: the text isn't selectable, which would compete with the swipes and the tap for full screen (the collaborator's decision, 2026-11-08)
 9. About screen with contact by email
 10. Fully offline, with no account, ads or tracking
 
@@ -50,7 +50,11 @@ New:
 
 - **Tap an explained word** in the hadith to see its meaning.
 - **Tap a narrator's name** in the hadith to read their biography.
-- **Search shows the closest matches first**, or the book's order, which is all v1 has (the collaborator's decision, 2026-11-04): the choice is next to the results, and kept. The words found are highlighted in the results, in an excerpt of each hadith's text, and in the reader when a result is opened.
+- **Three palettes**, in the settings: the first, green one; «ذهبي», gold on the icon's near-black, with a deeper bronze-gold in light mode, where the icon's gold is unreadable; and «مخطوطة», the gold one with the Prophet's words in a rubric red, as printed hadith books mark them (the collaborator's decision, 2026-11-08). Each has light and dark, and the app's buttons and headings have their own colour, so in the reader colour marks only the speakers. `src/theme/index.test.ts` checks every text colour's contrast.
+- **Where you are, and links from it:** «الحديث رقم 181 من 1898»; the chapter opens Books & chapters, and the number opens search, where a number typed opens that hadith.
+- **The screen stays on while reading.**
+- **Errors in Arabic, with «إعادة المحاولة»** (try again), and the technical message in small type under it.
+- **Search shows the closest matches first**, or the book's order, which is all v1 has (the collaborator's decision, 2026-11-04): the choice is next to the results, and kept. The words found are highlighted in the results, in an excerpt of each hadith's text, and in the reader when a result is opened. It shows 100 results at a time, with «عرض المزيد» for the next 100, where v1 stops at 100.
 
 ## Content
 
@@ -110,7 +114,10 @@ The app reads all its text from `database/riyad.db`, which [database/README.md](
 
 v2 replaces v1 on the same Google Play listing, so v1's users get it as an update, and the listing keeps its installs and ratings:
 
-- **Same package and key:** package `com.nad.riyadalsalheen` and a `versionCode` above v1's. It is signed with v1's key, `v1/riyad_keystore.jks`, whose passwords are in `v1/local.properties` (not in git). EAS is given this keystore.
+- **Same package and key:** package `com.nad.riyadalsalheen` and a `versionCode` above v1's (v1's is 1; `app.json` has 2, raised by hand for each upload). It is signed with v1's key, `v1/riyad_keystore.jks`, whose passwords are in `v1/local.properties` (not in git).
+- **Built on the collaborator's Mac,** for both platforms, with no EAS account (the collaborator's decision, 2026-11-08). EAS remains a way to build the iPhone app without a Mac. A release build must run with `APP_VARIANT=production`: without it, it is a test build, with the `.dev` id, the permissions, and the preview database's v1 commentary (`app.config.js`, `metro.config.js`). P6 adds the local release commands that set it, and replaces the EAS steps under "Running it".
+- **No permissions,** as v1 asks for none: the release blocks those the native modules add (internet, storage, drawing over other apps, vibration) in `app.config.js`, so v1's users see none new in the update. Test builds keep them, since the development build loads its JavaScript over the network.
+- **iPhone only, not iPad** (`supportsTablet: false`, the collaborator's decision, 2026-11-08): the layout isn't made for a tablet's width. It can come later, with a narrower reading column.
 - **v1's saved data isn't carried over** (the owner's decision, 2026-10-25: no backward compatibility). v1's bookmarks, last hadith read and settings stay behind, so users who update start afresh: the release notes say so.
 - **Careful release:** internal testers first, then a staged rollout. v1 stays on `master` (tag `v1.0.0`) to roll back to.
 
@@ -142,7 +149,8 @@ The app:
   - [x] P3: browse by book and chapter, search, bookmarks (with the newest in the side menu), its 6 Maestro flows passing on the iPhone simulator and a Galaxy A17 (2026-11-03). Not yet looked at in dark mode (P5).
   - [x] P4: settings (font size 14–30; System, Light or Dark), About, sharing with the hadith number, code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-03). The books list became a measured ScrollView, which checks it reached the chapter: Android cut short the FlatList's scroll to a chapter far down a long book.
   - [x] P5: polish and tests: v1's icon and a splash screen (on Android 12+ the splash icon is cut to a circle, so its art is 46% of the image, and Android draws it at 300 dp, iPhone at 420); screen readers read only the hadith on screen, and turn pages with «الحديث التالي» and «الحديث السابق» actions; every screen checked at the largest text size and in dark mode on both platforms; the search field takes the focus when opened from the side menu. Code-reviewed; its 7 Maestro flows pass on the iPhone simulator and a Galaxy A17 (2026-11-04). Not yet tried: the page-turn actions with VoiceOver and TalkBack, which Maestro can't trigger.
-  - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key
+  - [x] Follow-ups to the codebase review of 2026-11-06: the palettes, the release's permissions, iPhone only, Arabic errors with «إعادة المحاولة», the position and its links, bookmark undo, keep-awake, «عرض المزيد» in search (2026-11-08)
+  - [ ] P6: internal test builds on Google Play and TestFlight, signed with v1's key, built on the Mac
 - [ ] Release v2 on Android and iPhone, once the content is done. It isn't released with v1's commentary, which is an edited version of the book's (the owner's decision, 2026-10-16).
 
 ## Repository layout

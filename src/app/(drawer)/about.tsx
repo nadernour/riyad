@@ -50,13 +50,13 @@ export default function AboutScreen() {
   return (
     <ScrollView style={{ backgroundColor: colors.background }} contentContainerStyle={styles.content}>
       <View style={styles.top}>
-        <Text style={[styles.name, { color: colors.prophet }]}>رياض الصالحين</Text>
+        <Text style={[styles.name, { color: colors.accent }]}>رياض الصالحين</Text>
         {version && <Text style={[styles.note, { color: colors.muted }]}>الإصدار {version}</Text>}
       </View>
 
       {SECTIONS.map((section) => (
         <View key={section.title} style={[styles.card, styles.padded, { borderColor: colors.border }]}>
-          <Text style={[styles.heading, { color: colors.prophet }]}>{section.title}</Text>
+          <Text style={[styles.heading, { color: colors.accent }]}>{section.title}</Text>
           <Text style={[styles.text, { color: colors.text }]}>{section.text}</Text>
         </View>
       ))}
@@ -68,7 +68,7 @@ export default function AboutScreen() {
         </Text>
       )}
 
-      <Text style={[styles.heading, { color: colors.prophet }]}>التواصل مع المطور</Text>
+      <Text style={[styles.heading, { color: colors.accent }]}>التواصل مع المطور</Text>
       <View style={[styles.card, { borderColor: colors.border }]}>
         <Link
           icon="email"
@@ -96,7 +96,7 @@ function Link({ icon, label, url }: { icon: IconName; label: string; url: string
       style={({ pressed }) => [styles.link, pressed && { backgroundColor: colors.surface }]}
       accessibilityRole="link"
       accessibilityLabel={label}>
-      <Icon name={icon} color={colors.prophet} />
+      <Icon name={icon} color={colors.accent} />
       <Text style={[styles.label, { color: colors.text }]}>{label}</Text>
     </Pressable>
   );

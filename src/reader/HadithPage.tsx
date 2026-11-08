@@ -1,15 +1,29 @@
-import { ActivityIndicator, StyleSheet, View, type AccessibilityActionEvent } from 'react-native';
+import { router, type Href } from 'expo-router';
+import type { ReactNode } from 'react';
+import {
+  ActivityIndicator,
+  Pressable,
+  StyleSheet,
+  View,
+  type AccessibilityActionEvent,
+  type StyleProp,
+  type ViewStyle,
+} from 'react-native';
 import { ScrollView } from 'react-native-gesture-handler';
 
+import { ErrorView } from '@/components/ErrorView';
 import { Text } from '@/components/Text';
 import { usePreviewCommentary } from '@/db/ContentProvider';
 import { useHadith } from '@/db/hooks';
 import { fonts, MAX_SCALE, TEXT_LINE_HEIGHT, useColors } from '@/theme';
 
 import { HadithText } from './HadithText';
+import { claimTap, releaseTap } from './tapGuard';
 
 type Props = {
   id: number;
+  // How many hadith there are, for «الحديث رقم 181 من 1898».
+  total: number;
   fontSize: number;
   // Room left at the top for the header, which lies over the page, and at the bottom for the phone's own bars.
   insetTop: number;
@@ -22,20 +36,23 @@ type Props = {
 
 // One hadith, as v1 shows it: its chapter and number, its short title, its text, then the word meanings and benefits
 // from Nuzhat al-Muttaqin, which show only once they are transcribed (content step 5).
-export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn, highlight }: Props) {
+export function HadithPage({ id, total, fontSize, insetTop, insetBottom, onTurn, highlight }: Props) {
   const colors = useColors();
   const state = useHadith(id);
   const previewDb = usePreviewCommentary();
 
   if (state.status === 'loading') {
-    return <ActivityIndicator style={[styles.fill, { paddingTop: insetTop }]} color={colors.prophet} />;
+    return <ActivityIndicator style={[styles.fill, { paddingTop: insetTop }]} color={colors.accent} />;
   }
-  if (state.status === 'error' || !state.value) {
+  if (state.status === 'error') {
+    return <ErrorView error={state.error} onRetry={state.retry} style={{ paddingTop: insetTop }} />;
+  }
+  if (!state.value) {
     return (
       <Text
         maxFontSizeMultiplier={MAX_SCALE.reader}
         style={[styles.meta, { color: colors.text, paddingTop: insetTop + 20, padding: 20 }]}>
-        {state.status === 'error' ? state.error.message : `لم يوجد الحديث رقم ${id}`}
+        لم يوجد الحديث رقم {id}
       </Text>
     );
   }
@@ -64,13 +81,19 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn, highli
     <ScrollView
       style={{ backgroundColor: colors.background }}
       contentContainerStyle={[styles.content, { paddingTop: insetTop + 12, paddingBottom: insetBottom + 32 }]}>
+      {/* The chapter opens Books & chapters, which shows it among the book's chapters, and the number opens search,
+          where a number typed opens that hadith. A press here is not the pager's tap for full screen. */}
       <View style={styles.headingRow}>
-        <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.meta, styles.chapter, { color: colors.muted }]}>
-          {hadith.chapter}
-        </Text>
-        <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.meta, { color: colors.muted }]}>
-          الحديث رقم {hadith.id}
-        </Text>
+        <PageLink href="/books" hint="يفتح الكتب والأبواب" style={styles.chapter}>
+          <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.meta, { color: colors.accent }]}>
+            {hadith.chapter}
+          </Text>
+        </PageLink>
+        <PageLink href="/search" hint="يفتح البحث، للانتقال إلى حديث برقمه">
+          <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.meta, { color: colors.muted }]}>
+            الحديث رقم {hadith.id} من {total}
+          </Text>
+        </PageLink>
       </View>
       <Text
         maxFontSizeMultiplier={MAX_SCALE.reader}
@@ -86,7 +109,7 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn, highli
 
       {hadith.meanings.length > 0 && (
         <View style={styles.section}>
-          <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.sectionTitle, { color: colors.prophet }]}>
+          <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.sectionTitle, { color: colors.accent }]}>
             لغة الحديث
           </Text>
           {preview}
@@ -103,7 +126,7 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn, highli
 
       {hadith.benefits.length > 0 && (
         <View style={styles.section}>
-          <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.sectionTitle, { color: colors.prophet }]}>
+          <Text maxFontSizeMultiplier={MAX_SCALE.reader} style={[styles.sectionTitle, { color: colors.accent }]}>
             أفاد الحديث
           </Text>
           {preview}
@@ -123,6 +146,31 @@ export function HadithPage({ id, fontSize, insetTop, insetBottom, onTurn, highli
         </Text>
       )}
     </ScrollView>
+  );
+}
+
+// A link on the page, to another screen. Its press is not the pager's tap for full screen (src/reader/tapGuard.ts).
+function PageLink({
+  href,
+  hint,
+  style,
+  children,
+}: {
+  href: Href;
+  hint: string;
+  style?: StyleProp<ViewStyle>;
+  children: ReactNode;
+}) {
+  return (
+    <Pressable
+      onPressIn={() => claimTap()}
+      onPressOut={() => releaseTap()}
+      onPress={() => router.navigate(href)}
+      style={style}
+      accessibilityRole="link"
+      accessibilityHint={hint}>
+      {children}
+    </Pressable>
   );
 }
 

@@ -110,6 +110,15 @@ describe('search', () => {
     expect(found).toEqual(all.slice(0, SEARCH_LIMIT).map((row) => row.rowid));
   });
 
+  test('returns more matches when asked for more, the first of them the same', async () => {
+    const first = (await search(db, 'الله', 'relevance')).hadith.map((hadith) => hadith.id);
+    const more = await search(db, 'الله', 'relevance', SEARCH_LIMIT * 2);
+    expect(more.hadith).toHaveLength(SEARCH_LIMIT * 2);
+    expect(more.hadith.slice(0, SEARCH_LIMIT).map((hadith) => hadith.id)).toEqual(first);
+    const all = await search(db, 'الله', 'relevance', 5000);
+    expect(all.more).toBe(false);
+  });
+
   test('says there are no more when every match is shown', async () => {
     const results = await search(db, '١٢', 'book');
     expect(results).toMatchObject({ hadith: [{ id: 12 }], more: false });

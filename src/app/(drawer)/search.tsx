@@ -5,6 +5,7 @@ import { FlatList, Pressable, StyleSheet, TextInput, View } from 'react-native';
 import { useAnimatedReaction } from 'react-native-reanimated';
 import { scheduleOnRN } from 'react-native-worklets';
 
+import { ErrorView } from '@/components/ErrorView';
 import { HadithRow } from '@/components/HadithRow';
 import { Icon } from '@/components/Icon';
 import { Text } from '@/components/Text';
@@ -54,7 +55,15 @@ export default function SearchScreen() {
   const tooShort = hadithNumber(query) === null && simplify(query).length < MIN_QUERY_LENGTH;
   // While a new search runs, the last results stay on screen rather than flashing away at each pause in typing.
   const order = useSearchOrder();
-  const results = useQuery(`search:${order}:${query}`, (db) => search(db, query, order), { keepPrevious: true });
+  // «عرض المزيد» shows the next SEARCH_LIMIT results; a new query or order starts again from the first.
+  const [more, setMore] = useState({ for: '', limit: SEARCH_LIMIT });
+  const searched = `${order}:${query}`;
+  if (more.for !== searched && more.limit !== SEARCH_LIMIT) setMore({ for: '', limit: SEARCH_LIMIT });
+  const limit = more.for === searched ? more.limit : SEARCH_LIMIT;
+  const results = useQuery(`search:${order}:${limit}:${query}`, (db) => search(db, query, order, limit), {
+    keepPrevious: true,
+  });
+  const showMore = () => setMore({ for: searched, limit: limit + SEARCH_LIMIT });
   // The order matters only for a word: a number finds one hadith.
   const byWord = !tooShort && hadithNumber(query) === null;
   const hadith = !tooShort && results.status === 'done' ? results.value.hadith : [];
@@ -66,12 +75,12 @@ export default function SearchScreen() {
   let note: string | null = null;
   if (!query.trim()) note = 'ابحث بكلمة من نص الحديث، بلا حاجة إلى التشكيل، أو برقم الحديث';
   else if (tooShort) note = `اكتب ${MIN_QUERY_LENGTH} أحرف على الأقل`;
-  else if (results.status === 'error') note = results.error.message;
   else if (results.status === 'done' && !results.stale) {
     if (hadith.length === 0) note = 'لم يوجد حديث فيه هذا النص';
-    else if (results.value.more) note = `أول ${count(SEARCH_LIMIT, HADITH)}`;
+    else if (results.value.more) note = `أول ${count(hadith.length, HADITH)}`;
     else note = count(hadith.length, HADITH);
   }
+  const hasMore = !tooShort && results.status === 'done' && results.value.more;
 
   return (
     <View style={[styles.fill, { backgroundColor: colors.background }]}>
@@ -101,19 +110,30 @@ export default function SearchScreen() {
           {byWord && <OrderChoice order={order} />}
         </View>
       )}
-      <FlatList
-        data={hadith}
-        keyExtractor={(hadith) => String(hadith.id)}
-        renderItem={({ item }) => (
-          <HadithRow
-            hadith={item}
-            found={item}
-            onPress={() => openHadith(item.id, highlightFor)}
-          />
-        )}
-        keyboardShouldPersistTaps="handled"
-        keyboardDismissMode="on-drag"
-      />
+      {results.status === 'error' && !tooShort ? (
+        <ErrorView error={results.error} onRetry={results.retry} />
+      ) : (
+        <FlatList
+          data={hadith}
+          keyExtractor={(hadith) => String(hadith.id)}
+          renderItem={({ item }) => (
+            <HadithRow hadith={item} found={item} onPress={() => openHadith(item.id, highlightFor)} />
+          )}
+          keyboardShouldPersistTaps="handled"
+          keyboardDismissMode="on-drag"
+          ListFooterComponent={
+            hasMore ? (
+              <Pressable
+                onPress={showMore}
+                disabled={results.stale}
+                style={({ pressed }) => [styles.more, pressed && { backgroundColor: colors.surface }]}
+                accessibilityRole="button">
+                <Text style={[styles.moreText, { color: colors.accent }]}>عرض المزيد</Text>
+              </Pressable>
+            ) : undefined
+          }
+        />
+      )}
     </View>
   );
 }
@@ -142,7 +162,7 @@ function OrderChoice({ order }: { order: SearchOrder }) {
             accessibilityRole="radio"
             accessibilityLabel={`ترتيب النتائج: ${option.label}`}
             accessibilityState={{ checked: chosen, selected: chosen }}>
-            <Text style={[styles.optionText, { color: chosen ? colors.prophet : colors.muted }]}>{option.label}</Text>
+            <Text style={[styles.optionText, { color: chosen ? colors.accent : colors.muted }]}>{option.label}</Text>
           </Pressable>
         );
       })}
@@ -176,4 +196,6 @@ const styles = StyleSheet.create({
   },
   input: { flex: 1, paddingVertical: 10, fontFamily: fonts.ui, fontSize: 17, textAlign: 'left' },
   note: { flexShrink: 1, fontFamily: fonts.ui, fontSize: 14, textAlign: 'left' },
+  more: { alignItems: 'center', padding: 16 },
+  moreText: { fontFamily: fonts.uiSemiBold, fontSize: 15 },
 });

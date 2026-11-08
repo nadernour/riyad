@@ -8,8 +8,11 @@ export function useContentDb(): ContentDb {
 }
 
 // A `stale` value is the last key's, shown while the new key's loads (useQuery's keepPrevious).
+// An error can be tried again: `retry` runs the query again, and shows it as loading until it comes back.
 export type Loaded<T> =
-  { status: 'loading' } | { status: 'done'; value: T; stale?: boolean } | { status: 'error'; error: Error };
+  | { status: 'loading' }
+  | { status: 'done'; value: T; stale?: boolean }
+  | { status: 'error'; error: Error; retry: () => void };
 
 // Runs a query on riyad.db, again whenever `key` changes: the key names what the query reads, such as `hadith:12`.
 // The result is kept with the key it's for, so a new key shows as loading until its own result comes, and a result
@@ -24,6 +27,7 @@ export function useQuery<T>(
   const db = useContentDb();
   const latest = useRef(query);
   const [result, setResult] = useState<{ key: string; state: Loaded<T> } | null>(null);
+  const [attempt, setAttempt] = useState(0);
   const isCached = cached !== undefined;
 
   useEffect(() => {
@@ -35,12 +39,19 @@ export function useQuery<T>(
     let current = true;
     latest.current(db).then(
       (value) => current && setResult({ key, state: { status: 'done', value } }),
-      (error: Error) => current && setResult({ key, state: { status: 'error', error } }),
+      (error: Error) => {
+        if (!current) return;
+        const retry = () => {
+          setResult(null);
+          setAttempt((n) => n + 1);
+        };
+        setResult({ key, state: { status: 'error', error, retry } });
+      },
     );
     return () => {
       current = false;
     };
-  }, [db, key, isCached]);
+  }, [db, key, isCached, attempt]);
 
   if (isCached) return { status: 'done', value: cached };
   if (result?.key === key) return result.state;

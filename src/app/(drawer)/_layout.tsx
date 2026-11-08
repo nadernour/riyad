@@ -57,7 +57,7 @@ export default function DrawerLayout() {
         headerStyle: { backgroundColor: colors.background },
         headerTintColor: colors.text,
         drawerStyle: { backgroundColor: colors.background },
-        drawerActiveTintColor: colors.prophet,
+        drawerActiveTintColor: colors.accent,
         drawerInactiveTintColor: colors.text,
       }}>
       {/* The reader draws its own header, which hides for full screen. */}

@@ -4,7 +4,7 @@ appId: com.nad.riyadalsalheen.dev
 - launchApp:
     clearState: true
 - extendedWaitUntil:
-    visible: 'الحديث رقم 1'
+    visible: 'الحديث رقم 1 من 1898'
     timeout: 15000
 - tapOn: 'البحث'
 - inputText: '12'
@@ -13,7 +13,7 @@ appId: com.nad.riyadalsalheen.dev
     timeout: 5000
 - tapOn: 'الحديث رقم 12:.*'
 - extendedWaitUntil:
-    visible: 'الحديث رقم 12'
+    visible: 'الحديث رقم 12 من 1898'
     timeout: 5000
 # Opened again, from the reader through the side menu, the field is ready to type in too, once the menu has closed
 # (the menu hides the keyboard as it moves). It still holds 12, so typing 7 makes it 127.
@@ -47,7 +47,7 @@ appId: com.nad.riyadalsalheen.dev
     timeout: 5000
 - tapOn: 'الحديث رقم 10:.*'
 - extendedWaitUntil:
-    visible: 'الحديث رقم 10'
+    visible: 'الحديث رقم 10 من 1898'
     timeout: 5000
 # Kept for the next search.
 - tapOn: 'البحث'

@@ -4,7 +4,7 @@ appId: com.nad.riyadalsalheen.dev
 - launchApp:
     clearState: true
 - extendedWaitUntil:
-    visible: 'الحديث رقم 1'
+    visible: 'الحديث رقم 1 من 1898'
     timeout: 15000
 - tapOn: 'إضافة إلى المفضلة'
 - assertVisible: 'إزالة من المفضلة'
@@ -13,18 +13,25 @@ appId: com.nad.riyadalsalheen.dev
     start: 20%, 50%
     end: 80%, 50%
 - extendedWaitUntil:
-    visible: 'الحديث رقم 2'
+    visible: 'الحديث رقم 2 من 1898'
     timeout: 5000
 - assertVisible: 'إضافة إلى المفضلة'
 - tapOn: 'القائمة'
 - tapOn: 'الحديث رقم 1:.*'
 - extendedWaitUntil:
-    visible: 'الحديث رقم 1'
+    visible: 'الحديث رقم 1 من 1898'
     timeout: 5000
 - assertVisible: 'إزالة من المفضلة'
-# The bookmarks screen opens it too, and removes it after asking.
+# The bookmarks screen removes it at once, and «تراجع» puts it back.
 - tapOn: 'القائمة'
 - tapOn: 'المفضلة'
 - tapOn: 'إزالة الحديث رقم 1 من المفضلة'
-- tapOn: 'إزالة'
 - assertVisible: 'لا توجد أحاديث في المفضلة'
+- tapOn: 'تراجع عن الإزالة'
+- assertVisible: 'إزالة الحديث رقم 1 من المفضلة'
+- tapOn: 'إزالة الحديث رقم 1 من المفضلة'
+- assertVisible: 'لا توجد أحاديث في المفضلة'
+# The offer to undo goes after a few seconds.
+- extendedWaitUntil:
+    notVisible: 'تراجع عن الإزالة'
+    timeout: 10000

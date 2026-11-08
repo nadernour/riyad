@@ -13,7 +13,7 @@
     ],
     "ios": {
       "bundleIdentifier": "com.nad.riyadalsalheen",
-      "supportsTablet": true
+      "supportsTablet": false
     },
     "android": {
       "package": "com.nad.riyadalsalheen",

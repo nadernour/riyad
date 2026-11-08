@@ -62,7 +62,7 @@ export function ReaderHeader({ title, hadithId, hadith, insetTop, hidden }: Prop
         <HeaderButton
           label={bookmarked ? 'إزالة من المفضلة' : 'إضافة إلى المفضلة'}
           onPress={() => setBookmarked(hadithId, !bookmarked)}>
-          <Icon name={bookmarked ? 'bookmarked' : 'bookmark'} color={bookmarked ? colors.prophet : colors.text} />
+          <Icon name={bookmarked ? 'bookmarked' : 'bookmark'} color={bookmarked ? colors.accent : colors.text} />
         </HeaderButton>
       </View>
     </Animated.View>
