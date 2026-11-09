@@ -101,6 +101,8 @@ Search finds any part of a word in the hadith text, ignoring the tashkeel and th
 
    `SELECT id FROM hadith WHERE search_text LIKE '%' || ? || '%' ORDER BY id LIMIT 100` gives the same results, more slowly. expo-sqlite has FTS5 on Android and iPhone, but not on web.
 
+   That is the book's order. The closest matches first is `ORDER BY rank, rowid` instead: FTS5's bm25 rank, where more of the query in a shorter text comes first. It ranks every match before it keeps the first 100, which for 1,898 hadith takes milliseconds.
+
 The query must be simplified exactly as the build script simplifies the text (`simplify` in `book_data/tools/arabic.py`). [`simplify.json`](simplify.json) has the test cases, each an input and the output expected: run them in the app's tests. In TypeScript:
 
 ```ts
@@ -117,7 +119,7 @@ export function simplify(text: string): string {
 }
 ```
 
-`search_text` has fewer characters than the text, so a match's position in it isn't its position in the text. To show where a match is, simplify the text word by word.
+`search_text` has fewer characters than the text, so a match's position in it isn't its position in the text. To show where a match is, simplify the text one character at a time, keeping where each came from: the app's `simplifyMapped` (`src/search/highlight.ts`) does, and is tested to give exactly `simplify`'s output for every hadith.
 
 ## Using it in the Expo app
 

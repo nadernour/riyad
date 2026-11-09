@@ -1,0 +1,13 @@
+# A link that comes while the app is still starting opens its hadith (plugins/withLinksDuringStartup.js on Android).
+# The app starts from a cleared state, at hadith 1, so only the link can bring hadith 3.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- openLink: 'riyadalsalheen-dev:///?id=3'
+- tapOn:
+    text: 'Open'
+    optional: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 3 من 1898'
+    timeout: 10000

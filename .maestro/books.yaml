@@ -1,0 +1,36 @@
+# Browse by book and chapter: the book being read is open, and a chapter opens the reader at its first hadith.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1 من 1898'
+    timeout: 15000
+- tapOn: 'القائمة'
+- tapOn: '.*الكتب والأبواب'
+- assertVisible: 'الإخلاص و إحضار النية.*'
+- tapOn: 'الكتاب الأول،.*'
+- tapOn: 'كتاب الأدب،.*'
+- tapOn: 'باب الحياء وفضله والحث على التخلق به'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 681 من 1898'
+    timeout: 5000
+# Back in the list, the new chapter is the one marked.
+- tapOn: 'القائمة'
+- tapOn: '.*الكتب والأبواب'
+- assertVisible:
+    text: 'باب الحياء وفضله والحث على التخلق به.*'
+    selected: true
+# Reading in a book far down the list, the list opens scrolled to it.
+- openLink: 'riyadalsalheen-dev:///?id=1700'
+- tapOn:
+    text: 'Open'
+    optional: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1700 من 1898'
+    timeout: 5000
+- tapOn: 'القائمة'
+- tapOn: '.*الكتب والأبواب'
+- assertVisible:
+    text: 'باب كراهة الخصومة في المسجد.*'
+    selected: true

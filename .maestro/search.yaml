@@ -1,0 +1,56 @@
+# Search by hadith number, and by a word without its marks; a result opens the reader at it.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1 من 1898'
+    timeout: 15000
+- tapOn: 'البحث'
+- inputText: '12'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 12:.*'
+    timeout: 5000
+- tapOn: 'الحديث رقم 12:.*'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 12 من 1898'
+    timeout: 5000
+# Opened again, from the reader through the side menu, the field is ready to type in too, once the menu has closed
+# (the menu hides the keyboard as it moves). It still holds 12, so typing 7 makes it 127.
+- tapOn: 'القائمة'
+# The menu's item, not the reader's search button behind it, which Android still lists.
+- tapOn:
+    text: 'البحث'
+    below: 'الكتب والأبواب'
+- waitForAnimationToEnd
+- inputText: '7'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 127:.*'
+    timeout: 5000
+# A word, without its marks. Maestro types only Latin letters and digits on Android, so the word is pasted.
+- tapOn: 'مسح'
+- setClipboard: 'الصلاة'
+- pasteText
+- extendedWaitUntil:
+    visible: 'أول 100 حديث'
+    timeout: 8000
+# The closest matches first, then the book's order, which the choice keeps.
+- assertVisible:
+    text: 'ترتيب النتائج: الأقرب'
+    selected: true
+- tapOn: 'ترتيب النتائج: ترتيب الكتاب'
+- assertVisible:
+    text: 'ترتيب النتائج: ترتيب الكتاب'
+    selected: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 10:.*'
+    timeout: 5000
+- tapOn: 'الحديث رقم 10:.*'
+- extendedWaitUntil:
+    visible: 'الحديث رقم 10 من 1898'
+    timeout: 5000
+# Kept for the next search.
+- tapOn: 'البحث'
+- assertVisible:
+    text: 'ترتيب النتائج: ترتيب الكتاب'
+    selected: true

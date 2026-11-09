@@ -1,0 +1,75 @@
+# Settings: the font size, the theme and the palette, kept after the app is closed; then About, and sharing a hadith.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1 من 1898'
+    timeout: 15000
+- tapOn: 'القائمة'
+- tapOn: 'الإعدادات'
+- assertVisible: 'حجم الخط 24'
+- tapOn: 'تكبير الخط'
+- assertVisible: 'حجم الخط 26'
+- tapOn: 'داكن'
+- assertVisible:
+    text: 'داكن'
+    selected: true
+- scrollUntilVisible:
+    element: 'مخطوطة.*'
+- tapOn: 'مخطوطة.*'
+- assertVisible:
+    text: 'مخطوطة.*'
+    selected: true
+# Closed and opened again, the app keeps them.
+- stopApp
+- launchApp
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1 من 1898'
+    timeout: 15000
+- tapOn: 'القائمة'
+- tapOn: 'الإعدادات'
+- assertVisible: 'حجم الخط 26'
+- assertVisible:
+    text: 'داكن'
+    selected: true
+- scrollUntilVisible:
+    element: 'مخطوطة.*'
+- assertVisible:
+    text: 'مخطوطة.*'
+    selected: true
+- tapOn: 'أخضر.*'
+- scrollUntilVisible:
+    element: 'تلقائي.*'
+    direction: UP
+- tapOn: 'تلقائي.*'
+- assertVisible:
+    text: 'تلقائي.*'
+    selected: true
+# The smallest size can't be made smaller.
+- repeat:
+    times: 7
+    commands:
+      - tapOn: 'تصغير الخط'
+- assertVisible: 'حجم الخط 14'
+- assertVisible:
+    text: 'تصغير الخط'
+    enabled: false
+# About.
+- tapOn: 'القائمة'
+- tapOn: 'حول التطبيق'
+- assertVisible: 'الإصدار .*'
+- scrollUntilVisible:
+    element: 'مراسلة عبر البريد الإلكتروني'
+# Sharing opens the phone's share sheet.
+- tapOn: 'القائمة'
+- tapOn: 'القراءة'
+- tapOn: 'مشاركة الحديث'
+- runFlow:
+    when:
+      platform: Android
+    commands:
+      - extendedWaitUntil:
+          visible: '.*رياض الصالحين، الحديث رقم 1.*'
+          timeout: 5000
+      - back

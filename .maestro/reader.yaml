@@ -1,0 +1,111 @@
+# The reader on a phone: turning pages, full screen, links and reopening at the last hadith read. It drives a test build
+# (the .dev id, app.config.js) on Android or the iPhone simulator:
+#   ~/.maestro/bin/maestro test .maestro/reader.yaml
+# "الحديث رقم N" above each hadith tells which one is shown; Maestro sees only what is on screen, so the pages on each
+# side, which are rendered off screen, don't match.
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1 من 1898'
+    timeout: 15000
+- assertVisible: 'الكتاب الأول'
+
+# Pages turn right to left, as a printed Arabic book: a drag to the right brings in the next hadith.
+- swipe:
+    direction: RIGHT
+- assertVisible: 'الحديث رقم 2 من 1898'
+- swipe:
+    direction: RIGHT
+- assertVisible: 'الحديث رقم 3 من 1898'
+- swipe:
+    direction: LEFT
+- assertVisible: 'الحديث رقم 2 من 1898'
+- swipe:
+    direction: LEFT
+- assertVisible: 'الحديث رقم 1 من 1898'
+# There's none before the first: the drag bounces back.
+- swipe:
+    direction: LEFT
+- assertVisible: 'الحديث رقم 1 من 1898'
+
+# A vertical drag on a short hadith, with nothing to scroll, is not a tap.
+- swipe:
+    direction: RIGHT
+- assertVisible: 'الحديث رقم 2 من 1898'
+- swipe:
+    start: 50%, 70%
+    end: 50%, 40%
+- assertVisible: 'الكتاب الأول'
+
+# Nor is scrolling a long one (hadith 1).
+- swipe:
+    direction: LEFT
+- assertVisible: 'الحديث رقم 1 من 1898'
+- swipe:
+    start: 50%, 80%
+    end: 50%, 30%
+- assertVisible: 'الكتاب الأول'
+- assertNotVisible: 'الحديث رقم 1 من 1898'
+
+# A tap hides the header for full screen, and a second brings it back.
+- tapOn:
+    point: 50%, 60%
+- assertNotVisible: 'الكتاب الأول'
+- tapOn:
+    point: 50%, 60%
+- assertVisible: 'الكتاب الأول'
+
+# The chapter line opens Books & chapters, and the number opens search; neither is the tap for full screen, so the
+# header is there on coming back.
+# Hadith 3: 2 was scrolled down above, and keeps its place.
+- swipe:
+    direction: RIGHT
+- swipe:
+    direction: RIGHT
+- assertVisible: 'الحديث رقم 3 من 1898'
+- tapOn: 'الإخلاص و إحضار النية'
+- assertVisible: 'الكتب والأبواب'
+- tapOn: 'القائمة'
+- tapOn: 'القراءة'
+- assertVisible: 'الكتاب الأول'
+- tapOn: 'الحديث رقم 3 من 1898'
+- assertVisible: 'كلمة أو رقم حديث'
+- tapOn: 'القائمة'
+- tapOn: 'القراءة'
+- assertVisible: 'الكتاب الأول'
+
+# Links open a hadith, the same one twice, and past the last one open the last.
+- openLink: 'riyadalsalheen-dev:///?id=1500'
+- tapOn:
+    text: 'Open'
+    optional: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1500 من 1898'
+    timeout: 10000
+- swipe:
+    direction: RIGHT
+- assertVisible: 'الحديث رقم 1501 من 1898'
+- openLink: 'riyadalsalheen-dev:///?id=1500'
+- tapOn:
+    text: 'Open'
+    optional: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1500 من 1898'
+    timeout: 10000
+- openLink: 'riyadalsalheen-dev:///?id=99999'
+- tapOn:
+    text: 'Open'
+    optional: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1898 من 1898'
+    timeout: 10000
+- assertVisible: 'كتاب الاستغفار'
+
+# Reopening the app comes back to the last hadith read.
+- stopApp
+- launchApp
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1898 من 1898'
+    timeout: 15000

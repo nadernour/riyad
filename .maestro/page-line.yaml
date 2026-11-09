@@ -1,0 +1,32 @@
+# The printed book's page shows under a hadith only when its commentary is the book's own: never under v1's
+# commentary, which a test build shows, labelled, from the preview database (scripts/build-preview-db.js).
+appId: com.nad.riyadalsalheen.dev
+---
+- launchApp:
+    clearState: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 1 من 1898'
+    timeout: 15000
+- openLink: 'riyadalsalheen-dev:///?id=3'
+- tapOn:
+    text: 'Open'
+    optional: true
+- extendedWaitUntil:
+    visible: 'الحديث رقم 3 من 1898'
+    timeout: 10000
+- swipe:
+    start: 50%, 85%
+    end: 50%, 20%
+- swipe:
+    start: 50%, 85%
+    end: 50%, 20%
+- runFlow:
+    when:
+      visible: 'من شرح النسخة الأولى، غير مراجَع'
+    commands:
+      - assertNotVisible: 'نزهة المتقين، صفحة 21'
+- runFlow:
+    when:
+      notVisible: 'من شرح النسخة الأولى، غير مراجَع'
+    commands:
+      - assertVisible: 'نزهة المتقين، صفحة 21'
