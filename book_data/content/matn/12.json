@@ -163,34 +163,10 @@
   ],
   "note": "The print names the narrator «عبد الرحمن بن جُبَيْر»; he is usually known as Abu Abs Abd al-Rahman ibn Jabr (as v1 and al-Bukhari have it), so the print may be wrong. Taken as the book's per rule 1, since sunnah.com doesn't have v1's name."
  },
- "1305": {
-  "fix": [
-   [
-    "التِّرْمِذِيُّ",
-    "التَّرْمِذِيُّ",
-    "variant"
-   ]
-  ]
- },
- "1306": {
-  "fix": [
-   [
-    "التِّرْمِذِيُّ",
-    "التَّرْمِذِيُّ",
-    "variant"
-   ]
-  ]
- },
+ "1305": {},
+ "1306": {},
  "1307": {},
- "1308": {
-  "fix": [
-   [
-    "التِّرْمِذِيُّ",
-    "التَّرْمِذِيُّ",
-    "variant"
-   ]
-  ]
- },
+ "1308": {},
  "1309": {
   "fix": [
    [
@@ -435,7 +411,7 @@
     "variant"
    ]
   ],
-  "note": "The print has «وقالا: حديث حسن صحيح» (Abu Dawud and al-Tirmidhi), where v1 and sunnah.com have «وقال» (al-Tirmidhi alone). Abu Dawud doesn't grade hadith, so «وقالا» may be a misprint."
+  "note": "The print has «وقالا: حديث حسن صحيح» (Abu Dawud and al-Tirmidhi), where v1 and sunnah.com have «وقال» (al-Tirmidhi alone). Kept as the book's wording: the print has «وقالا» after «رواه أبو داوود والترمذي» in h. 1405 and h. 1707 too."
  },
  "1339": {
   "fix": [
@@ -693,6 +669,11 @@
     "فَي الدُّنْيَا",
     "فِي الدُّنْيَا",
     "v1"
+   ],
+   [
+    "«أُتِيَ",
+    "أُتِيَ",
+    "v1"
    ]
   ],
   "misprint": [
@@ -703,15 +684,7 @@
    ]
   ]
  },
- "1374": {
-  "fix": [
-   [
-    "التِّرْمِذِيُّ",
-    "التَّرْمِذِيُّ",
-    "variant"
-   ]
-  ]
- },
+ "1374": {},
  "1375": {},
  "1376": {
   "fix": [

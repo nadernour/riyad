@@ -100,17 +100,18 @@
  "1525": {
   "fix": [
    [
-    "أَبِي بَكْرَةَ",
-    "أَبِي بَكْرٍ",
-    "variant"
-   ],
-   [
     "هَذَا، في شَهْرِكُمْ",
     "هَذَا، فِي شَهْرِكُمْ",
     "marks"
    ]
   ],
-  "note": "The print names the narrator «أبي بكر»; Bukhari and Muslim give this sermon from Abu Bakra, so the print has probably dropped the ta marbuta. Taken as printed under rule 1 (sunnah.com doesn't have v1's name); please decide."
+  "misprint": [
+   [
+    "أَبِي بَكْرٍ",
+    "أَبِي بَكْرَةَ",
+    "The print drops the ta marbuta of «أبي بكرة»: the book gives this sermon from Abu Bakra Nufay' ibn al-Harith in h. 215, as al-Bukhari and Muslim do. sunnah.com's Arabic has «أبي بكر» too, but its English names Abu Bakrah (rule 1)."
+   ]
+  ]
  },
  "1526": {
   "fix": [
@@ -127,6 +128,16 @@
    [
     "يُوحَى﴾ [النجم: 3-4].",
     "يُوحَى﴾.",
+    "v1"
+   ],
+   [
+    "وَكَذَا ــــ قَالَ",
+    "وَكَذَا - قَالَ",
+    "v1"
+   ],
+   [
+    "ـــــ",
+    "-",
     "v1"
    ]
   ]
@@ -189,6 +200,11 @@
    [
     "جَانِباَهُ",
     "جَانِبَاهُ",
+    "v1"
+   ],
+   [
+    "ــــ",
+    "-",
     "v1"
    ]
   ]
@@ -418,6 +434,36 @@
     "وَبِالشِّينِ",
     "والشِّينِ",
     "variant"
+   ],
+   [
+    "التَّنُّورِ ــــ فَأَحْسَبُ",
+    "التَّنُّورِ - فَأَحْسَبُ",
+    "v1"
+   ],
+   [
+    "وَأَصْوَاتٌ ــــ فَاطَّلَعْنَا",
+    "وَأَصْوَاتٌ - فَاطَّلَعْنَا",
+    "v1"
+   ],
+   [
+    "ـــــ",
+    "-",
+    "v1"
+   ],
+   [
+    "الدَّمِ ــــ وَإِذَا",
+    "الدَّمِ - وَإِذَا",
+    "v1"
+   ],
+   [
+    "دَمٍ ــــ وَلَمْ",
+    "دَمٍ - وَلَمْ",
+    "v1"
+   ],
+   [
+    "ــــ",
+    "-",
+    "v1"
    ]
   ],
   "misprint": [
@@ -432,13 +478,18 @@
     "A fatha on the ya of «أي» is an impossible form."
    ]
   ],
-  "note": "The print has «من شاء أن يقص», without «الله», which al-Bukhari and sunnah.com have («من شاء الله أن يقص»). It is taken as the book's text (variant), since nothing in the book shows it was dropped; change it to a misprint if you prefer."
+  "note": "The print has «من شاء أن يقص», without «الله», which al-Bukhari and sunnah.com have («من شاء الله أن يقص»). It is taken as the book's text (variant): the sense is whole without it, and nothing in the book shows it was dropped."
  },
  "1548": {
   "fix": [
    [
     "زادَ مُسْلِمٌ",
     "زَادَ مُسْلِمٌ",
+    "v1"
+   ],
+   [
+    "« قالَتْ",
+    "قالَتْ",
     "v1"
    ]
   ]
@@ -530,8 +581,8 @@
   "fix": [
    [
     "عن أبي زيْدٍ ثابتِ",
-    "عَنْ أَبِي زَيْدِ بْنِ ثابتِ",
-    "variant"
+    "عَنْ أَبِي زيْدٍ ثابتِ",
+    "marks"
    ],
    [
     "الضَّحاكِ",
@@ -594,7 +645,13 @@
     "marks"
    ]
   ],
-  "note": "The print has «عَنْ أَبِي زَيْدِ بْنِ ثابِتِ بْنِ الضَّحَّاكِ», with a «بن» v1 lacks; taken as the book's name (rule 1), but it looks like a misprint: Abu Zayd is Thabit ibn al-Dahhak's own kunya, as v1 has it."
+  "misprint": [
+   [
+    "عَنْ أَبِي زَيْدِ بْنِ ثابتِ",
+    "عَنْ أَبِي زيْدٍ ثابتِ",
+    "The print adds a «بن» («أبي زيد بن ثابت بن الضحاك»): Abu Zayd is Thabit ibn al-Dahhak's own kunya, and sunnah.com has v1's name (rule 1)."
+   ]
+  ]
  },
  "1554": {
   "fix": [
@@ -1106,11 +1163,6 @@
  "1579": {
   "fix": [
    [
-    "التِّرْمِذِيُّ",
-    "التَّرْمِذِيُّ",
-    "variant"
-   ],
-   [
     "الْ بَابُ",
     "الْبَابِ",
     "v1"
@@ -1311,7 +1363,15 @@
    ]
   ]
  },
- "1598": {},
+ "1598": {
+  "fix": [
+   [
+    "ــــ",
+    "-",
+    "v1"
+   ]
+  ]
+ },
  "1599": {
   "fix": [
    [
@@ -2098,7 +2158,7 @@
    ],
    [
     "زاد الترمذي وغيره:",
-    "زَادَ التَّرْمِذِيُّ وغَيْرُهُ:",
+    "زَادَ التِّرْمِذِيُّ وغَيْرُهُ:",
     "marks"
    ]
   ]
@@ -3881,8 +3941,8 @@
    ],
    [
     "التِّرْمِذي",
-    "التَّرْمِذِيُّ",
-    "variant"
+    "التِّرْمِذيُّ",
+    "v1"
    ],
    [
     "وقال:",
@@ -3991,15 +4051,14 @@
     "بفتح العين.",
     "بِفَتْحِ العَيْنِ.",
     "marks"
+   ],
+   [
+    "يُحَدِّثُونَنَا",
+    "يُحَدِّثُونَا",
+    "v1"
    ]
   ],
-  "misprint": [
-   [
-    "يُحَدِّثُونَا",
-    "يُحَدِّثُونَنَا",
-    "The print drops a nun (zoomed: one tooth), leaving the indicative verb without its nun with nothing to drop it; v1's «يُحَدِّثُونَنَا» is the regular form."
-   ]
-  ]
+  "note": "The print has «يُحَدِّثُونَا», with one nun, as al-Bukhari and sunnah.com do; its word meanings explain the form («المشهور يحدثوننا بإثبات نون الرفع … ولكنه يستعمل بحذفها»). v1 had the regular «يُحَدِّثُونَنَا»."
  },
  "1671": {
   "fix": [
@@ -5739,6 +5798,11 @@
     "و السَّماء",
     "والسَّماء",
     "v1"
+   ],
+   [
+    "هَلْ",
+    "«هَلْ",
+    "v1"
    ]
   ]
  },
@@ -6614,7 +6678,7 @@
     "The print has «أنْ», with a sukun, before the accusative «رسولَ», which needs «أنَّ», as v1 has it."
    ]
   ],
-  "note": "The print has «أو ظلهم», without the «في» that v1, sunnah.com and Muslim have («أو في ظلهم»). It is taken as the book's text (variant), since the meaning is the same and nothing in the book shows it was dropped; change it to a misprint if you prefer."
+  "note": "The print has «أو ظلهم», without the «في» that v1, sunnah.com and Muslim have («أو في ظلهم»). It is taken as the book's text (variant): the meaning is the same, and nothing in the book shows it was dropped."
  },
  "1774": {
   "fix": [
@@ -7069,7 +7133,7 @@
     "v1"
    ]
   ],
-  "note": "The print has «تَلْعَنُهُ حَتَّى وإنْ كانَ أخاهُ» with no verb after «حتى»; v1 and sunnah.com have «حتى ينزع», Muslim «حتى يدعه». The commentary doesn't settle it, so the book's text was taken; the print may have dropped the verb."
+  "note": "The print has «تَلْعَنُهُ حَتَّى وإنْ كانَ أخاهُ» with no verb after «حتى»; v1 and sunnah.com have «حتى ينزع». The print's wording is Muslim's own («فإن الملائكة تلعنه حتى وإن كان أخاه لأبيه وأمه»), so it is the book's text."
  },
  "1786": {
   "fix": [
@@ -7446,6 +7510,11 @@
    [
     "متفقٌ عليه",
     "متَّفقٌ عَلَيْهِ",
+    "v1"
+   ],
+   [
+    "ثُـمَّ",
+    "ثُمَّ",
     "v1"
    ]
   ]

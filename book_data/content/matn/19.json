@@ -1136,11 +1136,6 @@
     "v1"
    ],
    [
-    "وتصَدَّقَا",
-    "فَتَصَرَّفا",
-    "variant"
-   ],
-   [
     "متفقٌ",
     "متَّفقٌ",
     "v1"
@@ -1156,9 +1151,13 @@
     "الْجَارِيَةِ",
     "الجَاريَةَ",
     "The print sets a kasra on the last letter of «الجارية», the second object of «أنكحا», which must be accusative; al-Bukhari and Muslim have «الْجَارِيَةَ»."
+   ],
+   [
+    "فَتَصَرَّفا",
+    "وتصَدَّقَا",
+    "The print ends the judgement with «فتصرّفا»; al-Bukhari, Muslim and sunnah.com have «وتصدّقا», and nothing in the commentary supports the print's word."
    ]
-  ],
-  "note": "The print ends the hadith with «فَتَصَرَّفا» where v1, sunnah.com, al-Bukhari and Muslim have «وتصدقا»; the commentary doesn't mention the word. Taken as the book's reading (variant), but it may be a misprint."
+  ]
  },
  "1829": {
   "fix": [
@@ -1940,9 +1939,9 @@
     "marks"
    ],
    [
-    "الرُّسْلُ كُلُوا مِنَ الطَّيِّباتِ واعملوا صَالحاً } وَقَال تَعالَى: { يَا أَيُّهَا",
-    "",
-    "variant"
+    "الرُّسْلُ",
+    "الرُّسُلُ",
+    "v1"
    ],
    [
     "كُلُوا مِنَ طَيِّبَات",
@@ -1955,17 +1954,23 @@
     "v1"
    ],
    [
-    "ومَلْبسُهُ حرامٌ ،",
-    "",
-    "variant"
-   ],
-   [
     "رواه مسلم",
     "رَوَاهُ مُسْلِمٌ",
     "marks"
    ]
   ],
-  "note": "The print quotes only the second verse («يا أيها الذين آمنوا كلوا من طيبات ما رزقناكم») and has no «وملبسه حرام»; Muslim has both, as v1 did. The commentary doesn't mention either, so both were removed as the book's reading (variant), not recorded as misprints."
+  "misprint": [
+   [
+    "يَا أيُّها الَّذِينَ",
+    "يَا أيُّها الرُّسُلُ كُلُوا مِنَ الطَّيِّباتِ واعملوا صَالحاً } وَقَال تَعالَى: { يَا أَيُّهَا الَّذِينَ",
+    "The print's eye skips from the first «تعالى: يا أيها» to the second and drops the verse to the messengers (al-Mu'minun 51), which «بما أمر به المرسلين» announces; Muslim (1015) and sunnah.com have both verses."
+   ],
+   [
+    "ومَشْرَبُه حرَامٌ ، وغُذِيَ",
+    "ومَشْرَبُه حرَامٌ ، ومَلْبسُهُ حرامٌ ، وغُذِيَ",
+    "The print drops «وملبسه حرام» between «ومشربه حرام» and «وغذي بالحرام»; Muslim and sunnah.com have it."
+   ]
+  ]
  },
  "1854": {
   "fix": [
@@ -2290,6 +2295,11 @@
     "وَإنَّي",
     "وَإنِّي",
     "v1"
+   ],
+   [
+    "فَقَالَ: إنِّي بيْنَ",
+    "فَقَالَ: «إنِّي بيْنَ",
+    "v1"
    ]
   ]
  },
@@ -2526,11 +2536,6 @@
     "marks"
    ],
    [
-    "فَيَنْظُرُهمُ",
-    "فَيُنْظِرُهُمُ",
-    "variant"
-   ],
-   [
     "فَيَبْلُغُ النَّاسُ",
     "فَيَبْلُغُ النَّاسَ",
     "v1"
@@ -2577,8 +2582,8 @@
    ],
    [
     "فَيْأْتُونَ إِبْرَاهِيمَ",
-    "",
-    "variant"
+    "فَيَأْتُونَ إِبْرَاهِيمَ",
+    "v1"
    ],
    [
     "كَذْبَاتٍ",
@@ -2676,9 +2681,18 @@
     "أبُوكُمْ آدَمَ",
     "أبُوكُمْ آدَمُ",
     "The print has a fatha on the mim of «آدم», the predicate of «أبوكم», which needs a damma."
+   ],
+   [
+    "فَيُنْظِرُهُمُ",
+    "فَيَنْظُرُهمُ",
+    "The print vocalizes «فَيُنْظِرُهُمُ», the verb of granting a delay; the sense is that the onlooker sees them (al-Bukhari: «فيبصرهم الناظر»), as v1 has it."
+   ],
+   [
+    "اذْهَبُوا إِلَى إِبْرَاهِيمَ . فَيَقُولُونَ",
+    "اذْهَبُوا إِلَى إِبْرَاهِيمَ . فَيَأْتُونَ إِبْرَاهِيمَ فَيَقُولُونَ",
+    "The print's eye skips from one «إبراهيم» to the next and drops «فيأتون إبراهيم», which every other prophet's turn in the hadith has, as do al-Bukhari and sunnah.com."
    ]
-  ],
-  "note": "Two of the print's readings taken as variants may be worth a look: «فَيُنْظِرُهُمُ النَّاظِرُ» (v1 «فَيَنْظُرُهُمُ»; the collections have «يُبْصِرُهُمُ النَّاظِرُ» / «يَنْفُذُهُمُ البَصَرُ»), and the print drops «فيأتون إبراهيم», which the other prophets' turns, sunnah.com and al-Bukhari all have. Removed per rule 1; it may be a misprint instead."
+  ]
  },
  "1869": {
   "fix": [
@@ -3020,7 +3034,7 @@
     "The print has «ربّ» for the verse's «ربنا» (Ibrahim 37), which al-Bukhari's text has too."
    ]
   ],
-  "note": "The print has no ﷺ after Ibrahim in «بركة دعوة إبراهيم» (p. 1272), though it gives him one on p. 1268 and 1269; v1's ﷺ there was removed as a variant. The print opens «رحم الله أم إسماعيل» without « and «فألفى ذلك» without », so v1's lone « at each was removed."
+  "note": "The print has no ﷺ after Ibrahim in «بركة دعوة إبراهيم» (p. 1272), though it gives him one on p. 1268 and 1269; v1's ﷺ there was removed: an honorific after anyone but the Prophet follows the print (rule 1). The print opens «رحم الله أم إسماعيل» without « and «فألفى ذلك» without », so v1's lone « at each was removed."
  },
  "1870": {
   "fix": [

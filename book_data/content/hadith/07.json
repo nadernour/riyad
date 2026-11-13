@@ -916,7 +916,7 @@
       },
       {
        "role": "prophet",
-       "text": "«مَا مِنْ عبْدٍ تُصِيبُهُ مُصِيبَةٌ، فيقولُ: إِنَّا للهِ وَإِنَّا إِليهِ رَاجِعُونَ ، اللَّهمَّ ؛ أْجُرْنِي فِي مُصِيبَتي، وَاخْلُفْ لِي خَيْراً مِنْهَا .. إِلاَّ آجَرَهُ اللهُ تعَالى فِي مُصِيبتِهِ ، وَأَخْلَفَ لهُ خَيْراً مِنْهَا»"
+       "text": "«مَا مِنْ عبْدٍ تُصِيبُهُ مُصِيبَةٌ، فيقولُ: إِنَّا للهِ وَإِنَّا إِليهِ رَاجِعُونَ ، اللَّهمَّ ؛ أْجُرْنِي فِي مُصِيبَتي، وَاخْلُفْ لِي خَيْراً مِنْهَا .. إِلاَّ أَجَرَهُ اللهُ تعَالى فِي مُصِيبتِهِ ، وَأَخْلَفَ لهُ خَيْراً مِنْهَا»"
       },
       {
        "role": "narration",
@@ -934,15 +934,10 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [
-      {
-       "part": "matn",
-       "printed": "إِلَّا أَجَرَهُ اللهُ",
-       "correction": "إِلاَّ آجَرَهُ اللهُ",
-       "reason": "The matn prints «أَجَرَهُ», but its own word meanings explain «إلا آجره: أي أثابه»."
-      }
-     ],
-     "notes": []
+     "corrections": [],
+     "notes": [
+      "The print's «أَجَرَهُ» is Muslim's wording and goes with «أْجُرْنِي» before it; v1 and sunnah.com have the other form of the verb, «آجَرَهُ», which is also how the book's word meanings head their gloss («إلا آجره: أي أثابه»)."
+     ]
     },
     {
      "id": 922,
@@ -1156,7 +1151,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "عنْ أَبي رافعٍ أَسْلمَ مَوْلَى رسولِ اللهِ ﷺ قالَ: "
+       "text": "عنْ أَبي رافعٍ أَسْلمَ مَوْلَى رسولِ اللهِ ﷺ : أَنَّ رسولَ اللهِ ﷺ قالَ: "
       },
       {
        "role": "prophet",
@@ -1170,10 +1165,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print has «عَنْ أَبِي رافِعٍ أَسْلَمَ مَوْلَى رَسُولِ اللهِ ﷺ قالَ:» without v1's «أَنَّ رسولَ اللهِ ﷺ», which sunnah.com has, so as printed the saying reads as Abu Rafi's own words. It may be an eye-skip over the repeated «رسول الله ﷺ»; the commentary (al-Hakim's Mustadrak) doesn't settle it."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "ﷺ قالَ",
+       "correction": "ﷺ : أَنَّ رسولَ اللهِ ﷺ قالَ",
+       "reason": "The print's eye skips from one «رسول الله ﷺ» to the next and drops «أن رسول الله ﷺ», so that the saying reads as Abu Rafi's own; sunnah.com has the words."
+      }
+     ],
+     "notes": []
     }
    ]
   },
@@ -1642,7 +1642,7 @@
       },
       {
        "role": "narration",
-       "text": " . رواهُ التَّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ ."
+       "text": " . رواهُ التِّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ ."
       }
      ],
      "meanings": [],
@@ -1659,7 +1659,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنْ حُصَيْنِ بنِ وحْوَحٍ رَضِيَ اللهُ عَنْهُ : أَنَّ طَلْحَةَ بنَ الْبَرَاءِ بْنِ عازِبٍ رَضِيَ اللهُ عَنْهُما مَرِضَ، فَأتَاهُ النَّبيُّ ﷺ يَعُودُهُ فَقَالَ: "
+       "text": "وَعَنْ حُصَيْنِ بنِ وحْوَحٍ رَضِيَ اللهُ عَنْهُ : أَنَّ طَلْحَةَ بنَ الْبَرَاءِ رَضِيَ اللهُ عَنْهُ مَرِضَ، فَأتَاهُ النَّبيُّ ﷺ يَعُودُهُ فَقَالَ: "
       },
       {
        "role": "prophet",
@@ -1673,10 +1673,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print names Talha's father «البراء بن عازب» (and so «رضي الله عنهما»); Abu Dawud and sunnah.com have only «طلحة بن البراء». Talha's father is usually given as al-Bara' ibn 'Umayr al-Balawi, so the print's «بن عازب» may be wrong; kept as the book's under rule 1."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "الْبَرَاءِ بْنِ عازِبٍ رَضِيَ اللهُ عَنْهُما",
+       "correction": "الْبَرَاءِ رَضِيَ اللهُ عَنْهُ",
+       "reason": "The print adds «بن عازب», and so «عنهما»: Talha's father is al-Bara' ibn 'Umayr al-Balawi, not Ibn 'Azib, and sunnah.com and Abu Dawud have v1's «طلحة بن البراء رضي الله عنه» (rule 1)."
+      }
+     ],
+     "notes": []
     }
    ]
   },

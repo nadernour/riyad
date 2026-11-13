@@ -568,15 +568,14 @@
     "اللهُ تَعَالَى لي خَيْراً",
     "اللهُ لِي خَيْراً",
     "v1"
+   ],
+   [
+    "آجَرَهُ",
+    "أَجَرَهُ",
+    "variant"
    ]
   ],
-  "misprint": [
-   [
-    "إِلَّا أَجَرَهُ اللهُ",
-    "إِلاَّ آجَرَهُ اللهُ",
-    "The matn prints «أَجَرَهُ», but its own word meanings explain «إلا آجره: أي أثابه»."
-   ]
-  ]
+  "note": "The print's «أَجَرَهُ» is Muslim's wording and goes with «أْجُرْنِي» before it; v1 and sunnah.com have the other form of the verb, «آجَرَهُ», which is also how the book's word meanings head their gloss («إلا آجره: أي أثابه»)."
  },
  "922": {
   "fix": [
@@ -705,17 +704,18 @@
  "928": {
   "fix": [
    [
-    "ﷺ : أَنَّ رسولَ اللهِ ﷺ قالَ",
-    "ﷺ قالَ",
-    "variant"
-   ],
-   [
     "وقالَ: حَدِيثٌ صحيحٌ على",
     "وقالَ: صحيحٌ عَلى",
     "v1"
    ]
   ],
-  "note": "The print has «عَنْ أَبِي رافِعٍ أَسْلَمَ مَوْلَى رَسُولِ اللهِ ﷺ قالَ:» without v1's «أَنَّ رسولَ اللهِ ﷺ», which sunnah.com has, so as printed the saying reads as Abu Rafi's own words. It may be an eye-skip over the repeated «رسول الله ﷺ»; the commentary (al-Hakim's Mustadrak) doesn't settle it."
+  "misprint": [
+   [
+    "ﷺ قالَ",
+    "ﷺ : أَنَّ رسولَ اللهِ ﷺ قالَ",
+    "The print's eye skips from one «رسول الله ﷺ» to the next and drops «أن رسول الله ﷺ», so that the saying reads as Abu Rafi's own; sunnah.com has the words."
+   ]
+  ]
  },
  "929": {},
  "930": {
@@ -942,22 +942,9 @@
    ]
   ]
  },
- "943": {
-  "fix": [
-   [
-    "التِّرْمِذِيُّ",
-    "التَّرْمِذِيُّ",
-    "variant"
-   ]
-  ]
- },
+ "943": {},
  "944": {
   "fix": [
-   [
-    "الْبَرَاءِ رَضِيَ اللهُ عَنْهُ مَرِضَ،",
-    "الْبَرَاءِ بْنِ عازِبٍ رَضِيَ اللهُ عَنْهُما مَرِضَ،",
-    "variant"
-   ],
    [
     "لا أُرَى",
     "لاَ أَرَى",
@@ -969,7 +956,13 @@
     "marks"
    ]
   ],
-  "note": "The print names Talha's father «البراء بن عازب» (and so «رضي الله عنهما»); Abu Dawud and sunnah.com have only «طلحة بن البراء». Talha's father is usually given as al-Bara' ibn 'Umayr al-Balawi, so the print's «بن عازب» may be wrong; kept as the book's under rule 1."
+  "misprint": [
+   [
+    "الْبَرَاءِ بْنِ عازِبٍ رَضِيَ اللهُ عَنْهُما",
+    "الْبَرَاءِ رَضِيَ اللهُ عَنْهُ",
+    "The print adds «بن عازب», and so «عنهما»: Talha's father is al-Bara' ibn 'Umayr al-Balawi, not Ibn 'Azib, and sunnah.com and Abu Dawud have v1's «طلحة بن البراء رضي الله عنه» (rule 1)."
+   ]
+  ]
  },
  "945": {
   "fix": [

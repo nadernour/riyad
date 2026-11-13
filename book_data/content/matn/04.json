@@ -63,11 +63,6 @@
     "التَّمِيمِيَّ",
     "التَّمِيمِيِّ",
     "v1"
-   ],
-   [
-    "والتِّرْمِذِيُّ",
-    "والتَّرْمِذِيُّ",
-    "variant"
    ]
   ]
  },
@@ -83,16 +78,14 @@
     "عَنْهُ قال:",
     "عَنْهُ قالَ:",
     "marks"
-   ]
-  ],
-  "misprint": [
+   ],
    [
-    "طَرَفَيْها",
     "طَرَفَهَا",
-    "The print has «طَرَفَيْها», but its own word meanings explain «طرفها: وهي ما يسمى بالعذبة»."
+    "طَرَفَيْها",
+    "variant"
    ]
   ],
-  "note": "Muslim's wording is «طَرَفَيْهَا», as the print has; v1's «طَرَفَهَا» was kept because the book's word meanings gloss «طرفها» (rule 1, as in h. 21). Owner may prefer to take the print's reading as a variant."
+  "note": "The print's «طَرَفَيْها» is Muslim's wording, the source Nawawi names, and sunnah.com's; v1's «طَرَفَهَا» is al-Nasa'i's. The book's word meanings head their gloss «طرفها», without the ya: a slip of the commentary's, to record in step 5."
  },
  "786": {
   "fix": [
@@ -487,7 +480,7 @@
     "The print has «الأُسَيْدِيُّ»; sunnah.com and Abu Dawud have «الأسدي» (Khuraym ibn Fatik al-Asadi, of Banu Asad), so v1's name stays (rule 1, by analogy with narrators' names)."
    ]
   ],
-  "note": "Khuraym's nisba: the print's «الأُسَيْدِيُّ» is recorded as a misprint and v1's «الأَسَديُّ» kept, but the book's own word meanings (p. 636) also give «خريم بن فاتك: وكنيته أبو يحيى الأسيدي», so this edition reads it that way throughout. Decide whether to take the book's form."
+  "note": "Khuraym's nisba: v1's «الأَسَديُّ» is kept (he is Khuraym ibn Fatik, of Banu Asad; sunnah.com and Abu Dawud have it). The book's own word meanings (p. 636) also give «خريم بن فاتك: وكنيته أبو يحيى الأسيدي», to record as a misprint there too in step 5."
  },
  "799": {
   "fix": [
@@ -518,6 +511,11 @@
    [
     "القُوْمِ",
     "الْقَوْمِ",
+    "v1"
+   ],
+   [
+    "السَّاقَيْنِ».",
+    "السَّاقَيْنِ.",
     "v1"
    ]
   ]

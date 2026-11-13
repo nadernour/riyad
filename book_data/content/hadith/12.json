@@ -698,7 +698,7 @@
       },
       {
        "role": "narration",
-       "text": " رَوَاهُ التَّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ."
+       "text": " رَوَاهُ التِّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ."
       }
      ],
      "meanings": [],
@@ -723,7 +723,7 @@
       },
       {
        "role": "narration",
-       "text": " . رَوَاهُ التَّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ."
+       "text": " . رَوَاهُ التِّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ."
       }
      ],
      "meanings": [],
@@ -773,7 +773,7 @@
       },
       {
        "role": "narration",
-       "text": " رَوَاهُ التَّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ."
+       "text": " رَوَاهُ التِّرْمِذِيُّ وَقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ."
       }
      ],
      "meanings": [],
@@ -1753,7 +1753,7 @@
      "shared_with": null,
      "corrections": [],
      "notes": [
-      "The print has «وقالا: حديث حسن صحيح» (Abu Dawud and al-Tirmidhi), where v1 and sunnah.com have «وقال» (al-Tirmidhi alone). Abu Dawud doesn't grade hadith, so «وقالا» may be a misprint."
+      "The print has «وقالا: حديث حسن صحيح» (Abu Dawud and al-Tirmidhi), where v1 and sunnah.com have «وقال» (al-Tirmidhi alone). Kept as the book's wording: the print has «وقالا» after «رواه أبو داوود والترمذي» in h. 1405 and h. 1707 too."
      ]
     },
     {
@@ -2841,7 +2841,7 @@
       },
       {
        "role": "speech",
-       "text": "«أُتِيَ اللهُ تَعَالَى بِعَبْدٍ مِنْ عِبَادِهِ آتَاهُ اللهُ مَالاً، فَقَالَ لَهُ : "
+       "text": "أُتِيَ اللهُ تَعَالَى بِعَبْدٍ مِنْ عِبَادِهِ آتَاهُ اللهُ مَالاً، فَقَالَ لَهُ : "
       },
       {
        "role": "prophet",
@@ -2905,7 +2905,7 @@
       },
       {
        "role": "narration",
-       "text": " رَوَاهُ التَّرْمِذِيُّ وقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ."
+       "text": " رَوَاهُ التِّرْمِذِيُّ وقَالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ."
       }
      ],
      "meanings": [],
