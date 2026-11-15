@@ -20,6 +20,11 @@ OUT=.cache/long-run-round.jsonl
 PROBE=.cache/long-run-limits.jsonl
 BEFORE=.cache/long-run-checked.txt
 PROMPT="Do one round of the matn check: follow docs/matn.md exactly."
+# REVIEW=1 runs the second reading instead (docs/matn-review.md): the same loop, on tools/review.py.
+if [ -n "$REVIEW" ]; then
+    export REVIEW
+    PROMPT="Do one round of the second reading: follow docs/matn-review.md exactly."
+fi
 TOOLS="Read,Glob,Grep,Write(content/matn/**),Edit(content/matn/**),Bash(.venv/bin/python tools/*)"
 # The only built-in tools a round uses. Leaving out the others, the MCP servers and the skills
 # cuts the session's base prompt by more than half.
@@ -37,6 +42,7 @@ EFFORT=${EFFORT:-medium}
 START=${START:-85}
 WAIT=1800          # seconds to wait after a round that made no progress
 MAX_IDLE_ROUNDS=24 # stop after this many rounds in a row without progress (~12 hours)
+# ROUNDS=N stops the run after N rounds, e.g. to look at the first ones before leaving it unattended.
 
 # claude -p always uses an API key from the environment instead of the subscription login.
 if [ -n "$ANTHROPIC_API_KEY$ANTHROPIC_AUTH_TOKEN" ]; then
@@ -59,6 +65,7 @@ read_limits() {
     || .venv/bin/python tools/matn.py compare >> "$LOG" 2>&1 || exit 1
 
 idle=0
+rounds=0
 while true; do
     set -- $(.venv/bin/python tools/long_run.py checked)
     [ "$1" -eq 0 ] && break
@@ -82,6 +89,11 @@ while true; do
         --disable-slash-commands --output-format stream-json --verbose > "$OUT" 2>> "$LOG"
     # Log the round's session id, length, cost estimate, limits used, progress and closing message.
     .venv/bin/python tools/long_run.py report "$OUT" "$PROBE" "$BEFORE" >> "$LOG" 2>&1
+    rounds=$((rounds + 1))
+    if [ -n "$ROUNDS" ] && [ "$rounds" -ge "$ROUNDS" ]; then
+        echo "=== $(date '+%F %T') stopped after $rounds rounds (ROUNDS=$ROUNDS)" >> "$LOG"
+        exit 0
+    fi
     set -- $(.venv/bin/python tools/long_run.py checked)
     if [ "$1" -ge "$(cut -d' ' -f1 "$BEFORE")" ]; then
         idle=$((idle + 1))

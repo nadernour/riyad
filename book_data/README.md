@@ -45,7 +45,7 @@ The app shows only the book's text. v1's additions to the commentary (extra word
 
    v1's commentary isn't brought over. The salutation becomes the glyph ﷺ, as the book prints it, in each of v1's spellings, «صلى الله عليه وآله وسلم» too (the owner's decision, 2026-10-25). The tool checks that every word of v1's matn survives the conversion.
 3. **Number the hadith as printed** (done; see [docs/numbering.md](docs/numbering.md)). Every hadith now has the book's number (1–1,898) and page, and every chapter the book's number. The places where v1 and the book don't line up one to one are in `content/numbering.json`: cross-references the book numbers, two merged v1 entries, a repeated text, and chapter 261, which v1 lacks. The mapping agrees with every number the OCR kept above a hadith, every numbered chapter heading, and the 30 audited hadith. v1's ids are kept in `old_id`. v1's short titles had slipped one entry out of step in places, so they were paired with their hadith again, and 8 titles were written for hadith without one.
-4. **Check the hadith text** (in progress: the review rounds finished on 2026-11-13 with all 1,898 hadith checked, a review settled the questions they left the same day, and the passes after the rounds remain; see [docs/matn.md](docs/matn.md)). It isn't transcribed, because v1 already has it with tashkeel. Instead, every hadith is read against its matn on the scan, and v1's text is corrected to the book's:
+4. **Check the hadith text** (in progress: the review rounds finished on 2026-11-13 with all 1,898 hadith checked, and a review settled the questions they left the same day. A second reading of every hadith against the scan, which judges the rounds' decisions, started on 2026-11-15 ([docs/matn-review.md](docs/matn-review.md)); the passes after the rounds follow it; see [docs/matn.md](docs/matn.md)). It isn't transcribed, because v1 already has it with tashkeel. Instead, every hadith is read against its matn on the scan, and v1's text is corrected to the book's:
    - **Doubts first.** `tools/matn.py` compares each matn with the OCR text of its pages, sunnah.com and the collections, and lists the words in doubt: other letters in the OCR text, marks no collection agrees with, words vocalized as nowhere in the collections, and text the book prints after v1's last word, such as Nawawi's explanation of a word, which v1 sometimes lacks. Before the rounds there were 5,775, in 1,559 of the 1,868 hadith left.
    - **Then the whole matn.** In short Claude Code rounds (`tools/long_run.sh`), each hadith is read against a crop of its matn on the scan, starting with its doubts, and every word changed is read on a zoom. The pilot on the audit's 30 hadith showed this is needed: the doubts missed 4 of the audit's differences, all case endings or wordings that no source contradicts.
    - **The book's wording is kept** where v1 follows another edition (e.g. «إلى الإسلام» for the book's «للإسلام»), unless it's a misprint. The book's single kasra where the grammar needs tanween («بن قيسِ») is a printing habit, so v1's tanween stays. So is the sukun it sometimes sets before a connecting alif («مِنْ ٱلْحَجَّاجِ»): the vowel the words run on with is written («مِنَ الْحَجَّاجِ»; the owner's decision, 2026-10-25). A word written as printed gets a plain alif for the wasla («ٱ»), which the print sets unevenly, and none of the stretching the print uses to fill a line. Spelling that doesn't change the reading (مائة / مئة) stays as v1 has it.
@@ -97,6 +97,7 @@ content/audit/         the v1 audit: the book's text for 30 v1 hadith and how v1
 docs/audit.md          step 1: the audit's findings
 docs/numbering.md      step 3: numbering, pages, chapters and titles
 docs/matn.md           step 4: how the hadith text is checked, and the rules for the review rounds
+docs/matn-review.md    step 4: the second reading, which judges the rounds' decisions against the scan
 tools/                 the Python scripts (setup below)
 .venv/                 their Python environment (not in git)
 .cache/                downloads and files the tools make again (not in git); nothing that can't be remade
@@ -137,6 +138,8 @@ The first `compare` takes a while, because Tesseract reads the 1,278 hadith page
 .venv/bin/python tools/matn.py compare               # step 4: list the words in doubt in every matn not yet checked
 .venv/bin/python tools/matn.py next                  # the next round's hadith (up to 12), with crops of the scan
 .venv/bin/python tools/matn.py apply                 # apply content/matn/inbox.json
+.venv/bin/python tools/review.py next                # step 4's second reading: the next hadith to read again (docs/matn-review.md)
+.venv/bin/python tools/review.py status              # how many are read again, and the changes so far
 .venv/bin/python tools/build_db.py                   # build the app's database, ../database/riyad.db
 ```
 
@@ -151,6 +154,8 @@ pkill -f '[t]ools/long_run.sh'; pkill -f '[c]laude -p Do one round'   # stop it
 ```
 
 The rounds run at medium effort. The first rounds, at low, often skipped the zooms the rules ask for: h. 21's round zoomed 4 spots for 103 words it gave marks to. So the 123 hadith they checked were checked again at medium (the owner's decision, 2026-10-23). Each round's line in the log gives its fixes and the zooms it read, and how many of those were too wide to read marks on, so the rounds can be compared. From 2026-10-27 to 11-03, a round checked about 11 hadith and used about 16% of the 5-hour window and 1.2% of the weekly limit (≈ $2.30 at API prices). To go back to low, start the run with `EFFORT=low nohup tools/long_run.sh ...`.
+
+The second reading runs on the same script, started with `REVIEW=1` ([docs/matn-review.md](docs/matn-review.md), "Running it").
 
 Look at the first rounds' changes (`git diff content/`) before leaving it unattended. The rounds don't commit, so commit `content/` now and then. If a round was stopped before applying its decisions, `content/matn/inbox.json` is left (it isn't in git): run `.venv/bin/python tools/matn.py apply` before committing. A round that finds a rule or a tool wrong says so in its summary in the log. The log isn't in git, so act on it in `docs/` or `tools/`.
 

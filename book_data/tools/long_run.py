@@ -25,6 +25,7 @@ import datetime
 import json
 import pathlib
 import re
+import os
 import time
 from collections import Counter
 
@@ -32,6 +33,18 @@ import pymupdf
 
 from matn import CHECKED, checked as checked_ids, hadiths, todo
 from sources import pdf_path
+
+REVIEW = os.environ.get("REVIEW")  # the second reading (tools/review.py, docs/matn-review.md)
+INBOX = "content/matn/review-inbox.json" if REVIEW else "content/matn/inbox.json"
+if REVIEW:  # its progress is content/matn/review.json: the hadith read again
+    def checked_ids() -> set[int]:  # noqa: F811
+        path = CHECKED / "review.json"
+        read = json.loads(path.read_text(encoding="utf-8")) if path.exists() else {}
+        return {int(i) for i, r in read.items() if "read" in r}
+
+    def todo() -> list[int]:  # noqa: F811
+        done = checked_ids()
+        return [h["id"] for h in hadiths() if h["id"] not in done]
 
 NAMES = {"five_hour": "5-hour", "seven_day": "weekly"}
 
@@ -122,18 +135,19 @@ def work(events: list[dict]) -> str:
             if c.get("type") != "tool_use":
                 continue
             path = str((c.get("input") or {}).get("file_path", ""))
-            if c.get("name") == "Read" and "pages/zoom-" in path:
+            if c.get("name") == "Read" and ("pages/zoom-" in path or "review/z" in path):
                 zooms.add(pathlib.Path(path).name)
-            elif c.get("name") == "Write" and path.endswith("content/matn/inbox.json"):
+            elif c.get("name") == "Write" and path.endswith(INBOX):
                 try:
-                    ids |= set(json.loads(c["input"].get("content", "")))
+                    written = json.loads(c["input"].get("content", ""))
+                    ids |= set(written)
                 except (ValueError, TypeError):
                     pass
     kept = {i: d for f in CHECKED.glob("[0-9][0-9].json") for i, d in json.loads(f.read_text(encoding="utf-8")).items()}
-    decided = [kept[i] for i in ids if i in kept]
+    decided = list(written.values()) if REVIEW and ids else [kept[i] for i in ids if i in kept]
     why = Counter(f[2] for d in decided for f in d.get("fix", []))
     misprints = sum(len(d.get("misprint", [])) for d in decided)
-    wide = too_wide(zooms)
+    wide = 0 if REVIEW else too_wide(zooms)
     return (f"fixes: {why['v1']} v1, {why['variant']} variant, {why['marks']} marks · misprints: {misprints}"
             f" · zooms read: {len(zooms)}" + (f" ({wide} too wide to read marks)" if wide else ""))
 
