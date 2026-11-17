@@ -9,7 +9,7 @@
 | Books and chapters | The book's 19 books (كتاب) and their 367 chapters (باب), with the titles as the book prints its headings (checked on the scan, 2026-11-17). |
 | Hadith | All 1,898, with the book's numbers, their short titles and the page where each starts. |
 | Hadith text | All 1,898 checked against the printed book, twice (content step 4). |
-| Speaker roles | v1's, not checked yet, so some pieces have the wrong role until a pass after step 4. |
+| Speaker roles | The Prophet's words (`prophet`) checked against al-Fahl's edition of Riyad al-Salihin (2026-11-17). `narration` and `speech` aren't kept apart consistently (v1 puts the Companion's account in either), so show them alike. |
 | Word meanings, benefits, narrators | Empty tables, filled when content steps 5 and 6 transcribe them. |
 
 Each new build replaces the file, and the `info` table says which build it is. Build every screen to work with what's there: a hadith with no word meanings or benefits yet shows nothing for them.
@@ -48,7 +48,7 @@ Each new build replaces the file, and the `info` table says which build it is. B
 |---|---|
 | `id` | The hadith number printed in the book, 1–1898, with no gaps. It never changes, so bookmarks can store it. |
 | `book_id`, `chapter_id` | Its book and chapter |
-| `title` | The short title shown above it: a phrase of the hadith, taken from its text with the text's marks, e.g. «إنَّما الأَعمالُ بالنِّيَّات». For 405 hadith it's still v1's title, which isn't a phrase of the text, until a pass after content step 4 picks one. |
+| `title` | The short title shown above it: a phrase of the hadith, taken from its text with the text's marks, e.g. «إنَّما الأَعمالُ بالنِّيَّات». Every title is a phrase of its hadith (content step 4, 2026-11-17). |
 | `page` | The page of the printed book where it starts |
 | `search_text` | The text, simplified for search (see "Search") |
 
@@ -57,7 +57,7 @@ Each new build replaces the file, and the `info` table says which build it is. B
 | Column | |
 |---|---|
 | `hadith_id`, `seq` | The hadith, and the piece's place in it: 1, 2, 3, … |
-| `role` | `narration`: the narrator's account. `prophet`: the Prophet's words, which the app sets apart. `speech`: other people's words. `gloss`: a word Nawawi explains after the hadith. |
+| `role` | `prophet`: the Prophet's words, which the app sets apart. `narration`: Nawawi's frame (the chain's lead-in, the source line, his explanations) and, in places, the Companion's account. `speech`: the Companion's account and other people's words. `gloss`: a word Nawawi explains after the hadith. `narration` and `speech` aren't kept apart consistently, so the app should show them alike. |
 | `text` | The piece's text. Joined in order, the pieces make the whole text, with its spaces and punctuation; a `\n` starts a new line. |
 
 **`meanings`**: the word meanings (لغة الحديث), in printed order: `hadith_id`, `seq`, `term` and `meaning`. Empty for now.

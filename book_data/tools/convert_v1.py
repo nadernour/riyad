@@ -24,7 +24,8 @@ and a chapter v1 lacks is added where it holds a hadith. A hadith's page is wher
 finds its matn, unless the file corrects it (`pages`, read on the scan).
 
 The book and chapter titles are the book's headings, as read on the scan in step 4's titles pass
-(content/titles.json, applied by tools/titles.py), where it has read them; v1's otherwise.
+(content/titles.json, applied by tools/titles.py), where it has read them; v1's otherwise. The short titles
+chosen in step 4, where v1's isn't a phrase of its hadith, are in content/short_titles.json (tools/short_titles.py).
 
 The build checks that every word of v1's matn survives, that the book's numbers 1–1898 are each
 used once, that pages rise with the numbers, and that the chapter numbers agree with the
@@ -41,6 +42,7 @@ from arabic import words
 from chapters import anchors, headings, match, moved, v1_chapters
 from numbering import EXCEPTIONS, align, mapping
 from sources import ROOT, v1_hadiths
+from short_titles import apply as apply_short_titles
 from titles import apply as apply_titles
 
 OUT_DIR = ROOT / "content" / "hadith"
@@ -280,7 +282,7 @@ def build() -> list[dict]:
                 "notes": ([] if k == 0 else [f"Split from v1 {i}, which holds two printed hadith."])
                          + ([f"v1's title «{clean(h['title']).strip()}» belongs to another hadith (v1's titles slip here)."]
                             if titles[i] is not None and titles[i] != h["title"] and k == own else [])
-                         + (["Short title written in step 3 (not from v1), for the owner to review."] if number in written else []),
+                         + (["Short title written in step 3 (not from v1); the owner agreed to it (2026-11-17)."] if number in written else []),
                 "_door": move.get(i, h["door_id"]), "_raw": part, "_where": page_of,
             })
     for m in ex["missing"]:
@@ -288,7 +290,7 @@ def build() -> list[dict]:
             "id": m["number"], "old_id": None, "page": m["page"], "title": written[m["number"]], "matn": m["matn"],
             "meanings": [], "benefits": [], "shared_with": None, "corrections": [],
             "notes": [f"Not in v1 ({m['kind']}); added in step 3 from the scan. {m['note']} Step 4 checks its matn"
-                      " at high zoom.", "Short title written in step 3 (not from v1), for the owner to review."],
+                      " at high zoom.", "Short title written in step 3 (not from v1); the owner agreed to it (2026-11-17)."],
             "_chapter_number": m["chapter"], "_raw": "", "_where": page_of,
         })
     records.sort(key=lambda r: r["id"])
@@ -352,6 +354,7 @@ def main() -> None:
             r.pop(key, None)
         chapter_rec[n]["hadith"].append(r)
     apply_titles(books)
+    apply_short_titles(books)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for f in OUT_DIR.glob("*.json"):
         f.unlink()

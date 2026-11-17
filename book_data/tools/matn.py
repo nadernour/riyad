@@ -1044,6 +1044,8 @@ def settle(h: dict, d: dict, again: bool = False) -> None:
             tidy(matn)
             fix_matn(matn, f[0], f[1], again)
     tidy(matn)
+    from roles import apply as apply_roles  # here, not at the top: roles imports this module
+    apply_roles(h, matn)
     corrections = list(h["corrections"])
     for m in d.get("misprint", []):
         if len(m) != 3:
