@@ -25,8 +25,7 @@
     "الْمَلَائِكَةِ",
     "v1"
    ]
-  ],
-  "note": "The print has «خلق الله آدم ﷺ» with no «تعالى» (sunnah.com has v1's «الله تعالى آدم»); the book's wording is taken, with the ﷺ it prints after Adam's name."
+  ]
  },
  "847": {
   "fix": [
@@ -321,8 +320,7 @@
     "لَفْظُهُ بِطولِهِ",
     "v1"
    ]
-  ],
-  "note": "v1's cross-reference «(برقم 796)» isn't in the print, which has «وقد سبق لفظه بطوله»; it is removed with the fix."
+  ]
  },
  "857": {
   "fix": [
@@ -388,6 +386,21 @@
     "ثَلاثَ مَرَّاتٍ",
     "مَرَّاتٍ",
     "variant"
+   ],
+   [
+    "عنْ أبي هُرَيْرَةَ",
+    "عنْ أَبِي هُرَيْرَةَ",
+    "marks"
+   ],
+   [
+    "عَنْهُ في حديثِ",
+    "عَنْهُ فِي حديثِ",
+    "marks"
+   ],
+   [
+    "جاءَ إلى النَّبِيِّ",
+    "جاءَ إلَى النَّبِيِّ",
+    "marks"
    ]
   ]
  },

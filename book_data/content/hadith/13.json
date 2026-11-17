@@ -436,7 +436,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "لِيُصِيبَ بِهِ غَرَضاً مِنَ",
+       "correction": "لِيُصِيبَ بِهِ عَرَضاً مِنَ",
+       "reason": "The matn prints «غَرَضاً» with a dot on the first letter (zoomed, p. 957; the «عَرْفَ» on the next line has none), but the book's own word meanings explain «ليصيب به عرضاً: لينال بسببه شيئاً من متاع الدنيا», with no dot, and v1 and Abu Dawud have «عَرَضاً». So the matn's dot is a misprint, and the text keeps «عَرَضاً»."
+      }
+     ],
      "notes": []
     },
     {

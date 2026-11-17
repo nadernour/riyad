@@ -16,7 +16,7 @@ Content step 4 (see the README). The matn in `content/hadith/` is v1's text (ste
    - «الترمذي» read two ways (rule 2);
    - twelve misprints, in ten hadith, that the rounds had to take as the book's wording (rule 1, "the print alone");
    - stretched letters, lone quotation marks and stray marks left in 57 hadith, now settled as rules 2 and 4 say (each lone quotation mark read on the scan).
-3. **The second reading** ([matn-review.md](matn-review.md); the owner's decision, 2026-11-15). The rounds ran on Opus at medium effort, so every hadith is read once more against the scan as its text now stands, and every decision of the rounds is judged. Its first hadith showed why: v1 lacks a short word the print has in h. 6 («فِي فِي امْرَأَتِكَ») and h. 476 («غَطَّيْنَا بِهَا»), and no round saw it. It also gives the pilot's hadith and h. 126–168 the marks and shaddas they lack (below).
+3. **The second reading** ([matn-review.md](matn-review.md); the owner's decision, 2026-11-15). The rounds ran on Opus at medium effort, so every hadith is read once more against the scan as its text now stands, and every decision of the rounds is judged. Its first hadith showed why: v1 lacks a short word the print has in h. 6 («فِي فِي امْرَأَتِكَ») and h. 476 («غَطَّيْنَا بِهَا»), and no round saw it. It also gives the pilot's hadith and h. 126–168 the marks and shaddas they lack (below). It finished on 2026-11-17, with all 1,898 hadith read again and 174 of them changed.
 4. **Decisions.** Each round writes its decisions to `content/matn/inbox.json`. `tools/matn.py apply` checks them, applies them to `content/hadith/`, and keeps them in `content/matn/NN.json`. A hadith with a decision there counts as checked, and `apply` drops a new decision for it. To change one, edit it in `content/matn/NN.json`, then run `tools/convert_v1.py --force` and `tools/matn.py apply --all`.
 
 ### Kinds of doubt
@@ -40,7 +40,7 @@ Not listed, though the full read still covers them: a `dots` difference where su
 
 `tools/matn.py stats` gives the totals. Before the rounds there were 5,775 doubts, in 1,559 of the 1,868 hadith left, and 12,637 words with no mark, in 1,371 of them.
 
-**After the rounds** and the second reading, passes of their own (the second reading does the third and fourth as it goes):
+**After the rounds** and the second reading, passes of their own. The second reading did the third and fourth (done, 2026-11-17), so the titles, the short titles and the speaker roles remain:
 - **Book and chapter titles:** v1's titles against the headings on the scan. v1 has typos in them («وتفديمهم», «الوضو ء»), and it shortens some of the early ones. The first book's title, «الكتاب الأول», is v1's own: the book prints no such heading over its first 83 chapters.
 - **Short titles:** the title above each hadith is a phrase of the hadith. `tools/build_db.py` finds the words of its title in the text and takes them from there, with the text's spelling and marks. The titles come from v1, and 447 of them aren't a phrase of their hadith (a summary such as «وعظنا الرسول موعظة», or another wording than the book's), so the app still shows v1's words for those. Each of them gets a phrase picked from its hadith, and these decisions go in `content/`, so that they're applied again after a rebuild.
 - **The pilot's 30 hadith** were checked before the rule on words with no mark (rule 2), so their bare words still need the book's marks. Their decisions are changed in `content/matn/NN.json` (see "Decisions" above).

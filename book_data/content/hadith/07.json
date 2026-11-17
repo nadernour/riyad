@@ -158,9 +158,7 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "Removed v1's gloss «جناها: أي ما يجتني من الثمر» after the source line: the print has none, and its commentary explains «خرفة» in its own words."
-     ]
+     "notes": []
     },
     {
      "id": 899,
@@ -269,7 +267,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "سُفْيانُ بْنَ عُيَيْنَةَ",
+       "correction": "سُفْيانُ بْنُ عُيَيْنَةَ",
+       "reason": "The print sets a fatha on the nun of «بن» (zoomed, p. 687), but it is in apposition to «سُفْيانُ», the subject of «وَضَعَ», which the print itself marks with a damma; v1's «بْنُ» stays."
+      }
+     ],
      "notes": []
     },
     {
@@ -935,9 +940,7 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "The print's «أَجَرَهُ» is Muslim's wording and goes with «أْجُرْنِي» before it; v1 and sunnah.com have the other form of the verb, «آجَرَهُ», which is also how the book's word meanings head their gloss («إلا آجره: أي أثابه»)."
-     ]
+     "notes": []
     },
     {
      "id": 922,
@@ -1482,9 +1485,7 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "The print has «وقد جئناك شفعاء له», as Abu Dawud has it, but its word meanings gloss «جئنا: حضرنا»."
-     ]
+     "notes": []
     },
     {
      "id": 939,
@@ -1702,7 +1703,7 @@
       },
       {
        "role": "speech",
-       "text": "كُنَّا فِي جَنازَةٍ فِي بَقِيعِ الْغَرْقَدِ ، فَأَتَانَا رَسُولُ اللهِ ﷺ، فقَعَدَ، وقعدْنَا حَوْلَهُ ، وَمَعَهُ مِخْصَرَةٌ ، فَنَكَّسَ وَجَعَلَ يَنْكُتُ بِمِخْصَرتِهِ، ثُمَّ قالَ "
+       "text": "كُنَّا فِي جَنازَةٍ فِي بَقِيعِ الْغَرْقَدِ ، فَأَتَانَا رَسُولُ اللهِ ﷺ، فقَعَدَ، وقعدْنَا حَوْلَهُ ، وَمَعَهُ مِخْصَرَةٌ ، فَنَكَسَ وَجَعَلَ يَنْكُتُ بِمِخْصَرتِهِ، ثُمَّ قالَ "
       },
       {
        "role": "prophet",
@@ -1746,7 +1747,7 @@
       },
       {
        "role": "speech",
-       "text": "كانَ النَّبيُّ ﷺ إذَا - فُرِغَ منْ دفنِ المَيِّتِ .. وقَفَ علَيْهِ وقالَ: "
+       "text": "كانَ النَّبيُّ ﷺ إذَا فُرِغَ منْ دفنِ المَيِّتِ .. وقَفَ علَيْهِ وقالَ: "
       },
       {
        "role": "prophet",

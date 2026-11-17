@@ -227,7 +227,7 @@
       },
       {
        "role": "narration",
-       "text": " أَيْ: ارْفُقُوا بِهَا فِي السَّيرِ ؛ لترْعَى فِي حالِ سيرِهَا ، وقَوْلهُ ﷺ: "
+       "text": " أَيْ: ارْفَقُوا بِهَا فِي السَّيرِ ؛ لترْعَى فِي حالِ سيرِهَا ، وقَوْلهُ ﷺ: "
       },
       {
        "role": "gloss",
@@ -249,10 +249,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "v1's «وقَوْلهُ ﷺ: «نِقْيَها»» has ﷺ after «وقوله», which the print doesn't have («وقَوْلُهُ «نِقْيَها»»). Kept: a ﷺ that refers to the Prophet stays as v1 has it (rule 1)."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "وَقَوْلُهُ «نِقْيَها»",
+       "correction": "وقَوْلهُ ﷺ: «نِقْيَها»",
+       "reason": "The print drops the ﷺ after «وقوله», which refers to the Prophet (p. 721); v1's ﷺ stays (rule 1)."
+      }
+     ],
+     "notes": []
     },
     {
      "id": 963,

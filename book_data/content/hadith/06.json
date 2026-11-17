@@ -55,9 +55,7 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "The print has «خلق الله آدم ﷺ» with no «تعالى» (sunnah.com has v1's «الله تعالى آدم»); the book's wording is taken, with the ﷺ it prints after Adam's name."
-     ]
+     "notes": []
     },
     {
      "id": 847,
@@ -370,9 +368,7 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "v1's cross-reference «(برقم 796)» isn't in the print, which has «وقد سبق لفظه بطوله»; it is removed with the fix."
-     ]
+     "notes": []
     }
    ]
   },
@@ -466,7 +462,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "عنْ أبي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ في حديثِ المُسِيءِ صَلاتَهُ: أنَّهُ جاءَ فَصَلَّى ثُمَّ جاءَ إلى النَّبِيِّ ﷺ، فَسَلَّمَ عَلَيْهِ، فَرَدَّ عَلَيْهِ السَّلامَ، فقالَ: "
+       "text": "عنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ فِي حديثِ المُسِيءِ صَلاتَهُ: أنَّهُ جاءَ فَصَلَّى ثُمَّ جاءَ إلَى النَّبِيِّ ﷺ، فَسَلَّمَ عَلَيْهِ، فَرَدَّ عَلَيْهِ السَّلامَ، فقالَ: "
       },
       {
        "role": "prophet",

@@ -119,9 +119,20 @@
     "النُّزُولُ في اللَّيْلِ",
     "النُّزُولُ فِي اللَّيْلِ",
     "marks"
+   ],
+   [
+    "أَيْ: ارْفُقُوا",
+    "أَيْ: ارْفَقُوا",
+    "variant"
    ]
   ],
-  "note": "v1's «وقَوْلهُ ﷺ: «نِقْيَها»» has ﷺ after «وقوله», which the print doesn't have («وقَوْلُهُ «نِقْيَها»»). Kept: a ﷺ that refers to the Prophet stays as v1 has it (rule 1)."
+  "misprint": [
+   [
+    "وَقَوْلُهُ «نِقْيَها»",
+    "وقَوْلهُ ﷺ: «نِقْيَها»",
+    "The print drops the ﷺ after «وقوله», which refers to the Prophet (p. 721); v1's ﷺ stays (rule 1)."
+   ]
+  ]
  },
  "963": {
   "fix": [

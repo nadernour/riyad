@@ -120,6 +120,2134 @@
  "18": {
   "read": "2026-11-15"
  },
+ "19": {
+  "read": "2026-11-15"
+ },
+ "20": {
+  "read": "2026-11-15"
+ },
+ "21": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "فأَدْركَهُمْ",
+    "فَأُدْرِكَهُمْ",
+    "v1",
+    "The print has «فَأُدْرِكَهُمْ», a damma on the hamza and a kasra under the ra (zoomed, p. 43), the first person of the form-IV verb; v1's fatha on the alif makes no such verb."
+   ],
+   [
+    "نَبَطيُّ",
+    "نَبَطِيٌّ",
+    "v1",
+    "The noun is indefinite and not in construct («إذا نبطيٌّ من نبط أهل الشام»), so it needs tanween; v1 has a single damma. On the zoom (p. 46) its mark is the same glyph as on «شَابٌّ» (p. 47, certainly tanween) and on «يَدُلُّ» (single damma): this font sets the two alike, so the print agrees with the tanween."
+   ],
+   [
+    "مِنْ حينِ نُهيَ",
+    "مِنْ حِينَ نُهيَ",
+    "variant",
+    "The print has «حِينَ» with a fatha on the nun (zoomed twice, p. 47), built on the fatha before the verb; v1's «حينِ», in the genitive after «من», is also good Arabic."
+   ],
+   [
+    "الَّذي ذَكَرَ مِمَّا",
+    "الَّذي ذُكِرَ مِمَّا",
+    "variant",
+    "The print has the passive «ذُكِرَ», a damma on the dhal and a kasra under the kaf (zoomed, p. 50); v1 has the active «ذَكَرَ», which fits al-Bukhari's «الذي ذكر الله». Both are good Arabic."
+   ]
+  ],
+  "misprint": [
+   [
+    "مِنَ حِينَ",
+    "مِنْ حِينَ",
+    "The print sets a fatha on the nun of «من» before «حين» (zoomed, p. 47); «مِنَ» takes a fatha only before a connecting alif, so v1's «مِنْ» stays."
+   ]
+  ],
+  "note": "p. 47: the print has «فَوْجاً» once, where v1 has «فَوْجاً فَوْجاً»; it is taken as the book's wording, like the phrase h. 299 prints once (rule 1). The verb after it has one nun or two («يهنئوني» / «يهنئونني»), and the zoom can't tell which, so v1's «يُهَنِّئُونني» stays."
+ },
+ "22": {
+  "read": "2026-11-15"
+ },
+ "23": {
+  "read": "2026-11-15"
+ },
+ "24": {
+  "read": "2026-11-15"
+ },
+ "25": {
+  "read": "2026-11-15"
+ },
+ "26": {
+  "read": "2026-11-15"
+ },
+ "27": {
+  "read": "2026-11-15"
+ },
+ "28": {
+  "read": "2026-11-15"
+ },
+ "29": {
+  "read": "2026-11-15"
+ },
+ "30": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "ضعِ السَّهْمَ في كَبدِ",
+    "ضعِ السَّهْمَ فِي كَبدِ",
+    "marks",
+    "The print has «فِي كَبِدِ» with a kasra under the fa (zoomed, p. 64); the text had a bare «في»."
+   ],
+   [
+    "فجَمَع النَّاس في صَعيدٍ",
+    "فجَمَع النَّاس فِي صَعيدٍ",
+    "marks",
+    "The print has «فَجَمَعَ ٱلنَّاسَ فِي صَعِيدٍ» with a kasra under the fa (zoomed, p. 64); the text had a bare «في»."
+   ],
+   [
+    "وضَعَ السَّهمَ في كبِدِ",
+    "وضَعَ السَّهمَ فِي كبِدِ",
+    "marks",
+    "The print has «وَضَعَ ٱلسَّهْمَ فِي كَبِدِ» with a kasra under the fa (zoomed, p. 64); the text had a bare «في»."
+   ],
+   [
+    "السَّهمُ في صُدْغِهِ",
+    "السَّهمُ فِي صُدْغِهِ",
+    "marks",
+    "The print has «فَوَقَعَ ٱلسَّهْمُ فِي صُدْغِهِ» with a kasra under the fa (zoomed, p. 64); the text had a bare «في»."
+   ],
+   [
+    "يدَهُ في صُدْغِهِ",
+    "يدَهُ فِي صُدْغِهِ",
+    "marks",
+    "The print has «يَدَهُ فِي صُدْغِهِ» with a kasra under the fa (zoomed, p. 64); the text had a bare «في»."
+   ],
+   [
+    "الشُّقوقُ في الأرْضِ",
+    "الشُّقوقُ فِي الأرْضِ",
+    "marks",
+    "The print has «الشُّقُوقُ فِي الْأَرْضِ» with a kasra under the fa (zoomed, p. 65); the text had a bare «في»."
+   ]
+  ]
+ },
+ "31": {
+  "read": "2026-11-15"
+ },
+ "32": {
+  "read": "2026-11-15"
+ },
+ "33": {
+  "read": "2026-11-15"
+ },
+ "34": {
+  "read": "2026-11-15"
+ },
+ "35": {
+  "read": "2026-11-15"
+ },
+ "36": {
+  "read": "2026-11-15"
+ },
+ "37": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "حَتَّى الشَّوْكَةُ",
+    "حَتَّى الشَّوْكَةَ",
+    "variant",
+    "The print has «حَتَّى الشَّوْكَةَ» with a fatha on the ta marbuta (zoomed, p. 70), against the damma of «يُشاكُها» beside it; the text had «الشَّوْكَةُ». Both are good Arabic after «حتى»."
+   ]
+  ]
+ },
+ "38": {
+  "read": "2026-11-15"
+ },
+ "39": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "وضَبطُوا «يُصِب»",
+    "وضَبطُوا «يُصَبْ»",
+    "variant",
+    "In Nawawi's gloss the print has «يُصَبْ», with a fatha on the sad (zoomed, p. 71), while the matn above has «يُصِبْ»; the text had «يُصِب» in the gloss. The gloss names both readings."
+   ]
+  ]
+ },
+ "40": {
+  "read": "2026-11-15"
+ },
+ "41": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "حَضْرمْوتَ",
+    "حَضْرَمَوْتَ",
+    "v1",
+    "The print has «حَضْرَمَوْتَ» (zoomed, p. 72); the text had «حَضْرمْوتَ», with a sukun on the mim, an impossible form."
+   ]
+  ]
+ },
+ "42": {
+  "read": "2026-11-15"
+ },
+ "43": {
+  "read": "2026-11-15"
+ },
+ "44": {
+  "read": "2026-11-15"
+ },
+ "45": {
+  "read": "2026-11-15"
+ },
+ "46": {
+  "read": "2026-11-15"
+ },
+ "47": {
+  "read": "2026-11-15"
+ },
+ "48": {
+  "read": "2026-11-15"
+ },
+ "49": {
+  "read": "2026-11-15"
+ },
+ "50": {
+  "read": "2026-11-15"
+ },
+ "51": {
+  "read": "2026-11-15"
+ },
+ "52": {
+  "read": "2026-11-15"
+ },
+ "53": {
+  "read": "2026-11-15"
+ },
+ "54": {
+  "read": "2026-11-15"
+ },
+ "55": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "رَوَاهُ التِّرْمذي وقالَ:",
+    "رَوَاهُ التِّرْمذيُّ وقالَ:",
+    "v1",
+    "The print doubles the nisba ya, «التِّرْمِذِيُّ» with a shadda and damma on it (zoomed, p. 86); the text left it bare in a word it marks in part (rule 2, shadda). The ta keeps v1's kasra (rule 2)."
+   ]
+  ]
+ },
+ "56": {
+  "read": "2026-11-15"
+ },
+ "57": {
+  "read": "2026-11-15"
+ },
+ "58": {
+  "read": "2026-11-15"
+ },
+ "59": {
+  "read": "2026-11-15"
+ },
+ "60": {
+  "read": "2026-11-15"
+ },
+ "61": {
+  "read": "2026-11-15"
+ },
+ "62": {
+  "read": "2026-11-15",
+  "misprint": [
+   [
+    "احْفَظِ اللهِ تَجِدْهُ أَمَامَكَ",
+    "احْفَظِ اللَّهَ تَجِدْهُ أَمَامَكَ",
+    "In the second narration (p. 95) the print sets a kasra under the ha of «الله», the object of «احفظ», which must be accusative; the first narration on p. 94 has «احْفَظِ اللهَ» with a fatha (zoomed)."
+   ]
+  ]
+ },
+ "63": {
+  "read": "2026-11-15"
+ },
+ "64": {
+  "read": "2026-11-15"
+ },
+ "65": {
+  "read": "2026-11-15"
+ },
+ "66": {
+  "read": "2026-11-15"
+ },
+ "67": {
+  "read": "2026-11-15"
+ },
+ "68": {
+  "read": "2026-11-15"
+ },
+ "69": {
+  "read": "2026-11-15"
+ },
+ "70": {
+  "read": "2026-11-15"
+ },
+ "71": {
+  "read": "2026-11-15"
+ },
+ "72": {
+  "read": "2026-11-15"
+ },
+ "73": {
+  "read": "2026-11-15"
+ },
+ "74": {
+  "read": "2026-11-15"
+ },
+ "75": {
+  "read": "2026-11-15"
+ },
+ "76": {
+  "read": "2026-11-15"
+ },
+ "77": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "عَن أبي هُرَيْرةَ",
+    "عَن أَبِي هُرَيْرةَ",
+    "marks",
+    "The print has «أَبِي» (zoomed, p. 111); v1 leaves it bare."
+   ]
+  ]
+ },
+ "78": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "على شَجرةٍ",
+    "عَلى شَجرةٍ",
+    "marks",
+    "The print has «عَلى» with a fatha on the ain (zoomed, p. 112); v1 leaves it bare. Its «في» are bare in the print too, so they stay."
+   ]
+  ]
+ },
+ "79": {
+  "read": "2026-11-15"
+ },
+ "80": {
+  "read": "2026-11-15"
+ },
+ "81": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "يا أبا بكرٍ",
+    "يا أَبا بكرٍ",
+    "marks",
+    "The print has «يا أَبا» (zoomed, p. 115): «يا» bare, a fatha on the hamza of «أبا»; v1 leaves «أبا» bare."
+   ]
+  ]
+ },
+ "82": {
+  "read": "2026-11-15"
+ },
+ "83": {
+  "read": "2026-11-15"
+ },
+ "84": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "رضي اللَّهُ عنه قال:",
+    "رَضِيَ اللَّهُ عَنْهُ قالَ:",
+    "marks",
+    "The print has «رَضِيَ اللهُ عَنْهُ قالَ» (zoomed, p. 118); v1 leaves the three words bare."
+   ],
+   [
+    "فقال:",
+    "فَقالَ:",
+    "marks",
+    "The print has «فَقالَ» (zoomed, p. 118); v1 leaves it bare."
+   ],
+   [
+    "رواه التِّرْمذيُّ بإسناد صحيح على شرط",
+    "رَوَاهُ التِّرْمذيُّ بِإسْنادٍ صَحِيحٍ عَلى شَرْطِ",
+    "marks",
+    "The print has «رَوَاهُ ... بِإسْنادِ صَحِيح عَلى شَرْطِ» (zoomed, p. 118); v1 leaves these words bare. The tanween is written for the print's single kasra (rule 2)."
+   ]
+  ]
+ },
+ "85": {
+  "read": "2026-11-15"
+ },
+ "86": {
+  "read": "2026-11-15"
+ },
+ "87": {
+  "read": "2026-11-15"
+ },
+ "88": {
+  "read": "2026-11-15"
+ },
+ "89": {
+  "read": "2026-11-15"
+ },
+ "90": {
+  "read": "2026-11-15"
+ },
+ "91": {
+  "read": "2026-11-15"
+ },
+ "92": {
+  "read": "2026-11-15"
+ },
+ "93": {
+  "read": "2026-11-15"
+ },
+ "94": {
+  "read": "2026-11-15"
+ },
+ "95": {
+  "read": "2026-11-15"
+ },
+ "96": {
+  "read": "2026-11-15"
+ },
+ "97": {
+  "read": "2026-11-15"
+ },
+ "98": {
+  "read": "2026-11-15"
+ },
+ "99": {
+  "read": "2026-11-15"
+ },
+ "100": {
+  "read": "2026-11-15"
+ },
+ "101": {
+  "read": "2026-11-15"
+ },
+ "102": {
+  "read": "2026-11-15"
+ },
+ "103": {
+  "read": "2026-11-15"
+ },
+ "104": {
+  "read": "2026-11-15"
+ },
+ "105": {
+  "read": "2026-11-15"
+ },
+ "106": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "أوَ غَيْرَ",
+    "أوَغَيْرَ",
+    "v1",
+    "The print has «أَوَغَيْرَ ذَلِكَ» as one word (zoomed, p. 136), as sunnah.com does; v1 splits the conjunction waw from «غير»."
+   ]
+  ]
+ },
+ "107": {
+  "read": "2026-11-15"
+ },
+ "108": {
+  "read": "2026-11-15"
+ },
+ "109": {
+  "read": "2026-11-15"
+ },
+ "110": {
+  "read": "2026-11-15"
+ },
+ "111": {
+  "read": "2026-11-15"
+ },
+ "112": {
+  "read": "2026-11-15"
+ },
+ "113": {
+  "read": "2026-11-15"
+ },
+ "114": {
+  "read": "2026-11-15"
+ },
+ "115": {
+  "read": "2026-11-15"
+ },
+ "116": {
+  "read": "2026-11-15"
+ },
+ "117": {
+  "read": "2026-11-15"
+ },
+ "118": {
+  "read": "2026-11-15"
+ },
+ "119": {
+  "read": "2026-11-15"
+ },
+ "120": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "تَكبِيرةٍ صَدَقَةً،",
+    "تَكبِيرةٍ صَدَقَةٌ،",
+    "variant",
+    "The print has «تَكْبِيرَةٍ صَدَقَةٌ» with a double damma (zoomed, p. 150), the same mark as the certain «بِالْمَعْرُوفِ صَدَقَةٌ» below it, and a double fatha on the other three «صَدَقَةً»; Muslim has «صَدَقَةٌ». The text had «صَدَقَةً»."
+   ]
+  ],
+  "note": "The print has «صَدَقَةٌ» after «تكبيرة» only, and «صَدَقَةً» after «تسبيحة», «تحميدة» and «تهليلة» (zoomed, p. 150). Whether its «وكل» before «تكبيرة» has a damma or a kasra can't be told, since this print sets a kasra under the shadda, where it looks like a damma; v1's «وكُلِّ» stays."
+ },
+ "121": {
+  "read": "2026-11-15"
+ },
+ "122": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "وبِكُلِّ خَطْوَةٍ",
+    "وبِكُلِّ خُطْوَةٍ",
+    "variant",
+    "The print has «خُطْوَةٍ» with a damma on the kha (zoomed, p. 152), the same mark as the damma of «بِكُلِّ» beside it; the text had «خَطْوَةٍ». Both readings of the word are known."
+   ]
+  ]
+ },
+ "123": {
+  "read": "2026-11-15"
+ },
+ "124": {
+  "read": "2026-11-15"
+ },
+ "125": {
+  "read": "2026-11-15"
+ },
+ "126": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ عَلَيْهِ.",
+    "متَّفقٌ عَلَيْهِ.",
+    "v1",
+    "The print has «مُتَّفَقٌ عَلَيْهِ» with a shadda on the ta (zoomed, p. 155); the text left it bare (rule 2, shadda)."
+   ]
+  ]
+ },
+ "127": {
+  "read": "2026-11-15"
+ },
+ "128": {
+  "read": "2026-11-15"
+ },
+ "129": {
+  "read": "2026-11-15"
+ },
+ "130": {
+  "read": "2026-11-15"
+ },
+ "131": {
+  "read": "2026-11-15"
+ },
+ "132": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ عَلَيْهِ",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 159); v1's «متفقٌ» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "133": {
+  "read": "2026-11-15"
+ },
+ "134": {
+  "read": "2026-11-15"
+ },
+ "135": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "ولَا دابةٌ ولَا طَيرٌ",
+    "ولَا دابَّةٌ ولَا طَيرٌ",
+    "v1",
+    "The print has «دَابَّةٌ» with a shadda on the ba (zoomed, p. 160), as in the next narration's «دابَّةٌ»; v1's «دابةٌ» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "136": {
+  "read": "2026-11-15"
+ },
+ "137": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "يسُرُّنِي أَن منْزِلِي",
+    "يسُرُّنِي أَنَّ منْزِلِي",
+    "v1",
+    "The print has «أَنَّ مَنْزِلِي» with a shadda on the nun (zoomed, p. 162); v1's «أَن» reads as the particle «أنْ» (rule 2, shadda)."
+   ]
+  ]
+ },
+ "138": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "أَبِي محمدٍ",
+    "أَبِي محمَّدٍ",
+    "v1",
+    "The print has «مُحَمَّدٍ» with a shadda on the second mim (zoomed, p. 162); v1's «محمدٍ» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "139": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ عَلَيْهِ",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 163); v1's «متفقٌ» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "140": {
+  "read": "2026-11-15"
+ },
+ "141": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ عَلَيْهِ",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 165); v1's «متفقٌ» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "142": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "أَن النَّبِيَّ",
+    "أَنَّ النَّبِيَّ",
+    "v1",
+    "The print has «أَنَّ النَّبِيَّ» with a shadda on the nun (zoomed, p. 166); v1's «أَن» lacks it (rule 2, shadda)."
+   ],
+   [
+    "متفقٌ عَلَيْهِ",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 166); v1's «متفقٌ» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "143": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "لكِني أَصُومُ",
+    "لكِنِّي أَصُومُ",
+    "v1",
+    "The print has «لٰكِنِّي» with a shadda on the nun (zoomed, p. 167), as al-Bukhari has it; v1's «لكِني» lacks it (rule 2, shadda)."
+   ]
+  ]
+ },
+ "144": {
+  "read": "2026-11-15"
+ },
+ "145": {
+  "read": "2026-11-15"
+ },
+ "146": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ عَلَيْهِ",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ عَلَيْهِ» with a shadda on the ta (zoomed, p. 169); v1's «متفقٌ» left it bare (rule 2, shadda)."
+   ]
+  ]
+ },
+ "147": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ عَلَيْهِ",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ عَلَيْهِ» with a shadda on the ta (zoomed, p. 170); v1's «متفقٌ» left it bare (rule 2, shadda)."
+   ]
+  ]
+ },
+ "148": {
+  "read": "2026-11-15"
+ },
+ "149": {
+  "read": "2026-11-15"
+ },
+ "150": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "فَإِنكَ لا",
+    "فَإِنَّكَ لا",
+    "v1",
+    "The print has «فَإِنَّكَ لا تستطيع» with a shadda on the nun (zoomed, p. 172); v1's «فَإِنكَ» left it bare and read as «فإنْ» (rule 2, shadda)."
+   ],
+   [
+    "وفِي روايةٍ: لَا صَامَ",
+    "وفِي روايةٍ: «لَا صَامَ",
+    "v1",
+    "The print opens the quotation «لا صام من صام الأبد!» with « (zoomed, p. 173); v1 has only the closing », so the missing half is added (rule 4)."
+   ],
+   [
+    "فارقَ علَيهِ النَّبِي",
+    "فارقَ علَيهِ النَّبِيَّ",
+    "v1",
+    "The print has «فَارَقَ عَلَيْهِ النَّبِيَّ» with a shadda and fatha on the ya (zoomed, p. 174); v1's «النَّبِي» left it bare (rule 2, shadda)."
+   ]
+  ],
+  "misprint": [
+   [
+    "كُنَّتَهُ",
+    "كَنَّتهُ",
+    "The print sets a damma on the kaf of «كنّته» (zoomed, p. 174). The word for a son's wife, as the book's own gloss «أي امرأة ولده» explains it, is «كَنَّة», with a fatha; «كُنَّة» is another word (an eave). v1's «كَنَّتهُ» stays."
+   ]
+  ]
+ },
+ "151": {
+  "read": "2026-11-15"
+ },
+ "152": {
+  "read": "2026-11-15"
+ },
+ "153": {
+  "read": "2026-11-15"
+ },
+ "154": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "كأَنما",
+    "كأَنَّما",
+    "v1",
+    "The print has «كَأَنَّما» with a shadda on the nun (zoomed, p. 178); v1 marks the word in part and leaves the nun bare."
+   ]
+  ]
+ },
+ "155": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 179); v1 marks the word in part and leaves the ta bare."
+   ]
+  ]
+ },
+ "156": {
+  "read": "2026-11-15"
+ },
+ "157": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 181); v1 marks the word in part and leaves the ta bare."
+   ]
+  ]
+ },
+ "158": {
+  "read": "2026-11-15"
+ },
+ "159": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "أَن رَسُولَ",
+    "أَنَّ رَسُولَ",
+    "v1",
+    "The print has «أَنَّ رَسُولَ» with a shadda on the nun (zoomed, p. 183); v1's «أَن» leaves it bare, which reads otherwise."
+   ]
+  ]
+ },
+ "160": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "عن أَبِي مسلمٍ",
+    "عَنْ أَبِي مسلمٍ",
+    "marks",
+    "The print has «عَنْ» (zoomed, p. 183); v1 leaves it bare."
+   ],
+   [
+    "بن الأَكْوَعِ رضي اللَّه عنه،",
+    "بْنِ الأَكْوَعِ رَضِيَ اللَّه عَنْهُ،",
+    "marks",
+    "The print has «ٱبْنِ ٱلْأَكْوَعِ - رَضِيَ اللهُ عَنْهُ» (zoomed, p. 183); v1 leaves «بن», «رضي» and «عنه» bare."
+   ],
+   [
+    "لا أَسْتَطِيعُ",
+    "لَا أَسْتَطِيعُ",
+    "marks",
+    "The print has «لاَ أَسْتَطِيعُ» with a fatha on the lam (zoomed, p. 183); v1 leaves «لا» bare."
+   ],
+   [
+    "لا اسْتَطَعْتَ",
+    "لَا اسْتَطَعْتَ",
+    "marks",
+    "The print has «لَا ٱسْتَطَعْتَ» with a fatha on the lam (zoomed, p. 183); v1 leaves «لا» bare."
+   ],
+   [
+    "رواه مسلم.",
+    "رَوَاهُ مُسْلِمٌ.",
+    "marks",
+    "The print has «رَوَاهُ مُسْلِمٌ» (zoomed, p. 183); v1 leaves both words bare."
+   ]
+  ]
+ },
+ "161": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 184); v1 marks the word in part and leaves the ta bare."
+   ],
+   [
+    "يُسَوي بِهَا",
+    "يُسَوِّي بِهَا",
+    "v1",
+    "The print has «يُسَوِّي بِها» with a shadda on the waw (zoomed, p. 184), as earlier in the same line; v1 marks the word in part and leaves the waw bare."
+   ]
+  ]
+ },
+ "162": {
+  "read": "2026-11-15"
+ },
+ "163": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "طَيبَةٌ،",
+    "طَيِّبَةٌ،",
+    "v1",
+    "The print doubles the ya, «طَيِّبَةٌ» (zoomed, p. 185); v1 left it bare in a word it marks in part."
+   ],
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 185); v1 left it bare."
+   ],
+   [
+    "بِضم",
+    "بِضمِّ",
+    "v1",
+    "The print has «بِضَمِّ» with a shadda on the mim (zoomed, p. 185); v1 left it bare, and the genitive takes the kasra."
+   ]
+  ]
+ },
+ "164": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "تَفَلَّتُونَ",
+    "تُفْلِتُونَ",
+    "variant",
+    "The print has «تُفْلِتُونَ», a damma on the ta, a sukun on the fa and a single kasra under the lam (zoomed, p. 186); v1 has «تَفَلَّتُونَ», the other known reading."
+   ]
+  ]
+ },
+ "165": {
+  "read": "2026-11-15"
+ },
+ "166": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 188); v1 left it bare."
+   ]
+  ]
+ },
+ "167": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 189); v1 left it bare."
+   ],
+   [
+    "أُحَدِّثُكَ أَن",
+    "أُحَدِّثُكَ أَنَّ",
+    "v1",
+    "The print has «أَنَّ رَسُولَ اللهِ» with a shadda on the nun (zoomed, p. 189); v1's «أَن» left it bare."
+   ]
+  ]
+ },
+ "168": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 189); v1 left it bare."
+   ]
+  ]
+ },
+ "169": {
+  "read": "2026-11-15"
+ },
+ "170": {
+  "read": "2026-11-15"
+ },
+ "171": {
+  "read": "2026-11-15",
+  "note": ""
+ },
+ "172": {
+  "read": "2026-11-15"
+ },
+ "173": {
+  "read": "2026-11-15"
+ },
+ "174": {
+  "read": "2026-11-15"
+ },
+ "175": {
+  "read": "2026-11-15"
+ },
+ "176": {
+  "read": "2026-11-15"
+ },
+ "177": {
+  "read": "2026-11-15",
+  "misprint": [
+   [
+    "أَيُّهُمْ يُعْصاها",
+    "أَيُّهُمْ يُعْطَاهَا",
+    "The first «يعطاها» (p. 200, line 2) is printed without the upright of the ta (zoomed: the loop is followed straight by the alif, as in a sad), so it reads «يُعْصاها»; the next line prints «أَنْ يُعْطاها» with the upright, and v1, sunnah.com and Muslim have «يعطاها»."
+   ]
+  ]
+ },
+ "178": {
+  "read": "2026-11-15"
+ },
+ "179": {
+  "read": "2026-11-15"
+ },
+ "180": {
+  "read": "2026-11-15"
+ },
+ "181": {
+  "read": "2026-11-15"
+ },
+ "182": {
+  "read": "2026-11-15"
+ },
+ "183": {
+  "read": "2026-11-15"
+ },
+ "184": {
+  "read": "2026-11-15"
+ },
+ "185": {
+  "read": "2026-11-15"
+ },
+ "186": {
+  "read": "2026-11-15"
+ },
+ "187": {
+  "read": "2026-11-15"
+ },
+ "188": {
+  "read": "2026-11-15"
+ },
+ "189": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "الذينَ في أَسْفَلِها",
+    "الذينَ فِي أَسْفَلِها",
+    "marks",
+    "The print has «فِي أَسْفَلِها» with a kasra under the fa (zoomed, p. 211); the text left «في» bare."
+   ],
+   [
+    "خَرَقْنَا في نَصِيبِنا",
+    "خَرَقْنَا فِي نَصِيبِنا",
+    "marks",
+    "The print has «فِي نَصِيبِنا» with a kasra under the fa (zoomed, p. 211); the text left «في» bare."
+   ],
+   [
+    "«القَائمُ في حُدودِ",
+    "«القَائمُ فِي حُدودِ",
+    "marks",
+    "The gloss prints «القائِمُ فِي حُدُودِ» with a kasra under the fa (zoomed, p. 211); the text left «في» bare. The first «في حدود» in the matn (p. 210) is bare in the print too and stays bare."
+   ]
+  ]
+ },
+ "190": {
+  "read": "2026-11-15"
+ },
+ "191": {
+  "read": "2026-11-15"
+ },
+ "192": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "وَالْجُلُوسَ في الطرُقاتِ",
+    "وَالْجُلُوسَ فِي الطرُقاتِ",
+    "marks",
+    "The print has «فِي الطُّرُقاتِ» with a kasra under the fa (zoomed, p. 213); the text left «في» bare."
+   ]
+  ]
+ },
+ "193": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "ذَهَبٍ في يَد",
+    "ذَهَبٍ فِي يَد",
+    "marks",
+    "The print has «فِي يَدِ رَجُلٍ» with a kasra under the fa (zoomed, p. 214); the text left «في» bare."
+   ],
+   [
+    "فَيجْعلهَا في يَدِهِ",
+    "فَيجْعلهَا فِي يَدِهِ",
+    "marks",
+    "The print has «فَيَجْعَلُها فِي يَدِهِ» with a kasra under the fa (zoomed, p. 214); the text left «في» bare."
+   ]
+  ]
+ },
+ "194": {
+  "read": "2026-11-15"
+ },
+ "195": {
+  "read": "2026-11-15"
+ },
+ "196": {
+  "read": "2026-11-15"
+ },
+ "197": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "رِجْلَهُ في الغَرْزِ",
+    "رِجْلَهُ فِي الغَرْزِ",
+    "marks",
+    "The print has «فِي ٱلْغَرْزِ» with a kasra under the fa (zoomed, p. 216); v1 leaves «في» bare."
+   ]
+  ]
+ },
+ "198": {
+  "read": "2026-11-15"
+ },
+ "199": {
+  "read": "2026-11-15"
+ },
+ "200": {
+  "read": "2026-11-15"
+ },
+ "201": {
+  "read": "2026-11-15"
+ },
+ "202": {
+  "read": "2026-11-15"
+ },
+ "203": {
+  "read": "2026-11-15"
+ },
+ "204": {
+  "read": "2026-11-15"
+ },
+ "205": {
+  "read": "2026-11-15"
+ },
+ "206": {
+  "read": "2026-11-15"
+ },
+ "207": {
+  "read": "2026-11-15"
+ },
+ "208": {
+  "read": "2026-11-15"
+ },
+ "209": {
+  "read": "2026-11-15"
+ },
+ "210": {
+  "read": "2026-11-15"
+ },
+ "211": {
+  "read": "2026-11-15"
+ },
+ "212": {
+  "read": "2026-11-15"
+ },
+ "213": {
+  "read": "2026-11-15"
+ },
+ "214": {
+  "read": "2026-11-15"
+ },
+ "215": {
+  "read": "2026-11-15"
+ },
+ "216": {
+  "read": "2026-11-15"
+ },
+ "217": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "فَلْيَجِئْ",
+    "فَلْيَجِيءْ",
+    "v1",
+    "The print has «فَلْيَجِىءْ» with the ya (zoomed, p. 239), as v1's «فلْيجِيء» has; the first reading's fix had dropped the ya, a letter the print and v1 share."
+   ]
+  ]
+ },
+ "218": {
+  "read": "2026-11-15"
+ },
+ "219": {
+  "read": "2026-11-15"
+ },
+ "220": {
+  "read": "2026-11-15"
+ },
+ "221": {
+  "read": "2026-11-15"
+ },
+ "222": {
+  "read": "2026-11-15"
+ },
+ "223": {
+  "read": "2026-11-15"
+ },
+ "224": {
+  "read": "2026-11-15"
+ },
+ "225": {
+  "read": "2026-11-15"
+ },
+ "226": {
+  "read": "2026-11-15"
+ },
+ "227": {
+  "read": "2026-11-15"
+ },
+ "228": {
+  "read": "2026-11-15"
+ },
+ "229": {
+  "read": "2026-11-15"
+ },
+ "230": {
+  "read": "2026-11-15"
+ },
+ "231": {
+  "read": "2026-11-15"
+ },
+ "232": {
+  "read": "2026-11-15"
+ },
+ "233": {
+  "read": "2026-11-15"
+ },
+ "234": {
+  "read": "2026-11-15"
+ },
+ "235": {
+  "read": "2026-11-15"
+ },
+ "236": {
+  "read": "2026-11-15"
+ },
+ "237": {
+  "read": "2026-11-15"
+ },
+ "238": {
+  "read": "2026-11-15"
+ },
+ "239": {
+  "read": "2026-11-15"
+ },
+ "240": {
+  "read": "2026-11-15"
+ },
+ "241": {
+  "read": "2026-11-15"
+ },
+ "242": {
+  "read": "2026-11-15"
+ },
+ "243": {
+  "read": "2026-11-15"
+ },
+ "244": {
+  "read": "2026-11-15",
+  "note": "v1's text for this hadith was another hadith («كُلُّ سُلامى مِنَ النَّاسِ عَلَيْهِ صَدَقَةٌ…», with its gloss) under this hadith's own title. It was replaced with the book's h. 244 (p. 256), and the second reading found the text as the print has it. Its speaker roles were set by hand, so the roles pass should look at them."
+ },
+ "245": {
+  "read": "2026-11-15"
+ },
+ "246": {
+  "read": "2026-11-15"
+ },
+ "247": {
+  "read": "2026-11-15"
+ },
+ "248": {
+  "read": "2026-11-15"
+ },
+ "249": {
+  "read": "2026-11-15"
+ },
+ "250": {
+  "read": "2026-11-15"
+ },
+ "251": {
+  "read": "2026-11-15",
+  "note": "«يُرَخِّصُ»: Muslim has «يُرَخَّصُ»; on the zoom (p. 261) the shadda and its vowel are one blot, like «جَوَّاظٍ» on p. 264, so the print's vowel can't be told. v1's kasra is kept."
+ },
+ "252": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "وعن عائشة رضي الله عنها قالت: سمِع رسول الله ﷺ صَوْتَ",
+    "وعَنْ عائِشَةَ رَضِيَ اللهُ عَنْها قالَتْ: سمِع رَسُولُ اللهِ ﷺ صَوْتَ",
+    "marks",
+    "The print has «وعَنْ عائِشَةَ رَضِيَ اللهُ عَنْها قالَتْ: سَمِعَ رَسُولُ اللهِ» (zoomed, p. 262); v1 leaves these words bare."
+   ],
+   [
+    "واللهِ لا أَفعَلُ",
+    "واللهِ لاَ أَفعَلُ",
+    "marks",
+    "The print has «لاَ أَفْعَلُ» (zoomed, p. 262); v1's «لا» is bare."
+   ],
+   [
+    "رسولُ الله ﷺ فقال: «أَيْنَ الْمُتَأَلِّي عَلَى الله لا يَفْعَلُ",
+    "رسولُ اللهِ ﷺ فَقالَ: «أَيْنَ الْمُتَأَلِّي عَلَى اللهِ لاَ يَفْعَلُ",
+    "marks",
+    "The print has «رَسُولُ اللهِ ﷺ فَقالَ» and «عَلى اللهِ لاَ يَفْعَلُ» (zoomed, p. 262); v1 leaves «الله», «فقال» and «لا» bare."
+   ],
+   [
+    "فقال: أَنَا يَا",
+    "فَقالَ: أَنَا يَا",
+    "marks",
+    "The print has «فَقالَ : أَنا يا» (zoomed, p. 262); v1's «فقال» is bare."
+   ],
+   [
+    "متفقٌ عليه.\nمعنى",
+    "متَّفقٌ عَلَيْهِ.\nمَعْنَى",
+    "v1",
+    "The print has «مُتَّفَقٌ عَلَيْهِ . مَعْنَى» (zoomed, p. 262): the shadda v1 lacks in «متفقٌ», and the marks of the bare «عليه» and «معنى»."
+   ]
+  ]
+ },
+ "253": {
+  "read": "2026-11-15"
+ },
+ "254": {
+  "read": "2026-11-15"
+ },
+ "255": {
+  "read": "2026-11-15"
+ },
+ "256": {
+  "read": "2026-11-15"
+ },
+ "257": {
+  "read": "2026-11-15"
+ },
+ "258": {
+  "read": "2026-11-15"
+ },
+ "259": {
+  "read": "2026-11-15"
+ },
+ "260": {
+  "read": "2026-11-15"
+ },
+ "261": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "حاذِقَةٍ نَفِيسةٌ",
+    "حاذِقَةٍ نَفِيسَةٍ",
+    "v1",
+    "The print has «أَيْ حاذِقَةٍ نَفِيسَةٍ» (zoomed, p. 270, last line), genitive like «دابَّةٍ فَارِهَةٍ» it explains; v1 has «نَفِيسةٌ», and the first reading fixed only «حاذِقَةٍ»."
+   ]
+  ]
+ },
+ "262": {
+  "read": "2026-11-15"
+ },
+ "263": {
+  "read": "2026-11-15"
+ },
+ "264": {
+  "read": "2026-11-15"
+ },
+ "265": {
+  "read": "2026-11-15"
+ },
+ "266": {
+  "read": "2026-11-15"
+ },
+ "267": {
+  "read": "2026-11-15"
+ },
+ "268": {
+  "read": "2026-11-15"
+ },
+ "269": {
+  "read": "2026-11-15"
+ },
+ "270": {
+  "read": "2026-11-15"
+ },
+ "271": {
+  "read": "2026-11-15"
+ },
+ "272": {
+  "read": "2026-11-15"
+ },
+ "273": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "في صحيحِهِ",
+    "فِي صحيحِهِ",
+    "marks",
+    "The print has «فِي» with a kasra under the fa, at the end of the line before «صحيحه» (zoomed, p. 279); v1 left it bare."
+   ]
+  ]
+ },
+ "274": {
+  "read": "2026-11-15"
+ },
+ "275": {
+  "read": "2026-11-15"
+ },
+ "276": {
+  "read": "2026-11-15"
+ },
+ "277": {
+  "read": "2026-11-15"
+ },
+ "278": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "أَن لا يُوطِئْنَ",
+    "أَن لَا يُوطِئْنَ",
+    "marks",
+    "The print has «أَلَّا يُوطِئْنَ», a fatha on the lam (zoomed, p. 283); v1's spelling «أن لا» stays (rule 4), so its bare «لا» gets the fatha."
+   ]
+  ]
+ },
+ "279": {
+  "read": "2026-11-15"
+ },
+ "280": {
+  "read": "2026-11-15"
+ },
+ "281": {
+  "read": "2026-11-15"
+ },
+ "282": {
+  "read": "2026-11-15"
+ },
+ "283": {
+  "read": "2026-11-15"
+ },
+ "284": {
+  "read": "2026-11-15"
+ },
+ "285": {
+  "read": "2026-11-15"
+ },
+ "286": {
+  "read": "2026-11-15"
+ },
+ "287": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "وعن أبي هريرة رضي اللهُ عنه عن النبي ﷺ قال:",
+    "وعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ عَنِ النَّبِيِّ ﷺ قالَ:",
+    "marks",
+    "The print has «وعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ عَنِ النَّبِيِّ ﷺ قالَ» (zoomed, p. 289); v1 leaves these words bare."
+   ],
+   [
+    "رواه الترمذي وقال: حديث حسن صحيح.",
+    "رَوَاهُ التِّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ.",
+    "marks",
+    "The print has «رَوَاهُ التِّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ» (zoomed, p. 289; «التِّرْمِذِيُّ» as rule 2 keeps it); v1 leaves these words bare."
+   ]
+  ]
+ },
+ "288": {
+  "read": "2026-11-15"
+ },
+ "289": {
+  "read": "2026-11-15"
+ },
+ "290": {
+  "read": "2026-11-15"
+ },
+ "291": {
+  "read": "2026-11-15"
+ },
+ "292": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "وَيُقَالُ أبو",
+    "وَيُقَالُ أَبُو",
+    "marks",
+    "The print has «ويُقالُ أَبُو عَبْدِ الرَّحْمٰنِ» (zoomed, p. 291); v1 leaves «أبو» bare."
+   ]
+  ]
+ },
+ "293": {
+  "read": "2026-11-15"
+ },
+ "294": {
+  "read": "2026-11-15"
+ },
+ "295": {
+  "read": "2026-11-15"
+ },
+ "296": {
+  "read": "2026-11-15"
+ },
+ "297": {
+  "read": "2026-11-15"
+ },
+ "298": {
+  "read": "2026-11-15"
+ },
+ "299": {
+  "read": "2026-11-15",
+  "note": "p. 295: the print has «بَخٍ ذٰلِكَ مالٌ رَابِحٌ!» once, where v1, al-Bukhari (1469) and sunnah.com repeat «ذلك مال رابح»; it is taken as the book's wording (variant, rule 1). The repeat is in the collections, so it is the owner's call if the print dropped it."
+ },
+ "300": {
+  "read": "2026-11-15"
+ },
+ "301": {
+  "read": "2026-11-15"
+ },
+ "302": {
+  "read": "2026-11-15"
+ },
+ "303": {
+  "read": "2026-11-15"
+ },
+ "304": {
+  "read": "2026-11-15"
+ },
+ "305": {
+  "read": "2026-11-15"
+ },
+ "306": {
+  "read": "2026-11-15"
+ },
+ "307": {
+  "read": "2026-11-15"
+ },
+ "308": {
+  "read": "2026-11-15"
+ },
+ "309": {
+  "read": "2026-11-15"
+ },
+ "310": {
+  "read": "2026-11-15"
+ },
+ "311": {
+  "read": "2026-11-15"
+ },
+ "312": {
+  "read": "2026-11-15"
+ },
+ "313": {
+  "read": "2026-11-15"
+ },
+ "314": {
+  "read": "2026-11-15"
+ },
+ "315": {
+  "read": "2026-11-15"
+ },
+ "316": {
+  "read": "2026-11-15"
+ },
+ "317": {
+  "read": "2026-11-15"
+ },
+ "318": {
+  "read": "2026-11-15"
+ },
+ "319": {
+  "read": "2026-11-15"
+ },
+ "320": {
+  "read": "2026-11-15"
+ },
+ "321": {
+  "read": "2026-11-15"
+ },
+ "322": {
+  "read": "2026-11-15"
+ },
+ "323": {
+  "read": "2026-11-15"
+ },
+ "324": {
+  "read": "2026-11-15"
+ },
+ "325": {
+  "read": "2026-11-15"
+ },
+ "326": {
+  "read": "2026-11-15"
+ },
+ "327": {
+  "read": "2026-11-15"
+ },
+ "328": {
+  "read": "2026-11-15"
+ },
+ "329": {
+  "read": "2026-11-15"
+ },
+ "330": {
+  "read": "2026-11-15"
+ },
+ "331": {
+  "read": "2026-11-15"
+ },
+ "332": {
+  "read": "2026-11-15"
+ },
+ "333": {
+  "read": "2026-11-15"
+ },
+ "334": {
+  "read": "2026-11-15"
+ },
+ "335": {
+  "read": "2026-11-15"
+ },
+ "336": {
+  "read": "2026-11-15"
+ },
+ "337": {
+  "read": "2026-11-15"
+ },
+ "338": {
+  "read": "2026-11-15"
+ },
+ "339": {
+  "read": "2026-11-15"
+ },
+ "340": {
+  "read": "2026-11-15"
+ },
+ "341": {
+  "read": "2026-11-15"
+ },
+ "342": {
+  "read": "2026-11-15"
+ },
+ "343": {
+  "read": "2026-11-15"
+ },
+ "344": {
+  "read": "2026-11-15"
+ },
+ "345": {
+  "read": "2026-11-15"
+ },
+ "346": {
+  "read": "2026-11-15"
+ },
+ "347": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "مِنْ رسولِ الله ﷺ",
+    "مِنْ رسولِ اللهِ ﷺ",
+    "marks",
+    "The print has «مِنْ رَسُولِ اللهِ ﷺ» with a kasra under the ha (zoomed, p. 327); the text left «الله» bare."
+   ]
+  ]
+ },
+ "348": {
+  "read": "2026-11-15"
+ },
+ "349": {
+  "read": "2026-11-15",
+  "fix": [
+   [
+    "فَلْيُؤمَّهُمْ أَكْبرُهُمْ",
+    "فَلْيَؤُمَّهُمْ أَكْبرُهُمْ",
+    "v1",
+    "v1 has «فَلْيُؤمَّهُمْ», a damma on the ya, which reads as the passive and can't take «أكبرهم» as its subject and «هم» as its object. The verb is «أَمَّ يَؤُمُّ», as the same narration has it a line earlier, «فَلْيَؤُمَّهُمْ» (p. 330), and as Muslim has it."
+   ]
+  ],
+  "misprint": [
+   [
+    "فَلْيُؤَمَّهُمْ أَكْبَرُهُمْ",
+    "فَلْيَؤُمَّهُمْ أَكْبَرُهُمْ",
+    "The print has a damma on the ya and a fatha on the hamza (zoomed, p. 330), the passive, which can't take a subject and an object. The same narration prints «فَلْيَؤُمَّهُمْ» a line earlier, and Muslim has «فَلْيَؤُمَّهُمْ»."
+   ]
+  ]
+ },
+ "350": {
+  "read": "2026-11-15"
+ },
+ "351": {
+  "read": "2026-11-15"
+ },
+ "352": {
+  "read": "2026-11-16"
+ },
+ "353": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "لَهُ إلى أَحَدِهِمَا",
+    "لَهُ إِلى أَحَدِهِمَا",
+    "marks",
+    "The print has «إِلى» with a kasra under the alif (zoomed, p. 333); v1 left it bare."
+   ]
+  ]
+ },
+ "354": {
+  "read": "2026-11-16"
+ },
+ "355": {
+  "read": "2026-11-16"
+ },
+ "356": {
+  "read": "2026-11-16"
+ },
+ "357": {
+  "read": "2026-11-16"
+ },
+ "358": {
+  "read": "2026-11-16"
+ },
+ "359": {
+  "read": "2026-11-16"
+ },
+ "360": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وعن أَنس رضي الله عنه قال: قال رسول الله",
+    "وعَنْ أَنس رَضِيَ اللهُ عَنْهُ قالَ: قالَ رَسُولُ اللهِ",
+    "marks",
+    "The print has «وعَنْ أَنَسٍ رَضِيَ اللهُ عَنْهُ قالَ: قالَ رَسُولُ اللهِ» (zoomed, p. 336); v1 left these words bare."
+   ],
+   [
+    "قَيَّضَ الله لَهُ",
+    "قَيَّضَ اللهُ لَهُ",
+    "marks",
+    "The print has «قَيَّضَ اللهُ لَهُ» (zoomed, p. 337); v1 left «الله» bare."
+   ],
+   [
+    "رواه الترمذي وقال حديث غريب.",
+    "رَوَاهُ التِّرْمِذِيُّ وقالَ حَدِيثٌ غَرِيبٌ.",
+    "marks",
+    "The print has «رَوَاهُ التِّرْمِذِيُّ وقالَ: حَدِيثٌ غَرِيبٌ» (zoomed, p. 337); v1 left the source line bare. «التِّرْمِذِيُّ» as v1 writes it elsewhere (rule 2)."
+   ]
+  ]
+ },
+ "361": {
+  "read": "2026-11-16"
+ },
+ "362": {
+  "read": "2026-11-16"
+ },
+ "363": {
+  "read": "2026-11-16"
+ },
+ "364": {
+  "read": "2026-11-16"
+ },
+ "365": {
+  "read": "2026-11-16"
+ },
+ "366": {
+  "read": "2026-11-16"
+ },
+ "367": {
+  "read": "2026-11-16"
+ },
+ "368": {
+  "read": "2026-11-16"
+ },
+ "369": {
+  "read": "2026-11-16"
+ },
+ "370": {
+  "read": "2026-11-16"
+ },
+ "371": {
+  "read": "2026-11-16"
+ },
+ "372": {
+  "read": "2026-11-16"
+ },
+ "373": {
+  "read": "2026-11-16"
+ },
+ "374": {
+  "read": "2026-11-16"
+ },
+ "375": {
+  "read": "2026-11-16"
+ },
+ "376": {
+  "read": "2026-11-16"
+ },
+ "377": {
+  "read": "2026-11-16"
+ },
+ "378": {
+  "read": "2026-11-16"
+ },
+ "379": {
+  "read": "2026-11-16"
+ },
+ "380": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "381": {
+  "read": "2026-11-16"
+ },
+ "382": {
+  "read": "2026-11-16"
+ },
+ "383": {
+  "read": "2026-11-16"
+ },
+ "384": {
+  "read": "2026-11-16"
+ },
+ "385": {
+  "read": "2026-11-16"
+ },
+ "386": {
+  "read": "2026-11-16"
+ },
+ "387": {
+  "read": "2026-11-16"
+ },
+ "388": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "البَغْضَاءُ في الأَرْضِ",
+    "البَغْضَاءُ فِي الأَرْضِ",
+    "marks",
+    "The print has «ٱلْبَغْضاءُ فِي ٱلْأَرْضِ», with a kasra under the fa (zoomed, p. 356); v1 leaves «في» bare. The other three bare «في» are bare in the print too (zoomed, pp. 355–356)."
+   ]
+  ]
+ },
+ "389": {
+  "read": "2026-11-16"
+ },
+ "390": {
+  "read": "2026-11-16"
+ },
+ "391": {
+  "read": "2026-11-16"
+ },
+ "392": {
+  "read": "2026-11-16"
+ },
+ "393": {
+  "read": "2026-11-16"
+ },
+ "394": {
+  "read": "2026-11-16"
+ },
+ "395": {
+  "read": "2026-11-16"
+ },
+ "396": {
+  "read": "2026-11-16"
+ },
+ "397": {
+  "read": "2026-11-16"
+ },
+ "398": {
+  "read": "2026-11-16"
+ },
+ "399": {
+  "read": "2026-11-16"
+ },
+ "400": {
+  "read": "2026-11-16"
+ },
+ "401": {
+  "read": "2026-11-16"
+ },
+ "402": {
+  "read": "2026-11-16"
+ },
+ "403": {
+  "read": "2026-11-16"
+ },
+ "404": {
+  "read": "2026-11-16"
+ },
+ "405": {
+  "read": "2026-11-16"
+ },
+ "406": {
+  "read": "2026-11-16"
+ },
+ "407": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "«أَطَّتِ» بِفَتْحِ",
+    "«أَطَّتْ» بِفَتْحِ",
+    "v1",
+    "Takes back the first reading's «أَطَّتْ» → «أَطَّتِ»: on a zoom of p. 371 the print's gloss heading «أَطَّت» leaves the ta bare (the kasra is only in the matn's «أَطَّتِ السَّماءُ»), so v1's sukun stays (rule 2)."
+   ]
+  ]
+ },
+ "408": {
+  "read": "2026-11-16"
+ },
+ "409": {
+  "read": "2026-11-16"
+ },
+ "410": {
+  "read": "2026-11-16"
+ },
+ "411": {
+  "read": "2026-11-16"
+ },
+ "412": {
+  "read": "2026-11-16"
+ },
+ "413": {
+  "read": "2026-11-16"
+ },
+ "414": {
+  "read": "2026-11-16"
+ },
+ "415": {
+  "read": "2026-11-16"
+ },
+ "416": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "اللهُ على النَّارِ",
+    "اللهُ عَلى النَّارِ",
+    "marks",
+    "The print has «عَلى» with a fatha on the ain in «حَرَّمَهُ اللهُ عَلى النَّارِ» (zoomed, p. 377); the text had it bare."
+   ]
+  ]
+ },
+ "417": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "418": {
+  "read": "2026-11-16"
+ },
+ "419": {
+  "read": "2026-11-16"
+ },
+ "420": {
+  "read": "2026-11-16"
+ },
+ "421": {
+  "read": "2026-11-16"
+ },
+ "422": {
+  "read": "2026-11-16"
+ },
+ "423": {
+  "read": "2026-11-16"
+ },
+ "424": {
+  "read": "2026-11-16"
+ },
+ "425": {
+  "read": "2026-11-16"
+ },
+ "426": {
+  "read": "2026-11-16"
+ },
+ "427": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "أَنْ لا يُعَذِّبَ",
+    "أَنْ لَا يُعَذِّبَ",
+    "marks",
+    "The print has «أَلَّا يُعَذِّبَ» with a fatha on the lam (zoomed, p. 386); v1 spells it «أن لا» (rule 4 keeps the spelling) and leaves «لا» bare, so it gets the print's fatha."
+   ]
+  ]
+ },
+ "428": {
+  "read": "2026-11-16"
+ },
+ "429": {
+  "read": "2026-11-16"
+ },
+ "430": {
+  "read": "2026-11-16"
+ },
+ "431": {
+  "read": "2026-11-16"
+ },
+ "432": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "كَالشَّعَرَةِ السَّودَاءِ",
+    "كَالشَّعْرَةِ السَّودَاءِ",
+    "variant",
+    "The print has «كالشَّعْرَةِ السَّوْدَاءِ» with a sukun on the ain (zoomed, p. 388), as in its «كالشَّعْرَةِ البيضاء» a line above; the text had a fatha there («الشَّعَرَة»), also good Arabic."
+   ]
+  ]
+ },
+ "433": {
+  "read": "2026-11-16"
+ },
+ "434": {
+  "read": "2026-11-16"
+ },
+ "435": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "رَضِي الله عنه:",
+    "رَضِي اللهُ عَنْهُ:",
+    "marks",
+    "The print has «رَضِيَ اللهُ عَنْهُ» (zoomed, p. 390); the text left «الله عنه» bare."
+   ]
+  ]
+ },
+ "436": {
+  "read": "2026-11-16"
+ },
+ "437": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وعنه قال: قال رسول الله",
+    "وعنْهُ قالَ: قالَ رَسُولُ اللهِ",
+    "marks",
+    "The print has «وعَنْـهُ قالَ: قالَ رَسُولُ اللهِ» (zoomed, p. 391); the text left these words bare. The opening waw stays bare (rule 3)."
+   ],
+   [
+    "إِنَّ الله لَيَرضى عن الْعَبْدِ",
+    "إِنَّ اللهَ لَيَرضى عَنِ الْعَبْدِ",
+    "marks",
+    "The print has «إِنَّ اللهَ لَيَرْضَى عَنِ ٱلْعَبْدِ» (zoomed, p. 391); the text left «الله» and «عن» bare."
+   ],
+   [
+    "عليها ، أَوْ",
+    "عَلَيْها ، أَوْ",
+    "marks",
+    "The print has «فَيَحْمَدُهُ عَلَيْها» (zoomed, p. 391); the text left «عليها» bare."
+   ],
+   [
+    "رواه مسلم.",
+    "رَوَاهُ مُسْلِمٌ.",
+    "marks",
+    "The print has «رَوَاهُ مُسْلِمٌ» (zoomed, p. 392); the text left it bare."
+   ],
+   [
+    "بفتح الهمزة، وهي",
+    "بِفَتْحِ الْهَمْزَةِ، وهِيَ",
+    "marks",
+    "The print has «بِفَتْحِ ٱلْهَمْزَةِ ، وهِيَ» (zoomed, p. 392); the text left these words bare."
+   ],
+   [
+    "والله أعلم",
+    "واللهُ أَعْلَمُ",
+    "marks",
+    "The print has «واللهُ أَعْلَمُ» (zoomed, p. 392); the text left it bare."
+   ]
+  ]
+ },
+ "438": {
+  "read": "2026-11-16"
+ },
+ "439": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "فَلَمْ يَستْطَيِعُوا",
+    "فَلَمْ يَسْتَطِيعُوا",
+    "v1",
+    "The print has «فَلَمْ يَسْتَطِيعُوا» (zoomed, p. 393); v1's marks were shifted a letter («يَستْطَيِعُوا»: a sukun on the ta, a fatha on the ta' and a kasra on the ya)."
+   ],
+   [
+    "فَإِذَا رسولُ الله",
+    "فَإِذَا رسولُ اللهِ",
+    "marks",
+    "The print has «رَسُولُ اللهِ» with a kasra on the ha (zoomed, p. 393); v1 leaves «الله» bare."
+   ]
+  ]
+ },
+ "440": {
+  "read": "2026-11-16"
+ },
+ "441": {
+  "read": "2026-11-16"
+ },
+ "442": {
+  "read": "2026-11-16"
+ },
+ "443": {
+  "read": "2026-11-16"
+ },
+ "444": {
+  "read": "2026-11-16"
+ },
+ "445": {
+  "read": "2026-11-16"
+ },
+ "446": {
+  "read": "2026-11-16"
+ },
+ "447": {
+  "read": "2026-11-16"
+ },
+ "448": {
+  "read": "2026-11-16"
+ },
+ "449": {
+  "read": "2026-11-16"
+ },
+ "450": {
+  "read": "2026-11-16"
+ },
+ "451": {
+  "read": "2026-11-16"
+ },
+ "452": {
+  "read": "2026-11-16"
+ },
+ "453": {
+  "read": "2026-11-16"
+ },
+ "454": {
+  "read": "2026-11-16"
+ },
+ "455": {
+  "read": "2026-11-16"
+ },
+ "456": {
+  "read": "2026-11-16"
+ },
+ "457": {
+  "read": "2026-11-16"
+ },
+ "458": {
+  "read": "2026-11-16"
+ },
+ "459": {
+  "read": "2026-11-16"
+ },
+ "460": {
+  "read": "2026-11-16"
+ },
+ "461": {
+  "read": "2026-11-16"
+ },
+ "462": {
+  "read": "2026-11-16"
+ },
+ "463": {
+  "read": "2026-11-16"
+ },
+ "464": {
+  "read": "2026-11-16"
+ },
+ "465": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "الْبُخارِيِّ . »",
+    "الْبُخارِيِّ",
+    "v1",
+    "A lone «»» after the source line (rule 4): it is v1's closing quote after «حتى آتيك», left at the end when the first reading added the rest of the hadith; the print has no «»» after «وهٰذا لفظ البخاري» (p. 415)."
+   ]
+  ],
+  "misprint": [
+   [
+    "فِي عِبادِ اللهِ هٰكَذَا وهٰكَذَا",
+    "فِي عِبَادِ اللهِ هكَذَا، وَهَكَذا، وهَكَذا",
+    "The print has «هٰكَذَا وهٰكَذَا» twice, not three times (counted on a zoom, p. 415). v1, sunnah.com and al-Bukhari have it three times, one for each of the three directions that follow («عن يمينه وعن شماله ومن خلفه»): the eye skipped from a word to its like (rule 1). The print drops it the same way in «بالمال» below."
+   ],
+   [
+    "بِالْمَالِ هٰكَذَا وهٰكَذَا",
+    "بِالْمَالِ هَكَذَا، وهَكَذَا، وَهَكَذَا",
+    "The print has «هٰكَذَا وهٰكَذَا» twice, not three times (counted on a zoom, p. 415). v1, sunnah.com and al-Bukhari have it three times, one for each of the three directions that follow («عن يمينه وعن شماله ومن خلفه»): the eye skipped from a word to its like (rule 1), as in «في عباد الله» above."
+   ]
+  ]
+ },
+ "466": {
+  "read": "2026-11-16"
+ },
+ "467": {
+  "read": "2026-11-16"
+ },
+ "468": {
+  "read": "2026-11-16"
+ },
+ "469": {
+  "read": "2026-11-16"
+ },
+ "470": {
+  "read": "2026-11-16"
+ },
+ "471": {
+  "read": "2026-11-16"
+ },
+ "472": {
+  "read": "2026-11-16"
+ },
+ "473": {
+  "read": "2026-11-16"
+ },
+ "474": {
+  "read": "2026-11-16"
+ },
+ "475": {
+  "read": "2026-11-16"
+ },
  "476": {
   "fix": [
    [
@@ -128,6 +2256,5210 @@
     "v1",
     "The print has «وَإِذَا غَطَّيْنَا بِهَا رِجْلَيْهِ» (zoomed, p. 423), as the OCR text does; v1 lacks «بها» here."
    ]
+  ],
+  "read": "2026-11-16"
+ },
+ "477": {
+  "read": "2026-11-16"
+ },
+ "478": {
+  "read": "2026-11-16"
+ },
+ "479": {
+  "read": "2026-11-16"
+ },
+ "480": {
+  "read": "2026-11-16"
+ },
+ "481": {
+  "read": "2026-11-16"
+ },
+ "482": {
+  "read": "2026-11-16"
+ },
+ "483": {
+  "read": "2026-11-16"
+ },
+ "484": {
+  "read": "2026-11-16"
+ },
+ "485": {
+  "read": "2026-11-16"
+ },
+ "486": {
+  "read": "2026-11-16"
+ },
+ "487": {
+  "read": "2026-11-16"
+ },
+ "488": {
+  "read": "2026-11-16"
+ },
+ "489": {
+  "read": "2026-11-16"
+ },
+ "490": {
+  "read": "2026-11-16"
+ },
+ "491": {
+  "read": "2026-11-16"
+ },
+ "492": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "493": {
+  "read": "2026-11-16"
+ },
+ "494": {
+  "read": "2026-11-16"
+ },
+ "495": {
+  "read": "2026-11-16"
+ },
+ "496": {
+  "read": "2026-11-16"
+ },
+ "497": {
+  "read": "2026-11-16"
+ },
+ "498": {
+  "read": "2026-11-16"
+ },
+ "499": {
+  "read": "2026-11-16"
+ },
+ "500": {
+  "read": "2026-11-16"
+ },
+ "501": {
+  "read": "2026-11-16"
+ },
+ "502": {
+  "read": "2026-11-16"
+ },
+ "503": {
+  "read": "2026-11-16"
+ },
+ "504": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وعن عائشةَ",
+    "وعَنْ عائشةَ",
+    "marks",
+    "The print has «وعَنْ» (zoomed, p. 442); v1 leaves it bare."
+   ],
+   [
+    "عنها",
+    "عَنْها",
+    "marks",
+    "The print has «عَنْها» (zoomed, p. 442); v1 leaves it bare."
+   ],
+   [
+    "في ثَلاثِينَ",
+    "فِي ثَلاثِينَ",
+    "marks",
+    "The print has «فِي» (zoomed, p. 442); v1 leaves it bare."
+   ],
+   [
+    "متفقٌ",
+    "متَّفقٌ",
+    "v1",
+    "The print has «مُتَّفَقٌ» with a shadda on the ta (zoomed, p. 442); v1's «متفقٌ» lacks it."
+   ],
+   [
+    "عليه",
+    "عَلَيْهِ",
+    "marks",
+    "The print has «عَلَيْهِ» (zoomed, p. 442); v1 leaves it bare."
+   ]
   ]
+ },
+ "505": {
+  "read": "2026-11-16"
+ },
+ "506": {
+  "read": "2026-11-16"
+ },
+ "507": {
+  "read": "2026-11-16"
+ },
+ "508": {
+  "read": "2026-11-16"
+ },
+ "509": {
+  "read": "2026-11-16"
+ },
+ "510": {
+  "read": "2026-11-16"
+ },
+ "511": {
+  "read": "2026-11-16"
+ },
+ "512": {
+  "read": "2026-11-16"
+ },
+ "513": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وعن أبي مُحَمَّد",
+    "وعَنْ أَبِي مُحَمَّد",
+    "marks",
+    "The print has «وعَنْ أَبِي» (zoomed, p. 447, stretched «وعَـــنْ»); v1 leaves both words bare."
+   ],
+   [
+    "رضيَ اللهُ عنه",
+    "رضيَ اللهُ عَنْهُ",
+    "marks",
+    "The print has «عَنْهُ» (zoomed, p. 447); v1 leaves it bare."
+   ],
+   [
+    "رواه الترمذي وقال: حديثٌ حسن صحيح",
+    "رَوَاهُ التِّرْمِذِيُّ وقالَ: حديثٌ حَسَنٌ صَحِيحٌ",
+    "marks",
+    "The print has «رَوَاهُ التِّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ صَحِيحٌ» (zoomed, p. 447); v1 leaves these words bare. «التِّرْمِذِيُّ» as v1 writes it elsewhere (rule 2)."
+   ]
+  ]
+ },
+ "514": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "515": {
+  "read": "2026-11-16"
+ },
+ "516": {
+  "read": "2026-11-16"
+ },
+ "517": {
+  "read": "2026-11-16",
+  "misprint": [
+   [
+    "خُشُونَةِ الْعَيْشَ",
+    "خُشُونَةِ الْعَيْشِ",
+    "The print sets a fatha on the shin of «العيش» (zoomed, p. 449), but the word is governed by «خشونة» and must be genitive, as the text has it."
+   ]
+  ]
+ },
+ "518": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "عَلى ساَحِلِ البَحْرِ ، فرُفعَ",
+    "عَلى ساحِلِ البَحْرِ ، فرُفعَ",
+    "v1",
+    "v1 sets a fatha on the alif of «ساحل», a letter that takes no vowel; the print has «ساحِلِ» (zoomed, p. 450)."
+   ],
+   [
+    "وبعدهَا باء موحَّدةٌ",
+    "وبعدهَا باءٌ موحَّدةٌ",
+    "marks",
+    "The print has «باءٌ مُوَحَّدَةٌ» (zoomed, p. 451); v1 leaves «باء» bare."
+   ]
+  ]
+ },
+ "519": {
+  "read": "2026-11-16"
+ },
+ "520": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "فقال: «كُلِي",
+    "فَقالَ: «كُلِي",
+    "marks",
+    "The print has «فَقالَ» before «كُلِي هٰذا» (zoomed, p. 453, a fatha on the fa and on the lam); the text had it bare."
+   ]
+  ],
+  "misprint": [
+   [
+    "لَمَّا جُفِرَ الْخَنْدَقُ",
+    "لَمَّا حُفِرَ الْخَنْدَقُ",
+    "The print sets a dot under the first letter, «جُفِرَ» (zoomed, p. 453), which makes no sense here; the hadith is about digging the trench, as the first narration's «نَحْفِرُ» says, and al-Bukhari and sunnah.com have «حُفِرَ», as the text does."
+   ]
+  ]
+ },
+ "521": {
+  "read": "2026-11-16"
+ },
+ "522": {
+  "read": "2026-11-16"
+ },
+ "523": {
+  "read": "2026-11-16"
+ },
+ "524": {
+  "read": "2026-11-16"
+ },
+ "525": {
+  "read": "2026-11-16"
+ },
+ "526": {
+  "read": "2026-11-16"
+ },
+ "527": {
+  "read": "2026-11-16"
+ },
+ "528": {
+  "read": "2026-11-16"
+ },
+ "529": {
+  "read": "2026-11-16"
+ },
+ "530": {
+  "read": "2026-11-16"
+ },
+ "531": {
+  "read": "2026-11-16"
+ },
+ "532": {
+  "read": "2026-11-16"
+ },
+ "533": {
+  "read": "2026-11-16"
+ },
+ "534": {
+  "read": "2026-11-16"
+ },
+ "535": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "أَنْ لا يَسْأَلَ",
+    "أَنْ لَا يَسْأَلَ",
+    "marks",
+    "The print has «أَلَّا» (zoomed, p. 466), with a fatha on the lam; v1's spelling «أن لا» stays (rule 4) and its bare «لا» gets that fatha. «أنا» is bare in the print too, so it stays."
+   ]
+  ]
+ },
+ "536": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "«القَِوامُ»",
+    "«القِوامُ»",
+    "v1",
+    "The print has «ٱلْقِوَامُ», with a kasra under the qaf (zoomed, p. 467); v1 set both a fatha and a kasra on the qaf."
+   ]
+  ]
+ },
+ "537": {
+  "read": "2026-11-16"
+ },
+ "538": {
+  "read": "2026-11-16"
+ },
+ "539": {
+  "read": "2026-11-16"
+ },
+ "540": {
+  "read": "2026-11-16"
+ },
+ "541": {
+  "read": "2026-11-16"
+ },
+ "542": {
+  "read": "2026-11-16"
+ },
+ "543": {
+  "read": "2026-11-16"
+ },
+ "544": {
+  "read": "2026-11-16"
+ },
+ "545": {
+  "read": "2026-11-16"
+ },
+ "546": {
+  "read": "2026-11-16"
+ },
+ "547": {
+  "read": "2026-11-16"
+ },
+ "548": {
+  "read": "2026-11-16"
+ },
+ "549": {
+  "read": "2026-11-16"
+ },
+ "550": {
+  "read": "2026-11-16"
+ },
+ "551": {
+  "read": "2026-11-16"
+ },
+ "552": {
+  "read": "2026-11-16"
+ },
+ "553": {
+  "read": "2026-11-16"
+ },
+ "554": {
+  "read": "2026-11-16"
+ },
+ "555": {
+  "read": "2026-11-16"
+ },
+ "556": {
+  "read": "2026-11-16"
+ },
+ "557": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "مَظْلِمَةً",
+    "مَظْلُمَةً",
+    "variant",
+    "The print has «مَظْلُمَةً», a damma on the lam (zoomed, p. 478, the same mark as the damma of «اللهُ» below it); the text had «مَظْلِمَةً». Both are attested forms of the word."
+   ]
+  ]
+ },
+ "558": {
+  "read": "2026-11-16"
+ },
+ "559": {
+  "read": "2026-11-16"
+ },
+ "560": {
+  "read": "2026-11-16"
+ },
+ "561": {
+  "read": "2026-11-16"
+ },
+ "562": {
+  "read": "2026-11-16"
+ },
+ "563": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "حَمَلَهُمْ على أَنْ",
+    "حَمَلَهُمْ عَلى أَنْ",
+    "marks",
+    "The print has «عَلى» with a fatha on the ayn (zoomed, p. 484); the text left the word bare."
+   ]
+  ]
+ },
+ "564": {
+  "read": "2026-11-16"
+ },
+ "565": {
+  "read": "2026-11-16"
+ },
+ "566": {
+  "read": "2026-11-16"
+ },
+ "567": {
+  "read": "2026-11-16"
+ },
+ "568": {
+  "read": "2026-11-16"
+ },
+ "569": {
+  "read": "2026-11-16"
+ },
+ "570": {
+  "read": "2026-11-16"
+ },
+ "571": {
+  "read": "2026-11-16"
+ },
+ "572": {
+  "read": "2026-11-16"
+ },
+ "573": {
+  "read": "2026-11-16"
+ },
+ "574": {
+  "read": "2026-11-16"
+ },
+ "575": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "هٰذَا لَفْظُ الْبُخَارِيُّ",
+    "هٰذَا لَفْظُ الْبُخَارِيِّ",
+    "v1",
+    "The print has «لَفْظُ ٱلْبُخارِيِّ», a kasra under the shadda (zoomed, p. 496), unlike the damma on the shadda of «رَوَاهُ ٱلْبُخارِيُّ» on the same page; the genitive after «لفظ» needs it. The text had the damma."
+   ]
+  ]
+ },
+ "576": {
+  "read": "2026-11-16"
+ },
+ "577": {
+  "read": "2026-11-16"
+ },
+ "578": {
+  "read": "2026-11-16"
+ },
+ "579": {
+  "read": "2026-11-16"
+ },
+ "580": {
+  "read": "2026-11-16"
+ },
+ "581": {
+  "read": "2026-11-16"
+ },
+ "582": {
+  "read": "2026-11-16"
+ },
+ "583": {
+  "read": "2026-11-16"
+ },
+ "584": {
+  "read": "2026-11-16"
+ },
+ "585": {
+  "read": "2026-11-16"
+ },
+ "586": {
+  "read": "2026-11-16"
+ },
+ "587": {
+  "read": "2026-11-16"
+ },
+ "588": {
+  "read": "2026-11-16"
+ },
+ "589": {
+  "read": "2026-11-16"
+ },
+ "590": {
+  "read": "2026-11-16"
+ },
+ "591": {
+  "read": "2026-11-16"
+ },
+ "592": {
+  "read": "2026-11-16"
+ },
+ "593": {
+  "read": "2026-11-16"
+ },
+ "594": {
+  "read": "2026-11-16"
+ },
+ "595": {
+  "read": "2026-11-16"
+ },
+ "596": {
+  "read": "2026-11-16"
+ },
+ "597": {
+  "read": "2026-11-16"
+ },
+ "598": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وَعَنْ أبي",
+    "وَعَنْ أَبِي",
+    "marks",
+    "The print has «أَبِي» (zoomed, p. 509); the text had it bare."
+   ],
+   [
+    "عَنْهُ قال : قال رَجُلٌ",
+    "عَنْهُ قالَ : قالَ رَجُلٌ",
+    "marks",
+    "The print has «قالَ : قالَ رَجُلٌ» (p. 509, zoomed); the text had both «قال» bare."
+   ],
+   [
+    "اللهِ ؟ قال",
+    "اللهِ ؟ قالَ",
+    "marks",
+    "The print has «يا رَسُولَ اللهِ ؟ قالَ» (zoomed, p. 510); the text had «قال» bare, and the print leaves «يا» bare too."
+   ],
+   [
+    "وَمَالِهِ في سبيلِ",
+    "وَمَالِهِ فِي سبيلِ",
+    "marks",
+    "The print has «فِي سَبِيلِ اللهِ» (zoomed, p. 510); the text had «في» bare."
+   ],
+   [
+    "قال : ثُمَّ مَنْ ؟ قال",
+    "قالَ : ثُمَّ مَنْ ؟ قالَ",
+    "marks",
+    "The print has «قالَ : ثُمَّ مَنْ ؟ قالَ» (zoomed, p. 510); the text had both «قال» bare."
+   ],
+   [
+    "مُعتَزِلٌ في",
+    "مُعتَزِلٌ فِي",
+    "marks",
+    "The print has «مُعْتَزِلٌ فِي» at the end of the line (zoomed, p. 510); the text had «في» bare."
+   ],
+   [
+    "وفي روايةٍ : يتَّقِي الله",
+    "وفِي روايةٍ : يتَّقِي اللهَ",
+    "marks",
+    "The print has «وفِي رِوَايَةٍ : « يَتَّقِي اللهَ» (zoomed, p. 510); the text had «وفي» and «الله» bare."
+   ]
+  ]
+ },
+ "599": {
+  "read": "2026-11-16"
+ },
+ "600": {
+  "read": "2026-11-16"
+ },
+ "601": {
+  "read": "2026-11-16",
+  "misprint": [
+   [
+    "تَصْغِيرُ الْغَنَمَ",
+    "تَصْغِيرُ الْغَنَمِ",
+    "In Nawawi's gloss the print sets a fatha on the mim of «الغنم» (zoomed, p. 511), a genitive after «تصغيرُ» that needs a kasra; the text keeps «الْغَنَمِ»."
+   ]
+  ]
+ },
+ "602": {
+  "read": "2026-11-16"
+ },
+ "603": {
+  "read": "2026-11-16"
+ },
+ "604": {
+  "read": "2026-11-16"
+ },
+ "605": {
+  "read": "2026-11-16"
+ },
+ "606": {
+  "read": "2026-11-16"
+ },
+ "607": {
+  "read": "2026-11-16"
+ },
+ "608": {
+  "read": "2026-11-16"
+ },
+ "609": {
+  "read": "2026-11-16"
+ },
+ "610": {
+  "read": "2026-11-16"
+ },
+ "611": {
+  "read": "2026-11-16"
+ },
+ "612": {
+  "read": "2026-11-16"
+ },
+ "613": {
+  "read": "2026-11-16"
+ },
+ "614": {
+  "read": "2026-11-16"
+ },
+ "615": {
+  "read": "2026-11-16"
+ },
+ "616": {
+  "read": "2026-11-16"
+ },
+ "617": {
+  "read": "2026-11-16"
+ },
+ "618": {
+  "read": "2026-11-16"
+ },
+ "619": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "مُرَجَّلٌ",
+    "مُرَجِّلٌ",
+    "variant",
+    "The print has «مُرَجِّلٌ رَأْسَهُ» in the matn (zoomed, p. 523): the kasra sits between the shadda and the jim, as in «أُعَذِّبُ» (p. 521), not above it as the fatha of «حُلَّةٍ» does; al-Bukhari has «مُرَجِّلٌ». The text had v1's «مُرَجَّلٌ» with the round's «رَأْسَهُ», mixing two readings."
+   ],
+   [
+    "مُرجَّلٌ",
+    "مُرجِّلٌ",
+    "variant",
+    "The gloss's heading has «مُرَجِّلٌ رَأْسَهُ» too (zoomed, p. 523), with the same kasra under the shadda; the text had v1's «مُرجَّلٌ»."
+   ],
+   [
+    "مُمَشَّطُهُ",
+    "مُمَشِّطُهُ",
+    "variant",
+    "The print explains it as «مُمَشِّطُهُ» (zoomed, p. 523), the kasra under the shadda of the shin, matching the active «مُرَجِّلٌ رَأْسَهُ»; the text had v1's «مُمَشَّطُهُ»."
+   ]
+  ]
+ },
+ "620": {
+  "read": "2026-11-16"
+ },
+ "621": {
+  "read": "2026-11-16"
+ },
+ "622": {
+  "read": "2026-11-16"
+ },
+ "623": {
+  "read": "2026-11-16"
+ },
+ "624": {
+  "read": "2026-11-16"
+ },
+ "625": {
+  "read": "2026-11-16"
+ },
+ "626": {
+  "read": "2026-11-16"
+ },
+ "627": {
+  "read": "2026-11-16"
+ },
+ "628": {
+  "read": "2026-11-16"
+ },
+ "629": {
+  "read": "2026-11-16"
+ },
+ "630": {
+  "read": "2026-11-16"
+ },
+ "631": {
+  "read": "2026-11-16"
+ },
+ "632": {
+  "read": "2026-11-16"
+ },
+ "633": {
+  "read": "2026-11-16"
+ },
+ "634": {
+  "read": "2026-11-16"
+ },
+ "635": {
+  "read": "2026-11-16"
+ },
+ "636": {
+  "read": "2026-11-16"
+ },
+ "637": {
+  "read": "2026-11-16"
+ },
+ "638": {
+  "read": "2026-11-16"
+ },
+ "639": {
+  "read": "2026-11-16"
+ },
+ "640": {
+  "read": "2026-11-16"
+ },
+ "641": {
+  "read": "2026-11-16"
+ },
+ "642": {
+  "read": "2026-11-16"
+ },
+ "643": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "اللهُ عَنْهُا",
+    "اللهُ عَنْها",
+    "v1",
+    "The print has «عَنْها», a sukun on the nun and the ha bare (zoomed, p. 535); v1's «عَنْهُا» puts a damma on the ha of the feminine pronoun."
+   ]
+  ]
+ },
+ "644": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "يُجَاهِدَ في سَبِيل",
+    "يُجَاهِدَ فِي سَبِيل",
+    "marks",
+    "The print has «فِي» with a kasra under the fa (zoomed, p. 537); v1 left it bare."
+   ]
+  ]
+ },
+ "645": {
+  "read": "2026-11-16"
+ },
+ "646": {
+  "read": "2026-11-16"
+ },
+ "647": {
+  "read": "2026-11-16"
+ },
+ "648": {
+  "read": "2026-11-16"
+ },
+ "649": {
+  "read": "2026-11-16"
+ },
+ "650": {
+  "read": "2026-11-16"
+ },
+ "651": {
+  "read": "2026-11-16"
+ },
+ "652": {
+  "read": "2026-11-16"
+ },
+ "653": {
+  "read": "2026-11-16"
+ },
+ "654": {
+  "read": "2026-11-16"
+ },
+ "655": {
+  "read": "2026-11-16"
+ },
+ "656": {
+  "read": "2026-11-16"
+ },
+ "657": {
+  "read": "2026-11-16"
+ },
+ "658": {
+  "read": "2026-11-16"
+ },
+ "659": {
+  "read": "2026-11-16"
+ },
+ "660": {
+  "read": "2026-11-16"
+ },
+ "661": {
+  "read": "2026-11-16"
+ },
+ "662": {
+  "read": "2026-11-16"
+ },
+ "663": {
+  "read": "2026-11-16"
+ },
+ "664": {
+  "read": "2026-11-16"
+ },
+ "665": {
+  "read": "2026-11-16"
+ },
+ "666": {
+  "read": "2026-11-16"
+ },
+ "667": {
+  "read": "2026-11-16"
+ },
+ "668": {
+  "read": "2026-11-16"
+ },
+ "669": {
+  "read": "2026-11-16"
+ },
+ "670": {
+  "read": "2026-11-16"
+ },
+ "671": {
+  "read": "2026-11-16"
+ },
+ "672": {
+  "read": "2026-11-16"
+ },
+ "673": {
+  "read": "2026-11-16"
+ },
+ "674": {
+  "read": "2026-11-16"
+ },
+ "675": {
+  "read": "2026-11-16"
+ },
+ "676": {
+  "read": "2026-11-16"
+ },
+ "677": {
+  "read": "2026-11-16"
+ },
+ "678": {
+  "read": "2026-11-16"
+ },
+ "679": {
+  "read": "2026-11-16"
+ },
+ "680": {
+  "read": "2026-11-16"
+ },
+ "681": {
+  "read": "2026-11-16"
+ },
+ "682": {
+  "read": "2026-11-16"
+ },
+ "683": {
+  "read": "2026-11-16"
+ },
+ "684": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "يبْعثُ على تَرْكِ",
+    "يبْعثُ عَلى تَرْكِ",
+    "marks",
+    "The print has «يَبْعَثُ عَلى تَرْكِ», with a fatha on the ain (zoomed, p. 562); the text left «على» bare."
+   ]
+  ]
+ },
+ "685": {
+  "read": "2026-11-16"
+ },
+ "686": {
+  "read": "2026-11-16"
+ },
+ "687": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "لَا أُرَى الأجَلَ",
+    "لَا أَرَى الأجَلَ",
+    "variant",
+    "The print has «لا أَرَى ٱلْأَجَلَ», with a fatha on the hamza like that of «أَوْ» in the line above (zoomed, p. 565); the text had «أُرَى». Both are good Arabic."
+   ]
+  ]
+ },
+ "688": {
+  "read": "2026-11-16"
+ },
+ "689": {
+  "read": "2026-11-16"
+ },
+ "690": {
+  "read": "2026-11-16"
+ },
+ "691": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "قال : قالَ رَسُولُ",
+    "قالَ : قالَ رَسُولُ",
+    "marks",
+    "The print has «قالَ : قالَ رَسُولُ اللهِ» (zoomed, p. 568); v1's first «قال» is bare."
+   ],
+   [
+    "لو قدْ",
+    "لَوْ قدْ",
+    "marks",
+    "The print has «لَوْ قَدْ جاءَ» (zoomed, p. 568); v1's «لو» is bare."
+   ],
+   [
+    "وهكذا وَهَكَذا",
+    "وهٰكَذَا وَهَكَذا",
+    "marks",
+    "The print has «وهٰكَذَا» (zoomed, p. 568); v1's second «وهكذا» is bare."
+   ],
+   [
+    "قال لي كَذَا",
+    "قالَ لِي كَذَا",
+    "marks",
+    "The print has «قالَ لِي كَذَا» (zoomed, p. 569); v1's «قال لي» is bare."
+   ],
+   [
+    "فَحثَى لي",
+    "فَحثَى لِي",
+    "marks",
+    "The print has «فَحَثَى لِي» (zoomed, p. 569); v1's «لي» is bare."
+   ],
+   [
+    "فقال لي",
+    "فَقالَ لِي",
+    "marks",
+    "The print has «فَقالَ لِي : خُذْ» (zoomed, p. 569); v1's «فقال لي» is bare."
+   ]
+  ],
+  "misprint": [
+   [
+    "أعْطَيْتُكَ هكَذا وهكذا",
+    "أعْطَيْتُكَ هكَذا وهكذا وَهَكَذا",
+    "The print has «هٰكَذَا» only twice (zoomed, p. 568: «أَعْطَيْتُكَ هٰكَذَا وهٰكَذَا »»); v1, sunnah.com, al-Bukhari and Muslim all have it three times, so the eye skipped from a word to its like (rule 1)."
+   ]
+  ]
+ },
+ "692": {
+  "read": "2026-11-16"
+ },
+ "693": {
+  "read": "2026-11-16"
+ },
+ "694": {
+  "read": "2026-11-16"
+ },
+ "695": {
+  "read": "2026-11-16"
+ },
+ "696": {
+  "read": "2026-11-16"
+ },
+ "697": {
+  "read": "2026-11-16"
+ },
+ "698": {
+  "read": "2026-11-16"
+ },
+ "699": {
+  "read": "2026-11-16"
+ },
+ "700": {
+  "read": "2026-11-16"
+ },
+ "701": {
+  "read": "2026-11-16"
+ },
+ "702": {
+  "read": "2026-11-16",
+  "misprint": [
+   [
+    "وذَرِفَتْ",
+    "وذَرَفَتْ",
+    "The print has «وذَرِفَتْ» with a kasra on the ra (zoomed, p. 576), but the verb of tears flowing is ذَرَفَ يَذْرِفُ, with a fatha, as v1 has it; the kasra makes a form the lexicons don't give."
+   ]
+  ]
+ },
+ "703": {
+  "read": "2026-11-16"
+ },
+ "704": {
+  "read": "2026-11-16"
+ },
+ "705": {
+  "read": "2026-11-16"
+ },
+ "706": {
+  "read": "2026-11-16"
+ },
+ "707": {
+  "read": "2026-11-16"
+ },
+ "708": {
+  "read": "2026-11-16"
+ },
+ "709": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "ادْخُلْ ورسُولُ اللهِ",
+    "ادْخُلْ رسُولُ اللهِ",
+    "variant",
+    "The print has «ٱدْخُلْ ، رَسُولُ اللهِ يُبَشِّرُكَ بِٱلْجَنَّةِ» with no waw before «رسول» (zoomed, p. 583); v1 has «ورسُولُ», as sunnah.com does. The sense holds either way, so the print's wording is the book's."
+   ]
+  ],
+  "note": "In the words to Abu Bakr, the print has «ادخل، رسول الله يبشرك بالجنة» without the waw that v1 and sunnah.com have («ورسول الله»); the sense holds, so the text follows the print (rule 1). The waw is printed in the like words to Uthman («ادخل، ويبشرك»)."
+ },
+ "710": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "أَنْ لا إلهَ",
+    "أَنْ لَا إلهَ",
+    "marks",
+    "The print has «لَا إِلٰهَ» with a fatha on the lam (zoomed, p. 586, line 14); the text had a bare «لا»."
+   ]
+  ]
+ },
+ "711": {
+  "read": "2026-11-16"
+ },
+ "712": {
+  "read": "2026-11-16"
+ },
+ "713": {
+  "read": "2026-11-16"
+ },
+ "714": {
+  "read": "2026-11-16"
+ },
+ "715": {
+  "read": "2026-11-16"
+ },
+ "716": {
+  "read": "2026-11-16"
+ },
+ "717": {
+  "read": "2026-11-16"
+ },
+ "718": {
+  "read": "2026-11-16"
+ },
+ "719": {
+  "read": "2026-11-16"
+ },
+ "720": {
+  "read": "2026-11-16"
+ },
+ "721": {
+  "read": "2026-11-16"
+ },
+ "722": {
+  "read": "2026-11-16"
+ },
+ "723": {
+  "read": "2026-11-16"
+ },
+ "724": {
+  "read": "2026-11-16"
+ },
+ "725": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "حَفْصَةَ رَضِيَ اللهُ عَنْهُا",
+    "حَفْصَةَ رَضِيَ اللهُ عَنْهَا",
+    "v1",
+    "v1 has a damma on the ha of «عنها» before the alif, a mark on the wrong letter (the feminine pronoun, for Hafsa); the print has «عَنْها» with the ha bare (zoomed, p. 597), so the word is written correctly, as h. 723's was."
+   ]
+  ]
+ },
+ "726": {
+  "read": "2026-11-16"
+ },
+ "727": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "أَتى مِنَى",
+    "أَتى مِنًى",
+    "variant",
+    "The print has «مِنًى» with tanween (zoomed, p. 598: the mark over the nun is the same as over «أَذًى» on p. 596, which can only be tanween), as Muslim has it; the text had «مِنَى» with a single fatha."
+   ],
+   [
+    "بِمِنَى",
+    "بِمِنًى",
+    "variant",
+    "The print has «بِمِنًى» with tanween (zoomed, p. 598, the same mark as on «مِنًى» in the line above), as Muslim has it; the text had «بِمِنَى» with a single fatha."
+   ]
+  ]
+ },
+ "728": {
+  "read": "2026-11-16"
+ },
+ "729": {
+  "read": "2026-11-16"
+ },
+ "730": {
+  "read": "2026-11-16"
+ },
+ "731": {
+  "read": "2026-11-17",
+  "note": "The print has no «مرة» in «وإنا حضرنا معه طعاما», which Muslim and sunnah.com have; the text follows the print (rule 1).",
+  "fix": [
+   [
+    "مَعَ يَدِهِمَا",
+    "مَعَ يَدَيْهِمَا",
+    "variant",
+    "The print has the dual «يَدَيْـ» (two dots under the ya, a sukun on it) and a kasra under the ha (zoomed at 1200 dpi, p. 601). The kasra fits «يَدَيْهِمَا» and not «يَدَيْهَا». The mim doesn't show because this print sets «هما» as a tight ligature that looks like «ها» (as in h. 1103–1104). sunnah.com has «يديهما». v1 has the singular «يَدِهِمَا», and Muslim (hadith-api) has «يَدِهَا». Settled in the review after the second reading (2026-11-17)."
+   ]
+  ]
+ },
+ "732": {
+  "read": "2026-11-16"
+ },
+ "733": {
+  "read": "2026-11-16"
+ },
+ "734": {
+  "read": "2026-11-16"
+ },
+ "735": {
+  "read": "2026-11-16"
+ },
+ "736": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وَعَنْ أبي هُريرة",
+    "وَعَنْ أبِي هُريرة",
+    "marks",
+    "The print has «أبِي», a hamza on the alif and a kasra under the ba (zoomed, p. 603); v1 leaves the word bare."
+   ]
+  ]
+ },
+ "737": {
+  "read": "2026-11-16"
+ },
+ "738": {
+  "read": "2026-11-16"
+ },
+ "739": {
+  "read": "2026-11-16"
+ },
+ "740": {
+  "read": "2026-11-16"
+ },
+ "741": {
+  "read": "2026-11-16"
+ },
+ "742": {
+  "read": "2026-11-16"
+ },
+ "743": {
+  "read": "2026-11-16"
+ },
+ "744": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "وَعنْ ابنِ عَبَّاسٍ",
+    "وَعنِ ابنِ عَبَّاسٍ",
+    "v1",
+    "The print has «وعَنْ ٱبْنِ» (zoomed, p. 607), its sukun before a connecting alif; v1 has the sukun too, so the nun takes the kasra the words run on with (rule 2)."
+   ]
+  ]
+ },
+ "745": {
+  "read": "2026-11-16"
+ },
+ "746": {
+  "read": "2026-11-16"
+ },
+ "747": {
+  "read": "2026-11-16"
+ },
+ "748": {
+  "read": "2026-11-16"
+ },
+ "749": {
+  "read": "2026-11-16"
+ },
+ "750": {
+  "read": "2026-11-16"
+ },
+ "751": {
+  "read": "2026-11-16"
+ },
+ "752": {
+  "read": "2026-11-16"
+ },
+ "753": {
+  "read": "2026-11-16"
+ },
+ "754": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا",
+    "أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا",
+    "variant",
+    "The print has «أَكُفُّنا وسَوَاعِدُنا وأَقْدَامُنا», a damma on each (zoomed, p. 613): the words as a badal from «مناديلُ» after the negation; v1 has the fatha of the exception («أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا»), as sunnah.com does. Both are good Arabic."
+   ]
+  ]
+ },
+ "755": {
+  "read": "2026-11-16"
+ },
+ "756": {
+  "read": "2026-11-16"
+ },
+ "757": {
+  "read": "2026-11-16"
+ },
+ "758": {
+  "read": "2026-11-16"
+ },
+ "759": {
+  "read": "2026-11-16"
+ },
+ "760": {
+  "read": "2026-11-16"
+ },
+ "761": {
+  "read": "2026-11-16"
+ },
+ "762": {
+  "read": "2026-11-16"
+ },
+ "763": {
+  "read": "2026-11-16"
+ },
+ "764": {
+  "read": "2026-11-16"
+ },
+ "765": {
+  "read": "2026-11-16"
+ },
+ "766": {
+  "read": "2026-11-16"
+ },
+ "767": {
+  "read": "2026-11-16"
+ },
+ "768": {
+  "read": "2026-11-16"
+ },
+ "769": {
+  "read": "2026-11-16"
+ },
+ "770": {
+  "read": "2026-11-16"
+ },
+ "771": {
+  "read": "2026-11-16"
+ },
+ "772": {
+  "read": "2026-11-16"
+ },
+ "773": {
+  "read": "2026-11-16"
+ },
+ "774": {
+  "read": "2026-11-16"
+ },
+ "775": {
+  "read": "2026-11-16"
+ },
+ "776": {
+  "read": "2026-11-16"
+ },
+ "777": {
+  "read": "2026-11-16"
+ },
+ "778": {
+  "read": "2026-11-16"
+ },
+ "779": {
+  "read": "2026-11-16"
+ },
+ "780": {
+  "read": "2026-11-16"
+ },
+ "781": {
+  "read": "2026-11-16"
+ },
+ "782": {
+  "read": "2026-11-16"
+ },
+ "783": {
+  "read": "2026-11-16"
+ },
+ "784": {
+  "read": "2026-11-16"
+ },
+ "785": {
+  "read": "2026-11-16"
+ },
+ "786": {
+  "read": "2026-11-16"
+ },
+ "787": {
+  "read": "2026-11-16"
+ },
+ "788": {
+  "read": "2026-11-16"
+ },
+ "789": {
+  "read": "2026-11-16"
+ },
+ "790": {
+  "read": "2026-11-16"
+ },
+ "791": {
+  "read": "2026-11-16"
+ },
+ "792": {
+  "read": "2026-11-16"
+ },
+ "793": {
+  "read": "2026-11-16"
+ },
+ "794": {
+  "read": "2026-11-16"
+ },
+ "795": {
+  "read": "2026-11-16"
+ },
+ "796": {
+  "read": "2026-11-16"
+ },
+ "797": {
+  "read": "2026-11-16"
+ },
+ "798": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "التَّغْلِبيِّ",
+    "التَّغْلَبِيِّ",
+    "variant",
+    "The print has «التَّغْلَبِيِّ», with a fatha on the lam (zoomed, p. 634, line 1); the text had a kasra. Both are known forms of the nisba to Taghlib."
+   ]
+  ]
+ },
+ "799": {
+  "read": "2026-11-16"
+ },
+ "800": {
+  "read": "2026-11-16"
+ },
+ "801": {
+  "read": "2026-11-16"
+ },
+ "802": {
+  "read": "2026-11-16"
+ },
+ "803": {
+  "read": "2026-11-16"
+ },
+ "804": {
+  "read": "2026-11-16"
+ },
+ "805": {
+  "read": "2026-11-16"
+ },
+ "806": {
+  "read": "2026-11-16"
+ },
+ "807": {
+  "read": "2026-11-16"
+ },
+ "808": {
+  "read": "2026-11-16"
+ },
+ "809": {
+  "read": "2026-11-16"
+ },
+ "810": {
+  "read": "2026-11-16"
+ },
+ "811": {
+  "read": "2026-11-16"
+ },
+ "812": {
+  "read": "2026-11-16"
+ },
+ "813": {
+  "read": "2026-11-16"
+ },
+ "814": {
+  "read": "2026-11-16"
+ },
+ "815": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "قالَ لي رسولُ",
+    "قالَ لِي رسولُ",
+    "marks",
+    "The print has «لِي», a kasra under the lam (zoomed, p. 644); the text had it bare."
+   ]
+  ]
+ },
+ "816": {
+  "read": "2026-11-16"
+ },
+ "817": {
+  "read": "2026-11-16"
+ },
+ "818": {
+  "read": "2026-11-16"
+ },
+ "819": {
+  "read": "2026-11-16"
+ },
+ "820": {
+  "read": "2026-11-16"
+ },
+ "821": {
+  "read": "2026-11-16"
+ },
+ "822": {
+  "read": "2026-11-16"
+ },
+ "823": {
+  "read": "2026-11-16"
+ },
+ "824": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "عَلَى أَلْيَةِ يَدِي",
+    "عَلَى إِلْيَةِ يَدِي",
+    "variant",
+    "The print has «إِلْيَةِ» with the hamza under the alif (zoomed, p. 648), and its word meanings below are headed «على إلية يدي» the same way; v1 has «أَلْيَةِ»."
+   ]
+  ],
+  "note": ""
+ },
+ "825": {
+  "read": "2026-11-16"
+ },
+ "826": {
+  "read": "2026-11-16"
+ },
+ "827": {
+  "read": "2026-11-16"
+ },
+ "828": {
+  "read": "2026-11-16"
+ },
+ "829": {
+  "read": "2026-11-16"
+ },
+ "830": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "جَلَسَ وَسْطَ",
+    "جَلَسَ وَسَطَ",
+    "variant",
+    "The print has «وَسَطَ ٱلْحَلْقَةِ» with a fatha on the sin (zoomed, p. 651), as it has twice later in the hadith; v1 has «وَسْطَ», also good Arabic."
+   ]
+  ]
+ },
+ "831": {
+  "read": "2026-11-16"
+ },
+ "832": {
+  "read": "2026-11-16"
+ },
+ "833": {
+  "read": "2026-11-16"
+ },
+ "834": {
+  "read": "2026-11-16"
+ },
+ "835": {
+  "read": "2026-11-16"
+ },
+ "836": {
+  "read": "2026-11-16"
+ },
+ "837": {
+  "read": "2026-11-16"
+ },
+ "838": {
+  "read": "2026-11-16"
+ },
+ "839": {
+  "read": "2026-11-16"
+ },
+ "840": {
+  "read": "2026-11-16"
+ },
+ "841": {
+  "read": "2026-11-16"
+ },
+ "842": {
+  "read": "2026-11-16"
+ },
+ "843": {
+  "read": "2026-11-16"
+ },
+ "844": {
+  "read": "2026-11-16"
+ },
+ "845": {
+  "read": "2026-11-16"
+ },
+ "846": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "847": {
+  "read": "2026-11-16"
+ },
+ "848": {
+  "read": "2026-11-16"
+ },
+ "849": {
+  "read": "2026-11-16"
+ },
+ "850": {
+  "read": "2026-11-16"
+ },
+ "851": {
+  "read": "2026-11-16"
+ },
+ "852": {
+  "read": "2026-11-16"
+ },
+ "853": {
+  "read": "2026-11-16"
+ },
+ "854": {
+  "read": "2026-11-16"
+ },
+ "855": {
+  "read": "2026-11-16"
+ },
+ "856": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "857": {
+  "read": "2026-11-16"
+ },
+ "858": {
+  "read": "2026-11-16"
+ },
+ "859": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "عنْ أبي هُرَيْرَةَ",
+    "عنْ أَبِي هُرَيْرَةَ",
+    "marks",
+    "The print has «أَبِي» (zoomed, p. 667); the text left it bare."
+   ],
+   [
+    "عَنْهُ في حديثِ",
+    "عَنْهُ فِي حديثِ",
+    "marks",
+    "The print has «فِي حَدِيثِ» (zoomed, p. 667); the text left «في» bare."
+   ],
+   [
+    "جاءَ إلى النَّبِيِّ",
+    "جاءَ إلَى النَّبِيِّ",
+    "marks",
+    "The print has «إلَى النَّبِيِّ», with a fatha on the lam and no kasra under the hamza (zoomed, p. 667); the text left «إلى» bare."
+   ]
+  ]
+ },
+ "860": {
+  "read": "2026-11-16"
+ },
+ "861": {
+  "read": "2026-11-16"
+ },
+ "862": {
+  "read": "2026-11-16"
+ },
+ "863": {
+  "read": "2026-11-16"
+ },
+ "864": {
+  "read": "2026-11-16"
+ },
+ "865": {
+  "read": "2026-11-16"
+ },
+ "866": {
+  "read": "2026-11-16"
+ },
+ "867": {
+  "read": "2026-11-16"
+ },
+ "868": {
+  "read": "2026-11-16"
+ },
+ "869": {
+  "read": "2026-11-16"
+ },
+ "870": {
+  "read": "2026-11-16"
+ },
+ "871": {
+  "read": "2026-11-16"
+ },
+ "872": {
+  "read": "2026-11-16"
+ },
+ "873": {
+  "read": "2026-11-16"
+ },
+ "874": {
+  "read": "2026-11-16"
+ },
+ "875": {
+  "read": "2026-11-16"
+ },
+ "876": {
+  "read": "2026-11-16"
+ },
+ "877": {
+  "read": "2026-11-16"
+ },
+ "878": {
+  "read": "2026-11-16"
+ },
+ "879": {
+  "read": "2026-11-16"
+ },
+ "880": {
+  "read": "2026-11-16"
+ },
+ "881": {
+  "read": "2026-11-16"
+ },
+ "882": {
+  "read": "2026-11-16"
+ },
+ "883": {
+  "read": "2026-11-16"
+ },
+ "884": {
+  "read": "2026-11-16"
+ },
+ "885": {
+  "read": "2026-11-16"
+ },
+ "886": {
+  "read": "2026-11-16"
+ },
+ "887": {
+  "read": "2026-11-16"
+ },
+ "888": {
+  "read": "2026-11-16"
+ },
+ "889": {
+  "read": "2026-11-16"
+ },
+ "890": {
+  "read": "2026-11-16"
+ },
+ "891": {
+  "read": "2026-11-16"
+ },
+ "892": {
+  "read": "2026-11-16"
+ },
+ "893": {
+  "read": "2026-11-16"
+ },
+ "894": {
+  "read": "2026-11-16"
+ },
+ "895": {
+  "read": "2026-11-16"
+ },
+ "896": {
+  "read": "2026-11-16"
+ },
+ "897": {
+  "read": "2026-11-16"
+ },
+ "898": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "899": {
+  "read": "2026-11-16"
+ },
+ "900": {
+  "read": "2026-11-16"
+ },
+ "901": {
+  "read": "2026-11-16",
+  "misprint": [
+   [
+    "سُفْيانُ بْنَ عُيَيْنَةَ",
+    "سُفْيانُ بْنُ عُيَيْنَةَ",
+    "The print sets a fatha on the nun of «بن» (zoomed, p. 687), but it is in apposition to «سُفْيانُ», the subject of «وَضَعَ», which the print itself marks with a damma; v1's «بْنُ» stays."
+   ]
+  ]
+ },
+ "902": {
+  "read": "2026-11-16"
+ },
+ "903": {
+  "read": "2026-11-16"
+ },
+ "904": {
+  "read": "2026-11-16"
+ },
+ "905": {
+  "read": "2026-11-16"
+ },
+ "906": {
+  "read": "2026-11-16"
+ },
+ "907": {
+  "read": "2026-11-16"
+ },
+ "908": {
+  "read": "2026-11-16"
+ },
+ "909": {
+  "read": "2026-11-16"
+ },
+ "910": {
+  "read": "2026-11-16"
+ },
+ "911": {
+  "read": "2026-11-16"
+ },
+ "912": {
+  "read": "2026-11-16"
+ },
+ "913": {
+  "read": "2026-11-16"
+ },
+ "914": {
+  "read": "2026-11-16"
+ },
+ "915": {
+  "read": "2026-11-16"
+ },
+ "916": {
+  "read": "2026-11-16"
+ },
+ "917": {
+  "read": "2026-11-16"
+ },
+ "918": {
+  "read": "2026-11-16"
+ },
+ "919": {
+  "read": "2026-11-16"
+ },
+ "920": {
+  "read": "2026-11-16"
+ },
+ "921": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "922": {
+  "read": "2026-11-16"
+ },
+ "923": {
+  "read": "2026-11-16"
+ },
+ "924": {
+  "read": "2026-11-16"
+ },
+ "925": {
+  "read": "2026-11-16"
+ },
+ "926": {
+  "read": "2026-11-16"
+ },
+ "927": {
+  "read": "2026-11-16"
+ },
+ "928": {
+  "read": "2026-11-16"
+ },
+ "929": {
+  "read": "2026-11-16"
+ },
+ "930": {
+  "read": "2026-11-16"
+ },
+ "931": {
+  "read": "2026-11-16"
+ },
+ "932": {
+  "read": "2026-11-16"
+ },
+ "933": {
+  "read": "2026-11-16"
+ },
+ "934": {
+  "read": "2026-11-16"
+ },
+ "935": {
+  "read": "2026-11-16"
+ },
+ "936": {
+  "read": "2026-11-16"
+ },
+ "937": {
+  "read": "2026-11-16"
+ },
+ "938": {
+  "read": "2026-11-16",
+  "note": ""
+ },
+ "939": {
+  "read": "2026-11-16"
+ },
+ "940": {
+  "read": "2026-11-16"
+ },
+ "941": {
+  "read": "2026-11-16"
+ },
+ "942": {
+  "read": "2026-11-16"
+ },
+ "943": {
+  "read": "2026-11-16"
+ },
+ "944": {
+  "read": "2026-11-16"
+ },
+ "945": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "فَنَكَّسَ",
+    "فَنَكَسَ",
+    "variant",
+    "The print has «فَنَكَسَ», a plain fatha on the kaf with no shadda (zoomed, p. 710), where the same lines double «كُنَّا», «مُيَسَّرٌ» and «نَتَّكِلُ»; the text had v1's «فَنَكَّسَ». Both are good Arabic (to bow the head)."
+   ]
+  ]
+ },
+ "946": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "إذَا - فُرِغَ",
+    "إذَا فُرِغَ",
+    "v1",
+    "The print has «إذَا فُرِغَ مِنْ» with nothing between the two words (zoomed, p. 711); the text had a stray dash there, which breaks the sentence."
+   ]
+  ]
+ },
+ "947": {
+  "read": "2026-11-16"
+ },
+ "948": {
+  "read": "2026-11-16"
+ },
+ "949": {
+  "read": "2026-11-16"
+ },
+ "950": {
+  "read": "2026-11-16"
+ },
+ "951": {
+  "read": "2026-11-16"
+ },
+ "952": {
+  "read": "2026-11-16"
+ },
+ "953": {
+  "read": "2026-11-16"
+ },
+ "954": {
+  "read": "2026-11-16"
+ },
+ "955": {
+  "read": "2026-11-16"
+ },
+ "956": {
+  "read": "2026-11-16"
+ },
+ "957": {
+  "read": "2026-11-16"
+ },
+ "958": {
+  "read": "2026-11-16"
+ },
+ "959": {
+  "read": "2026-11-16"
+ },
+ "960": {
+  "read": "2026-11-16"
+ },
+ "961": {
+  "read": "2026-11-16"
+ },
+ "962": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "أَيْ: ارْفُقُوا",
+    "أَيْ: ارْفَقُوا",
+    "variant",
+    "The print has «ٱرْفَقُوا», a fatha on the fa and a damma on the qaf (zoomed, p. 721); the text had «ارْفُقُوا». Both are good Arabic (رَفُقَ / رَفِقَ به)."
+   ]
+  ],
+  "misprint": [
+   [
+    "وَقَوْلُهُ «نِقْيَها»",
+    "وقَوْلهُ ﷺ: «نِقْيَها»",
+    "The print drops the ﷺ after «وقوله», which refers to the Prophet (p. 721); v1's ﷺ stays (rule 1)."
+   ]
+  ],
+  "note": ""
+ },
+ "963": {
+  "read": "2026-11-16"
+ },
+ "964": {
+  "read": "2026-11-16"
+ },
+ "965": {
+  "read": "2026-11-16"
+ },
+ "966": {
+  "read": "2026-11-16"
+ },
+ "967": {
+  "read": "2026-11-16"
+ },
+ "968": {
+  "read": "2026-11-16"
+ },
+ "969": {
+  "read": "2026-11-16"
+ },
+ "970": {
+  "read": "2026-11-16"
+ },
+ "971": {
+  "read": "2026-11-16"
+ },
+ "972": {
+  "read": "2026-11-16"
+ },
+ "973": {
+  "read": "2026-11-16"
+ },
+ "974": {
+  "read": "2026-11-16"
+ },
+ "975": {
+  "read": "2026-11-16"
+ },
+ "976": {
+  "read": "2026-11-16"
+ },
+ "977": {
+  "read": "2026-11-16"
+ },
+ "978": {
+  "read": "2026-11-16"
+ },
+ "979": {
+  "read": "2026-11-16"
+ },
+ "980": {
+  "read": "2026-11-16"
+ },
+ "981": {
+  "read": "2026-11-16"
+ },
+ "982": {
+  "read": "2026-11-16"
+ },
+ "983": {
+  "read": "2026-11-16"
+ },
+ "984": {
+  "read": "2026-11-16"
+ },
+ "985": {
+  "read": "2026-11-16"
+ },
+ "986": {
+  "read": "2026-11-16"
+ },
+ "987": {
+  "read": "2026-11-16"
+ },
+ "988": {
+  "read": "2026-11-16"
+ },
+ "989": {
+  "read": "2026-11-16"
+ },
+ "990": {
+  "read": "2026-11-16"
+ },
+ "991": {
+  "read": "2026-11-16"
+ },
+ "992": {
+  "read": "2026-11-16"
+ },
+ "993": {
+  "read": "2026-11-16"
+ },
+ "994": {
+  "read": "2026-11-16"
+ },
+ "995": {
+  "read": "2026-11-16"
+ },
+ "996": {
+  "read": "2026-11-16"
+ },
+ "997": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "في اثنَتَيْنِ",
+    "فِي اثنَتَيْنِ",
+    "marks",
+    "The print has «فِي» with a kasra under the fa (zoomed, p. 742); the text left it bare."
+   ]
+  ]
+ },
+ "998": {
+  "read": "2026-11-16"
+ },
+ "999": {
+  "read": "2026-11-16"
+ },
+ "1000": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "قال: قال رسولُ",
+    "قالَ: قالَ رسولُ",
+    "marks",
+    "The print has «قالَ : قالَ» with a fatha on each lam (zoomed, p. 743); the text left both bare."
+   ],
+   [
+    "في جَوْفِهِ",
+    "فِي جَوْفِهِ",
+    "marks",
+    "The print has «فِي جَوْفِهِ» with a kasra under the fa (zoomed, p. 743); the text left «في» bare."
+   ]
+  ]
+ },
+ "1001": {
+  "read": "2026-11-16"
+ },
+ "1002": {
+  "read": "2026-11-16"
+ },
+ "1003": {
+  "read": "2026-11-16"
+ },
+ "1004": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "عَنْهُ قال: سمِعتُ",
+    "عَنْهُ قالَ: سمِعتُ",
+    "marks",
+    "The print has «قالَ» with a fatha on the lam (zoomed, p. 745); the text left it bare."
+   ]
+  ]
+ },
+ "1005": {
+  "read": "2026-11-16"
+ },
+ "1006": {
+  "read": "2026-11-16"
+ },
+ "1007": {
+  "read": "2026-11-16"
+ },
+ "1008": {
+  "read": "2026-11-16"
+ },
+ "1009": {
+  "read": "2026-11-16"
+ },
+ "1010": {
+  "read": "2026-11-16"
+ },
+ "1011": {
+  "read": "2026-11-16"
+ },
+ "1012": {
+  "read": "2026-11-16"
+ },
+ "1013": {
+  "read": "2026-11-16"
+ },
+ "1014": {
+  "read": "2026-11-16"
+ },
+ "1015": {
+  "read": "2026-11-16"
+ },
+ "1016": {
+  "read": "2026-11-16"
+ },
+ "1017": {
+  "read": "2026-11-16"
+ },
+ "1018": {
+  "read": "2026-11-16"
+ },
+ "1019": {
+  "read": "2026-11-16"
+ },
+ "1020": {
+  "read": "2026-11-16"
+ },
+ "1021": {
+  "read": "2026-11-16"
+ },
+ "1022": {
+  "read": "2026-11-16"
+ },
+ "1023": {
+  "read": "2026-11-16"
+ },
+ "1024": {
+  "read": "2026-11-16"
+ },
+ "1025": {
+  "read": "2026-11-16"
+ },
+ "1026": {
+  "read": "2026-11-16"
+ },
+ "1027": {
+  "read": "2026-11-16"
+ },
+ "1028": {
+  "read": "2026-11-16"
+ },
+ "1029": {
+  "read": "2026-11-16"
+ },
+ "1030": {
+  "read": "2026-11-16"
+ },
+ "1031": {
+  "read": "2026-11-16"
+ },
+ "1032": {
+  "read": "2026-11-16"
+ },
+ "1033": {
+  "read": "2026-11-16"
+ },
+ "1034": {
+  "read": "2026-11-16"
+ },
+ "1035": {
+  "read": "2026-11-16"
+ },
+ "1036": {
+  "read": "2026-11-16"
+ },
+ "1037": {
+  "read": "2026-11-16"
+ },
+ "1038": {
+  "read": "2026-11-16"
+ },
+ "1039": {
+  "read": "2026-11-16"
+ },
+ "1040": {
+  "read": "2026-11-16"
+ },
+ "1041": {
+  "read": "2026-11-16"
+ },
+ "1042": {
+  "read": "2026-11-16"
+ },
+ "1043": {
+  "read": "2026-11-16"
+ },
+ "1044": {
+  "read": "2026-11-16"
+ },
+ "1045": {
+  "read": "2026-11-16"
+ },
+ "1046": {
+  "read": "2026-11-16"
+ },
+ "1047": {
+  "read": "2026-11-16"
+ },
+ "1048": {
+  "read": "2026-11-16"
+ },
+ "1049": {
+  "read": "2026-11-16",
+  "fix": [
+   [
+    "فهُوَ في ذِمَّةِ",
+    "فهُوَ فِي ذِمَّةِ",
+    "marks",
+    "The print has «فِي ذِمَّةِ اللهِ» (p. 775); v1 leaves «في» bare."
+   ]
+  ]
+ },
+ "1050": {
+  "read": "2026-11-16"
+ },
+ "1051": {
+  "read": "2026-11-16"
+ },
+ "1052": {
+  "read": "2026-11-17"
+ },
+ "1053": {
+  "read": "2026-11-17"
+ },
+ "1054": {
+  "read": "2026-11-17"
+ },
+ "1055": {
+  "read": "2026-11-17"
+ },
+ "1056": {
+  "read": "2026-11-17"
+ },
+ "1057": {
+  "read": "2026-11-17"
+ },
+ "1058": {
+  "read": "2026-11-17"
+ },
+ "1059": {
+  "read": "2026-11-17"
+ },
+ "1060": {
+  "read": "2026-11-17"
+ },
+ "1061": {
+  "read": "2026-11-17"
+ },
+ "1062": {
+  "read": "2026-11-17"
+ },
+ "1063": {
+  "read": "2026-11-17"
+ },
+ "1064": {
+  "read": "2026-11-17"
+ },
+ "1065": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "يَخْطُ خَطْوَةً",
+    "يَخْطُ خُطْوَةً",
+    "variant",
+    "The print has «خُطْوَةَ» with a damma on the kha (zoomed, p. 783); the text had «خَطْوَةً». Both are good Arabic; the text's tanween stays, as the print's single fatha is its habit."
+   ]
+  ]
+ },
+ "1066": {
+  "read": "2026-11-17"
+ },
+ "1067": {
+  "read": "2026-11-17"
+ },
+ "1068": {
+  "read": "2026-11-17"
+ },
+ "1069": {
+  "read": "2026-11-17"
+ },
+ "1070": {
+  "read": "2026-11-17"
+ },
+ "1071": {
+  "read": "2026-11-17"
+ },
+ "1072": {
+  "read": "2026-11-17"
+ },
+ "1073": {
+  "read": "2026-11-17"
+ },
+ "1074": {
+  "read": "2026-11-17"
+ },
+ "1075": {
+  "read": "2026-11-17"
+ },
+ "1076": {
+  "read": "2026-11-17"
+ },
+ "1077": {
+  "read": "2026-11-17"
+ },
+ "1078": {
+  "read": "2026-11-17"
+ },
+ "1079": {
+  "read": "2026-11-17"
+ },
+ "1080": {
+  "read": "2026-11-17"
+ },
+ "1081": {
+  "read": "2026-11-17"
+ },
+ "1082": {
+  "read": "2026-11-17"
+ },
+ "1083": {
+  "read": "2026-11-17"
+ },
+ "1084": {
+  "read": "2026-11-17"
+ },
+ "1085": {
+  "read": "2026-11-17"
+ },
+ "1086": {
+  "read": "2026-11-17"
+ },
+ "1087": {
+  "read": "2026-11-17"
+ },
+ "1088": {
+  "read": "2026-11-17"
+ },
+ "1089": {
+  "read": "2026-11-17"
+ },
+ "1090": {
+  "read": "2026-11-17"
+ },
+ "1091": {
+  "read": "2026-11-17"
+ },
+ "1092": {
+  "read": "2026-11-17"
+ },
+ "1093": {
+  "read": "2026-11-17"
+ },
+ "1094": {
+  "read": "2026-11-17"
+ },
+ "1095": {
+  "read": "2026-11-17"
+ },
+ "1096": {
+  "read": "2026-11-17"
+ },
+ "1097": {
+  "read": "2026-11-17"
+ },
+ "1098": {
+  "read": "2026-11-17"
+ },
+ "1099": {
+  "read": "2026-11-17"
+ },
+ "1100": {
+  "read": "2026-11-17"
+ },
+ "1101": {
+  "read": "2026-11-17"
+ },
+ "1102": {
+  "read": "2026-11-17",
+  "note": ""
+ },
+ "1103": {
+  "read": "2026-11-17",
+  "note": "After «يعني», the print's mark on the ya of «النبي» (p. 803) is a blot over the shadda, shaped like the kasra-under-shadda on h. 1102's «عن النبيِّ» on the same page, so even on a zoom it could be a damma («النبيُّ») or a misprinted kasra. Both «النبيَّ» and «النبيُّ» are good Arabic here, so v1's «النَّبِيَّ» stays."
+ },
+ "1104": {
+  "read": "2026-11-17",
+  "note": "Read on a zoom, the print's «فيها» before «بأم القرآن» (p. 804) has no mim loop as clear as the one in «فيخففهما» on the same line. But the print sets «هما» as a tight ligature, and the OCR text reads h. 1103's «لركعتهما» and «وأجملتهما» as «ها» too. So v1's «فِيهِمَا» stays. Muslim and sunnah.com also have «فيهما», as does the dual «فيخففهما» before it."
+ },
+ "1105": {
+  "read": "2026-11-17"
+ },
+ "1106": {
+  "read": "2026-11-17"
+ },
+ "1107": {
+  "read": "2026-11-17"
+ },
+ "1108": {
+  "read": "2026-11-17"
+ },
+ "1109": {
+  "read": "2026-11-17"
+ },
+ "1110": {
+  "read": "2026-11-17"
+ },
+ "1111": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "هُوَ في (مُسْلِمٍ)",
+    "هُوَ فِي (مُسْلِمٍ)",
+    "marks",
+    "The print has «هُوَ فِي مُسْلِمٍ» with a kasra under the fa (zoomed, p. 808); v1 leaves «في» bare."
+   ]
+  ]
+ },
+ "1112": {
+  "read": "2026-11-17"
+ },
+ "1113": {
+  "read": "2026-11-17"
+ },
+ "1114": {
+  "read": "2026-11-17"
+ },
+ "1115": {
+  "read": "2026-11-17"
+ },
+ "1116": {
+  "read": "2026-11-17"
+ },
+ "1117": {
+  "read": "2026-11-17"
+ },
+ "1118": {
+  "read": "2026-11-17"
+ },
+ "1119": {
+  "read": "2026-11-17"
+ },
+ "1120": {
+  "read": "2026-11-17"
+ },
+ "1121": {
+  "read": "2026-11-17"
+ },
+ "1122": {
+  "read": "2026-11-17"
+ },
+ "1123": {
+  "read": "2026-11-17"
+ },
+ "1124": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "نُصَلِّيهِمَا",
+    "نُصَلِّيها",
+    "variant",
+    "The print has «نُصَلِّيها» (zoomed, p. 813), singular like its «صَلَّاها», which the first reading already took as the book's; v1 has the dual «نصليهما», as Muslim does."
+   ]
+  ]
+ },
+ "1125": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "يُصَلِّيهِمَا",
+    "يُصَلِّيها",
+    "variant",
+    "The print has «مَنْ يُصَلِّيها» (zoomed, p. 813), singular as in h. 1124; v1 has the dual «يصليهما», as Muslim does."
+   ]
+  ]
+ },
+ "1126": {
+  "read": "2026-11-17"
+ },
+ "1127": {
+  "read": "2026-11-17"
+ },
+ "1128": {
+  "read": "2026-11-17"
+ },
+ "1129": {
+  "read": "2026-11-17",
+  "misprint": [
+   [
+    "صَلاَةَ المَرْءِ",
+    "صَلاَةُ المَرْءِ",
+    "The print has a fatha on «صلاةَ» (zoomed, p. 814; the same stroke as on «أَفْضَلَ» beside it), but it is the predicate of «إنّ» and must be «صلاةُ», as v1 has."
+   ]
+  ]
+ },
+ "1130": {
+  "read": "2026-11-17"
+ },
+ "1131": {
+  "read": "2026-11-17"
+ },
+ "1132": {
+  "read": "2026-11-17"
+ },
+ "1133": {
+  "read": "2026-11-17"
+ },
+ "1134": {
+  "read": "2026-11-17"
+ },
+ "1135": {
+  "read": "2026-11-17"
+ },
+ "1136": {
+  "read": "2026-11-17"
+ },
+ "1137": {
+  "read": "2026-11-17"
+ },
+ "1138": {
+  "read": "2026-11-17"
+ },
+ "1139": {
+  "read": "2026-11-17"
+ },
+ "1140": {
+  "read": "2026-11-17"
+ },
+ "1141": {
+  "read": "2026-11-17"
+ },
+ "1142": {
+  "read": "2026-11-17"
+ },
+ "1143": {
+  "read": "2026-11-17"
+ },
+ "1144": {
+  "read": "2026-11-17"
+ },
+ "1145": {
+  "read": "2026-11-17"
+ },
+ "1146": {
+  "read": "2026-11-17"
+ },
+ "1147": {
+  "read": "2026-11-17"
+ },
+ "1148": {
+  "read": "2026-11-17"
+ },
+ "1149": {
+  "read": "2026-11-17"
+ },
+ "1150": {
+  "read": "2026-11-17"
+ },
+ "1151": {
+  "read": "2026-11-17"
+ },
+ "1152": {
+  "read": "2026-11-17"
+ },
+ "1153": {
+  "read": "2026-11-17"
+ },
+ "1154": {
+  "read": "2026-11-17"
+ },
+ "1155": {
+  "read": "2026-11-17"
+ },
+ "1156": {
+  "read": "2026-11-17"
+ },
+ "1157": {
+  "read": "2026-11-17"
+ },
+ "1158": {
+  "read": "2026-11-17"
+ },
+ "1159": {
+  "read": "2026-11-17"
+ },
+ "1160": {
+  "read": "2026-11-17"
+ },
+ "1161": {
+  "read": "2026-11-17"
+ },
+ "1162": {
+  "read": "2026-11-17"
+ },
+ "1163": {
+  "read": "2026-11-17"
+ },
+ "1164": {
+  "read": "2026-11-17"
+ },
+ "1165": {
+  "read": "2026-11-17"
+ },
+ "1166": {
+  "read": "2026-11-17"
+ },
+ "1167": {
+  "read": "2026-11-17"
+ },
+ "1168": {
+  "read": "2026-11-17"
+ },
+ "1169": {
+  "read": "2026-11-17"
+ },
+ "1170": {
+  "read": "2026-11-17"
+ },
+ "1171": {
+  "read": "2026-11-17"
+ },
+ "1172": {
+  "read": "2026-11-17"
+ },
+ "1173": {
+  "read": "2026-11-17"
+ },
+ "1174": {
+  "read": "2026-11-17"
+ },
+ "1175": {
+  "read": "2026-11-17"
+ },
+ "1176": {
+  "read": "2026-11-17"
+ },
+ "1177": {
+  "read": "2026-11-17"
+ },
+ "1178": {
+  "read": "2026-11-17"
+ },
+ "1179": {
+  "read": "2026-11-17"
+ },
+ "1180": {
+  "read": "2026-11-17"
+ },
+ "1181": {
+  "read": "2026-11-17"
+ },
+ "1182": {
+  "read": "2026-11-17"
+ },
+ "1183": {
+  "read": "2026-11-17"
+ },
+ "1184": {
+  "read": "2026-11-17"
+ },
+ "1185": {
+  "read": "2026-11-17"
+ },
+ "1186": {
+  "read": "2026-11-17"
+ },
+ "1187": {
+  "read": "2026-11-17"
+ },
+ "1188": {
+  "read": "2026-11-17"
+ },
+ "1189": {
+  "read": "2026-11-17"
+ },
+ "1190": {
+  "read": "2026-11-17"
+ },
+ "1191": {
+  "read": "2026-11-17"
+ },
+ "1192": {
+  "read": "2026-11-17"
+ },
+ "1193": {
+  "read": "2026-11-17"
+ },
+ "1194": {
+  "read": "2026-11-17"
+ },
+ "1195": {
+  "read": "2026-11-17"
+ },
+ "1196": {
+  "read": "2026-11-17"
+ },
+ "1197": {
+  "read": "2026-11-17"
+ },
+ "1198": {
+  "read": "2026-11-17"
+ },
+ "1199": {
+  "read": "2026-11-17"
+ },
+ "1200": {
+  "read": "2026-11-17"
+ },
+ "1201": {
+  "read": "2026-11-17"
+ },
+ "1202": {
+  "read": "2026-11-17"
+ },
+ "1203": {
+  "read": "2026-11-17",
+  "note": ""
+ },
+ "1204": {
+  "read": "2026-11-17"
+ },
+ "1205": {
+  "read": "2026-11-17"
+ },
+ "1206": {
+  "read": "2026-11-17"
+ },
+ "1207": {
+  "read": "2026-11-17"
+ },
+ "1208": {
+  "read": "2026-11-17"
+ },
+ "1209": {
+  "read": "2026-11-17"
+ },
+ "1210": {
+  "read": "2026-11-17"
+ },
+ "1211": {
+  "read": "2026-11-17"
+ },
+ "1212": {
+  "read": "2026-11-17"
+ },
+ "1213": {
+  "read": "2026-11-17"
+ },
+ "1214": {
+  "read": "2026-11-17"
+ },
+ "1215": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "عَلَى نَهْرٍ",
+    "عَلَى نَهَرٍ",
+    "variant",
+    "The print has «عَلَى نَهَرٍ», with a fatha on the ha (zoomed, p. 864); the text had v1's «نَهْرٍ», with a sukun. Both are good Arabic."
+   ]
+  ],
+  "note": ""
+ },
+ "1216": {
+  "read": "2026-11-17"
+ },
+ "1217": {
+  "read": "2026-11-17"
+ },
+ "1218": {
+  "read": "2026-11-17"
+ },
+ "1219": {
+  "read": "2026-11-17"
+ },
+ "1220": {
+  "read": "2026-11-17"
+ },
+ "1221": {
+  "read": "2026-11-17"
+ },
+ "1222": {
+  "read": "2026-11-17"
+ },
+ "1223": {
+  "read": "2026-11-17"
+ },
+ "1224": {
+  "read": "2026-11-17"
+ },
+ "1225": {
+  "read": "2026-11-17"
+ },
+ "1226": {
+  "read": "2026-11-17"
+ },
+ "1227": {
+  "read": "2026-11-17"
+ },
+ "1228": {
+  "read": "2026-11-17"
+ },
+ "1229": {
+  "read": "2026-11-17"
+ },
+ "1230": {
+  "read": "2026-11-17"
+ },
+ "1231": {
+  "read": "2026-11-17"
+ },
+ "1232": {
+  "read": "2026-11-17"
+ },
+ "1233": {
+  "read": "2026-11-17"
+ },
+ "1234": {
+  "read": "2026-11-17"
+ },
+ "1235": {
+  "read": "2026-11-17"
+ },
+ "1236": {
+  "read": "2026-11-17"
+ },
+ "1237": {
+  "read": "2026-11-17"
+ },
+ "1238": {
+  "read": "2026-11-17"
+ },
+ "1239": {
+  "read": "2026-11-17"
+ },
+ "1240": {
+  "read": "2026-11-17"
+ },
+ "1241": {
+  "read": "2026-11-17"
+ },
+ "1242": {
+  "read": "2026-11-17"
+ },
+ "1243": {
+  "read": "2026-11-17"
+ },
+ "1244": {
+  "read": "2026-11-17"
+ },
+ "1245": {
+  "read": "2026-11-17"
+ },
+ "1246": {
+  "read": "2026-11-17"
+ },
+ "1247": {
+  "read": "2026-11-17"
+ },
+ "1248": {
+  "read": "2026-11-17"
+ },
+ "1249": {
+  "read": "2026-11-17"
+ },
+ "1250": {
+  "read": "2026-11-17"
+ },
+ "1251": {
+  "read": "2026-11-17"
+ },
+ "1252": {
+  "read": "2026-11-17"
+ },
+ "1253": {
+  "read": "2026-11-17"
+ },
+ "1254": {
+  "read": "2026-11-17"
+ },
+ "1255": {
+  "read": "2026-11-17"
+ },
+ "1256": {
+  "read": "2026-11-17"
+ },
+ "1257": {
+  "read": "2026-11-17"
+ },
+ "1258": {
+  "read": "2026-11-17"
+ },
+ "1259": {
+  "read": "2026-11-17"
+ },
+ "1260": {
+  "read": "2026-11-17"
+ },
+ "1261": {
+  "read": "2026-11-17"
+ },
+ "1262": {
+  "read": "2026-11-17"
+ },
+ "1263": {
+  "read": "2026-11-17"
+ },
+ "1264": {
+  "read": "2026-11-17"
+ },
+ "1265": {
+  "read": "2026-11-17"
+ },
+ "1266": {
+  "read": "2026-11-17"
+ },
+ "1267": {
+  "read": "2026-11-17"
+ },
+ "1268": {
+  "read": "2026-11-17"
+ },
+ "1269": {
+  "read": "2026-11-17"
+ },
+ "1270": {
+  "read": "2026-11-17"
+ },
+ "1271": {
+  "read": "2026-11-17"
+ },
+ "1272": {
+  "read": "2026-11-17"
+ },
+ "1273": {
+  "read": "2026-11-17"
+ },
+ "1274": {
+  "read": "2026-11-17"
+ },
+ "1275": {
+  "read": "2026-11-17"
+ },
+ "1276": {
+  "read": "2026-11-17"
+ },
+ "1277": {
+  "read": "2026-11-17"
+ },
+ "1278": {
+  "read": "2026-11-17"
+ },
+ "1279": {
+  "read": "2026-11-17"
+ },
+ "1280": {
+  "read": "2026-11-17"
+ },
+ "1281": {
+  "read": "2026-11-17"
+ },
+ "1282": {
+  "read": "2026-11-17"
+ },
+ "1283": {
+  "read": "2026-11-17"
+ },
+ "1284": {
+  "read": "2026-11-17"
+ },
+ "1285": {
+  "read": "2026-11-17"
+ },
+ "1286": {
+  "read": "2026-11-17"
+ },
+ "1287": {
+  "read": "2026-11-17"
+ },
+ "1288": {
+  "read": "2026-11-17"
+ },
+ "1289": {
+  "read": "2026-11-17"
+ },
+ "1290": {
+  "read": "2026-11-17"
+ },
+ "1291": {
+  "read": "2026-11-17"
+ },
+ "1292": {
+  "read": "2026-11-17"
+ },
+ "1293": {
+  "read": "2026-11-17"
+ },
+ "1294": {
+  "read": "2026-11-17"
+ },
+ "1295": {
+  "read": "2026-11-17"
+ },
+ "1296": {
+  "read": "2026-11-17"
+ },
+ "1297": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "جُرِحَ جُرْحاً",
+    "جُرِحَ جَرْحاً",
+    "variant",
+    "The print has «جُرِحَ جَرْحاً», with a fatha on the jim of the verbal noun (zoomed, p. 907); the text had «جُرْحاً». Both are good Arabic."
+   ]
+  ]
+ },
+ "1298": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "فَذَكَرَ ذَلِكَ",
+    "فَذُكِرَ ذَلِكَ",
+    "variant",
+    "The print has the passive «فَذُكِرَ ذٰلِكَ», with a damma on the dhal and a kasra under the kaf (zoomed, p. 908); the text had «فَذَكَرَ». Both are good Arabic."
+   ]
+  ]
+ },
+ "1299": {
+  "read": "2026-11-17"
+ },
+ "1300": {
+  "read": "2026-11-17"
+ },
+ "1301": {
+  "read": "2026-11-17"
+ },
+ "1302": {
+  "read": "2026-11-17"
+ },
+ "1303": {
+  "read": "2026-11-17"
+ },
+ "1304": {
+  "read": "2026-11-17",
+  "note": ""
+ },
+ "1305": {
+  "read": "2026-11-17"
+ },
+ "1306": {
+  "read": "2026-11-17"
+ },
+ "1307": {
+  "read": "2026-11-17"
+ },
+ "1308": {
+  "read": "2026-11-17"
+ },
+ "1309": {
+  "read": "2026-11-17"
+ },
+ "1310": {
+  "read": "2026-11-17"
+ },
+ "1311": {
+  "read": "2026-11-17"
+ },
+ "1312": {
+  "read": "2026-11-17"
+ },
+ "1313": {
+  "read": "2026-11-17"
+ },
+ "1314": {
+  "read": "2026-11-17"
+ },
+ "1315": {
+  "read": "2026-11-17"
+ },
+ "1316": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "جَعْبَةُ النَّشَّابِ",
+    "جَعْبَةُ النُّشَّابِ",
+    "v1",
+    "The print has «النُّشَّابِ», a damma on the shadda of the nun (zoomed, p. 917, last line of the gloss); the text had a fatha, but the word for arrows is al-nushshab."
+   ]
+  ]
+ },
+ "1317": {
+  "read": "2026-11-17"
+ },
+ "1318": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "الْجَنَّةَ وَرَبِّ",
+    "الْجَنَّةُ وَرَبِّ",
+    "variant",
+    "The print has «ٱلْجَنَّةُ», a damma on the ta marbuta like the damma of «ٱسْتَطَعْتُ» on the next line (zoomed, p. 919); the text had «الْجَنَّةَ», al-Bukhari's reading. Both are good Arabic."
+   ],
+   [
+    "سَبَقَ في بابِ",
+    "سَبَقَ فِي بابِ",
+    "marks",
+    "The print has «فِي بابِ» with a kasra under the fa (zoomed, p. 920); the text had a bare «في»."
+   ]
+  ]
+ },
+ "1319": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "سَيَأْتِي في بابِ",
+    "سَيَأْتِي فِي بابِ",
+    "marks",
+    "The print has «فِي بابِ» with a kasra under the fa (zoomed, p. 920); the text had a bare «في»."
+   ]
+  ]
+ },
+ "1320": {
+  "read": "2026-11-17"
+ },
+ "1321": {
+  "read": "2026-11-17"
+ },
+ "1322": {
+  "read": "2026-11-17"
+ },
+ "1323": {
+  "read": "2026-11-17"
+ },
+ "1324": {
+  "read": "2026-11-17"
+ },
+ "1325": {
+  "read": "2026-11-17"
+ },
+ "1326": {
+  "read": "2026-11-17"
+ },
+ "1327": {
+  "read": "2026-11-17"
+ },
+ "1328": {
+  "read": "2026-11-17"
+ },
+ "1329": {
+  "read": "2026-11-17"
+ },
+ "1330": {
+  "read": "2026-11-17"
+ },
+ "1331": {
+  "read": "2026-11-17"
+ },
+ "1332": {
+  "read": "2026-11-17"
+ },
+ "1333": {
+  "read": "2026-11-17"
+ },
+ "1334": {
+  "read": "2026-11-17"
+ },
+ "1335": {
+  "read": "2026-11-17"
+ },
+ "1336": {
+  "read": "2026-11-17"
+ },
+ "1337": {
+  "read": "2026-11-17"
+ },
+ "1338": {
+  "read": "2026-11-17",
+  "note": ""
+ },
+ "1339": {
+  "read": "2026-11-17"
+ },
+ "1340": {
+  "read": "2026-11-17"
+ },
+ "1341": {
+  "read": "2026-11-17"
+ },
+ "1342": {
+  "read": "2026-11-17"
+ },
+ "1343": {
+  "read": "2026-11-17"
+ },
+ "1344": {
+  "read": "2026-11-17"
+ },
+ "1345": {
+  "read": "2026-11-17"
+ },
+ "1346": {
+  "read": "2026-11-17"
+ },
+ "1347": {
+  "read": "2026-11-17"
+ },
+ "1348": {
+  "read": "2026-11-17"
+ },
+ "1349": {
+  "read": "2026-11-17"
+ },
+ "1350": {
+  "read": "2026-11-17"
+ },
+ "1351": {
+  "read": "2026-11-17"
+ },
+ "1352": {
+  "read": "2026-11-17"
+ },
+ "1353": {
+  "read": "2026-11-17"
+ },
+ "1354": {
+  "read": "2026-11-17"
+ },
+ "1355": {
+  "read": "2026-11-17"
+ },
+ "1356": {
+  "read": "2026-11-17"
+ },
+ "1357": {
+  "read": "2026-11-17"
+ },
+ "1358": {
+  "read": "2026-11-17"
+ },
+ "1359": {
+  "read": "2026-11-17"
+ },
+ "1360": {
+  "read": "2026-11-17"
+ },
+ "1361": {
+  "read": "2026-11-17"
+ },
+ "1362": {
+  "read": "2026-11-17"
+ },
+ "1363": {
+  "read": "2026-11-17"
+ },
+ "1364": {
+  "read": "2026-11-17"
+ },
+ "1365": {
+  "read": "2026-11-17"
+ },
+ "1366": {
+  "read": "2026-11-17"
+ },
+ "1367": {
+  "read": "2026-11-17"
+ },
+ "1368": {
+  "read": "2026-11-17"
+ },
+ "1369": {
+  "read": "2026-11-17"
+ },
+ "1370": {
+  "read": "2026-11-17"
+ },
+ "1371": {
+  "read": "2026-11-17"
+ },
+ "1372": {
+  "read": "2026-11-17"
+ },
+ "1373": {
+  "read": "2026-11-17"
+ },
+ "1374": {
+  "read": "2026-11-17"
+ },
+ "1375": {
+  "read": "2026-11-17"
+ },
+ "1376": {
+  "read": "2026-11-17"
+ },
+ "1377": {
+  "read": "2026-11-17"
+ },
+ "1378": {
+  "read": "2026-11-17"
+ },
+ "1379": {
+  "read": "2026-11-17"
+ },
+ "1380": {
+  "read": "2026-11-17"
+ },
+ "1381": {
+  "read": "2026-11-17"
+ },
+ "1382": {
+  "read": "2026-11-17"
+ },
+ "1383": {
+  "read": "2026-11-17"
+ },
+ "1384": {
+  "read": "2026-11-17"
+ },
+ "1385": {
+  "read": "2026-11-17"
+ },
+ "1386": {
+  "read": "2026-11-17"
+ },
+ "1387": {
+  "read": "2026-11-17"
+ },
+ "1388": {
+  "read": "2026-11-17"
+ },
+ "1389": {
+  "read": "2026-11-17"
+ },
+ "1390": {
+  "read": "2026-11-17"
+ },
+ "1391": {
+  "read": "2026-11-17"
+ },
+ "1392": {
+  "read": "2026-11-17",
+  "misprint": [
+   [
+    "لِيُصِيبَ بِهِ غَرَضاً مِنَ",
+    "لِيُصِيبَ بِهِ عَرَضاً مِنَ",
+    "The matn prints «غَرَضاً» with a dot on the first letter (zoomed, p. 957; the «عَرْفَ» on the next line has none), but the book's own word meanings explain «ليصيب به عرضاً: لينال بسببه شيئاً من متاع الدنيا», with no dot, and v1 and Abu Dawud have «عَرَضاً». So the matn's dot is a misprint, and the text keeps «عَرَضاً»."
+   ]
+  ]
+ },
+ "1393": {
+  "read": "2026-11-17"
+ },
+ "1394": {
+  "read": "2026-11-17",
+  "note": ""
+ },
+ "1395": {
+  "read": "2026-11-17"
+ },
+ "1396": {
+  "read": "2026-11-17"
+ },
+ "1397": {
+  "read": "2026-11-17"
+ },
+ "1398": {
+  "read": "2026-11-17"
+ },
+ "1399": {
+  "read": "2026-11-17"
+ },
+ "1400": {
+  "read": "2026-11-17"
+ },
+ "1401": {
+  "read": "2026-11-17"
+ },
+ "1402": {
+  "read": "2026-11-17"
+ },
+ "1403": {
+  "read": "2026-11-17"
+ },
+ "1404": {
+  "read": "2026-11-17"
+ },
+ "1405": {
+  "read": "2026-11-17"
+ },
+ "1406": {
+  "read": "2026-11-17"
+ },
+ "1407": {
+  "read": "2026-11-17"
+ },
+ "1408": {
+  "read": "2026-11-17"
+ },
+ "1409": {
+  "read": "2026-11-17"
+ },
+ "1410": {
+  "read": "2026-11-17"
+ },
+ "1411": {
+  "read": "2026-11-17"
+ },
+ "1412": {
+  "read": "2026-11-17"
+ },
+ "1413": {
+  "read": "2026-11-17"
+ },
+ "1414": {
+  "read": "2026-11-17"
+ },
+ "1415": {
+  "read": "2026-11-17"
+ },
+ "1416": {
+  "read": "2026-11-17"
+ },
+ "1417": {
+  "read": "2026-11-17"
+ },
+ "1418": {
+  "read": "2026-11-17"
+ },
+ "1419": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "مِنْهُنَّ كُلِّهِنَّ",
+    "مِنْهُنَّ كُلُّهُنَّ",
+    "variant",
+    "The print has «مِنْهُنَّ كُلُّهُنَّ», with a damma over the ha and a damma on the kaf (zoomed, p. 975); the text had «كُلِّهِنَّ». Both readings are good Arabic: «كلُّهن» is the subject of «يكون», and «كلِّهن» emphasizes «منهن»."
+   ]
+  ]
+ },
+ "1420": {
+  "read": "2026-11-17"
+ },
+ "1421": {
+  "read": "2026-11-17"
+ },
+ "1422": {
+  "read": "2026-11-17"
+ },
+ "1423": {
+  "read": "2026-11-17"
+ },
+ "1424": {
+  "read": "2026-11-17"
+ },
+ "1425": {
+  "read": "2026-11-17"
+ },
+ "1426": {
+  "read": "2026-11-17"
+ },
+ "1427": {
+  "read": "2026-11-17"
+ },
+ "1428": {
+  "read": "2026-11-17"
+ },
+ "1429": {
+  "read": "2026-11-17"
+ },
+ "1430": {
+  "read": "2026-11-17"
+ },
+ "1431": {
+  "read": "2026-11-17"
+ },
+ "1432": {
+  "read": "2026-11-17"
+ },
+ "1433": {
+  "read": "2026-11-17"
+ },
+ "1434": {
+  "read": "2026-11-17"
+ },
+ "1435": {
+  "read": "2026-11-17"
+ },
+ "1436": {
+  "read": "2026-11-17"
+ },
+ "1437": {
+  "read": "2026-11-17"
+ },
+ "1438": {
+  "read": "2026-11-17"
+ },
+ "1439": {
+  "read": "2026-11-17"
+ },
+ "1440": {
+  "read": "2026-11-17"
+ },
+ "1441": {
+  "read": "2026-11-17"
+ },
+ "1442": {
+  "read": "2026-11-17"
+ },
+ "1443": {
+  "read": "2026-11-17"
+ },
+ "1444": {
+  "read": "2026-11-17"
+ },
+ "1445": {
+  "read": "2026-11-17"
+ },
+ "1446": {
+  "read": "2026-11-17"
+ },
+ "1447": {
+  "read": "2026-11-17"
+ },
+ "1448": {
+  "read": "2026-11-17"
+ },
+ "1449": {
+  "read": "2026-11-17"
+ },
+ "1450": {
+  "read": "2026-11-17"
+ },
+ "1451": {
+  "read": "2026-11-17"
+ },
+ "1452": {
+  "read": "2026-11-17"
+ },
+ "1453": {
+  "read": "2026-11-17"
+ },
+ "1454": {
+  "read": "2026-11-17"
+ },
+ "1455": {
+  "read": "2026-11-17"
+ },
+ "1456": {
+  "read": "2026-11-17"
+ },
+ "1457": {
+  "read": "2026-11-17"
+ },
+ "1458": {
+  "read": "2026-11-17"
+ },
+ "1459": {
+  "read": "2026-11-17"
+ },
+ "1460": {
+  "read": "2026-11-17"
+ },
+ "1461": {
+  "read": "2026-11-17"
+ },
+ "1462": {
+  "read": "2026-11-17"
+ },
+ "1463": {
+  "read": "2026-11-17"
+ },
+ "1464": {
+  "read": "2026-11-17"
+ },
+ "1465": {
+  "read": "2026-11-17"
+ },
+ "1466": {
+  "read": "2026-11-17"
+ },
+ "1467": {
+  "read": "2026-11-17"
+ },
+ "1468": {
+  "read": "2026-11-17"
+ },
+ "1469": {
+  "read": "2026-11-17"
+ },
+ "1470": {
+  "read": "2026-11-17"
+ },
+ "1471": {
+  "read": "2026-11-17"
+ },
+ "1472": {
+  "read": "2026-11-17"
+ },
+ "1473": {
+  "read": "2026-11-17"
+ },
+ "1474": {
+  "read": "2026-11-17"
+ },
+ "1475": {
+  "read": "2026-11-17"
+ },
+ "1476": {
+  "read": "2026-11-17"
+ },
+ "1477": {
+  "read": "2026-11-17"
+ },
+ "1478": {
+  "read": "2026-11-17"
+ },
+ "1479": {
+  "read": "2026-11-17"
+ },
+ "1480": {
+  "read": "2026-11-17"
+ },
+ "1481": {
+  "read": "2026-11-17"
+ },
+ "1482": {
+  "read": "2026-11-17"
+ },
+ "1483": {
+  "read": "2026-11-17"
+ },
+ "1484": {
+  "read": "2026-11-17"
+ },
+ "1485": {
+  "read": "2026-11-17"
+ },
+ "1486": {
+  "read": "2026-11-17"
+ },
+ "1487": {
+  "read": "2026-11-17"
+ },
+ "1488": {
+  "read": "2026-11-17"
+ },
+ "1489": {
+  "read": "2026-11-17"
+ },
+ "1490": {
+  "read": "2026-11-17"
+ },
+ "1491": {
+  "read": "2026-11-17"
+ },
+ "1492": {
+  "read": "2026-11-17"
+ },
+ "1493": {
+  "read": "2026-11-17"
+ },
+ "1494": {
+  "read": "2026-11-17"
+ },
+ "1495": {
+  "read": "2026-11-17"
+ },
+ "1496": {
+  "read": "2026-11-17"
+ },
+ "1497": {
+  "read": "2026-11-17"
+ },
+ "1498": {
+  "read": "2026-11-17"
+ },
+ "1499": {
+  "read": "2026-11-17"
+ },
+ "1500": {
+  "read": "2026-11-17"
+ },
+ "1501": {
+  "read": "2026-11-17"
+ },
+ "1502": {
+  "read": "2026-11-17"
+ },
+ "1503": {
+  "read": "2026-11-17"
+ },
+ "1504": {
+  "read": "2026-11-17"
+ },
+ "1505": {
+  "read": "2026-11-17"
+ },
+ "1506": {
+  "read": "2026-11-17"
+ },
+ "1507": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "بْنِ نُفَيْلِ رَضِيَ",
+    "بْنِ نُفَيْلٍ رَضِيَ",
+    "v1",
+    "The print has the single kasra «نُفَيْلِ» (zoomed, p. 1028), its habit for tanween, and v1 has it too; «نُفَيْل» takes tanween in the genitive, as the collections have it, so the tanween is written (rule 2)."
+   ]
+  ]
+ },
+ "1508": {
+  "read": "2026-11-17"
+ },
+ "1509": {
+  "read": "2026-11-17"
+ },
+ "1510": {
+  "read": "2026-11-17"
+ },
+ "1511": {
+  "read": "2026-11-17"
+ },
+ "1512": {
+  "read": "2026-11-17"
+ },
+ "1513": {
+  "read": "2026-11-17"
+ },
+ "1514": {
+  "read": "2026-11-17"
+ },
+ "1515": {
+  "read": "2026-11-17"
+ },
+ "1516": {
+  "read": "2026-11-17"
+ },
+ "1517": {
+  "read": "2026-11-17"
+ },
+ "1518": {
+  "read": "2026-11-17"
+ },
+ "1519": {
+  "read": "2026-11-17"
+ },
+ "1520": {
+  "read": "2026-11-17"
+ },
+ "1521": {
+  "read": "2026-11-17"
+ },
+ "1522": {
+  "read": "2026-11-17"
+ },
+ "1523": {
+  "read": "2026-11-17"
+ },
+ "1524": {
+  "read": "2026-11-17"
+ },
+ "1525": {
+  "read": "2026-11-17"
+ },
+ "1526": {
+  "read": "2026-11-17"
+ },
+ "1527": {
+  "read": "2026-11-17"
+ },
+ "1528": {
+  "read": "2026-11-17"
+ },
+ "1529": {
+  "read": "2026-11-17"
+ },
+ "1530": {
+  "read": "2026-11-17"
+ },
+ "1531": {
+  "read": "2026-11-17"
+ },
+ "1532": {
+  "read": "2026-11-17"
+ },
+ "1533": {
+  "read": "2026-11-17"
+ },
+ "1534": {
+  "read": "2026-11-17"
+ },
+ "1535": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "فَلَوَّوْا رُؤُوسَهُمْ",
+    "فَلَوَوْا رُؤُوسَهُمْ",
+    "variant",
+    "The print has «فَلَوَوْا» with a fatha on the first waw and no shadda (zoomed, p. 1050); the text had «فَلَوَّوْا». Both are good readings (63:5 is read both ways)."
+   ]
+  ]
+ },
+ "1536": {
+  "read": "2026-11-17"
+ },
+ "1537": {
+  "read": "2026-11-17"
+ },
+ "1538": {
+  "read": "2026-11-17"
+ },
+ "1539": {
+  "read": "2026-11-17"
+ },
+ "1540": {
+  "read": "2026-11-17"
+ },
+ "1541": {
+  "read": "2026-11-17"
+ },
+ "1542": {
+  "read": "2026-11-17"
+ },
+ "1543": {
+  "read": "2026-11-17"
+ },
+ "1544": {
+  "read": "2026-11-17"
+ },
+ "1545": {
+  "read": "2026-11-17"
+ },
+ "1546": {
+  "read": "2026-11-17"
+ },
+ "1547": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "دَعَانِي أَدْخُلْ",
+    "دَعَانِي أَدْخُلُ",
+    "variant",
+    "The print has «أَدْخُلُ» with a damma on the lam (zoomed, p. 1061, last lines); the text had the jussive «أَدْخُلْ». Both are good Arabic after an imperative, so the print's reading is taken."
+   ],
+   [
+    "الَّلاَمِ",
+    "اللَّامِ",
+    "v1",
+    "The print has «اللَّامِ», with the shadda on the second lam (zoomed, p. 1062, gloss of «الكلوب»); v1 put the shadda on the article's lam, the wrong letter."
+   ]
+  ]
+ },
+ "1548": {
+  "read": "2026-11-17"
+ },
+ "1549": {
+  "read": "2026-11-17"
+ },
+ "1550": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "بِحَدِيثٍ يُرَى أَنَّهُ",
+    "بِحَدِيثٍ يَرَى أَنَّهُ",
+    "variant",
+    "The print has «يَرَى» with a fatha on the ya (zoomed, p. 1065: a straight stroke like the fathas of «كَذِبٌ» and «فَهُوَ», not the curl of the damma on «أَنَّهُ»); v1 has «يُرَى». Both readings are known for this hadith."
+   ]
+  ]
+ },
+ "1551": {
+  "read": "2026-11-17"
+ },
+ "1552": {
+  "read": "2026-11-17"
+ },
+ "1553": {
+  "read": "2026-11-17"
+ },
+ "1554": {
+  "read": "2026-11-17"
+ },
+ "1555": {
+  "read": "2026-11-17"
+ },
+ "1556": {
+  "read": "2026-11-17"
+ },
+ "1557": {
+  "read": "2026-11-17"
+ },
+ "1558": {
+  "read": "2026-11-17"
+ },
+ "1559": {
+  "read": "2026-11-17"
+ },
+ "1560": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "كُلَّهَا كَانَتْ",
+    "كُلُّها كَانَتْ",
+    "variant",
+    "The print has «كُلُّها» with a damma on the shadda (zoomed, p. 1071), the same mark as on the ra of «التَّصَرُّفاتِ» beside it, not the fatha of «لِأَنَّ»; the text had v1's «كُلَّهَا». Both are good Arabic (subject of a nominal clause, or emphasis of «التصرفات»)."
+   ]
+  ]
+ },
+ "1561": {
+  "read": "2026-11-17"
+ },
+ "1562": {
+  "read": "2026-11-17"
+ },
+ "1563": {
+  "read": "2026-11-17"
+ },
+ "1564": {
+  "read": "2026-11-17"
+ },
+ "1565": {
+  "read": "2026-11-17"
+ },
+ "1566": {
+  "read": "2026-11-17"
+ },
+ "1567": {
+  "read": "2026-11-17"
+ },
+ "1568": {
+  "read": "2026-11-17"
+ },
+ "1569": {
+  "read": "2026-11-17"
+ },
+ "1570": {
+  "read": "2026-11-17"
+ },
+ "1571": {
+  "read": "2026-11-17"
+ },
+ "1572": {
+  "read": "2026-11-17"
+ },
+ "1573": {
+  "read": "2026-11-17"
+ },
+ "1574": {
+  "read": "2026-11-17"
+ },
+ "1575": {
+  "read": "2026-11-17"
+ },
+ "1576": {
+  "read": "2026-11-17"
+ },
+ "1577": {
+  "read": "2026-11-17"
+ },
+ "1578": {
+  "read": "2026-11-17"
+ },
+ "1579": {
+  "read": "2026-11-17"
+ },
+ "1580": {
+  "read": "2026-11-17"
+ },
+ "1581": {
+  "read": "2026-11-17"
+ },
+ "1582": {
+  "read": "2026-11-17"
+ },
+ "1583": {
+  "read": "2026-11-17"
+ },
+ "1584": {
+  "read": "2026-11-17"
+ },
+ "1585": {
+  "read": "2026-11-17"
+ },
+ "1586": {
+  "read": "2026-11-17"
+ },
+ "1587": {
+  "read": "2026-11-17"
+ },
+ "1588": {
+  "read": "2026-11-17"
+ },
+ "1589": {
+  "read": "2026-11-17"
+ },
+ "1590": {
+  "read": "2026-11-17"
+ },
+ "1591": {
+  "read": "2026-11-17"
+ },
+ "1592": {
+  "read": "2026-11-17"
+ },
+ "1593": {
+  "read": "2026-11-17"
+ },
+ "1594": {
+  "read": "2026-11-17"
+ },
+ "1595": {
+  "read": "2026-11-17"
+ },
+ "1596": {
+  "read": "2026-11-17"
+ },
+ "1597": {
+  "read": "2026-11-17"
+ },
+ "1598": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "الصَّحَابِيُّ",
+    "الصَّحَابِيِّ",
+    "v1",
+    "The print has «الصَّحَابِيِّ» (zoomed, p. 1096): the mark on its ya is the shadda with the kasra stroke under it, as on «الأسلميّ» in the line above, not the damma on top that «السُّلَمِيُّ» beside it has; it is the adjective of «أبي خراش», genitive, and the text had v1's damma."
+   ]
+  ]
+ },
+ "1599": {
+  "read": "2026-11-17"
+ },
+ "1600": {
+  "read": "2026-11-17"
+ },
+ "1601": {
+  "read": "2026-11-17"
+ },
+ "1602": {
+  "read": "2026-11-17"
+ },
+ "1603": {
+  "read": "2026-11-17"
+ },
+ "1604": {
+  "read": "2026-11-17"
+ },
+ "1605": {
+  "read": "2026-11-17"
+ },
+ "1606": {
+  "read": "2026-11-17"
+ },
+ "1607": {
+  "read": "2026-11-17"
+ },
+ "1608": {
+  "read": "2026-11-17"
+ },
+ "1609": {
+  "read": "2026-11-17"
+ },
+ "1610": {
+  "read": "2026-11-17"
+ },
+ "1611": {
+  "read": "2026-11-17"
+ },
+ "1612": {
+  "read": "2026-11-17"
+ },
+ "1613": {
+  "read": "2026-11-17"
+ },
+ "1614": {
+  "read": "2026-11-17"
+ },
+ "1615": {
+  "read": "2026-11-17"
+ },
+ "1616": {
+  "read": "2026-11-17"
+ },
+ "1617": {
+  "read": "2026-11-17"
+ },
+ "1618": {
+  "read": "2026-11-17"
+ },
+ "1619": {
+  "read": "2026-11-17"
+ },
+ "1620": {
+  "read": "2026-11-17"
+ },
+ "1621": {
+  "read": "2026-11-17"
+ },
+ "1622": {
+  "read": "2026-11-17"
+ },
+ "1623": {
+  "read": "2026-11-17"
+ },
+ "1624": {
+  "read": "2026-11-17"
+ },
+ "1625": {
+  "read": "2026-11-17"
+ },
+ "1626": {
+  "read": "2026-11-17"
+ },
+ "1627": {
+  "read": "2026-11-17"
+ },
+ "1628": {
+  "read": "2026-11-17"
+ },
+ "1629": {
+  "read": "2026-11-17"
+ },
+ "1630": {
+  "read": "2026-11-17"
+ },
+ "1631": {
+  "read": "2026-11-17"
+ },
+ "1632": {
+  "read": "2026-11-17"
+ },
+ "1633": {
+  "read": "2026-11-17"
+ },
+ "1634": {
+  "read": "2026-11-17"
+ },
+ "1635": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "وما يَلزَمُهُنَّ",
+    "ومَا يَلزَمُهُنَّ",
+    "marks",
+    "The print has «وَمَا يَلْزَمُهُنَّ» with a fatha after the waw, which the print leaves bare (rule 3), so it is the mim's (zoomed, p. 1122); the text had «وما» bare."
+   ]
+  ]
+ },
+ "1636": {
+  "read": "2026-11-17"
+ },
+ "1637": {
+  "read": "2026-11-17"
+ },
+ "1638": {
+  "read": "2026-11-17"
+ },
+ "1639": {
+  "read": "2026-11-17"
+ },
+ "1640": {
+  "read": "2026-11-17"
+ },
+ "1641": {
+  "read": "2026-11-17"
+ },
+ "1642": {
+  "read": "2026-11-17"
+ },
+ "1643": {
+  "read": "2026-11-17"
+ },
+ "1644": {
+  "read": "2026-11-17"
+ },
+ "1645": {
+  "read": "2026-11-17"
+ },
+ "1646": {
+  "read": "2026-11-17"
+ },
+ "1647": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "وما لِي",
+    "ومَا لِي",
+    "marks",
+    "The print has «وَمالِي» with a fatha over the meem, left of the waw's head (zoomed, p. 1130); the text left «وما» bare. The opening waw stays bare (rule 3)."
+   ]
+  ]
+ },
+ "1648": {
+  "read": "2026-11-17"
+ },
+ "1649": {
+  "read": "2026-11-17"
+ },
+ "1650": {
+  "read": "2026-11-17"
+ },
+ "1651": {
+  "read": "2026-11-17"
+ },
+ "1652": {
+  "read": "2026-11-17"
+ },
+ "1653": {
+  "read": "2026-11-17"
+ },
+ "1654": {
+  "read": "2026-11-17"
+ },
+ "1655": {
+  "read": "2026-11-17"
+ },
+ "1656": {
+  "read": "2026-11-17"
+ },
+ "1657": {
+  "read": "2026-11-17"
+ },
+ "1658": {
+  "read": "2026-11-17"
+ },
+ "1659": {
+  "read": "2026-11-17"
+ },
+ "1660": {
+  "read": "2026-11-17"
+ },
+ "1661": {
+  "read": "2026-11-17"
+ },
+ "1662": {
+  "read": "2026-11-17"
+ },
+ "1663": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "أنْ لا نَنُوح",
+    "أنْ لاَ نَنُوح",
+    "marks",
+    "The print has «أَلاَّ نَنُوحَ», a fatha on the doubled lam (zoomed, p. 1139); v1's spelling «أن لا» stays (rule 4), and its bare «لا» gets that fatha."
+   ]
+  ]
+ },
+ "1664": {
+  "read": "2026-11-17"
+ },
+ "1665": {
+  "read": "2026-11-17",
+  "misprint": [
+   [
+    "فَبَكَى رَسُولُ اللهِ .",
+    "فَبَكَى رسُولُ اللَّه ﷺ.",
+    "The print leaves out ﷺ after «رسول الله» (zoomed, p. 1140); v1's stays (rule 1)."
+   ]
+  ]
+ },
+ "1666": {
+  "read": "2026-11-17"
+ },
+ "1667": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "أنْ لا نَعْصِيَهُ",
+    "أنْ لاَ نَعْصِيَهُ",
+    "marks",
+    "The print has «أَلاَّ نَعْصِيَهُ», a fatha on the doubled lam (zoomed, p. 1141); v1's spelling «أن لا» stays (rule 4), and its bare «لا» gets that fatha."
+   ],
+   [
+    "أَنْ لا نَخْمِشَ",
+    "أَنْ لاَ نَخْمِشَ",
+    "marks",
+    "The print has «أَلاَّ نَخْمِشَ», a fatha on the doubled lam (zoomed, p. 1141); v1's spelling «أن لا» stays (rule 4), and its bare «لا» gets that fatha."
+   ]
+  ]
+ },
+ "1668": {
+  "read": "2026-11-17"
+ },
+ "1669": {
+  "read": "2026-11-17"
+ },
+ "1670": {
+  "read": "2026-11-17",
+  "misprint": [
+   [
+    "أَنَاسٌ",
+    "أُنَاسٌ",
+    "The print has «أَنَاسٌ» with a fatha on the hamza (zoomed, p. 1143: a straight stroke, not the curl of the damma on «مُتَّفَقٌ» below it); the word is «أُنَاسٌ», as v1 and Muslim have it, and the text keeps it."
+   ]
+  ]
+ },
+ "1671": {
+  "read": "2026-11-17"
+ },
+ "1672": {
+  "read": "2026-11-17"
+ },
+ "1673": {
+  "read": "2026-11-17"
+ },
+ "1674": {
+  "read": "2026-11-17"
+ },
+ "1675": {
+  "read": "2026-11-17"
+ },
+ "1676": {
+  "read": "2026-11-17"
+ },
+ "1677": {
+  "read": "2026-11-17"
+ },
+ "1678": {
+  "read": "2026-11-17"
+ },
+ "1679": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "أَبُو داودُ",
+    "أَبُو دَاوُدَ",
+    "v1",
+    "The print has «أَبُو دَاوُدَ» with a fatha on the last dal (zoomed, p. 1149), the genitive of the diptote; v1 had «داودُ» with a damma."
+   ]
+  ]
+ },
+ "1680": {
+  "read": "2026-11-17"
+ },
+ "1681": {
+  "read": "2026-11-17"
+ },
+ "1682": {
+  "read": "2026-11-17"
+ },
+ "1683": {
+  "read": "2026-11-17"
+ },
+ "1684": {
+  "read": "2026-11-17"
+ },
+ "1685": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "وَعَنْ أبي هُرَيْرَة رضي اللَّه",
+    "وَعَنْ أبِي هُرَيْرَة رَضِيَ اللَّه",
+    "marks",
+    "The print has «أبِي هُرَيْرَةَ رَضِيَ» (zoomed, p. 1152); v1 leaves «أبي» and «رضي» bare."
+   ],
+   [
+    "شَعِيرَةً» متفقٌ عليه.",
+    "شَعِيرَةً» متَّفقٌ عَلَيْهِ.",
+    "v1",
+    "The print has «مُتَّفَقٌ عَلَيْهِ» (zoomed, p. 1153); v1 lacks the shadda of «متَّفقٌ» and leaves «عليه» bare."
+   ]
+  ]
+ },
+ "1686": {
+  "read": "2026-11-17"
+ },
+ "1687": {
+  "read": "2026-11-17",
+  "note": ""
+ },
+ "1688": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "فَإذا جِرْوُ كَلْبٍ",
+    "فَإذا جَرْوُ كَلْبٍ",
+    "variant",
+    "The print has «جَرْوُ», a fatha on the jim like that of «فَإذا» beside it (zoomed, p. 1154); v1 has «جِرْوُ». Both are good Arabic, and al-Nasa'i has «جَرْوُ»."
+   ]
+  ]
+ },
+ "1689": {
+  "read": "2026-11-17",
+  "note": "The print has «أنْ لا تَدَعْ صُورَةً» with a sukun on the ain (p. 1154, zoomed), and a kasra-like mark under the gap after the word; v1 has «تَدَعَ», as Muslim does. Both are good Arabic and the stray mark leaves a doubt, so v1's «تَدَعَ» stays."
+ },
+ "1690": {
+  "read": "2026-11-17"
+ },
+ "1691": {
+  "read": "2026-11-17"
+ },
+ "1692": {
+  "read": "2026-11-17"
+ },
+ "1693": {
+  "read": "2026-11-17"
+ },
+ "1694": {
+  "read": "2026-11-17"
+ },
+ "1695": {
+  "read": "2026-11-17"
+ },
+ "1696": {
+  "read": "2026-11-17"
+ },
+ "1697": {
+  "read": "2026-11-17"
+ },
+ "1698": {
+  "read": "2026-11-17"
+ },
+ "1699": {
+  "read": "2026-11-17"
+ },
+ "1700": {
+  "read": "2026-11-17"
+ },
+ "1701": {
+  "read": "2026-11-17"
+ },
+ "1702": {
+  "read": "2026-11-17"
+ },
+ "1703": {
+  "read": "2026-11-17"
+ },
+ "1704": {
+  "read": "2026-11-17"
+ },
+ "1705": {
+  "read": "2026-11-17"
+ },
+ "1706": {
+  "read": "2026-11-17"
+ },
+ "1707": {
+  "read": "2026-11-17"
+ },
+ "1708": {
+  "read": "2026-11-17"
+ },
+ "1709": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "وفي رِوَايَةٍ",
+    "وفِي رِوَايَةٍ",
+    "marks",
+    "The print has «وفِي رِوَايَةٍ» with a kasra under the fa (zoomed, p. 1166); the text left «وفي» bare."
+   ]
+  ]
+ },
+ "1710": {
+  "read": "2026-11-17"
+ },
+ "1711": {
+  "read": "2026-11-17"
+ },
+ "1712": {
+  "read": "2026-11-17"
+ },
+ "1713": {
+  "read": "2026-11-17"
+ },
+ "1714": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "النَّبِيَّ ﷺ قال:",
+    "النَّبِيَّ ﷺ قالَ:",
+    "marks",
+    "The print has «قَـــالَ» with a fatha on the lam (zoomed, p. 1168, stretch left out); the text left «قال» bare."
+   ],
+   [
+    "منْ كتاب اللَّهِ",
+    "منْ كِتابِ اللَّهِ",
+    "marks",
+    "The print has «كِتابِ» (zoomed, p. 1168); the text left «كتاب» bare."
+   ],
+   [
+    "إلى آخِرِ",
+    "إِلَى آخِرِ",
+    "marks",
+    "The print has «إِلَى» with a fatha on the lam (zoomed, p. 1168); the text left «إلى» bare."
+   ]
+  ]
+ },
+ "1715": {
+  "read": "2026-11-17"
+ },
+ "1716": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "عمرٍو بْنِ",
+    "عمرِو بْنِ",
+    "v1",
+    "The print leaves the ra of «عَمْرو» bare (zoomed, p. 1169), so v1's kasra stays: the tanween drops before «بن» between two names («عبدُ الله بنُ عمرِو بنِ العاص»). The first reading's «عمرٍو» is not the print's and is wrong; this takes it back."
+   ],
+   [
+    "وفي روايةٍ",
+    "وفِي روايةٍ",
+    "marks",
+    "The print has «وفِي رِوَايَةٍ» (zoomed, p. 1169); v1 left «وفي» bare. «ما» before «الكبائر» is bare in the print too."
+   ]
+  ]
+ },
+ "1717": {
+  "read": "2026-11-17"
+ },
+ "1718": {
+  "read": "2026-11-17"
+ },
+ "1719": {
+  "read": "2026-11-17"
+ },
+ "1720": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "وَلاَ يُكَفِّرُ",
+    "وَلاَ يُكَفِّرَ",
+    "variant",
+    "The print has «ولاَ يُكَفِّرَ» with a plain fatha (zoomed, p. 1171). It isn't an impossible form: the gloss explains «لأَنْ يَلَجَّ», a verb in the subjunctive after «أن», and keeps its mood («أي يتمادى فيها ولا يكفّرَ»), so it is the book's mark, not a misprint; v1 has «يُكَفِّرُ»."
+   ]
+  ],
+  "drop_misprint": [
+   "ولاَ يُكَفِّرَ"
+  ]
+ },
+ "1721": {
+  "read": "2026-11-17"
+ },
+ "1722": {
+  "read": "2026-11-17"
+ },
+ "1723": {
+  "read": "2026-11-17"
+ },
+ "1724": {
+  "read": "2026-11-17"
+ },
+ "1725": {
+  "read": "2026-11-17"
+ },
+ "1726": {
+  "read": "2026-11-17"
+ },
+ "1727": {
+  "read": "2026-11-17"
+ },
+ "1728": {
+  "read": "2026-11-17"
+ },
+ "1729": {
+  "read": "2026-11-17"
+ },
+ "1730": {
+  "read": "2026-11-17"
+ },
+ "1731": {
+  "read": "2026-11-17"
+ },
+ "1732": {
+  "read": "2026-11-17"
+ },
+ "1733": {
+  "read": "2026-11-17"
+ },
+ "1734": {
+  "read": "2026-11-17"
+ },
+ "1735": {
+  "read": "2026-11-17"
+ },
+ "1736": {
+  "read": "2026-11-17"
+ },
+ "1737": {
+  "read": "2026-11-17"
+ },
+ "1738": {
+  "read": "2026-11-17"
+ },
+ "1739": {
+  "read": "2026-11-17"
+ },
+ "1740": {
+  "read": "2026-11-17"
+ },
+ "1741": {
+  "read": "2026-11-17"
+ },
+ "1742": {
+  "read": "2026-11-17"
+ },
+ "1743": {
+  "read": "2026-11-17"
+ },
+ "1744": {
+  "read": "2026-11-17"
+ },
+ "1745": {
+  "read": "2026-11-17"
+ },
+ "1746": {
+  "read": "2026-11-17"
+ },
+ "1747": {
+  "read": "2026-11-17"
+ },
+ "1748": {
+  "read": "2026-11-17"
+ },
+ "1749": {
+  "read": "2026-11-17"
+ },
+ "1750": {
+  "read": "2026-11-17"
+ },
+ "1751": {
+  "read": "2026-11-17"
+ },
+ "1752": {
+  "read": "2026-11-17"
+ },
+ "1753": {
+  "read": "2026-11-17"
+ },
+ "1754": {
+  "read": "2026-11-17"
+ },
+ "1755": {
+  "read": "2026-11-17"
+ },
+ "1756": {
+  "read": "2026-11-17"
+ },
+ "1757": {
+  "read": "2026-11-17"
+ },
+ "1758": {
+  "read": "2026-11-17"
+ },
+ "1759": {
+  "read": "2026-11-17"
+ },
+ "1760": {
+  "read": "2026-11-17"
+ },
+ "1761": {
+  "read": "2026-11-17"
+ },
+ "1762": {
+  "read": "2026-11-17"
+ },
+ "1763": {
+  "read": "2026-11-17"
+ },
+ "1764": {
+  "read": "2026-11-17"
+ },
+ "1765": {
+  "read": "2026-11-17"
+ },
+ "1766": {
+  "read": "2026-11-17"
+ },
+ "1767": {
+  "read": "2026-11-17"
+ },
+ "1768": {
+  "read": "2026-11-17"
+ },
+ "1769": {
+  "read": "2026-11-17"
+ },
+ "1770": {
+  "read": "2026-11-17"
+ },
+ "1771": {
+  "read": "2026-11-17"
+ },
+ "1772": {
+  "read": "2026-11-17"
+ },
+ "1773": {
+  "read": "2026-11-17"
+ },
+ "1774": {
+  "read": "2026-11-17"
+ },
+ "1775": {
+  "read": "2026-11-17"
+ },
+ "1776": {
+  "read": "2026-11-17"
+ },
+ "1777": {
+  "read": "2026-11-17"
+ },
+ "1778": {
+  "read": "2026-11-17"
+ },
+ "1779": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "« لا تَتَلَقَّوُا",
+    "« لاَ تَتَلَقَّوُا",
+    "marks",
+    "The print has «لاَ تَتَلَقَّوْا» (zoomed, p. 1207); v1 leaves «لا» bare."
+   ],
+   [
+    "قال: لا يكُونُ",
+    "قالَ: لاَ يكُونُ",
+    "marks",
+    "The print has «قالَ : «لاَ يَكُونُ» (zoomed, p. 1207); v1 leaves «قال» and «لا» bare. «ما» before «يبيع» is bare in the print too, so it stays."
+   ],
+   [
+    "متفقٌ عليه",
+    "متَّفقٌ عَلَيْهِ",
+    "v1",
+    "The print has «مُتَّفَقٌ عَلَيْهِ» (zoomed, p. 1207); v1 lacks the shadda of «متفقٌ» and leaves «عليه» bare."
+   ]
+  ]
+ },
+ "1780": {
+  "read": "2026-11-17"
+ },
+ "1781": {
+  "read": "2026-11-17"
+ },
+ "1782": {
+  "read": "2026-11-17"
+ },
+ "1783": {
+  "read": "2026-11-17"
+ },
+ "1784": {
+  "read": "2026-11-17"
+ },
+ "1785": {
+  "read": "2026-11-17"
+ },
+ "1786": {
+  "read": "2026-11-17"
+ },
+ "1787": {
+  "read": "2026-11-17"
+ },
+ "1788": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "فَلا يَرُدَّهُ",
+    "فَلا يَرُدُّهُ",
+    "variant",
+    "The print has «فَلَا يَرُدُّهُ», a damma over the shadda of the dal (zoomed, p. 1213; the same mark as «لَا يَرُدُّ» in h. 1789 below it), Muslim's wording; the text had the fatha of «يَرُدَّهُ»."
+   ]
+  ]
+ },
+ "1789": {
+  "read": "2026-11-17"
+ },
+ "1790": {
+  "read": "2026-11-17"
+ },
+ "1791": {
+  "read": "2026-11-17"
+ },
+ "1792": {
+  "read": "2026-11-17"
+ },
+ "1793": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "بِسَرْغَ",
+    "بِسَرْغٍ",
+    "variant",
+    "The print has a kasra under the ghayn of «بِسَرْغِ» (zoomed, p. 1216), the print's single kasra for tanween, so it treats the name as declinable; the text had «بِسَرْغَ», as a diptote. Both are known readings of the place name."
+   ]
+  ]
+ },
+ "1794": {
+  "read": "2026-11-17"
+ },
+ "1795": {
+  "read": "2026-11-17"
+ },
+ "1796": {
+  "read": "2026-11-17"
+ },
+ "1797": {
+  "read": "2026-11-17"
+ },
+ "1798": {
+  "read": "2026-11-17"
+ },
+ "1799": {
+  "read": "2026-11-17"
+ },
+ "1800": {
+  "read": "2026-11-17"
+ },
+ "1801": {
+  "read": "2026-11-17"
+ },
+ "1802": {
+  "read": "2026-11-17"
+ },
+ "1803": {
+  "read": "2026-11-17"
+ },
+ "1804": {
+  "read": "2026-11-17"
+ },
+ "1805": {
+  "read": "2026-11-17"
+ },
+ "1806": {
+  "read": "2026-11-17"
+ },
+ "1807": {
+  "read": "2026-11-17"
+ },
+ "1808": {
+  "read": "2026-11-17"
+ },
+ "1809": {
+  "read": "2026-11-17"
+ },
+ "1810": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "فَعَاثَ يمِيناً وَعاثَ شمالاً",
+    "فَعَاثٍ يمِيناً وَعاثٍ شمالاً",
+    "variant",
+    "The print has «فَعاثِ يَمِيناً وَعاثِ شِمالاً» with a kasra under each tha (zoomed, p. 1229): the active participle, with the print's single kasra for tanween. The text had the past verb «فَعَاثَ … وَعاثَ», also a known reading of Muslim's."
+   ],
+   [
+    "عاثَ » بِالْعَيْنِ الْمُهْمَلَةِ",
+    "عاثٍ » بِالْعَيْنِ الْمُهْمَلَةِ",
+    "variant",
+    "The word meanings' heading has «عاثِ» with a kasra under the tha (zoomed, p. 1232), as the matn does; the text had «عاثَ»."
+   ],
+   [
+    "خَلَّةٌ بيْنَ",
+    "خَلَّةً بيْنَ",
+    "v1",
+    "The word meanings quote «خَلَّةً بَيْنَ الشَّامِ» with a fatha on the ta (zoomed, p. 1232), the accusative the matn has; the text had «خَلَّةٌ»."
+   ]
+  ]
+ },
+ "1811": {
+  "read": "2026-11-17"
+ },
+ "1812": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "يُنْفَخُ في الصُّورِ",
+    "يُنْفَخُ فِي الصُّورِ",
+    "marks",
+    "The print has «فِي الصُّورِ» with a kasra under the fa (zoomed, p. 1234); the text left «في» bare. «لا أدري» and «يا أيها» are bare in the print too, so they stay."
+   ]
+  ]
+ },
+ "1813": {
+  "read": "2026-11-17"
+ },
+ "1814": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "أصْبهَانَ",
+    "إصْبَهانَ",
+    "variant",
+    "The print has «إصْبَهانَ», with the hamza under the alif (zoomed, p. 1236), and its word meanings head the gloss «إصبهان»; the text had v1's «أصْبهَانَ», the city's other vocalization, which sunnah.com has."
+   ]
+  ]
+ },
+ "1815": {
+  "read": "2026-11-17"
+ },
+ "1816": {
+  "read": "2026-11-17"
+ },
+ "1817": {
+  "read": "2026-11-17",
+  "misprint": [
+   [
+    "فَيُؤْشَرَ",
+    "فَيؤْشَرُ",
+    "The print ends the verb with a fatha (zoomed, p. 1237), as it does «فَيُشَبَّحَ» above; after «فَيُؤْمَرُ بِهِ فَـ» it is indicative, «فَيُؤْشَرُ», as Muslim has it."
+   ]
+  ]
+ },
+ "1818": {
+  "read": "2026-11-17"
+ },
+ "1819": {
+  "read": "2026-11-17"
+ },
+ "1820": {
+  "read": "2026-11-17"
+ },
+ "1821": {
+  "read": "2026-11-17"
+ },
+ "1822": {
+  "read": "2026-11-17"
+ },
+ "1823": {
+  "read": "2026-11-17"
+ },
+ "1824": {
+  "read": "2026-11-17"
+ },
+ "1825": {
+  "read": "2026-11-17"
+ },
+ "1826": {
+  "read": "2026-11-17"
+ },
+ "1827": {
+  "read": "2026-11-17"
+ },
+ "1828": {
+  "read": "2026-11-17"
+ },
+ "1829": {
+  "read": "2026-11-17"
+ },
+ "1830": {
+  "read": "2026-11-17"
+ },
+ "1831": {
+  "read": "2026-11-17"
+ },
+ "1832": {
+  "read": "2026-11-17"
+ },
+ "1833": {
+  "read": "2026-11-17"
+ },
+ "1834": {
+  "read": "2026-11-17"
+ },
+ "1835": {
+  "read": "2026-11-17"
+ },
+ "1836": {
+  "read": "2026-11-17"
+ },
+ "1837": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "إمَاماً لا يُبايِعُهُ",
+    "إمَاماً لَا يُبايِعُهُ",
+    "marks",
+    "The print has «لَا يُبَايِعُهُ» with a fatha on the lam (zoomed, p. 1248); v1 leaves «لا» bare."
+   ]
+  ]
+ },
+ "1838": {
+  "read": "2026-11-17"
+ },
+ "1839": {
+  "read": "2026-11-17"
+ },
+ "1840": {
+  "read": "2026-11-17"
+ },
+ "1841": {
+  "read": "2026-11-17"
+ },
+ "1842": {
+  "read": "2026-11-17"
+ },
+ "1843": {
+  "read": "2026-11-17"
+ },
+ "1844": {
+  "read": "2026-11-17"
+ },
+ "1845": {
+  "read": "2026-11-17"
+ },
+ "1846": {
+  "read": "2026-11-17"
+ },
+ "1847": {
+  "read": "2026-11-17"
+ },
+ "1848": {
+  "read": "2026-11-17"
+ },
+ "1849": {
+  "read": "2026-11-17"
+ },
+ "1850": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "أكَرَاهِيَةُ",
+    "أَكَرَاهِيَةَ",
+    "variant",
+    "The print has «أَكَرَاهِيَـةَ ٱلْمَوْتِ», with a fatha on the ta marbuta shaped like the fathas on its kaf and ra, not like the damma of «رَسُولُ» beside it (zoomed, p. 1253); the text had «أكَرَاهِيَةُ». Both are good Arabic (the accusative with «أتعني» understood)."
+   ]
+  ]
+ },
+ "1851": {
+  "read": "2026-11-17"
+ },
+ "1852": {
+  "read": "2026-11-17"
+ },
+ "1853": {
+  "read": "2026-11-17"
+ },
+ "1854": {
+  "read": "2026-11-17"
+ },
+ "1855": {
+  "read": "2026-11-17"
+ },
+ "1856": {
+  "read": "2026-11-17"
+ },
+ "1857": {
+  "read": "2026-11-17"
+ },
+ "1858": {
+  "read": "2026-11-17"
+ },
+ "1859": {
+  "read": "2026-11-17"
+ },
+ "1860": {
+  "read": "2026-11-17"
+ },
+ "1861": {
+  "read": "2026-11-17",
+  "misprint": [
+   [
+    "إنَّ النَّبِيَّ نَهَى",
+    "إنَّ النَّبِيَّ ﷺ نَهَى",
+    "The print leaves out the ﷺ after «النَّبِيَّ» (zoomed, p. 1261: «إنَّ / النَّبِيَّ نَهَى عَمَّا»); v1 and al-Bukhari have it, so v1's text stays (rule 1, the owner's decision of 2026-11-04)."
+   ]
+  ]
+ },
+ "1862": {
+  "read": "2026-11-17"
+ },
+ "1863": {
+  "read": "2026-11-17"
+ },
+ "1864": {
+  "read": "2026-11-17"
+ },
+ "1865": {
+  "read": "2026-11-17"
+ },
+ "1866": {
+  "read": "2026-11-17"
+ },
+ "1867": {
+  "read": "2026-11-17"
+ },
+ "1868": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "سَلْ تُعْطَهُ",
+    "سَلْ تُعْطَهْ",
+    "variant",
+    "The print has «سَلْ تُعْطَهْ», a sukun on the ha of pause, the same mark as on «سَلْ» and «تُشَفَّعْ» beside it and unlike the damma on its ta (zoomed, p. 1267); the text had the pronoun's damma «تُعْطَهُ»."
+   ]
+  ]
+ },
+ "1869": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "سَعَى النَّاسِ",
+    "سَعَى النَّاسُ",
+    "v1",
+    "The print has «فَلِذٰلِكَ سَعَى النَّاسُ بَيْنَهُما», with a damma on the subject of the verb (zoomed, p. 1269); the text had v1's kasra, left from its «سعْيُ النَّاسِ» after the first reading made «سعي» the verb «سَعَى»."
+   ]
+  ]
+ },
+ "1870": {
+  "read": "2026-11-17"
+ },
+ "1871": {
+  "read": "2026-11-17",
+  "fix": [
+   [
+    "وَإِني",
+    "وَإِنِّي",
+    "v1",
+    "The print has «وإنِّي» with a shadda on the nun (zoomed, p. 1276), as Muslim has; v1 leaves the nun bare in a word it marks in part."
+   ],
+   [
+    "على قَلْبي",
+    "عَلى قَلْبي",
+    "marks",
+    "The print has «عَلى» with a fatha on the ain (zoomed, p. 1276); v1 leaves the word bare."
+   ],
+   [
+    "في الْيوْمِ",
+    "فِي الْيوْمِ",
+    "marks",
+    "The print has «فِي» with a kasra (zoomed, p. 1276); v1 leaves the word bare."
+   ]
+  ]
+ },
+ "1872": {
+  "read": "2026-11-17"
+ },
+ "1873": {
+  "read": "2026-11-17"
+ },
+ "1874": {
+  "read": "2026-11-17"
+ },
+ "1875": {
+  "read": "2026-11-17"
+ },
+ "1876": {
+  "read": "2026-11-17"
+ },
+ "1877": {
+  "read": "2026-11-17"
+ },
+ "1878": {
+  "read": "2026-11-17"
+ },
+ "1879": {
+  "read": "2026-11-17"
+ },
+ "1880": {
+  "read": "2026-11-17"
+ },
+ "1881": {
+  "read": "2026-11-17"
+ },
+ "1882": {
+  "read": "2026-11-17"
+ },
+ "1883": {
+  "read": "2026-11-17"
+ },
+ "1884": {
+  "read": "2026-11-17"
+ },
+ "1885": {
+  "read": "2026-11-17"
+ },
+ "1886": {
+  "read": "2026-11-17"
+ },
+ "1887": {
+  "read": "2026-11-17"
+ },
+ "1888": {
+  "read": "2026-11-17"
+ },
+ "1889": {
+  "read": "2026-11-17"
+ },
+ "1890": {
+  "read": "2026-11-17"
+ },
+ "1891": {
+  "read": "2026-11-17"
+ },
+ "1892": {
+  "read": "2026-11-17"
+ },
+ "1893": {
+  "read": "2026-11-17"
+ },
+ "1894": {
+  "read": "2026-11-17"
+ },
+ "1895": {
+  "read": "2026-11-17"
+ },
+ "1896": {
+  "read": "2026-11-17"
+ },
+ "1897": {
+  "read": "2026-11-17"
+ },
+ "1898": {
+  "read": "2026-11-17"
  }
 }

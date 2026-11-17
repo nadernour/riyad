@@ -89,8 +89,7 @@
     "",
     "v1"
    ]
-  ],
-  "note": "Removed v1's gloss «جناها: أي ما يجتني من الثمر» after the source line: the print has none, and its commentary explains «خرفة» in its own words."
+  ]
  },
  "899": {
   "fix": [
@@ -136,6 +135,13 @@
     "وقال:",
     "وقالَ:",
     "marks"
+   ]
+  ],
+  "misprint": [
+   [
+    "سُفْيانُ بْنَ عُيَيْنَةَ",
+    "سُفْيانُ بْنُ عُيَيْنَةَ",
+    "The print sets a fatha on the nun of «بن» (zoomed, p. 687), but it is in apposition to «سُفْيانُ», the subject of «وَضَعَ», which the print itself marks with a damma; v1's «بْنُ» stays."
    ]
   ]
  },
@@ -574,8 +580,7 @@
     "أَجَرَهُ",
     "variant"
    ]
-  ],
-  "note": "The print's «أَجَرَهُ» is Muslim's wording and goes with «أْجُرْنِي» before it; v1 and sunnah.com have the other form of the verb, «آجَرَهُ», which is also how the book's word meanings head their gloss («إلا آجره: أي أثابه»)."
+  ]
  },
  "922": {
   "fix": [
@@ -857,8 +862,7 @@
     "وقَدْ جِئْناكَ",
     "variant"
    ]
-  ],
-  "note": "The print has «وقد جئناك شفعاء له», as Abu Dawud has it, but its word meanings gloss «جئنا: حضرنا»."
+  ]
  },
  "939": {
   "fix": [
@@ -980,6 +984,11 @@
     "نَتَّكِلُ على",
     "نَتَّكِلُ عَلى",
     "marks"
+   ],
+   [
+    "فَنَكَّسَ",
+    "فَنَكَسَ",
+    "variant"
    ]
   ]
  },
@@ -1009,6 +1018,11 @@
     "علَيْهِ فَقَالَ:",
     "علَيْهِ وقالَ:",
     "variant"
+   ],
+   [
+    "إذَا - فُرِغَ",
+    "إذَا فُرِغَ",
+    "v1"
    ]
   ]
  },

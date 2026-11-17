@@ -114,6 +114,11 @@
     "قال: «لا حَسَدَ",
     "قالَ: «لاَ حَسَدَ",
     "marks"
+   ],
+   [
+    "في اثنَتَيْنِ",
+    "فِي اثنَتَيْنِ",
+    "marks"
    ]
   ]
  },
@@ -166,6 +171,16 @@
     "اللهِ ِﷺ: «إنَّ",
     "اللهِ ﷺ: «إنَّ",
     "v1"
+   ],
+   [
+    "قال: قال رسولُ",
+    "قالَ: قالَ رسولُ",
+    "marks"
+   ],
+   [
+    "في جَوْفِهِ",
+    "فِي جَوْفِهِ",
+    "marks"
    ]
   ]
  },
@@ -236,6 +251,11 @@
    [
     "إشَارَةٌ إلى",
     "إشَارَةٌ إلَى",
+    "marks"
+   ],
+   [
+    "عَنْهُ قال: سمِعتُ",
+    "عَنْهُ قالَ: سمِعتُ",
     "marks"
    ]
   ]
@@ -851,6 +871,11 @@
     "جُنْدُبِ",
     "جُنْدَبِ",
     "variant"
+   ],
+   [
+    "فهُوَ في ذِمَّةِ",
+    "فهُوَ فِي ذِمَّةِ",
+    "marks"
    ]
   ]
  },
@@ -1090,6 +1115,11 @@
     "الْبُخَارِيُّ",
     "الْبُخَارِيِّ",
     "v1"
+   ],
+   [
+    "يَخْطُ خَطْوَةً",
+    "يَخْطُ خُطْوَةً",
+    "variant"
    ]
   ]
  },
@@ -1539,8 +1569,7 @@
     "وفِي رِوَايةٍ",
     "marks"
    ]
-  ],
-  "note": "The print has «وفي روايةٍ لهما: «أحب إلي…»», with «لهما» before the colon and outside the quotation, as 'in a narration of both'. v1 opens the quotation before «لهما», making it the Prophet's word. Punctuation isn't checked, so v1's stays."
+  ]
  },
  "1103": {
   "fix": [
@@ -1549,7 +1578,8 @@
     "إِنِّي",
     "v1"
    ]
-  ]
+  ],
+  "note": "After «يعني», the print's mark on the ya of «النبي» (p. 803) is a blot over the shadda, shaped like the kasra-under-shadda on h. 1102's «عن النبيِّ» on the same page, so even on a zoom it could be a damma («النبيُّ») or a misprinted kasra. Both «النبيَّ» and «النبيُّ» are good Arabic here, so v1's «النَّبِيَّ» stays."
  },
  "1104": {
   "fix": [
@@ -1580,7 +1610,8 @@
     "لَهُمَا",
     "The print has «وفي رواية لها» right after «متفق عليه»; the narration is of both al-Bukhari and Muslim, as the dual reads in h. 1102's «رواية لهما» (p. 803), so the mim is dropped."
    ]
-  ]
+  ],
+  "note": "Read on a zoom, the print's «فيها» before «بأم القرآن» (p. 804) has no mim loop as clear as the one in «فيخففهما» on the same line. But the print sets «هما» as a tight ligature, and the OCR text reads h. 1103's «لركعتهما» and «وأجملتهما» as «ها» too. So v1's «فِيهِمَا» stays. Muslim and sunnah.com also have «فيهما», as does the dual «فيخففهما» before it."
  },
  "1105": {
   "fix": [
@@ -1669,6 +1700,11 @@
     "الأَيْمَنِ، حَتَّى",
     "الأَيْمَنِ هٰكَذا، حَتَّى",
     "variant"
+   ],
+   [
+    "هُوَ في (مُسْلِمٍ)",
+    "هُوَ فِي (مُسْلِمٍ)",
+    "marks"
    ]
   ]
  },
@@ -1765,10 +1801,23 @@
     "صَلاَّهُمَا",
     "صَلَّاها",
     "variant"
+   ],
+   [
+    "نُصَلِّيهِمَا",
+    "نُصَلِّيها",
+    "variant"
    ]
   ]
  },
- "1125": {},
+ "1125": {
+  "fix": [
+   [
+    "يُصَلِّيهِمَا",
+    "يُصَلِّيها",
+    "variant"
+   ]
+  ]
+ },
  "1126": {},
  "1127": {
   "fix": [
@@ -1780,7 +1829,15 @@
   ]
  },
  "1128": {},
- "1129": {},
+ "1129": {
+  "misprint": [
+   [
+    "صَلاَةَ المَرْءِ",
+    "صَلاَةُ المَرْءِ",
+    "The print has a fatha on «صلاةَ» (zoomed, p. 814; the same stroke as on «أَفْضَلَ» beside it), but it is the predicate of «إنّ» and must be «صلاةُ», as v1 has."
+   ]
+  ]
+ },
  "1130": {
   "fix": [
    [
@@ -2414,8 +2471,7 @@
     "",
     "v1"
    ]
-  ],
-  "note": "Removed v1's closing sentence on al-Bukhari's mu'allaq report: the print's matn ends at «بأسانيد صحيحة»; only its commentary mentions it («والبخاري تعليقاً في الصيام»)."
+  ]
  },
  "1204": {
   "fix": [
@@ -2576,9 +2632,13 @@
     "ومعْنَى «القاعِ»: المكان المستوى من الأرضِ الواسع. وَ «القرقر»: الأملس",
     "",
     "v1"
+   ],
+   [
+    "عَلَى نَهْرٍ",
+    "عَلَى نَهَرٍ",
+    "variant"
    ]
-  ],
-  "note": "v1 ends with an explanation of «القاع» and «القرقر» that the book doesn't print after the matn (p. 864); it was removed. The book's own word meanings explain «بقاع قرقر» in the commentary."
+  ]
  },
  "1216": {
   "fix": [
