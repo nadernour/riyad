@@ -5,7 +5,7 @@
   {
    "number": 241,
    "old_id": 237,
-   "title": "باب فضل العلم تعلماً وتعليماً لله",
+   "title": "باب فضل العلم",
    "hadith": [
     {
      "id": 1377,
@@ -239,13 +239,20 @@
       },
       {
        "role": "narration",
-       "text": " أيْ: طَاعَةَ اللهِ تَعالَى"
+       "text": " أيْ: طَاعَةَ اللهِ "
       }
      ],
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "اللهِ تَعالَى",
+       "correction": "اللهِ ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 382) has no «تَعالَى» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {

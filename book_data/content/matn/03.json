@@ -114,9 +114,20 @@
     "مَعَ يَدِهِمَا",
     "مَعَ يَدَيْهِمَا",
     "variant"
+   ],
+   [
+    "حَضَرْنَا معَهُ طَعاماً",
+    "حَضَرْنَا معَهُ مَرَّةً طَعاماً",
+    "riyad"
    ]
   ],
-  "note": "The print has no «مرة» in «وإنا حضرنا معه طعاما», which Muslim and sunnah.com have; the text follows the print (rule 1)."
+  "misprint": [
+   [
+    "حَضَرْنَا معَهُ طَعاماً",
+    "حَضَرْنَا معَهُ مَرَّةً طَعاماً",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 235) has «وَإنَّا حَضَرْنَا مَعَهُ مَرَّةً طَعَامًا», as v1 does; the print's «حَضَرْنَا معَهُ طَعاماً» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "732": {
   "fix": [
@@ -279,6 +290,28 @@
     "قال: بل",
     "قالَ: بَلْ",
     "marks"
+   ],
+   [
+    "قالَ لَهُ النَّبيُّ",
+    "قالَ النَّبيُّ",
+    "riyad"
+   ],
+   [
+    "تَأْذنَ، وإِنْ",
+    "تَأْذنَ لَهُ، وإِنْ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "قالَ لَهُ النَّبيُّ",
+    "قالَ النَّبيُّ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 237) has no «لَهُ» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "تَأْذنَ، وإِنْ",
+    "تَأْذنَ لَهُ، وإِنْ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 237) has «لَهُ،» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -323,6 +356,18 @@
     "نواحي",
     "نَوَاحِي",
     "marks"
+   ],
+   [
+    "اللهَ، وَكُلْ",
+    "اللهَ، تعالى، وَكُلْ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "اللهَ، وَكُلْ",
+    "اللهَ، تعالى، وَكُلْ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 237) has «تَعَالَى،» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -606,6 +651,18 @@
     "أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا",
     "أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا",
     "variant"
+   ],
+   [
+    "أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا،",
+    "أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا،",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا،",
+    "أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا،",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 240) has «أكُفَّنا، وسَواعِدَنَا، وأقْدامَنَا،», as v1 does; the print's «أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا،» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -801,6 +858,11 @@
     "على بَيانِ",
     "عَلى بَيانِ",
     "marks"
+   ],
+   [
+    "رَضِيَ اللهُ عَنْهَا قالتْ",
+    "رَضِيَ اللهُ عَنْهُمَا قالتْ",
+    "riyad"
    ]
   ]
  },
@@ -949,6 +1011,18 @@
     "يعنى: شُرْباً.",
     "يَعْنِي: آخِرُهُمْ شُرْباً.",
     "variant"
+   ],
+   [
+    "آخِرُهُمْ» يَعْنِي: آخِرُهُمْ شُرْباً.",
+    "آخِرُهُمْ» شُرْباً.",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "آخِرُهُمْ» يَعْنِي: آخِرُهُمْ شُرْباً.",
+    "آخِرُهُمْ» شُرْباً.",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 244) has no «يَعْنِي: آخِرُهُمْ» here, and neither does sunnah.com: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -982,6 +1056,18 @@
     "وهو النُّحاسُ",
     "وهُوَ النُّحاسُ",
     "marks"
+   ],
+   [
+    "عَنْ عبدِ",
+    "وَعَنْ عبدِ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "عَنْ عبدِ",
+    "وَعَنْ عبدِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 244) has «وعن», as v1 does; the print's «عَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -996,6 +1082,18 @@
     "دَخَلَ على رَجُلٍ",
     "دَخَلَ عَلى رَجُلٍ",
     "marks"
+   ],
+   [
+    "عَنْهُ قالَ: إِنَّ",
+    "عَنْهُ إِنَّ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "عَنْهُ قالَ: إِنَّ",
+    "عَنْهُ إِنَّ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 245) has no «قالَ:» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },

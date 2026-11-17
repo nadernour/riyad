@@ -62,6 +62,18 @@
     "ضَامِنٌ عَلَيَّ أَنْ",
     "ضَامِنٌ أَنْ",
     "variant"
+   ],
+   [
+    "فَهُوَ ضَامِنٌ",
+    "فَهُوَ عَلَيَّ ضَامِنٌ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "فَهُوَ ضَامِنٌ",
+    "فَهُوَ عَلَيَّ ضَامِنٌ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 363) has «عَلَيَّ» here, as sunnah.com does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -85,6 +97,18 @@
     "جُرِحَ جُرْحاً",
     "جُرِحَ جَرْحاً",
     "variant"
+   ],
+   [
+    "جُرِحَ جَرْحاً",
+    "جُرِحَ جُرْحاً",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "جُرِحَ جَرْحاً",
+    "جُرِحَ جُرْحاً",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 364) has «جُرِحَ جُرْحًا», as v1 does; the print's «جُرِحَ جَرْحاً» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -104,6 +128,18 @@
     "فَذَكَرَ ذَلِكَ",
     "فَذُكِرَ ذَلِكَ",
     "variant"
+   ],
+   [
+    "فَذُكِرَ ذَلِكَ",
+    "فَذَكَرَ ذَلِكَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "فَذُكِرَ ذَلِكَ",
+    "فَذَكَرَ ذَلِكَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 364) has «فذكَرَ ذَلِكَ», as v1 does; the print's «فَذُكِرَ ذَلِكَ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -113,6 +149,11 @@
     "فَقَالَ: وَمَنْ",
     "فَقَالَ: مَنْ",
     "variant"
+   ],
+   [
+    "فَقَالَ: مَنْ يَسْتَطِيعُ",
+    "فَقَالَ: وَمَنْ يَسْتَطِيعُ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -120,6 +161,11 @@
     "يا وَسُولَ اللهِ ، دُلَّنِي",
     "يَا رَسُولَ اللهِ ؛ دُلَّنِي",
     "The print has a waw for the ra of «رسول»."
+   ],
+   [
+    "فَقَالَ: مَنْ يَسْتَطِيعُ",
+    "فَقَالَ: وَمَنْ يَسْتَطِيعُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 364) has «وَمَنْ», as v1 does; the print's «مَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -197,6 +243,18 @@
     "تَحْبِسِي عَنْهُ",
     "تَحْبِسِي مِنْهُ",
     "variant"
+   ],
+   [
+    "قَدْ تَجَهَّزَ",
+    "قَدْ كَانَ تَجَهَّزَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "قَدْ تَجَهَّزَ",
+    "قَدْ كَانَ تَجَهَّزَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 366) has «كَانَ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -220,6 +278,18 @@
     "فَقَالَ رَسُولَ",
     "فَقَالَ رَسُولُ",
     "v1"
+   ],
+   [
+    "أُسْلِمُ؟ فَقالَ: « أَسْلِمْ",
+    "أُسْلِمُ؟ قَالَ: « أَسْلِمْ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "أُسْلِمُ؟ فَقالَ: « أَسْلِمْ",
+    "أُسْلِمُ؟ قَالَ: « أَسْلِمْ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 366) has «قَالَ:», as v1 does; the print's «فَقالَ:» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -277,6 +347,11 @@
     "جَعْبَةُ النَّشَّابِ",
     "جَعْبَةُ النُّشَّابِ",
     "v1"
+   ],
+   [
+    "بِمَا مَعَهُ",
+    "بِمَا كَانَ مَعَهُ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -284,6 +359,11 @@
     "« القَرَنَ »",
     "« الْقَرَنُ »",
     "The print ends the explained word with a fatha; as the subject of its explanation it takes a damma, as v1 has it."
+   ],
+   [
+    "بِمَا مَعَهُ",
+    "بِمَا كَانَ مَعَهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 367) has «كَانَ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -293,6 +373,18 @@
     "وَيَتَدَارَسُونَ بِاللَّيْلِ",
     "ويَتَدَارَسُونَهُ بِاللَّيْلِ",
     "variant"
+   ],
+   [
+    "الْقُرْآنَ، ويَتَدَارَسُونَهُ بِاللَّيْلِ",
+    "الْقُرْآنَ، وَيَتَدَارَسُونَ بِاللَّيْلِ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "الْقُرْآنَ، ويَتَدَارَسُونَهُ بِاللَّيْلِ",
+    "الْقُرْآنَ، وَيَتَدَارَسُونَ بِاللَّيْلِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 368) has «وَيَتَدَارَسُونَ», as v1 does; the print's «ويَتَدَارَسُونَهُ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -327,6 +419,18 @@
     "سَبَقَ في بابِ",
     "سَبَقَ فِي بابِ",
     "marks"
+   ],
+   [
+    "الْجَنَّةُ وَرَبِّ",
+    "الْجَنَّةَ وَرَبِّ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "الْجَنَّةُ وَرَبِّ",
+    "الْجَنَّةَ وَرَبِّ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 368) has «الجَنَّةَ وَرَبِّ», as v1 does; the print's «الْجَنَّةُ وَرَبِّ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -518,9 +622,20 @@
     "أَجُورُهُمْ",
     "أُجُورُهُمْ",
     "v1"
+   ],
+   [
+    "فَتَغْنَمَ وَتَسْلَمَ",
+    "فَتَغْنَمُ وَتَسْلَمُ",
+    "riyad"
    ]
   ],
-  "note": "The print has «فَتَغْنَمَ وتَسْلَمَ» (subjunctive, after the fa' of cause following the negation) where v1 and the collections have «فَتَغْنَمُ وَتَسْلَمُ»; taken as a variant."
+  "misprint": [
+   [
+    "فَتَغْنَمَ وَتَسْلَمَ",
+    "فَتَغْنَمُ وَتَسْلَمُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 373) has «فَتَغْنَمُ وَتَسْلَمُ», as v1 does; the print's «فَتَغْنَمَ وَتَسْلَمَ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "1346": {},
  "1347": {},
@@ -535,9 +650,7 @@
   ]
  },
  "1350": {},
- "1351": {
-  "note": "The print has a dot where the waw of «ويَنْزِلَ» should be («، • يَنْزِلَ», p. 933), likely a broken waw; v1's «وَيَنْزِلَ» is kept."
- },
+ "1351": {},
  "1352": {
   "fix": [
    [
@@ -568,9 +681,20 @@
     "فَمَنْ هُمْ يَا",
     "فَمَنْ يَا",
     "variant"
+   ],
+   [
+    "فَمَنْ يَا رَسُولَ",
+    "فَمَنْ هُمْ يَا رَسُولَ",
+    "riyad"
    ]
   ],
-  "note": "The print has «فَمَنْ يا رَسُولَ اللهِ؟» without v1's «هُمْ» (Muslim has «فمن هم»); taken as the book's wording."
+  "misprint": [
+   [
+    "فَمَنْ يَا رَسُولَ",
+    "فَمَنْ هُمْ يَا رَسُولَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 375) has «فَمَنْ هُمْ يَا رسول», as v1 does; the print's «فَمَنْ يَا رَسُولَ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "1356": {},
  "1357": {},

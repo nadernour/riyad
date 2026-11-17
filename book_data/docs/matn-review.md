@@ -17,9 +17,9 @@ jq -r 'to_entries[] | select(.value.note != null and .value.note != "") | "\(.ke
 Checked after the last round (Claude Opus, 2026-11-17):
 
 - Rebuilding `content/hadith/` from v1 (`tools/convert_v1.py --force`, then `tools/matn.py apply --all`) gives the text exactly.
-- Two questions the rounds left to the owner were settled. **h. 731:** the text now has «مَعَ يَدَيْهِمَا». On a zoom, the print has the dual «يَدَيْـ» and a kasra under the ha, which fits «هِمَا» and not «هَا». This print sets «هما» as a tight ligature that looks like «ها» (the rounds found the same in h. 1103–1104). sunnah.com has «يديهما». v1's singular «يَدِهِمَا» went. **h. 824:** the print's «إِلْيَةِ» stays as the book's wording, and its note was removed. The book prints it the same way in the matn and in its word meanings, and it is a known form, not an impossible one (rule 1). The lexicons that call it a common error still record it.
+- Two questions the rounds left to the owner were settled. **h. 731:** the text now has «مَعَ يَدَيْهِمَا». On a zoom, the print has the dual «يَدَيْـ» and a kasra under the ha, which fits «هِمَا» and not «هَا». This print sets «هما» as a tight ligature that looks like «ها» (the rounds found the same in h. 1103–1104, and missed it in h. 1124, 1125 and 1813: see rule 8 in `docs/matn.md`). sunnah.com has «يديهما». v1's singular «يَدِهِمَا» went. **h. 824:** the print's «إِلْيَةِ» was first kept as the book's wording: the book prints it the same way in the matn and in its word meanings, and it is a known form, not an impossible one (rule 1). Then the owner's rule 8 (2026-11-17) gave it al-Fahl's «أَلْيَةِ», v1's reading, and the print's went to `corrections`.
 - The `shadda` doubts are all settled (`tools/matn.py stats`), so the pilot's 30 hadith and h. 126–168 have their shaddas and marks, as "What the start found" planned.
-- 10 notes are left. In four, the text follows the print where the collections have more, as rule 1 says: h. 21 and h. 299 print a repeated phrase once, h. 709 has no waw before «رسول الله», and h. 731 has no «مرة». h. 244's text was replaced, and its speaker roles are for the roles pass. In five (h. 120, 251, 1103, 1104 and 1689), the zoom couldn't settle a mark, so the text was kept, as the rules say.
+- 10 notes were left; the owner's review settled them on 2026-11-17 (rule 8 in `docs/matn.md`). In four, the text follows the print where the collections have more, as rule 1 says: h. 21 and h. 299 print a repeated phrase once, h. 709 has no waw before «رسول الله», and h. 731 has no «مرة». h. 244's text was replaced, and its speaker roles are for the roles pass. In five (h. 120, 251, 1103, 1104 and 1689), the zoom couldn't settle a mark, so the text was kept, as the rules say.
 
 ## What the start found
 
@@ -78,7 +78,7 @@ The rules of [matn.md](matn.md) ("The rules", 1–7) apply unchanged: read them 
    ```
 
    - `{}`: the text is right as it stands, and so are its recorded misprints and its note.
-   - `fix`: `[from, to, why, reason]`. `from` is copied from the text as `next` printed it and must occur once in it; `why` is `"v1"`, `"variant"` or `"marks"` as in `docs/matn.md`. To take back a round's fix, write the fix that puts the right words back.
+   - `fix`: `[from, to, why, reason]`. `from` is copied from the text as `next` printed it and must occur once in it; `why` is `"v1"`, `"variant"`, `"marks"` or `"riyad"` as in `docs/matn.md`. To take back a round's fix, write the fix that puts the right words back.
    - `misprint`: a misprint of the book's to record. `drop_misprint`: the printed words of a recorded misprint that isn't one (then fix the text too, if it should have the print's words).
    - `note`: sets the hadith's note for the owner; "" removes it.
 7. **Run** `.venv/bin/python tools/review.py apply`. It keeps the entries that failed in the inbox and says why. Correct them and run it again.

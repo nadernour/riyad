@@ -2,7 +2,9 @@
 
 Usage: python tools/build_db.py
 
-The app reads only this database. It holds the books, chapters and hadith of content/hadith/: each
+The app reads only this database. It holds the books, chapters and hadith of content/hadith/, in the
+print's books: v1's book 20 has no كتاب heading in the print, so its chapters go on in the book
+before, and the first book has no title (content/titles.json). Each
 hadith's text as pieces with their speaker roles (the text is kept only there: a second copy of it
 whole would add a third to the file), and a copy simplified for search (arabic.simplify,
 whose test cases in ../database/simplify.json the app's own simplify must pass too), indexed with
@@ -26,7 +28,7 @@ from sources import REPO, ROOT
 CONTENT = ROOT / "content"
 OUT = REPO / "database" / "riyad.db"
 CASES = REPO / "database" / "simplify.json"
-SCHEMA_VERSION = 2   # raise it whenever the tables change, so the app can tell
+SCHEMA_VERSION = 3   # raise it whenever the tables change, so the app can tell
 WORD = re.compile(r"[ء-يٱً-ْٰ]+|ﷺ")  # a word of the text, its marks included, without the punctuation around it
 
 SCHEMA = f"""
@@ -34,7 +36,7 @@ PRAGMA user_version = {SCHEMA_VERSION};
 CREATE TABLE info (key TEXT PRIMARY KEY, value TEXT NOT NULL);
 CREATE TABLE books (
     id INTEGER PRIMARY KEY,
-    title TEXT NOT NULL
+    title TEXT
 );
 CREATE TABLE chapters (
     id INTEGER PRIMARY KEY,
@@ -131,10 +133,14 @@ def main() -> None:
     tmp.unlink(missing_ok=True)
     db = sqlite3.connect(tmp)
     db.executescript(SCHEMA)
-    ids, from_v1 = [], 0
-    for book_id, f in enumerate(sorted((CONTENT / "hadith").glob("*.json")), 1):
+    ids, from_v1, book_id = [], 0, 0
+    for f in sorted((CONTENT / "hadith").glob("*.json")):
         book = json.loads(f.read_text(encoding="utf-8"))
-        db.execute("INSERT INTO books VALUES (?, ?)", (book_id, book["title"]))
+        # The files follow v1's books. Where the print has no كتاب heading, the chapters go on in
+        # the book before (content/titles.json): v1's book 20. The first book has none either.
+        if book["title"] is not None or book_id == 0:
+            book_id += 1
+            db.execute("INSERT INTO books VALUES (?, ?)", (book_id, book["title"]))
         for c in book["chapters"]:
             db.execute("INSERT INTO chapters VALUES (?, ?, ?)", (c["number"], book_id, c["title"]))
             for h in c["hadith"]:

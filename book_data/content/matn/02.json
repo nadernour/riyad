@@ -264,6 +264,18 @@
     "لَا أُرَى الأجَلَ",
     "لَا أَرَى الأجَلَ",
     "variant"
+   ],
+   [
+    "لَا أَرَى الأجَلَ",
+    "لَا أُرَى الأجَلَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "لَا أَرَى الأجَلَ",
+    "لَا أُرَى الأجَلَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 220) has «لا أُرَى الأجَلَ», as v1 does; the print's «لَا أَرَى الأجَلَ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -308,6 +320,18 @@
     "وروى",
     "ورَوَى",
     "marks"
+   ],
+   [
+    "أَتى رسولُ",
+    "أَتى عليَّ رسولُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "أَتى رسولُ",
+    "أَتى عليَّ رسولُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 221) has «عَلَيَّ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -400,6 +424,11 @@
     "فقال لي",
     "فَقالَ لِي",
     "marks"
+   ],
+   [
+    "قالَ رَسُولُ اللهِ ﷺ",
+    "قالَ لي النَّبِيُّ ﷺ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -407,6 +436,11 @@
     "أعْطَيْتُكَ هكَذا وهكذا",
     "أعْطَيْتُكَ هكَذا وهكذا وَهَكَذا",
     "The print has «هٰكَذَا» only twice (zoomed, p. 568: «أَعْطَيْتُكَ هٰكَذَا وهٰكَذَا »»); v1, sunnah.com, al-Bukhari and Muslim all have it three times, so the eye skipped from a word to its like (rule 1)."
+   ],
+   [
+    "قالَ رَسُولُ اللهِ ﷺ",
+    "قالَ لي النَّبِيُّ ﷺ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 222) has «لي النبيُّ», as v1 does; the print's «رَسُولُ اللهِ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -458,6 +492,18 @@
     "لا تحْقِرَنَّ",
     "لَا تحْقِرَنَّ",
     "marks"
+   ],
+   [
+    "قالَ رسولُ",
+    "قالَ لي رسولُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "قالَ رسولُ",
+    "قالَ لي رسولُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 223) has «لي» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -520,6 +566,18 @@
     "لا ترْجِعُوا",
     "لَا ترْجِعُوا",
     "marks"
+   ],
+   [
+    "الْوَدَاعِ : « واسْتَنْصِتِ النَّاسَ",
+    "الْوَدَاعِ : « اسْتَنْصِتِ النَّاسَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "الْوَدَاعِ : « واسْتَنْصِتِ النَّاسَ",
+    "الْوَدَاعِ : « اسْتَنْصِتِ النَّاسَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 223) has ««اسْتَنْصِتِ», as v1 does; the print's «واسْتَنْصِتِ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -544,6 +602,18 @@
     "كَمـَا",
     "كَمَا",
     "v1"
+   ],
+   [
+    "خَمِيسٍ مَرَّةً ، فَقَالَ",
+    "خَمِيسٍ ، فَقَالَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "خَمِيسٍ مَرَّةً ، فَقَالَ",
+    "خَمِيسٍ ، فَقَالَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 223) has no «مَرَّةً» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -800,6 +870,16 @@
     "قالوا : يا رسولَ اللهِ ؛ وكَيْفَ يُؤْثِمُهُ ؟ قال",
     "قالُوا : يا رسولَ اللهِ ؛ كَيْفَ يُؤْثِمُهُ ؟ قالَ",
     "variant"
+   ],
+   [
+    "صَدَقَةٌ » مُتَّفَقٌ",
+    "صَدَقَةٌ عليهِ » مُتَّفَقٌ",
+    "riyad"
+   ],
+   [
+    "اللهِ ؛ كَيْفَ يُؤْثِمُهُ",
+    "اللهِ ؛ وكَيْفَ يُؤْثِمُهُ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -807,6 +887,16 @@
     "يُقْرِيهِ",
     "يَقْرِيهِ",
     "The verb of hosting a guest is قَرَى يَقْرِي, as the collections vocalize it here; the print's damma on the ya makes it Form IV, which isn't used in this sense."
+   ],
+   [
+    "صَدَقَةٌ » مُتَّفَقٌ",
+    "صَدَقَةٌ عليهِ » مُتَّفَقٌ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 226) has «عَلَيْهِ».» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "اللهِ ؛ كَيْفَ يُؤْثِمُهُ",
+    "اللهِ ؛ وكَيْفَ يُؤْثِمُهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 226) has «وَكيْفَ», as v1 does; the print's «كَيْفَ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -1010,9 +1100,20 @@
     "ادْخُلْ ورسُولُ اللهِ",
     "ادْخُلْ رسُولُ اللهِ",
     "variant"
+   ],
+   [
+    "ادْخُلْ رسُولُ اللهِ",
+    "ادْخُلْ ورسُولُ اللهِ",
+    "riyad"
    ]
   ],
-  "note": "In the words to Abu Bakr, the print has «ادخل، رسول الله يبشرك بالجنة» without the waw that v1 and sunnah.com have («ورسول الله»); the sense holds, so the text follows the print (rule 1). The waw is printed in the like words to Uthman («ادخل، ويبشرك»)."
+  "misprint": [
+   [
+    "ادْخُلْ رسُولُ اللهِ",
+    "ادْخُلْ ورسُولُ اللهِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 227) has «ادْخُلْ وَرسول الله», as v1 does; the print's «ادْخُلْ رسُولُ اللهِ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "710": {
   "fix": [
@@ -1351,6 +1452,18 @@
     "الجَيْشَ .. قالَ",
     "الجَيْشَ .. يَقُولُ",
     "variant"
+   ],
+   [
+    "الجَيْشَ .. يَقُولُ : « أَسْتَوْدعُ",
+    "الجَيْشَ .. قالَ : « أَسْتَوْدعُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "الجَيْشَ .. يَقُولُ : « أَسْتَوْدعُ",
+    "الجَيْشَ .. قالَ : « أَسْتَوْدعُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 230) has «قَالَ:», as v1 does; the print's «يَقُولُ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -1502,6 +1615,18 @@
     "وكَانَتِ اليُسْرَى",
     "وكَانَتْ يَدُهُ اليُسْرَى",
     "v1"
+   ],
+   [
+    "وكَانَتْ يَدُهُ اليُسْرَى",
+    "وكَانَتْ اليُسْرَى",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "وكَانَتْ يَدُهُ اليُسْرَى",
+    "وكَانَتْ اليُسْرَى",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 232) has no «يَدُهُ» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },

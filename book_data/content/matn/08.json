@@ -80,6 +80,18 @@
     "وقال:",
     "وقالَ:",
     "marks"
+   ],
+   [
+    "عَنْهُما ، أَنَّ النَّبِيَّ",
+    "عَنْهُما ، عنِ النَّبِيَّ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "عَنْهُما ، أَنَّ النَّبِيَّ",
+    "عَنْهُما ، عنِ النَّبِيَّ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 288) has «عن», as v1 does; the print's «أَنَّ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -124,13 +136,23 @@
     "أَيْ: ارْفُقُوا",
     "أَيْ: ارْفَقُوا",
     "variant"
+   ],
+   [
+    "أَيْ: ارْفَقُوا",
+    "أَيْ: ارْفُقُوا",
+    "riyad"
+   ],
+   [
+    "وقَوْلهُ ﷺ: «نِقْيَها»",
+    "وقَوْلهُ: «نِقْيَها»",
+    "riyad"
    ]
   ],
   "misprint": [
    [
-    "وَقَوْلُهُ «نِقْيَها»",
-    "وقَوْلهُ ﷺ: «نِقْيَها»",
-    "The print drops the ﷺ after «وقوله», which refers to the Prophet (p. 721); v1's ﷺ stays (rule 1)."
+    "أَيْ: ارْفَقُوا",
+    "أَيْ: ارْفُقُوا",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 288) has «أيْ: ارْفُقُوا», as v1 does; the print's «أَيْ: ارْفَقُوا» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -150,6 +172,18 @@
     "في النَّوْمِ",
     "فِي النَّوْمِ",
     "marks"
+   ],
+   [
+    "عَنْ أَبي",
+    "وَعَنْ أَبي",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "عَنْ أَبي",
+    "وَعَنْ أَبي",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «وعن», as v1 does; the print's «عَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -276,6 +310,38 @@
     "ورَوَاهُ أَبُو",
     "رَوَاهُ أَبُو",
     "variant"
+   ],
+   [
+    "بإِسنادِ مِثْلِ هٰذَا بَعْدَ",
+    "بإِسنادِ مُسْلِمٍ بَعْدَ",
+    "riyad"
+   ],
+   [
+    "رَأَى الْجَمَلُ النَّبِيَّ ﷺ",
+    "رَأَى رسولَ الله ﷺ",
+    "riyad"
+   ],
+   [
+    "تُجِيعُهُ، تُدْئِبُهُ» . رَوَاهُ",
+    "تُجِيعُهُ، وتُدْئِبُهُ» . رَوَاهُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "بإِسنادِ مِثْلِ هٰذَا بَعْدَ",
+    "بإِسنادِ مُسْلِمٍ بَعْدَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «مسلم», as sunnah.com does; the print's «مِثْلِ هٰذَا» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "رَأَى الْجَمَلُ النَّبِيَّ ﷺ",
+    "رَأَى رسولَ الله ﷺ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «رَسولَ الله», as v1 does; the print's «الْجَمَلُ النَّبِيَّ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "تُجِيعُهُ، تُدْئِبُهُ» . رَوَاهُ",
+    "تُجِيعُهُ، وتُدْئِبُهُ» . رَوَاهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «وتُدْئِبُهُ».», as sunnah.com does; the print's «تُدْئِبُهُ»» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -378,6 +444,18 @@
     "عُقْبَةٌ كَعُقْبَةِ أَحَدِهمْ مِنْ",
     "عُقْبَةُ أَحَدِهِمْ مِنْ",
     "variant"
+   ],
+   [
+    "إلاَّ عُقْبَةُ أَحَدِهِمْ مِنْ",
+    "إلاَّ عُقْبَةُ كَعُقْبَةِ أَحَدِهِمْ مِنْ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "إلاَّ عُقْبَةُ أَحَدِهِمْ مِنْ",
+    "إلاَّ عُقْبَةُ كَعُقْبَةِ أَحَدِهِمْ مِنْ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 291) has «كَعقبة» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },

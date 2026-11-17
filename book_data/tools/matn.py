@@ -938,7 +938,7 @@ def review(ids: list[int], count: int, words: int) -> None:
 
 
 INBOX = CHECKED / "inbox.json"
-WHY = {"v1", "variant", "marks"}
+WHY = {"v1", "variant", "marks", "riyad"}  # riyad: a dispute Riyad al-Salihin itself settles (docs/matn.md, rule 8)
 
 
 def clusters(text: str) -> list[tuple[int, str]]:
@@ -1036,7 +1036,13 @@ def settle(h: dict, d: dict, again: bool = False) -> None:
     for f in d.get("fix", []):
         if len(f) != 3 or f[2] not in WHY:
             raise ValueError(f"a fix is [from, to, why] with why one of {sorted(WHY)}: {f}")
-        fix_matn(matn, f[0], f[1], again)
+        try:
+            fix_matn(matn, f[0], f[1], again)
+        except ValueError:
+            # A fix written on the tidied text (tools/review.py tidies after each change) can start where an
+            # earlier fix left two spaces: tidy, then try again.
+            tidy(matn)
+            fix_matn(matn, f[0], f[1], again)
     tidy(matn)
     corrections = list(h["corrections"])
     for m in d.get("misprint", []):

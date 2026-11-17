@@ -23,6 +23,9 @@ a cross-reference the book doesn't number is left out, hadith v1 lacks are added
 and a chapter v1 lacks is added where it holds a hadith. A hadith's page is where the alignment
 finds its matn, unless the file corrects it (`pages`, read on the scan).
 
+The book and chapter titles are the book's headings, as read on the scan in step 4's titles pass
+(content/titles.json, applied by tools/titles.py), where it has read them; v1's otherwise.
+
 The build checks that every word of v1's matn survives, that the book's numbers 1–1898 are each
 used once, that pages rise with the numbers, and that the chapter numbers agree with the
 numbered chapter headings in the OCR text. It refuses to overwrite content/hadith/ once
@@ -38,6 +41,7 @@ from arabic import words
 from chapters import anchors, headings, match, moved, v1_chapters
 from numbering import EXCEPTIONS, align, mapping
 from sources import ROOT, v1_hadiths
+from titles import apply as apply_titles
 
 OUT_DIR = ROOT / "content" / "hadith"
 TOTAL = 1898
@@ -347,6 +351,7 @@ def main() -> None:
         for key in ("_door", "_raw", "_where"):
             r.pop(key, None)
         chapter_rec[n]["hadith"].append(r)
+    apply_titles(books)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
     for f in OUT_DIR.glob("*.json"):
         f.unlink()

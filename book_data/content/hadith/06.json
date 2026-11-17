@@ -5,7 +5,7 @@
   {
    "number": 131,
    "old_id": 128,
-   "title": "باب فضل السلام و الأمر بإفشائه",
+   "title": "باب فضل السلام والأمر بإفشائه",
    "hadith": [
     {
      "id": 845,
@@ -192,7 +192,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وعَنْ عِمرانَ بنِ الْحُصَيْنِ رَضِيَ اللهُ عَنْهُما قالَ: "
+       "text": "عنْ عِمرانَ بنِ الْحُصَيْنِ رَضِيَ اللهُ عَنْهُما قالَ: "
       },
       {
        "role": "speech",
@@ -230,7 +230,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "وعَنْ عِمرانَ",
+       "correction": "عنْ عِمرانَ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 264) has «عن», as v1 does; the print's «وعَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -353,7 +360,7 @@
       },
       {
        "role": "speech",
-       "text": "أتيتُ رسولَ اللهِ ﷺ فَقُلْتُ: عَلَيْكَ السَّلامُ يا رَسولَ اللهِ، فَقالَ: "
+       "text": "أتيتُ رسولَ اللهِ ﷺ فَقُلْتُ: عَلَيْكَ السَّلامُ يا رَسولَ اللهِ، قَالَ: "
       },
       {
        "role": "prophet",
@@ -361,13 +368,26 @@
       },
       {
        "role": "narration",
-       "text": " رَوَاهُ أَبُو دَاوُودَ، والتِّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ صحيحٌ.\nوقدْ سبقَ لَفْظُهُ بِطولِهِ."
+       "text": " رَوَاهُ أَبُو دَاوُودَ، والتِّرْمِذِيُّ وقالَ: حَدِيثٌ حَسَنٌ صحيحٌ.\nوقدْ سبقَ بِطولِهِ."
       }
      ],
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "اللهِ، فَقالَ: « لَا",
+       "correction": "اللهِ، قَالَ: « لَا",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 266) has «قَالَ:», as sunnah.com does; the print's «فَقالَ:» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      },
+      {
+       "part": "matn",
+       "printed": "سبقَ لَفْظُهُ بِطولِهِ.",
+       "correction": "سبقَ بِطولِهِ.",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 266) has no «لَفْظُهُ» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
    ]
@@ -385,7 +405,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وعَنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ: أنَّ رسولَ اللهِ ﷺ قالَ: "
+       "text": "عنْ أَبِي هُرَيْرَةَ رَضِيَ اللهُ عَنْهُ: أنَّ رسولَ اللهِ ﷺ قالَ: "
       },
       {
        "role": "prophet",
@@ -393,7 +413,7 @@
       },
       {
        "role": "narration",
-       "text": " مُتَّفَقٌ عَلَيْهِ .\nوفي رِوَايَةِ الْبُخَارِيِّ: "
+       "text": " مُتَّفَقٌ عَلَيْهِ .\nوفي رِوَايَةِ لِلْبُخَارِيِّ: "
       },
       {
        "role": "prophet",
@@ -407,7 +427,20 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "وعَنْ أَبِي",
+       "correction": "عنْ أَبِي",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 266) has «عن», as v1 does; the print's «وعَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      },
+      {
+       "part": "matn",
+       "printed": "رِوَايَةِ الْبُخَارِيِّ: « وَالصَّغِيرُ",
+       "correction": "رِوَايَةِ لِلْبُخَارِيِّ: « وَالصَّغِيرُ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 266) has «للبخاري:», as v1 does; the print's «الْبُخَارِيِّ:» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -452,7 +485,7 @@
   {
    "number": 134,
    "old_id": 131,
-   "title": "باب استحباب إعادة السلام على من تكرر لقاؤه على قرب بأن دخل ثم خرج ثم دخل في الحال أو حال بينهما شجرة و نحوها",
+   "title": "باب استحباب إعادة السلام على من تكرر لقاؤه على قرب بأن دخل ثم خرج ثم دخل في الحال أو حال بينهما شجرة ونحوهما",
    "hadith": [
     {
      "id": 859,
@@ -470,13 +503,20 @@
       },
       {
        "role": "narration",
-       "text": " فَرَجَعَ فَصَلَّى، ثُمَّ جاءَ فَسَلَّمَ عَلَى النَّبِيِّ ﷺ، حَتّى فَعَلَ ذلكَ مَرَّاتٍ. مُتَّفَقٌ عَلَيْهِ ."
+       "text": " فَرَجَعَ فَصَلَّى، ثُمَّ جاءَ فَسَلَّمَ عَلَى النَّبِيِّ ﷺ، حَتّى فَعَلَ ذلكَ ثَلاثَ مَرَّاتٍ. مُتَّفَقٌ عَلَيْهِ ."
       }
      ],
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "ذلكَ مَرَّاتٍ.",
+       "correction": "ذلكَ ثَلاثَ مَرَّاتٍ.",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 266) has «ثَلاثَ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -504,6 +544,9 @@
      "corrections": [],
      "notes": []
     }
+   ],
+   "notes": [
+    "«ونحوهما», not «ونحوها» as the OCR text reads it: the print sets «هما» as a tight ligature that reads like «ها» (the owner's reading of chapters 148, 197 and 281, 2026-11-17), and Riyad al-Salihin itself (al-Fahl's edition) has «ونحوهما»."
    ]
   },
   {
@@ -881,16 +924,14 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "The print vocalizes the narrator's name «كِلْدَةَ»; the Companion is usually given as Kalada («كَلَدَةَ», v1's), so the print may be wrong. Taken as the book's under rule 1 (names)."
-     ]
+     "notes": []
     }
    ]
   },
   {
    "number": 141,
    "old_id": 138,
-   "title": "باب بيان أن السنة إذا قيل للمستأذن: من أنت؟ أن يقول:فلان فيسمي نفسه بما يعرف به من اسم أو كنية وكراهة قوله\" أنا\" ونحوها",
+   "title": "باب بيان أن السنة إذا قيل للمستأذن من أنت أن يقول فلان فيسمي نفسه بما يعرف به من اسم أو كنية وكراهة قوله «أنا» ونحوها",
    "hadith": [
     {
      "id": 874,
@@ -900,7 +941,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "عنْ أنسٍ رَضِيَ اللهُ عَنْهُ فِي حدِيثهِ المشْهورِ فِي الإسْراءِ قالَ رسولُ اللهِ ﷺ: "
+       "text": "عنْ أنسٍ رَضِيَ اللهُ عَنْهُ فِي حدِيثهِ المشْهورِ فِي الإسْراءِ قالَ: قالَ رسولُ اللهِ ﷺ: "
       },
       {
        "role": "prophet",
@@ -914,7 +955,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "الإسْراءِ قالَ",
+       "correction": "الإسْراءِ قالَ: قالَ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 269) has «قَالَ:» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -1036,7 +1084,7 @@
   {
    "number": 142,
    "old_id": 139,
-   "title": "باب استحباب تشميت العاطس إذا حمد الله تعالى وكراهة تشميته إذ لم يحمد الله تعالى وبيان آداب التشميت والعطاس والتثاؤب",
+   "title": "باب استحباب تشميت العاطس إذا حمد الله تعالى وكراهة تشميته إذا لم يحمد الله تعالى وبيان آداب التشميت والعطاس والتثاؤب",
    "hadith": [
     {
      "id": 878,
@@ -1208,7 +1256,7 @@
       },
       {
        "role": "prophet",
-       "text": "«إذَا تَثاءَبَ أحَدُكُمْ .. فَلْيُمسِكْ بِيَدِهِ عَلى فيهِ؛ فإنَّ الشَّيْطَانَ يَدْخُلُ فِيهِ »"
+       "text": "«إذَا تَثاءَبَ أحَدُكُمْ .. فَلْيُمسِكْ بِيَدِهِ عَلى فيهِ؛ فإنَّ الشَّيْطَانَ يَدْخُلُ »"
       },
       {
        "role": "narration",
@@ -1224,6 +1272,12 @@
        "printed": "أَبِي سَعِيدٍ الْخُدْرِيِّ ﷺ قالَ",
        "correction": "أَبِي سَعِيدٍ الْخُدْرِيِّ رَضِيَ اللهُ عَنْهُ قالَ",
        "reason": "The print sets ﷺ after Abu Sa'id al-Khudri's name, where «رضي الله عنه» belongs."
+      },
+      {
+       "part": "matn",
+       "printed": "يَدْخُلُ فِيهِ » رَوَاهُ",
+       "correction": "يَدْخُلُ » رَوَاهُ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 271) has no «فِيهِ» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
       }
      ],
      "notes": []
@@ -1233,7 +1287,7 @@
   {
    "number": 143,
    "old_id": 140,
-   "title": "باب استحباب المصافحة عند اللقاء وبشاشة الوجه وتقبيل يد الرجل الصالح وتقبيل ولده شفقة ومعانقة القادم من السفر وكراهية الإنحناء",
+   "title": "باب استحباب المصافحة عند اللقاء وبشاشة الوجه وتقبيل يد الرجل الصالح وتقبيل ولده شفقة ومعانقة القادم من سفر وكراهية الانحناء",
    "hadith": [
     {
      "id": 885,

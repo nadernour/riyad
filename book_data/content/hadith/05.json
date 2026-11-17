@@ -1,11 +1,11 @@
 {
  "old_id": 5,
- "title": "كتاب آداب النوم والاضطجاع والقعود والمجلس والجليس والرؤيا",
+ "title": "كتاب آداب النوم",
  "chapters": [
   {
    "number": 127,
    "old_id": 124,
-   "title": "باب ما يقوله عند النوم",
+   "title": "باب آداب النوم والاضطجاع والقعود والمجلس والجليس والرؤيا",
    "hadith": [
     {
      "id": 814,
@@ -189,7 +189,7 @@
       },
       {
        "role": "prophet",
-       "text": "«مَنْ قَعَدَ مَقْعَداً لَمْ يَذْكُرِ اللهَ تَعالَى فِيهِ .. كَانَتْ عَلَيْهِ مِنَ اللهِ تَعالَى تِرةٌ، وَمَنِ اضْطَجَعَ مُضْطَجَعاً لاَ يَذْكُرُ اللهَ تَعالَى فِيهِ .. كَانَتْ عَليْهِ مِنَ اللهِ تِرةٌ»"
+       "text": "«مَنْ قَعَدَ مَقْعَداً لَمْ يَذْكُرِ اللهَ تَعالَى فِيهِ .. كَانَتْ عَلَيْهِ مِنَ اللهِ تَعالَى تِرةٌ، وَمَنِ اضْطَجَعَ مَضجَعًا لاَ يَذْكُرُ اللهَ تَعالَى فِيهِ .. كَانَتْ عَليْهِ مِنَ اللهِ تِرةٌ»"
       },
       {
        "role": "narration",
@@ -207,15 +207,25 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "اضْطَجَعَ مُضْطَجَعاً لاَ",
+       "correction": "اضْطَجَعَ مَضجَعًا لاَ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 258) has «مَضجَعًا», as sunnah.com does; the print's «مُضْطَجَعاً» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
+   ],
+   "notes": [
+    "v1 titles book 5 «كتاب آداب النوم والاضطجاع والقعود والمجلس والجليس والرؤيا», which is this chapter's heading; the print's book heading over it is «كتاب آداب النوم» (p. 644). v1 also gives the chapter a title of its own, «باب ما يقوله عند النوم», which the print doesn't have."
    ]
   },
   {
    "number": 128,
    "old_id": 125,
-   "title": "باب جواز الاستلقاء على القفا ووضع إحدى الرجلين على الأخرى إذا لم يخف انكشاف العورة وجواز القعود متربعاً ومحتبياً",
+   "title": "باب جواز الاستلقاء على القفا ووضع إحدى الرجلين على الأخرى إذا لم يخف انكشاف العورة وجواز القعود متربعا ومحتبيا",
    "hadith": [
     {
      "id": 820,
@@ -272,9 +282,7 @@
      "benefits": [],
      "shared_with": null,
      "corrections": [],
-     "notes": [
-      "The print has «رضي الله عنه» for Jabir ibn Samura here, but «عنهما» for him in h. 827; the book's text is taken in each."
-     ]
+     "notes": []
     },
     {
      "id": 822,
@@ -338,7 +346,7 @@
       },
       {
        "role": "speech",
-       "text": "مرَّ بِي رسولُ اللهِ ﷺ وَأنا جَالسٌ هكذَا، وَقَدْ وَضَعتُ يَديَ اليُسْرَى خَلْفَ ظَهْرِي، وَاتَّكأْتُ عَلَى إِلْيَةِ يَدِي، فقالَ: "
+       "text": "مرَّ بِي رسولُ اللهِ ﷺ وَأنا جَالسٌ هكذَا، وَقَدْ وَضَعتُ يَديَ اليُسْرَى خَلْفَ ظَهْرِي، وَاتَّكأْتُ عَلَى أَلْيَةِ يَدِي، فقالَ: "
       },
       {
        "role": "prophet",
@@ -358,6 +366,12 @@
        "printed": "الشَّدِيدِ",
        "correction": "الشَّريدِ",
        "reason": "The print has «الشديد بن سويد»; the Companion is al-Sharid ibn Suwayd, as sunnah.com has it."
+      },
+      {
+       "part": "matn",
+       "printed": "عَلَى إِلْيَةِ يَدِي،",
+       "correction": "عَلَى أَلْيَةِ يَدِي،",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 259) has «عَلَى أَليَةِ يَدي،», as v1 does; the print's «عَلَى إِلْيَةِ يَدِي،» gives way to it (rule 8, the owner's decision, 2026-11-17)."
       }
      ],
      "notes": []
@@ -367,7 +381,7 @@
   {
    "number": 129,
    "old_id": 126,
-   "title": "باب في آداب المجلس والجليس",
+   "title": "باب آداب المجلس والجليس",
    "hadith": [
     {
      "id": 825,
@@ -709,7 +723,7 @@
       },
       {
        "role": "prophet",
-       "text": "«مَنْ قعَدَ مَقْعَداً لمْ يَذْكُرِ اللهَ تَعالَى فِيهِ .. كَانَتْ عَلَيْهِ مِنَ اللهِ تِرَةٌ، وَمَنِ اضْطجَعَ مُضْطَجَعاً لَا يَذْكرُ اللهَ تَعالَى فيهِ .. كانَتْ عَليْهِ مِنَ اللهِ تِرَةٌ »"
+       "text": "«مَنْ قعَدَ مَقْعَداً لمْ يَذْكُرِ اللهَ تَعالَى فِيهِ .. كَانَتْ عَلَيْهِ مِنَ اللهِ تِرَةٌ، وَمَنِ اضْطجَعَ مَضْجَعاً لَا يَذْكرُ اللهَ تَعالَى فيهِ .. كانَتْ عَليْهِ مِنَ اللهِ تِرَةٌ »"
       },
       {
        "role": "narration",
@@ -727,7 +741,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "اضْطجَعَ مُضْطَجَعاً لَا",
+       "correction": "اضْطجَعَ مَضْجَعاً لَا",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 261) has «مَضْجَعًا», as v1 does; the print's «مُضْطَجَعاً» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
    ]

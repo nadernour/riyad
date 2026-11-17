@@ -133,6 +133,18 @@
     "تعالى فِيهِ .. كَانَتْ عَليْهِ",
     "تَعالَى فِيهِ .. كَانَتْ عَليْهِ",
     "marks"
+   ],
+   [
+    "اضْطَجَعَ مُضْطَجَعاً لاَ",
+    "اضْطَجَعَ مَضجَعًا لاَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "اضْطَجَعَ مُضْطَجَعاً لاَ",
+    "اضْطَجَعَ مَضجَعًا لاَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 258) has «مَضجَعًا», as sunnah.com does; the print's «مُضْطَجَعاً» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -179,8 +191,7 @@
     "حَسْناء",
     "variant"
    ]
-  ],
-  "note": "The print has «رضي الله عنه» for Jabir ibn Samura here, but «عنهما» for him in h. 827; the book's text is taken in each."
+  ]
  },
  "822": {
   "fix": [
@@ -221,6 +232,11 @@
     "عَلَى أَلْيَةِ يَدِي",
     "عَلَى إِلْيَةِ يَدِي",
     "variant"
+   ],
+   [
+    "عَلَى إِلْيَةِ يَدِي،",
+    "عَلَى أَلْيَةِ يَدِي،",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -228,6 +244,11 @@
     "الشَّدِيدِ",
     "الشَّريدِ",
     "The print has «الشديد بن سويد»; the Companion is al-Sharid ibn Suwayd, as sunnah.com has it."
+   ],
+   [
+    "عَلَى إِلْيَةِ يَدِي،",
+    "عَلَى أَلْيَةِ يَدِي،",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 259) has «عَلَى أَليَةِ يَدي،», as v1 does; the print's «عَلَى إِلْيَةِ يَدِي،» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -502,6 +523,18 @@
     "كَاَنتْ",
     "كانَتْ",
     "v1"
+   ],
+   [
+    "اضْطجَعَ مُضْطَجَعاً لَا",
+    "اضْطجَعَ مَضْجَعاً لَا",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "اضْطجَعَ مُضْطَجَعاً لَا",
+    "اضْطجَعَ مَضْجَعاً لَا",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 261) has «مَضْجَعًا», as v1 does; the print's «مُضْطَجَعاً» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },

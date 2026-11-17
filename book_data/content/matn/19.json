@@ -325,6 +325,31 @@
     "خَلَّةٌ بيْنَ",
     "خَلَّةً بيْنَ",
     "v1"
+   ],
+   [
+    "فَعَاثٍ يمِيناً وَعاثٍ شمالاً",
+    "فَعَاثَ يمِيناً وَعاثَ شمالاً",
+    "riyad"
+   ],
+   [
+    "عاثٍ » بِالْعَيْنِ الْمُهْمَلَةِ",
+    "عاثَ » بِالْعَيْنِ الْمُهْمَلَةِ",
+    "riyad"
+   ],
+   [
+    "ويُحَدِّثُ بِدرَجاتِهم",
+    "ويُحَدِّثُهُمْ بِدرَجاتِهم",
+    "riyad"
+   ],
+   [
+    "أنْبِتي ثَمَرَكِ ، ورُدِّي",
+    "أنْبِتي ثَمرَتَكِ ، ورُدِّي",
+    "riyad"
+   ],
+   [
+    "واللاَّمِ والْقافِ ، ورُوِيَ",
+    "واللاَّمِ وبالقاف، ورُوِيَ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -337,9 +362,33 @@
     "وبَعْدُها هَمْزَةٌ",
     "وبَعْدَها هَمْزَةٌ",
     "The print has a damma on the dal of «بعدها», an adverb here, which takes a fatha."
+   ],
+   [
+    "فَعَاثٍ يمِيناً وَعاثٍ شمالاً",
+    "فَعَاثَ يمِيناً وَعاثَ شمالاً",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 503) has «فَعَاثَ يَمِينًا وَعَاثَ شِمالًا،», as v1 does; the print's «فَعَاثٍ يمِيناً وَعاثٍ شمالاً» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "عاثٍ » بِالْعَيْنِ الْمُهْمَلَةِ",
+    "عاثَ » بِالْعَيْنِ الْمُهْمَلَةِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 503) has ««عَاثَ» بالعين المهملة», as v1 does; the print's «عاثٍ » بِالْعَيْنِ الْمُهْمَلَةِ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "ويُحَدِّثُ بِدرَجاتِهم",
+    "ويُحَدِّثُهُمْ بِدرَجاتِهم",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 503) has «وَيُحَدِّثُهُمْ بِدَرَجَاتِهِمْ», as v1 does; the print's «ويُحَدِّثُ بِدرَجاتِهم» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "أنْبِتي ثَمَرَكِ ، ورُدِّي",
+    "أنْبِتي ثَمرَتَكِ ، ورُدِّي",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 503) has «ثَمَرتكِ،», as v1 does; the print's «ثَمَرَكِ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "واللاَّمِ والْقافِ ، ورُوِيَ",
+    "واللاَّمِ وبالقاف، ورُوِيَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 503) has «وبالقاف،», as sunnah.com does; the print's «والْقافِ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
-  ],
-  "note": "The print has «ويُحَدِّثُ بِدَرَجاتِهِمْ» without the object «هم» that Muslim and sunnah.com have («ويحدثهم»); taken as the book's wording (variant), but it may be a dropped pronoun. In the word meanings the print explains «الذُّرى» only as «الأسنمة»; v1's longer explanation (sunnah.com's) was replaced by the print's."
+  ]
  },
  "1811": {
   "fix": [
@@ -377,6 +426,18 @@
     "في الذي",
     "فِي الَّذِي",
     "marks"
+   ],
+   [
+    "فَإنَّهُ عَذْبٌ",
+    "فَإنَّهُ ماءٌ عَذْبٌ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "فَإنَّهُ عَذْبٌ",
+    "فَإنَّهُ ماءٌ عَذْبٌ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 505) has «مَاءٌ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -526,9 +587,30 @@
     "يُنْفَخُ في الصُّورِ",
     "يُنْفَخُ فِي الصُّورِ",
     "marks"
+   ],
+   [
+    "ثمَّ يَقُولُ يا",
+    "ثمَّ يُقَالُ يا",
+    "riyad"
+   ],
+   [
+    "وذَلكَ يَوْمٌ يُكْشَفُ",
+    "وذَلكَ يَوْمَ يُكْشَفُ",
+    "riyad"
    ]
   ],
-  "note": "The print has «ثُمَّ يَقُولُ: يا أيها الناس» where Muslim and sunnah.com have «ثم يُقال»; taken as the book's reading, as are its «يَوْمٌ» (twice) for Muslim's «يَوْمَ»."
+  "misprint": [
+   [
+    "ثمَّ يَقُولُ يا",
+    "ثمَّ يُقَالُ يا",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 505) has «ثُمَّ يُقالُ: يا», as v1 does; the print's «ثمَّ يَقُولُ يا» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "وذَلكَ يَوْمٌ يُكْشَفُ",
+    "وذَلكَ يَوْمَ يُكْشَفُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 505) has «وَذَلِكَ يَومَ يُكْشَفُ», as v1 does; the print's «وذَلكَ يَوْمٌ يُكْشَفُ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "1813": {
   "fix": [
@@ -551,6 +633,16 @@
     "رواه مسلم",
     "رَوَاهُ مُسْلِمٌ",
     "marks"
+   ],
+   [
+    "أنْقابِها",
+    "أنْقابِهِمَا",
+    "riyad"
+   ],
+   [
+    "تَحْرُسُها",
+    "تَحْرُسُهُمَا",
+    "riyad"
    ]
   ]
  },
@@ -742,6 +834,11 @@
     "هُمْ الخُفَرَاءُ",
     "الخُفَرَاءُ",
     "variant"
+   ],
+   [
+    "المَسَالح »: الخُفَرَاءُ",
+    "المَسَالح هُمْ »: الخُفَرَاءُ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -754,6 +851,11 @@
     "فَيُؤْشَرَ",
     "فَيؤْشَرُ",
     "The print ends the verb with a fatha (zoomed, p. 1237), as it does «فَيُشَبَّحَ» above; after «فَيُؤْمَرُ بِهِ فَـ» it is indicative, «فَيُؤْشَرُ», as Muslim has it."
+   ],
+   [
+    "المَسَالح »: الخُفَرَاءُ",
+    "المَسَالح هُمْ »: الخُفَرَاءُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 507) has «هُمُ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -978,9 +1080,20 @@
     "عليه",
     "عَلَيْهِ",
     "marks"
+   ],
+   [
+    "لَا تَمُرُّ الدُّنْيَا",
+    "لَا تَذْهَبُ الدُّنْيَا",
+    "riyad"
    ]
   ],
-  "note": "The print has «لَا تَمُرُّ الدُّنْيا» where Muslim and sunnah.com have «لا تذهب الدنيا»; taken as the book's reading, though it may be the printer's eye catching the «يَمُرَّ» that follows. Its commentary doesn't explain the word."
+  "misprint": [
+   [
+    "لَا تَمُرُّ الدُّنْيَا",
+    "لَا تَذْهَبُ الدُّنْيَا",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 508) has «لَا تَذْهَبُ الدُّنْيَا», as v1 does; the print's «لَا تَمُرُّ الدُّنْيَا» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "1824": {
   "fix": [
@@ -1018,6 +1131,18 @@
     "عليه",
     "عَلَيْهِ",
     "marks"
+   ],
+   [
+    "كُلُّ وَاحِدٍ مِنْهُمْ:",
+    "كُلُّ رَجُلٍ مِنْهُمْ:",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "كُلُّ وَاحِدٍ مِنْهُمْ:",
+    "كُلُّ رَجُلٍ مِنْهُمْ:",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 509) has «رجُلٍ», as v1 does; the print's «وَاحِدٍ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -1062,6 +1187,11 @@
     "عليه.",
     "عَلَيْهِ.",
     "marks"
+   ],
+   [
+    "بِغَنَمها",
+    "بِغَنَمِهِمَا",
+    "riyad"
    ]
   ]
  },
@@ -1260,6 +1390,18 @@
     "عليه",
     "عَلَيْهِ",
     "marks"
+   ],
+   [
+    "ﷺ قالَ: « كانَتِ",
+    "ﷺ يَقُولُ: « كانَتِ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "ﷺ قالَ: « كانَتِ",
+    "ﷺ يَقُولُ: « كانَتِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 510) has «يقولُ:», as v1 does; the print's «قالَ:» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -1601,9 +1743,20 @@
     "عليه",
     "عَلَيْهِ",
     "marks"
+   ],
+   [
+    "عَجْبُ ذَنَبِه",
+    "عَجْبَ ذَنَبِه",
+    "riyad"
    ]
   ],
-  "note": "The print has «إلا عَجْبُ ذَنَبِه» with a damma; al-Bukhari's text has «عَجْبَ ذَنَبِهِ», the accusative usual after an exception from a positive statement. Taken as printed."
+  "misprint": [
+   [
+    "عَجْبُ ذَنَبِه",
+    "عَجْبَ ذَنَبِه",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 512) has «إلَّا عَجْبَ الذَّنَبِ»; the print's «عَجْبُ ذَنَبِه» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "1839": {
   "fix": [
@@ -1640,6 +1793,18 @@
     "أصَابُوا فَلَكُمْ",
     "أصَابُوا فَلَكُمْ ولَهُمْ",
     "variant"
+   ],
+   [
+    "فَلَكُمْ ولَهُمْ ، وإنْ",
+    "فَلَكُمْ ، وإنْ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "فَلَكُمْ ولَهُمْ ، وإنْ",
+    "فَلَكُمْ ، وإنْ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 512) has no «ولَهُمْ» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -1741,6 +1906,18 @@
     "لا تَكُنْ",
     "لَا تَكُنْ",
     "marks"
+   ],
+   [
+    "مُسْلِمٌ .\nورَوَاهُ",
+    "مُسْلِمٌ هكذا .\nورَوَاهُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "مُسْلِمٌ .\nورَوَاهُ",
+    "مُسْلِمٌ هكذا .\nورَوَاهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 513) has «هكذا.» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -1850,6 +2027,28 @@
     "أكَرَاهِيَةُ",
     "أَكَرَاهِيَةَ",
     "variant"
+   ],
+   [
+    "أَكَرَاهِيَةَ",
+    "أكَرَاهِيَةُ",
+    "riyad"
+   ],
+   [
+    "لِقَاءَهُ » قُلْتُ: يَا",
+    "لِقَاءَهُ » فَقُلْتُ: يَا",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "أَكَرَاهِيَةَ",
+    "أكَرَاهِيَةُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 514) has «أكَراهِيَةُ», as v1 does; the print's «أَكَرَاهِيَةَ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "لِقَاءَهُ » قُلْتُ: يَا",
+    "لِقَاءَهُ » فَقُلْتُ: يَا",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 514) has «فقلتُ:», as v1 does; the print's «قُلْتُ:» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -2726,6 +2925,16 @@
     "سَلْ تُعْطَهُ",
     "سَلْ تُعْطَهْ",
     "variant"
+   ],
+   [
+    "سَلْ تُعْطَهْ",
+    "سَلْ تُعْطَهُ",
+    "riyad"
+   ],
+   [
+    "إِلى الأرْضِ",
+    "إِلى أَهْلِ الأرْضِ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -2743,6 +2952,16 @@
     "اذْهَبُوا إِلَى إِبْرَاهِيمَ . فَيَقُولُونَ",
     "اذْهَبُوا إِلَى إِبْرَاهِيمَ . فَيَأْتُونَ إِبْرَاهِيمَ فَيَقُولُونَ",
     "The print's eye skips from one «إبراهيم» to the next and drops «فيأتون إبراهيم», which every other prophet's turn in the hadith has, as do al-Bukhari and sunnah.com."
+   ],
+   [
+    "سَلْ تُعْطَهْ",
+    "سَلْ تُعْطَهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 519) has «سَلْ تُعْطَهُ،», as v1 does; the print's «سَلْ تُعْطَهْ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "إِلى الأرْضِ",
+    "إِلى أَهْلِ الأرْضِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 519) has «أَهلِ» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -3082,6 +3301,16 @@
     "سَعَى النَّاسِ",
     "سَعَى النَّاسُ",
     "v1"
+   ],
+   [
+    "سَعَى النَّاسُ",
+    "سَعْيُ النَّاسِ",
+    "riyad"
+   ],
+   [
+    "فقَال بِعَقِبَيْهِ هَكَذَا",
+    "فقَال بِعَقِبهِ هَكَذَا",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -3089,9 +3318,18 @@
     "رَبّ إِنِّي أَسْكَنْتُ",
     "رَبَّنَا إِنِّي أَسْكَنْتُ",
     "The print has «ربّ» for the verse's «ربنا» (Ibrahim 37), which al-Bukhari's text has too."
+   ],
+   [
+    "سَعَى النَّاسُ",
+    "سَعْيُ النَّاسِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 521) has «سَعْيُ النَّاسِ»; the print's «سَعَى النَّاسُ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "فقَال بِعَقِبَيْهِ هَكَذَا",
+    "فقَال بِعَقِبهِ هَكَذَا",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 521) has «بِعقِبِهِ», as v1 does; the print's «بِعَقِبَيْهِ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
-  ],
-  "note": "The print has no ﷺ after Ibrahim in «بركة دعوة إبراهيم» (p. 1272), though it gives him one on p. 1268 and 1269; v1's ﷺ there was removed: an honorific after anyone but the Prophet follows the print (rule 1). The print opens «رحم الله أم إسماعيل» without « and «فألفى ذلك» without », so v1's lone « at each was removed."
+  ]
  },
  "1870": {
   "fix": [

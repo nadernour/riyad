@@ -107,6 +107,18 @@
     "خَرِيفٌ في",
     "خَرِيفٌ فِي",
     "marks"
+   ],
+   [
+    "عَشِيَّةً .. صَلَّى",
+    "عَشِيَّةً إلاَّ .. صَلَّى",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "عَشِيَّةً .. صَلَّى",
+    "عَشِيَّةً إلاَّ .. صَلَّى",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 274) has «إِلَّا» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -381,6 +393,18 @@
     "على غمرَاتِ",
     "عَلى غمرَاتِ",
     "marks"
+   ],
+   [
+    "بِالموتِ، وعِنْدَهُ قَدَحٌ",
+    "بِالموتِ، عِنْدَهُ قَدَحٌ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "بِالموتِ، وعِنْدَهُ قَدَحٌ",
+    "بِالموتِ، عِنْدَهُ قَدَحٌ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 276) has «عِنْدَهُ», as v1 does; the print's «وعِنْدَهُ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -400,6 +424,18 @@
     "نَبِيُّ اللهِ",
     "رَسُولُ اللهِ",
     "variant"
+   ],
+   [
+    "بنِ حُصَيْنٍ رَضِيَ",
+    "بنِ الحُصَينِ رَضِيَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "بنِ حُصَيْنٍ رَضِيَ",
+    "بنِ الحُصَينِ رَضِيَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 276) has «الحُصَيْنِ», as v1 does; the print's «حُصَيْنٍ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -755,8 +791,7 @@
     "جزَّأَهُمْ عَلَيْها ثَلاثَةَ",
     "variant"
    ]
-  ],
-  "note": "The print has «جزأهم عليها ثلاثة أجزاء», with «عليها» at the start of a line just after «فتقال الناس عليها»; Abu Dawud and al-Tirmidhi lack the second «عليها», so it may be a dittography."
+  ]
  },
  "935": {
   "fix": [
@@ -909,9 +944,30 @@
     "حديثٌ صحيحٌ",
     "حديثٌ حَسَنٌ صحيحٌ",
     "variant"
+   ],
+   [
+    "حديثٌ حَسَنٌ صحيحٌ.",
+    "حديثٌ صحيحٌ.",
+    "riyad"
+   ],
+   [
+    "حتَّى ظَنَنَّا أَنَّهُ",
+    "حتَّى ظَنَنْتُ أَنَّهُ",
+    "riyad"
    ]
   ],
-  "note": "The print gives al-Hakim's verdict as «حديث حسن صحيح»; v1 and sunnah.com have «حديث صحيح»."
+  "misprint": [
+   [
+    "حديثٌ حَسَنٌ صحيحٌ.",
+    "حديثٌ صحيحٌ.",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 282) has «وقال: «حديث صحيح»», as v1 does; the print's «حديثٌ حَسَنٌ صحيحٌ.» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "حتَّى ظَنَنَّا أَنَّهُ",
+    "حتَّى ظَنَنْتُ أَنَّهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 282) has «ظَنَنْتُ», as v1 does; the print's «ظَنَنَّا» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  },
  "941": {
   "fix": [
@@ -924,6 +980,18 @@
     "وفي روايةٍ",
     "وفِي روايةٍ",
     "marks"
+   ],
+   [
+    "وعَنْ أَبِي",
+    "عنْ أَبِي",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "وعَنْ أَبِي",
+    "عنْ أَبِي",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 283) has «عن», as v1 does; the print's «وعَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -989,6 +1057,18 @@
     "فَنَكَّسَ",
     "فَنَكَسَ",
     "variant"
+   ],
+   [
+    "فَنَكَسَ",
+    "فَنَكَّسَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "فَنَكَسَ",
+    "فَنَكَّسَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 283) has «فَنَكَّسَ», as v1 does; the print's «فَنَكَسَ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },

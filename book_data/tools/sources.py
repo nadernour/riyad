@@ -138,3 +138,35 @@ def v1_hadiths() -> dict[int, dict]:
         ORDER BY h.id""")
     keys = ("id", "book_id", "book", "door_id", "door", "title", "matn", "sharh")
     return {row[0]: dict(zip(keys, row)) for row in rows}
+
+
+FAHL_DIR = CACHE / "fahl"
+FAHL_URL = "https://shamela.ws/book/2348/{}"
+FAHL_PAGES = 2107
+
+
+def fahl_pages() -> list[str]:
+    """al-Fahl's critical edition of Riyad al-Salihin (Dar Ibn Kathir, 2007), as al-Maktaba
+    al-Shamila serves it (book 2348): the HTML of each of its 2,107 pages; index 0 is page 1.
+    Downloaded once, a page a second, into .cache/fahl/."""
+    import time
+    FAHL_DIR.mkdir(parents=True, exist_ok=True)
+    out = []
+    for n in range(1, FAHL_PAGES + 1):
+        path = FAHL_DIR / f"{n:04}.html"
+        if not path.exists():
+            if n == 1 or not (FAHL_DIR / f"{n - 1:04}.html").exists():
+                print(f"Downloading al-Fahl's edition from shamela.ws to {FAHL_DIR.relative_to(ROOT)}")
+            request = urllib.request.Request(FAHL_URL.format(n), headers={"User-Agent": "Mozilla/5.0"})
+            for attempt in range(5):
+                try:
+                    with urllib.request.urlopen(request, timeout=60) as response:
+                        path.write_bytes(response.read())
+                    break
+                except (OSError, TimeoutError):
+                    if attempt == 4:
+                        raise
+                    time.sleep(30)
+            time.sleep(1)
+        out.append(path.read_text(encoding="utf-8"))
+    return out

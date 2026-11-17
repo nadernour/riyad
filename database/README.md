@@ -6,9 +6,9 @@
 
 | | |
 |---|---|
-| Books and chapters | The 20 books (كتاب) and their 367 chapters (باب), with v1's titles for now: a pass after content step 4 checks them against the book's headings. |
+| Books and chapters | The book's 19 books (كتاب) and their 367 chapters (باب), with the titles as the book prints its headings (checked on the scan, 2026-11-17). |
 | Hadith | All 1,898, with the book's numbers, their short titles and the page where each starts. |
-| Hadith text | 164 hadith have been checked against the printed book. The rest have v1's text, which content step 4 is checking now. |
+| Hadith text | All 1,898 checked against the printed book, twice (content step 4). |
 | Speaker roles | v1's, not checked yet, so some pieces have the wrong role until a pass after step 4. |
 | Word meanings, benefits, narrators | Empty tables, filled when content steps 5 and 6 transcribe them. |
 
@@ -16,7 +16,7 @@ Each new build replaces the file, and the `info` table says which build it is. B
 
 ## Tables
 
-`PRAGMA user_version` is the schema version, now 2. It rises whenever the tables change. Version 2 (2026-10-25) dropped `hadith.old_id` and the `v1_ids` table, because v1 users' saved data isn't carried over.
+`PRAGMA user_version` is the schema version, now 3. It rises whenever the tables change. Version 2 (2026-10-25) dropped `hadith.old_id` and the `v1_ids` table, because v1 users' saved data isn't carried over. Version 3 (2026-11-17) follows the print's books: 19, not v1's 20, and `books.title` can be NULL (no book has a NULL title now).
 
 **`info`**: `key` and `value` (text):
 
@@ -31,8 +31,8 @@ Each new build replaces the file, and the `info` table says which build it is. B
 
 | Column | |
 |---|---|
-| `id` | 1–20, in the book's order |
-| `title` | The book's title, e.g. «كتاب الأدب» |
+| `id` | 1–19, in the book's order |
+| `title` | The book's title as printed, e.g. «كتاب الأدب». Book 1 is «المقدمات»: the book prints no كتاب heading over its first 83 chapters (الإخلاص, التوبة, …), so it has sunnah.com's name for them (the owner's choice, 2026-11-17). Never NULL now, though the column allows it. |
 
 **`chapters`**
 
@@ -40,7 +40,7 @@ Each new build replaces the file, and the `info` table says which build it is. B
 |---|---|
 | `id` | The book's chapter number, 1–372, numbered through the whole book. The few chapters that have no numbered hadith, only verses, aren't included, so some numbers are missing. |
 | `book_id` | Its book |
-| `title` | The chapter's title, e.g. «التوبة». v1's titles leave out the word «باب». |
+| `title` | The chapter's heading as printed, without its number and without marks, e.g. «باب التوبة» or «باب المبادرة إلى الخيرات وحث من توجه لخير على الإقبال عليه بالجد من غير تردد». Some are long (the longest has 44 words), so a screen that lists them should let them wrap. |
 
 **`hadith`**
 
@@ -48,7 +48,7 @@ Each new build replaces the file, and the `info` table says which build it is. B
 |---|---|
 | `id` | The hadith number printed in the book, 1–1898, with no gaps. It never changes, so bookmarks can store it. |
 | `book_id`, `chapter_id` | Its book and chapter |
-| `title` | The short title shown above it: a phrase of the hadith, taken from its text with the text's marks, e.g. «إنَّما الأَعمالُ بالنِّيَّات». For 447 hadith it's still v1's title, which isn't a phrase of the text, until a pass after content step 4 picks one. |
+| `title` | The short title shown above it: a phrase of the hadith, taken from its text with the text's marks, e.g. «إنَّما الأَعمالُ بالنِّيَّات». For 405 hadith it's still v1's title, which isn't a phrase of the text, until a pass after content step 4 picks one. |
 | `page` | The page of the printed book where it starts |
 | `search_text` | The text, simplified for search (see "Search") |
 

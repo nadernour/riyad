@@ -1,6 +1,6 @@
 {
  "old_id": 3,
- "title": "كتاب أدب الطعام",
+ "title": "كتاب آداب الطعام",
  "chapters": [
   {
    "number": 100,
@@ -109,7 +109,7 @@
       },
       {
        "role": "speech",
-       "text": "كنَّا إِذا حضَرْنَا معَ رسولِ اللهِ ﷺ طَعَاماً .. لَم نَضَعْ أَيدِينَا حتَّى يَبْدأَ رسولُ اللهِ ﷺ فَيَضَعَ يدَهُ، وَإِنَّا حَضَرْنَا معَهُ طَعاماً، فجاءَتْ "
+       "text": "كنَّا إِذا حضَرْنَا معَ رسولِ اللهِ ﷺ طَعَاماً .. لَم نَضَعْ أَيدِينَا حتَّى يَبْدأَ رسولُ اللهِ ﷺ فَيَضَعَ يدَهُ، وَإِنَّا حَضَرْنَا معَهُ مَرَّةً طَعاماً، فجاءَتْ "
       },
       {
        "role": "gloss",
@@ -135,10 +135,15 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
-     "notes": [
-      "The print has no «مرة» in «وإنا حضرنا معه طعاما», which Muslim and sunnah.com have; the text follows the print (rule 1)."
-     ]
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "حَضَرْنَا معَهُ طَعاماً",
+       "correction": "حَضَرْنَا معَهُ مَرَّةً طَعاماً",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 235) has «وَإنَّا حَضَرْنَا مَعَهُ مَرَّةً طَعَامًا», as v1 does; the print's «حَضَرْنَا معَهُ طَعاماً» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
+     "notes": []
     },
     {
      "id": 732,
@@ -260,7 +265,7 @@
   {
    "number": 101,
    "old_id": 99,
-   "title": "باب لايعيب الطعام واستحباب مدحه",
+   "title": "باب لا يعيب الطعام واستحباب مدحه",
    "hadith": [
     {
      "id": 736,
@@ -325,7 +330,7 @@
   {
    "number": 102,
    "old_id": 100,
-   "title": "باب مايقوله من حضر الطعام وهو صائم إذا لم يفطر",
+   "title": "باب ما يقوله من حضر الطعام وهو صائم إذا لم يفطر",
    "hadith": [
     {
      "id": 738,
@@ -387,11 +392,11 @@
       },
       {
        "role": "speech",
-       "text": "دَعا رجُلٌ النَّبِيَّ ﷺ لِطعَامٍ صَنَعَهُ لَهُ خَامِسَ خَمْسَةٍ، فَتَبِعهُمْ رَجُلٌ، فَلمَّا بَلَغَ البابَ .. قالَ لَهُ النَّبيُّ ﷺ: "
+       "text": "دَعا رجُلٌ النَّبِيَّ ﷺ لِطعَامٍ صَنَعَهُ لَهُ خَامِسَ خَمْسَةٍ، فَتَبِعهُمْ رَجُلٌ، فَلمَّا بَلَغَ البابَ .. قالَ النَّبيُّ ﷺ: "
       },
       {
        "role": "prophet",
-       "text": "«إِنَّ هٰذا تَبِعَنا؛ فإِنْ شِئْتَ أَنْ تَأْذنَ، وإِنْ شِئتَ .. رَجَعَ»"
+       "text": "«إِنَّ هٰذا تَبِعَنا؛ فإِنْ شِئْتَ أَنْ تَأْذنَ لَهُ، وإِنْ شِئتَ .. رَجَعَ»"
       },
       {
        "role": "narration",
@@ -409,7 +414,20 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "قالَ لَهُ النَّبيُّ",
+       "correction": "قالَ النَّبيُّ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 237) has no «لَهُ» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      },
+      {
+       "part": "matn",
+       "printed": "تَأْذنَ، وإِنْ",
+       "correction": "تَأْذنَ لَهُ، وإِنْ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 237) has «لَهُ،» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
    ]
@@ -435,7 +453,7 @@
       },
       {
        "role": "prophet",
-       "text": "«يَا غُلامُ؛ سَمِّ اللهَ، وَكُلْ بيمينِكَ، وكلْ مِمَّا يَلِيكَ»"
+       "text": "«يَا غُلامُ؛ سَمِّ اللهَ، تعالى، وَكُلْ بيمينِكَ، وكلْ مِمَّا يَلِيكَ»"
       },
       {
        "role": "narration",
@@ -453,7 +471,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "اللهَ، وَكُلْ",
+       "correction": "اللهَ، تعالى، وَكُلْ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 237) has «تَعَالَى،» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -538,7 +563,7 @@
   {
    "number": 106,
    "old_id": 104,
-   "title": "باب مايقوله ويفعله من يأكل ولا يشبع",
+   "title": "باب ما يقوله ويفعله من يأكل ولا يشبع",
    "hadith": [
     {
      "id": 743,
@@ -663,7 +688,7 @@
   {
    "number": 108,
    "old_id": 106,
-   "title": "باب كراهية الأكل متكئاً",
+   "title": "باب كراهية الأكل متكئا",
    "hadith": [
     {
      "id": 746,
@@ -736,7 +761,7 @@
   {
    "number": 109,
    "old_id": 107,
-   "title": "باب استحباب الأكل بثلاث أصابع واستحباب لعق الأصابع وكراهة مسحها قبل لعقها واستحباب لعق القصعة وأخذ اللقمة التي تسقط منه وأكلها",
+   "title": "باب استحباب الأكل بثلاث أصابع واستحباب لعق الأصابع وكراهة مسحها قبل لعقها واستحباب لعق القصعة وأخذ اللقمة التي تسقط منه وأكلها ومسحها بعد اللعق بالساعد والقدم وغيرها",
    "hadith": [
     {
      "id": 748,
@@ -920,7 +945,7 @@
       },
       {
        "role": "speech",
-       "text": "لا؛ قَدْ كُنَّا زمنَ النَّبيِّ ﷺ لَا نجدُ مِثْلَ ذلكَ الطَّعامِ إِلاَّ قلِيلاً، فإِذا نَحْنُ وجدْناهُ .. لَمْ يَكُنْ لَنَا مَنَادِيلُ إِلاَّ أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا، ثُمَّ نُصَلِّي وَلا نَتَوَضَّأُ."
+       "text": "لا؛ قَدْ كُنَّا زمنَ النَّبيِّ ﷺ لَا نجدُ مِثْلَ ذلكَ الطَّعامِ إِلاَّ قلِيلاً، فإِذا نَحْنُ وجدْناهُ .. لَمْ يَكُنْ لَنَا مَنَادِيلُ إِلاَّ أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا، ثُمَّ نُصَلِّي وَلا نَتَوَضَّأُ."
       },
       {
        "role": "narration",
@@ -930,7 +955,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا،",
+       "correction": "أَكُفَّنَا وسَوَاعِدَنَا وأَقْدَامَنَا،",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 240) has «أكُفَّنا، وسَواعِدَنَا، وأقْدامَنَا،», as v1 does; the print's «أَكُفُّنَا وسَوَاعِدُنَا وأَقْدَامُنَا،» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
    ]
@@ -995,7 +1027,7 @@
   {
    "number": 111,
    "old_id": 109,
-   "title": "باب أدب الشرب واستحباب التنفس ثلاثاً خارج الإناء وكراهة التنفس في الإناء واستحباب إدارة الإناء على الأيمن فالأيمن بعد المبتديء",
+   "title": "باب أدب الشرب واستحباب التنفس ثلاثا خارج الإناء وكراهة التنفس في الإناء واستحباب إدارة الإناء على الأيمن فالأيمن بعد المبتدئ",
    "hadith": [
     {
      "id": 757,
@@ -1155,7 +1187,7 @@
   {
    "number": 112,
    "old_id": 110,
-   "title": "باب كراهة الشرب من فم القربة ونحوها بيان أنه كراهة تنزيه لا حرام",
+   "title": "باب كراهة الشرب من فم القربة ونحوها وبيان أنه كراهة تنزيه لا كراهة تحريم",
    "hadith": [
     {
      "id": 762,
@@ -1215,7 +1247,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنْ أُمِّ ثابِتٍ كَبْشَةَ بِنْتِ ثَابتٍ أُخْتِ حَسَّانَ بْنِ ثابتٍ رَضِيَ اللهُ عَنْهَا قالتْ: "
+       "text": "وَعَنْ أُمِّ ثابِتٍ كَبْشَةَ بِنْتِ ثَابتٍ أُخْتِ حَسَّانَ بْنِ ثابتٍ رَضِيَ اللهُ عَنْهُمَا قالتْ: "
       },
       {
        "role": "speech",
@@ -1318,7 +1350,7 @@
   {
    "number": 114,
    "old_id": 112,
-   "title": "باب بيان جواز الشرب قائماً وبيان أن الأكمل والأفضل الشرب قاعداً",
+   "title": "باب بيان جواز الشرب قائما وبيان أن الأكمل والأفضل الشرب قاعدا",
    "hadith": [
     {
      "id": 767,
@@ -1487,7 +1519,7 @@
   {
    "number": 115,
    "old_id": 113,
-   "title": "باب استحباب كون ساقي القوم آخرهم شرباً",
+   "title": "باب استحباب كون ساقي القوم آخرهم شربا",
    "hadith": [
     {
      "id": 773,
@@ -1505,7 +1537,7 @@
       },
       {
        "role": "speech",
-       "text": "يَعْنِي: آخِرُهُمْ شُرْباً."
+       "text": "شُرْباً."
       },
       {
        "role": "narration",
@@ -1515,7 +1547,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "آخِرُهُمْ» يَعْنِي: آخِرُهُمْ شُرْباً.",
+       "correction": "آخِرُهُمْ» شُرْباً.",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 244) has no «يَعْنِي: آخِرُهُمْ» here, and neither does sunnah.com: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
    ]
@@ -1523,7 +1562,7 @@
   {
    "number": 116,
    "old_id": 114,
-   "title": "باب جواز الشرب من جميع الأواني الطاهرة غير الذهب والفضة وجواز الكرع وهو الشرب بالفم من النهر وغيره بغير إناءولا يد وتحريم استعمال إناء الذهب والفضة في الشرب والأكل والطهارة",
+   "title": "باب جواز الشرب من جميع الأواني الطاهرة غير الذهب والفضة وجواز الكرع وهو الشرب بالفم من النهر وغيره بغير إناء ولا يد وتحريم استعمال إناء الذهب والفضة في الشرب والأكل والطهارة وسائر وجوه الاستعمال",
    "hadith": [
     {
      "id": 774,
@@ -1570,7 +1609,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "عَنْ عبدِ اللهِ بنِ زيدٍ رَضِيَ اللهُ عَنْهُ قالَ: "
+       "text": "وَعَنْ عبدِ اللهِ بنِ زيدٍ رَضِيَ اللهُ عَنْهُ قالَ: "
       },
       {
        "role": "speech",
@@ -1600,7 +1639,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "عَنْ عبدِ",
+       "correction": "وَعَنْ عبدِ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 244) has «وعن», as v1 does; the print's «عَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -1611,7 +1657,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنْ جابرٍ رَضِيَ اللهُ عَنْهُ قالَ: "
+       "text": "وَعَنْ جابرٍ رَضِيَ اللهُ عَنْهُ "
       },
       {
        "role": "speech",
@@ -1637,7 +1683,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "عَنْهُ قالَ: إِنَّ",
+       "correction": "عَنْهُ إِنَّ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 245) has no «قالَ:» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -1711,6 +1764,14 @@
      "notes": []
     }
    ]
+  }
+ ],
+ "corrections": [
+  {
+   "part": "title",
+   "printed": "كتاب آدب الطعام",
+   "correction": "كتاب آداب الطعام",
+   "reason": "«آدب» is no word; its madda shows the plural «آداب» was meant (v1 has «أدب»)."
   }
  ]
 }

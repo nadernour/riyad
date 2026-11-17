@@ -78,7 +78,7 @@
   {
    "number": 167,
    "old_id": 164,
-   "title": "باب استحباب طلب الرفقة وتأميرهم على أنفسهم واحداً يطيعونه",
+   "title": "باب استحباب طلب الرفقة وتأميرهم على أنفسهم واحدا يطيعونه",
    "hadith": [
     {
      "id": 958,
@@ -175,7 +175,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "وَعَنِ ابْنِ عبَّاسٍ رضِيَ اللهُ عَنْهُما ، أَنَّ النَّبِيَّ ﷺ قالَ: "
+       "text": "وَعَنِ ابْنِ عبَّاسٍ رضِيَ اللهُ عَنْهُما ، عنِ النَّبِيَّ ﷺ قالَ: "
       },
       {
        "role": "prophet",
@@ -189,7 +189,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "عَنْهُما ، أَنَّ النَّبِيَّ",
+       "correction": "عَنْهُما ، عنِ النَّبِيَّ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 288) has «عن», as v1 does; the print's «أَنَّ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     }
    ]
@@ -197,7 +204,7 @@
   {
    "number": 168,
    "old_id": 165,
-   "title": "باب آداب السير والنزول والمبيت والنوم في السفر واستحباب السرى والرفق بالدواب ومراعاة مصلحتها وأمر من قصر في حقها بالقيام بحقها وجواز الإرداف على الدابة إذا كانت تطيق ذلك",
+   "title": "باب آداب السير والنزول والمبيت والنوم في السفر واستحباب السرى والرفق بالدواب ومراعاة مصلحتها وجواز الإرداف على الدابة إذا كانت تطيق ذلك وأمر من قصر في حقها بالقيام بحقها",
    "hadith": [
     {
      "id": 962,
@@ -227,7 +234,7 @@
       },
       {
        "role": "narration",
-       "text": " أَيْ: ارْفَقُوا بِهَا فِي السَّيرِ ؛ لترْعَى فِي حالِ سيرِهَا ، وقَوْلهُ ﷺ: "
+       "text": " أَيْ: ارْفُقُوا بِهَا فِي السَّيرِ ؛ لترْعَى فِي حالِ سيرِهَا ، وقَوْلهُ: "
       },
       {
        "role": "gloss",
@@ -252,9 +259,9 @@
      "corrections": [
       {
        "part": "matn",
-       "printed": "وَقَوْلُهُ «نِقْيَها»",
-       "correction": "وقَوْلهُ ﷺ: «نِقْيَها»",
-       "reason": "The print drops the ﷺ after «وقوله», which refers to the Prophet (p. 721); v1's ﷺ stays (rule 1)."
+       "printed": "أَيْ: ارْفَقُوا",
+       "correction": "أَيْ: ارْفُقُوا",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 288) has «أيْ: ارْفُقُوا», as v1 does; the print's «أَيْ: ارْفَقُوا» gives way to it (rule 8, the owner's decision, 2026-11-17)."
       }
      ],
      "notes": []
@@ -267,7 +274,7 @@
      "matn": [
       {
        "role": "narration",
-       "text": "عَنْ أَبي قَتَادةَ رضيَ اللهُ عَنْهُ قَالَ: "
+       "text": "وَعَنْ أَبي قَتَادةَ رضيَ اللهُ عَنْهُ قَالَ: "
       },
       {
        "role": "speech",
@@ -281,7 +288,14 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "عَنْ أَبي",
+       "correction": "وَعَنْ أَبي",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «وعن», as v1 does; the print's «عَنْ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -395,11 +409,11 @@
       },
       {
        "role": "narration",
-       "text": " يَعْني: حَائِطَ نَخْلٍ رَوَاهُ مُسْلِمٌ هٰكَذَا مُخْتصَراً.\nوزادَ فِيهِ البَرْقانيُّ بإِسنادِ مِثْلِ هٰذَا بَعْدَ قوْلِهِ: (حائِشُ نَخْلٍ): "
+       "text": " يَعْني: حَائِطَ نَخْلٍ رَوَاهُ مُسْلِمٌ هٰكَذَا مُخْتصَراً.\nوزادَ فِيهِ البَرْقانيُّ بإِسنادِ مُسْلِمٍ بَعْدَ قوْلِهِ: (حائِشُ نَخْلٍ): "
       },
       {
        "role": "speech",
-       "text": "فَدَخَلَ حَائطاً لِرَجُلٍ منَ الأَنْصارِ ؛ فَإِذَا فِيهِ جَمَلٌ، فَلَمَّا رَأَى الْجَمَلُ النَّبِيَّ ﷺ .. جرْجرَ وذَرفَتْ عَيْنَاهُ، فأَتَاهُ النَّبيُّ ﷺ فَمَسَحَ سَرَاتَهُ -أَيْ: سَنامَهُ - وَذِفْرَاهُ ، فَسكَنَ، فقالَ : "
+       "text": "فَدَخَلَ حَائطاً لِرَجُلٍ منَ الأَنْصارِ ؛ فَإِذَا فِيهِ جَمَلٌ، فَلَمَّا رَأَى رسولَ الله ﷺ .. جرْجرَ وذَرفَتْ عَيْنَاهُ، فأَتَاهُ النَّبيُّ ﷺ فَمَسَحَ سَرَاتَهُ -أَيْ: سَنامَهُ - وَذِفْرَاهُ ، فَسكَنَ، فقالَ : "
       },
       {
        "role": "prophet",
@@ -411,7 +425,7 @@
       },
       {
        "role": "prophet",
-       "text": "«أَفَلا تَتَّقِي اللهَ فِي هذِهِ البَهيمَةِ الَّتي مَلَّكَكَ اللهُ إيَّاهَا؟ فإنَّهُ يَشْكُو إِليَّ أَنَّكَ تُجِيعُهُ، تُدْئِبُهُ»"
+       "text": "«أَفَلا تَتَّقِي اللهَ فِي هذِهِ البَهيمَةِ الَّتي مَلَّكَكَ اللهُ إيَّاهَا؟ فإنَّهُ يَشْكُو إِليَّ أَنَّكَ تُجِيعُهُ، وتُدْئِبُهُ»"
       },
       {
        "role": "narration",
@@ -437,7 +451,26 @@
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "بإِسنادِ مِثْلِ هٰذَا بَعْدَ",
+       "correction": "بإِسنادِ مُسْلِمٍ بَعْدَ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «مسلم», as sunnah.com does; the print's «مِثْلِ هٰذَا» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      },
+      {
+       "part": "matn",
+       "printed": "رَأَى الْجَمَلُ النَّبِيَّ ﷺ",
+       "correction": "رَأَى رسولَ الله ﷺ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «رَسولَ الله», as v1 does; the print's «الْجَمَلُ النَّبِيَّ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      },
+      {
+       "part": "matn",
+       "printed": "تُجِيعُهُ، تُدْئِبُهُ» . رَوَاهُ",
+       "correction": "تُجِيعُهُ، وتُدْئِبُهُ» . رَوَاهُ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 289) has «وتُدْئِبُهُ».», as sunnah.com does; the print's «تُدْئِبُهُ»» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -529,13 +562,20 @@
       },
       {
        "role": "narration",
-       "text": " أَحَدِهِمْ. قالَ: فَضَممْتُ إليَّ اثْنَيْنِ أَوْ ثَلاثَةً ، ما لِي إلاَّ عُقْبَةُ أَحَدِهِمْ مِنْ جَمَلِي. رَوَاهُ أَبُو دَاوُودَ."
+       "text": " أَحَدِهِمْ. قالَ: فَضَممْتُ إليَّ اثْنَيْنِ أَوْ ثَلاثَةً ، ما لِي إلاَّ عُقْبَةُ كَعُقْبَةِ أَحَدِهِمْ مِنْ جَمَلِي. رَوَاهُ أَبُو دَاوُودَ."
       }
      ],
      "meanings": [],
      "benefits": [],
      "shared_with": null,
-     "corrections": [],
+     "corrections": [
+      {
+       "part": "matn",
+       "printed": "إلاَّ عُقْبَةُ أَحَدِهِمْ مِنْ",
+       "correction": "إلاَّ عُقْبَةُ كَعُقْبَةِ أَحَدِهِمْ مِنْ",
+       "reason": "Riyad al-Salihin itself (al-Fahl's edition, p. 291) has «كَعقبة» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+      }
+     ],
      "notes": []
     },
     {
@@ -568,7 +608,7 @@
   {
    "number": 170,
    "old_id": 167,
-   "title": "باب مايقول إذا ركب دابة السفر",
+   "title": "باب ما يقول إذا ركب الدابة للسفر",
    "hadith": [
     {
      "id": 972,
@@ -962,7 +1002,7 @@
   {
    "number": 173,
    "old_id": 170,
-   "title": "باب مايدعو به إذا خاف ناساً أو غيرهم",
+   "title": "باب ما يدعو إذا خاف ناسا أو غيرهم",
    "hadith": [
     {
      "id": 981,
@@ -1002,7 +1042,7 @@
   {
    "number": 174,
    "old_id": 171,
-   "title": "باب مايقول إذا نزل منزلاً",
+   "title": "باب ما يقول إذا نزل منزلا",
    "hadith": [
     {
      "id": 982,
@@ -1135,7 +1175,7 @@
   {
    "number": 176,
    "old_id": 173,
-   "title": "باب استحباب القدوم على أهله نهاراً وكراهته في الليل لغير حاجة",
+   "title": "باب استحباب القدوم على أهله نهارا وكراهته في الليل لغير حاجة",
    "hadith": [
     {
      "id": 985,

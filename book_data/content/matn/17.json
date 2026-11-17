@@ -176,6 +176,28 @@
     "اسْتَعَاذَ مِنْهُ",
     "اسْتَعاذَكَ مِنْهُ",
     "variant"
+   ],
+   [
+    "ﷺ، ونَعُوذُ بِكَ",
+    "ﷺ، وأَعُوذُ بِكَ",
+    "riyad"
+   ],
+   [
+    "مَا اسْتَعاذَكَ مِنْهُ",
+    "مَا اسْتَعَاذَ مِنْهُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "ﷺ، ونَعُوذُ بِكَ",
+    "ﷺ، وأَعُوذُ بِكَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 413) has «وأَعوذُ», as v1 does; the print's «ونَعُوذُ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "مَا اسْتَعاذَكَ مِنْهُ",
+    "مَا اسْتَعَاذَ مِنْهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 413) has «استَعَاذَ», as v1 does; the print's «اسْتَعاذَكَ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -335,6 +357,28 @@
     "الْأَولَى",
     "الْأُولَى",
     "v1"
+   ],
+   [
+    "كُلُوا هَنِيئاً،",
+    "كُلُوا لَا هَنِيئاً،",
+    "riyad"
+   ],
+   [
+    "إِنَّهَا الْآنَ أَكْثَرُ مِنْهَا قَبْلَ",
+    "إِنَّهَا الْآنَ لأَكْثَرُ مِنْهَا قَبْلَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "كُلُوا هَنِيئاً،",
+    "كُلُوا لَا هَنِيئاً،",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 415) has «لَا» here, as sunnah.com does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "إِنَّهَا الْآنَ أَكْثَرُ مِنْهَا قَبْلَ",
+    "إِنَّهَا الْآنَ لأَكْثَرُ مِنْهَا قَبْلَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 415) has «لأَكْثَرُ», as v1 does; the print's «أَكْثَرُ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -349,6 +393,11 @@
     "عَائِشَةَ رَضِيَ اللهُ عَنْهَا،",
     "عَائِشَةَ،",
     "v1"
+   ],
+   [
+    "وَفِي رِوَايَتِهَا",
+    "وَفِي رِوَايَتِهِمَا",
+    "riyad"
    ]
   ]
  },
@@ -518,6 +567,21 @@
     "والدَّلائِلُ في",
     "والدَّلائِلُ فِي",
     "marks"
+   ],
+   [
+    "بِالْهُدَاةِ",
+    "بِالْهَدْأَةِ",
+    "riyad"
+   ],
+   [
+    "«الْهُدَاةُ»",
+    "«الْهَدْأَةُ»",
+    "riyad"
+   ],
+   [
+    "فرَبَطُوهُمْ. قَالَ",
+    "فرَبَطُوهُمْ. بِهَا. قَالَ",
+    "riyad"
    ]
   ],
   "misprint": [
@@ -530,9 +594,23 @@
     "بِدَةٍ",
     "بِدَّةٍ",
     "The print drops the shadda; «بِدَد» is the plural of «بِدَّة», and «بِدَة» is no word."
+   ],
+   [
+    "بِالْهُدَاةِ",
+    "بِالْهَدْأَةِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 419) has «بالهَدْأةِ»; the print's «بِالْهُدَاةِ» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "«الْهُدَاةُ»",
+    "«الْهَدْأَةُ»",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 419) has ««الهَدْأَةُ»»; the print's ««الْهُدَاةُ»» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "فرَبَطُوهُمْ. قَالَ",
+    "فرَبَطُوهُمْ. بِهَا. قَالَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 419) has «بِهَا.» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
-  ],
-  "note": "The print has «الهُدَاة» (damma on the ha, no hamza), in the matn, in Nawawi's note and in the word meanings, so it was taken as the book's reading; al-Bukhari's text has «الهَدَأة»/«الهَدْأة», and the damma is unusual."
+  ]
  },
  "1511": {}
 }

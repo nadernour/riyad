@@ -189,6 +189,18 @@
     "أَقِرُّ",
     "أُقِرُّ",
     "v1"
+   ],
+   [
+    "قَالَهَا فِي النَّهارِ",
+    "قَالَهَا مِنَ النَّهارِ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "قَالَهَا فِي النَّهارِ",
+    "قَالَهَا مِنَ النَّهارِ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 526) has «مِنَ», as v1 does; the print's «فِي» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -387,6 +399,28 @@
     "رجُلٍ واحِد » رواهُ",
     "رجُلٍ » رواهُ",
     "v1"
+   ],
+   [
+    "ورشْحُهُمْ فِيها المِسْكُ",
+    "ورشْحُهُمْ المِسْكُ",
+    "riyad"
+   ],
+   [
+    "رجُلٍ » رواهُ",
+    "رجُلٍ واحِدٍ » رواهُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "ورشْحُهُمْ فِيها المِسْكُ",
+    "ورشْحُهُمْ المِسْكُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 529) has no «فِيها» here, and neither does v1: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
+   ],
+   [
+    "رجُلٍ » رواهُ",
+    "رجُلٍ واحِدٍ » رواهُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 529) has «واحدٍ».» here, as v1 does, and the print lacks it: the print stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -465,6 +499,18 @@
     "عليه",
     "عَلَيْهِ",
     "marks"
+   ],
+   [
+    "مِنهَا ، أَوْ آخِرَ أَهْل",
+    "مِنهَا ، وَآخِرَ أَهْل",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "مِنهَا ، أَوْ آخِرَ أَهْل",
+    "مِنهَا ، وَآخِرَ أَهْل",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 530) has «وَآخِرَ», as v1 does; the print's «أَوْ آخِرَ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -484,6 +530,18 @@
     "فَلاَ يَرى",
     "ولاَ يَرى",
     "variant"
+   ],
+   [
+    "المُؤْمِنُ ولاَ يَرى",
+    "المُؤْمِنُ فَلاَ يَرى",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "المُؤْمِنُ ولاَ يَرى",
+    "المُؤْمِنُ فَلاَ يَرى",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 530) has «فَلَا», as v1 does; the print's «ولاَ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -624,6 +682,18 @@
     "عليه",
     "عَلَيْهِ",
     "marks"
+   ],
+   [
+    "كَمَا تَرَاءَوْنَ الْكَوْكَبَ",
+    "كَمَا تَتَرَاءَوْنَ الْكَوْكَبَ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "كَمَا تَرَاءَوْنَ الْكَوْكَبَ",
+    "كَمَا تَتَرَاءَوْنَ الْكَوْكَبَ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 531) has «تَتَرَاءونَ», as v1 does; the print's «تَرَاءَوْنَ» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -677,6 +747,18 @@
     "ويتَمنَّى",
     "يَتَمَنَّى",
     "variant"
+   ],
+   [
+    "فَيَتَمنَّى يَتَمَنَّى . فَيَقُولُ",
+    "فَيَتَمنَّى ويتَمنَّى . فَيَقُولُ",
+    "riyad"
+   ]
+  ],
+  "misprint": [
+   [
+    "فَيَتَمنَّى يَتَمَنَّى . فَيَقُولُ",
+    "فَيَتَمنَّى ويتَمنَّى . فَيَقُولُ",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 532) has «وَيَتَمَنَّى», as v1 does; the print's «يَتَمَنَّى» stands alone against them, so it gives way (rule 8, the owner's decision, 2026-11-17)."
    ]
   ]
  },
@@ -789,8 +871,19 @@
     "بدمشق",
     "بِدِمَشْقَ",
     "marks"
+   ],
+   [
+    "قَال مُؤلِّفُهُ رَضِيَ اللهُ عَنْهُ:",
+    "قَال مُؤلِّفُهُ:",
+    "riyad"
    ]
   ],
-  "note": "The book's closing differs from v1's: its blessing on the Prophet has «عبدك ورسولك النبي الأمي», «وأزواجه وذريته» and «في العالمين» and no «سيدنا»; its colophon reads «قال مؤلفه رضي الله عنه» for v1's «قال مؤلفه يحيى النواوي غفر الله له», and dates the end to «رابع شهر رمضان» where v1 has «رابع عشر» (the 4th against the 14th of Ramadan). All taken as the book's (variant). The print's date fits its own «يوم الاثنين»: by the tabular calendar 4 Ramadan 670 was a Monday (4 April 1272) and the 14th a Thursday."
+  "misprint": [
+   [
+    "قَال مُؤلِّفُهُ رَضِيَ اللهُ عَنْهُ:",
+    "قَال مُؤلِّفُهُ:",
+    "Riyad al-Salihin itself (al-Fahl's edition, p. 532) has «قال مؤلِّفُهُ: فَرَغْتُ»; the print's «قَال مُؤلِّفُهُ رَضِيَ اللهُ عَنْهُ:» gives way to it (rule 8, the owner's decision, 2026-11-17)."
+   ]
+  ]
  }
 }
