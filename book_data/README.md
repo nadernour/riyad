@@ -57,8 +57,8 @@ The app shows only the book's text. v1's additions to the commentary (extra word
    - **Then the speaker roles.** The app sets the Prophet's words apart, but v1's roles aren't checked yet, and some are wrong: a piece tagged as the Prophet's words can take in the narrator's «فقال رسول الله ﷺ:» (h. 8) or a Companion's report (h. 1617), and his words can be left untagged (h. 37). A pass of its own settles them after the rounds (see [docs/matn.md](docs/matn.md)).
 5. **Transcribe the word meanings and benefits** from the scans, page by page, in short Claude Code sessions, with a pipeline adapted from the owner's azkar project. That project isn't in this repo. It transcribed a 470-page scanned book in rounds of 5 pages at low effort, with chapter reviews at xhigh. A round cost about $0.9 at API prices (4–10% of the 5-hour limit, under 1% of the weekly one), and a chapter review about $1.7.
    - The OCR text of each page is the draft. It is proofread against the scan, with doubtful words zoomed, and split into word meanings and benefits, including commentary shared by several hadith (`shared_with`). v1's commentary isn't used, even as a cross-check, because the audit showed it is a different text.
-   - A pilot on the audit's pages comes first, scored against the book's text in `content/audit/`. The rest of the book follows once the pilot's error rate is acceptable.
-   - The rules will be in `docs/transcription.md`, written before the pilot.
+   - A pilot on the audit's pages came first, scored against the book's text in `content/audit/`: done on 2026-11-18, one word misread in 1,800 once each difference was settled on the scan, at about $0.11 a hadith ([docs/transcription.md](docs/transcription.md), "The pilot").
+   - The rules are in [docs/transcription.md](docs/transcription.md). `tools/commentary.py` cuts each hadith's commentary out of the OCR text (from the end of its matn to the start of the next), splits it at its headings into a draft, and crops the same part of the scan at 300 dpi. A round corrects the drafts against the crops. aljam3's OCR text has 95% of the audit's commentary words right; Tesseract only 75%, too few to serve as a second reading.
    - **Explained words:** every word under لغة الحديث should be found in the hadith. One that isn't gets checked: either the printed text differs from ours there, or the word has to be matched by hand (e.g. «الهجرة» explains «هجرته»).
 6. **Transcribe the narrator biographies** from the end of the book the same way. v1 doesn't have them, so aljam3's reading is the only cross-check. Each biography is then linked to the narrator's name in every hadith that names them. Names the tool can't match (a kunya, or a name written differently) are linked by hand.
 7. **Owner review.** Questions the checks can't settle are listed per book (كتاب) for the owner to decide.
@@ -97,11 +97,13 @@ content/matn/          step 4: the decisions from checking each hadith's text ag
 content/titles.json    step 4: the book and chapter titles as printed, read on the scan
 content/short_titles.json  step 4: the short titles that aren't v1's (a phrase of each hadith)
 content/roles.json     step 4: the speaker roles changed, as [phrase, role, n] per hadith
+content/commentary/    step 5: the commentary transcribed, one JSON file per book, by hadith number (docs/transcription.md)
 content/audit/         the v1 audit: the book's text for 30 v1 hadith and how v1 differs (the test set)
 docs/audit.md          step 1: the audit's findings
 docs/numbering.md      step 3: numbering, pages, chapters and titles
 docs/matn.md           step 4: how the hadith text is checked, and the rules for the review rounds
 docs/matn-review.md    step 4: the second reading, which judges the rounds' decisions against the scan
+docs/transcription.md  step 5: the rules for transcribing the commentary, and how a round works
 tools/                 the Python scripts (setup below)
 .venv/                 their Python environment (not in git)
 .cache/                downloads and files the tools make again (not in git); nothing that can't be remade
@@ -153,6 +155,11 @@ The first `compare` takes a while, because Tesseract reads the 1,278 hadith page
 .venv/bin/python tools/roles.py show ID ...          # a hadith's pieces with their roles
 .venv/bin/python tools/titles.py compare             # step 4's titles: each chapter's title against its heading in the OCR text
 .venv/bin/python tools/titles.py next                # the next headings to read, cropped from the scan into one image
+.venv/bin/python tools/commentary.py draft ID ...     # step 5: a hadith's commentary as the OCR text has it, split into meanings and benefits
+.venv/bin/python tools/commentary.py next            # the next round's hadith (up to 6, or 4 pages): drafts in content/commentary/inbox.json, crops of the scan
+.venv/bin/python tools/commentary.py done            # check the inbox and file it in content/commentary/NN.json
+.venv/bin/python tools/commentary.py check           # check every transcribed hadith
+.venv/bin/python tools/commentary.py score           # the pilot: the transcription against the audit's text, word by word
 .venv/bin/python tools/build_db.py                   # build the app's database, ../database/riyad.db
 ```
 
@@ -168,7 +175,7 @@ pkill -f '[t]ools/long_run.sh'; pkill -f '[c]laude -p Do one round'   # stop it
 
 The rounds run at medium effort. The first rounds, at low, often skipped the zooms the rules ask for: h. 21's round zoomed 4 spots for 103 words it gave marks to. So the 123 hadith they checked were checked again at medium (the owner's decision, 2026-10-23). Each round's line in the log gives its fixes and the zooms it read, and how many of those were too wide to read marks on, so the rounds can be compared. From 2026-10-27 to 11-03, a round checked about 11 hadith and used about 16% of the 5-hour window and 1.2% of the weekly limit (≈ $2.30 at API prices). To go back to low, start the run with `EFFORT=low nohup tools/long_run.sh ...`.
 
-The second reading runs on the same script, started with `REVIEW=1` ([docs/matn-review.md](docs/matn-review.md), "Running it").
+The second reading runs on the same script, started with `REVIEW=1` ([docs/matn-review.md](docs/matn-review.md), "Running it"). So does step 5's transcription, started with `COMMENTARY=1`, and its pilot with `COMMENTARY=1 PILOT=1` ([docs/transcription.md](docs/transcription.md)). A transcription round that stops before `done` leaves `content/commentary/inbox.json`, and the next round finishes it.
 
 Look at the first rounds' changes (`git diff content/`) before leaving it unattended. The rounds don't commit, so commit `content/` now and then. If a round was stopped before applying its decisions, `content/matn/inbox.json` is left (it isn't in git): run `.venv/bin/python tools/matn.py apply` before committing. A round that finds a rule or a tool wrong says so in its summary in the log. The log isn't in git, so act on it in `docs/` or `tools/`.
 

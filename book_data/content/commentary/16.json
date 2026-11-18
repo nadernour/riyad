@@ -1,0 +1,86 @@
+{
+ "1430": {
+  "id": 1430,
+  "pages": [
+   979
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "دِقَّه",
+    "meaning": "صغيره ."
+   },
+   {
+    "term": "جِلَّه",
+    "meaning": "كبره ."
+   },
+   {
+    "term": "علانيته",
+    "meaning": "المعلن عنه ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The meanings are printed on p. 979 at 0.63–0.65, just below the crop (which ended at the source note); read on a zoom (0.61–0.66).",
+   "Zoom: the terms are printed «دِقَّه» and «جِلَّه», a kasra under the first letter and a shadda with a fatha over the second; kept.",
+   "No benefits are printed: h. 1431's benefits are headed «أفاد الحديث : و الذي قبله» and cover this hadith."
+  ]
+ },
+ "1431": {
+  "id": 1431,
+  "pages": [
+   980
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "افتقدت",
+    "meaning": "أي فقدته ولم أعثر عليه ."
+   },
+   {
+    "term": "فتحسست",
+    "meaning": "طلبته وبحثت عنه ."
+   },
+   {
+    "term": "في المسجد",
+    "meaning": "في السجود ."
+   },
+   {
+    "term": "سخطك",
+    "meaning": "غضبك وانتقامك ."
+   },
+   {
+    "term": "بمعافاتك",
+    "meaning": "بعفوك .",
+    "in_text": "وبمُعَافَاتِكَ"
+   },
+   {
+    "term": "أعوذ بك منك",
+    "meaning": "ألتجىء برحمتك من عذابك فلا يجير من عذابك إلا أنت إذ لا يملك أحد معك شيئاً ."
+   },
+   {
+    "term": "لا أحصي",
+    "meaning": "لا أطيق أن أحصر أو أعد أوصافك الحسنة الجميلة وأفضالك الكثيرة ."
+   },
+   {
+    "term": "ثناء عليك",
+    "meaning": "ذكراً بالجميل ."
+   }
+  ],
+  "benefits": [
+   "استحباب ذكر الله تعالى في السجود بهذه الأذكار التي جمعت بين صفات التنزيه والتقديس لله تعالى ما هو أهل له .",
+   "مهما بالغ الإنسان في تقديس الله تعالى والثناء عليه ، فإنه لا يبلغ مدى عظمة الله تعالى ، وما أثنى هو به على نفسه سبحانه وتعالى في كثير من آيات كتابه العزيز ."
+  ],
+  "shared_with": [
+   1430
+  ],
+  "corrections": [],
+  "notes": [
+   "The benefits' heading is printed «أفاد الحديث : • و الذي قبله :», i.e. «أفاد الحديث والذي قبله»: shared_with h. 1430; the OCR had kept «و الذي قبله :» in the first benefit and joined the two bulleted benefits.",
+   "Zoom (p. 980, 0.22–0.28): «ألتجىء» has a hamza on its alif (the draft had «التجىء»).",
+   "The book sets «لا يبلغ» as one word («لايبلغ»); written as two, as for «ما حرم»."
+  ]
+ }
+}

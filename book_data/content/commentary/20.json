@@ -1,0 +1,32 @@
+{
+ "1871": {
+  "id": 1871,
+  "pages": [
+   1276,
+   1277
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "إنه",
+    "meaning": "أي الشأن ."
+   },
+   {
+    "term": "ليغان",
+    "meaning": "الغين : الغيم ، وغينت السماء تُغانُ إذا أطبق عليها الغيم ، قال ابن الأثير في النهاية : أراد ما يغشاه من السهو الذي لا يخلو منه البشر ، لأن قلبه ﷺ أبداً كان مشغولاً بالله تعالى ، فإن عرض وقتاً ما عارض بشري يشغله من أمور الأمة والملة ومصالحها عُدّ ذلك ذنباً وتقصيراً فيفزع إلى الاستغفار . وقيل : إن الرسول ﷺ آخذ في الصعود على مدارج الكمال فكلما رقي درجة نظر إلى ما قبلها فاعتراه ضيق لأنه كان في هذه الدرجة وهذا هو الغين ."
+   }
+  ],
+  "benefits": [
+   "كثرة استغفار النبي ﷺ تعليماً لأمته ، وإلا فالنبي ﷺ معصوم وقد غفر الله له ما تقدم من ذنبه وما تأخر .",
+   "التأكيد على بشرية الرسول ﷺ وأنه كان ينتابه فتور عن الذكر الذي يداوم عليه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«وقيل : إن الرسول ﷺ …» is a second explanation of the same word, not a new term (وقيل is no word of the hadith), so it stays inside the meaning of «ليغان»; the OCR had split it off as a term.",
+   "Zoomed on p. 1276: in this font غ looks like ف, but the term is «ليغان» (the hadith's word) and the verb «تُغانُ», printed with a damma on the ت and on the ن. «عُدّ» is printed with a damma on the ع and a shadda on the د. «فاعتراه ضيق» (the OCR had «فاعتراه الغيم ضيق» out of order).",
+   "Benefits: the OCR had mixed the two bullets' lines; on p. 1277 the first ends at «وما تأخر» and the second runs «التأكيد على بشرية الرسول ﷺ وأنه كان ينتابه فتور …».",
+   "«مايغشاه», «لايخلو», «ماقبلها», «ماتقدم» are printed with no visible space after the alif; written as two words (docs/transcription.md). Spaces the type lost after a non-joining letter were restored the same way: «والملة ومصالحها», «إن الرسول», «فيفزع إلى»."
+  ]
+ }
+}

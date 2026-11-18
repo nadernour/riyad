@@ -1,0 +1,45 @@
+{
+ "913": {
+  "id": 913,
+  "pages": [
+   693
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "من جهينة",
+    "meaning": "أي من قبيلة جهينة ."
+   },
+   {
+    "term": "أصبت حداً",
+    "meaning": "أي ذنباً يوجب الحد وهو الزنى ."
+   },
+   {
+    "term": "وليها",
+    "meaning": "قريبها الذي يلي أمرها ."
+   },
+   {
+    "term": "رجمت",
+    "meaning": "ضربت بالحجارة حتى ماتت ."
+   }
+  ],
+  "benefits": [
+   "ما ذكره الإمام النووي في ترجمه الباب .",
+   "ويفيد أيضاً أن المرأة الحامل لا يقام عليها الحد حتى تضع ، وأن الحد يكفر الذنب وتجب الصلاة على من مات بحد ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "ترجمه الباب",
+    "correction": "ترجمة الباب",
+    "reason": "«ترجمه» for «ترجمة»: the heading of the chapter, a misprinted final letter"
+   }
+  ],
+  "notes": [
+   "The draft had the benefits as one item with the next chapter's heading (149) run in; split at the printed bullet before «ويفيد», and the heading dropped.",
+   "«ماذكره» is printed with the narrow gap of a non-joining alif; written «ما ذكره» as two words.",
+   "Zoomed on p. 693: «ترجمه» is printed with ه (corrected), «مات بحد» (OCR «مجد»), «رجمت» (OCR «رحمت»), «وليها» (printed with a kashida; OCR «ولها»), «يوجب» at the line's end (OCR moved it to the source note). A speck between «عليها» and «الحد» is not a mark."
+  ]
+ }
+}

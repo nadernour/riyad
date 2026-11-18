@@ -1,0 +1,132 @@
+{
+ "1000": {
+  "id": 1000,
+  "pages": [
+   743
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ليس في جوفه",
+    "meaning": "أي لا يحفظ من القرآن شيئاً ."
+   },
+   {
+    "term": "كالبيت الخرب",
+    "meaning": "أي الخالي من الخير والسكان ."
+   }
+  ],
+  "benefits": [
+   "التأكيد على حفظ القرآن والدأب فيه ، لأن حامل القرآن مملوء بالخير ومغمور بالإحسان ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft joined two meanings; split at the full stop before «كالبيت» (OCR lost «كالبيت» to the source note).",
+   "Zoomed on p. 743: the dots of خ are faint or lost in this print («الخرب», «الخالي», «الخير» look like ح); read as خ, as the hadith's «الخرب» and the sense require. «مملوء» (OCR «عملوه») and the benefits' last line were read on a zoom below the crop (0.53–0.72).",
+   "«جوفه» is printed with a kashida, written plain."
+  ]
+ },
+ "1049": {
+  "id": 1049,
+  "pages": [
+   775,
+   776
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ذمة الله",
+    "meaning": "أي في حفظه وأمانه ."
+   },
+   {
+    "term": "لا يطلبنك",
+    "meaning": "لا يؤاخذنك الله بسبب غفلتك عن صلاة الصبح ، أو لا يحاسبنك الله بسبب تعرضك بأذى لمن هو في ذمة الله ."
+   }
+  ],
+  "benefits": [
+   "فضل من داوم على صلاة الصبح مع الجماعة ، والتحذير من التعرض له بوء ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "له بوء",
+    "correction": "له بسوء",
+    "reason": "the teeth of the س aren't printed: «بوء» isn't a word, and the sense is «التعرض له بسوء»"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 776, 0.125–0.19: the last word of the benefit is printed «بـوء» (ب, a kashida stroke, و, ء) with no teeth of a س; kept as printed («بوء», kashida dropped) with a correction to «بسوء»."
+  ]
+ },
+ "1111": {
+  "id": 1111,
+  "pages": [
+   808
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "تبين له الفجر",
+    "meaning": "أي ظهر له الفجر الصادق ، واحترز به عن الأذان الأول للفجر ."
+   }
+  ],
+  "benefits": [
+   "أن وقت صلاة الوتر ما بين صلاة العشاء وطلوع الفجر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "1193": {
+  "id": 1193,
+  "pages": [
+   847,
+   848
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "في الوتر",
+    "meaning": "أي في الليالي المفردة ؛ كإحدى وعشرين ، وثلاث وعشرين وهكذا ."
+   }
+  ],
+  "benefits": [
+   "أن ليلة القدر تكون في العشر الأواخر من رمضان والراجح أنها في الليالي المفردة منه واختار بعض العلماء القول بانتقالها بين الليالي فيه جمعاً بين الأحاديث ، ومعنى انتقالها أنها تكون في رمضان في ليلة معينة وفي رمضان آخر في ليلة أخرى معينة منه بعشر ، وذكر ابن حجر في فتح الباري أنها تلزم ليلة بعينها وإن كانت مبهمة .",
+   "الحث على الاعتكاف وإحياء ليالي العشر الأواخر من كل رمضان رجاء مصادفتها ، وهذ هي الحكمة من إبهامها فيه ."
+  ],
+  "shared_with": [
+   1191,
+   1192
+  ],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "وهذ هي",
+    "correction": "وهذه هي",
+    "reason": "a letter dropped: «وهذ» isn't a word"
+   }
+  ],
+  "notes": [
+   "Heading on p. 848 reads «افادت الأحاديث المتقدمة»; on p. 846–847, h. 1190 has its own benefits and h. 1191 and 1192 have none, so shared_with is [1191, 1192].",
+   "Zoomed p. 848 (0.15–0.28): «منه بعشر» is printed clearly, as the audit text has it. Its sense is unclear but the intended word isn't certain, so it is kept with no correction. «مبهمة» is printed (the OCR read «مهمة»)."
+  ]
+ },
+ "1265": {
+  "id": 1265,
+  "pages": [
+   890
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن صيام الأيام البيض من كل شهر سنة مؤكدة لملازمة النبي ﷺ عليها في الحضر والسفر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "No word meanings printed.",
+   "The crop (p. 890, 0.24–0.40) stopped before the benefit's last line («ﷺ عليها في الحضر والسفر .»); read it from a zoom of p. 890, 0.36–0.50. The crop's range looks one line short."
+  ]
+ }
+}

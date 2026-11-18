@@ -1,0 +1,217 @@
+{
+ "1534": {
+  "id": 1534,
+  "pages": [
+   1049
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "صعلوك",
+    "meaning": "فقير ."
+   },
+   {
+    "term": "عاتقة",
+    "meaning": "ما بين منكبه وعنقه ."
+   }
+  ],
+  "benefits": [
+   "جواز التوضيح للخاطب أو المخطوبة وبلا مواربة في ذكر المساوىء ، ولا يعتبر ذلك من الغيبة ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.1.term",
+    "printed": "عاتقة",
+    "correction": "عاتقه",
+    "reason": "ة for ه: the hadith's word is «عاتقه» (his shoulder), as in its matn on the same page"
+   }
+  ],
+  "notes": [
+   "OCR «الغسة» read on the crop as «الغيبة».",
+   "The commentary is on p. 1049 only (the crops had run on into h. 1535; the tool is fixed). «مابين» is printed with no visible space after the alif; written as two words (docs/transcription.md)."
+  ]
+ },
+ "1583": {
+  "id": 1583,
+  "pages": [
+   1087
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "التحذير من هذا التعامل لما فيه من التغرير ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives no «لغة الحديث» for this hadith: meanings is empty. OCR noise «عدها» after the benefit dropped."
+  ]
+ },
+ "1685": {
+  "id": 1685,
+  "pages": [
+   1153
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "من أظلم",
+    "meaning": "أي لا أحد أظلم ."
+   },
+   {
+    "term": "يخلق كخلقي",
+    "meaning": "يصنع ما يشابه خلقي ."
+   },
+   {
+    "term": "فليخلقوا",
+    "meaning": "أي خلقاً حقيقياً ، وهو الايجاد من العدم ."
+   },
+   {
+    "term": "ذرة",
+    "meaning": "نملة حمراء صغيرة ، أو الجزء الذي لا يتجزأ ."
+   }
+  ],
+  "benefits": [
+   "شدة قبح عمل المصورين لأنه اجتراء على مشابهة خلق الله تعالى مع ثبوت العجز لديهم عن ذلك .",
+   "إثبات عجز البشرية عن إيجاد شيء يضاهي خلق الله عز وجل من حيوان أو غيره مهما قل شأنه وصغر ، وفي ذلك معجزة للنبي ﷺ إذ لم يجرؤ على ذلك أحد رغم ما توصلت إليه المعارف والعلوم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Two benefits: the OCR lost the bullet between them («عن ذلك • إثبات»). The book prints no full stop before the second bullet; the first ends with « .» by the item-end convention.",
+   "The ﷺ glyph after «للنبي» was read by the OCR as «ال».",
+   "«مايشابه» and «لايتجزأ» are printed with no visible space after the alif; written as two words (docs/transcription.md)."
+  ]
+ },
+ "1714": {
+  "id": 1714,
+  "pages": [
+   1168,
+   1169
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بغير حقه",
+    "meaning": "أي حلف وهو غير محق ليأخذ مال المسلم بيمينه الكاذبة ."
+   },
+   {
+    "term": "غضبان",
+    "meaning": "يريد الانتقام منه ."
+   },
+   {
+    "term": "مصداقه",
+    "meaning": "أي ما يصدقه ."
+   },
+   {
+    "term": "يشترون",
+    "meaning": "يستبدلون ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Footnote «(١) الآية من سورة آل عمران / ٧٧ .», printed inside the meanings' paragraph, left out.",
+   "«ما يصدقه» is printed with no visible gap («مايصدقه»); written as two words since «ما» doesn't join. A speck before «الانتقام» is noise, not a mark.",
+   "No benefits after this hadith: they are printed after h. 1716 («أفادت الأحاديث الثلاثة السابقة»).",
+   "No full stop is printed between «الكاذبة» and «غضبان : يريد الانتقام منه» (zoom p. 1168, 0.85–0.93); «غضبان» is a word of the hadith with its colon, so it is an item of its own, and the one before ends with « .» (docs/transcription.md)."
+  ]
+ },
+ "1715": {
+  "id": 1715,
+  "pages": [
+   1169
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اقتطع",
+    "meaning": "أخذ ."
+   },
+   {
+    "term": "مسلم",
+    "meaning": "أي ومثله كل ذي عهد ."
+   },
+   {
+    "term": "بيمينه",
+    "meaning": "أي حلفه الكاذبة وهو يعلم ."
+   },
+   {
+    "term": "قضيباً",
+    "meaning": "غصناً ."
+   },
+   {
+    "term": "أراك",
+    "meaning": "شجر يؤخذ منه عود السواك ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "No benefits after this hadith: they are printed after h. 1716.",
+   "No full stop is printed between «عهد» and «بيمينه : أي حلفه الكاذبة» (zoom p. 1169, 0.38–0.45); «بيمينه» is a word of the hadith with its colon, so it is an item of its own, and the one before ends with « .» (docs/transcription.md)."
+  ]
+ },
+ "1716": {
+  "id": 1716,
+  "pages": [
+   1169,
+   1170
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اليمين الغموس",
+    "meaning": "اليمين الكاذبة على عمد ، سميت بذلك لأنها تغمس فاعليها في الإثم ."
+   },
+   {
+    "term": "قلت",
+    "meaning": "القائل ابن عمر رضي الله عنهما ."
+   },
+   {
+    "term": "الذي يقتطع",
+    "meaning": "أي يمين الذي يقتطع ."
+   }
+  ],
+  "benefits": [
+   "تحريم تعمد الكذب باليمين والتنفير منه ، لا سيما إذا كان في ذلك أكل أموال الناس بالباطل ، أو إضاعة الحقوق على أصحابها .",
+   "اليمين الغموس من الكبائر التي تستوجب العقاب الشديد من الله تعالى وهي في مصاف الشرك بالله وقتل النفس وعقوق الوالدين ، لأن كلاً منها ظلم وباطل واعتداء على الحقوق .",
+   "واختلف في وجوب الكفارة فيها فقال الشافعية بوجوب الكفارة باليمين الغموس ، وقال الحنفية : لا كفارة فيها لأنها كذب ، وإنما تلزم صاحبها التوبة ورد الحقوق لأصحابها ."
+  ],
+  "shared_with": [
+   1714,
+   1715
+  ],
+  "corrections": [],
+  "notes": [
+   "The OCR joined the first two benefits: the scan prints a bullet before «اليمين الغموس من الكبائر» (p. 1170). The first benefit ends at a line end with no printed dot; « .» added per the item-end rule.",
+   "The book prints «عنهما» (OCR «عنها») and «كلاً» with tanween. «لاسيما» and «لاكفارة» are printed with no visible gap; written as two words.",
+   "«ورد الحقوق»: a small mark over the dal, too blurred on the zoom (p. 1170, 0.26–0.30) to tell shadda from sukun; left unmarked.",
+   "Heading «أفادت الأحاديث الثلاثة السابقة»: shared with 1714 and 1715."
+  ]
+ },
+ "1779": {
+  "id": 1779,
+  "pages": [
+   1207
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "سمساراً",
+    "meaning": "أي دلالاً ، وهو الذي يدخل بين البائع والمشتري متوسطاً لإمضاء البيع ."
+   }
+  ],
+  "benefits": [
+   "النهي تحريماً عن تلقي الركبان وبيع الحاضر للبادي ، لما في ذلك من الاضرار بالجالب في الأول والناس في الثاني ، وقد تقدم بيان ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "OCR «الإمضاء» is «لإمضاء» on the scan; OCR garbage «الله علي .» after the benefit removed (nothing printed there). «الاضرار» is printed without a hamza (zoom p. 1207, 0.62–0.68)."
+  ]
+ }
+}

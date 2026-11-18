@@ -1,0 +1,55 @@
+{
+ "1379": {
+  "id": 1379,
+  "pages": [
+   951
+  ],
+  "see": "تقدم في باب الأمر بالمحافظة على السنة رقم ١٦٣ .",
+  "meanings": [
+   {
+    "term": "غيث",
+    "meaning": "مطر ."
+   },
+   {
+    "term": "طائفة",
+    "meaning": "بقعة ."
+   },
+   {
+    "term": "طيبة",
+    "meaning": "جيدة التربة ."
+   },
+   {
+    "term": "الكلأ",
+    "meaning": "المرعى رطباً كان أم يابساً ."
+   },
+   {
+    "term": "العشب",
+    "meaning": "الكلأ ما دام رطباً ."
+   },
+   {
+    "term": "أجادب",
+    "meaning": "صلبة لا تشرب الماء سريعاً فيستقر عليها ."
+   },
+   {
+    "term": "قيعان",
+    "meaning": "جمع قاع ، وهو الأرض المستوية الملساء التي لا نبات فيها ."
+   },
+   {
+    "term": "من لم يرفع بذلك رأساً",
+    "meaning": "كناية عن شدة إعراضه وجهله ."
+   }
+  ],
+  "benefits": [
+   "الحث على الاجتهاد في طلب العلم وتعليمه ليكون النفع أعم وأشمل .",
+   "الناس بالنسبة للعلم ثلاثة أصناف : منهم من يحفظ العلم فيعمل به ويعلمه غيره ، فينفع نفسه وغيره ، وهذا أفضل الأحوال والأصناف ، ومنهم من يحفظ العلم وينقله لغيره ممن يستفيد منه دون أن يكون له اجتهاد في العمل بمقتضاه ، وهذا أقل رتبة ممن سبق ، ومنهم من يعرض عن العلم ، فلا يسمعه لينتفع به ، ولا يحفظه لينقله لغيره ، وهذا الصنف من أسوأ الناس ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The benefits' heading is printed «أفاد الحديث : هنا :» (benefits for this place, the hadith being a repeat of h. 163); the OCR took «هنا» as a benefit: dropped as part of the heading.",
+   "The source note's number is printed as a fraction, ٧ over ١٦٣ (the hadith's number in its chapter over its number in the book, as the book prints hadith numbers); `see` keeps only «١٦٣», as the draft had it.",
+   "The book sets «ما دام» and «لا نبات» as one word («مادام», «لانبات»); written as two words, per the doc's treatment of «ماحرم» as a run-together.",
+   "Checked against the audit on the scan (p. 951): the term is printed «الكلأ», with a hamza on the alif, like the «الكلأ» of the next meaning; the round had read it «الكلاً»."
+  ]
+ }
+}

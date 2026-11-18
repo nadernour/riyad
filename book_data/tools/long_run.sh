@@ -26,6 +26,13 @@ if [ -n "$REVIEW" ]; then
     PROMPT="Do one round of the second reading: follow docs/matn-review.md exactly."
 fi
 TOOLS="Read,Glob,Grep,Write(content/matn/**),Edit(content/matn/**),Bash(.venv/bin/python tools/*)"
+# COMMENTARY=1 transcribes the commentary instead (content step 5, docs/transcription.md), and
+# COMMENTARY=1 PILOT=1 only the audit's hadith, the pilot.
+if [ -n "$COMMENTARY" ]; then
+    export COMMENTARY PILOT
+    PROMPT="Do one round of the commentary's transcription: follow docs/transcription.md exactly."
+    TOOLS="Read,Glob,Grep,Write(content/commentary/**),Edit(content/commentary/**),Bash(.venv/bin/python tools/*)"
+fi
 # The only built-in tools a round uses. Leaving out the others, the MCP servers and the skills
 # cuts the session's base prompt by more than half.
 BUILTIN="Read,Glob,Grep,Edit,Write,Bash"
@@ -61,7 +68,7 @@ read_limits() {
 # The comparison takes minutes (the first time, Tesseract reads every page too), longer than a
 # round's commands may run, so it is made here: when there is none, or when tools/matn.py or
 # tools/numbering.py has changed since it was made, e.g. after a pull.
-{ [ .cache/matn.json -nt tools/matn.py ] && [ .cache/matn.json -nt tools/numbering.py ]; } \
+[ -n "$COMMENTARY" ] || { [ .cache/matn.json -nt tools/matn.py ] && [ .cache/matn.json -nt tools/numbering.py ]; } \
     || .venv/bin/python tools/matn.py compare >> "$LOG" 2>&1 || exit 1
 
 idle=0
@@ -108,5 +115,5 @@ while true; do
         idle=0
     fi
 done
-echo "=== $(date '+%F %T') all hadith are checked" >> "$LOG"
-echo "All hadith are checked. See docs/matn.md for what comes next."
+echo "=== $(date '+%F %T') all hadith are done" >> "$LOG"
+echo "All hadith are done. See docs/matn.md or docs/transcription.md for what comes next."

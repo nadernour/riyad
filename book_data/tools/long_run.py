@@ -46,6 +46,18 @@ if REVIEW:  # its progress is content/matn/review.json: the hadith read again
         done = checked_ids()
         return [h["id"] for h in hadiths() if h["id"] not in done]
 
+COMMENTARY = os.environ.get("COMMENTARY")  # the commentary's transcription (tools/commentary.py, docs/transcription.md)
+if COMMENTARY:
+    INBOX = "content/commentary/inbox.json"
+
+    def checked_ids() -> set[int]:  # noqa: F811
+        import commentary
+        return set(commentary.kept())
+
+    def todo() -> list[int]:  # noqa: F811
+        import commentary
+        return commentary.todo(filed_only=True)
+
 NAMES = {"five_hour": "5-hour", "seven_day": "weekly"}
 
 
@@ -143,6 +155,9 @@ def work(events: list[dict]) -> str:
                     ids |= set(written)
                 except (ValueError, TypeError):
                     pass
+    if COMMENTARY:
+        crops = {n for n in zooms}
+        return f"zooms read: {len(crops)}"
     kept = {i: d for f in CHECKED.glob("[0-9][0-9].json") for i, d in json.loads(f.read_text(encoding="utf-8")).items()}
     decided = list(written.values()) if REVIEW and ids else [kept[i] for i in ids if i in kept]
     why = Counter(f[2] for d in decided for f in d.get("fix", []))

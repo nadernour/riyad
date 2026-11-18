@@ -5,7 +5,7 @@ A free, offline app for reading Imam al-Nawawi's *Riyad al-Salihin* (رياض ا
 ## Status
 
 - **v1** (branch `master`, tag `v1.0.0`) is the Android app on [Google Play](https://play.google.com/store/apps/details?id=com.nad.riyadalsalheen), written in Kotlin with Jetpack Compose. Its text came from the database of an abandoned app, [com.zad.riyadhsalheen](https://play.google.com/store/apps/details?id=com.zad.riyadhsalheen). The audit showed that its commentary is an edited version of the book's (see [book_data/docs/audit.md](book_data/docs/audit.md)).
-- **v2** (this branch, `v2`) is under way: the hadith text has been checked against the printed book (content step 4, done), and the commentary is next (step 5), and the app can be started on a first build of its database (`database/`). It has two goals:
+- **v2** (this branch, `v2`) is under way: the hadith text has been checked against the printed book (content step 4, done), and the commentary is being transcribed (step 5), and the app can be started on a first build of its database (`database/`). It has two goals:
   1. Replace the text with one checked against the printed book.
   2. Rebuild the app in React Native with Expo, so that the same app runs on Android and iPhone.
 
@@ -93,7 +93,7 @@ The order is: make the content clean, then build the app, then ship. The app is 
 - [x] Content step 2: convert the v1 database (`book_data/content/hadith/`)
 - [x] Content step 3: number the hadith as printed ([book_data/docs/numbering.md](book_data/docs/numbering.md))
 - [x] Content step 4: check the hadith text ([book_data/docs/matn.md](book_data/docs/matn.md); done on 2026-11-17. The review rounds checked all 1,898 hadith against the scan by 2026-11-13, and a second reading of every hadith checked their work and changed 174 ([book_data/docs/matn-review.md](book_data/docs/matn-review.md)). The book and chapter titles were read on the scan. The owner ruled that Riyad al-Salihin itself (al-Fahl's critical edition) settles what the print leaves in dispute, and that where the print stands alone against al-Fahl and v1 or sunnah.com it gives way: 239 hadith changed. Every short title is now a phrase of its hadith, and the speaker roles were checked against al-Fahl's «»)
-- [ ] Write `book_data/docs/transcription.md`, run the pilot on the audit's pages, then transcribe the commentary (content step 5)
+- [ ] Transcribe the commentary (content step 5; [book_data/docs/transcription.md](book_data/docs/transcription.md). The rules and the tool are written, and the pilot on the audit's 33 hadith was done on 2026-11-18: one word misread in 1,800. The rest of the book is next)
 - [ ] Transcribe the narrator biographies and link them to the hadith (content step 6)
 - [ ] Owner review of the questions the checks couldn't settle (content step 7)
 

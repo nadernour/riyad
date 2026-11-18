@@ -1,0 +1,294 @@
+{
+ "8": {
+  "id": 8,
+  "pages": [
+   25,
+   26
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "سئل",
+    "meaning": "السائل هو لاحق بن ضمرة الباهلي ."
+   },
+   {
+    "term": "حمية",
+    "meaning": "أنفة وغيرة ومحاماة عن عشيرته ."
+   },
+   {
+    "term": "رياء",
+    "meaning": "مراءاة ليرى الناس قتاله ."
+   },
+   {
+    "term": "كلمة الله",
+    "meaning": "دين الله ."
+   }
+  ],
+  "benefits": [
+   "أن الأعمال إنما يعتد بها عند الله بحسب النيات الصالحة ، وأن الفضل الوارد في المجاهدين إنما يُخص بمن قاتل لإعلاء كلمة الله ، ولكن لا يمنع هذا من معاملة القتيل في المعركة معاملة الشهيد ، فلا يغسل ولا يكفن ولا يصلى عله بل يدفن ، وأمر النية والقصد متروك إلى الله سبحانه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "يصلى عله بل",
+    "correction": "يصلى عليه بل",
+    "reason": "a letter dropped: «عله» isn't a word here; the sense is «ولا يصلى عليه»"
+   }
+  ],
+  "notes": [
+   "The OCR had the line «كلمة الله : دين الله» (end of the meanings' second printed line) inside «حمية»; it is the last meaning, after «رياء», as printed.",
+   "Zoomed on p. 26, 0.20–0.32: the book prints «يُخص» with a damma (kept) and «عله» (corrected above)."
+  ]
+ },
+ "84": {
+  "id": 84,
+  "pages": [
+   118
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يأتي النبي ﷺ",
+    "meaning": "أي يلازمه ليتلقى من علومه ويتعلم أحكام الدين ."
+   },
+   {
+    "term": "فشكا",
+    "meaning": "أي المحترفُ النبي ﷺ أخاه في ترك الاحتراف ."
+   },
+   {
+    "term": "ترزق به",
+    "meaning": "أي بسببه ."
+   }
+  ],
+  "benefits": [
+   "أن من انقطع لطب العلم والتفقه في أحكام الدين ، لحفظ شريعة الله ، فإن الله يهيء له من يقوم بشؤونه ويكفيه حاجاته .",
+   "الترغيب في مساعدة أهل العلم .",
+   "يُرزق الانسان بسبب من يعيلهم ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "لطب العلم",
+    "correction": "لطلب العلم",
+    "reason": "a letter dropped: «لطب» isn't the word; the sense is «لطلب العلم»"
+   }
+  ],
+  "notes": [
+   "The OCR scrambled the benefits' lines and joined the three bulleted benefits; reordered and split as printed.",
+   "Zoomed on p. 118, 0.28–0.45: the book prints «لطب» (corrected above), «يهيء», «بشؤونه», «المحترفُ» with a damma and «يُرزق» with a damma (both kept)."
+  ]
+ },
+ "160": {
+  "id": 160,
+  "pages": [
+   183
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لا استطعت",
+    "meaning": "دعاء عليه ، لاستكباره عن اتباع الحق والعمل بالسنة ."
+   }
+  ],
+  "benefits": [
+   "استحباب الأكل باليمين ، وكراهية الأكل بالشمال حيث لا عذر يمنع من الأكل باليمين ، كمرض أو قطع .",
+   "ومثل الأكل كل أمر شريف ، فيستحب مباشرته باليمين ، وعكسه كل أمر خسيس .",
+   "إن مخالفة ما هو مستحب لا يوجب الإثم ، وإنما دعا عليه الرسول لأن امتناعه كان تكبراً وعناداً ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The commentary ends at the foot of p. 183 (zoomed p. 183 0.90-1.00: only the page number); p. 184 opens with h. 161, so pages is [183] and the draft's trailing «الخامس» (h. 161's ordinal) is dropped.",
+   "The draft's single benefit is three, split at the printed bullets.",
+   "The print sets «لاعذر», «ماهو», «لايوجب» with no visible space after the non-joining letter; written as separate words."
+  ]
+ },
+ "252": {
+  "id": 252,
+  "pages": [
+   262
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "له أي ذلك أحب",
+    "meaning": "أي ليختر الرفق به ، أو وضع شيء من الدين عنه ."
+   }
+  ],
+  "benefits": [
+   "الحض على الرفق بالغريم والإحسان إليه بالوضع عنه .",
+   "الزجر على الحلف على ترك الخير ، والسعي للإصلاح بين المتخاصمين ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft lost the colon after the term (zoomed p. 262 0.55-0.62: «له أي ذلك أحب :أي ليختر الرفق به ، أو وضع شيء من الدين عنه .»); term and meaning split there.",
+   "The draft's single benefit is two, split at the printed bullet."
+  ]
+ },
+ "287": {
+  "id": 287,
+  "pages": [
+   289
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "تأكيد وجوب رعاية حق الزوج على الزوجة ووجوب طاعته .",
+   "السجود لا يجوز إلا لله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "No «لغة الحديث» on the scan: meanings is empty.",
+   "The draft's «إلا الله» is «إلا لله» on the scan; its single benefit is two, split at the printed bullet."
+  ]
+ },
+ "360": {
+  "id": 360,
+  "pages": [
+   337
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "شيخاً",
+    "meaning": "أي داخلاً في سن الشيخوخة بعد الخمسين ."
+   },
+   {
+    "term": "إلا قيض",
+    "meaning": "أي هيأ وقدَّر ."
+   }
+  ],
+  "benefits": [
+   "استحباب مساعدة الضعفاء من الشيوخ .",
+   "الجزاء من جنس العمل ، والله لا يضيع أجر من أحسن عملاً .",
+   "الأخلاق الكريمة من الدين ولا يتم الدين إلا بها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 337, 0.20–0.25: the book prints «وقدَّر» with a shadda and a fatha (kept), and «داخلاً» and «عملاً» with tanween.",
+   "The print sets «لايضيع» with no visible space after the non-joining letter; written as separate words."
+  ]
+ },
+ "437": {
+  "id": 437,
+  "pages": [
+   392
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يرضى",
+    "meaning": "يقبل ويثيب ."
+   },
+   {
+    "term": "فيحمده",
+    "meaning": "الحمد : الثناء على المحمود بجميل صفاته وإنعامه ، وهو أبلغ من الشكر ."
+   }
+  ],
+  "benefits": [
+   "استحباب الحمد لله عند كل طعام وشراب ، لأن في ذلك استحضاراً لفضل الله عند التنعم بما أنعم به ، وهذا يرضي الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 392, 0.21–0.25: the book prints no full stop between «يقبل ويثيب» and «فيحمده», only a wide gap; the draft's single meaning is two, split there, and the first given the item-ending « .» the print omits.",
+   "«صفاته» is printed with the tooth of its ص broken off (it looks like «ـفاته»); written «صفاته», a print defect rather than a misprint. The OCR's «يحميل» is «بجميل» on the scan.",
+   "A small stroke under the final ه of «فيحمده» may be a kasra or part of the letter; not certain, so no mark is written."
+  ]
+ },
+ "504": {
+  "id": 504,
+  "pages": [
+   443
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الدرع",
+    "in_text": "ودِرْعُهُ",
+    "meaning": "ما يلبس في الحرب ، وهو من الحديد ."
+   },
+   {
+    "term": "مرهونة",
+    "meaning": "الرهن الحبس ، وشرعاً : وضع عين مالية وثيقة عند الدائن ليأخذ حقه منها إذا عجز المدين عن الوفاء ."
+   },
+   {
+    "term": "يهودي",
+    "meaning": "اسمه أبو الشحم ."
+   }
+  ],
+  "benefits": [
+   "زهد النبي ﷺ في الدنيا وعدم استكثاره منها .",
+   "جواز معاملة أهل الكتاب ، وإنما استدان النبي ﷺ من اليهودي ولم يستدن من مياسير أصحابه ، إما لبيان الجواز ، أو لأنه لم يكن عندهم حين استدانته ، أو أنه خشي أن لا يأخذوا ثمناً أو عوضاً منه .",
+   "جواز الدين لمن نوى الوفاء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR read the ﷺ glyph as «الله» twice; written ﷺ.",
+   "The print sets «مايلبس» and «لايأخذوا» with no visible space after the non-joining letter; written as separate words.",
+   "The crop of p. 442 holds only the matn's last line; the commentary is all on p. 443."
+  ]
+ },
+ "513": {
+  "id": 513,
+  "pages": [
+   447
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "طوبى",
+    "meaning": "قال في النهاية : طوبى اسم الجنة ، وقيل هي شجرة فيها ، وأصلها فُعلى من الطيب ، وقد ورد في بعض الأحاديث ما يدل على أنها شجرة في الجنة ."
+   },
+   {
+    "term": "هُدي",
+    "meaning": "أرشد ووفق ."
+   }
+  ],
+  "benefits": [
+   "سعادة المرء في كمال دينه وكفاف عيشه ورضاه بما آتاه الله ، وما سوى ذلك مجلبة للشقاء وصرف الانسان عن ربه وإلهاؤه عن الآخرة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 447, 0.58–0.66: the book prints «طوبى» with a final ى (the draft's term had «طوبي»), «فُعلى» and «هُدي» with a damma (both kept).",
+   "The print sets «كمال» close to «دينه», «و» apart from «كفاف» and «آ تاه» with a gap; written «كمال دينه», «وكفاف» and «آتاه»."
+  ]
+ },
+ "598": {
+  "id": 598,
+  "pages": [
+   510
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "شعب",
+    "meaning": "الطريق في الجبل وما انفرج بين الجبلين ."
+   }
+  ],
+  "benefits": [
+   "استحباب السؤال عما يحتاج إليه الإنسان من أمور الدين ، وبيان فضل الجهاد في سبيل الله بالنفس والمال .",
+   "فضل اعتزال الناس حينما لا يأمن الفتنة من الاختلاط بهم إذا كان الدافع له التفرغ لعبادة الله تعالى وكف أذاد عن الناس ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "أذاد",
+    "correction": "أذاه",
+    "reason": "a letter misprinted: «أذاد» isn't a word; the sense is «كف أذاه عن الناس» (the hadith's «يدع الناس من شره»)"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 510, 0.41–0.45: the last letter of «أذاد» is printed as a dal, not a ha; the book runs «وكف» apart as «و كف» and «أذادعن الناس» together, written here as words.",
+   "The draft's trailing «ه .» was the OCR of the next hadith's number (٣/٥٩٩), left out."
+  ]
+ }
+}
