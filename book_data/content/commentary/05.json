@@ -1,0 +1,804 @@
+{
+ "814": {
+  "id": 814,
+  "pages": [
+   644
+  ],
+  "meanings": [
+   {
+    "term": "على شقه",
+    "meaning": "أي جانبه ."
+   },
+   {
+    "term": "وجهت وجهي",
+    "meaning": "أي ذاتي ، وكَنْى بالوجه ، عن الذات لأنه أشرف ما في الإنسان .",
+    "in_text": "وَوجَّهْتُ وَجْهي"
+   },
+   {
+    "term": "فوضت",
+    "meaning": "سلمت .",
+    "in_text": "وفَوَّضْتُ"
+   },
+   {
+    "term": "ألجأت ظهري إليك",
+    "meaning": "أي أرجعته إليك ."
+   },
+   {
+    "term": "رغبة",
+    "meaning": "طمعاً ."
+   },
+   {
+    "term": "رهبة",
+    "meaning": "خوفاً ."
+   },
+   {
+    "term": "آنت",
+    "meaning": "صدت .",
+    "in_text": "آمنت"
+   }
+  ],
+  "see": "وانظر شرح الحديث في باب اليقين رقم ٧ / ٨٠ فليراجع .",
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.6.term",
+    "printed": "آنت",
+    "correction": "آمنت",
+    "reason": "a letter lost in the print: a gap stands where the «م» of «آمنت» (the hadith's word) should be"
+   },
+   {
+    "part": "meanings.6.meaning",
+    "printed": "صدت",
+    "correction": "صدقت",
+    "reason": "a letter lost in the print: a gap stands where the «ق» of «صدقت» should be; «صدت» isn't the meaning of «آمنت»"
+   }
+  ],
+  "notes": [
+   "Zoomed p. 644 on «آ نت : صـد ت»: both words show a gap where a letter is missing (the «م» and the «ق»), so the printed words are kept with corrections.",
+   "The cross-reference «وانظر شرح الحديث في باب اليقين رقم ٧ / ٨٠ فليراجع .» runs on after the last meaning; it is put in `see`. The number is printed as a fraction, ٧ over ٨٠, written «٧ / ٨٠» as elsewhere.",
+   "Zoomed «وكنى»: the print has a fatha on the kaf and a small circle (a sukun, or a broken shadda) on the nun; written as printed, «وكَنْى».",
+   "No benefits are printed for this hadith.",
+   "`done` didn't find «وجهت وجهي» and «فوضت» in the hadith, though the hadith has «وَوجَّهْتُ وَجْهي» and «وفَوَّضْتُ»: the terms' own first letters (و, ف) seem to be stripped as prefixes. `in_text` gives the hadith's words."
+  ]
+ },
+ "815": {
+  "id": 815,
+  "pages": [
+   644
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no word meanings or benefits for this hadith: its source note on p. 644 is followed by h. 816 on p. 645."
+  ]
+ },
+ "816": {
+  "id": 816,
+  "pages": [
+   645
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "إحدى عشرة ركعة",
+    "meaning": "هي صلاة الوتر ."
+   },
+   {
+    "term": "ركعتين خفيفتين",
+    "meaning": "سنة الصبح وتكون قبل الفرض ."
+   },
+   {
+    "term": "فيؤذنه",
+    "meaning": "أي يعلمه المؤذن باجتماع الناس ."
+   }
+  ],
+  "benefits": [
+   "قال النووي : - رحمه الله تعالى - المختار أنها - أي الضجعة بعد صلاة سنة الفجر - سنة ، لظاهر حديث أبي هريرة السابق : « .. ثم اضطجع على شقه الأيمن » ، وعدم استمرار النبي ﷺ عليها دليل على أنها سنة وليست واجبة .",
+   "من السنة أن يكون الاضطجاع على الشق الأيمن ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR joined the two benefits; split at the bullet. On p. 645, between this hadith's matn and its source note, the print repeats a line of h. 814's matn («منجا منك إلا إليك . آمنت بكتابك الذي أنزلت ، ونبيك الذي»): a printing error in the matn, outside the commentary, not transcribed."
+  ]
+ },
+ "817": {
+  "id": 817,
+  "pages": [
+   645
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أخذ مضجعه",
+    "meaning": "أي أراد النوم فيه ."
+   },
+   {
+    "term": "اللهم باسمك أموت وأحيا",
+    "meaning": "أنت تحيني وتميتني ."
+   },
+   {
+    "term": "أحيانا",
+    "meaning": "أيقظنا ."
+   },
+   {
+    "term": "أماتنا",
+    "meaning": "أنامنا ، وفي التعبير بالإحياء والإماتة هنا استعارة تبعية ."
+   },
+   {
+    "term": "النشور",
+    "meaning": "المرجع ."
+   }
+  ],
+  "benefits": [
+   "استحباب هذه الهيئة عند النوم ، والدعاء بما ورد تأسياً برسول الله ﷺ ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.1.meaning",
+    "printed": "أنت تحيني",
+    "correction": "أنت تحييني",
+    "reason": "a letter dropped: «تحيني» for «تحييني»"
+   }
+  ],
+  "notes": [
+   "The book prints no full stop between «استعارة تبعية» and «النشور : المرجع»; «النشور» is the hadith's word, so it starts an item of its own and the item before ends with « .».",
+   "Zoomed «تحيني وتميتني» on p. 645: the print has one «ي» before the «ني»."
+  ]
+ },
+ "818": {
+  "id": 818,
+  "pages": [
+   646
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "مضطجع",
+    "meaning": "نائم ."
+   },
+   {
+    "term": "ضجعة",
+    "meaning": "المرة من الاضطجاع ."
+   }
+  ],
+  "benefits": [
+   "النهي عن النوم على البطن ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "819": {
+  "id": 819,
+  "pages": [
+   646
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "ذكر الله في كل مجلس وذكره تعالى عند الإضطجاع .",
+   "التحذير من الغفلة عن ذكر الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The heading is printed «أفاد الحديث .» with a full stop, not a colon. The two benefits run on in one paragraph with a bullet between them; the draft had joined them.",
+   "«الإضطجاع» is printed with a hamza under the alif; kept as printed."
+  ]
+ },
+ "820": {
+  "id": 820,
+  "pages": [
+   647
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "جواز الاستلقاء على القفا ووضع إحدى الرجلين على الأخرى إذا لم يخف انكشاف العورة ، والدليل على ذلك فعل النبي ﷺ ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR read the ﷺ glyph as «ع الله»."
+  ]
+ },
+ "821": {
+  "id": 821,
+  "pages": [
+   647
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "تربع",
+    "meaning": "أي جلس متربعاً يذكر الله في مصلاه ."
+   },
+   {
+    "term": "حسناء",
+    "meaning": "بيضاء ."
+   }
+  ],
+  "benefits": [
+   "جواز القعود متربعاً .",
+   "استحباب المكوث بعد صلاة الفجر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "822": {
+  "id": 822,
+  "pages": [
+   647
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بفناء الكعبة",
+    "meaning": "الفناء : قال في المصباح : الوصيد ، وهو سعة البيت ، وقيل ما امتد من جانبه ."
+   },
+   {
+    "term": "محتبياً",
+    "meaning": "الاحتباء هو ضم الظهر مع الساقين باليد ."
+   },
+   {
+    "term": "القرفصاء",
+    "meaning": "أن يجلس على إليتيه ويلصق فخذيه ببطنه ويحتبي بيديه يضعها على ساقيه ، أو يجلس على ركبتيه متكياً ويلصق بطنه بفخذيه ويتأبط كفيه ."
+   }
+  ],
+  "benefits": [
+   "جواز الاحتباء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop stopped before the benefits; zoomed p. 647, 0.76–0.97: «أفاد الحديث : • جواز الاحتباء .» is printed there, just before h. 823.",
+   "Zoomed «إليتيه» (with hamza under the alif, the draft had «اليتيه»), «ويحتبي» (the draft had «ويحتي») and «يضعها» (printed so, though «بيديه» would take «يضعهما»; left as printed, not plainly a misprint). «هـو» is stretched with tatweel in print, written «هو»."
+  ]
+ },
+ "823": {
+  "id": 823,
+  "pages": [
+   648
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أرعدت",
+    "meaning": "اضطربت ."
+   },
+   {
+    "term": "الفرق",
+    "meaning": "الخوف ."
+   }
+  ],
+  "benefits": [
+   "بيان ما كان عليه النبي ﷺ من الخشوع في جلسته ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's draft had put the meanings into the source note («لغشة الحديث : أوعدت : اضطربت . الفرق : الخوف») and left them out; they are read from the scan (p. 648, 0.15–0.21). The draft's benefit also ran on into the next hadith's first words («وَعَنِ الشَّدِيدِ»), and the ﷺ glyph was left out.",
+   "The tool's crops for this hadith ran on to p. 649, 0.76, over h. 824–827; the commentary of h. 823 ends at p. 648, about 0.23."
+  ]
+ },
+ "824": {
+  "id": 824,
+  "pages": [
+   648,
+   649
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "على إلية يدي",
+    "meaning": "أي على أصلها ، وهي أصل الإبهام وما تحته ، وفي النهاية : أصلها الذي ينتهي طرفه إلى أصل الإبهام المسمى باليته ، وطرفه الآخر إلى أصل الخنصر المسمى بالصرة ."
+   }
+  ],
+  "benefits": [
+   "المنع من التشبه بالمغضوب عليهم وهم اليهود والنصارى في الهيئة وغيرها من الأفعال والأقوال والعادات والتقاليد .",
+   "على المسلم أن يتميز في جميع أحواله عن المشركين والكافرين ولا يتشبه بهم لا في مجلس ولا مأكل ولا ملبس ولا هيئة ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "بالصرة",
+    "correction": "بالضرة",
+    "reason": "a dot dropped: al-Nihaya names the root of the little finger «الضَّرَّة»; «الصرة» isn't that part of the hand"
+   }
+  ],
+  "notes": [
+   "The draft cut the meaning at the colon after «وفي النهاية»; it is one item, «على إلية يدي».",
+   "The two benefits are joined by a bullet; the draft had joined them. The second ends at the top of p. 649 («ولا هيئة .»), before the heading of chapter 129.",
+   "Zoomed p. 648: «باليته» is printed without a hamza (kept), and «بالصرة» with no dot on the ص (corrected, see corrections)."
+  ]
+ },
+ "825": {
+  "id": 825,
+  "pages": [
+   649
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "حرمة إقامة إنسان من مكان مباح سبق إليه ليجلس به غيره ولو كان الداخل أفضل من الجالس بعلمٍ أو سنٍ ، وهذا الحكم يشمل الرجال والنساء . ولكن الفقهاء استثنوا من ذلك من عرف بمجلس من المسجد يدرّس فيه فجلس فيه غيره فيقام للمدرس ، ومثله البائع إذا ألف مكاناً من السوق فله إقامة من يجلس فيه ، واستثنوا مسائل أخرى ، وهذا لا ينافي استحباب القيام للعالم من غير رغبة ولا طلب ، وإنما تركه ابن عمر ورعاً خشية الدخول في مدلول النهي .",
+   "استحباب التوسعة للداخل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on «بعلمٍ أو سنٍ» (p. 649, 0.19–0.22): the OCR's «سين» is «سن»; a kasra-tanween is printed under each word (under «بعلم» only one stroke shows clearly). Zoomed on «يدرّس»: a shadda is printed on the ر.",
+   "The OCR joined the two benefits: the bullet before «استحباب التوسعة» splits them."
+  ]
+ },
+ "826": {
+  "id": 826,
+  "pages": [
+   649
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "إذا سبق الإنسان إلى مجلس مباح في مسجد أو سوق كان أحق به ، فإذا قام منه لعذر لا يسقط حقه فيه فيجوز له أن يقيم من جلس فيه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "827": {
+  "id": 827,
+  "pages": [
+   649
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "من أدب الجلوس في المجالس أن يجلس الإنسان حيث ينتهي به المجلس .",
+   "على القادم أن يجلس حيث يجد فراغاً إلا ما خصص لأحد أو شغر المكان لعذر طرأ على صاحبه .",
+   "لا يطلب قيام أحد من مجلسه ليجلس مكانه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR joined the three benefits: split at the printed bullets."
+  ]
+ },
+ "828": {
+  "id": 828,
+  "pages": [
+   650
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب غسل الجمعة ، وقيل : يجب ، ويدخل وقته من طلوع الفجر الصادق وتأخيره إلى الزوال أفضل استحباب .",
+   "استعمال الطيب ، والجلوس حيث ينتهي به المجلس فلا يتخط رقاب الناس ولا يفرق بين الجالسين .",
+   "استحباب التطوع قبل الخطبة ووجوب الإنصات عندها .",
+   "وفيه أن الجمعة بهذه الآداب تكفر ذنوب جمعة كاملة من الذنوب الصغيرة المتعلقة بحقوق الله تعالى ، أما الكبيرة فتحتاج إلى توبة ، وما يتعلق بالناس فيجب استرضاؤهم أو أداء الحق إليهم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 650, 0.38–0.41: the bullet is printed after «أفضل استحباب», not before «استحباب» («… إلى الزوال أفضل استحباب ● استعمال الطيب …»). The bullet may be misplaced (the second benefit would read «استحباب استعمال الطيب»), but both items still read as sense, so the print's split is kept and no correction made: for the owner to judge.",
+   "The OCR joined benefits 1–3: split at the printed bullets after «الجالسين» and «عندها». Zoomed on «تكفر» (the OCR's «تكفو»).",
+   "«تعالى، أما» is printed without a space before the comma: written « ، » per the conventions."
+  ]
+ },
+ "829": {
+  "id": 829,
+  "pages": [
+   650
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "ما أفادته الأحاديث السابقة من حرمة التفريق بين اثنين والجلوس بينهما إلا بإذنهما ، ويلحق به أنه لا يجوز له التسمع إلى كلامهما إلا برضاهما إذا كانا يتكلمان مراً ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "يتكلمان مراً",
+    "correction": "يتكلمان سراً",
+    "reason": "a misprint: «مراً» makes no sense here; the benefit is about listening in on two people who speak in private («سراً»)"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 650, 0.84–0.92: the print clearly has «مراً», hence the correction.",
+   "The heading is «أفاد الحديث», so shared_with is empty though the benefit restates the earlier hadith's («ما أفادته الأحاديث السابقة»)."
+  ]
+ },
+ "830": {
+  "id": 830,
+  "pages": [
+   651
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "حرمة تخطي رقاب الناس الجالسين والجلوس وسطهم .",
+   "على المسلم أن يراعي شعور الآخرين فلا يتطفل في مجالسهم أو شؤونهم الخاصة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR joined the two benefits: split at the printed bullet."
+  ]
+ },
+ "831": {
+  "id": 831,
+  "pages": [
+   651
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب إفساح المجالس ، وذلك لما فيه من الخير والبركة وإراحة الجالسين ، ودفع ما يفضي إلى ضيق المجلس من الكراهية والبغض ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "832": {
+  "id": 832,
+  "pages": [
+   652
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لغطه",
+    "meaning": "اللغط الكلام الذي فيه ضجيج واختلاط ولا يتبين المراد منه ، والمقصود به في الحديث : الكلام الذي لا ينفع في الآخرة ."
+   },
+   {
+    "term": "سبحانك",
+    "meaning": "مصدر معناه التنزيه لله عما لا يليق به ."
+   },
+   {
+    "term": "أستغفرك",
+    "meaning": "أسألك أن تغفر الذنوب ."
+   }
+  ],
+  "benefits": [
+   "مشروعية هذا الدعاء عقب كل مجلس فإنه يكفر كل ذنب حصل فيه ، ولكن العلماء خصوا ذلك بالذنوب الصغيرة المتعلقة بحق الله وذلك بدليل أحاديث أخرى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "833": {
+  "id": 833,
+  "pages": [
+   652
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "كفارة",
+    "meaning": "عمل ما يمحو الذنب ."
+   },
+   {
+    "term": "بآخرة",
+    "meaning": "أي في آخر عمره ."
+   }
+  ],
+  "benefits": [
+   "أن الرسول ﷺ كان يدعو بهذا الدعاء تعليماً لأمته ﷺ واستزادة في الثواب لا أنه كان يقع منه اللغط في المجالس ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "834": {
+  "id": 834,
+  "pages": [
+   653
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اقسم لنا",
+    "meaning": "اجعل لنا قسماً ."
+   },
+   {
+    "term": "خشيتك",
+    "meaning": "الخوف منك مع الإجلال لك ."
+   },
+   {
+    "term": "يحول",
+    "meaning": "يمنعنا ويحجزنا عن معصيتك .",
+    "in_text": "تحول"
+   },
+   {
+    "term": "تبلغنا",
+    "meaning": "توصلنا ."
+   },
+   {
+    "term": "اليقين",
+    "meaning": "التصديق القلبي الجازم ."
+   },
+   {
+    "term": "تهون",
+    "meaning": "تسهل وتيسر ."
+   },
+   {
+    "term": "مصائب",
+    "meaning": "جمع مصيبة ، وهي كل شيء يصيب الإنسان فيؤذيه ."
+   },
+   {
+    "term": "متعنا",
+    "meaning": "انفعنا وثبت علينا حواسنا مدة حياتنا ."
+   },
+   {
+    "term": "واجعله الوارث منا",
+    "meaning": "أي اجعل سمعنا وبصرنا وقوتنا باقية مستمرة سليمة الى آخر حياتنا ، وفيه تشبيه بقاء الحواس ببقاء الوارث الذي يبقى ويخلف الميت ."
+   },
+   {
+    "term": "ثأرنا",
+    "meaning": "الثأر طلب الدم والمراد هنا : خذ لنا حقنا منه وجازه على ظلمه ."
+   },
+   {
+    "term": "مصيبتنا في ديننا",
+    "meaning": "أي ما نكرهه في ديننا من نقص الطاعة والوقوع في المعصية ."
+   },
+   {
+    "term": "أكبر همنا",
+    "meaning": "أعظم شغلنا ."
+   },
+   {
+    "term": "مبلغ علمنا",
+    "meaning": "غاية سعينا ."
+   }
+  ],
+  "benefits": [
+   "استحباب الدعاء مطلقاً وعند القيام من المجلس لخير لدنيا والآخرة ، لأن الدعاء مخ العبادة يطبع الإنسان بطابع العبودية لله والاحتياج إليه .",
+   "الحرص على سلامة الحواس مدى الحياة ، ليقوم الإنسان بها فيما يرضي الله تعالى ، وطلب النصر على العدو الظالم .",
+   "إن مصيبة الدين هي المصيبة العظمى لما يترتب عليها من الشقاوة الكبرى في الدنيا والآخرة .",
+   "إن الدنيا وما تؤول اليه من زوال لا يجوز أن تكون غاية سعي الإنسان من حياته .",
+   "أن ما يصيب الناس من ظلم الأعداء أو الحكام إنما هو من ذنوبهم فإذا أرادوا زوال ذلك عنهم فليصلحوا ما بينهم وبين الله فيكفهم عنهم بقدرته تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "لخير لدنيا",
+    "correction": "لخير الدنيا",
+    "reason": "the article's alif dropped: «لدنيا والآخرة» for «الدنيا والآخرة»"
+   }
+  ],
+  "notes": [
+   "The book prints «واجعله الوارث منا . أي اجعل …» with a full stop where the colon should be; it is a term of the hadith with its meaning, so it is an item of its own.",
+   "Zoomed on p. 653: «سعينا» (medial ع), «ثأرنا» / «الثأر» with hamza, «لخير لدنيا» as printed, «فيكفهم» (the stroke over ك is the letter's, not a mark)."
+  ]
+ },
+ "835": {
+  "id": 835,
+  "pages": [
+   654
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قوم",
+    "meaning": "الرجال خاصة لكنه هنا يشمل النساء ."
+   },
+   {
+    "term": "جيفة حمار",
+    "meaning": "أي جثة حمار ميت منتنة ."
+   },
+   {
+    "term": "حسرة",
+    "meaning": "ندامة ."
+   }
+  ],
+  "benefits": [
+   "التحذير من الغفلة عن ذكر الله والتنفير منها بهذا التصوير المنفر ، لأن أعظم أمراض القلوب إنما هو الغفلة عن الله ، وإن معظم المعاصي سببها من الغفلة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's crops for this hadith ran past its commentary into h. 836 and h. 837 (crops 2–4: p. 654 from 0.45, and p. 655); its commentary ends with «من الغفلة .» at the top of crop 2, and only that was transcribed."
+  ]
+ },
+ "836": {
+  "id": 836,
+  "pages": [
+   654
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ترة",
+    "meaning": "قال الترمذي : ومعنى قوله ترة : حسرة وندامة ، وقال بعض أهل المعرفة بالعربية : الترة : هو النار ."
+   }
+  ],
+  "benefits": [
+   "أن ذكر الله تعالى والصلاة على النبي ﷺ واجب في المجلس لترتب العذاب على تركه . وجعل بعضهم ترك الذكر والصلاة على النبي ﷺ مكروهاً . وظاهر الحديث يفيد الوجوب ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "This hadith's crop stops at «واجب في المجلس»; the rest of its benefit was read on h. 835's third crop (p. 654, 0.68–0.92). The benefit is one bullet with three sentences."
+  ]
+ },
+ "837": {
+  "id": 837,
+  "pages": [
+   655
+  ],
+  "see": "وانظره في باب آداب النوم والاضطجاع رقم ٦ / ٨١٩ .",
+  "meanings": [],
+  "benefits": [
+   "ما أفاده الحديث السابق من ضرورة ذكر الله تعالى في كل مجلس ومقعد ومضجع ، ليكون المسلم دائم الصلة مع الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The cross-reference «وانظره في باب آداب النوم والاضطجاع رقم ٦ / ٨١٩ .» is printed at the end of the benefit, in the same paragraph: moved to `see`, as earlier entries do with a cross-reference printed after the meanings. Its number is printed as a fraction, ٦ over ٨١٩ (the hadith's number in its chapter over its number in the book), written «٦ / ٨١٩» as in the earlier entries; the OCR dropped it."
+  ]
+ },
+ "838": {
+  "id": 838,
+  "pages": [
+   655
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن من الرؤى ما هو حق يُطلع بها الله المؤمن على ما سيكون من خير أو شر ، وذكر المبشرات خاصة خرج على الأغلب أو اكتفاء بها عما يقابلها من المنذرات .",
+   "لا وحي لأحد بعد وفاة النبي ﷺ ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft ran the next hadith's first line into the benefits and joined the two bullets: split at the bullet before «لا وحي». Zoomed on «يُطلع»: a damma is printed on the ya, kept. «ماسيكون» is printed run together: written «ما سيكون» by the ما/لا rule. «خاصـــة» is printed stretched: written plain. The commentary ends on p. 655; the crop on p. 656 shows only the next hadith's number, so `pages` is [655]."
+  ]
+ },
+ "839": {
+  "id": 839,
+  "pages": [
+   656
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اقترب الزمان",
+    "meaning": "اقترب انتهاء امد الدنيا ."
+   },
+   {
+    "term": "لم تكد",
+    "meaning": "لم تقارب ."
+   }
+  ],
+  "benefits": [
+   "أن الله يؤنس المؤمن ويواسيه بما يريه من الحقائق وذلك عند فساد الزمان ، ويزاد صدق الرؤيا بصدق حديث صاحبها . قال المهلب : رؤيا الأنبياء حق ، ورؤيا المؤمنين يغلب فيها الصدق ، لعدم تمكن الشيطان من قلوبهم ، ورؤيا الفاسقين والكافرين يغلب عليها الكذب ، لسيطرة الشيطان على نفوسهم ، وأن الرؤيا الحق جزء من النبوة باعتبارها إعلاماً من الله لبعض المؤمنين وهم في حالة النوم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«امد» is printed without the hamza, kept as printed. The benefits are one bullet: «قال المهلب» follows a full stop in the same paragraph, with no bullet."
+  ]
+ },
+ "840": {
+  "id": 840,
+  "pages": [
+   656
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "سيراني في اليقظة",
+    "meaning": "قال بعضهم : سيرى تصديق رؤياه في اليقظة ."
+   }
+  ],
+  "benefits": [
+   "أن من رأى النبي في المنام فسوف يراه في اليقظة يوم القيامة وهذا تبشير لصاحب الرؤيا ، أو فكأنما رآه في اليقظة وهذا تبشير يدل على إكرام صاحب هذه الرؤيا ، ولا يرى رسول الله ﷺ في المنام إلا من كان في قلبه حب له والتزام لهداه .",
+   "إن رؤيا الرسول ﷺ في المنام حق وليست من قبيل الأضغاث ، لأن الشيطان لا يتخيل للانسان بشكل النبي ﷺ ، وهذا من خصوصياته ﷺ على الأصح ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft lost the ﷺ glyphs, moved «الأضغاث» out of its line, joined the two bullets and ran in the next hadith's first line: all set right from the scan. The first «النبي» of benefit 0 is printed with no glyph. «وهـــذا» is printed stretched: written plain. The commentary ends on p. 656 (the crop on p. 656, 0.77–0.90 holds its end), so `pages` is [656]."
+  ]
+ },
+ "841": {
+  "id": 841,
+  "pages": [
+   657
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن الإنسان إذا رأى رؤيا حسنة فليضفها الى الله تعالى وليحمد الله تعالى على أن رأى ما يسره ، ولا باس إن حدث بها لأنها تبعث على التفاؤل والتفاؤل مطلوب .",
+   "وإذا رأى رؤيا سيئة فليضفها الى الشيطان لأنها غالباً من وساوسه ، ولا يحدث بها ، لأنها تبعث على التشاؤم والتشاؤم ممنوع فليستعذ ، بالله وليعتمد عليه فإنها لا تضره ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "فليستعذ ، بالله وليعتمد",
+    "correction": "فليستعذ بالله ، وليعتمد",
+    "reason": "the comma is misplaced: it cuts «فليستعذ» from «بالله», and belongs before «وليعتمد»"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 657, 0.35–0.49: «ولا باس» is printed without the hamza, kept as printed (a common spelling, not corrected); the comma is printed between «فليستعذ» and «بالله», kept as printed with a correction. The two bullets were joined in the draft, and a stray «ا» ended it: split and dropped. «تعـــالى» is printed stretched: written plain."
+  ]
+ },
+ "842": {
+  "id": 842,
+  "pages": [
+   657,
+   658
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الحلم",
+    "meaning": "الرؤيا ، فهما أي الحلم والرؤيا في الأصل بمعنى واحد ، لكن غلب في اصطلاح الشرع تخصيص الرؤيا بما يراه من الخير ، والحلم بما يراه من الشر ."
+   }
+  ],
+  "benefits": [
+   "استحباب النفث عن يساره والتعوذ من الشيطان إذا رأى رؤيا شر ، وذلك طرداً للشيطان واحتقاراً له وعدم التفات إلى ما يخيله له فليس بضارِ أحداً فيما يوسوسه إلا بإذن الله ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 658, 0.06–0.12: the OCR's «فيها» is «فيما»; «بضارِ» is printed with one kasra under the ra, kept as printed; «مايخيله» is printed run together, written «ما يخيله» by the ما/لا rule. «يساره والتعوذ» is printed with no gap after the ha; the waw doesn't join, so it is written as two words."
+  ]
+ },
+ "843": {
+  "id": 843,
+  "pages": [
+   658
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب التحول عن جنبه الذي كان عليه حين الرؤيا تفاؤلاً بتحول الحال من الرؤيا القبيحة إلى الرؤيا الحسنة ، وتخصيص الشمال بالنفث أو البصاق إشعاراً إلى جهة الشيطان ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "844": {
+  "id": 844,
+  "pages": [
+   658
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الفرى",
+    "meaning": "جمع فرية بكسر الفاء ، وهي الكذبة ."
+   },
+   {
+    "term": "يدعي",
+    "meaning": "ينتسب إلى غير أبيه ."
+   },
+   {
+    "term": "يري عينه",
+    "meaning": "يكذب فيما يدعي أن عينه رأته ."
+   }
+  ],
+  "benefits": [
+   "أن الانتساب إلى غير الأب كبيرة لأن فيها تضيعاً للأنساب وإدخالا على الأمر ما ليس منها ، وهذا يترتب عليه محاذير شرعية كثيرة .",
+   "أن الكذب في الرؤيا كبيرة ، لأنه كذب على الله في أنه أراه كذا وهو لم ير ما يقول ، بخلاف الكذب في اليقظة فإنه كذب على المخلوق ، فهو وإن كان حراماً لكنه دون الكذب على الله .",
+   "أن الكذب على رسول الله ﷺ كبيرة أيضاً ، لما يترتب على ذلك من تضليل الناس في الدين ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The commentary ends on p. 658; p. 659 opens with the heading «كتاب السلام» (left out), so pages is [658].",
+   "The book prints no full stop after «كثيرة» and «على الله» (the bullet follows) nor after «في الدين» at the end; each benefit ends with « .» by the item-end rule.",
+   "Zoomed on «تضيعاً» and «الأمر» in benefit 0: printed so (تضيعـاً with one ي, and «الأمر», not «الأسر»). «تضييعاً» and «الأسر» may be meant, but neither is plainly wrong, so no correction."
+  ]
+ }
+}

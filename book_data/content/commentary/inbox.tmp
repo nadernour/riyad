@@ -1,0 +1,169 @@
+{
+  "262": {
+    "id": 262,
+    "pages": [
+      272,
+      273
+    ],
+    "see": null,
+    "meanings": [
+      {
+        "term": "نفر",
+        "meaning": "النفر بالتحريك عدة رجال من ثلاثة إلى عشرة ."
+      },
+      {
+        "term": "فوقع في نفس رسول الله ما شاء الله أن يقع",
+        "meaning": "أي من طرد المسلمين ، لما علم من ثبات إيمانهم ، وطمعاً في إسلام أئمة الشرك وإسلام قومهم نظير مجالستهم في يوم خاص بهم .",
+        "in_text": "فَوقَعَ فِي نَفْسِ رَسُولِ اللهِ ﷺ ما شاءَ اللهُ أَن يقعَ"
+      }
+    ],
+    "benefits": [
+      "الفقراء والضعفاء كانوا أول من اعتنق الإسلام وصدق برسالة محمد ﷺ .",
+      "يجب احترام الصالحين واجتناب ما يغضبهم ويؤذيهم ، وإن في إيذائهم وإغضابهم غضب الله .",
+      "يجب أن يكون احترام الناس وتقديرهم لدينهم وإيمانهم لا لمالهم وجاههم .",
+      "المساواة في القيمة الإنسانية مبدأ إسلامي طبق عملياً منذ الأيام الأولى من دعوة الإسلام .",
+      "الإسلام دين الله تعالى لجميع الناس ، ولا فضل لأحد على آخر بمال أو جاه إلا بالتقوى والعمل ."
+    ],
+    "shared_with": [],
+    "corrections": [],
+    "notes": [
+      "The second meaning's term («فوقع في نفس رسول الله ماشاءالله أن يقع») follows the first meaning's full stop; the OCR had joined it to the first meaning. The book prints no ﷺ in the term, though the hadith has it after «رسول الله».",
+      "The meanings end at «خاص بهم» with no full stop printed (zoomed on p. 272, 0.82–0.92); « .» added as every item ends with it.",
+      "Zoomed on p. 273, 0.13–0.24: the third benefit reads «لا لمالهم وجاههم» (the OCR read «لا لما لهم»)."
+    ]
+  },
+  "263": {
+    "id": 263,
+    "pages": [
+      273,
+      274
+    ],
+    "see": null,
+    "meanings": [
+      {
+        "term": "أبو سفيان",
+        "meaning": "صخر بن حرب بن أمية بن عبد شمس بن عبد مناف .",
+        "in_text": "أَبا سُفْيَانَ"
+      },
+      {
+        "term": "سلمان",
+        "meaning": "سلمان الفارسي ."
+      },
+      {
+        "term": "صهيب",
+        "meaning": "صهيب بن سنان الرومي ."
+      },
+      {
+        "term": "بلال",
+        "meaning": "بلال الحبشي مولى أبي بكر الصديق رضي الله عنه ، والجميع تأتي ترجمتهم في نهاية الكتاب إن شاء الله تعالى .",
+        "in_text": "وبلالٍ"
+      },
+      {
+        "term": "أغضبتهم",
+        "meaning": "أي زجرتهم أو أسأت إليهم ."
+      },
+      {
+        "term": "يغفر الله لك",
+        "meaning": "جملة دعائية والأفضل أن يقال : لا ويغفر الله لك ، حتى لا يشتبه الدعاء له بالدعاء عليه ."
+      }
+    ],
+    "benefits": [
+      "طلب محبة المؤمنين والتلطف بهم .",
+      "فضل ورتبة المذكورين في الحديث وهم سلمان وصهيب وبلال .",
+      "الإخوة في الله يحملون كلام بعضهم على أحسن المحامل ."
+    ],
+    "shared_with": [],
+    "corrections": [],
+    "notes": [
+      "The OCR had joined «سلمان : سلمان الفارسي .» to the first meaning; it is an item of its own.",
+      "Zoomed on p. 273, 0.84–0.92: the term «يغفر الله لك» shows a faint stroke over the alif of «الله», read as a blemish of the print, not a mark; written plain."
+    ]
+  },
+  "264": {
+    "id": 264,
+    "pages": [
+      274
+    ],
+    "see": null,
+    "meanings": [
+      {
+        "term": "اليتيم",
+        "meaning": "الصغير الذي مات أبوه ، واليتيم في الناس من قبل الأب ، وفي البهائم من جهة الأم ."
+      },
+      {
+        "term": "السبابة",
+        "meaning": "الأصبع التي تلي الإبهام ، وسميت بذلك لأنه يسب بها الشيطان ، ويقال لها : السباحة ."
+      },
+      {
+        "term": "فرّج بينهما",
+        "meaning": "فرّق بينهما إشارة إلى أن بين درجة النبي ﷺ في الجنة وكافل اليتيم قدر تفاوت ما بين السبابة والوسطى ، وفي رواية : « كهاتين إذا اتقى » أي اتقى الله فيما يتعلق بحق اليتيم .",
+        "in_text": "وفَرَّجَ بَيْنَهُمَا"
+      }
+    ],
+    "benefits": [
+      "الترغيب في القيام بأمور اليتيم والمحافظة على أمواله .",
+      "قال ابن بطال : حق على من سمع هذا الحديث أن يعمل به فيكون رفيق النبي ﷺ في الجنة ، ولا منزلة في الآخرة أفضل من ذلك ."
+    ],
+    "shared_with": [],
+    "corrections": [],
+    "notes": [
+      "The OCR had joined «فرّج بينهما» to the meaning of «السبابة» (a full stop read as «-»); it is an item of its own. The book prints a shadda on «فرّج» and «فرّق».",
+      "Zoomed on p. 274, 0.40–0.49: «فرّق بينهما» is printed with the same shape as the term's «بينهما» (the OCR read «بينها»)."
+    ]
+  },
+  "265": {
+    "id": 265,
+    "pages": [
+      274,
+      275
+    ],
+    "see": null,
+    "meanings": [
+      {
+        "term": "مالك بن أنس",
+        "meaning": "بن أبي عامر بن عمرو الأصبحي أبو عبد الله الفقيه المدني ، إمام دار الهجرة ، ومن أتباع التابعين ، توفي سنة ١٧٩ ه وله من العمر ٩٠ سنة ."
+      }
+    ],
+    "benefits": [],
+    "shared_with": [],
+    "corrections": [],
+    "notes": [
+      "The OCR had lost the term «مالك بن أنس» (the book prints its colon right after «أنس»); it is in the hadith's narration (the narrator who pointed).",
+      "The year's sign is printed as a lone «ه»; written without the tatweel the draft had.",
+      "The book prints no benefits for this hadith."
+    ]
+  },
+  "266": {
+    "id": 266,
+    "pages": [
+      275
+    ],
+    "see": null,
+    "meanings": [
+      {
+        "term": "ليس المسكين",
+        "meaning": "أي المحتاج الممدوح الأحق بالصدقه ."
+      },
+      {
+        "term": "يتعفف",
+        "meaning": "يترك السؤال من الناس مع حاجته ."
+      },
+      {
+        "term": "لا يفطن",
+        "meaning": "لا يعلم ."
+      }
+    ],
+    "benefits": [
+      "قال الخطابي وغيره : إنما نفى ﷺ المسكنة عن السائل الطواف لأنه تأتيه الكفاية ، وقد تأتيه الزكاة زيادة عليها فتزول خصاصته ويسقط اسم المسكنة عنه ، وإنما تدوم الحاجة والمسكنة فيمن لا يسأل ولا يُعطف عليه فيعطى .",
+      "ذم المسألة .",
+      "الحض على التعفف ، قال تعالى في مدح من هذا شأنه : ( يحسبهم الجاهل أغنياء من التعفف ) ."
+    ],
+    "shared_with": [],
+    "corrections": [],
+    "notes": [
+      "«بالصدقه» is printed with a final «ه» and kept so.",
+      "«وغيره» is printed with a gap before its last letter («وغير ه»); joined. The book prints a damma on «يُعطف».",
+      "The OCR had lost the bullet before «ذم المسألة» and moved «فيعطى ذم» and «هذا شأنه» out of place; both put back as printed."
+    ]
+  }
+}

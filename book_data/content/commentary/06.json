@@ -1,4 +1,354 @@
 {
+ "845": {
+  "id": 845,
+  "pages": [
+   660
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أي الاسلام",
+    "meaning": "أي أعماله ."
+   },
+   {
+    "term": "خير",
+    "meaning": "أكثر ثواباً ."
+   },
+   {
+    "term": "تقرأ السلام",
+    "meaning": "أي تسلم ."
+   }
+  ],
+  "benefits": [
+   "استحباب الإطعام ، لأنه يؤلف القلوب ويزيد المحبة ويدل على كرم النفس .",
+   "استحباب السلام على من تعرف وعلى من لا تعرف ، وهو سنة مؤكدة في حق الفرد وسنة كفاية في حق الجماعة ، ورد السلام واجب كفائي بحق الجماعة ، عيني بحق الفرد ، والسلام أفضل من الرد ، وخصه بالذكر مع الاطعام لأنه وسيلة المحبة بين المسلمين .",
+   "لا يقوم مقام السلام غيره من صيغ التحية كصباح الخير أو مرحباً أو غير ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "846": {
+  "id": 846,
+  "pages": [
+   660
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن السلام عليكم هي التحية التي شرعها الله تعالى لعباده منذ خلق آدم وهي واحدة في الأديان .",
+   "وفي لحديث مشروعية الزيادة في الرد على الابتداء ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "وفي لحديث",
+    "correction": "وفي الحديث",
+    "reason": "the alif of the article dropped: «لحديث» isn't the word meant here"
+   }
+  ],
+  "notes": [
+   "Zoomed on «وفي لحديث» (p. 660, 0.86–0.90): the alif is not printed.",
+   "The second crop (p. 661, 0.06–0.08) shows only the page's top edge: nothing of the commentary, so pages is [660]."
+  ]
+ },
+ "847": {
+  "id": 847,
+  "pages": [
+   661
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "عيادة المريض",
+    "meaning": "زيارته ."
+   },
+   {
+    "term": "اتباع الجنائز",
+    "meaning": "تشييعها ."
+   },
+   {
+    "term": "تشميت العاطس",
+    "meaning": "الدعاء له ."
+   },
+   {
+    "term": "إفشاء السلام",
+    "meaning": "الإكثار منه ونشره ."
+   },
+   {
+    "term": "إبرار المقسم",
+    "meaning": "فعل المقسم عليه حتى لا يحنث المقسم ."
+   }
+  ],
+  "benefits": [
+   "الترغيب بهذه الآداب الاسلامية لما فيها من تمتين روابط الأخوة بين المسلمين ، وتحقيق الألفة والمحبة ، وانتشار السلام والطمأنينة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "848": {
+  "id": 848,
+  "pages": [
+   661
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن دخول الجنة لا يكون إلا بأصل الإيمان ، وأن الإيمان لا يكمل إلا بالمحبة بين المسلمين ، وأن المحبة لا تنشأ فيهم إلا بإفشاء السلام ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "849": {
+  "id": 849,
+  "pages": [
+   662
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب هذه الحصال وأنها سبب دخول الجنة من أول الأمر مع الناجين ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "الحصال",
+    "correction": "الخصال",
+    "reason": "the dot of the «خ» is missing: «الحصال» isn't a word; the hadith's good deeds («الخصال») are meant"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 662, 0.135–0.19: «الحصال» (bold) is printed with no dot on the «ح» (corrected). The OCR dropped «مع» and read «الناجين» as «الناحين»."
+  ]
+ },
+ "850": {
+  "id": 850,
+  "pages": [
+   662,
+   663
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يغدوا",
+    "meaning": "الذهاب ما بين صلاة الفجر وطلوع الشمس ، ثم توسع به فاستعمل في الذهاب في أي وقت .",
+    "in_text": "فَيَغْدُو"
+   },
+   {
+    "term": "عمدنا",
+    "meaning": "قصدنا .",
+    "in_text": ""
+   },
+   {
+    "term": "سقاط",
+    "meaning": "بائع السقط من المتاع وهو الرديء ."
+   },
+   {
+    "term": "بيعة",
+    "meaning": "الواحدة من المبيع والمراد البيعة النفسية ."
+   },
+   {
+    "term": "مسكين",
+    "meaning": "أي ذي حاجة ."
+   },
+   {
+    "term": "فاستتبعني",
+    "meaning": "أي طلب مني أن أتبعه ."
+   },
+   {
+    "term": "ولا تسوم",
+    "meaning": "المساومة المجاذبة بين البائع والمشتري على السلعة وفصل ثمنها ."
+   },
+   {
+    "term": "السلع",
+    "meaning": "جمع سلعة وهي ما يعرض للبيع ."
+   },
+   {
+    "term": "وأقول اجلس بنا هاهنا",
+    "meaning": "أي قال الطفيل لعبد الله بن عمر ذلك .",
+    "in_text": "وأقولُ: اجْلِسْ بِنا هَهُنا"
+   }
+  ],
+  "benefits": [
+   "جواز ارتياد المجتمعات ولو من غير حاجة ، لأداء السلام على أهلها إذا غلب على ظنه أنه لا يقع في طريقه بمعصية ، فإذا خاف المعاصي كان جلوسه في بيته أفضل .",
+   "استحباب السلام على كل من لقيه وإن كثر ذلك .",
+   "جواز مداعبة الرفيق بتسمية بعض ما فيه إذا لم يقصد تحقيره وكان يعلم رضاه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.3.meaning",
+    "printed": "البيعة النفسية",
+    "correction": "البيعة النفيسة",
+    "reason": "two letters swapped: «النفسية» (of the soul) makes no sense of a sale; the hadith sets the petty seller («سقاط») against the owner of a sale, so «النفيسة» (a valuable sale) is meant"
+   }
+  ],
+  "notes": [
+   "The book prints «ولا تسوم .» with a full stop where the colon belongs (zoomed p. 662, 0.74–0.765): «ولا تسوم» is a word of the hadith followed by its meaning, so it is an item of its own, as for a lost full stop.",
+   "Zoomed on p. 662, 0.71–0.74: «والمراد» (a «ر», not the OCR's «والمواد»), and «النفسية» as printed (corrected to «النفيسة», a judgment from the sense; drop the correction if «النفسية» is meant).",
+   "«عمدنا» explains no word of the hadith's text, which reads «فإذا غدونا إلى السوق» here: in_text is empty. The term is probably from another narration of the Muwatta's hadith. «يغدوا» (printed with an alif) explains «فَيَغْدُو», and «هاهنا» is «هَهُنا» in the hadith.",
+   "Benefits: the bullet before «استحباب السلام» is at the start of p. 663; the OCR had joined it to the first benefit."
+  ]
+ },
+ "851": {
+  "id": 851,
+  "pages": [
+   663
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن الثواب يزداد بقدر السلام ، فمن قال : السلام عليكم كان له حسنة مضاعفة إلى عشر حسنات ، ومن قال : السلام عليكم ورحمة الله كان له حسنتان مضاعفتان إلى عشرين ، ومن قال : السلام عليكم ورحمة الله وبركاته كان له ثلاث حسنات مضاعفة إلى ثلاثين حسنة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 663, 0.765–0.80: «الثواب» (the OCR's «النواب») and «،فمن» (a fa with its dot, the OCR's «ممن»)."
+  ]
+ },
+ "852": {
+  "id": 852,
+  "pages": [
+   664
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "بيان فضل السيدة عائشة ، وتسليم الملائكة على الناس .",
+   "مشروعية تبليغ السلام من الغائب ووجوب الرد عليه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "853": {
+  "id": 853,
+  "pages": [
+   664
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "كمال عطفه ﷺ على أصحابه وحسن خطابه .",
+   "جواز إعادة السلام إذا كان الجمع كبيراً لا يسمع جميعهم من أول مرة وإن كان أصل السنة يحصل بسماع ، بعضهم ولكن هذا منه ﷺ جبر لحواطر أصحابه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "بسماع ، بعضهم ولكن",
+    "correction": "بسماع بعضهم ، ولكن",
+    "reason": "the comma is misplaced: it splits «بسماع بعضهم» and belongs before «ولكن»"
+   },
+   {
+    "part": "benefits.1",
+    "printed": "لحواطر",
+    "correction": "لخواطر",
+    "reason": "the dot of the «خ» is missing: «لحواطر» isn't a word"
+   }
+  ],
+  "notes": [
+   "The draft's first benefit was the end of the source note and the heading («ثلاثاً وفي الاستئذان ( باب التسليم والاستئذان ثلاثاً ) . أفاد الحديث»): left out.",
+   "Zoomed on p. 664, 0.69–0.725: «لحواطر» is printed with no dot on the «ح» (corrected); the OCR's «الا» and «علي» are the ﷺ glyph."
+  ]
+ },
+ "854": {
+  "id": 854,
+  "pages": [
+   665
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "مشروعية السلام في قوم فيهم نيام ولكن السنة أن لا يرفع صوته بحيث يوقظ النائم ولا يخفضه بحيث لا يسمع اليقظان ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 665, 0.135–0.17: the first letters of «يوقظ», «يخفضه» and «يسمع» each show one oval dot below, which looks like a «ب» at low zoom; the oval is wider than the round dot of a «ب» (as in «بحيث» on the same line), so it is the ya's two dots run together, read «ي»."
+  ]
+ },
+ "855": {
+  "id": 855,
+  "pages": [
+   665
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "عصبة",
+    "meaning": "جماعة نحو العشرة ."
+   },
+   {
+    "term": "ألوى بيده",
+    "meaning": "أشار ."
+   }
+  ],
+  "benefits": [
+   "جواز الإشارة باليد مع التلفظ بالسلام عند التسليم على من كان بعيداً . أما الاقتصار على الإشارة فمكروه وذلك بدليل النهي عن التسليم بالإشارة في حديث آخر وأنه من فعل غير المسلمين .",
+   "جواز سلامه ﷺ على النساء لعصمته من الفتنة ، أما غيره فإن أمنت الفتنة ووثق بنفسه جاز له السلام ، وإلا فالصمت وعدم السلام أسلم وأفضل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR read «فيمكروه» for the printed «فمكروه» and left out the ﷺ glyph after «جواز سلامه»: fixed from the crop."
+  ]
+ },
+ "856": {
+  "id": 856,
+  "pages": [
+   665,
+   666
+  ],
+  "see": "وقد تقدم شرح الحديث في الباب / ١١٩ / رقم ٦ / ٧٩٦ فليراجع .",
+  "meanings": [],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop on p. 666 stopped a line short; the cross-reference was read on a zoom of p. 666, 0.06–0.25. Its number is printed as a fraction, ٦ over ٧٩٦ (the hadith's number in its chapter over its number in the book), written «٦ / ٧٩٦» as in earlier entries; the OCR dropped it. «تقدم شرح» and «/رقم» are printed close: written as separate words. No meanings or benefits are printed: the book sends the reader to the hadith's earlier place."
+  ]
+ },
+ "857": {
+  "id": 857,
+  "pages": [
+   666
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب التسليم على الوجه المذكور ، والحكمة من ذلك كما قال المهلب : أن الماشي يشبه الداخل فكان أولى بالبدء بالسلام ، والصغير مأمور بتوقير الكبير والتواضع له ، والراكب لئلا يتكبر بركوبه ، والقليل يبدأ بالتسليم مراعاة لحق الكثير لأن حقهم أعظم ، وهكذا يكون الأدب في إلقاء السلام في الإسلام ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "858": {
+  "id": 858,
+  "pages": [
+   666,
+   667
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أولى الناس بالله",
+    "meaning": "أي أحقهم بالقرب منه بالطاعة ."
+   }
+  ],
+  "benefits": [
+   "أن أقرب الناس من الله بالطاعة من بدأ أخاه بالسلام عند ملاقاته ، لأنه السابق إلى ذكر الله والمبادر إلى تطييب نفس أخيه والمذكر له بذكر الله ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR put the meaning («أولى الناس بالله : أي أحقهم بالقرب منه بالطاعة .», printed at the top of p. 667 under «لغة الحديث») into the source note: restored to `meanings`. The draft ran the next chapter's heading (باب ١٣٤) into the benefit: left out."
+  ]
+ },
  "859": {
   "id": 859,
   "pages": [
@@ -19,6 +369,852 @@
   "notes": [
    "The crop ended after the first line of the benefits; its end («بسيطاً بين السلامين .») was read on a zoom of p. 667, 0.62–0.80.",
    "«لأنها» is printed with a kashida, written plain."
+  ]
+ },
+ "860": {
+  "id": 860,
+  "pages": [
+   667,
+   668
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب السلام عند كل لقاء ولو فصل بين اللقاءين كشجرة أو جدار أو حجر أو نحو ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 668, 0.06–0.11: a small dot is printed between «السلام» and «عند», mid-sentence; a speck, not a full stop, so it isn't kept. The book gives no word meanings for this hadith."
+  ]
+ },
+ "861": {
+  "id": 861,
+  "pages": [
+   668
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "جواز نداء الغريب بيابني ، لما في ذلك من العطف عليه والتحبب له .",
+   "يستحب إذا دخل الإنسان بيته أن يسلم على أهله ، وإن لم يكن فيه أحد استحب أن يقول : السلام علينا وعلى عباد الله الصالحين فإن الخير والبركة تحصل له ولأهله في ذلك من ذكر الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR joined the two benefits (the bullet after «والتحبب له» was lost): split. The book gives no word meanings for this hadith."
+  ]
+ },
+ "862": {
+  "id": 862,
+  "pages": [
+   669
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب السلام على الصغار تعليماً لهم السلام ، وتأديباً لهم عليه ، وتطيباً لقلوبهم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's draft and crops for this hadith were wrong: they held h. 864's meanings and h. 865's text (crops p. 669 0.68–0.90 and p. 670). The commentary was read from the rendered pages instead: the matn and source note end p. 668, and the benefits are at the top of p. 669 (0.04–0.12), before the heading of chapter 137. The book gives no word meanings for this hadith.",
+   "Zoomed p. 669 0.04–0.12: «وتطيباً» is printed with one ي."
+  ]
+ },
+ "863": {
+  "id": 863,
+  "pages": [
+   669
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "عجوز",
+    "meaning": "امرأة مسنة يقال للذكر والأنثى ، وعجوزة لغة ضعيفة ."
+   },
+   {
+    "term": "السلق",
+    "meaning": "بقل معروف ، وأصوله : أضلاعه ."
+   },
+   {
+    "term": "القدر",
+    "meaning": "الإناء الذي يطبخ فيه ."
+   },
+   {
+    "term": "حبات",
+    "meaning": "أي قليلات ."
+   }
+  ],
+  "benefits": [
+   "جواز السلام على من لا يخشى الفتنة بهن من النساء العجائز ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft joined «عجوز» and «السلق» in one meaning; the scan prints a full stop after «ضعيفة», so they are two items. «وأصوله : أضلاعه» stays inside «السلق»'s meaning, after a comma.",
+   "Left out the matn's gloss «قوله « تكركر » : أي تطحن .», printed in the matn's type before the source note: it is Riyad's text, not the commentary's.",
+   "Zoomed p. 669 0.57–0.64: the benefit prints «بهن» (the OCR read «بين»)."
+  ]
+ },
+ "864": {
+  "id": 864,
+  "pages": [
+   669,
+   670
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الفتح",
+    "meaning": "فتح مكة ."
+   },
+   {
+    "term": "تستره",
+    "meaning": "تمسك له السترة لتحجبه عن العيون ."
+   },
+   {
+    "term": "وذكرت الحديث",
+    "meaning": "وهو أنها أجارت واحداً من المشركين وأراد علي رضي الله عنه قتله فجاءت تشتكيه فأقر ﷺ جوارها ."
+   }
+  ],
+  "benefits": [
+   "جواز سلام المرأة على الرجال إن كانت لا تخشى الفتنة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 669 0.83–0.90: the book prints the ﷺ glyph after «فأقر», which the OCR left out."
+  ]
+ },
+ "865": {
+  "id": 865,
+  "pages": [
+   670
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "عصبة",
+    "meaning": "جماعة ."
+   },
+   {
+    "term": "فألوى بيده",
+    "meaning": "أشار بها مسلّماً ."
+   }
+  ],
+  "benefits": [
+   "جواز سلام المرأة على الرجال وسلام الرجال على النساء إذا أمنت الفتنة من حال النساء أو الرجال ، كما يدل عليه ظاهر الأحاديث المتقدمة ممن سلم وسُلّم عليه ، وتفصيل المسألة : ١ - يحرم ابتداء السلام ورده من الشابة منفردة على الرجال . ٢ - يجوز لجمع من النسوة أو لعجوز ابتداء السلام ورده على الرجال بل يندب ويجب الرد ، وكذلك ابتداء الرجال بالسلام عليهن ورده . ٣ - يكره للرجل الواحد ابتداء السلام ورده على الشابة . ٤ - يجوز لجمع من الرجال السلام على الشابة إن أمنت الفتنة . ٥ - يجوز بل يستحب للرجل الواحد السلام على جماعة من النساء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The benefit is one bullet followed by a list numbered ١–٥ on lines of their own, under «وتفصيل المسألة :». The list is kept inside that one benefit, with its numbers and dashes as printed (the dash written «-»), since the book gives it no bullets of its own.",
+   "Zoomed p. 670 0.39–0.45: «مسلّماً» has a shadda on the lam with a small mark above it that could be a damma or a fatha; only the shadda is written. «وسُلّم» (p. 670 0.45–0.51) has a damma on the sin and a shadda on the lam.",
+   "The OCR read «الجمع», «الرجل» and «علين» where the book prints «لجمع», «للرجل» and «عليهن»."
+  ]
+ },
+ "866": {
+  "id": 866,
+  "pages": [
+   671
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فاضطروه إلى أضيقه",
+    "meaning": "ألجئوه أن يسير على حافة الطريق وهذا عند الزحام ."
+   }
+  ],
+  "benefits": [
+   "تحريم ابتداء المسلم غير المسلم بالتحية ، وعند الزحام في الطريق يمشي المسلمون في صدر الطريق وغيرهم على حافته .",
+   "إظهار عزة المسلمين وصغار غيرهم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's crops for this hadith (p. 671 0.34–0.90) show h. 867's and h. 868's commentary; h. 866's was read from the rendered page (p. 671 0.05–0.30).",
+   "Zoomed p. 671 0.14–0.20: «ألجئوه» (the OCR read «الجنوه»).",
+   "The benefits are two bullets run on in one paragraph; the second bullet ends the first."
+  ]
+ },
+ "867": {
+  "id": 867,
+  "pages": [
+   671
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "وعليكم",
+    "meaning": "أي ما تستحقونه من الذم ، أو نحن وأنتم فيه سواء أي الموت ، ووجهه ما جاء في حديث : عند مسلم . إن اليهود إذا سلموا عليكم يقول أحدهم : السام عليكم فقل وعليك ، والسام : الموت ."
+   }
+  ],
+  "benefits": [
+   "جواز رد التحية على غير المسلمين ، ولكن لا يقول وعليكم السلام ، وإنما يقتصر على وعليكم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's crop for this hadith (p. 671 0.80–0.90) shows h. 868's benefits; h. 867's commentary was read from the rendered page (p. 671 0.38–0.58). The draft's trailing «فيه .» isn't printed and was removed.",
+   "Zoomed p. 671 0.42–0.53: «الذم», «ووجهه ما جاء في حديث : عند مسلم . إن اليهود», «وعليك» are as printed."
+  ]
+ },
+ "868": {
+  "id": 868,
+  "pages": [
+   671
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب السلام على من في المجلس ولو كان فيهم غير المسلمين ويقصد بسلامة المسلمين منهم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "869": {
+  "id": 869,
+  "pages": [
+   672
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "انتهى",
+    "meaning": "وصل ."
+   },
+   {
+    "term": "الأولى",
+    "meaning": "التسليمة عند الوصول ."
+   },
+   {
+    "term": "بأحق",
+    "meaning": "بأولى ."
+   },
+   {
+    "term": "الآخرة",
+    "meaning": "التسليمة عند المغادرة ."
+   }
+  ],
+  "benefits": [
+   "أن السلام مندوب عند اللقاء وعند المفارقة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "870": {
+  "id": 870,
+  "pages": [
+   673
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ثلاث",
+    "meaning": "أي يكرر ثلاث مرات ."
+   }
+  ],
+  "benefits": [
+   "أن الأدب في الاستئذان أن يكرر ثلاثاً فإن أذن له بعدها أو قبلها دخل ، وإن لم يؤذن له فليس له أن يدخل . ولا يزيد على ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 673, 0.18-0.25: «يكرر» (OCR «يكور»), «بعدهـا» stretched with a kashida, written plain; the OCR's «ال» before the final full stop is noise. One bullet: «ولا يزيد على ذلك» stays in the same benefit."
+  ]
+ },
+ "871": {
+  "id": 871,
+  "pages": [
+   673
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن الحكمة من مشروعية الاستئذان أن لا يرى عورة من من يدخل عليه أو يشاهد شيئاً يسوءه أن يراه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "عورة من من يدخل",
+    "correction": "عورة من يدخل",
+    "reason": "«من» printed twice, at the end of one line and the start of the next"
+   }
+  ],
+  "notes": [
+   "The book prints this under the heading «لغة الحديث», but it is a bulleted sentence with no term and colon, and it is a benefit of the hadith (the wisdom of asking permission), not a word meaning; there is no «أفاد الحديث» heading. It is filed as the hadith's one benefit, and meanings are empty. The OCR's colon after «من» was a misreading of the line break. Zoomed on p. 673, 0.40-0.47: «عورة من» ends the line, «من يدخل» starts the next; «يسوءه»."
+  ]
+ },
+ "872": {
+  "id": 872,
+  "pages": [
+   673,
+   674
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أألج",
+    "meaning": "أأدخل من الولوج وهو الدخول ."
+   },
+   {
+    "term": "فعلمه الاستئذان",
+    "meaning": "أي لفظه ."
+   }
+  ],
+  "benefits": [
+   "أن الأدب في الاستئذان ما ذكر من اللفظ ، والسنة تقديم السلام على الاستئذان .",
+   "للبيوت حرمتها في الإسلام فلا يجوز الدخول إليها إلا باذن أهلها .",
+   "تعليم الجاهل ، والحث على التعلم ، والعمل بالعلم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 673, 0.74-0.82: the term and its meaning are printed «أألج» and «أأدخل», both with two hamzated alifs (OCR «األج», «أدخل»). «فعلمـه» stretched with a kashida, written plain. The benefits run on in one paragraph with three bullets: split into three. Zoomed on p. 674, 0.06-0.10: «باذن» is printed without a hamza under the alif."
+  ]
+ },
+ "873": {
+  "id": 873,
+  "pages": [
+   674
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ولم أسلم",
+    "meaning": "أي لم استأذن ."
+   },
+   {
+    "term": "ارجع",
+    "meaning": "أي إلى ما هو خارج عن مكانه ﷺ ."
+   }
+  ],
+  "benefits": [
+   "الأمر بالمعروف ، وتعليم السنن والآداب ، والحث على تطبيقها وعدم التساهل فيها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 674, 0.33-0.37: the term reads «ولم أسلم» (OCR «أسام»): the lam's foot curls toward the meem, the join between them broken in the print; the meaning reads «استأذن» with the hamza. «ارجـــع» stretched with a kashida, written plain. The ﷺ glyph after «مكانه» was left out by the OCR."
+  ]
+ },
+ "874": {
+  "id": 874,
+  "pages": [
+   674,
+   675
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فاستفتح",
+    "meaning": "أي طلب أن يفتح له ."
+   },
+   {
+    "term": "وسائرهن",
+    "meaning": "باقيهن ، أي الخامسة والسادسة والسابعة ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "875": {
+  "id": 875,
+  "pages": [
+   675
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أمشي في ظل القمر",
+    "meaning": "ليخفي سواده في سواد الليل ، لأنه فهم رغبة النبي ﷺ بالانفراد فحتى لا يفوّت عليه ذلك ."
+   },
+   {
+    "term": "مَنْ هذا",
+    "meaning": "سؤاله عنه خشية أن يكون من المنافقين وأعداء الدين ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 675: the term is printed «مَنْ هذا» (fatha and sukun) and «يفوّت» carries a shadda; kept as printed. No benefits: the chapter's are printed after h. 877, which shares them with this one."
+  ]
+ },
+ "876": {
+  "id": 876,
+  "pages": [
+   675
+  ],
+  "see": "وقد تقدم شرحه في الباب / ١٣٧ رقم ١ / ٨٦٤ .",
+  "meanings": [],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The see sentence follows the source note in the same paragraph; its number is printed as a fraction (١ over ٨٦٤), written «١ / ٨٦٤» as in earlier entries. No meanings or benefits printed here; h. 877's benefits are shared with it."
+  ]
+ },
+ "877": {
+  "id": 877,
+  "pages": [
+   676
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فدققت",
+    "meaning": "طرقت ."
+   },
+   {
+    "term": "كرهها",
+    "meaning": "كره الإجابة بما لا يعين المستأذن ."
+   }
+  ],
+  "benefits": [
+   "أن السنة إذا استوضح من يستأذن عليه أن يجيب المستأذن بما يعرف بشخصه ، فإن اشتهر باسمه أجاب به أو كنيته أجاب بها .",
+   "كراهة الإجابة بقوله : أنا أو شخص أو إنسان أو غيره مما لا يعرف بشخصه .",
+   "يجوز لمن اشتبه بشخص في طريق مظلم أو نحوه أن يستوضح عنه ، ويستحب أن يجيبه بما يعرف به شخصه .",
+   "قرع الباب يقوم مقام الاستئذان باللفظ .",
+   "الاستدلال بحديث جبريل عليه السلام من حيث الإفصاح عن اسمه واسم النبي محمد ﷺ ، والاستدلال بحديث أبي ذر وأم هانىء رضي الله عنهما في إقراره عليه الصلاة والسلام لهما بالإفصاح عن اسميهما ، وهو السنُّة ."
+  ],
+  "shared_with": [
+   874,
+   875,
+   876
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is a plain «أفادت الاحاديث :» with no «المتقدمة»/«السابقة». shared_with is 874–876, the chapter's hadith before it (877 is ٤ in the chapter, which starts at 874 = ١); none of them has benefits of its own, and the benefits cite the hadith of Jibril (874), Abu Dharr (875) and Umm Hani (876).",
+   "The OCR had put the source note's second line and the meanings inside the benefits; split out on the scan. «لايعين» is printed with no space after «لا»: written «لا يعين» (the rule for «لا»).",
+   "Zoomed p. 676: «هانىء» is printed with a dotless «ى» before the hamza; «عنهما» and «اسميهما» end in «هما» (the same shape as «لهما» on the same line); «السنُّة» carries a shadda and damma."
+  ]
+ },
+ "878": {
+  "id": 878,
+  "pages": [
+   676,
+   677
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يحب",
+    "meaning": "يرضى به ويثيب عليه ."
+   },
+   {
+    "term": "يكره",
+    "meaning": "لا يثيب عليه ."
+   },
+   {
+    "term": "حقاً",
+    "meaning": "ندب له ندباً مؤكداً ."
+   },
+   {
+    "term": "يرحمك الله",
+    "meaning": "رفع عنك البلاء وكتب لك السلامة وغفر ذنبك ."
+   },
+   {
+    "term": "من الشيطان",
+    "meaning": "أي يرضى عنه الشيطان ويسعى في أسبابه ."
+   },
+   {
+    "term": "ضحك منه",
+    "meaning": "لتغير هيئة المتثائب ."
+   }
+  ],
+  "benefits": [
+   "استحباب تحصيل أسباب العطاس وهي : النشاط ، وخفة البدن الذي ينشأ عن عدم الإفراط في الشبع ، وكراهة تحصيل أسباب التثاؤب وهي : ثقل البدن وتكاسله الناشىء عن كثرة الأكل والتخليط فيه .",
+   "استحباب شكر الله تعالى بعد العطاس على نعمة جليلة لأن العطاس دفع الرطوبات ، وتنشيط الدماغ ، ودفع الأذى ، فيكون سبباً لسلامة الأعضاء .",
+   "أن يقال للعاطس يرحمك الله وهو سنة مؤكدة على الكفاية لمن سمعها وإذا قام بها كل من سمعها فهو أفضل ، وذهب بعض المالكية إلى وجوب ذلك على كل من سمعه يحمد الله تعالى بعد العطاس .",
+   "الحث على دفع التثاؤب بإطباق الفم أو وضع اليد عليه .",
+   "البعد عن كل ما يرضي الشيطان من أفعال قبيحة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR had put the term «حقاً» at the end of the source note, joining its meaning to «يكره»'s; restored on the scan. «لايثيب» and «مايرضي» are printed with no space: written as two words (the rule for «لا»/«ما»).",
+   "Zoomed p. 677: «الناشىء» is printed with a dotless «ى» before the hamza."
+  ]
+ },
+ "879": {
+  "id": 879,
+  "pages": [
+   677
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يهديكم الله",
+    "meaning": "يرشدكم بالإيصال الى ما يرضيه ."
+   },
+   {
+    "term": "بالكم",
+    "meaning": "حالكم وخاطركم ."
+   }
+  ],
+  "benefits": [
+   "أن السنة أن يقول العاطس : الحمد لله ، وعلى من سمعه بعد حمد الله أن يقول له : يرحمك الله ، ويرد العاطس بعدها بقوله : يهديكم الله ويصلح بالكم .",
+   "الزيادة على ما ورد من الأدعية في الحديث غير مشروعة والاتباع خير من الابتداع .",
+   "الحث على مقابلة الدعاء بمثله والمكافأة على الجميل بالجميل مما يدعم الحب والإخاء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "880": {
+  "id": 880,
+  "pages": [
+   677,
+   678
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فشمتوه",
+    "meaning": "قولوا : يرحمك الله ونحوه من التشميت ، وهو الدعاء بالخير والبركة ، وقيل : معناه أبعدك الله عن الشماتة وجنبك ما يشمت به عليك ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR's trailing «الله .» is noise, not printed: dropped. The book prints no benefits for this hadith; h. 881's are headed «أفاد الحديث مع الذي قبله» and cover it."
+  ]
+ },
+ "881": {
+  "id": 881,
+  "pages": [
+   678
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن التشميت يكون لمن حمد الله تعالى بعد عطاسه ، ولا حق لمن لم يحمد الله في ذلك .",
+   "السؤال عن حكمة التصرف وبيان سبب ذلك .",
+   "إكرام من أتى بطاعة ، وإهمال من ترك السنن ، ليشعر بتقصيره ."
+  ],
+  "shared_with": [
+   880
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is «أفاد الحديث مع الذي قبله :», so the benefits are shared with h. 880; the OCR had left «مع الذي قبله» as a benefit. Three bullets split; «سبب» restored (the OCR dropped it); trailing OCR noise «الله .» dropped."
+  ]
+ },
+ "882": {
+  "id": 882,
+  "pages": [
+   678
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "خفض أو غض بها صوته",
+    "meaning": "أي لم يجهر به ."
+   }
+  ],
+  "benefits": [
+   "أن من الأدب في المجالس أن يضع من جاءه العطاس يده أو شيئاً على فمه وأنفه حتى لا يتأثر جليسه بشيء من البصاق أو نحوه .",
+   "خفض الصوت بالعطاس مطلوب وهو من كمال الأدب وعلو في مكارم الأخلاق ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 678, 0.79–0.83: «كمال» is printed with the kaf–mim ligature, «بشيء» with its hamza. Trailing OCR noise «الله .» dropped."
+  ]
+ },
+ "883": {
+  "id": 883,
+  "pages": [
+   679
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يتعاطسون",
+    "meaning": "يتسببون للعطاس أو يتظاهرون به بإخراج صوت يشبهه ."
+   },
+   {
+    "term": "يرجون",
+    "meaning": "يؤملون دعاءه ﷺ ."
+   }
+  ],
+  "benefits": [
+   "لا يدعى بالرحمة إلا للمسلم .",
+   "جواز الدعاء لغير المسلم بالهداية وإصلاح ما عليه من الكفر .",
+   "علم أهل الكتاب بنبوته ﷺ ورسالته باطناً ، ولكن حملهم الكبر على عدم الإقرار ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR read the term «يتعاطسون» as «يتعاطون» and left out both ﷺ glyphs and the tanween of «باطناً»; the last two benefits were joined (bullet lost)."
+  ]
+ },
+ "884": {
+  "id": 884,
+  "pages": [
+   679
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب وضع اليد على الفم عند التثاؤب منعاً من تحقيق غرض الشيطان .",
+   "التزام آداب الإسلام في جميع الحالات لأنها عنوان الكمال والأخلاق .",
+   "ليحرص المسلم على طرد الشيطان ووساوسه ، ويمنعه من إغوائه وتضليله .",
+   "يكره للمتثائب أن يخرج صوتاً من فمه ، روى ابن ماجه أنه ﷺ قال في المتثائب ( ولا يعوي ، فإن الشيطان يضحك منه ) ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft and its crops were wrong: they held the commentary of h. 887–891 (p. 680–682). The commentary of h. 884 is on p. 679 (about 0.55–0.72), right after its matn and before the heading of chapter 143; transcribed from zooms of p. 679 (0.05–0.50, 0.45–0.95, 0.62–0.68, 0.68–0.75). The book gives it no word meanings."
+  ]
+ },
+ "885": {
+  "id": 885,
+  "pages": [
+   680
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "المصافحة",
+    "meaning": "مفاعلة من الصفحة ، والمراد بها الإفضاء بصفحة اليد الى صفحة اليد ."
+   }
+  ],
+  "benefits": [
+   "مشروعية المصافحة لأنها كانت موجودة فيما بين الصحابة رضي الله عنهم وهذا إجماع سكوتي ، وهو حجة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 680 (0.12–0.25): «سكوتي» (OCR «سكوني»), «فيما» (OCR «فيا»: the typeface's ligature of «فيما»), «الى» without hamza as printed."
+  ]
+ },
+ "886": {
+  "id": 886,
+  "pages": [
+   680
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أهل اليمن",
+    "meaning": "لعلهم أصحاب أبي موسى الأشعري رضي الله عنه ."
+   }
+  ],
+  "benefits": [
+   "مشروعية المصافحة بتقرير النبي ﷺ ، وأن أول من أظهرها في الناس هم أهل اليمن ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop stopped a line short; the benefit's last line («في الناس هم أهل اليمن .») read on a zoom of p. 680 (0.44–0.52)."
+  ]
+ },
+ "887": {
+  "id": 887,
+  "pages": [
+   680
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب المصافحة عند اللقاء ، والحث عليها ، وأنها من الأعمال الصالحة التي تكفر صغائر الذنوب ، وأنها مجلبة للمحبة والمودة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "888": {
+  "id": 888,
+  "pages": [
+   681
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ينحني",
+    "meaning": "من الانحناء على هيئة الركوع .",
+    "in_text": "أينْحني"
+   },
+   {
+    "term": "يلتزمه",
+    "meaning": "يعانقه .",
+    "in_text": "أفَيَلتزمُهُ"
+   },
+   {
+    "term": "يقبله",
+    "meaning": "أي من وجهه وبدنه ."
+   }
+  ],
+  "benefits": [
+   "النهي عن الانحناء عند اللقاء وهو من البدع المحرمة .",
+   "كراهة المعانقة مع التقبيل ، أما المعانقة وحدها عند لقاء الغائب فجائزة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 681 (0.11–0.24): the OCR lost the full stop after «يعانقه» and scrambled the second benefit's words; the scan prints «يلتزمه : يعانقه .» and «يقبله : أي من وجهه وبدنه .» as two items, and two bulleted benefits."
+  ]
+ },
+ "889": {
+  "id": 889,
+  "pages": [
+   681
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اذهب بنا إلى هذا النبي",
+    "meaning": "أي لنتبين بعض معجزاته الدالة على نبوته ."
+   },
+   {
+    "term": "تسع آيات بينات",
+    "meaning": "وهي ما جاء في الحديث نفسه عند الترمذي : ألا تشركوا بالله شيئاً ، ولا تسرقوا ، ولا تزنوا ، ولا تقتلوا النفس التي حرم الله إلا بالحق ، ولا تمشوا ببريء إلى ذي سلطان ليقتله ، ولا تسحروا ، ولا تأكلوا الربا ، ولا تقذفوا محصنة ، ولا تولوا الفرار يوم الزحف ، وعليكم خاصة أيها اليهود ألا تعدوا في السبت . أجاب النبي ﷺ عن التسع التي سألوا عنها وهي المشتركة بين المسلمين واليهود ، وزادهم العاشرة الخاصة بهم ، وكانوا قد أضمروا في نفوسهم ، فأجابهم عنها زيادة في الدلالة على المعجزة ."
+   }
+  ],
+  "benefits": [
+   "جواز تقبيل يد أو رجل من يظن بهم التقى والصلاح وترجى بهم البركة حيث فعل ذلك معه ﷺ ولم ينكره ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The sentences «أجاب النبي ﷺ عن التسع … على المعجزة .» follow the second meaning with no term or heading of their own: kept inside it.",
+   "Zoomed p. 681 (0.70–0.80): the benefit's second line begins «بهم البركة» (the OCR dropped «بهم»); «التقى» and «وترجى» end in «ى» as printed. The run-together «ولاتسرقوا» etc. and «ماجاء» are written as two words (the ما/لا rule)."
+  ]
+ },
+ "890": {
+  "id": 890,
+  "pages": [
+   682
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قصة",
+    "meaning": "هي ما رواه أبو داود في أواخر كتاب الجهاد عن ابن أبي ليلى أن ابن عمر حدثه أنه كان في صرية من سرايا رسول الله ﷺ قال : فحاص الناس حيصة فكنت ممن حاص ( وكان هذا في معركة مؤتة ) فلما برزنا قلنا : كيف نصنع وقد فررنا من الزحف وبؤنا بالغضب ؟ فقلنا : ندخل المدينة فننسل منها لنذهب فلا يرانا أحد . قال : فدخلنا فقلنا : لو عرضنا أنفسنا على رسول الله ﷺ فإذا كانت لنا توبة أقمنا ، وإن كان غير ذلك ذهبنا ، قال : فجلسنا لرسول الله ﷺ قبل صلاة الفجر ، فلما خرج قمنا إليه فقلنا : نحن الفرارون ، فأقبل إلينا فقال : بل أنتم العكارون ، وباقيه ما ذكر في الحديث . ورواه الترمذي في الجهاد بمعناه ، ورواه ابن ماجه في الأدب بلفظ : قبلنا يد النبي ﷺ ."
+   },
+   {
+    "term": "فحصنا حيصة",
+    "meaning": "أي جلنا جولة نطلب الفرار .",
+    "in_text": ""
+   },
+   {
+    "term": "برزنا",
+    "meaning": "ظهرنا .",
+    "in_text": ""
+   },
+   {
+    "term": "بؤنا",
+    "meaning": "رجعنا .",
+    "in_text": ""
+   },
+   {
+    "term": "العكارون",
+    "meaning": "أي الكرارون إلى الحرب .",
+    "in_text": ""
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "في صرية",
+    "correction": "في سرية",
+    "reason": "a misprinted letter: «صرية» isn't a word; the story's «سرية من سرايا» (a detachment)"
+   }
+  ],
+  "notes": [
+   "The draft split the story (the meaning of «قصة») at «قال :» after «أحد .»: that «قال» is the story's narrator, not a term, so the story is one meaning, through «قبلنا يد النبي ﷺ .».",
+   "«فحصنا حيصة», «برزنا», «بؤنا» and «العكارون» explain words of the story in Abu Dawud's full narration (quoted in the meaning of «قصة»), not of the hadith's text: in_text is empty.",
+   "The book prints «بؤنا : رجعنا العكارون : أي الكرارون …» with no full stop after «رجعنا»; «العكارون» is the story's word, so it is an item of its own.",
+   "The book prints «فحصناحيصة» set tight with no visible space; written as two words.",
+   "Zoomed on p. 682: «صرية» (ص, clearly), «فننسل», «وبؤنا», «فحصناحيصة», «رجعناالعكارون»."
+  ]
+ },
+ "891": {
+  "id": 891,
+  "pages": [
+   682
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قدم",
+    "meaning": "عاد من سفر ."
+   },
+   {
+    "term": "فقرع",
+    "meaning": "طرق ودق ."
+   },
+   {
+    "term": "يجر ثوبة",
+    "meaning": "لم يضعه موضعه من جسمه ، وهو دليل الإسراع .",
+    "in_text": "يَجُرُّ ثوْبَهُ"
+   }
+  ],
+  "benefits": [
+   "جواز تقبيل واعتناق من قدم من سفر إلا إذا خشي الفتنة ، كالمرأة الأجنبية والأمرد ، وأما النهي الوارد في الحديث الرابع من الباب فيدل على الكراهة لا التحريم .",
+   "الإسراع إلى ملاقاة من يحب إذا شعر بوصوله .",
+   "فضل زيد بن حارثة وحب رسول الله ﷺ له ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.2.term",
+    "printed": "ثوبة",
+    "correction": "ثوبه",
+    "reason": "a misprinted letter: the hadith's word is «ثوبه» (his garment), with the pronoun «ه», not «ة»"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 682: the term is printed «يجر ثوبة», with «ة»."
+  ]
+ },
+ "892": {
+  "id": 892,
+  "pages": [
+   683
+  ],
+  "see": "انظر الحديث في باب استحباب طيب الكلام وطلاقة الوجه رقم ٣ / ٦٩٦ .",
+  "meanings": [],
+  "benefits": [
+   "الحث على طلاقة الوجه والبشر عند اللقاء ، وخاصة إذا كان بعد غياب أو قدوم من سفر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The see's number is printed as a fraction, ٣ over ٦٩٦, written «٣ / ٦٩٦» as in earlier entries."
+  ]
+ },
+ "893": {
+  "id": 893,
+  "pages": [
+   683
+  ],
+  "see": "الحديث تقدم تخريجه وشرحه في باب تعظيم حرمات المسلمين رقم ٤ / ٢٢٧ .",
+  "meanings": [
+   {
+    "term": "الولد",
+    "meaning": "هو كل ما ولد يطلق على الذكر والأنثى والواحد والمثنى والجمع ."
+   }
+  ],
+  "benefits": [
+   "استحباب تقبيل الأطفال تلطفاً بهم ، وأن ذلك عنوان الرحمة في القلب .",
+   "رحمة الله عز وجل للعباد مرتبطة بتراحمهم فيما بينهم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The see's number is printed as a fraction, ٤ over ٢٢٧. The draft's benefits ran on into the next book's heading («كتاب عيادة المريض …»), left out."
   ]
  }
 }

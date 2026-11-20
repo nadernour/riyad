@@ -1,4 +1,230 @@
 {
+ "991": {
+  "id": 991,
+  "pages": [
+   739
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "شفيعاً",
+    "meaning": "أي شافعاً طالباً المغفرة لأصحابه ."
+   },
+   {
+    "term": "لأصحابه",
+    "meaning": "أي القارئين له والعاملين بأحكامه وهديه ."
+   }
+  ],
+  "benefits": [
+   "فضل تلاوة القرآن ، وأن القرآن يشفع لقارئه العامل بما فيه يوم القيامة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "992": {
+  "id": 992,
+  "pages": [
+   740
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "تقدمه",
+    "meaning": "أي تتقدمه ."
+   },
+   {
+    "term": "تُحاجان",
+    "meaning": "تجادلان ."
+   },
+   {
+    "term": "عن صاحبها",
+    "meaning": "أي التالي لسورة البقرة وآل عمران مع التدبر والعمل .",
+    "in_text": "عَنْ صاحِبِهِمَا"
+   }
+  ],
+  "benefits": [
+   "فضل تلاوة القرآن ، وفضل تلاوة سورتي البقرة وآل عمران ، وأنها تجادلان عن التالي لهما العامل بها والتارك لما تنهيان عنه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The term «تُحاجان» is printed with a damma on the ta.",
+   "The term «عن صاحبها» follows the print's matn; v2's hadith text reads «عَنْ صاحِبِهِمَا», given as in_text."
+  ]
+ },
+ "993": {
+  "id": 993,
+  "pages": [
+   740
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "فضل تعلم القرآن الكريم وتجويده كله أو بعضه ، وفضل تعليمه مع الإخلاص في ابتغاء رضاء الله تعالى ، والعمل بما فيه من الأحكام والآداب والأخلاق ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives this hadith no word meanings."
+  ]
+ },
+ "994": {
+  "id": 994,
+  "pages": [
+   740
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ماهر به",
+    "meaning": "أي يجيد تلاوته ويطبق أحكام تجويده ."
+   },
+   {
+    "term": "السفرة",
+    "meaning": "الملائكة الرسل ، لأنهم يسفرون إلى الرسل برسالات ربهم أو الملائكة الكتبة الذين يحصون الأعمال ، لأنهم بكتابتهم سفرة بين الله تعالى وخلقه ."
+   },
+   {
+    "term": "الكرام",
+    "meaning": "لأنهم مطهرون من دنس المعاصي ."
+   },
+   {
+    "term": "البررة",
+    "meaning": "المطيعين من البر وهو الطاعة والإحسان ."
+   },
+   {
+    "term": "يتعتع",
+    "meaning": "أي يتردد عليه في قراءته ويثقل على لسانه .",
+    "in_text": "ويتَتَعْتَعُ"
+   }
+  ],
+  "benefits": [
+   "فضل من يجيد تلاوة القرآن الكريم ويتقن قراءته ، وأنه مع الملائكة السفرة في منازلهم في الآخرة .",
+   "أجر من يتعتع في القرآن ، فإن له أجرين ؛ أجر على قراءته وأجر على تعتعته ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The term is printed «يتعتع»; the hadith's text reads «ويتَتَعْتَعُ», given as in_text."
+  ]
+ },
+ "995": {
+  "id": 995,
+  "pages": [
+   741
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الأترُجة",
+    "meaning": "ضرب من الثمار منظرها جميل وريحها طيب ، كالبرتقال والتفاح والشمام ."
+   },
+   {
+    "term": "التمرة",
+    "meaning": "ثمرة النخل ."
+   },
+   {
+    "term": "الريحانة",
+    "meaning": "كل بقلة طيبة الريح ، كالورد والريحان والياسمين ."
+   }
+  ],
+  "benefits": [
+   "أن حامل القرآن العامل به في درجة عالية ، وذكره حسن عند الله والناس .",
+   "والمؤمن الذي لا يقرأ القرآن طيب عند الله والناس .",
+   "والمنافق الذي يقرأ حسن الظاهر خبيث الباطن .",
+   "والمنافق الذي لا يقرأ القرآن خبيث الظاهر والباطن ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The benefits are four bullets run on in one paragraph; the OCR had joined them into one.",
+   "«الأترُجة»: zoomed (p. 741, 0.43–0.46); the book prints one damma, over the ر, kept there.",
+   "«حسن» in the third benefit is printed with the teeth of the س broken off («حـن», zoomed p. 741, 0.55–0.62): a flaw of the type, not a misprint, written «حسن»."
+  ]
+ },
+ "996": {
+  "id": 996,
+  "pages": [
+   741
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يضع",
+    "meaning": "يخفض ."
+   }
+  ],
+  "benefits": [
+   "الحض على الاهتمام بكتاب الله تعالى تلاوة وفهماً وحفظاً وعملا ، لأن من تمسك بذلك عظم ذكره ، ومن أعرض عنه وأهمله ولم يؤمن به انحط وسقط وخسر الدنيا والآخرة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«وعملا» is printed stretched and with no tanween (zoomed p. 741, 0.84–0.88), unlike «وفهماً وحفظاً» before it: kept as printed."
+  ]
+ },
+ "997": {
+  "id": 997,
+  "pages": [
+   742
+  ],
+  "see": "انظر شرح الحديث وتخريجه في باب الكرم والجود رقم ١ / ٥٤٤ وفي باب فضل الغني الشاكر رقم ٢ / ٥٧٢ .",
+  "meanings": [],
+  "benefits": [
+   "وقد أفاد هنا : تمني حفظ القرآن والمداومة على تلاوته مع التدبر والتفكر ، وامتثال أوامره ونواهيه في كل وقت يتهيا ، أو فرصة تسنح ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Both numbers in the cross-reference are printed as fractions (١ over ٥٤٤, ٢ over ٥٧٢), written «١ / ٥٤٤» and «٢ / ٥٧٢» as in earlier entries; the OCR had dropped them.",
+   "The gloss «« والآناء » : الساعات .» after «متفق عليه» is al-Nawawi's, part of the hadith's text: not transcribed.",
+   "The single benefit opens with «وقد أفاد هنا :» after the bullet, under the heading «أفاد الحديث»: kept inside the benefit, as printed.",
+   "«يتهيا» is printed with no hamza on the alif (zoomed p. 742, 0.42–0.45): kept as printed, a spelling, not a misprint."
+  ]
+ },
+ "998": {
+  "id": 998,
+  "pages": [
+   742
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فتغشته",
+    "meaning": "أي علته وظللته سحابة ."
+   },
+   {
+    "term": "السكينة",
+    "meaning": "طمأنينة ورحمة ."
+   }
+  ],
+  "benefits": [
+   "فضل تلاوة سورة الكهف .",
+   "ظهور الخوارق للصالحين كرامة لهم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The gloss «« الشطن » بفتح الشين المعجمة والطاء المهملة : الحبل .» before the source note is al-Nawawi's, part of the hadith's text: not transcribed.",
+   "The first benefit has no full stop before the second bullet; « .» ends it as the item-end rule says."
+  ]
+ },
+ "999": {
+  "id": 999,
+  "pages": [
+   743
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "الحث على تلاوة القرآن الكريم ، وأن للقارىء بكل حرف من كل كلمة يتلوها حسنة مضاعفة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no word meanings for this hadith."
+  ]
+ },
  "1000": {
   "id": 1000,
   "pages": [
@@ -25,6 +251,194 @@
    "Zoomed on p. 743: the dots of خ are faint or lost in this print («الخرب», «الخالي», «الخير» look like ح); read as خ, as the hadith's «الخرب» and the sense require. «مملوء» (OCR «عملوه») and the benefits' last line were read on a zoom below the crop (0.53–0.72).",
    "«جوفه» is printed with a kashida, written plain."
   ]
+ },
+ "1001": {
+  "id": 1001,
+  "pages": [
+   743,
+   744
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "صاحب القرآن",
+    "meaning": "أي حافظه ، أو حافظ بعضه ، الملازم لتلاوته مع التدبر لآياته والعمل بأحكامه والتأدب بآدابه ."
+   },
+   {
+    "term": "وارتق",
+    "meaning": "أي اصعد درج الجنة بمقدار ما حفظته من آي القرآن ."
+   },
+   {
+    "term": "ورتل",
+    "meaning": "أي اقرأ في الجنة لمجرد التلذذ إذ لا تكليف ولا عمل هناك ."
+   }
+  ],
+  "benefits": [
+   "أن لصاحب القرآن درجات في الجنة بعدد ما يحفظ منه .",
+   "فائدة : أفادت الأحاديث المتقدمة في الباب : الحض على التلاوة والإكثار منها مع التدبر والتأمل والعمل ، والحث على ختم القرآن ، والترغيب في حفظه ، والتأدب بآدابه ، وللاستزادة في هذا الموضوع راجع كتابي الأذكار والتبيان للإمام النووي ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The commentary is on p. 744 (0.07–0.34); the crop of p. 743 shows only the end of the matn and the source note.",
+   "The paragraph «فائدة : …» after the benefit is one more benefit, with its label. It says «أفادت الأحاديث المتقدمة في الباب», but the benefits' heading is «أفاد الحديث», so `shared_with` stays empty.",
+   "«ورتل» and «حفظه» are printed stretched: written plain. «بآدابه،وللاستزادة» and «الموضوعراجع كتابيالأذكار» are printed with narrow or no spaces: written with the usual spacing."
+  ]
+ },
+ "1002": {
+  "id": 1002,
+  "pages": [
+   744
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "تعاهدوا هذا القرآن",
+    "meaning": "واظبوا وحافظوا على تلاوته ."
+   },
+   {
+    "term": "تفلتاً",
+    "meaning": "تخلصاً ."
+   },
+   {
+    "term": "في عقلها",
+    "meaning": "جمع عقال ، وهو حبل يشد به البعير في وسط الذراع ."
+   }
+  ],
+  "benefits": [
+   "أن حافظ القرآن إن تعاهده بالتلاوة مرة بعد أخرى بقي محفوظاً في لوحة قلبه ، وإلا ذهب عنه ونسيه لأنه أسرع ذهاباً من الإبل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft's `see` was a fragment of the source note, not a cross-reference: set to null."
+  ]
+ },
+ "1003": {
+  "id": 1003,
+  "pages": [
+   745
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الإبل المعقلة",
+    "meaning": "الممسوكة بالعقال ."
+   },
+   {
+    "term": "أمسكها",
+    "meaning": "أي استمر إمساكه لها ."
+   }
+  ],
+  "benefits": [
+   "تشبيه صاحب القرآن بصاحب الإبل إن عقلها وحافظ عليها أمن تفلتها ، وإن تركها ضاعت وتعسر تحصيلها ، ووجه الشبه سرعة التفلت والضياع كالإبل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft's `see` was a fragment of the source note, not a cross-reference: set to null.",
+   "Zoomed p. 745 on «سرعة التفلت»: the font's initial sin, as in «استماع» on the same page; the OCR read «مرعة»."
+  ]
+ },
+ "1004": {
+  "id": 1004,
+  "pages": [
+   745
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ما أذن لنبي",
+    "meaning": "( ما ) مصدرية ، والأولى نافية ، والتقدير : إذنه ، أي استماعه ."
+   },
+   {
+    "term": "يتغنى",
+    "meaning": "قال في النهاية : قوله يجهر به في الحديث تفسير لقوله يتغنى ، وقال الشافعي معناه تحسين القراءة وترقيقها ، ويشهد له الحديث الآخر « زينوا القرآن بأصواتكم » ، وكل من رفع صوته ووالاه وصوته عند العرب غناء ، والمعنى : أن الله ما استمع لأحد استماع رضىً كاستماعه لنبي أو غيره من أهل القرآن الصالحين يرتل القرآن متغنياً به ."
+   }
+  ],
+  "benefits": [
+   "أن الله سبحانه وتعالى يعطي الأجر العظيم على حسن الصوت يستخدمه في تلاوة القرآن .",
+   "إباحة تحسين الصوت وتطريبه بالقرآن إن لم يؤد الى التغيير بزيادة حرف أو نقصه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.1.meaning",
+    "printed": "ووالاه وصوته عند",
+    "correction": "ووالاه فصوته عند",
+    "reason": "a letter misprinted: with «وصوته» the sentence «وكل من رفع صوته ووالاه …» has no predicate; al-Nihaya, which the book quotes, reads «فصوته»"
+   }
+  ],
+  "notes": [
+   "Zoomed p. 745: «وصوته» is printed (corrected to «فصوته»), and «رضىً» carries a tanween mark.",
+   "Two bullets in the benefits, which the OCR joined."
+  ]
+ },
+ "1005": {
+  "id": 1005,
+  "pages": [
+   746
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "مزماراً",
+    "meaning": "شبه النبي ﷺ حُسن صوته وحلاوة نغمته بصوت المزمار ."
+   },
+   {
+    "term": "آل داود",
+    "in_text": "آلِ دَاوُودَ",
+    "meaning": "المراد داود نفسه ، وآل مقحمة ، لأن أحداً من آله لم يعط من حسن الصوت كما أعطي النبي داود عليه السلام ."
+   },
+   {
+    "term": "لو رأيتني",
+    "meaning": "جواب « لو » محذوف والتقدير لسرك ذلك ."
+   }
+  ],
+  "benefits": [
+   "استحباب تحسين الصوت بالقرآن ضمن حدود قواعد التجويد ، لأن ذلك يزيد القرآن حلاوة ونفوذاً إلى القلوب ، أما إذا كان في ذلك خروج بالقرآن عن وضعه فهو حرام ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "1006": {
+  "id": 1006,
+  "pages": [
+   746
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بالتين والزيتون",
+    "meaning": "أي قرأ السورة المشتملة عليها ."
+   }
+  ],
+  "benefits": [
+   "أن النبي ﷺ كان حسن الصوت بالقراءة ، وهذا دليل على أن الله كمله بالمحاسن كلها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "1007": {
+  "id": 1007,
+  "pages": [
+   747
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فليس منا",
+    "meaning": "أي ليس من أهل هدينا وطريقتنا ."
+   }
+  ],
+  "benefits": [
+   "أن من الهدي النبوي تحسين الصوت بقراءة القرآن ؛ لأن الصوت الحسن يزيد القرآن حسناً وتأثيراً ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
  },
  "1049": {
   "id": 1049,

@@ -1,4 +1,584 @@
 {
+ "894": {
+  "id": 894,
+  "pages": [
+   683
+  ],
+  "see": "تقدم شرح الحديث وتخريجه في كتاب السلام رقم ٣ / ٨٤٧ .",
+  "meanings": [],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints only the cross-reference (number as a fraction, ٣ over ٨٤٧): no meanings or benefits. Its commentary is all on p. 683; p. 684 starts with h. 895."
+  ]
+ },
+ "895": {
+  "id": 895,
+  "pages": [
+   684
+  ],
+  "see": "تقدم تخريج وشرح الحديث في باب تعظيم حرمات المسلمين رقم ١٧ / ٢٤٠ .",
+  "meanings": [
+   {
+    "term": "حق المسلم على المسلم خمس",
+    "meaning": "أي خمسة أشياء يتأكد على المسلم أن يقوم بها نحو إخوانه المسلمين ."
+   },
+   {
+    "term": "الدعوة",
+    "meaning": "الوليمة ."
+   }
+  ],
+  "benefits": [
+   "تأكيد هذه الأمور المذكورة ، وأنها من حق المسلم على المسلم .",
+   "في مراعاة هذه الحقوق بين المسلمين تحصل فيما بينهم المودة والألفة وتشتد أواصر الأخوة ، وهي واجبة عند مالك رحمه الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The see's number is printed as a fraction, ١٧ over ٢٤٠."
+  ]
+ },
+ "896": {
+  "id": 896,
+  "pages": [
+   684,
+   685
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "إن الله عز وجل يقول",
+    "meaning": "هذا من الحديث القدمي ."
+   },
+   {
+    "term": "كيف أعودك",
+    "meaning": "استبعاد إمكان لحوق المرص به سبحانه المرتب عليه العيادة ."
+   },
+   {
+    "term": "أما",
+    "meaning": "أداة استفتاح ، لتنبيه المخاطب إلى أهمية ما بعده ."
+   },
+   {
+    "term": "لوجدتني عنده",
+    "meaning": "لوجدتني عالماً بعيادتك له فأثيبك عليها ."
+   },
+   {
+    "term": "استطعمتك",
+    "meaning": "طلبت منك الطعام لعبدي السائل ."
+   },
+   {
+    "term": "لوجدت ذلك عندي",
+    "meaning": "أي ثوابه المضاعف ."
+   },
+   {
+    "term": "استسقيتك",
+    "meaning": "طلبت منك السقيا بلسان عبدي ."
+   }
+  ],
+  "benefits": [
+   "الحث على عيادة المريض وإطعام الطعام وبذل الماء لمن يحتاج إليه ، وأن الله تعالى قد تكفل بالأجر والمثوبة يوم القيامة .",
+   "الخلق كلهم عيال الله عز وجل فمن أحسن إليهم وأعانهم أجزل الله تعالى له الأجر والعطاء ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "القدمي",
+    "correction": "القدسي",
+    "reason": "a letter misprinted: «القدمي» isn't a word; the hadith qudsi is meant"
+   },
+   {
+    "part": "meanings.1.meaning",
+    "printed": "المرص",
+    "correction": "المرض",
+    "reason": "the dot of ض dropped: «المرص» isn't a word here; the meaning is that illness can't reach Him"
+   }
+  ],
+  "notes": [
+   "The book prints «استطعمتك . طلبت منك …» with a full stop where the colon belongs; «استطعمتك» is a word of the hadith, so it is a term of its own.",
+   "Zoomed on p. 685, 0.07–0.13: «القدمي» is printed with a closed م, not the teeth of س; «المرص» has no dot. Zoomed on 0.17–0.23: «استسقيتك» (the OCR read «استسقتك»); «فأثيبك» with the dots of ث."
+  ]
+ },
+ "897": {
+  "id": 897,
+  "pages": [
+   685
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فكوا",
+    "in_text": "وَفُكُّوا",
+    "meaning": "أطلقوا مراحه ، وقد يراد بالعاني من غلبه الدين ، قال في النهاية : وكل من ذل واستكان وخضع فقد عنا يعنو فهو عانٍ ."
+   }
+  ],
+  "benefits": [
+   "بالإضافة إلى ما سبق :",
+   "الحث على إطلاق الأسرى وقضاء الديون عن الغارمين وتخليص من وقع في ملمة .",
+   "الاسلام دين التعاون وهذه الأمور المذكورة في الحديث من التعاون بين المسلمين والله تعالى يقول : ( وتعاونوا على البر والتقوى ) ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "مراحه",
+    "correction": "سراحه",
+    "reason": "a letter misprinted: «أطلقوا سراحه» (set him free) is meant"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 685, 0.46–0.52: the book prints «مراحه»; on 0.52–0.58: «عانٍ» with a kasra tanween.",
+   "The benefits open, right after the heading and before the first bullet, with «بالإضافة إلى ماسبق :». It is kept as its own item ending with the colon, as earlier rounds did in content/commentary/01.json; the heading is «أفاد الحديث», so shared_with stays []."
+  ]
+ },
+ "898": {
+  "id": 898,
+  "pages": [
+   685
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أخاه",
+    "meaning": "أي في الإسلام ."
+   },
+   {
+    "term": "خرفة",
+    "meaning": "اسم ما يقطع من الثمار حين يدرك ، والجني ما يقطع من الثمار ما دام غضاً ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "No benefits of its own: h. 899's heading «أفاد الحديث : مع الذي قبله :» gives them for both.",
+   "The draft dropped «ما» in «والجني ما يقطع»; restored from the scan."
+  ]
+ },
+ "899": {
+  "id": 899,
+  "pages": [
+   686
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "غدوة",
+    "meaning": "ما بين صلاة الصبح وطلوع الشمس ."
+   },
+   {
+    "term": "صلى عليه",
+    "meaning": "استغفر ودعا له بالرحمة ."
+   },
+   {
+    "term": "عشية",
+    "meaning": "آخر النهار ، والمراد بذكر الغدوة والعشية عموم الأوقات ."
+   }
+  ],
+  "benefits": [
+   "فضل عيادة المريض والحث عليها ، تحصيلاً لمزيد ثوابها ."
+  ],
+  "shared_with": [
+   898
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is printed «أفاد الحديث : مع الذي قبله :», i.e. «أفاد الحديث مع الذي قبله», so the benefits are shared with h. 898 (which has none of its own); the OCR had left «مع الذي قبله» as a benefit, removed as in content/commentary/06.json.",
+   "Zoomed on p. 686, 0.43–0.51: «تحصيلاً» is printed with a tanween."
+  ]
+ },
+ "900": {
+  "id": 900,
+  "pages": [
+   686,
+   687
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "غلام",
+    "meaning": "هو من كان دون سن البلوغ ، وقد يطلق على الكبير مجازاً . قيل : اسمه عبد القدوس ."
+   },
+   {
+    "term": "أنقذه",
+    "meaning": "خلصه ونجاه ."
+   }
+  ],
+  "benefits": [
+   "جواز عيادة الكافر ، واستحباب عرض الإسلام عليه .",
+   "فضل النبي ﷺ ومدى تأثيره على النفوس والقلوب بإخلاصه وإشفاقه على الناس .",
+   "فضل صحبة الصالحين وما تجنيه من ثمرات في الدنيا قبل الآخرة .",
+   "الطمع في هداية العاصين والكفار ، وعدم اليأس منهم .",
+   "حث الآباء على إرادة الخير والهدى لأبنائهم ، حتى ولو كانوا غير قائمين به ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«قيل : اسمه عبد القدوس .» follows the meaning of «غلام»; «قيل» is not a word of the hadith but the start of a remark on the boy's name, so it stays inside that meaning (the draft made it a term).",
+   "The crop of p. 687 (0.07–0.12) stopped a line short; zoomed on 0.06–0.17 for the last line «غير قائمين به .». The draft had «وعدم» out of place and had lost the bullets; the five benefits split as printed."
+  ]
+ },
+ "901": {
+  "id": 901,
+  "pages": [
+   687
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اشتكى",
+    "meaning": "صيغته افتعل من الشكاية وهي المرض ."
+   },
+   {
+    "term": "القرحة",
+    "meaning": "ما يخرج بالبدن من بثور وآثار الحرق وغيرها ، والقرح أيضاً الجرح ."
+   },
+   {
+    "term": "قال بأصبعه",
+    "in_text": "قالَ النَّبِيُّ ﷺ بِأُصْبُعِهِ",
+    "meaning": "عمل ، وفيه إطلاق القول على الفعل ."
+   },
+   {
+    "term": "سفيان",
+    "meaning": "عالم ثقة ، من تابعي التابعين ، توفي سنة ١٩٨ه ."
+   },
+   {
+    "term": "سبابته",
+    "meaning": "الأصبع التي تلي الإبهام ."
+   },
+   {
+    "term": "وقال",
+    "meaning": "أي النبي ﷺ ."
+   },
+   {
+    "term": "تربة",
+    "meaning": "تراب ."
+   },
+   {
+    "term": "بريقه",
+    "meaning": "أي ممزوجة بريقه ، وهو ماء الفم ."
+   },
+   {
+    "term": "سقيمنا",
+    "meaning": "مريضنا ."
+   }
+  ],
+  "benefits": [
+   "أنه ﷺ كان يرجو الشفاء للمرضى ويداوي بريقه والتراب الطاهر ويكون الشفاء بإذن الله تعالى ، وهذا خاص بالنبي ﷺ ومعجزة له .",
+   "الأخذ بأسباب التداوي ، وسؤال أهل العلم بذلك ، مع جزم الاعتقاد بأن الشفاء لا يكون إلا من عند الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints «سقيمنا . مريضنا .» with a full stop where the colon belongs; «سقيمنا» is a word of the hadith, so it is a term of its own.",
+   "The first benefit follows the heading with no bullet; the second has one.",
+   "Zoomed on p. 687, 0.57–0.66: «تربة» (the OCR read «توبة»), «ممزوجة», «١٩٨ه» as printed."
+  ]
+ },
+ "902": {
+  "id": 902,
+  "pages": [
+   688
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بعض أهله",
+    "meaning": "أي أزواجه ."
+   },
+   {
+    "term": "يمسح",
+    "meaning": "أي وجه المعاد ."
+   },
+   {
+    "term": "رب الناس",
+    "meaning": "مربيهم بالنعم والمخرج لهم من العدم ."
+   },
+   {
+    "term": "الباس",
+    "meaning": "الشدة في كل شيء ، ومثله البأس ."
+   },
+   {
+    "term": "الشافي",
+    "meaning": "أي الحقيقي ."
+   },
+   {
+    "term": "لا شفاء",
+    "meaning": "أي يتحقق ."
+   },
+   {
+    "term": "يغادر",
+    "meaning": "يترك ."
+   },
+   {
+    "term": "سقماً",
+    "meaning": "مرضاً ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 688, 0.22–0.32: the book prints «ومثله البأس . الشافي : أي الحقيقي .لاشفاء : أي يتحقق .», so «الشافي» and «لا شفاء» are items of their own (the draft had run them into «الباس»); «لاشفاء» written as two words by the «لا» rule.",
+   "No benefits heading: the book gives this hadith word meanings only."
+  ]
+ },
+ "903": {
+  "id": 903,
+  "pages": [
+   688
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ثابت",
+    "meaning": "البناني تابعي جليل ."
+   },
+   {
+    "term": "ألا",
+    "meaning": "أداة عرض واستفتاح ."
+   },
+   {
+    "term": "برقية",
+    "meaning": "تعويذة وهي ما يقرأ على من به مرض أو آفة ."
+   },
+   {
+    "term": "بلى",
+    "meaning": "حرف جواب ."
+   }
+  ],
+  "benefits": [
+   "جواز الرقية من كل الآلام ، وقد أجمع العلماء على جوازها إذا تحقق فيها شروط ثلاثة : ١ - أن تكون بكلام الله تعالى ، أو أسمائه أو صفاته . ٢ - وأن تكون باللغة العربية ، أو بما يعرف معناه من غيرها . ٣ - وأن يعتقد أن الرقية لا تؤثر بذاتها وإنما تؤثر وتنفع بتقدير الله تعالى ، ويستحب أن تكون بالالفاظ الواردة في الأحاديث ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The one benefit includes the book's numbered list of three conditions (١ - … ٢ - … ٣ - …), printed as indented lines under the same bullet, joined into one text."
+  ]
+ },
+ "904": {
+  "id": 904,
+  "pages": [
+   689
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب الدعاء للمعاد بالشفاء وتخصيصه بذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "905": {
+  "id": 905,
+  "pages": [
+   689
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يجده",
+    "meaning": "يحسه ."
+   },
+   {
+    "term": "أعوذ",
+    "meaning": "أعتصم وأتحصن ."
+   },
+   {
+    "term": "احاذر",
+    "meaning": "أحذر ، والحذر ، الاحتراز مما يخاف ."
+   }
+  ],
+  "benefits": [
+   "استحباب رقية الإنسان لنفسه بما ذكر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 689, 0.38–0.48: the term is printed «احـــاذر» (bare alif, stretched with tatweel), written «احاذر»; the meaning reads «مما يخاف», not the draft's «بما يخاف».",
+   "The crops listed for this hadith (p. 689, 0.56–0.91, and p. 690, 0.06–0.57) run on through the matn and commentary of h. 906 and 907 and into h. 908: its own commentary ends on p. 689 at about 0.48. Only that part is transcribed here; the crop boundaries look like a tool problem."
+  ]
+ },
+ "906": {
+  "id": 906,
+  "pages": [
+   689
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لم يحضر أجله",
+    "meaning": "لم يأت وقت موته ولم تتم مدة عمره .",
+    "in_text": "لَمْ يَحْضُرْهُ أَجَلُهُ"
+   },
+   {
+    "term": "العظيم",
+    "meaning": "أي الذي لا يعظم عليه مطلوب ."
+   },
+   {
+    "term": "عافاه الله",
+    "meaning": "رزقه الله الصحة والشفاء من المرض ."
+   }
+  ],
+  "benefits": [
+   "فضل الدعاء عند المريض ، وأثره تحقق الشفاء لمن قيل عنده ذلك إذا صدر القول عن صدق وصلاح ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "907": {
+  "id": 907,
+  "pages": [
+   690
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "طهور",
+    "meaning": "أي مرضك هذا تطهير لنفسك من الذنوب والآثام ."
+   }
+  ],
+  "benefits": [
+   "استحباب الدعاء للمريض بما يبشره بالأجر ، والتكلم بما يطمئنه ويدخل عليه السرور ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "908": {
+  "id": 908,
+  "pages": [
+   690
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يؤذيك",
+    "meaning": "يصيبك بمكروه ."
+   },
+   {
+    "term": "كل نفس",
+    "meaning": "خبيثة أمارة بالسوء ."
+   },
+   {
+    "term": "عين حاسد",
+    "meaning": "معيانٌ يحسدك على ما أنت فيه من نعمة ."
+   }
+  ],
+  "benefits": [
+   "جواز الإخبار عن المرض من غير تضجر .",
+   "واستحباب الرقية بما ذكر .",
+   "بشرية الرسول ﷺ ، وأنه يطرأ عليه ما يطرأ على الإنسان من مرض وتأثر من أذى الناس وحسدهم ، وهو في حاجة الى عافية الله تعالى وشفائه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints a full stop after «يؤذيك» where the colon of the term belongs («يؤذيك . يصيبك بمكروه .»); read as the term «يؤذيك» and its meaning. Zoomed on p. 690: the dot is a full stop, not a colon.",
+   "Zoomed on «معيان»: the book prints a tanween damma on its nun, kept.",
+   "Three bullets in the benefits; the OCR lost them."
+  ]
+ },
+ "909": {
+  "id": 909,
+  "pages": [
+   691
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لم تطعمه",
+    "meaning": "لم تأكله ، وهو كناية عن عدم دخوله جهنم ."
+   }
+  ],
+  "benefits": [
+   "فضل قول هذه الجمل ، لما تدل عليه من الإيمان بالله عز وجل وتوحيده وتعظيمه ، وتخصيصه بالشكر على النعم ، واللجوء إليه في كل شيء ، وحسن التوكل عليه ، فيستحب قولها للمريض والإكثار منها حتى إذا مات كانت عنوان حسن الخاتمة بفضل الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "910": {
+  "id": 910,
+  "pages": [
+   691,
+   692
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بارئاً",
+    "meaning": "اسم فاعل من البرء ، أي قريباً من البرء بحسب ظنه ، أو قالها تفاؤلاً ."
+   }
+  ],
+  "benefits": [
+   "استحباب السؤال عن المريض إذا تعذرت عيادته لغلبة مرض ونحوه ، لأنه مما يدخل السرور عليه إذا علم .",
+   "يستحب لمن سئل عن المريض أن يجيب بما يدخل السرور على السائل والمريض ويطمئن نفوسهما ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 691: «بارئاً» and «البرء» (hamza on its own after the ra, as in «شيء»), which the OCR read «بارثاً» and «البره».",
+   "Zoomed on p. 692: «نفوسهما» (the OCR's «نفوسها . ا»)."
+  ]
+ },
+ "911": {
+  "id": 911,
+  "pages": [
+   692
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الرفيق الأعلى",
+    "meaning": "قيل : حضرة الحق جل جلاله ، لأن من أسمائه الرفيق ، وقيل : الملائكة المقربون والأنبياء والشهداء والصالحون ، كقول يوسف عليه السلام : ( والحقني بالصالحين ) ."
+   }
+  ],
+  "benefits": [
+   "تفريغ القلب من التعلق في الدنيا عند نزول علامات الموت وتعلقه بجانب الحق راجياً الرحمة والغفران ، وهذا منه ﷺ طلب لزيادة الحسنات ورفع الدرجات وتعليم لأمته ، وليس معناه وقوع الذنوب منه فإنه معصوم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 692: the verse is printed «( والحقني بالصالحين )» with a bare alif (the book's «أفاد» on the next line shows its hamza clearly); kept as printed, the book's usual spelling, not a misprint.",
+   "The OCR read the ﷺ glyph after «وهذا منه» as «ما»."
+  ]
+ },
+ "912": {
+  "id": 912,
+  "pages": [
+   692,
+   693
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بالموت",
+    "meaning": "أي متلبساً بأماراته ."
+   },
+   {
+    "term": "غمرات الموت",
+    "meaning": "جمع غمر ، وهي شدته ."
+   },
+   {
+    "term": "سكرات الموت",
+    "meaning": "جمع سكرة ، وهي شدته التي تفقد الوعي ."
+   }
+  ],
+  "benefits": [
+   "أن الأنبياء يألمون بالمرض ويشعرون بشدته عليهم ، شأنهم في ذلك شأن الناس ، وكان المرض الذي أصابه ﷺ حمىً شديدة ، كان يلطّف حرها بمسح وجهه بالماء البارد .",
+   "أن مفارقة الروح الجسد لا تخلو من شدة ، فيستحب الدعاء لتهوين ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 692: «جمع غمر» as printed (not «غمرة»), kept.",
+   "Zoomed on p. 693: a small mark after «حمى», over its end, read as a tanween fatha («حمىً»); one over the kashida between ط and ف of «يلطف», read as a shadda («يلطّف»). Both are blurred blobs in the scan.",
+   "The draft's closing «ومن» is not in the book: the commentary ends with «لتهوين ذلك .» before the next chapter's heading."
+  ]
+ },
  "913": {
   "id": 913,
   "pages": [
@@ -40,6 +620,1181 @@
    "The draft had the benefits as one item with the next chapter's heading (149) run in; split at the printed bullet before «ويفيد», and the heading dropped.",
    "«ماذكره» is printed with the narrow gap of a non-joining alif; written «ما ذكره» as two words.",
    "Zoomed on p. 693: «ترجمه» is printed with ه (corrected), «مات بحد» (OCR «مجد»), «رجمت» (OCR «رحمت»), «وليها» (printed with a kashida; OCR «ولها»), «يوجب» at the line's end (OCR moved it to the source note). A speck between «عليها» and «الحد» is not a mark."
+  ]
+ },
+ "914": {
+  "id": 914,
+  "pages": [
+   694
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "توعك",
+    "meaning": "الوعك : أذى الحمى ووجعها ."
+   }
+  ],
+  "benefits": [
+   "ما أفادته ترجمة الباب ، وأن الأنبياء ينالهم الوجع ، والحكمة في ذلك زيادة في درجاتهم عند ربهم تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "915": {
+  "id": 915,
+  "pages": [
+   694
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بلغ بي ما ترى",
+    "meaning": "اشتد بي المرض حتى ظهر أثره علي ."
+   }
+  ],
+  "benefits": [
+   "جواز قول المريض : اشتد بي المرض والألم .",
+   "محبة النبي ﷺ لأصحابة وتفقده لأحوالهم ورفقه بهم .",
+   "جواز الوصية بالثلث والإيماء إلى طلب النقص فقد قال له رسول الله ﷺ : « الثلث والثلث كثير » ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "لأصحابة",
+    "correction": "لأصحابه",
+    "reason": "ta marbuta for the pronoun ha: «لأصحابة» isn't a word here (zoomed: the print has the two dots)"
+   }
+  ],
+  "notes": [
+   "The print runs the benefits on one line with bullets and no full stops; the OCR lost the second bullet, so «محبة النبي ﷺ …» is its own benefit.",
+   "Benefit 0: the print sets «اشتدبي» with no visible space; د doesn't join, so it is written «اشتد بي» as in the meaning above."
+  ]
+ },
+ "916": {
+  "id": 916,
+  "pages": [
+   694,
+   695
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "وا رأساه",
+    "meaning": "يقوله المتوجع من ألم رأسه .",
+    "in_text": "وارأْسَاهُ"
+   }
+  ],
+  "benefits": [
+   "جواز شكوى المريض فقد اشتكت عائشة رضي الله عنها وجع رأسها وشكى رسول الله ﷺ وجع رأسه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The meaning ends at the foot of p. 694 with no full stop (zoomed); « .» added as every item ends."
+  ]
+ },
+ "917": {
+  "id": 917,
+  "pages": [
+   695
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "فضل شهادة لا إله إلا الله وأن من كان آخر كلامه لا إله إلا الله دخل الجنة ، إما ابتداء أو بعد مجازاته على معاصيه ، وأنه لا يخلد في نار جهنم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The benefit ends «في نار جهنم» with no full stop before h. 918 (zoomed); « .» added as every item ends."
+  ]
+ },
+ "918": {
+  "id": 918,
+  "pages": [
+   695
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب تلقين المحتضر الشهادتين ليتمكن من النطق بها قبل موته ، وذهب جماعة إلى حمل الحديث على ظاهره ، واستحبوا تلقين الميت الشهادتين بعد الموت وبعد الدفن عند سؤال الملكين ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "919": {
+  "id": 919,
+  "pages": [
+   696
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "شق بصره",
+    "meaning": "شخص وصار ينظر إلى شيء يرتد إليه طرفه ."
+   },
+   {
+    "term": "ضجّ ناس من أهله",
+    "meaning": "رفعوا أصواتهم بالبكاء عليه ."
+   },
+   {
+    "term": "واخلفه",
+    "meaning": "أي كن له خلفاً ."
+   },
+   {
+    "term": "عقبه",
+    "meaning": "أي فيمن يكون من أهله من بعده ."
+   },
+   {
+    "term": "الغابرين",
+    "meaning": "الباقين ."
+   },
+   {
+    "term": "وافسح",
+    "meaning": "وسع ."
+   }
+  ],
+  "benefits": [
+   "تغميض عيني الميت عند الموت حتى لا تبقى عيناه شاخصتين .",
+   "أن البصر يتبع الروح .",
+   "النهي عن الدعاء على النفس عند موت أحد من الأهل لأن الملائكة تؤمن على ما يقوله أهل الميت .",
+   "عيادة أهل الفضل لإخوانهم والدعاء لهم عند الموت وبعده .",
+   "وفيه ما يدل على نعيم القبر وانتفاع الميت بالدعاء له ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The print heads the word meanings «أفاد الحديث» instead of «لغة الحديث» (zoomed), then heads the benefits «أفاد الحديث» again; the first paragraph is word meanings, so it is filed as meanings.",
+   "Meaning 0 reads «ينظر إلى شيء يرتد إليه طرفه» (zoomed, no «لا»); the sense of شخوص suggests «لا يرتد», but the wording isn't plainly broken, so it is kept as printed with no correction. Worth a check by the owner.",
+   "«ضجّ» has a shadda on the print, kept."
+  ]
+ },
+ "920": {
+  "id": 920,
+  "pages": [
+   697
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اعقبني",
+    "meaning": "أبدلني وعوضني ."
+   }
+  ],
+  "benefits": [
+   "استحباب التكلم بخير عند المريض من الدعاء له ولغيره وتلقينه الشهادتين وتلاوة سورة يس .",
+   "ويحرم التكلم بشر من الدعاء على النفس فإن الملائكة تؤمن على ما يقول أهل الميت .",
+   "ويستحب أن يقول : اللهم أجرني في مصيبتي واخلف لي خيراً منها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints «اعقبني ، أبدلني وعوضني .»: a comma, not a colon, after the term. «اعقبني» is the hadith's word and «أبدلني وعوضني» its meaning, so it is split as a term and its meaning.",
+   "Zoomed on p. 696, 0.75–1.00: only the matn's end and the source note are printed there, so the commentary is on p. 697 alone.",
+   "The draft lost «ويحرم» and joined the three bullets into one benefit; they are three on the scan. «أجـرني» is stretched: written plain."
+  ]
+ },
+ "921": {
+  "id": 921,
+  "pages": [
+   697
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أجرني",
+    "meaning": "أعطني الأجر ."
+   },
+   {
+    "term": "واخلف لي",
+    "meaning": "عوضني خيراً منها ."
+   },
+   {
+    "term": "إلا آجره",
+    "meaning": "أي أثابه ."
+   }
+  ],
+  "benefits": [
+   "ما أفاد سابقه وفيه الوعد بحسن الخلف على المصيبة إما في الدنيا أو في الآخرة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The meanings are printed with bullets between them, which end the items. The book prints no full stop between «عوضني خيراً منها» and «إلا آجره : أي أثابه», but «إلا آجره» is the hadith's, so it is an item of its own.",
+   "Zoomed on p. 697, 0.51–0.58: the term is «أجرني» (the OCR's «اأجرني»). The benefits' line order was reversed in the draft."
+  ]
+ },
+ "922": {
+  "id": 922,
+  "pages": [
+   698
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قبضتم",
+    "meaning": "أخذتم ."
+   },
+   {
+    "term": "ثمرة فؤاده",
+    "meaning": "خلاصة قلبه ."
+   },
+   {
+    "term": "استرجع",
+    "meaning": "قال : إنا لله وإنا إليه راجعون ."
+   }
+  ],
+  "benefits": [
+   "الترغيب في الصبر عند المصيبة ، والرضا بالقضاء والقدر ، والوعد الحسن بالجزاء الأعظم في الجنة على الصبر والرضا ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«استرجـع» is stretched: written plain. The draft's trailing «ا» was not text."
+  ]
+ },
+ "923": {
+  "id": 923,
+  "pages": [
+   698
+  ],
+  "see": "وقد سبق شرح الحديث في باب الصبر رقم ٨ / ٣٢ .",
+  "meanings": [
+   {
+    "term": "صفيه",
+    "meaning": "حبيبه لأنه يصافيه وده ويخلصه حبه ."
+   }
+  ],
+  "benefits": [
+   "الترغيب في الصبر واحتساب الأجر عند المصيبة والوعد بالجنة على ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The cross-reference «وقد سبق شرح الحديث في باب الصبر رقم ٨ / ٣٢ .» is printed at the end of the benefit, in the same paragraph: moved to `see`, as earlier entries do. Its number is printed as a fraction, ٨ over ٣٢, written «٨ / ٣٢» as in earlier entries; the OCR read it as «ا». «رقـــم» is stretched: written plain."
+  ]
+ },
+ "924": {
+  "id": 924,
+  "pages": [
+   698,
+   699
+  ],
+  "see": "وانظر الحديث في باب الصبر رقم ٥ / ٢٩ .",
+  "meanings": [
+   {
+    "term": "إحدى بنات النبي",
+    "meaning": "هي زينب ."
+   },
+   {
+    "term": "أجل مسمى",
+    "meaning": "وقت معلوم لا يتقدم ولا يتأخر ."
+   }
+  ],
+  "benefits": [
+   "استحباب الوصية بالصبر عند المصيبة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The benefits are printed at the top of p. 699, which the crops missed; read on a zoom of p. 699, 0.00–0.32: «• استحباب الوصية بالصبر عند المصيبة ، وانظر الحديث في باب الصبر رقم ٥ / ٢٩ .». The cross-reference is moved to `see` (as earlier entries do), and the benefit ends with « .» where the book prints «،» before it. The number is printed as a fraction, ٥ over ٢٩. The chapter heading «١٥٣ - باب جواز البكاء على الميت …» follows: left out."
+  ]
+ },
+ "925": {
+  "id": 925,
+  "pages": [
+   699
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن البكاء على الميت وما يشعر به قلب الإنسان من حزن مباحان لا حرج فيهما ، وإنما الحرج أن يصدر عن الإنسان شي مما حرم الشرع من ندب أو نياحة أو مبالغة في رفع الصوت بالبكاء ، وكذلك يحرم الضجر والسخط على القضاء والقدر . والندب : تعداد محاسن الميت . والنياحة : رفع الصوت بتعداد محاسن الميت . ولا يؤاخذ الميت بالندب عليه والنياحة إلا إذا أوصى بذلك ، أو علم أنهم ينوحون ولم ينههم عن ذلك ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "شي مما",
+    "correction": "شيء مما",
+    "reason": "a letter dropped: the hamza of «شيء» isn't printed (a gap shows where it would be)"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 699, 0.75–0.81: «قلب الإنسان» is printed broken, like «قلب ا' سان», the letters «لإن» not inked; read as «الإنسان», the same word as later in the line. «شي» is printed without its hamza, with a gap after it: kept, with a correction. «مما» (the OCR's «ما») and «ينههم» (the OCR's «ينهم») are clear on the zoom.",
+   "The book prints no word meanings for this hadith. The whole paragraph is under one bullet, so it is one benefit. The p. 700 crop shows only the page number."
+  ]
+ },
+ "926": {
+  "id": 926,
+  "pages": [
+   700
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ابن ابنته",
+    "meaning": "أي زينب ."
+   },
+   {
+    "term": "فاضت عيناه",
+    "meaning": "كثر دمعها حتى سال .",
+    "in_text": "فَفَاضَتْ عَيْنا"
+   },
+   {
+    "term": "ما هذا",
+    "meaning": "سؤال عن سبب بكائه وحكمته ."
+   },
+   {
+    "term": "هذه رحمة",
+    "meaning": "أي البكاء على الميت من بواعث الرحمة والشفقة في القلب ."
+   }
+  ],
+  "benefits": [
+   "جواز البكاء على الميت من غير عويل وصراخ ، لأن البكاء مظهر من مظاهر رقة القلب ورحمته ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints «سال .ماهذا :» with the full stop: «ما هذا» is a meaning of its own, which the OCR had joined to the one before."
+  ]
+ },
+ "927": {
+  "id": 927,
+  "pages": [
+   701
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يجود بنفسه",
+    "meaning": "يُخرجها ، وكان موت إبراهيم سنة عشر من الهجرة ، وكان عمره ثمانية عشر شهراً وإبراهيم من مارية القبطية ."
+   },
+   {
+    "term": "تذرفان",
+    "meaning": "تدمعان ."
+   }
+  ],
+  "benefits": [
+   "ما أفادته الأحاديث السابقة من وجوب التسليم والرضى بقضاء الله وقدره ، ولا جناح في بكاء العين وحزن القلب من غير سخط ولا جزع ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Only the source note is on p. 700; the meanings and benefits are at the top of p. 701, which no crop showed: read on a zoom of p. 701, 0.04–0.33. So pages is [701].",
+   "Zoomed: «يُخرجها» has a damma printed on the ya; «وكانموت» is printed run together, written as two words.",
+   "The heading is «أفاد الحديث» and the benefit is printed as «ما أفادته الأحاديث السابقة …», so shared_with stays empty."
+  ]
+ },
+ "928": {
+  "id": 928,
+  "pages": [
+   701
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فكتم عليه",
+    "meaning": "أي رأى منه سوءاً فستر عليه ."
+   }
+  ],
+  "benefits": [
+   "وجوب كتم عورات الميت إن رأى شيئاً منه كسواد وجه أو تشويه خلقة .",
+   "وإنه يكافىء على ذلك فيغفر ذنوب أربعين مرة أذنب بها . ولا بأس بذكر أحوال الميت إن كان فاسقاً ليكونْ زجراً عن مثل فسقه وبدعته .",
+   "ولا بأس بذكر محاسن الميت كإشراق وجهه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop stopped a line short (at «ولا باس»); the last line «بذكر محاسن الميت كإشراق وجهه .» was read on a zoom of p. 701, 0.47–0.64.",
+   "Zoomed: «وإنه» is printed with a gap where the nun should be (only «وإ» and «ـه» are inked, a type defect, not a different word); written «وإنه». «يكافىء» has the hamza on the line; «ليكونْ» has a sukun printed on the nun; «بأس» has its hamza.",
+   "«أذنب بها .ولا بأس» has a small full stop, not a bullet, so the sentence on the fasiq stays in the second benefit; bullets come before «وإنه» and the last «ولا بأس»."
+  ]
+ },
+ "929": {
+  "id": 929,
+  "pages": [
+   702
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قيراط",
+    "meaning": "القيراط نصف دانق والدانق سدس درهم ، وهذا تقريب للفهم لما كان الإنسان يعرف القيراط ويعمل العمل في مقابلته ، وعد من جنس ما يعرف وضرب له المثل بما يعلم وإلا فالقيراط كما جاء تفسيره في الحديث شيء عظيم ."
+   }
+  ],
+  "benefits": [
+   "الترغيب في تشييع الجنائز ودفن الميت وهذا من فروض الكفاية ومن حقوق المسلمين بعضهم على بعض ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: «دانق» and «والدانق» are printed with nun (the OCR read «دائق»)."
+  ]
+ },
+ "930": {
+  "id": 930,
+  "pages": [
+   702
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "إيماناً",
+    "meaning": "تصديقاً بالوعد الوارد فيه ."
+   },
+   {
+    "term": "احتساباً",
+    "meaning": "إخلاصاً لله تعالى وامتثالاً لأمر الدين ، وطلباً للثواب ، لا لشيء آخر من أغراض الدنيا ."
+   }
+  ],
+  "benefits": [
+   "الترغيب بتشييع الجنازة من حين خروجها من البيت إلى أن تدفن ، فإن ذلك أعظم للأجر وأقرب لتطييب خاطر أهل الميت ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: «لشيء» has no kasra under it (the hamza only); «لتطييب» is printed with two ya."
+  ]
+ },
+ "931": {
+  "id": 931,
+  "pages": [
+   702
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "كراهية اتباع النساء للجنائز ، وهذا قول جمهور العلماء ، وذلك لأن مبنى أمر النساء على الستر وعدم الاختلاط ، واتباع الجنائز قد يعرضهن للكشف والاختلاط .",
+   "اتباع الجنائز للنساء مكروه إذا لم يؤد إلى محرم وإلا فهو حرام ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives no word meanings for this hadith.",
+   "A bullet before «اتباع الجنائز للنساء» starts a second benefit, which the OCR had joined to the first.",
+   "Zoomed: a small stroke after the zay of «للجنائز» in the first benefit looks like a stray fleck, not a fatha (a fatha would be wrong there); not kept."
+  ]
+ },
+ "932": {
+  "id": 932,
+  "pages": [
+   703
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أمة",
+    "meaning": "جماعة ."
+   },
+   {
+    "term": "شفعوا",
+    "meaning": "قبلت شفاعتهم والشفاعة طلب المغفرة للميت وهي في الاصل من الشفع أي الزواج وهي ضم جاه إلى جاه لحصول المقصود ."
+   }
+  ],
+  "benefits": [
+   "استحباب تكثير المصلين على الجنازة لما في ذلك من نفع للميت بالدعاء له ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.1.meaning",
+    "printed": "أي الزواج",
+    "correction": "أي الزوج",
+    "reason": "a letter added: الشفع is the pair (الزوج, as against الوتر), not marriage (الزواج)"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 703, 0.30-0.39: the print reads «أي الزواج» clearly; corrected to «الزوج»."
+  ]
+ },
+ "933": {
+  "id": 933,
+  "pages": [
+   703
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن الشفاعة خاصة بالمؤمنين دون الكافرين شريطة أن يكون الشفعاء من أهل الشفاعة ، وأن يكون المشفوع له من أهلها ، وقد تكون شفاعتهم مقبولة في نجاته من عذاب القبر أو عذاب الآخرة ، أو للتخفيف عنه من عذابها . والله أعلم ."
+  ],
+  "shared_with": [
+   932
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is printed «أفاد الحديث : مع سابقه :», i.e. the benefits are for this hadith with the one before it, as «أفاد الحديث والذي قبله»: shared_with [932]. «مع سابقه» is part of the heading and left out.",
+   "The book gives no word meanings for this hadith."
+  ]
+ },
+ "934": {
+  "id": 934,
+  "pages": [
+   704
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "تقال الناس",
+    "meaning": "رآهم قليلين ."
+   },
+   {
+    "term": "جزأهم ثلاثة أجزاء",
+    "meaning": "جعلهم ثلاثة صفوف .",
+    "in_text": "جزَّأَهُمْ عَلَيْها ثَلاثَةَ أَجْزَاءٍ"
+   },
+   {
+    "term": "أوجب",
+    "meaning": "وجبت له الجنة ."
+   }
+  ],
+  "benefits": [
+   "استحباب جعل المصلين على الجنازة ثلاثة صفوف أو أكثر وإن كانوا قلة ، ليظهروا بمظهر الكثرة في إقبالهم على الله وطلب الشفاعة لأخيهم ، ولا منافاة بين الأحاديث في تعيين المئة والأربعين أو الثلاثة صفوف ، فإن العدد لا مفهوم له وإنما المقصود الكثرة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book leaves out the full stop between «جعلهم ثلاثة صفوف» and «أوجب :» (zoomed on p. 704, 0.14-0.22); «أوجب» is the hadith's word, so it is an item of its own and the one before ends with « .».",
+   "Crop 1 (p. 703) shows only the matn's end; the commentary is all on p. 704."
+  ]
+ },
+ "935": {
+  "id": 935,
+  "pages": [
+   705
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "جنازة",
+    "meaning": "الميت على السرير ."
+   },
+   {
+    "term": "نزله",
+    "meaning": "ضيافته وإكرامه بالعفو والأجر ."
+   },
+   {
+    "term": "مدخله",
+    "meaning": "قبره ."
+   },
+   {
+    "term": "واغسله",
+    "meaning": "اغسل ذنوبه ."
+   },
+   {
+    "term": "بالماء والثلج والبرد",
+    "meaning": "المراد طهر ذنوبه بعموم أنواع رحمتك ومغفرتك ."
+   },
+   {
+    "term": "ونقه",
+    "meaning": "نظفه وطهره ، والدنس : الوسخ ."
+   },
+   {
+    "term": "وأبدله",
+    "meaning": "عوضه ."
+   },
+   {
+    "term": "أعذه",
+    "meaning": "أجره وخلصه ."
+   }
+  ],
+  "benefits": [
+   "وجوب صلاة الجنازة ، واستحباب الدعاء له بهذا الدعاء الجامع لملاك الخير كله .",
+   "أن الدعاء ينفع الميت وأن نعيم القبر وعذابه حق ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book leaves out two full stops at line ends (zoomed on p. 705, 0.45-0.57): after «بالعفو والأجر» before «مدخله :», and after «عوضه» before «أعذه :». Both are the hadith's words, so each is an item of its own and the one before ends with « .».",
+   "«والدنس : الوسخ» follows a comma, not a full stop, so it stays inside the meaning of «ونقه».",
+   "The OCR had the end of the first benefit («لملاك الخير كله») after the second; on the scan it is the first benefit's continuation, printed before the second bullet on the same line."
+  ]
+ },
+ "936": {
+  "id": 936,
+  "pages": [
+   706
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "شاهدنا",
+    "meaning": "حاضرنا ."
+   },
+   {
+    "term": "لا تحرمنا أجره",
+    "meaning": "أي لا تمنعنا ثواب الصبر على المصيبة ."
+   },
+   {
+    "term": "ولا تفتنا",
+    "meaning": "أي لا توقعنا في المحن والابتلاء ."
+   }
+  ],
+  "benefits": [
+   "ما أفاده سابقه من المبالغة في الدعاء بما يشمل الأحياء والأموات وأنه خير ما يكرم به الإنسان : الحياة على الإسلام ، والموت على الإيمان ، والسلامة من الفتن ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The benefit opens «ما أفاده سابقه»: kept as a benefit, not a shared heading, so shared_with stays []."
+  ]
+ },
+ "937": {
+  "id": 937,
+  "pages": [
+   706
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أخلصوا له الدعاء",
+    "meaning": "أحسنوه واجعلوه خالصاً لله تعالى ، وأقله اللهم اغفر له ."
+   }
+  ],
+  "benefits": [
+   "وجوب الدعاء للميت فلا تصح صلاة الجنازة إذا خلت من الدعاء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 706, 0.63-0.70: the print shows no space in «أخلصواله» and «اللهماغفر»; written as two words each (a space after a final alif can't be told from a lost one; «اللهم اغفر» is two words). «لله» was read «الله» by the OCR; the scan has «لله».",
+   "Crops 1-4 run on into h. 938 and 939 and their commentary: left out, they are other hadith."
+  ]
+ },
+ "938": {
+  "id": 938,
+  "pages": [
+   707
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ربها",
+    "meaning": "مربيها بنعمتك ."
+   },
+   {
+    "term": "هديتها",
+    "meaning": "أوصلتها ."
+   },
+   {
+    "term": "قبضت",
+    "meaning": "أخذت ."
+   },
+   {
+    "term": "الروح",
+    "meaning": "جسم لطيف مشتبك بالبدن ، وقيل : الله أعلم به .",
+    "in_text": "روحها"
+   },
+   {
+    "term": "بسرها",
+    "meaning": "بما كانت تسره وتضمره من إيمان ونية ."
+   },
+   {
+    "term": "وعلانية",
+    "meaning": "بما تظهره من عمل وطاعة .",
+    "in_text": "وعلانيتها"
+   },
+   {
+    "term": "جئنا",
+    "meaning": "حضرنا .",
+    "in_text": "جئناك"
+   },
+   {
+    "term": "شفعاء",
+    "meaning": "شافعين ."
+   }
+  ],
+  "benefits": [
+   "استحباب الدعاء للميت بهذه الألفاظ الجامعة لضروب الخير ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints «قبضت أخذت .» with no colon after «قبضت» (zoomed: p. 707, 0.11–0.20). «قبضت» is a word of the hadith (قَبَضْتَ) and follows a full stop, so it is made an item of its own, as the doc does where a full stop is lost; the colon isn't added to the text.",
+   "The draft had dropped «جسم» at the start of the meaning of «الروح» (it begins the next printed line), and left the next hadith's first words in the benefit; both fixed."
+  ]
+ },
+ "939": {
+  "id": 939,
+  "pages": [
+   707
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "في ذمتك",
+    "meaning": "في ضمانك أو في عهدك ."
+   },
+   {
+    "term": "حبل جوارك",
+    "meaning": "أي في كنف حفظك وطلب مغفرتك ."
+   },
+   {
+    "term": "فقه فتنة القبر",
+    "meaning": "نجّه من عذاب القبر ."
+   },
+   {
+    "term": "أهل الوفاء والحمد",
+    "meaning": "أهل العطاء والشكر ."
+   }
+  ],
+  "benefits": [
+   "حرص الرسول ﷺ على اختيار الدعوات الجامعة لخير أصحابه وتعليماً لأمته ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 707, 0.53–0.62: «نجّه» is printed with a shadda."
+  ]
+ },
+ "940": {
+  "id": 940,
+  "pages": [
+   708
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب تطويل الدعاء للميت بعد التكبيرة الرابعة على على خلاف ما عليه الناس من تقليل الدعاء والإسراع بالسلام بعد التكبيرة الرابعة ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "الرابعة على على خلاف",
+    "correction": "الرابعة على خلاف",
+    "reason": "«على» is printed twice, at the end of one line and the start of the next"
+   }
+  ],
+  "notes": [
+   "The book prints no word meanings for this hadith.",
+   "The crops listed for this hadith (p. 708, 0.28–0.91) showed the next chapter's heading and h. 941 instead: its commentary is at the top of p. 708 (0.00–0.32), read on a zoom. The tool's crop for it looks misplaced."
+  ]
+ },
+ "941": {
+  "id": 941,
+  "pages": [
+   708
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب الإسراع بالجنازة بما لا يشق على من يتبعها ولا يحرك الميت .",
+   "بيان ما يصير اليه حال الميت من خير أو شر وهذا من الأمور الغيبية ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no word meanings for this hadith.",
+   "The two benefits are joined in the draft; the book separates them with a bullet, which ends the first."
+  ]
+ },
+ "942": {
+  "id": 942,
+  "pages": [
+   709
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يا ويلها",
+    "meaning": "يا هلاكها ."
+   },
+   {
+    "term": "لصعق",
+    "meaning": "لغشي عليه أو لهلك ."
+   }
+  ],
+  "benefits": [
+   "أن للميت إدراكاً خاصاً بعد الممات الله أعلم به .",
+   "إن نطق الجنازة كما ورد في الحديث ، إما حقيقة وليس ذلك بمستحيل على قدرة الله تعالى ، وإما كناية عن لسان الحال بمعنى أنه لو قدر لها أن تنطق لكانت تقول ذلك ، والمعنى الأول أقرب لظاهر الحديث ، وإنما أخفى الله عن الناس ما يكون عليه حال الأموات ليحقق الاختيار والإرادة الحرة في الكسب والعمل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed p. 709, 0.10–0.16: «الممات» (the draft had «المات»), and no colon in «الله أعلم به». Zoomed 0.16–0.29: «لكانت» and «ما يكون»."
+  ]
+ },
+ "943": {
+  "id": 943,
+  "pages": [
+   709
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "معلقة",
+    "meaning": "موقوفة ."
+   },
+   {
+    "term": "يقضى",
+    "meaning": "يؤدى ."
+   }
+  ],
+  "benefits": [
+   "وجوب الإسراع بأداء الدين عن الميت من تركته ، وهو مقدم على كل الحقوق المتعلقة بتركته بعد تجهيزه .",
+   "وأن نفس المؤمن سوف تظل محبوسة عن مقامها الكريم لا يحكم لها بنجاة ولا هلاك حتى يقضى دينها .",
+   "وبعض العلماء حمل هذا الحديث على ما إذا عصى بالاستدانة أو قصر بالوفاء ، ولا ينافي هذا أن رسول الله ﷺ توفي ودرعه مرهونة عند يهودي بطعام لأهله ، لأن الرهن في يد المرتهن يقوم مقام حقه فكأنه لا دين عليه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The three benefits are separated by bullets in the book; the draft joined them and dropped the ﷺ glyph after «رسول الله»."
+  ]
+ },
+ "944": {
+  "id": 944,
+  "pages": [
+   710
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يعوده",
+    "meaning": "يزوره ."
+   },
+   {
+    "term": "حدث فيه الموت",
+    "meaning": "بدأ فيه الموت بالشروع بالنزع ."
+   },
+   {
+    "term": "آذنوني",
+    "meaning": "أي إذا مات فأعلموني ."
+   },
+   {
+    "term": "جيفة",
+    "meaning": "جثة ."
+   }
+  ],
+  "benefits": [
+   "وجوب الشروع بتجهيز الميت بعد تيقن وفاته ويحرم تأخيره لغير سبب ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR read «جنة» for «جثة» and dropped «سبب» at the start of the last line; both read on the crop."
+  ]
+ },
+ "945": {
+  "id": 945,
+  "pages": [
+   710,
+   711
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بقيع الغرقد",
+    "meaning": "مقبرة أهل المدينة ، والغرقد : نوع من شجر العضاة ."
+   },
+   {
+    "term": "مخصرة",
+    "meaning": "عصاة معوجة الرأس ."
+   },
+   {
+    "term": "نكس",
+    "meaning": "خفض صوته ."
+   },
+   {
+    "term": "ينكت",
+    "meaning": "ينكش ويضرب ."
+   },
+   {
+    "term": "كتب",
+    "meaning": "علم الله تعالى أو سجل في اللوح المحفوظ ."
+   },
+   {
+    "term": "نتكل",
+    "meaning": "نعتمد على ما هو مكتوب ."
+   },
+   {
+    "term": "ميسر لما خلق له",
+    "meaning": "الانسان خلق ليعمل والعمل الذي يريده ميسر له سواء كان خيراً أو شراً ، فالسعداء يسيرون في درب السعادة ، والاشقياء يسيرون في درب الشقاوة ."
+   }
+  ],
+  "benefits": [
+   "استحباب الموعظة عند القبر لأنه حينئذ تكون أنفع لأن رؤية الموت ترقق القلوب .",
+   "وفيه أن الله عالم بمصائر الناس من سعادة وشقاوة ، وعلم الله هذا لا يتعلق بالإجبار على الأعمال ولكنه علم مسبق بأن فلاناً سيعمل باختياره عمل الصالحين فيكون من الأشقياء ، وما دام علم الله غيب من الانسان فلا يصح أن يترك العمل اتكالاً على علم الله ، بل الواجب أن يسعى الانسان لكسب الخير فإن الله قدره على ذلك وأوجبه عليه وسيحاسبه على عمله الاختياري لا على علمه سبحانه بما سيعمل عبده ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "علم الله غيب",
+    "correction": "علم الله غيباً",
+    "reason": "broken grammar: the predicate of «ما دام» is accusative («غيباً»)"
+   }
+  ],
+  "notes": [
+   "The OCR joined the two benefits (the bullet before «وفيه» was lost) and read «حرب» for «درب» in the meanings; fixed from the crop. «ماهو» is printed run together; written «ما هو» by the rule.",
+   "Benefit 1 reads «سيعمل باختياره عمل الصالحين فيكون من الأشقياء» as printed (zoomed p. 711, 0.13–0.26): the print seems to have lost words (e.g. «فيكون من السعداء ، أو عمل الأشقياء»), but what is missing can't be read off the page, so no correction is proposed. Worth a look by the owner.",
+   "«والاشقياء» in the meanings is printed without hamza, «الأشقياء» in the benefits with it; both kept."
+  ]
+ },
+ "946": {
+  "id": 946,
+  "pages": [
+   711
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "اسألوا له التثبيت",
+    "in_text": "وسلوا له التثبيت",
+    "meaning": "أي اطلبوا من الله تعالى أن يثبت لسانه عند سؤال الملكين له في قبره ."
+   }
+  ],
+  "benefits": [
+   "استحباب الوقوف عند القبر بعد الدفن والدعاء للميت بأن يثبته الله بالقول الثابت حين يسأله الملكان ، فالمؤمن يلهمه الله الحجة ويقول : الله ربي والاسلام ديني . وأما الكافر والمنافق فيقول : ها ها لا أدري ، كما ، ثبت في الحديث .",
+   "وأفاد أن سؤال الملكين للميت في القبر حق ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The term «اسألوا له التثبيت» is printed so; the hadith's text has «وسلوا له التثبيت», given as in_text.",
+   "The OCR joined the two benefits; the bullet before «وأفاد» is on the crop. The stray comma in «كما ، ثبت» is printed and kept."
+  ]
+ },
+ "947": {
+  "id": 947,
+  "pages": [
+   712
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أستأنس",
+    "meaning": "أشعر بالأنس ."
+   },
+   {
+    "term": "أراجع به",
+    "meaning": "أجيب به ."
+   }
+  ],
+  "benefits": [
+   "استئناس الميت بدعاء إخوانه وأهله له عند قبره ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed «استئناس» (p. 712, 0.44–0.475): the hamza is printed on its seat; the OCR read «استناس»."
+  ]
+ },
+ "948": {
+  "id": 948,
+  "pages": [
+   712,
+   713
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "افتلتت",
+    "meaning": "خرجت بسرعة ، والمراد ماتت فجأة ."
+   }
+  ],
+  "benefits": [
+   "مشروعية الصدقة عن الميت وأنه ينتفع بذلك ، ولا ينافي هذا قوله تعالى ( وأن ليس للانسان إلا ما سعى ) لأن الآية في الكفار والانسان عام أريد به الخاص ، وقيل ليس له إلا ما سعى عدلاً وأما فضلا فالله أعظم وأكرم يعفو عن السيئة ويضاعف الحسنة ويثيب المؤمن بما يدعو له المؤمنون ويتصدق عند الاقربون ، ولما كان الوالد متسبباً بوجود الولد كان كأنه من عمله فيثاب بفعله ، ويؤيد هذا المعنى ما ورد عنه ﷺ ( إذا مات ابن آدم انقطع عمله إلا من ثلاث : صدقة جارية ، أو علم ينتفع به ، أو ولد صالح يدعو له ) الحديث الآتي ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "ويتصدق عند الاقربون",
+    "correction": "ويتصدق عنه الاقربون",
+    "reason": "a dotted letter misprinted: the relatives give charity «عنه» (on his behalf), «عند» makes no sense here"
+   }
+  ],
+  "notes": [
+   "The OCR put the benefit's first line inside the meaning, dropped the ﷺ glyph after «عنه» and turned the verse's closing bracket; fixed from the crop. «ماسعى» is printed run together; written «ما سعى» by the rule.",
+   "Zoomed p. 713, 0.05–0.29: «فضـــلا» is printed stretched with no tanween (written «فضلا»), «عدلاً» with it. The last line ends «الحديث الآتي» with no full stop visible; « .» added as every item ends."
+  ]
+ },
+ "949": {
+  "id": 949,
+  "pages": [
+   713
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "انقطع عمله",
+    "meaning": "أي لزوال التكليف بالموت ولخروجه من عالم الدنيا الى البرزخ ولم يعد أهلا للعمل والتكليف ."
+   },
+   {
+    "term": "صدقة جارية",
+    "meaning": "صدقة مستمرة ."
+   }
+  ],
+  "benefits": [
+   "ثبوت وصول الثواب الى الميت بهذه الأمور الثلاثة لأنه كان المتسبب لها فكان كأنه لا يزال يزاولها .",
+   "الحث على عمل الخير الدائم بعد الوفاة .",
+   "بيان فضل العلم ونشره وتعليمه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR left the benefits' first line as an empty-term meaning and joined the three benefits; split by the bullets on the crop. «النواب» read «الثواب». Zoomed «أهلا» (p. 713, 0.52–0.56): no tanween printed."
+  ]
+ },
+ "950": {
+  "id": 950,
+  "pages": [
+   714
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أثنوا عليها شراً",
+    "meaning": "مجاز مرسل علاقته التضاد ، ولعله كان مجاهراً بفسقه أو بدعته لأن الثناء لا يكون إلا في الخير ."
+   }
+  ],
+  "benefits": [
+   "ثناء المؤمنين الخلص على مؤمن شهادة له بطيب الباطن وحسن الظاهر ، وإذا كان كذلك كان من شهدوا له من أهل الجنة . وكذلك إذا شهدوا على آخر بفساد الباطن وسوء الظاهر كان ذلك دليلاً على أنه من أهل النار لان المؤمنين حقاً الذين لا يتبعون الهوى هم شهداء الله ينطقهم بالحق ويلهمهم ما هو صواب ، وفي هذا غاية التزكية منه ﷺ . أما شهادة الفساق بالخير أو الشر فليست بمعتبرة . وأما قوله ﷺ : ( اذكروا محاسن موتاكم وكفوا عن مساويهم ) فمحمول على المؤمنين ، أما من كان كافراً أو مجاهراً بالمعاصي فلا يحرم ذكر أعماله السيئة تحذيراً منها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop (p. 714, 0.24–0.45) cut the commentary at both ends: its start and its last lines were read on zooms of p. 714, 0.00–0.27 and 0.42–0.64.",
+   "Zoomed on «فلا يحرم»: it is «يحرم». The OCR's trailing «امة» was noise and is dropped; two ﷺ glyphs the OCR left out are written."
+  ]
+ },
+ "951": {
+  "id": 951,
+  "pages": [
+   715
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "وجبت",
+    "meaning": "أي ثبت ما قيل عنه واستحق عليه الجزاء ."
+   }
+  ],
+  "benefits": [
+   "كما أفاده الحديث السابق وقال العلماء : يندب لمن مرت به جنازة أن يدعو لها ويثني خيراً إن كان الميت أهلاً لذلك لكنه بلا إطراء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The heading is plain «أفاد الحديث»; the one benefit begins «كما أفاده الحديث السابق», so shared_with stays empty."
+  ]
+ },
+ "952": {
+  "id": 952,
+  "pages": [
+   715
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لم يبلغوا الحنث",
+    "meaning": "أي الذنب ، عبر به عن البلوغ لأنه سببه ."
+   }
+  ],
+  "benefits": [
+   "فضل من مات له أولاد صغار فصبر واحتسب فإنه لعظم شفقته عليهم ورحمته بهم فإن الله يرحمه ويدخله الجنة بفضل رحمة الله لهؤلاء الصغار ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "953": {
+  "id": 953,
+  "pages": [
+   715,
+   716
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "تحلة القسم",
+    "meaning": "مصدر حلل اليمين إذا كفّرها : أي يمر على النار ليحقق القسم الوارد في الآية ( وإن منكم إلا واردها ) ."
+   }
+  ],
+  "benefits": [
+   "أن المؤمن الذي يموت له ثلاثة أولاد فيحتسب ويصبر ويرضى بقضاء الله وقدره لا تمسه النار ، وإن وردها على الصراط لا يؤذيه لظاها إن كان من أهل السعادة وإنما يجتازها كلمح البصر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints a shadda on «كفّرها»."
+  ]
+ },
+ "954": {
+  "id": 954,
+  "pages": [
+   716
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فاجعل لنا",
+    "meaning": "أي عيّن لنا ."
+   },
+   {
+    "term": "تقدم ثلاثة من الولد",
+    "meaning": "أي تقدمهم للدفن بعد أن ماتوا ."
+   },
+   {
+    "term": "الولد",
+    "meaning": "يشمل الذكر والأنثى لأنه كل منها مولود ."
+   }
+  ],
+  "benefits": [
+   "حق المرأة في العلم فإنها مكلفة شرعاً والعلم واجب عليها ليصلح به أمر دينها ودنياها وتكون عضواً صالحاً ونافعاً في المجتمع .",
+   "تواضع النبي ﷺ واستجابته لطلب المرأة ، وحرصه على تعليم النساء ما يخصهن من الامور .",
+   "البشارة بالجنة لمن فقدت من أبنائها أو بناتها ثلاثاً أو اثنين .",
+   "تعليم المرأة ما ينفعها مشروع بشرط عدم الخلوة والبعد عن أسباب الفتنة ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.2.meaning",
+    "printed": "كل منها مولود",
+    "correction": "كل منهما مولود",
+    "reason": "the pronoun refers to two (الذكر والأنثى), so the dual «منهما» is meant; the print has «منها»"
+   }
+  ],
+  "notes": [
+   "The draft had put the meanings in `see` (the tool took them as part of the source note) and the four benefits in one; split here per the scan. The book prints a shadda on «عيّن». Zoomed on «كل منها مولود» (p. 716, 0.53–0.59): «منها» as printed."
+  ]
+ },
+ "955": {
+  "id": 955,
+  "pages": [
+   717,
+   718
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الحجر",
+    "meaning": "ديار ثمود وهم قوم صالح ، وهي بين الشام والمدينة ، ومرورهم بها لما توجهوا مع النبي ﷺ الى غزوة تبوك في السنة العاشرة من الهجرة ."
+   },
+   {
+    "term": "قنع رأسه",
+    "meaning": "ألقى عليه القناع وهو الغطاء .",
+    "in_text": "قَنَّعَ رَسُولُ اللهِ ﷺ رَأْسَهُ"
+   },
+   {
+    "term": "جاز الوادي",
+    "meaning": "قطعه وجاوزه .",
+    "in_text": "أَجَازَ الوَادِي"
+   }
+  ],
+  "benefits": [
+   "أن الإنسان إذا مر بديار قوم كافرين أخذهم الله بالعذاب عليه ان يسرع الخطا حتى يتجاوزها ، وأن يشتغل بالتفكير في أمرهم وما حل بهم مما يستوجب البكاء مخافة أن يكون حاله كحالهم ، فإنه إن لم نتفكر فيما يوجب البكاء في حال المرور في تلك الديار نكون قد شابهناهم في الإهمال وفساد القلب ، ولذلك نهينا عن مجالسة الظالمين ومساكنتهم ومؤاكلتهم كما قال تعالى : ( ولا تركنوا الى الذين ظلموا فتمسكم النار ) ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no full stop after «من الهجرة» before «قنع رأسه :»; «قنع رأسه» is the hadith's words, so it starts a new meaning and the one before ends with « .».",
+   "Zoomed on «فيما» (p. 717, 0.735–0.775): the meem is a small loop between the ya and the alif, as in «لما» on the same page, so it reads «فيما», not «فيا».",
+   "Zoomed on «ومؤاكلتهم» (p. 717, 0.80–0.84): printed «ومؤا كلتهم» with the lam joined to the next letter; the gap after the alif is the non-joining alif.",
+   "The draft's «كتاب آداب السفر» was the next chapter's heading: left out."
   ]
  }
 }

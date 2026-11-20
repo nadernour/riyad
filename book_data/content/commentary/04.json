@@ -1,4 +1,695 @@
 {
+ "779": {
+  "id": 779,
+  "pages": [
+   624,
+   625
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "البياض",
+    "meaning": "الثياب البيض ، وعبر عنها بالبياض مبالغة فكأن البياض أصبح عينها ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "780": {
+  "id": 780,
+  "pages": [
+   625
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أظهر",
+    "meaning": "لأنها ابعد عن مخالطة الدنس لنقائها .",
+    "in_text": "أطهر"
+   },
+   {
+    "term": "أطيب",
+    "meaning": "لأنها ابعد عن الخيلاء الذي يكون بلبس الملونات غالباً ."
+   }
+  ],
+  "benefits": [
+   "استحباب لبس الأبيض من الثياب ، وخاصة في أيام الجمع والمناسبات ، إلا في الاعياد فالأفضل لبس الجديد إن وجد ، وإن كان أبيض فهو أحسن .",
+   "استحباب تكفين الموتى بالكفن الأبيض ."
+  ],
+  "shared_with": [
+   779
+  ],
+  "corrections": [
+   {
+    "part": "meanings.0.term",
+    "printed": "أظهر",
+    "correction": "أطهر",
+    "reason": "a dot added: the hadith's word is «أطهر» (purer), as the meaning «أبعد عن مخالطة الدنس» shows"
+   }
+  ],
+  "notes": [
+   "Zoomed on the term (p. 625): printed «أظهر» with the dot of ظ.",
+   "Both «ابعد» printed without a hamza (zoomed, p. 625); kept as printed.",
+   "Heading «أفاد الحديث : • والذي قبله :»: shared with 779."
+  ]
+ },
+ "781": {
+  "id": 781,
+  "pages": [
+   625
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "مربوعاً",
+    "meaning": "ليس قصيراً ولا مفرطاً في الطول ، وإلى الطول أقرب ."
+   },
+   {
+    "term": "حلة",
+    "meaning": "ثوب له ظهارة وبطانة من جنس واحد ، أو هي ثوبان من جنس واحد ، أشبه ما يسمى بالطقم الآن ."
+   },
+   {
+    "term": "قط",
+    "meaning": "أي في الزمان الماضي ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "782": {
+  "id": 782,
+  "pages": [
+   626
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الأبطح",
+    "meaning": "مسيل الوادي ، وهو وادي المحصب ."
+   },
+   {
+    "term": "قبة",
+    "meaning": "خيمة ."
+   },
+   {
+    "term": "أدم",
+    "meaning": "جمع أديم ، وهو الجلد المدبوغ ."
+   },
+   {
+    "term": "بوضوئه",
+    "meaning": "الماء المعد ليتوضأ به ."
+   },
+   {
+    "term": "ناضح ونائل",
+    "meaning": "مبتل برشاش وآخذ منه ، وذلك بعد استعماله ﷺ ."
+   },
+   {
+    "term": "ركزت",
+    "meaning": "غرزت ."
+   },
+   {
+    "term": "بين يديه",
+    "meaning": "من وراء العنزة ."
+   }
+  ],
+  "benefits": [
+   "جواز لبس الأحمر القاني واستعماله للرجال ، وجواز التبرك بآثار الصالحين .",
+   "استحباب التفات المؤذن برأسه يميناً عند حي على الصلاة ، ويساراً عند حي على الفلاح .",
+   "يستحب لمن يصلي في صحراء وضع شاخص أمامه يجعله عن يمينه أو عن يساره بينه وبينه متر ونصف ، تقريباً ولا يمتنع المرور أمام المصلي من بعد السترة ."
+  ],
+  "shared_with": [
+   781
+  ],
+  "corrections": [],
+  "notes": [
+   "The book prints no full stop before «ركزت :» (after «استعماله ﷺ») nor before «بين يديه :» (after «غرزت»); both are words of the hadith, so each starts an item of its own, and the items before them end with « .».",
+   "Heading «أفاد الحديث : والذي قبله :»: shared with 781.",
+   "Zoomed on «متر ونصف ، تقريباً» and «بآثار» (p. 626): as printed."
+  ]
+ },
+ "783": {
+  "id": 783,
+  "pages": [
+   626,
+   627
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "جواز ارتداء الثياب الخضر ، بل تستحب لأنها لباس أهل الجنة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft's `see` was the end of the source note (Tirmidhi's chapter and number), not a cross-reference: set to null. The book gives no word meanings."
+  ]
+ },
+ "784": {
+  "id": 784,
+  "pages": [
+   627
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints only the source note after this hadith: no meanings or benefits. Its benefits are those of h. 785, headed «أفاد الحديث : والذي قبله»."
+  ]
+ },
+ "785": {
+  "id": 785,
+  "pages": [
+   627
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أرخى",
+    "meaning": "أنزل ."
+   },
+   {
+    "term": "طرفها",
+    "meaning": "وهي ما يسمى بالعذبة .",
+    "in_text": "طرفيها"
+   },
+   {
+    "term": "خطب",
+    "meaning": "في يوم الجمعة وعلى المنبر كما في رواية أخرى لمسلم ."
+   }
+  ],
+  "benefits": [
+   "جواز لبس الأسود من الثياب ، وقال العلماء يستحب لبس العمامة السوداء عند النصر على الأعداء ."
+  ],
+  "shared_with": [
+   784
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading reads «أفاد الحديث : والذي قبله :», so the benefits cover h. 784 too; the draft had «والذي قبله» as a benefit. The term is printed «طرفها»; the hadith has «طرفيها»."
+  ]
+ },
+ "786": {
+  "id": 786,
+  "pages": [
+   627,
+   628
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "جواز استعمال الثياب القطنية .",
+   "الكفن المستحب للرجال ثلاثة أثواب ، والأفضل أن تكون بيضاء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft joined two benefits: the book prints a bullet before «الكفن». No word meanings: the hadith's words are explained in Riyad's own text after the matn."
+  ]
+ },
+ "787": {
+  "id": 787,
+  "pages": [
+   628
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ذات غداة",
+    "meaning": "أي في أي ساعة من البُكرَة ."
+   },
+   {
+    "term": "الأكوار",
+    "meaning": "جمع كُور وهو الرَحل بأداته . والرحل ما يوضع على البعير ليركب عليه ."
+   }
+  ],
+  "benefits": [
+   "جواز لبس المنسوج من الشعر ، وجواز لبس الأسود من الثياب ، وجواز تصوير ما لا روح فيه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft joined the two meanings at «الأكوار». Zoomed: «كُور» (OCR «كشور»), «البُكرَة» and «الرَحل» each carry the marks shown (a damma; a flat fatha on the ra, the same mark in both words)."
+  ]
+ },
+ "788": {
+  "id": 788,
+  "pages": [
+   629
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "ذات ليلة",
+    "meaning": "أي في ليلة ."
+   },
+   {
+    "term": "توارى",
+    "meaning": "غاب سواده عن رؤية البصر ."
+   },
+   {
+    "term": "أفرغت",
+    "meaning": "صببت ."
+   },
+   {
+    "term": "الإدواة",
+    "meaning": "إناء يوضع فيه الماء للطهور كالإبريق .",
+    "in_text": "الإِدَاوَةِ"
+   },
+   {
+    "term": "طاهرتين",
+    "meaning": "أي لبست الخف وأنا متوضيء ."
+   }
+  ],
+  "benefits": [
+   "جواز لبس ما نسج من صوف ، ويستحب لمن خرج لقضاء الحاجة في البرية أن يبتعد عن الحاضرين بحيث يغيب عنهم ، أو لا يسمع له صوت ولا يشم منه ريح .",
+   "جواز الاستعانة بصب الماء في الوضوء ، وإن كان الأفضل تركها .",
+   "جواز المسح على الخفين بشروطه المذكورة في كتب الفقه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.3.term",
+    "printed": "الإدواة",
+    "correction": "الإداوة",
+    "reason": "letters transposed: the word is «الإداوة», as in the hadith («الإِدَاوَةِ»)"
+   }
+  ],
+  "notes": [
+   "Zoomed: the term is printed «الإدواة» (alif and waw transposed); kept, with a correction and in_text.",
+   "The draft joined the first two benefits (bullet before «جواز الاستعانة»). Zoomed: «يسمع» (OCR «يسمح»), «صببت» (OCR «صيبت»). «سواده عن» is printed with no space between the words. The draft's «ترکها» had a Persian kaf."
+  ]
+ },
+ "789": {
+  "id": 789,
+  "pages": [
+   629
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "القميص",
+    "meaning": "قال في النهاية : ثوب مخيط بكمين غير مفوج يلبس تحت الثياب من القطن غالباً ."
+   }
+  ],
+  "benefits": [
+   "أن النبي ﷺ كان يحب القميص من الثياب المخيطة ، لأنه أستر للأعضاء من الإزار والرداء ، وهو أقل مؤنة وأخف على البدن ، ولابسه أكثر تواضعاً .",
+   "الاقتداء برسول الله ﷺ في ملبسه وما يحبه من اللباس ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "غير مفوج",
+    "correction": "غير مفرج",
+    "reason": "a letter misprinted: «مفوج» makes no sense here; al-Nihaya, which the book quotes, has «غير مفرج» (not slit open)"
+   }
+  ],
+  "notes": [
+   "Zoomed on «مفوج» (p. 629, 0.66–0.69): the letter after the fa has a head, so it is a waw, not a ra."
+  ]
+ },
+ "790": {
+  "id": 790,
+  "pages": [
+   630
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الرسغ",
+    "meaning": "بضمة وبضمتين ، مفصل الساعد والكف ، وروي بالصاد ( الرصغ ) ."
+   }
+  ],
+  "benefits": [
+   "الدليل على ألا يجاوز بكم القميص الرسغ ، وأما غير القميص فالسُّنة ألا يجاوز رؤوس الأصابع ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "791": {
+  "id": 791,
+  "pages": [
+   630,
+   631
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "جرّ",
+    "meaning": "سحب على وجه الأرض بسبب طوله ."
+   },
+   {
+    "term": "ثوبه",
+    "meaning": "يشمل جميع الثياب ."
+   },
+   {
+    "term": "لم ينظر الله إليه",
+    "meaning": "أي نظر رحمة ورضا ."
+   },
+   {
+    "term": "أبو بكر",
+    "meaning": "هو الصديق عبد الله ابن أبي قحافة رضي الله عنه ."
+   },
+   {
+    "term": "يسترخي",
+    "meaning": "ينزل ."
+   },
+   {
+    "term": "أتعاهده",
+    "meaning": "أي أقوم بشده ورفعه ."
+   }
+  ],
+  "benefits": [
+   "إنما الأعمال بالنيات ، ولذلك تختلف الأحكام باختلاف النيات .",
+   "الوعيد في الحديث لمن أطال ثوبه حتى جره على الأرض تكبراً وعجباً ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "792": {
+  "id": 792,
+  "pages": [
+   631
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "بطراً",
+    "meaning": "البطر كفر النعمة وعدم شكرها ، ولازم العجب والخيلاء ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives no benefits for this hadith: its word meanings are followed directly by h. 793."
+  ]
+ },
+ "793": {
+  "id": 793,
+  "pages": [
+   631
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "ظاهر الحديث يقتضي إدخال نفس الثوب في النار وهو كقوله تعالى : ( إنكم وما تعبدون من دون الله حصب جهنم ) ويفيد أن الوعيد لما وقعت به المعصية إشارة إلى أن من يتعاطاها أحق بذلك . وقال الخطابي : يريد النبي ﷺ أن الموضع الذي يناله الإزار من أسفل الكعبين في النار ، فكنّى بالثوب عن لابسه ، ومعناه أن ما دون الكعب من القدم يعذب عقوبة . وأخرج عبد الرزاق أن نافعاً سئل عن ذلك فقال : وما ذنب الثياب بل هو من القدمين .",
+   "الكراهة في إسبال الإزار عند عدم العذر ، وهو كبيرة إذا قصد به الكبر ، أما من كان به جراحة وأسبل إزاره ، ليسلم من أذى الذباب مثلاً ، فلا كراهة في فعله ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives no word meanings for this hadith."
+  ]
+ },
+ "794": {
+  "id": 794,
+  "pages": [
+   632
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لا يكلمهم الله",
+    "meaning": "قيل : المراد الإعراض عنهم ، وقيل : لا يكلمهم كلام رضا ."
+   },
+   {
+    "term": "ولا يزكيهم",
+    "meaning": "لا يطهرهم من ذنوبهم ولا يثني عليهم ."
+   },
+   {
+    "term": "ثلاث مرات",
+    "in_text": "ثلاثَ مِرَارٍ",
+    "meaning": "أي أعاد النبي ﷺ الجملة ثلاث مرات لتثبيت المعنى عند السامعين ، ويكون النفع أبلغ ."
+   },
+   {
+    "term": "المسبل",
+    "meaning": "المرخي ."
+   },
+   {
+    "term": "المنّان",
+    "meaning": "الذي يذكر إحسانه ممتناً به على المحسن إليه ."
+   }
+  ],
+  "benefits": [
+   "الترهيب من إسبال الإزار خيلاء ، والترهيب من المن ، لما فيه من الأذى . قال تعالى : ( ولا تبطلوا صدقاتكم بالمن والأذى ) .",
+   "الترهيب من الحلف لإنفاق السلعة ، وهذه الأفعال المذكورة في الحديث من الكبائر ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft joined «ولا يزكيهم» into the meaning of «لا يكلمهم الله»: the book prints a full stop after «كلام رضا», so it is an item of its own.",
+   "The first benefit ends with the verse's closing bracket and the next bullet, with no full stop printed; it ends with « .» as every item does.",
+   "«لإنفاق السلعة» is kept as printed; the hadith has «المنفق سلعته» (تنفيق), but «أنفق» isn't plainly wrong, so no correction."
+  ]
+ },
+ "795": {
+  "id": 795,
+  "pages": [
+   632
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "تحريم جر الثياب على الأرض خيلاء ، وأن من يفعل ذلك لا ينظر الله له نظرة رحمة يوم القيامة ما لم يتب ، ومن أطال ثوبه لا يقصد الكبر والخيلاء فمكروه ، وإطالته لضرورة مباح من غير كراهة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "796": {
+  "id": 796,
+  "pages": [
+   633,
+   634
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يصدر الناس",
+    "meaning": "أي يرجع الناس إلى ما يظهر من صدره من الرأي ."
+   },
+   {
+    "term": "صدروا",
+    "meaning": "أي رجعوا بالرأي كما يصدر الوارد عن الورد بعد الذي يشرب من مائه ."
+   },
+   {
+    "term": "عليك السلام",
+    "meaning": "تحية الموتى باعتبار عادة الجاهلية وليس ذلك هو المشروع في السلام على الموتى ، بل كان سلامه ﷺ على الأموات كالأحياء : « السلام عليكم دار قوم مؤمنين » ."
+   },
+   {
+    "term": "ضر",
+    "meaning": "أي ضرر من فقر ومصيبة ."
+   },
+   {
+    "term": "كشفه",
+    "meaning": "رفعه عنك ."
+   },
+   {
+    "term": "عام سنة",
+    "meaning": "أي عام شدة ومجاعة ."
+   },
+   {
+    "term": "أرض قفر",
+    "meaning": "أرض خالية لا ماء فيها ولا نبات ."
+   },
+   {
+    "term": "اعهد إلي",
+    "meaning": "أوص إلي ."
+   },
+   {
+    "term": "لا تسبن أحداً",
+    "meaning": "لا تشتم أحداً ."
+   },
+   {
+    "term": "لا تحقرن",
+    "meaning": "لا تترك شيئاً من المعروف ، استهانة بقدره ."
+   },
+   {
+    "term": "منبسط اليه وجهك",
+    "meaning": "مستبشر اليه وجهك ."
+   },
+   {
+    "term": "المخيلة",
+    "meaning": "الاختيال والكبر واحتقار الناس والعجب ."
+   },
+   {
+    "term": "وبال ذلك",
+    "meaning": "نتيجته الوخيمة ."
+   }
+  ],
+  "benefits": [
+   "تحريم السباب والشتائم ، ولا يجوز للمسبوب الانتصار ممن سابّه الا بمثل ما سبّه به ما لم يكن به كذب أو اقتراف ، وإذا رد المسبوب استوفى ظلامته وبقي على الباديء إثم الابتداء بالسب .",
+   "استحباب رفع الإزار إلى أنصاف الساقين ، لحصول ستر العورة ، ولما فيه من التواضع والانتصار على شهوات النفس ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR joined صدروا, كشفه and عام سنة into the meanings before them; each follows a full stop on the scan, so they are items of their own.",
+   "Zoomed: «فقرومصيبة» is printed with no space after the waw (written «فقر ومصيبة»); «سابّه» and «ماسبّه» carry a printed shadda; «الباديء» is printed with the hamza after a dotted ya."
+  ]
+ },
+ "797": {
+  "id": 797,
+  "pages": [
+   634
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أمر النبي ﷺ الرجل بإعادة الوضوء ، ليكون مكفراً لذنبه من إسبال الإزار وجره على الأرض تكبراً واختيالاً ، وقد ورد أن الطهور مكفر للذنوب ، ويحتمل أنه أمره بإعادة الوضوء للإخلال فيه ، ولم يأمره بإعادة الصلاة لأنها نفل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: the line break reads «مكفر / للذنوب» (two lams; the OCR had «الذنوب»), and the last word is «نفل» (OCR «نقل»)."
+  ]
+ },
+ "798": {
+  "id": 798,
+  "pages": [
+   636,
+   637
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "أبو الدرداء",
+    "meaning": "عويمر بن زيد الأنصاري ، انظره في باب التراجم ."
+   },
+   {
+    "term": "ابن الحنظلية",
+    "meaning": "سهل بن الربيع بن عمرو بن عدي ، انظره في باب التراجم ."
+   },
+   {
+    "term": "متوحداً",
+    "meaning": "يحب الإنفراد عن الناس ."
+   },
+   {
+    "term": "إنما هو صلاة",
+    "meaning": "أي إنما هو في صلاة ."
+   },
+   {
+    "term": "كلمة",
+    "meaning": "قل لنا كلمة أو تكلم كلمة ."
+   },
+   {
+    "term": "مرية",
+    "in_text": "سريَّةً",
+    "meaning": "قطعة من الجيش يرسلها الإمام إلى العدو ، وسميت مرية لأنها تكون سراة الجيش أي خلاصته ، وقيل لأنها تسير ليلاً ."
+   },
+   {
+    "term": "فتنازعا",
+    "meaning": "فتخاصما ."
+   },
+   {
+    "term": "ليبركن على ركبتيه",
+    "meaning": "مبالغة في التواضع كما هو شأن المتعلم أمام المعلم ."
+   },
+   {
+    "term": "المنفق على الخيل",
+    "meaning": "أي قيمة الرعي والعلف والسقي ، والمراد بالخيل المعدة للجهاد في سبيل الله ."
+   },
+   {
+    "term": "خريم بن فاتك",
+    "in_text": "خُرَيْمٌ",
+    "meaning": "وكنيته أبو يحيى الأسيدي شهد بدراً مع أخيه سبرة ."
+   },
+   {
+    "term": "جمته",
+    "meaning": "هي الشعر إذا طال وبلغ المنكبين وسقط عليها ."
+   },
+   {
+    "term": "شفرة",
+    "meaning": "سكين ."
+   },
+   {
+    "term": "رحالكم",
+    "meaning": "جمع رحل وهو ما يركب عليه ."
+   },
+   {
+    "term": "شامة",
+    "meaning": "قال في النهاية : الشامة هي الحال في الجسد ."
+   },
+   {
+    "term": "التفحش",
+    "meaning": "تكلف الكلام الفاحش ، أو الهيئة واللباس الفاحش ."
+   }
+  ],
+  "benefits": [
+   "حرص أبي الدرداء على الاستكثار من العلم ، وتواضعه في طلبه .",
+   "جواز تعريف الانسان بنفسه في الحرب إذا كان معروفاً بالشجاعة وقصد بذلك إرهاب الكفار وإخافتهم ولم يرد الكبر والخيلاء ، ومن يفعل ذلك يؤخر في الدنيا والآخرة .",
+   "إطالة الجمة وإسبال الإزار منهيٌ عنه على سبيل الحرمة إن كان كبراً ، أو على سبيل الكراهة إن كان غير ذلك .",
+   "وعلى الانسان أن يحترز عن مذمة الآخرين ، وأن يسعى للحصول على راحة إخوانه واستجلاب قلوبهم ، فلا يستثقلوه ولا يستقذروه ، وإن الله يحب أن يرى أثر نعمته ظاهرة على عبده ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.5.term",
+    "printed": "مرية",
+    "correction": "سرية",
+    "reason": "a misprint: the hadith's word is «سرية», and the meaning («قطعة من الجيش … سراة الجيش») explains «سرية»; «مرية» isn't the word"
+   },
+   {
+    "part": "meanings.5.meaning",
+    "printed": "وسميت مرية",
+    "correction": "وسميت سرية",
+    "reason": "the same misprint as in the term: the name is derived from «سراة», so it is «سرية»"
+   },
+   {
+    "part": "meanings.13.meaning",
+    "printed": "هي الحال في",
+    "correction": "هي الخال في",
+    "reason": "a dot dropped: a «شامة» is a mole, «الخال» (al-Nihaya), not «الحال»"
+   },
+   {
+    "part": "benefits.1",
+    "printed": "يؤخر",
+    "correction": "يؤجر",
+    "reason": "a misprinted dot: the sense is that he is rewarded («يؤجر») in this world and the next; «يؤخر» (is delayed) makes no sense here"
+   }
+  ],
+  "notes": [
+   "Zoomed on «يحب الإنفراد» and «يحب أن يرى» (both «يحب», no dot in the ح), «مرية» (printed with م, twice: corrected), «الحال» (no dot over the ح: corrected), «يؤخر» (dot over the خ: corrected) and «منهيٌ» (a tanween damma over the ي, kept).",
+   "«ليبر كن» is printed with a gap inside the word: written as one word «ليبركن».",
+   "The benefits run on in one paragraph after the first: the bullets split them into four."
+  ]
+ },
+ "799": {
+  "id": 799,
+  "pages": [
+   637
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "إزرة المسلم",
+    "meaning": "الهيئة في الاتزار ."
+   },
+   {
+    "term": "لا جناح",
+    "meaning": "لا إثم ."
+   },
+   {
+    "term": "بطراً",
+    "meaning": "طغياناً ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives this hadith no benefits: h. 800 follows the meanings directly (zoomed on p. 637, 0.37–0.53)."
+  ]
+ },
  "800": {
   "id": 800,
   "pages": [
@@ -15,5 +706,296 @@
   "notes": [
    "Zoomed on p. 637, 0.61–0.64: «عنهما» is printed with the typeface's ligature of «هما», which the OCR read as «عنها»; «بالسُّنة» carries a shadda and damma over the sin."
   ]
+ },
+ "801": {
+  "id": 801,
+  "pages": [
+   638
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "من جر ثوبه",
+    "meaning": "التقيد بالجر للغالب ، والخيلاء مذمومة ولو لمن قصر ثوبه وشمره ."
+   },
+   {
+    "term": "لم ينظر الله",
+    "meaning": "أي لم ينظر الله له نظرة رحمة يوم القيامة ."
+   },
+   {
+    "term": "شبراً",
+    "meaning": "هو ما بين الخنصر والإبهام بالتفريج المعتاد ."
+   },
+   {
+    "term": "ذراعاً",
+    "meaning": "الذراع من الإنسان من المرافق إلى أطراف الأصابع ."
+   }
+  ],
+  "benefits": [
+   "الإذن للنساء في إطالة أثوابهن قدر ذراع من أذيالهن إلى الأرض من أجل ستر ظهور أقدامهن ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's crop (p. 637, 0.80–0.90) showed only the end of the matn: the source note and the commentary are at the top of p. 638 (0.0–0.31), read from a zoom of p. 638, 0.00–0.26 and 0.23–0.53.",
+   "«المرافق» is as printed (plural), kept."
+  ]
+ },
+ "802": {
+  "id": 802,
+  "pages": [
+   638
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "حلل",
+    "meaning": "جمع حلة ، وهي ثوب له ظهارة وبطانة من جنس واحد ، أو هي ثوبان من جنس واحد ."
+   }
+  ],
+  "benefits": [
+   "فضل التواضع في اللباس ، وعدم الترفع والتكبر فيه على الآخرين ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "803": {
+  "id": 803,
+  "pages": [
+   639
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "إظهار التجمل في الملبس تحدثاً بنعمة الله لا ترفعاً ولا تكبراً على الناس ، والتوسع في أعمال الخير كصلة الأقارب ومساعدة المحتاجين ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book gives no word meanings for this hadith.",
+   "The draft had chapter 122's heading at the end of the benefit: left out."
+  ]
+ },
+ "804": {
+  "id": 804,
+  "pages": [
+   640
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن من نعيم الآخرة لبس الحرير ، قال تعالى : ( ولباسهم فيها حرير ) .",
+   "ومن لبس الحرير من الرجال في الدنيا مخالفاً أمر الله تعالى ، فإنه يُحرم لبسه في الآخرة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft and the crops ran far past this hadith: the OCR span went on through the next hadith (printed 807, 808 and on, with chapters 123 and 124) to p. 643, apparently because the next hadith's matn wasn't found after this one's. Only the benefits on p. 640, 0.31–0.41 (crop 1) are this hadith's; pages set to [640]. The next hadith's draft may need checking for the same fault.",
+   "The book gives no word meanings for this hadith.",
+   "Zoomed on p. 640, 0.31–0.41: «مخالفاً» has tanween on the alif, «يُحرم» a damma; the bullet after «حرير )» starts the second benefit."
+  ]
+ },
+ "805": {
+  "id": 805,
+  "pages": [
+   640
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن من خالف التحريم ولبس الحرير في الدنيا فإنه يعاقب بدخول النار ، إن لم يتب ويستغفر الله عنه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft ran on past this hadith's commentary through the matn and commentary of h. 806–809 and into chapter 124's heading (the OCR span missed the next hadith's start; the draft's pages were 639–642). Only h. 805's own commentary is kept: its one benefit, at the top of p. 640 (the source note is at the foot of p. 639). Crops 2–4 show h. 806–808, left out.",
+   "No «لغة الحديث» for this hadith: the meaning «من لا خلاق له : أي لا نصيب له» on p. 639 is inside the matn's text (Riyad's own gloss), above the source note, so it isn't transcribed."
+  ]
+ },
+ "806": {
+  "id": 806,
+  "pages": [
+   640
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن من نعيم الآخرة لبس الحرير ، قال تعالى : ( ولباسهم فيها حرير ) .",
+   "ومن لبس الحرير من الرجال في الدنيا مخالفاً أمر الله تعالى ، فإنه يُحرم لبسه في الآخرة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool printed no crops for this hadith, and its draft (pages 642–645) was another hadith's commentary (the meanings of «الخز» and «النمار», then h. 813 on and into the book of sleep): the OCR span is off here. Read instead from zooms of p. 640, 0.00–0.50 and 0.28–0.45: the source note ends at 0.30 and the benefits run to 0.41, just above h. 807.",
+   "The book gives no word meanings for this hadith.",
+   "These benefits were filed under h. 804 by an earlier round (04.json), which is wrong: p. 639, 0.55–0.62 shows h. 804's own benefit, «تحريم لبس الحرير في الدنيا على الرجال البالغين ، والحكمة من ذلك ترك الفخر والخيلاء ، أو الترفه والزينة ، أو التشبه بالمشركين .». h. 804's entry needs fixing; a round may edit only the inbox.",
+   "Zoomed: «مخالفاً» has tanween on the alif, «يُحرم» a damma; the bullet after «حرير )» starts the second benefit."
+  ]
+ },
+ "807": {
+  "id": 807,
+  "pages": [
+   640
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "التصريح بتحريم الحرير والذهب على الرجال البالغين .",
+   "يستثنى من تحريم لبس الحرير للحالات المرضية ؛ كجرب وحكة فإنه يستعمل كوسيلة للعلاج ، كما سيأتي في الباب ١٢٣ الحديث رقم ١ / ٨١٠ ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book heads this paragraph «لغة الحديث», but it is two bulleted benefits, not word meanings: a misprinted heading (it should be «أفاد الحديث»). Filed as benefits, meanings left empty, as for the same case in 02.json. The heading isn't transcribed, so there is no part to correct.",
+   "The OCR dropped the hadith number, printed as a fraction (١ over ٨١٠, chapter number over book number); written «١ / ٨١٠» as elsewhere (zoomed p. 640, 0.62–0.71)."
+  ]
+ },
+ "808": {
+  "id": 808,
+  "pages": [
+   640,
+   641
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "ما أفاده الحديث السابق ، وبيان حل لبس الحرير والذهب للنساء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "809": {
+  "id": 809,
+  "pages": [
+   641
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الحرير",
+    "meaning": "الطبيعي المستخرج من الدود مطلقاً ."
+   },
+   {
+    "term": "آنية",
+    "meaning": "جمع إناء ، وهو الوعاء صغيراً كان أو كبيراً ."
+   },
+   {
+    "term": "الديباج",
+    "meaning": "ما غلظ من ثياب الحرير ."
+   }
+  ],
+  "benefits": [
+   "النهي الوارد في الحديث يفيد التحريم في كل ما ذكر .",
+   "تحريم الجلوس على الحرير من غير حائل وهو قول الجمهور .",
+   "تحريم استعمال الآنية والأدوات الذهبية كالساعة والنظارة .",
+   "الابتعاد عن الترفه والتشبه بالكفار .",
+   "الترخيص للنساء في لبس الذهب للزينة فقط ، كما رخص لهن لبس الحرير .",
+   "استعمال آنية الذهب والفضة ، والجلوس على الديباج من أمارات المترفين والمتكبرين ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The OCR joined the first five benefits (it read the bullets as full stops); split at the bullets. Zoomed p. 641, 0.46–0.59: the book prints «لهن لبس الحرير», not the draft's «لمن»."
+  ]
+ },
+ "810": {
+  "id": 810,
+  "pages": [
+   641,
+   642
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "رخص",
+    "meaning": "أباح مع وجود دليل المنع ."
+   },
+   {
+    "term": "الحِكّة",
+    "meaning": "بالكسر الجوب ."
+   }
+  ],
+  "benefits": [
+   "الترخيص لمن به حكة من الرجال البالغين أن يلبس الحرير .",
+   "إباحة ما يقي الحر والبرد من الحرير إذا لم يوجد من الثياب غيره ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.1.meaning",
+    "printed": "الجوب",
+    "correction": "الجرب",
+    "reason": "a misprinted letter: «الجوب» makes no sense here; الحكة is explained as الجرب (the mange), as h. 807's benefit pairs «كجرب وحكة»"
+   }
+  ],
+  "notes": [
+   "Zoomed p. 642, 0.07–0.10: the term is printed «الحِكّة» with a kasra under the ح and a shadda on the ك (kept), and the meaning reads «الجوب», a misprint for «الجرب» (corrected)."
+  ]
+ },
+ "811": {
+  "id": 811,
+  "pages": [
+   642
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الخز",
+    "meaning": "قال في النهاية : الخز المعروف أولاً ثياب تنسج من صوف وإبريسم ، وهي مباحة وقد لبسها الصحابة والتابعون ، فيكون النهي عنها لأجل التشبه بالعجم وزي المترفين ( نهي تنزيه ) ، وإن أريد بالخز النوع الآخر وهو المعروف الآن فهو حرام ، لأن جميعه معمول من الإبريسم ."
+   },
+   {
+    "term": "النمار",
+    "meaning": "وفي رواية النمور ، أي جلود النمور ، وهي السباع المعروفة واحدها نمر ."
+   }
+  ],
+  "benefits": [
+   "تحريم الركوب على السرج المصنوعة من الحرير .",
+   "تحريم استعمال جلود النمور ، لما فيها من الزينة والخيلاء ولأنها زي الأعاجم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The tool's crop was wrong: it showed the end of h. 812's matn and h. 812's source note (p. 642, 0.68–0.84). h. 811's commentary is on p. 642 about 0.38–0.62, after its matn; the draft's text matched it and was checked against zooms of p. 642, 0.14–0.73. Worth checking in commentary.py why the crop landed on the next hadith."
+  ]
+ },
+ "812": {
+  "id": 812,
+  "pages": [
+   642,
+   643
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "النهي عن افتراش جلود السباع في الركوب وغيره ، وفي دليل الفالحين قال البيهقي : يحتمل أن النهي وقع لما يبقى عليها من الشعر ، لأن الدباغ لا يؤثر فيه ، وقال غيره : يحتمل أن النهي عما لم يدبغ منها ، أو من أجل أنها مواكب أهل السرف والخيلاء ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "813": {
+  "id": 813,
+  "pages": [
+   643
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "استجد",
+    "meaning": "أي لبس ثوباً جديداً ."
+   },
+   {
+    "term": "ما صنع له",
+    "meaning": "ما خلق له ."
+   }
+  ],
+  "benefits": [
+   "استحباب حمد الله وشكره بعد لبس الثوب الجديد ، والأفضل أن يدعو بهذا الدعاء المأثور ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
  }
 }

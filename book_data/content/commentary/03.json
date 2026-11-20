@@ -1,4 +1,214 @@
 {
+ "728": {
+  "id": 728,
+  "pages": [
+   599
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "سم الله",
+    "meaning": "أي اذكر اسم الله ، وتحصل التسمية بقول : بسم الله ، فإن أتبعها بالرحمن الرحيم كان حسناً ."
+   },
+   {
+    "term": "كل مما يليك",
+    "meaning": "أي من جانبك إذا كان الطعام واحداً ، أو سائلاً بجماعة ."
+   }
+  ],
+  "benefits": [
+   "الأمر بالتسمية عند الأكل ، وهو محمول على الندب عند الجمهور ، ويقاس عليه الشرب . قال النووي : استحباب التسمية في ابتداء الطعام مجمع عليه وكذا حمد الله آخره ، والحكمة من التسمية أنها تجلب البركة وتدعو إلى القناعة وعدم الشره .",
+   "الأكل مما يلي الآكل سنة متفق عليها وخلافها مكروه ، وهذا خاص في غير الفاكهة ، أما الفاكهة فللآكل أن يجيل يده فيها ويختار منها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 599: «سائلاً» has a tanween over the lam-alif; «فللآكل» is printed with a madda."
+  ]
+ },
+ "729": {
+  "id": 729,
+  "pages": [
+   600
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب ذكر اسم الله عند إرادة الأكل ، فإن نسي فليذكر الله في أثنائه قائلا باسم الله أوله وآخره ، وظاهر الحديث بتناول استحباب ذكر الله بعد الفراغ من الطعام ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "بتناول",
+    "correction": "يتناول",
+    "reason": "the dots of ي printed as the one dot of ب: «بتناول» isn't a word here"
+   }
+  ],
+  "notes": [
+   "The book prints no word meanings for this hadith.",
+   "Zoomed on p. 600: «بتناول» is printed with one dot below and two above; «قائلا» shows no tanween. The benefit has no full stop printed after «الطعام»: « .» added by the convention."
+  ]
+ },
+ "730": {
+  "id": 730,
+  "pages": [
+   600
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قال الشيطان",
+    "meaning": "أي لأعوانه ."
+   }
+  ],
+  "benefits": [
+   "استحباب ذكر الله عند دخول البيت وعند الطعام .",
+   "تمكن الشيطان من المبيت في البيت والمشاركة في الطعام عند ترك ذكر الله تعالى .",
+   "في ذكر الله عند الطعام ودخول البيت مجانبة الغفلة عن الله ، لأن الغفلة عن الله تعالى تستدعي الوقوع في مخالفة أمر الله تعالى واتباع الشيطان في ضلاله ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "731": {
+  "id": 731,
+  "pages": [
+   601
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "جارية",
+    "meaning": "المرأة الشابة ، ويحتمل المرأة الرقيقة ولو عجوزاً ."
+   },
+   {
+    "term": "كأنها تدفع",
+    "meaning": "أي لشدة سرعتها ."
+   },
+   {
+    "term": "أعرابي",
+    "meaning": "ساكن البادية ."
+   },
+   {
+    "term": "الشيطان",
+    "meaning": "مأخوذ من شاط إذا احترق ، أو من شطن إذا بعد لبعده عن الخير ."
+   },
+   {
+    "term": "يستحل الطعام",
+    "meaning": "يطلب حله ليتمكن منه ."
+   },
+   {
+    "term": "فأخذت بيدها",
+    "meaning": "نحيتها عن الطعام ومنعتها من الأكل منعاً للشيطان مما أراد ."
+   }
+  ],
+  "benefits": [
+   "تأدب الصحابة مع رسول الله ﷺ وانتظاره حتى يبدأ قبلهم بالطعام ، وهكذا يكون الأدب مع الكبير .",
+   "استحباب القسم لتأكيد الأمر عند السامع .",
+   "في الحديث دليل على الأمر بالمعروف والنهي عن المنكر .",
+   "استحباب تعليم الناس أدب الأكل والشرب في الاسلام .",
+   "مشاركة الشيطان للناس مآكلهم عند عدم التسمية ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 601: «يبدأ» and «مآكلهم», «التسمية» read as transcribed."
+  ]
+ },
+ "732": {
+  "id": 732,
+  "pages": [
+   602
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن الشيطان يشارك الإنسان في طعامه وشرابه إن لم يذكر اسم الله تعالى ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«اسم الله» in the benefit is printed with a blurred سين that the OCR read as «امم»; read on the scan as «اسم»."
+  ]
+ },
+ "733": {
+  "id": 733,
+  "pages": [
+   602
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن الله يبارك في الطعام إذا ذكر اسم الله عليه ، وأن البركة تُرفع بترك التسمية عليه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on «ترفع»: the book prints a damma on its first letter («تُرفع»), kept. The OCR's «وعن أبي أمامة» is the next hadith's first line, left out."
+  ]
+ },
+ "734": {
+  "id": 734,
+  "pages": [
+   602
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "طيّباً",
+    "meaning": "منزهاً عن سائر ما ينقصه من رياء أو سمعة ."
+   },
+   {
+    "term": "مباركاً",
+    "meaning": "البركة هي الزيادة والنماء ."
+   },
+   {
+    "term": "غير مكفي ولا مستغنى عنه",
+    "meaning": "قيل إن الضمير يعود إلى الطعام ، وقيل المراد بهذا الدعاء هو الله تعالى ، وتفسيره : أن الله مستغن عن الظهير والمعين وأنه يُطعِمُ ولا يُطعَم ، ويجوز أن يكون الكلام راجعاً إلى الحمد كأنه قال : حمداً كثيراً غير مكفي ولا مستغنى عنه ."
+   }
+  ],
+  "benefits": [
+   "استحباب حمد الله تعالى في آخر الطعام تأسياً بالرسول ﷺ ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: the term «طيّباً» is printed with a shadda, and «يُطعِمُ ولا يُطعَم» with the marks kept here. The book prints «ماينقصه» and «ولامستغنى» run together; written as two words (the ما/لا rule)."
+  ]
+ },
+ "735": {
+  "id": 735,
+  "pages": [
+   603
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "من غير حول",
+    "meaning": "أي غير من حيلة ."
+   },
+   {
+    "term": "من ذنبه",
+    "meaning": "أي الصغائر ."
+   }
+  ],
+  "benefits": [
+   "استحباب حمد الله تعالى في آخر الطعام مع التضرع إلى الله تعالى ، لأنه هو المنعم والرازق ، وليس للإنسان فيه نصيب من الفضل .",
+   "بيان أجر الحامد لله تعالى بتكفير ذنوبه الصغائر ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "أي غير من حيلة",
+    "correction": "أي من غير حيلة",
+    "reason": "the words are transposed: «غير من حيلة» is broken grammar; the term itself reads «من غير حول»"
+   }
+  ],
+  "notes": [
+   "Zoomed: the second benefit reads «الحامد لله» (the OCR had «الله»); the bullet between the two benefits was lost by the OCR."
+  ]
+ },
  "736": {
   "id": 736,
   "pages": [
@@ -14,5 +224,1138 @@
   "shared_with": [],
   "corrections": [],
   "notes": []
+ },
+ "737": {
+  "id": 737,
+  "pages": [
+   603,
+   604
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الأُدُم",
+    "meaning": "بضمتين ، ويجوز تسكين الدال جمع إدام ، وهو ما يؤدم به مائعاً كان أو جامداً ."
+   },
+   {
+    "term": "فدعا به",
+    "meaning": "أمر بإحضاره ."
+   }
+  ],
+  "benefits": [
+   "استحباب مدح الطعام ولو كان بسيطاً قليل الكلفة .",
+   "مدح الاقتصاد في الأكل ، ومنع اعتياد النفس على الأطعمة الدسمة الكثيرة الكلفة .",
+   "تواضع النبي ﷺ في طعامه وامتداحه له ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: the term «الأُدُم» is printed with two dammas, kept. The book prints «فدعابه» with no visible space after the alif; written «فدعا به» as in the hadith, by the same reasoning as the ما/لا rule (a final alif doesn't join, so a lost space can't be told from a narrow one).",
+   "The OCR had moved «في الاقتصاد» from the second benefit into the last meaning; put back. Both «الكلفة» read on the zoom (the OCR had «الكافة» for the second). The crop's last line is the next chapter's heading (١٠٢ باب ما يقوله من حضر الطعام …), left out."
+  ]
+ },
+ "738": {
+  "id": 738,
+  "pages": [
+   604
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فليجب",
+    "meaning": "تقدم معنا أن إجابة دعوة وليمة العرس واجبة إن خلت من الأعذار المسقطة ، وإجابة غيرها مندوبة ."
+   },
+   {
+    "term": "فليصل",
+    "meaning": "أي ليدع لأهل الطعام بالمغفرة والبركة ونحو ذلك ، وقيل : ليصلّ الصلاة الشرعية ذات الركوع والسجود ليحصل له فضلها ، وليتبرك الحاضرون بها ."
+   }
+  ],
+  "benefits": [
+   "استحباب تناول الطعام إذا دعي إلى وليمة عرس أو غيرها ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft's `see` was the tail of the source note («… الأمر بإجابة الداعي إلى دعوة ) .»), not a cross-reference: set to null. The benefit's tail in the draft was the next chapter's heading, left out. «قال العلماء : معنى فليصل …» above the source note is Riyad's own text (part of the matn), left out.",
+   "Zoomed: «ليصلّ» is printed with a shadda on the lam, kept; the book prints «وقيل:» with no space before the colon, written «وقيل :» per the punctuation rule."
+  ]
+ },
+ "739": {
+  "id": 739,
+  "pages": [
+   604,
+   605
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "صنعه",
+    "meaning": "أي أمر غلامه بصنعه كما جاء مصرحاً به في رواية ثانية ."
+   },
+   {
+    "term": "خامس خمسة",
+    "meaning": "أي تصير به العدة خمسة ."
+   }
+  ],
+  "benefits": [
+   "استئذان النبي ﷺ صاحب الدعوة في هذا الحديث محمول على عدم علم النبي ﷺ برضا صاحب المنزل ، أما لو كان واثقاً من رضاه فلا يستأذن ، وقد ورد في الحديث ما يؤكد ذلك .",
+   "عدم جواز الحضور إلى بيت الوليمة من غير دعوة إلا إذا سمح له ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "740": {
+  "id": 740,
+  "pages": [
+   605
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "كنت غلاماً",
+    "meaning": "أي دون البلوغ ."
+   },
+   {
+    "term": "في حجر رسول الله ﷺ",
+    "meaning": "أي تحت نظره وإشرافه وتربيته ."
+   },
+   {
+    "term": "الصحفة",
+    "meaning": "إناء دون القصعة وتسع ما يشبع خمسة ، بينما القصعة تشبع عشرة ."
+   }
+  ],
+  "benefits": [
+   "تواضع النبي ﷺ وطيب نفسه بأكله مع ربيبه الصغير في صحفة واحدة ، مع ما يبدو من الصغير غالباً مما يثير التقزز والاشمئزاز .",
+   "حرص النبي ﷺ على تعليم عمر بن أبي سلمة أدب الطعام في الإسلام ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop opens with al-Nawawi's note on «تطيش», part of the matn before the source note: left out."
+  ]
+ },
+ "741": {
+  "id": 741,
+  "pages": [
+   606
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "ندب الأكل باليمين والتسمية ، وقد مر هذا .",
+   "دعاء النبي ﷺ على الرجل ، لاعتذاره كاذباً بخلاف الواقع تكبراً وإعراضاً عن طاعة رسول الله ﷺ .",
+   "في الحديث معجزة ظاهرة لرسول الله ﷺ ، وهي استجابة دعائه حيث أصبح الرجل المدعو عليه لا يستطيع رفع يده اليمنى إلى فيه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no word meanings for this hadith."
+  ]
+ },
+ "742": {
+  "id": 742,
+  "pages": [
+   606,
+   607
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "عام سنة",
+    "meaning": "أي عام قحط وجدب ."
+   },
+   {
+    "term": "لا تقارنوا",
+    "meaning": "من المفاعلة وهو للمبالغة ."
+   },
+   {
+    "term": "القران",
+    "meaning": "هو أن يقرن بين التمرتين في الأكل ."
+   }
+  ],
+  "benefits": [
+   "النهي عن القران بين تمرتين إذا أكل مع حماعة ، لأن ذلك دليل الشره ، ولأنه يزري بصاحبه ، أو لأن فيه غبناً برفيقه ، ولذلك أبيح عند إذن الرفقة ، ويقاس عليه ما هو نظيره من الفواكه والمآكل ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "مع حماعة",
+    "correction": "مع جماعة",
+    "reason": "the dot of the jim is missing: «حماعة» isn't a word"
+   }
+  ],
+  "notes": [
+   "The draft's `see` was the tail of the source note: set to null.",
+   "The draft read «القرآن» in the term and the benefit; the book prints «القران».",
+   "Zoomed on p. 606, 0.86–0.91: the benefit prints «حماعة» with no dot under the first letter."
+  ]
+ },
+ "743": {
+  "id": 743,
+  "pages": [
+   607
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فلعلكم",
+    "meaning": "استفهام يراد منه التنبيه ، وبيان العلة في عدم الشبع ."
+   }
+  ],
+  "benefits": [
+   "أن الاجتماع للطعام والتسمية عند الاكل سبب لحصول البركة في الطعام وحصول الشبع من أكله ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on p. 607, 0.43–0.47: «الاكل» is printed with no hamza; kept."
+  ]
+ },
+ "744": {
+  "id": 744,
+  "pages": [
+   608
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "البركة",
+    "meaning": "هي ما أودعه الله تعالى في الطعام من زيادة وتكثيره والانتفاع به ."
+   },
+   {
+    "term": "حافتيه",
+    "meaning": "مثنى حافة ، وهي الناحية والجانب ."
+   }
+  ],
+  "benefits": [
+   "كراهة الأكل من رأس الطعام أو وسطه ، وأن الأدب أن يأكل مما يليه ، وخاصة إذا كان يأكل مع غيره ، وكذلك بالنسبة للخبز فلا يبدأ الأكل من وسط الرغيف بل من طرفه ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft's pages were [607, 608]: p. 607 has only the matn's end and the source note; the commentary is all on p. 608.",
+   "The draft had «مما» of the benefit («أن يأكل مما يليه») at the end of the second meaning; moved back.",
+   "Zoomed on p. 608, 0.04–0.10: «حافة» has no shadda (the stroke above is the dots of the ة)."
+  ]
+ },
+ "745": {
+  "id": 745,
+  "pages": [
+   608,
+   609
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الغراء",
+    "meaning": "مؤنث أغر مشتق من الغرة وأصلها البياض الذي يكون في وجه الفرس ، والظاهر أنها سميت بذلك لاشتهارها عندهم ."
+   },
+   {
+    "term": "أضحوا",
+    "meaning": "دخلوا في الضحى وهو قدر ربع النهار ."
+   },
+   {
+    "term": "سجدوا الضحى",
+    "meaning": "أي صلوا صلاته ."
+   },
+   {
+    "term": "( يعني وقد ثرد فيها )",
+    "meaning": "الجملة من كلام بعض الرواة بعد ابن بسر ، وثُرد فيها : أي جعل فيها الثريد ، وهو الخبز المفتوت المبلل بالمرق ، وغالباً ما يكون بمرق اللحم ومعه اللحم .",
+    "in_text": "يَعْنِي وقدْ ثُرِدَ فِيها"
+   },
+   {
+    "term": "جثا",
+    "meaning": "على ركبتيه وقعد على ظهر قدميه ."
+   },
+   {
+    "term": "كريماً",
+    "meaning": "بالنبوة والعلم ."
+   },
+   {
+    "term": "جباراً",
+    "meaning": "من الجبر وهو قهر الغير على مراد القاهر ."
+   },
+   {
+    "term": "عنيداً",
+    "meaning": "جائراً عن القصد باغياً يرد الحق مع العلم به ."
+   },
+   {
+    "term": "حواليها",
+    "meaning": "جوانبها ."
+   }
+  ],
+  "benefits": [
+   "كرم النبي ﷺ وتواضعه .",
+   "استحباب الاجتماع على الطعام ، واستحباب الجلسة المذكورة في الحديث ، وخاصة عند ضيق المجلس ، وأنها من شأن الكرام .",
+   "التنفير من الكبر والترفع على الآخرين ورد الحق .",
+   "البداءة بالطعام من من جوانب القصعة ، والحرص على إبقاء ما فيه البركة والخير وعدم إزالته ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.3",
+    "printed": "من من جوانب",
+    "correction": "من جوانب",
+    "reason": "«من» is printed twice, at the end of one line and the start of the next"
+   }
+  ],
+  "notes": [
+   "The book prints no full stop between «أي صلوا صلاته» and «( يعني وقد ثرد فيها ) :», but the words before that colon are the hadith's, so they start a meaning of their own; the one before ends with « .». The term keeps the printed brackets. «وثُرد فيها : أي جعل فيها الثريد» explains a word of that term in turn and stays inside its meaning.",
+   "Zoomed on p. 608, 0.61–0.67: the term is «الغراء» (the letter after غ is ر, with no loop), though the crop's smudge looks like «الغواء».",
+   "Zoomed on p. 608, 0.68–0.77: «ثرد» inside the brackets has no mark; «وثُرد» after them has a damma.",
+   "Zoomed on p. 608, 0.84–0.89: «حواليها : جوانبها .»; p. 609, 0.10–0.13: «شأن» has its hamza on the alif."
+  ]
+ },
+ "746": {
+  "id": 746,
+  "pages": [
+   609
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "وطِاء",
+    "meaning": "هو ما يقعد عليه وفي القاموس : الوطاء خلاف الغطاء ."
+   },
+   {
+    "term": "الوسائد",
+    "meaning": "جمع وسادة وهي المخدة ."
+   },
+   {
+    "term": "مستوفزاً",
+    "meaning": "غير مستقر في قعدته ، من الوفز وهو العجلة ."
+   },
+   {
+    "term": "بلغة",
+    "meaning": "في القاموس : البلغة : ما يتبلغ به من العيش ، أي ما يكفي لحفظ حياته ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The draft and the crops ran past this hadith's commentary into h. 747 (its matn, its gloss «المقعي», source note and benefits), the next chapter's heading (109) and h. 748's matn, meanings and benefits. h. 746's commentary ends with «لحفظ حياته .» on p. 609; the rest was dropped from this entry. The tool seems to have missed h. 747's start on p. 609: its draft and crops should be checked when it comes up.",
+   "h. 746 has no benefits of its own: the benefits printed after h. 747 (p. 610) are headed «أفاد الحديث والذي قبله :», so they belong to h. 747 with shared_with [746].",
+   "Zoomed on p. 609, 0.62–0.74: the term is printed «وطِاء» with a kasra under the ط (the draft's «وطياء» misread it); «قعدته ، من» has a comma."
+  ]
+ },
+ "747": {
+  "id": 747,
+  "pages": [
+   610
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "كراهة الجلوس إلى الطعام على هيئة تشعر بالكبر والتعالي والتجبر ، وربما يختلف هذا عرفا من بلد إلى آخر ومن زمان إلى زمان .",
+   "عدم الاكثار من الطعام والجلوس على المائدة طويلا .",
+   "الحث على التواضع مطلقاً ، اقتداء بالنبي ﷺ ."
+  ],
+  "shared_with": [
+   746
+  ],
+  "corrections": [],
+  "notes": [
+   "The tool gave h. 747 the crops and draft of h. 749 (p. 610, 0.82–0.92 and p. 611, 0.05–0.21). Its commentary is at the top of p. 610 (0.05–0.25), after the matn's end and Nawawi's explanation of «المقعي» on p. 609 (the matn, not kept): the source note «الحديث رواه مسلم في كتاب الأشربة ( باب استحباب تواضع الآكل وصفة قعوده )», then the benefits, transcribed here from the full page and a zoom.",
+   "Heading «أفاد الحديث : • والذي قبله :»: shared with h. 746, whose commentary (p. 609) has word meanings but no benefits.",
+   "No word meanings printed for this hadith.",
+   "Zoomed on «الاكثار» (no hamza printed) and «طويلا» (no tanween printed)."
+  ]
+ },
+ "748": {
+  "id": 748,
+  "pages": [
+   610
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "طعاماً",
+    "meaning": "أي فيه رطوبة تلعق بالأصابع ."
+   },
+   {
+    "term": "يلعقها",
+    "meaning": "يلحس ما عليها من أثر الطعام ."
+   }
+  ],
+  "benefits": [
+   "استحباب لعق الأصابع ، ومثلها الملاعق قبل غسلها أو مسحها ، وكراهة ترك شيء من آثار الطعام عليها .",
+   "جواز لعق أصابع الآخرين إذا كان ممن لديه مودة وثقة ، ويرغب بالتبرك بمن يلعق أصابعه ، ولا يتقزز من ذلك ، كالولد والمحب ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on «كان ممن» (benefits.1): the first letter of «ممن» is blurred and could be read «بمن»; read as «ممن», as the OCR did."
+  ]
+ },
+ "749": {
+  "id": 749,
+  "pages": [
+   610,
+   611
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن استحباب لعق الاصابع يكون بعد الفراغ من الطعام ، أما أثناءه فلا ، لانه يعيدها إلى الطعام وعليها أثر ريقه فيتقزز من ذلك .",
+   "استحباب الأكل بثلاث أصابع وهي : الوسطى والمسبحة والإبهام ، كما رواه الطبزاني ، وهو الغالب من فعله ﷺ ولم يخالفه إلا لضرورة ، لأن الأكل بأقل منها مظهر التكبر ، وبأكثر منها عنوان الشره ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "الطبزاني",
+    "correction": "الطبراني",
+    "reason": "a name misspelled: a dot over the «ر» of al-Tabarani"
+   }
+  ],
+  "notes": [
+   "No word meanings printed for this hadith.",
+   "Zoomed on «الطبزاني» (p. 611, 0.08–0.10): a dot shows over the letter after «ب», so the print reads «الطبزاني»; corrected to «الطبراني». If the dot is a speck, the printed word is «الطبراني» and the correction can go.",
+   "«لانه» is printed without hamza."
+  ]
+ },
+ "750": {
+  "id": 750,
+  "pages": [
+   611
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الصحفة",
+    "meaning": "إناء الطعام ."
+   },
+   {
+    "term": "لا تدرون",
+    "meaning": "لا تعلمون ."
+   },
+   {
+    "term": "في أي طعامكم",
+    "meaning": "أي في أي جزء من أجزائه ."
+   }
+  ],
+  "benefits": [
+   "استحباب لعق آثار الطعام مع الأصابع ، وأن الحكمة من ذلك حصول بركة الطعام ، وعدم ازدراء نعم الله تعالى ، والاستفادة من جميع أجزاء الطعام والتقوي به على طاعة الله عز وجل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "751": {
+  "id": 751,
+  "pages": [
+   611,
+   612
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لقمة",
+    "meaning": "امم لما يلقم في مرة ."
+   },
+   {
+    "term": "فليمط",
+    "meaning": "فلينح ويبعد ."
+   },
+   {
+    "term": "أذى",
+    "meaning": "ما علق عليها من تراب وغيره ."
+   },
+   {
+    "term": "لا يدعها الشيطان",
+    "meaning": "لا يتركها تلبية لرغبته في التكبر عن أخذها ."
+   },
+   {
+    "term": "بالمنديل",
+    "meaning": "ما يسمى الآن ( محرمة أو بشكيراً ) ماخوذ من النّدل وهو الإخراج والنقل ."
+   }
+  ],
+  "benefits": [
+   "ندب أخذ ما يسقط من طعام على الأرض وغيرهما وأكله بعد إزالة ما علق عليه من الأوساخ ، حملا للنفس على التواضع ، وقهراً للشيطان ، وتحصيلا للبركة ، ما لم يترتب على ذلك أذى محقق .",
+   "جواز مسح اليد من الطعام بالمنديل بعد لعقها ، وإذا توفر الغسل فهو أفضل ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "امم لما",
+    "correction": "اسم لما",
+    "reason": "«امم» isn't a word: «اسم» with its «س» misprinted as «م»"
+   }
+  ],
+  "notes": [
+   "Zoomed on «امم» (p. 611, 0.755–0.79): the second letter has the loop of «م», not the teeth of «س».",
+   "Zoomed on «ماخوذ» (no hamza printed), «النّدل» (shadda printed on the noon) and «حملا» / «وتحصيلا» (no tanween printed; «وقهراً» has one).",
+   "«وغيرهما» is as printed; kept."
+  ]
+ },
+ "752": {
+  "id": 752,
+  "pages": [
+   612
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "شأنه",
+    "meaning": "أمره وحاله ."
+   }
+  ],
+  "benefits": [
+   "بالإضافة إلى ما قبله : أن الشيطان ملازم للإنسان في تصرفاته فليحذره ، وليحذر ، من إغرائه بمعصية الله تعالى .",
+   "استحباب التسمية عند الطعام ، ليطرد الشيطان عند الأكل ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no full stop after «أمره وحاله»; the item ends with « .» as every item does."
+  ]
+ },
+ "753": {
+  "id": 753,
+  "pages": [
+   612,
+   613
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "نسلت",
+    "meaning": "نمسح ونزيل ما فيها من طعام ."
+   }
+  ],
+  "benefits": [
+   "الاستفادة من الطعام ، وعدم إهداره وطرحه تكبراً وبطراً . مسح آثار الطعام من الأواني ولعق الأصابع ، وبذلك تحصل البركة .",
+   "توجيه النبي ﷺ إلى عدم إضاعة شيء من الطعام ، وبذلك تحصل الكفاية والاقتصاد ، وتحصل البركة ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«مسح آثار الطعام …» follows a plain full stop (smaller than the bullets on the page) at the end of the first benefit's line, with no bullet: kept in the first benefit, as printed, though it reads as a benefit of its own (a bullet may have been lost in print).",
+   "The OCR read «مسح» after «توجيه»; on the scan it begins the line «مسح آثار الطعام …»."
+  ]
+ },
+ "754": {
+  "id": 754,
+  "pages": [
+   613
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "مست النار",
+    "meaning": "خُبز عليها أو طبخ أو شوي أو قلي وغير ذلك ."
+   },
+   {
+    "term": "فقال لا",
+    "meaning": "أي لا وضوء ."
+   },
+   {
+    "term": "اكفنا",
+    "meaning": "جمع كف ، وهو راحة اليد مع الاصابع ."
+   },
+   {
+    "term": "سواعدنا",
+    "meaning": "جمع ساعد ، وهو من الانسان ما بين المرفق والكف ."
+   }
+  ],
+  "benefits": [
+   "نسخ ما جاء من الأمر بالوضوء بعد أكل ما مسته النار .",
+   "جواز مسح آثار الطعام باليد وغيرها إذا لم يتوفر الغسل ولا المسح بالمنديل ، وظاهر الحديث أن الحكمة من ذلك أن لا يكثر تلوث أيديهم بالتراب عند السجود في الصلاة .",
+   "ما كان عليه الصحابة من شظف العيش ، وأنهم لم يكن همهم بطونهم ، بل يأكلون ما يتيسر لهم وما يوجد عرضاً ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints a bullet before «سواعدنا» and no colon after it («… مع الاصابع • سواعدنا جمع ساعد …», zoomed on p. 613): taken as a meaning of its own, the bullet ending the one before.",
+   "«خُبز»: the damma is printed (zoomed)."
+  ]
+ },
+ "755": {
+  "id": 755,
+  "pages": [
+   613
+  ],
+  "see": "انظره في باب المواساة والإيثار رقم ٢ / ٥٦٥ .",
+  "meanings": [],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints only the cross-reference, no meanings or benefits: its benefits are printed after h. 756, headed «أفاد الحديث : والذي قبله هنا». The number is printed as a fraction, ٢ over ٥٦٥."
+  ]
+ },
+ "756": {
+  "id": 756,
+  "pages": [
+   614
+  ],
+  "see": "انظره في باب المواساة والإيثار رقم ٢ / ٥٦٥ .",
+  "meanings": [],
+  "benefits": [
+   "استحباب الاجتماع على الطعام وعدم الأكل منفرداً .",
+   "الحض على إطعام الطعام ، وأن يكتفي كل بما يسد جوعه .",
+   "الاجتماع على الطعام وإكثار الأيدي عليه تأليف للقلوب ومبعث للسرور وتحصيل للبركة ."
+  ],
+  "shared_with": [
+   755
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is printed «أفاد الحديث : • والذي قبله هنا :», with a stray bullet inside it: it is the heading «أفاد الحديث والذي قبله هنا», so shared_with is [755], and «والذي قبله هنا» isn't a benefit.",
+   "The cross-reference is the same as h. 755's, number printed as a fraction, ٢ over ٥٦٥.",
+   "Chapter 111's heading, which follows, is left out."
+  ]
+ },
+ "757": {
+  "id": 757,
+  "pages": [
+   614
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "استحباب أخذ الماء على ثلاث جرعات ، وأن يتنفس بعد كل جرعة ، وأن يجعل تنفسه بعيداً عن إناء الماء ، ولا يخفى ما في ذلك من الفوائد الصحية ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "758": {
+  "id": 758,
+  "pages": [
+   615
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "لا تشربوا واحداً",
+    "meaning": "أي لا تجعلو شربكم جرعة واحدة دون تنفس خلاله ."
+   },
+   {
+    "term": "كشرب البعير",
+    "meaning": "أي فإنه لا يتنفس بين شربه ."
+   },
+   {
+    "term": "مثنى",
+    "meaning": "مرتين ."
+   },
+   {
+    "term": "ثلاث",
+    "meaning": "ثلاث مرات ."
+   },
+   {
+    "term": "رفعتم",
+    "meaning": "أي إناء الشراب عن فمكم ."
+   }
+  ],
+  "benefits": [
+   "كراهة شرب الماء جرعة واحدة ، ويستحب أن يقول عند بده الشرب بسم الله ، وإن كمل الرحمن الرحيم فأفضل ، وأن يقول عند الانتهاء من الشرب الحمد لله ، وإن أتم رب العالمين فأكمل . وقول ذلك في بده كل جرعة ونهايتها أتم للسنة ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "meanings.0.meaning",
+    "printed": "لا تجعلو",
+    "correction": "لا تجعلوا",
+    "reason": "the alif after the plural waw is dropped"
+   },
+   {
+    "part": "benefits.0",
+    "printed": "بده الشرب",
+    "correction": "بدء الشرب",
+    "reason": "«بده» isn't a word: the noun is «بدء»"
+   },
+   {
+    "part": "benefits.0",
+    "printed": "بده كل",
+    "correction": "بدء كل",
+    "reason": "«بده» isn't a word: the noun is «بدء»"
+   }
+  ],
+  "notes": [
+   "Zoomed on p. 615: «تجعلو» (no alif printed), «مرتين», «فمكم», «لله», and «بده» twice, whose last letter is printed as a ه, not a hamza.",
+   "The benefits are one bullet: the sentence «وقول ذلك …» follows a full stop on the same line, with no bullet, and continues the same benefit."
+  ]
+ },
+ "759": {
+  "id": 759,
+  "pages": [
+   615
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "كراهة التنفس في الإناء أثناء الشرب أو بعد الجرعات وفمه على الإناء ، لئلا يتأثر الماء من بصاق أو رائحة كريهة فيعافه الشارب ويستقذره ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed on «كريهة» (OCR «كريمة»): the medial ha is clear on the zoom."
+  ]
+ },
+ "760": {
+  "id": 760,
+  "pages": [
+   615,
+   616
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أن السنة في تقديم الشراب والضيافة وغيرها أن يبدأ بأجلّ من في المجلس ، ثم من على يمينه وهكذا ، وإن تساوى من في المجلس يبدأ بمن على يمين المضيف ، وإن كان أحدهم قد طلب الماء فيبدأ به ثم بمن على يمينه ، وإن كان من على اليسار في جميع الحالات أفضل من غيره ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: «بأجلّ» carries a printed shadda; both «بمن» are printed with the meem merged into the ba, as the font does. The OCR's stray «ا» at the end isn't printed and is dropped."
+  ]
+ },
+ "761": {
+  "id": 761,
+  "pages": [
+   616
+  ],
+  "see": "انظر شرح الحديث في باب التنافس في أمور الآخرة رقم ٤ / ٥٦٨ .",
+  "meanings": [],
+  "benefits": [
+   "جواز استئذان صاحب الحق بتقديم غيره عليه إن كان له إدلال عليه ، وعلم أنه لا يتأذى من هذا الاستئذان ، ولذلك استأذن النبي ﷺ ابن عمه هنا ، ولم يستأذن الأعرابي في الحديث السابق لحداثة عهده بالاسلام ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The see's number is printed as a fraction (٤ over ٥٦٨), written «٤ / ٥٦٨» as in earlier entries; the OCR had dropped it. The ﷺ glyph after «النبي» was left out by the OCR."
+  ]
+ },
+ "762": {
+  "id": 762,
+  "pages": [
+   617
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الأسقية",
+    "meaning": "جمع سقاء ، وهو ما يوضع فيه الماء وكان يتخذ من جلد ."
+   },
+   {
+    "term": "تكسر",
+    "meaning": "أي تطوى وتثنى ."
+   },
+   {
+    "term": "أفواهها",
+    "meaning": "جمع فم ."
+   }
+  ],
+  "benefits": [
+   "كراهة الشرب من فم الإناء الذي لا يرى ما في داخله ، خشية وجود شيء يؤذيه فيه ، فينساب إلى بطنه ويتضرر به ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "«أفواهها جمع فم» is printed after a full stop with no colon; «أفواهها» is the hadith's word, glossed, so it is an item of its own (docs/transcription.md, an item without a colon; owner's decision 2026-11-20)."
+  ]
+ },
+ "763": {
+  "id": 763,
+  "pages": [
+   617
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "القربة",
+    "meaning": "وعاء يوضع فيه الماء مثل السقاء ، وقد يكون كبيراً أو صغيراً ، بينما يغلب السقاء في الصغير ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints no benefits for this hadith: the next hadith (764) follows the meaning directly."
+  ]
+ },
+ "764": {
+  "id": 764,
+  "pages": [
+   617,
+   618
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الابتذال",
+    "meaning": "الامتهان ."
+   }
+  ],
+  "benefits": [
+   "جواز الشرب قائماً ومن فم الإناء الذي لا يرى داخله مباشرة ، وأن النهي الوارد عن ذلك للتنزيه .",
+   "جواز التبرك بآثار الصالحين ، شريطة أن لا يأخذ مظهر العبادة والتقديس ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "765": {
+  "id": 765,
+  "pages": [
+   618
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "القذاة",
+    "meaning": "واحدة القذى ، وهو ما يقع في الماء والشراب من تبين ، أو تراب أو وسخ أو غير ذلك ."
+   },
+   {
+    "term": "أهرقها",
+    "meaning": "أرقها ."
+   },
+   {
+    "term": "فأبن القدح",
+    "meaning": "أزل الكأس وأبعده عن فمك إذا أردت الشرب أكثر من جرعة ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "766": {
+  "id": 766,
+  "pages": [
+   618
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "كراهة النفخ في الشراب أثناء الشرب أو بعده ، حتى ولو كان لإبعاد وسخ وما شابهه .",
+   "إذا وجد في الشراب وسخ أريق منه شيء لإزالته .",
+   "حرص الاسلام على الصحة ، وعدم تعريض الجسم للأوساخ والمستقذرات ."
+  ],
+  "shared_with": [
+   765
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is printed «أفاد الحديث : • والذي قبله : •», with a stray bullet inside it: read as «أفاد الحديث والذي قبله», so shared_with is [765].",
+   "Zoomed on p. 618, 0.76–0.86: «أريق» (the OCR read «أربق»)."
+  ]
+ },
+ "767": {
+  "id": 767,
+  "pages": [
+   619
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "من زمزم",
+    "meaning": "أي من ماء بئر زمزم ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "768": {
+  "id": 768,
+  "pages": [
+   619
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "الرحبة",
+    "meaning": "المكان المتسع ، ورحبة المسجد ساحته المنبسطة ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "769": {
+  "id": 769,
+  "pages": [
+   619
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "قيام",
+    "meaning": "جمع قائم ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop stops at the source note; the meaning is read on a zoom of p. 619, 0.74–0.86."
+  ]
+ },
+ "770": {
+  "id": 770,
+  "pages": [
+   620
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "بيان جواز الشرب والأكل قائماً وقاعداً وماشياً ، وإن كان الأكمل والأفضل حال القعود .",
+   "في حديث علي رضي الله عنه استحباب بيان الحكم قولاً وعملاً ."
+  ],
+  "shared_with": [
+   767,
+   768,
+   769
+  ],
+  "corrections": [],
+  "notes": [
+   "The heading is «أفاد الحديث والأحاديث الثلاثة السابقة»: shared_with is [767, 768, 769]."
+  ]
+ },
+ "771": {
+  "id": 771,
+  "pages": [
+   620
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "فالأكل",
+    "meaning": "أي ما حكم الأكل قائماً ."
+   },
+   {
+    "term": "أشر وأخبث",
+    "meaning": "أي أولى بالنهي .",
+    "in_text": "أَشَرُّ أَو أَخْبثُ"
+   },
+   {
+    "term": "زجر",
+    "meaning": "منع ."
+   }
+  ],
+  "benefits": [],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The crop listed (p. 620, 0.64–0.90) shows h. 772's commentary, not this one's; h. 771's commentary is at about 0.55–0.64 of p. 620, read on a zoom of 0.05–0.65.",
+   "No benefits of its own: h. 772's heading «أفاد الحديث : • والذي قبله :» gives them for both."
+  ]
+ },
+ "772": {
+  "id": 772,
+  "pages": [
+   620
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "نسي",
+    "meaning": "أي شرب قائما ولو عامداً ، والمراد بنسي ترك ."
+   },
+   {
+    "term": "فليستقىء",
+    "meaning": "فليخرج من جوفه ما شربه قائماً ."
+   }
+  ],
+  "benefits": [
+   "كراهة الشرب قائماً ، وأن الأكل كذلك أشد كراهة .",
+   "يستحب لمن شرب قائماً أن يتقيأ ما شربه ، زجراً لنفسه عن مخالفة السنة ، والذي يظهر أن هذا في حق من تعمد مخالفة السنة ، وإلا فقد ورد الحواز ."
+  ],
+  "shared_with": [
+   771
+  ],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "ورد الحواز",
+    "correction": "ورد الجواز",
+    "reason": "a dot dropped: «الحواز» isn't a word; the permission to drink standing is meant"
+   }
+  ],
+  "notes": [
+   "The heading is printed «أفاد الحديث : • والذي قبله :», a bullet set before «والذي قبله»: read as «أفاد الحديث والذي قبله», so shared_with is [771]. The OCR made «والذي قبله» a benefit; removed.",
+   "Zoomed: «فليستقىء» is printed with a dotless ى and a hamza on the line; «قائما» in the first meaning has no tanween; «الحواز» is printed with ح."
+  ]
+ },
+ "773": {
+  "id": 773,
+  "pages": [
+   621
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "أنه من الأدب أن يكون من يقدم شراباً ، أو يوزع فاكهة لجماعة آخر من يأكل أو يشرب ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "Zoomed: «لجماعة» is printed without the article (the OCR read «الجماعة»)."
+  ]
+ },
+ "774": {
+  "id": 774,
+  "pages": [
+   622
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "حضرت",
+    "meaning": "دخل وقتها ."
+   },
+   {
+    "term": "إلى أهله",
+    "meaning": "إلى بيته ليتوضأ فيه ."
+   },
+   {
+    "term": "المخضب",
+    "meaning": "إناء من حجر ."
+   },
+   {
+    "term": "أن يبسط فيه كفه",
+    "meaning": "أن يضع كفه فيه مبسوطة ."
+   },
+   {
+    "term": "فتوضأ القوم",
+    "meaning": "أي من الماء الذي نبع من بين أصابعه ﷺ في ذلك المخضب ."
+   }
+  ],
+  "benefits": [
+   "جواز استعمال أواني الحجر للوضوء وغيره .",
+   "معجزة النبي ﷺ بتكثير الماء ببركته ونبعه من ين أصابعه ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.1",
+    "printed": "من ين أصابعه",
+    "correction": "من بين أصابعه",
+    "reason": "a letter dropped: «ين» isn't a word"
+   }
+  ],
+  "notes": [
+   "The commentary is all on p. 622 (the crop of p. 621 shows only the matn's end).",
+   "Zoomed: «فيه» after «ليتوضأ» is printed with ه; «ين» in the second benefit is printed with one tooth."
+  ]
+ },
+ "775": {
+  "id": 775,
+  "pages": [
+   622
+  ],
+  "see": null,
+  "meanings": [],
+  "benefits": [
+   "جواز استعمال إناء النحاس للوضوء وغيره ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": []
+ },
+ "776": {
+  "id": 776,
+  "pages": [
+   622,
+   623
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "رجل",
+    "meaning": "قيل هو أبو الهيثم بن التيهان ."
+   },
+   {
+    "term": "صاحب",
+    "meaning": "هو أبو بكر الصديق رضي الله عنه ."
+   },
+   {
+    "term": "الشن والشنة",
+    "meaning": "القربة البالية المصنوعة من جلد ، وهي أشد تبريداً للماء من غيره ، وسبب طلبه ﷺ للماء البائت في الشن أن الوقت صيف وهذا أبرد وأصفى من غيره .",
+    "in_text": "شَنَّةٍ"
+   },
+   {
+    "term": "كرعنا",
+    "meaning": "تناولنا الماء بالفم من غير إناء ."
+   }
+  ],
+  "benefits": [
+   "جواز شرب الماء بالفم من منبعه مباشرة ، والنهي الوارد عنه يدل على الكراهة التنزيهة ."
+  ],
+  "shared_with": [],
+  "corrections": [
+   {
+    "part": "benefits.0",
+    "printed": "الكراهة التنزيهة",
+    "correction": "الكراهة التنزيهية",
+    "reason": "a letter dropped: the adjective of «التنزيه» is «التنزيهية»"
+   }
+  ],
+  "notes": [
+   "Zoomed: «التنزيهة» is printed so on p. 623."
+  ]
+ },
+ "777": {
+  "id": 777,
+  "pages": [
+   623
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "نهانا",
+    "meaning": "أي الرجال المكلفين ."
+   },
+   {
+    "term": "الديباج",
+    "meaning": "ثوب سداه ولحمته من الحرير ."
+   },
+   {
+    "term": "لهم أي",
+    "meaning": "للكفار .",
+    "in_text": "لهم"
+   }
+  ],
+  "benefits": [
+   "تحريم لبس الحرير على الرجال ، وتحريم الشرب في آنية الذهب والفضة ، ومثل الرجال في هذا النساء ، ومثل الشرب سائر وجوه الاستعمال إلا لضرورة .",
+   "الكفار محرومون من نعيم الآخرة ، وكذا من عصى الله تعالى فيما حرم ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The book prints «لهم أي : للكفار .», with the colon after «أي»; the term is kept as printed, and in_text points at «لهم» in the hadith.",
+   "Zoomed on «فيما حرم» (p. 623): printed «فيما» with the ي/م ligature."
+  ]
+ },
+ "778": {
+  "id": 778,
+  "pages": [
+   623,
+   624
+  ],
+  "see": null,
+  "meanings": [
+   {
+    "term": "يجرجر",
+    "meaning": "يرددها . بحيث يسمع لها صوت ، يقال : جرجرت النار إذا صوتت ."
+   }
+  ],
+  "benefits": [
+   "الوعيد الشديد لمن استعمل أواني الذهب والفضة في الأكل أو الشراب أو غيرهما ، وصرح ابن حجر الهيتمي في الزواجر أنه من الكبائر ، وذلك لأنه نوع من السرف والتبذير ، وهو من عادة المتكبرين المترفين ، ولما فيه أيضاً من تضيق على الناس في المعاملات حين يقل الذهب والفضة في التداول ."
+  ],
+  "shared_with": [],
+  "corrections": [],
+  "notes": [
+   "The meaning of «يجرجر» runs on after a full stop («يرددها . بحيث يسمع لها صوت …»); «بحيث» isn't a word of the hadith, so it stays one item.",
+   "The benefits are on p. 624 (0.04–0.20), which the crops didn't cover: read from a zoom. The chapter heading «كتاب اللباس» after them is left out.",
+   "Zoomed on «من تضيق» (p. 624): printed so, not «تضييق»; kept, as «تضيّق» is a word."
+  ]
  }
 }
